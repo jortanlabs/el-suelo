@@ -9,7 +9,7 @@ export interface ItemFloor {
 
 const COMMONS_REDIRECT = "https://commons.wikimedia.org/wiki/Special:Redirect/file";
 
-function commonsImageUrl(filename: string, width = 400): string {
+function commonsImageUrl(filename: string, width = 600): string {
   return `${COMMONS_REDIRECT}/${encodeURIComponent(filename)}?width=${width}`;
 }
 
@@ -50,28 +50,31 @@ interface SearchEntity {
  * (ej. "Puma" → preferir la especie sobre la marca deportiva).
  */
 async function buscarEntidad(termino: string, descripcionPreferida?: string[]): Promise<SearchEntity | null> {
-  const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(termino)}&language=es&type=item&limit=5&format=json&origin=*`;
-  try {
-    const res = await fetch(url);
-    if (!res.ok) return null;
-    const data = (await res.json()) as { search?: SearchEntity[] };
-    const results = data.search ?? [];
-    if (results.length === 0) return null;
-    const norm = normalizar(termino);
-    const exactMatch = results.find((r) => normalizar(r.label ?? "") === norm);
-    if (exactMatch) return exactMatch;
-    if (descripcionPreferida?.length) {
-      const kws = descripcionPreferida.map(normalizar);
-      const descMatch = results.find((r) => {
-        const desc = normalizar(r.description ?? "");
-        return kws.some((k) => desc.includes(k));
-      });
-      if (descMatch) return descMatch;
-    }
-    return results[0];
-  } catch {
-    return null;
+  const norm = normalizar(termino);
+
+  for (const lang of ["es", "en"]) {
+    try {
+      const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(termino)}&language=${lang}&type=item&limit=5&format=json&origin=*`;
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const data = (await res.json()) as { search?: SearchEntity[] };
+      const results = data.search ?? [];
+      if (results.length === 0) continue;
+      const exactMatch = results.find((r) => normalizar(r.label ?? "") === norm);
+      if (exactMatch) return exactMatch;
+      if (descripcionPreferida?.length) {
+        const kws = descripcionPreferida.map(normalizar);
+        const descMatch = results.find((r) => {
+          const desc = normalizar(r.description ?? "");
+          return kws.some((k) => desc.includes(k));
+        });
+        if (descMatch) return descMatch;
+      }
+      // Solo devuelve el primero si fue la búsqueda en español (más fiable para nombres en ES)
+      if (lang === "es") return results[0];
+    } catch {}
   }
+  return null;
 }
 
 export async function resolverNombres(

@@ -236,7 +236,21 @@ export async function generarFloor(
   }
 
   opts.onProgreso?.(`🔍 Buscando imágenes (${data.nombres.length} items)...`);
-  const items = await resolverConWikipedia(data.nombres);
+  const wpItems = await resolverConWikipedia(data.nombres);
+
+  // Fallback Wikidata P18 para los que Wikipedia no resolvió
+  const encontrados = new Set(wpItems.map((i) => i.nombre));
+  const sinImagen = data.nombres.filter((n) => {
+    const display = n.replace(/\s*\([^)]+\)\s*$/, "").trim() || n;
+    return !encontrados.has(display);
+  });
+  let items = wpItems;
+  if (sinImagen.length > 0) {
+    opts.onProgreso?.(`🔍 Completando ${sinImagen.length} items desde Wikidata...`);
+    const wdExtra = await resolverNombres(sinImagen, 5);
+    items = [...wpItems, ...wdExtra];
+  }
+
   if (items.length < 8) {
     throw new Error(`Solo se encontraron ${items.length} imágenes para esta categoría. Prueba con una categoría más específica o famosa.`);
   }
