@@ -1,0 +1,985 @@
+---
+export const prerender = true;
+import Base from "../layouts/Base.astro";
+import { categoriasFloor } from "../data/categoriasFloor.ts";
+
+const cats = categoriasFloor.map((c) => ({
+  slug: c.slug,
+  nombre: c.nombre,
+  emoji: c.emoji,
+}));
+---
+
+<Base titulo="El Suelo" descripcion="Di qué ves antes de que se acabe tu tiempo.">
+  <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
+    <nav class="px-4 py-3 flex items-center border-b-2 border-[#163575]">
+      <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">
+        ← Volver
+      </button>
+    </nav>
+
+    <!-- BIENVENIDA -->
+    <section id="pantalla-bienvenida" class="flex-1 flex flex-col items-center justify-between px-6 py-10 overflow-y-auto">
+      <div class="flex-1"></div>
+
+      <div class="text-center">
+        <div class="inline-block relative px-12 py-4 mb-4">
+          <span class="floor-corner floor-corner-tl"></span>
+          <span class="floor-corner floor-corner-tr"></span>
+          <span class="floor-corner floor-corner-bl"></span>
+          <span class="floor-corner floor-corner-br"></span>
+          <h1 class="font-titulo text-5xl font-bold neon-gold uppercase tracking-[0.3em]">El suelo</h1>
+        </div>
+        <p class="text-[#2a5090] font-titulo text-base mt-2">Di qué ves antes de que se acabe tu tiempo.</p>
+      </div>
+
+      <div class="flex-1"></div>
+
+      <div class="w-full max-w-xs flex flex-col items-center gap-4">
+        <button id="boton-jugar" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-2xl py-5 tracking-widest uppercase">
+          ¡Jugar!
+        </button>
+
+        <a href="#kofi" id="kofi-link" class="flex items-center gap-2 text-[#163575] hover:text-[#2a5090] transition text-sm font-titulo opacity-60 hover:opacity-100">
+          <span>☕</span>
+          <span>Apoya el juego</span>
+        </a>
+      </div>
+
+      <div class="pb-4"></div>
+    </section>
+
+    <!-- SETUP -->
+    <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-6 hidden">
+      <div class="max-w-md w-full mx-auto">
+        <div class="text-center mb-6">
+          <div class="inline-block relative px-10 py-3 mb-2">
+            <span class="floor-corner floor-corner-tl"></span>
+            <span class="floor-corner floor-corner-tr"></span>
+            <span class="floor-corner floor-corner-bl"></span>
+            <span class="floor-corner floor-corner-br"></span>
+            <h1 class="font-titulo text-4xl font-bold neon-gold uppercase tracking-[0.25em]">El suelo</h1>
+          </div>
+          <p class="text-[#2a5090] text-sm font-titulo mt-1">Di qué ves antes de que se acabe tu tiempo.</p>
+        </div>
+
+        <div class="floor-card p-6 space-y-4">
+          <div>
+            <label class="font-titulo font-bold text-[#ff1dce] text-xs block mb-1 uppercase tracking-widest">Jugador 1</label>
+            <input id="nombre-a" type="text" placeholder="Jugador A" maxlength="20" class="floor-input floor-input-a" />
+          </div>
+          <div>
+            <label class="font-titulo font-bold text-[#ffe100] text-xs block mb-1 uppercase tracking-widest">Jugador 2</label>
+            <input id="nombre-b" type="text" placeholder="Jugador B" maxlength="20" class="floor-input floor-input-b" />
+          </div>
+
+          <div>
+            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Modo</label>
+            <div class="flex gap-2">
+              <button id="modo-rapida" class="floor-btn floor-btn-a flex-1 px-3 py-2 text-sm font-titulo">⚡ Partida rápida</button>
+              <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
+            </div>
+          </div>
+
+          <div id="seccion-categoria">
+            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Categoría</label>
+            <div class="grid grid-cols-2 gap-2">
+              {cats.map((cat) => (
+                <button class="cat-btn floor-card-small px-3 py-2 text-sm font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left" data-slug={cat.slug}>
+                  {cat.emoji} {cat.nombre}
+                </button>
+              ))}
+              <button class="cat-btn floor-card-small px-3 py-2 text-sm font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left col-span-2" data-slug="libre">
+                ✨ Categoría libre...
+              </button>
+            </div>
+            <div id="libre-container" class="hidden mt-2">
+              <input id="categoria-libre" type="text" placeholder="Ej: presidentes de España..." maxlength="100" class="floor-input" />
+            </div>
+          </div>
+
+          <div id="nota-tablero" class="hidden floor-card-small px-4 py-3 border-[#ffcc0033]">
+            <p class="text-sm text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría aleatoria</p>
+          </div>
+
+          <div class="flex gap-2">
+            <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-6 py-4">¡A jugar! →</button>
+            <button id="boton-aleatorio" class="floor-btn floor-btn-gold font-titulo font-bold text-xl px-4 py-4" title="Categoría aleatoria">🎲</button>
+          </div>
+          <p id="error-setup" class="hidden text-sm text-[#ff1dce] text-center font-bold"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOADER -->
+    <section id="pantalla-loader" class="flex-1 flex items-center justify-center px-4 py-8 hidden">
+      <div class="text-center">
+        <div class="text-6xl mb-4 wiggle inline-block">🔍</div>
+        <h2 class="font-titulo text-2xl font-bold text-[#e8e8ff] mb-2">Cargando imágenes...</h2>
+        <p id="loader-progreso" class="text-[#2a5090] text-sm font-titulo">Buscando en Wikidata. Un momento.</p>
+      </div>
+    </section>
+
+    <!-- TABLERO -->
+    <section id="pantalla-tablero" class="flex-1 flex flex-col overflow-hidden hidden relative">
+      <div class="px-4 py-3 flex items-center justify-center gap-3 border-b-2 border-[#163575] shrink-0">
+        <span class="inline-block w-4 h-4 rounded-sm bg-[#ff1dce]" style="box-shadow:0 0 10px #ff1dce"></span>
+        <span id="tablero-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
+        <span id="tablero-count-a" class="font-titulo font-bold text-xl tabular-nums neon-a"></span>
+        <span class="font-titulo text-[#2a5090] text-sm px-2 font-bold">VS</span>
+        <span id="tablero-count-b" class="font-titulo font-bold text-xl tabular-nums neon-b"></span>
+        <span id="tablero-nombre-b" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
+        <span class="inline-block w-4 h-4 rounded-sm bg-[#ffe100]" style="box-shadow:0 0 10px #ffe100"></span>
+      </div>
+
+      <div class="flex-1 flex flex-col items-center justify-center px-4 py-4 min-h-0">
+        <div id="tablero-grid" class="grid grid-cols-5 gap-1.5 w-full max-w-sm"></div>
+      </div>
+
+      <div class="px-4 py-3 text-center shrink-0">
+        <p id="tablero-instruccion" class="font-titulo text-sm font-bold text-[#2a5090] uppercase tracking-wider"></p>
+      </div>
+
+      <div id="preduel-overlay" class="hidden absolute inset-0 flex flex-col items-center justify-center z-20 px-8" style="background:#07070fee">
+        <p class="text-xs text-[#2a5090] font-titulo uppercase tracking-widest mb-2">Categoría del duelo</p>
+        <div id="preduel-emoji" class="text-6xl my-2"></div>
+        <p id="preduel-nombre-cat" class="font-titulo font-bold text-2xl text-[#e8e8ff] text-center mb-8"></p>
+        <button id="preduel-empezar" class="floor-btn floor-btn-a font-titulo font-bold text-xl px-8 py-4">¡A jugar! →</button>
+      </div>
+    </section>
+
+    <!-- JUEGO -->
+    <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0">
+      <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
+        <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
+          <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
+          <span id="nombre-a-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
+        </div>
+
+        <div class="flex-1 flex flex-col items-center justify-center min-w-0 min-h-0">
+          <div class="w-full max-w-xs">
+            <div class="floor-image-box">
+              <img id="imagen-item" src="" alt="" class="absolute inset-0 w-full h-full object-contain hidden" />
+              <span id="imagen-placeholder" class="absolute inset-0 flex items-center justify-center text-5xl text-[#163575] font-titulo font-bold text-center px-2">📷</span>
+              <div id="overlay-acierto" class="floor-overlay-ok hidden">
+                <span class="font-titulo text-6xl font-bold text-[#07070f]">✓</span>
+                <span id="overlay-nombre" class="font-titulo text-sm font-bold text-[#07070f] mt-1 text-center px-2"></span>
+              </div>
+              <div id="overlay-pase" class="floor-overlay-pass hidden">
+                <span class="font-titulo text-2xl font-bold text-[#07070f]">Pasado →</span>
+                <span id="overlay-pase-nombre" class="font-titulo text-sm font-bold text-[#07070f] mt-1 text-center px-2"></span>
+              </div>
+            </div>
+          </div>
+          <p id="texto-voz" class="mt-1.5 text-xs text-[#2a5090] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
+        </div>
+
+        <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
+          <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
+          <span id="nombre-b-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
+        </div>
+      </div>
+
+      <div class="px-4 py-2 flex items-center justify-center gap-3 shrink-0">
+        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold px-5 py-2 text-sm">Pasar −3s</button>
+        <button id="boton-acierto-manual" class="floor-btn floor-btn-ok font-titulo font-bold px-5 py-2 text-sm">✓ Acertó</button>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section id="pantalla-final" class="flex-1 flex items-center justify-center px-4 py-8 hidden relative overflow-hidden">
+      <div id="confeti" class="absolute inset-0 pointer-events-none"></div>
+      <div class="max-w-sm w-full text-center relative z-10">
+        <div class="text-7xl mb-4 flotar inline-block">🏆</div>
+        <h1 class="font-titulo text-3xl font-bold text-[#e8e8ff] mb-2 uppercase tracking-widest">¡Partida terminada!</h1>
+        <p id="texto-ganador" class="font-titulo text-2xl mb-6 neon-gold"></p>
+        <div class="grid grid-cols-2 gap-3 mb-8">
+          <div class="floor-card-small p-4" style="border-color:#ff1dce44">
+            <p id="final-nombre-a" class="font-titulo font-bold text-[#ff1dce] text-sm mb-1 uppercase tracking-wide"></p>
+            <p id="final-tiempo-a" class="font-titulo font-bold text-4xl text-[#e8e8ff] floor-timer" style="color:#ff1dce">0s</p>
+            <p id="final-label-a" class="text-xs text-[#2a5090] font-titulo">tiempo restante</p>
+          </div>
+          <div class="floor-card-small p-4" style="border-color:#ffe10044">
+            <p id="final-nombre-b" class="font-titulo font-bold text-[#ffe100] text-sm mb-1 uppercase tracking-wide"></p>
+            <p id="final-tiempo-b" class="font-titulo font-bold text-4xl text-[#e8e8ff] floor-timer" style="color:#ffe100">0s</p>
+            <p id="final-label-b" class="text-xs text-[#2a5090] font-titulo">tiempo restante</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <button id="boton-revancha" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">Revancha →</button>
+          <button id="boton-menu" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  #floor-root {
+    --a: #ff1dce;
+    --b: #ffe100;
+    --gold: #f5c518;
+    --bg: #050c1e;
+    --card: #091728;
+    --border: #163575;
+    --text: #e8f0ff;
+    --dim: #2a5090;
+    --ok: #00ff88;
+    --font-titulo: 'Barlow Condensed', sans-serif;
+    background: var(--bg);
+    background-image:
+      linear-gradient(rgba(30, 80, 200, 0.15) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30, 80, 200, 0.15) 1px, transparent 1px);
+    background-size: 52px 52px;
+    color: var(--text);
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .neon-a { color: var(--a); text-shadow: 0 0 20px var(--a); }
+  .neon-b { color: var(--b); text-shadow: 0 0 20px var(--b); }
+  .neon-gold { color: var(--gold); text-shadow: 0 0 15px var(--gold); }
+  .glow-a { box-shadow: 0 0 18px var(--a), 0 0 40px color-mix(in srgb, var(--a) 30%, transparent); }
+  .glow-b { box-shadow: 0 0 18px var(--b), 0 0 40px color-mix(in srgb, var(--b) 30%, transparent); }
+  :global(.floor-square-neutral) {
+    background: #0c1e48;
+    border: 2px solid #2a5285;
+    box-shadow: inset 0 0 10px rgba(20, 55, 130, 0.4);
+  }
+  :global(.floor-square-a) {
+    background: #ff1dce;
+    border: 2px solid #ff80e8;
+    box-shadow: 0 0 24px #ff1dce, inset 0 0 8px rgba(255,255,255,0.2);
+  }
+  :global(.floor-square-b) {
+    background: #ffe100;
+    border: 2px solid #fff380;
+    box-shadow: 0 0 24px #ffe100, inset 0 0 8px rgba(255,255,255,0.2);
+  }
+  :global(.floor-square-attackable) {
+    border: 2px solid var(--gold) !important;
+    box-shadow: 0 0 12px var(--gold) !important;
+    animation: floor-pulse-gold 1.4s ease-in-out infinite;
+  }
+  @keyframes floor-pulse-gold {
+    0%, 100% { box-shadow: 0 0 8px var(--gold); }
+    50% { box-shadow: 0 0 22px var(--gold), 0 0 45px color-mix(in srgb, var(--gold) 40%, transparent); }
+  }
+  .floor-btn {
+    background: transparent;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: all 0.15s;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .floor-btn-a { color: var(--a); box-shadow: 0 0 12px color-mix(in srgb, var(--a) 50%, transparent); }
+  .floor-btn-a:hover { background: color-mix(in srgb, var(--a) 15%, transparent); box-shadow: 0 0 24px var(--a); }
+  .floor-btn-b { color: var(--b); box-shadow: 0 0 12px color-mix(in srgb, var(--b) 50%, transparent); }
+  .floor-btn-b:hover { background: color-mix(in srgb, var(--b) 15%, transparent); box-shadow: 0 0 24px var(--b); }
+  .floor-btn-gold { color: var(--gold); box-shadow: 0 0 12px color-mix(in srgb, var(--gold) 50%, transparent); }
+  .floor-btn-gold:hover { background: color-mix(in srgb, var(--gold) 15%, transparent); }
+  .floor-btn-ok { color: var(--ok); box-shadow: 0 0 12px color-mix(in srgb, var(--ok) 50%, transparent); }
+  .floor-btn-ok:hover { background: color-mix(in srgb, var(--ok) 15%, transparent); }
+  .floor-input {
+    background: #050e20;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    padding: 8px 16px;
+    width: 100%;
+    outline: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    transition: border-color 0.2s;
+  }
+  .floor-input::placeholder { color: var(--dim); }
+  .floor-input:focus { border-color: var(--gold); }
+  .floor-input-a:focus { border-color: var(--a); }
+  .floor-input-b:focus { border-color: var(--b); }
+  .floor-card { background: var(--card); border: 2px solid var(--border); border-radius: 6px; }
+  .floor-card-small { background: var(--card); border: 1px solid var(--border); border-radius: 4px; }
+  .floor-image-box {
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: #050e20;
+    aspect-ratio: 1;
+    position: relative;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8), 0 0 20px rgba(20,60,180,0.15);
+  }
+  .floor-overlay-ok:not(.hidden) {
+    position: absolute; inset: 0;
+    background: color-mix(in srgb, var(--ok) 88%, transparent);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .floor-overlay-pass:not(.hidden) {
+    position: absolute; inset: 0;
+    background: color-mix(in srgb, var(--gold) 90%, transparent);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .floor-zona-active-a {
+    background: color-mix(in srgb, var(--a) 12%, transparent);
+    border: 2px solid var(--a);
+    box-shadow: 0 0 20px color-mix(in srgb, var(--a) 40%, transparent);
+    color: var(--a);
+  }
+  .floor-zona-active-b {
+    background: color-mix(in srgb, var(--b) 10%, transparent);
+    border: 2px solid var(--b);
+    box-shadow: 0 0 20px color-mix(in srgb, var(--b) 40%, transparent);
+    color: var(--b);
+  }
+  .floor-zona-inactive { color: #2a2a44; border: 2px solid transparent; }
+  .floor-timer { text-shadow: 0 0 20px currentColor; }
+  .floor-cat-selected {
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+    text-shadow: 0 0 8px color-mix(in srgb, var(--gold) 60%, transparent);
+  }
+  .floor-corner { position: absolute; width: 20px; height: 20px; }
+  .floor-corner-tl { top: 0; left: 0; border-top: 4px solid var(--gold); border-left: 4px solid var(--gold); }
+  .floor-corner-tr { top: 0; right: 0; border-top: 4px solid var(--gold); border-right: 4px solid var(--gold); }
+  .floor-corner-bl { bottom: 0; left: 0; border-bottom: 4px solid var(--gold); border-left: 4px solid var(--gold); }
+  .floor-corner-br { bottom: 0; right: 0; border-bottom: 4px solid var(--gold); border-right: 4px solid var(--gold); }
+  :global(body) { background: #050c1e !important; }
+</style>
+
+<script>
+  import {
+    generarFloor,
+    generarFloorPredefinida,
+    type ItemFloor,
+    crearReconocedor,
+    navegadorSoportaVoz,
+    type ReconocedorVoz,
+    aciertoFlexible,
+  } from "../lib/floor-client.ts";
+  import { categoriasFloor as todasCats } from "../data/categoriasFloor.ts";
+
+  const $ = (id: string) => document.getElementById(id)!;
+
+  const pBienvenida = $("pantalla-bienvenida");
+  const pSetup = $("pantalla-setup");
+  const pLoader = $("pantalla-loader");
+  const pTablero = $("pantalla-tablero");
+  const pJuego = $("pantalla-juego");
+  const pFinal = $("pantalla-final");
+
+  function mostrar(p: HTMLElement) {
+    [pBienvenida, pSetup, pLoader, pTablero, pJuego, pFinal].forEach((s) => s.classList.add("hidden"));
+    p.classList.remove("hidden");
+  }
+
+  $("boton-jugar").addEventListener("click", () => mostrar(pSetup));
+  $("boton-menu").addEventListener("click", () => mostrar(pBienvenida));
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/el-suelo-sw.js").catch(() => {});
+  }
+
+  // ── Modo de juego ────────────────────────────────────────────
+  let modo: "rapida" | "tablero" = "rapida";
+
+  $("modo-rapida").addEventListener("click", () => {
+    modo = "rapida";
+    $("seccion-categoria").classList.remove("hidden");
+    $("nota-tablero").classList.add("hidden");
+    $("boton-aleatorio").classList.remove("hidden");
+    $("modo-rapida").classList.remove("text-[#2a5090]", "border-[#163575]");
+    $("modo-rapida").classList.add("floor-btn-a");
+    $("modo-tablero").classList.remove("floor-btn-a");
+    $("modo-tablero").classList.add("text-[#2a5090]", "border-[#163575]");
+  });
+
+  $("modo-tablero").addEventListener("click", () => {
+    modo = "tablero";
+    $("seccion-categoria").classList.add("hidden");
+    $("nota-tablero").classList.remove("hidden");
+    $("boton-aleatorio").classList.add("hidden");
+    $("modo-tablero").classList.remove("text-[#2a5090]", "border-[#163575]");
+    $("modo-tablero").classList.add("floor-btn-a");
+    $("modo-rapida").classList.remove("floor-btn-a");
+    $("modo-rapida").classList.add("text-[#2a5090]", "border-[#163575]");
+  });
+
+  // ── Selección de categoría ──────────────────────────────────
+  let categoriaSeleccionada = "";
+  const libreContainer = $("libre-container");
+
+  document.querySelectorAll<HTMLButtonElement>(".cat-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll<HTMLButtonElement>(".cat-btn").forEach((b) => {
+        b.classList.remove("floor-cat-selected");
+      });
+      btn.classList.add("floor-cat-selected");
+      categoriaSeleccionada = btn.dataset.slug!;
+      libreContainer.classList.toggle("hidden", categoriaSeleccionada !== "libre");
+    });
+  });
+
+  const primerBtn = document.querySelector<HTMLButtonElement>(".cat-btn");
+  if (primerBtn) primerBtn.click();
+
+  const TEMAS_SORPRESA = [
+    "Superhéroes de Marvel", "Pintores famosos", "Astronautas",
+    "Inventores famosos", "Cocineros famosos", "Tenistas famosos",
+    "Boxeadores históricos", "Guitarristas de rock", "Grupos musicales de los 80",
+    "Filósofos griegos", "Piratas históricos", "Exploradores famosos",
+    "Villanos de película", "Presidentes de Estados Unidos",
+    "Jugadores de baloncesto", "Pilotos de Fórmula 1",
+    "Ciclistas famosos", "Directores de cine", "Reyes y reinas de Europa",
+    "Tenistas femeninas", "Nadadoras olímpicas", "Escritores del siglo XX",
+    "Pintores del impresionismo", "Artistas del flamenco",
+    "Actrices de Hollywood clásico", "Comediantes famosos",
+    "Premios Nobel de la Paz", "Faraones del antiguo Egipto",
+    "Esculturas del mundo", "Capitales de Europa", "Edificios modernos icónicos",
+    "Castillos medievales", "Puentes famosos del mundo", "Islas famosas",
+    "Volcanes del mundo", "Cascadas del mundo",
+    "Capitales de América Latina", "Montañas más altas del mundo",
+    "Desiertos del mundo", "Estadios de fútbol del mundo",
+    "Museos famosos del mundo", "Catedrales del mundo",
+    "Parques nacionales del mundo", "Palacios reales del mundo",
+    "Templos de Asia", "Lagos del mundo",
+    "Razas de perros", "Razas de gatos", "Dinosaurios",
+    "Aves exóticas", "Peces de arrecife de coral",
+    "Mariposas del mundo", "Animales en peligro de extinción",
+    "Tiburones del mundo", "Serpientes del mundo",
+    "Aves rapaces", "Primates del mundo", "Felinos salvajes",
+    "Animales de Australia", "Insectos del mundo",
+    "Instrumentos musicales", "Coches deportivos clásicos",
+    "Flores del mundo", "Planetas y lunas del sistema solar",
+    "Personajes de Disney", "Escritores españoles",
+    "Videoconsolas clásicas", "Juguetes icónicos de los 90",
+    "Elementos de la tabla periódica", "Aviones históricos",
+    "Barcos históricos famosos", "Motocicletas clásicas",
+    "Marcas de coches del mundo", "Marcas de moda famosas",
+    "Películas de los años 80", "Personajes de Pixar",
+    "Objetos de los años 80", "Tecnología retro",
+  ];
+
+  $("boton-aleatorio").addEventListener("click", () => {
+    const tema = TEMAS_SORPRESA[Math.floor(Math.random() * TEMAS_SORPRESA.length)];
+    const btnLibreBtn = document.querySelector<HTMLButtonElement>(".cat-btn[data-slug='libre']");
+    if (btnLibreBtn) btnLibreBtn.click();
+    ($("categoria-libre") as HTMLInputElement).value = tema;
+  });
+
+  // ── Estado de juego ─────────────────────────────────────────
+  interface Jugador {
+    nombre: string;
+    decimas: number;
+  }
+
+  let items: ItemFloor[] = [];
+  let indice = 0;
+  let turno: "A" | "B" = "A";
+  let categoriaActual = "";
+  let jug: { A: Jugador; B: Jugador };
+  let tick: ReturnType<typeof setInterval> | null = null;
+  let reco: ReconocedorVoz | null = null;
+  let bloqueado = false;
+  let terminado = false;
+
+  // ── Estado de tablero ────────────────────────────────────────
+  interface Casilla {
+    catSlug: string;
+    catEmoji: string;
+    catNombre: string;
+    catNombres: string[] | null;
+    catHardcoded: ItemFloor[] | null;
+    dueño: "A" | "B" | null;
+    items: ItemFloor[];
+    itemsOffset: number;
+    empateCuenta: number;
+  }
+
+  let casillas: Casilla[] = [];
+  let casillaDuelo = -1;
+  let tableroAtacante: "A" | "B" = "A";
+
+  // ── Empezar ─────────────────────────────────────────────────
+  $("boton-empezar").addEventListener("click", async () => {
+    const nombreA = (($("nombre-a") as HTMLInputElement).value.trim()) || "Jugador A";
+    const nombreB = (($("nombre-b") as HTMLInputElement).value.trim()) || "Jugador B";
+    const errEl = $("error-setup");
+    errEl.classList.add("hidden");
+
+    if (modo === "tablero") {
+      pararVoz();
+      initTablero(nombreA, nombreB);
+      mostrar(pTablero);
+      return;
+    }
+
+    if (!categoriaSeleccionada) {
+      errEl.textContent = "Elige una categoría.";
+      errEl.classList.remove("hidden");
+      return;
+    }
+
+    const libre = categoriaSeleccionada === "libre"
+      ? ($("categoria-libre") as HTMLInputElement).value.trim()
+      : undefined;
+
+    if (categoriaSeleccionada === "libre" && !libre) {
+      errEl.textContent = "Escribe una categoría libre.";
+      errEl.classList.remove("hidden");
+      return;
+    }
+
+    pararVoz();
+    mostrar(pLoader);
+
+    try {
+      let raw: ItemFloor[];
+      if (categoriaSeleccionada === "libre") {
+        raw = await generarFloor({
+          libre,
+          onProgreso: (msg) => { $("loader-progreso").textContent = msg; },
+        });
+        categoriaActual = libre ?? "";
+      } else {
+        const cat = todasCats.find((c) => c.slug === categoriaSeleccionada)!;
+        categoriaActual = cat.nombre;
+        if (cat.itemsHardcoded) {
+          raw = [...cat.itemsHardcoded];
+        } else {
+          raw = await generarFloorPredefinida(cat.slug, cat.nombres!, cat.ocupacionesWikidata, cat.instanciasWikidata, cat.descripcionWikidata);
+        }
+      }
+      items = [...raw].sort(() => Math.random() - 0.5);
+
+      jug = {
+        A: { nombre: nombreA, decimas: 450 },
+        B: { nombre: nombreB, decimas: 450 },
+      };
+      indice = 0;
+      turno = "A";
+      terminado = false;
+
+      $("nombre-a-display").textContent = nombreA;
+      $("nombre-b-display").textContent = nombreB;
+      $("final-nombre-a").textContent = nombreA;
+      $("final-nombre-b").textContent = nombreB;
+
+      mostrar(pJuego);
+      iniciarTurno();
+    } catch (e) {
+      pararVoz();
+      const msg = e instanceof Error ? e.message : "Error";
+      errEl.textContent = `No se pudo cargar: ${msg}`;
+      errEl.classList.remove("hidden");
+      mostrar(pSetup);
+    }
+  });
+
+  // ── Tablero ──────────────────────────────────────────────────
+  function initTablero(nombreA: string, nombreB: string) {
+    const catsValidas = todasCats.filter((c) => c.nombres || c.itemsHardcoded);
+    casillas = Array.from({ length: 25 }, () => {
+      const cat = catsValidas[Math.floor(Math.random() * catsValidas.length)];
+      return {
+        catSlug: cat.slug,
+        catEmoji: cat.emoji,
+        catNombre: cat.nombre,
+        catNombres: cat.nombres ?? null,
+        catHardcoded: cat.itemsHardcoded ?? null,
+        dueño: null as "A" | "B" | null,
+        items: [] as ItemFloor[],
+        itemsOffset: 0,
+        empateCuenta: 0,
+      };
+    });
+
+    casillaDuelo = -1;
+    tableroAtacante = "A";
+    jug = {
+      A: { nombre: nombreA, decimas: 450 },
+      B: { nombre: nombreB, decimas: 450 },
+    };
+
+    $("tablero-nombre-a").textContent = nombreA;
+    $("tablero-nombre-b").textContent = nombreB;
+    $("final-nombre-a").textContent = nombreA;
+    $("final-nombre-b").textContent = nombreB;
+    $("nombre-a-display").textContent = nombreA;
+    $("nombre-b-display").textContent = nombreB;
+
+    renderTablero();
+  }
+
+  function getAdjacentIndices(idx: number): number[] {
+    const row = Math.floor(idx / 5);
+    const col = idx % 5;
+    const adj: number[] = [];
+    if (row > 0) adj.push((row - 1) * 5 + col);
+    if (row < 4) adj.push((row + 1) * 5 + col);
+    if (col > 0) adj.push(row * 5 + (col - 1));
+    if (col < 4) adj.push(row * 5 + (col + 1));
+    return adj;
+  }
+
+  function getAttackableIndices(player: "A" | "B"): Set<number> {
+    const mySquares = casillas.map((c, i) => c.dueño === player ? i : -1).filter((i) => i >= 0);
+    if (mySquares.length === 0) {
+      return new Set(casillas.map((_, i) => i).filter((i) => casillas[i].dueño !== player));
+    }
+    const attackable = new Set<number>();
+    for (const myIdx of mySquares) {
+      for (const adjIdx of getAdjacentIndices(myIdx)) {
+        if (casillas[adjIdx].dueño !== player) attackable.add(adjIdx);
+      }
+    }
+    return attackable;
+  }
+
+  function renderTablero() {
+    const countA = casillas.filter((c) => c.dueño === "A").length;
+    const countB = casillas.filter((c) => c.dueño === "B").length;
+    $("tablero-count-a").textContent = String(countA);
+    $("tablero-count-b").textContent = String(countB);
+
+    const attackable = getAttackableIndices(tableroAtacante);
+    const grid = $("tablero-grid");
+    grid.innerHTML = "";
+
+    casillas.forEach((casilla, idx) => {
+      const btn = document.createElement("button");
+      let bgClass = "floor-square-neutral";
+      if (casilla.dueño === "A") bgClass = "floor-square-a";
+      else if (casilla.dueño === "B") bgClass = "floor-square-b";
+
+      const esAtacable = attackable.has(idx);
+      const esDestacado = idx === casillaDuelo;
+
+      btn.className = [
+        bgClass,
+        "aspect-square rounded flex items-center justify-center text-xl transition-transform",
+        esAtacable ? "floor-square-attackable hover:scale-105 cursor-pointer" : "cursor-default",
+        esDestacado ? "scale-105" : "",
+      ].filter(Boolean).join(" ");
+
+      btn.textContent = casilla.catEmoji;
+      btn.title = casilla.catNombre;
+      if (esAtacable) btn.addEventListener("click", () => mostrarPreDuelo(idx));
+      grid.appendChild(btn);
+    });
+
+    const nombreAtacante = jug ? (tableroAtacante === "A" ? jug.A.nombre : jug.B.nombre) : tableroAtacante;
+    if (attackable.size === 0 && (countA > 0 || countB > 0)) {
+      tableroAtacante = tableroAtacante === "A" ? "B" : "A";
+      renderTablero();
+      return;
+    }
+    $("tablero-instruccion").textContent = `${nombreAtacante}: toca una casilla para retarla`;
+  }
+
+  function mostrarPreDuelo(idx: number) {
+    casillaDuelo = idx;
+    const casilla = casillas[idx];
+    $("preduel-emoji").textContent = casilla.catEmoji;
+    $("preduel-nombre-cat").textContent = casilla.catNombre;
+    $("preduel-overlay").classList.remove("hidden");
+  }
+
+  $("preduel-empezar").addEventListener("click", () => {
+    $("preduel-overlay").classList.add("hidden");
+    atacarCasilla(casillaDuelo);
+  });
+
+  async function atacarCasilla(idx: number) {
+    mostrar(pLoader);
+    const casilla = casillas[idx];
+
+    if (casilla.items.length === 0) {
+      try {
+        let raw: ItemFloor[];
+        if (casilla.catHardcoded) {
+          raw = [...casilla.catHardcoded];
+        } else {
+          const catDef = todasCats.find((c) => c.slug === casilla.catSlug);
+          raw = await generarFloorPredefinida(casilla.catSlug, casilla.catNombres!, catDef?.ocupacionesWikidata, catDef?.instanciasWikidata, catDef?.descripcionWikidata);
+        }
+        casilla.items = [...raw].sort(() => Math.random() - 0.5);
+        casilla.itemsOffset = 0;
+      } catch {
+        mostrar(pTablero);
+        renderTablero();
+        return;
+      }
+    }
+
+    const off = casilla.itemsOffset;
+    items = [...casilla.items.slice(off), ...casilla.items.slice(0, off)];
+    categoriaActual = casilla.catNombre;
+    indice = 0;
+    turno = tableroAtacante;
+    terminado = false;
+    jug.A.decimas = 450;
+    jug.B.decimas = 450;
+    $("nombre-a-display").textContent = jug.A.nombre;
+    $("nombre-b-display").textContent = jug.B.nombre;
+
+    mostrar(pJuego);
+    iniciarTurno();
+  }
+
+  function terminarDueloTablero() {
+    const sA = jug.A.decimas;
+    const sB = jug.B.decimas;
+    let ganadorDuelo: "A" | "B" | null = null;
+    if (sA > sB) ganadorDuelo = "A";
+    else if (sB > sA) ganadorDuelo = "B";
+
+    if (!ganadorDuelo && casillaDuelo >= 0) {
+      casillas[casillaDuelo].empateCuenta++;
+      if (casillas[casillaDuelo].empateCuenta >= 3) {
+        ganadorDuelo = Math.random() < 0.5 ? "A" : "B";
+        casillas[casillaDuelo].empateCuenta = 0;
+      }
+    }
+
+    if (ganadorDuelo && casillaDuelo >= 0) {
+      casillas[casillaDuelo].empateCuenta = 0;
+      casillas[casillaDuelo].dueño = ganadorDuelo;
+      for (const c of casillas) { if (c.dueño !== null) c.dueño = ganadorDuelo; }
+      tableroAtacante = ganadorDuelo;
+    } else {
+      tableroAtacante = tableroAtacante === "A" ? "B" : "A";
+    }
+
+    const countA = casillas.filter((c) => c.dueño === "A").length;
+    const countB = casillas.filter((c) => c.dueño === "B").length;
+    if (countA === 25 || countB === 25) { mostrarFinalTablero(); return; }
+
+    jug.A.decimas = 450;
+    jug.B.decimas = 450;
+    renderTablero();
+    mostrar(pTablero);
+  }
+
+  function mostrarFinalTablero() {
+    const countA = casillas.filter((c) => c.dueño === "A").length;
+    const countB = casillas.filter((c) => c.dueño === "B").length;
+    let ganador = countA > countB ? `🥇 Gana ${jug.A.nombre}` : countB > countA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
+    $("texto-ganador").textContent = ganador;
+    $("final-tiempo-a").textContent = String(countA);
+    $("final-tiempo-b").textContent = String(countB);
+    $("final-label-a").textContent = "casillas";
+    $("final-label-b").textContent = "casillas";
+    mostrar(pFinal);
+    lanzarConfeti();
+  }
+
+  // ── Render ───────────────────────────────────────────────────
+  function renderTimers() {
+    const sa = Math.max(0, Math.ceil(jug.A.decimas / 10));
+    const sb = Math.max(0, Math.ceil(jug.B.decimas / 10));
+    $("timer-a").textContent = String(sa);
+    $("timer-b").textContent = String(sb);
+    $("timer-a").classList.toggle("animate-pulse", turno === "A" && sa <= 10);
+    $("timer-b").classList.toggle("animate-pulse", turno === "B" && sb <= 10);
+  }
+
+  const ZONA_BASE = "shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all";
+  function renderTurno() {
+    const esA = turno === "A";
+    $("zona-a").className = `${ZONA_BASE} ${esA ? "floor-zona-active-a" : "floor-zona-inactive"}`;
+    $("zona-b").className = `${ZONA_BASE} ${!esA ? "floor-zona-active-b" : "floor-zona-inactive"}`;
+  }
+
+  function mostrarImagen() {
+    if (items.length === 0) { terminar(); return; }
+    if (indice >= items.length) { items = [...items].sort(() => Math.random() - 0.5); indice = 0; }
+    const item = items[indice];
+    const img = $("imagen-item") as HTMLImageElement;
+    const ph = $("imagen-placeholder");
+    img.onload = () => { img.classList.remove("hidden"); ph.classList.add("hidden"); };
+    img.onerror = () => { img.classList.add("hidden"); ph.classList.remove("hidden"); (ph as HTMLElement).textContent = "📷"; };
+    img.classList.add("hidden");
+    ph.classList.remove("hidden");
+    (ph as HTMLElement).textContent = "📷";
+    img.src = item.imagen;
+    img.alt = item.nombre;
+    $("overlay-acierto").classList.add("hidden");
+    $("texto-voz").textContent = "🎤 Escuchando...";
+  }
+
+  // ── Turno ────────────────────────────────────────────────────
+  function iniciarTurno() {
+    bloqueado = false;
+    if (items.length === 0) { terminar(); return; }
+    if (indice >= items.length) { items = [...items].sort(() => Math.random() - 0.5); indice = 0; }
+    renderTurno();
+    renderTimers();
+    mostrarImagen();
+    pararTimer();
+    tick = setInterval(() => {
+      const j = jug[turno];
+      j.decimas -= 1;
+      renderTimers();
+      if (j.decimas <= 0) {
+        j.decimas = 0;
+        bloqueado = true;
+        pararTimer();
+        pararVoz();
+        $("texto-voz").textContent = `⏱️ ¡Se acabó el tiempo de ${j.nombre}!`;
+        setTimeout(terminar, 1200);
+      }
+    }, 100);
+    iniciarReconocedor();
+    iniciarVoz();
+  }
+
+  function pararTimer() { if (tick) { clearInterval(tick); tick = null; } }
+  function pararVoz() { if (reco) { reco.parar(); reco = null; } }
+
+  function iniciarReconocedor() {
+    pararVoz();
+    if (!navegadorSoportaVoz()) return;
+    reco = crearReconocedor({
+      onTranscripcion: (texto) => {
+        if (bloqueado || terminado) return;
+        const item = items[indice];
+        if (!item) return;
+        $("texto-voz").textContent = `"${texto}"`;
+        if (aciertoFlexible(texto, item.nombre, categoriaActual)) registrarAcierto();
+      },
+      onError: (err) => {
+        if (bloqueado || terminado) return;
+        const msgs: Record<string, string> = {
+          "not-allowed": "Sin permiso de micrófono — actívalo en el navegador",
+          "audio-capture": "No se detecta micrófono",
+          "network": "Error de red en el reconocedor",
+          "aborted": "", "no-speech": "",
+        };
+        const txt = msgs[err] ?? `Error de voz: ${err}`;
+        if (txt) $("texto-voz").textContent = `⚠️ ${txt} — usa el botón ✓`;
+      },
+      lang: "es-ES",
+    });
+    reco?.iniciar();
+  }
+
+  function iniciarVoz() {
+    if (!reco) { $("texto-voz").textContent = "⚠️ Sin voz — usa el botón ✓"; return; }
+    reco.resetOffset();
+    $("texto-voz").textContent = "🎤 Escuchando...";
+  }
+
+  // ── Acciones ────────────────────────────────────────────────
+  function registrarAcierto() {
+    if (bloqueado) return;
+    bloqueado = true;
+    pararTimer();
+    const nombre = items[indice].nombre;
+    $("overlay-nombre").textContent = nombre;
+    $("overlay-acierto").classList.remove("hidden");
+    $("texto-voz").textContent = `✓ ¡${nombre}!`;
+    indice++;
+    renderTimers();
+    setTimeout(cambiarTurno, 1200);
+  }
+
+  function registrarPase() {
+    if (bloqueado) return;
+    bloqueado = true;
+    pararTimer();
+    const nombre = items[indice].nombre;
+    const j = jug[turno];
+    j.decimas = Math.max(0, j.decimas - 30);
+    indice++;
+    renderTimers();
+    $("overlay-pase-nombre").textContent = nombre;
+    $("overlay-pase").classList.remove("hidden");
+    setTimeout(() => {
+      $("overlay-pase").classList.add("hidden");
+      if (j.decimas <= 0) {
+        $("texto-voz").textContent = `⏱️ ¡Se acabó el tiempo de ${j.nombre}!`;
+        setTimeout(terminar, 800);
+      } else {
+        iniciarTurno();
+      }
+    }, 1200);
+  }
+
+  function cambiarTurno() {
+    if (terminado) return;
+    turno = turno === "A" ? "B" : "A";
+    iniciarTurno();
+  }
+
+  function terminar() {
+    if (terminado) return;
+    terminado = true;
+    pararTimer();
+    pararVoz();
+
+    if (modo === "tablero") {
+      if (casillaDuelo >= 0 && casillaDuelo < casillas.length) {
+        const c = casillas[casillaDuelo];
+        if (c.items.length > 0) c.itemsOffset = (c.itemsOffset + indice) % c.items.length;
+      }
+      terminarDueloTablero();
+      return;
+    }
+
+    const sA = Math.max(0, Math.ceil(jug.A.decimas / 10));
+    const sB = Math.max(0, Math.ceil(jug.B.decimas / 10));
+    $("final-tiempo-a").textContent = `${sA}s`;
+    $("final-tiempo-b").textContent = `${sB}s`;
+    $("final-label-a").textContent = "tiempo restante";
+    $("final-label-b").textContent = "tiempo restante";
+    let ganador = sA > sB ? `🥇 Gana ${jug.A.nombre}` : sB > sA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
+    $("texto-ganador").textContent = ganador;
+    mostrar(pFinal);
+    lanzarConfeti();
+  }
+
+  $("boton-pasar").addEventListener("click", registrarPase);
+  $("boton-acierto-manual").addEventListener("click", registrarAcierto);
+
+  $("boton-revancha").addEventListener("click", () => {
+    if (modo === "tablero") {
+      pararVoz();
+      initTablero(jug.A.nombre, jug.B.nombre);
+      mostrar(pTablero);
+    } else {
+      pararVoz();
+      mostrar(pSetup);
+    }
+  });
+
+  $("boton-volver").addEventListener("click", () => {
+    if (!pBienvenida.classList.contains("hidden")) {
+      // ya en bienvenida, no hay nada a lo que volver
+    } else if (!pSetup.classList.contains("hidden")) {
+      mostrar(pBienvenida);
+    } else {
+      pararVoz();
+      pararTimer();
+      mostrar(pSetup);
+    }
+  });
+
+  function lanzarConfeti() {
+    const colores = ["#FF5757", "#FFD93D", "#4ECDC4", "#B084EE", "#95E1D3", "#FF6B9D"];
+    const cont = $("confeti");
+    cont.innerHTML = "";
+    for (let i = 0; i < 60; i++) {
+      const t = document.createElement("div");
+      const tam = 8 + Math.random() * 10;
+      t.style.cssText = `position:absolute;top:-20px;left:${Math.random() * 100}%;width:${tam}px;height:${tam}px;background:${colores[Math.floor(Math.random() * colores.length)]};border:2px solid #1A1A1A;border-radius:${Math.random() > 0.5 ? "50%" : "4px"};animation:confeti ${2 + Math.random() * 2}s ${Math.random() * 1.5}s linear forwards;`;
+      cont.appendChild(t);
+    }
+  }
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible" && !bloqueado && !terminado && items.length > 0) {
+      reco?.resetOffset();
+      $("texto-voz").textContent = "🎤 Escuchando...";
+    }
+  });
+</script>

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-titulo: "Fredoka", system-ui, sans-serif;
+  --font-cuerpo: "DM Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-cuerpo);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes confeti {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.wiggle { animation: wiggle 0.5s ease-in-out infinite; }
+.flotar { animation: flotar 3s ease-in-out infinite; }

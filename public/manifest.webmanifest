@@ -1,0 +1,25 @@
+{
+  "name": "El Suelo",
+  "short_name": "El Suelo",
+  "description": "Di qué ves antes de que se acabe tu tiempo.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#050c1e",
+  "theme_color": "#050c1e",
+  "icons": [
+    {
+      "src": "/el-suelo-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/el-suelo-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

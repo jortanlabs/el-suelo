@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <filter id="gp" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="gy" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#050c1e"/>
+
+  <!-- Grid: 3×3, cell=130, gap=11, total=412, offset=50 -->
+  <!-- Row 0 — pink pink empty -->
+  <rect x="50" y="50" width="130" height="130" rx="16" fill="#ff1dce" filter="url(#gp)"/>
+  <rect x="191" y="50" width="130" height="130" rx="16" fill="#ff1dce" filter="url(#gp)"/>
+  <rect x="332" y="50" width="130" height="130" rx="16" fill="#0d1f4a" stroke="#163575" stroke-width="2"/>
+
+  <!-- Row 1 — pink contested yellow -->
+  <rect x="50" y="191" width="130" height="130" rx="16" fill="#ff1dce" filter="url(#gp)"/>
+  <rect x="191" y="191" width="130" height="130" rx="16" fill="#0d1f4a" stroke="#ffcc00" stroke-width="4"/>
+  <rect x="332" y="191" width="130" height="130" rx="16" fill="#ffe100" filter="url(#gy)"/>
+
+  <!-- Row 2 — empty yellow yellow -->
+  <rect x="50" y="332" width="130" height="130" rx="16" fill="#0d1f4a" stroke="#163575" stroke-width="2"/>
+  <rect x="191" y="332" width="130" height="130" rx="16" fill="#ffe100" filter="url(#gy)"/>
+  <rect x="332" y="332" width="130" height="130" rx="16" fill="#ffe100" filter="url(#gy)"/>
+
+  <!-- Corner brackets in gold -->
+  <path d="M18 18 L18 65 M18 18 L65 18" stroke="#ffcc00" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M494 18 L494 65 M494 18 L447 18" stroke="#ffcc00" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M18 494 L18 447 M18 494 L65 494" stroke="#ffcc00" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M494 494 L494 447 M494 494 L447 494" stroke="#ffcc00" stroke-width="9" fill="none" stroke-linecap="round"/>
+</svg>
