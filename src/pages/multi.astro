@@ -67,11 +67,11 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
           <div>
             <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Modo</label>
             <div class="flex gap-2">
-              <button id="modo-rapida" class="floor-btn floor-btn-a flex-1 px-3 py-2 text-sm font-titulo">⚡ Partida rápida</button>
+              <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">⚡ Partida rápida</button>
               <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
             </div>
           </div>
-          <div id="seccion-categoria">
+          <div id="seccion-categoria" class="hidden">
             <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Categoría</label>
             <div class="grid grid-cols-2 gap-2">
               {cats.map((cat) => (
@@ -92,7 +92,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
           </div>
           <div class="flex gap-2">
             <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-6 py-4">¡A jugar! →</button>
-            <button id="boton-aleatorio" class="floor-btn floor-btn-gold font-titulo font-bold text-xl px-4 py-4" title="Categoría aleatoria">🎲</button>
+            <button id="boton-aleatorio" class="hidden floor-btn floor-btn-gold font-titulo font-bold text-xl px-4 py-4" title="Categoría aleatoria">🎲</button>
           </div>
           <p id="error-setup" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
         </div>
@@ -529,7 +529,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
   document.querySelector<HTMLButtonElement>(".cat-btn")?.click();
 
   $("modo-rapida").addEventListener("click", () => {
-    modo = "rapida";
+    modo = "rapida"; modoElegido = true;
     $("seccion-categoria").classList.remove("hidden");
     $("nota-tablero").classList.add("hidden");
     $("boton-aleatorio").classList.remove("hidden");
@@ -540,7 +540,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
   });
 
   $("modo-tablero").addEventListener("click", () => {
-    modo = "tablero";
+    modo = "tablero"; modoElegido = true;
     $("seccion-categoria").classList.add("hidden");
     $("nota-tablero").classList.remove("hidden");
     $("boton-aleatorio").classList.add("hidden");
@@ -568,10 +568,15 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
     ($("categoria-libre") as HTMLInputElement).value = tema;
   });
 
+  let modoElegido = false;
+
   $("boton-empezar").addEventListener("click", async () => {
     if (rol !== "host") return;
     const errEl = $("error-setup");
     errEl.classList.add("hidden");
+    if (!modoElegido) {
+      errEl.textContent = "Elige un modo primero."; errEl.classList.remove("hidden"); return;
+    }
     if (modo === "tablero") {
       sync({ fase: "cargando", nombreA, nombreB, modo });
       mostrar(pLoader);
