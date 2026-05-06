@@ -40,7 +40,7 @@ const cats = categoriasFloor.map((c) => ({
           ¡Jugar!
         </button>
 
-        <a href="#kofi" id="kofi-link" class="flex items-center gap-2 text-[#163575] hover:text-[#2a5090] transition text-sm font-titulo opacity-60 hover:opacity-100">
+        <a href="#" id="kofi-link" class="flex items-center gap-2 text-[#163575] hover:text-[#2a5090] transition text-sm font-titulo opacity-60 hover:opacity-100">
           <span>☕</span>
           <span>Apoya el juego</span>
         </a>
@@ -803,6 +803,7 @@ const cats = categoriasFloor.map((c) => ({
     img.src = item.imagen;
     img.alt = item.nombre;
     $("overlay-acierto").classList.add("hidden");
+    $("overlay-pase").classList.add("hidden");
     $("texto-voz").textContent = "🎤 Escuchando...";
   }
 
@@ -855,7 +856,7 @@ const cats = categoriasFloor.map((c) => ({
           "aborted": "", "no-speech": "",
         };
         const txt = msgs[err] ?? `Error de voz: ${err}`;
-        if (txt) $("texto-voz").textContent = `⚠️ ${txt} — usa el botón ✓`;
+        if (txt) $("texto-voz").textContent = `⚠️ ${txt} — di la respuesta en voz alta`;
       },
       lang: "es-ES",
     });
@@ -863,7 +864,7 @@ const cats = categoriasFloor.map((c) => ({
   }
 
   function iniciarVoz() {
-    if (!reco) { $("texto-voz").textContent = "⚠️ Sin voz — usa el botón ✓"; return; }
+    if (!reco) { $("texto-voz").textContent = "⚠️ Sin voz — di la respuesta en voz alta"; return; }
     reco.resetOffset();
     $("texto-voz").textContent = "🎤 Escuchando...";
   }
