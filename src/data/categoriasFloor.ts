@@ -15,6 +15,8 @@ export interface CategoriaFloor {
   instanciasWikidata?: string[];
   /** Palabras clave en la descripción de Wikidata para preferir el match correcto al buscar. */
   descripcionWikidata?: string[];
+  /** API especializada a usar en lugar de Wikidata para esta categoría. */
+  apiEspecializada?: "deezer";
 }
 
 const BANDERAS: Array<{ pais: string; codigo: string }> = [
@@ -85,8 +87,7 @@ export const categoriasFloor: CategoriaFloor[] = [
     slug: "cantantes",
     nombre: "Cantantes",
     emoji: "🎤",
-    // Q177220 singer · Q36834 composer · Q753110 songwriter · Q488111 recording artist
-    ocupacionesWikidata: ["Q177220", "Q36834", "Q753110", "Q488111"],
+    apiEspecializada: "deezer",
     nombres: [
       "Michael Jackson", "Madonna", "Freddie Mercury", "Beyoncé",
       "Adele", "Lady Gaga", "Shakira", "Elvis Presley",

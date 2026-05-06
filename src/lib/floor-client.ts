@@ -40,19 +40,73 @@ function guardarCache(k: string, data: ItemFloor[]): void {
   } catch {}
 }
 
+// ── Deezer ──────────────────────────────────────────────────────────────────
+
+type DeezerArtist = { id: number; name: string; picture_xl: string; nb_fan: number };
+type DeezerSearchResp = { data?: DeezerArtist[] };
+
+function norm(s: string): string {
+  return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").trim();
+}
+
+const DEEZER_PLACEHOLDER = "d41d8cd98f00b204e9800998ecf8427e";
+
+async function resolverConDeezer(nombres: string[], paralelos = 6): Promise<ItemFloor[]> {
+  const result: ItemFloor[] = [];
+  for (let i = 0; i < nombres.length; i += paralelos) {
+    const lote = nombres.slice(i, i + paralelos);
+    const resueltos = await Promise.all(
+      lote.map(async (nombre): Promise<ItemFloor | null> => {
+        try {
+          const url = `https://api.deezer.com/search/artist?q=${encodeURIComponent(nombre)}&limit=5`;
+          const res = await fetch(url);
+          if (!res.ok) return null;
+          const data = (await res.json()) as DeezerSearchResp;
+          if (!data.data?.length) return null;
+          const normNombre = norm(nombre);
+          const exacto = data.data.find((a) => norm(a.name) === normNombre);
+          const artist = exacto ?? data.data.sort((a, b) => b.nb_fan - a.nb_fan)[0];
+          if (!artist.picture_xl || artist.picture_xl.includes(DEEZER_PLACEHOLDER)) return null;
+          return { nombre, imagen: artist.picture_xl, palabraClave: palabraClaveDe(nombre) };
+        } catch { return null; }
+      }),
+    );
+    for (const item of resueltos) if (item) result.push(item);
+  }
+  return result;
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+
 export async function generarFloorPredefinida(
   slug: string,
   nombres: string[],
   ocupaciones?: string[],
   instancias?: string[],
   descripcion?: string[],
+  apiEspecializada?: string,
 ): Promise<ItemFloor[]> {
   const k = clave(slug);
   const cached = leerCache(k);
   if (cached && cached.length > 0 && !cached[0].imagen.includes("Special:FilePath")) {
     return cached;
   }
-  const items = await resolverNombres(nombres, 5, ocupaciones, instancias, descripcion);
+
+  let items: ItemFloor[];
+
+  if (apiEspecializada === "deezer") {
+    items = await resolverConDeezer(nombres);
+    if (items.length < 8) {
+      // Complementar con Wikidata para los que Deezer no encontró
+      const encontrados = new Set(items.map((i) => i.nombre));
+      const faltantes = nombres.filter((n) => !encontrados.has(n));
+      const extra = await resolverNombres(faltantes, 5, ocupaciones, instancias, descripcion);
+      items = [...items, ...extra];
+    }
+  } else {
+    items = await resolverNombres(nombres, 5, ocupaciones, instancias, descripcion);
+  }
+
   if (items.length < 8) throw new Error(`Solo se encontraron ${items.length} imágenes. Recarga para intentarlo de nuevo.`);
   guardarCache(k, items);
   return items;

@@ -545,7 +545,7 @@ const cats = categoriasFloor.map((c) => ({
         if (cat.itemsHardcoded) {
           raw = [...cat.itemsHardcoded];
         } else {
-          raw = await generarFloorPredefinida(cat.slug, cat.nombres!, cat.ocupacionesWikidata, cat.instanciasWikidata, cat.descripcionWikidata);
+          raw = await generarFloorPredefinida(cat.slug, cat.nombres!, cat.ocupacionesWikidata, cat.instanciasWikidata, cat.descripcionWikidata, cat.apiEspecializada);
         }
       }
       items = [...raw].sort(() => Math.random() - 0.5);
@@ -699,7 +699,7 @@ const cats = categoriasFloor.map((c) => ({
           raw = [...casilla.catHardcoded];
         } else {
           const catDef = todasCats.find((c) => c.slug === casilla.catSlug);
-          raw = await generarFloorPredefinida(casilla.catSlug, casilla.catNombres!, catDef?.ocupacionesWikidata, catDef?.instanciasWikidata, catDef?.descripcionWikidata);
+          raw = await generarFloorPredefinida(casilla.catSlug, casilla.catNombres!, catDef?.ocupacionesWikidata, catDef?.instanciasWikidata, catDef?.descripcionWikidata, catDef?.apiEspecializada);
         }
         casilla.items = [...raw].sort(() => Math.random() - 0.5);
         casilla.itemsOffset = 0;
