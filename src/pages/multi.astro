@@ -1,0 +1,1004 @@
+---
+export const prerender = true;
+import Base from "../layouts/Base.astro";
+import { categoriasFloor } from "../data/categoriasFloor.ts";
+
+const cats = categoriasFloor.map((c) => ({ slug: c.slug, nombre: c.nombre, emoji: c.emoji }));
+---
+
+<Base titulo="El Suelo — 2 jugadores" descripcion="Juega El Suelo contra alguien desde otro móvil.">
+  <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
+    <nav class="px-4 py-3 flex items-center border-b-2 border-[#163575] shrink-0">
+      <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">← Volver</button>
+    </nav>
+
+    <!-- ENTRADA -->
+    <section id="pantalla-entrada" class="flex-1 flex flex-col items-center justify-center px-6 gap-6 overflow-y-auto">
+      <div class="text-center">
+        <div class="inline-block relative px-10 py-3 mb-2">
+          <span class="floor-corner floor-corner-tl"></span><span class="floor-corner floor-corner-tr"></span>
+          <span class="floor-corner floor-corner-bl"></span><span class="floor-corner floor-corner-br"></span>
+          <h1 class="font-titulo text-4xl font-bold neon-gold uppercase tracking-[0.25em]">El suelo</h1>
+        </div>
+        <p class="text-[#2a5090] font-titulo text-sm">Modo 2 móviles</p>
+      </div>
+      <div class="w-full max-w-xs flex flex-col gap-3">
+        <input id="nombre-propio" type="text" placeholder="Tu nombre" maxlength="20"
+          class="floor-input text-center text-lg" autocomplete="off" />
+        <button id="boton-crear" class="floor-btn floor-btn-a w-full font-titulo font-bold text-xl py-4">Crear sala</button>
+        <div class="flex items-center gap-2">
+          <div class="flex-1 h-px bg-[#163575]"></div>
+          <span class="text-[#2a5090] font-titulo text-xs">o</span>
+          <div class="flex-1 h-px bg-[#163575]"></div>
+        </div>
+        <div class="flex gap-2">
+          <input id="codigo-sala" type="text" placeholder="Código" maxlength="4"
+            class="floor-input text-center text-xl uppercase tracking-widest font-bold w-32" autocomplete="off" />
+          <button id="boton-unirse" class="floor-btn floor-btn-gold flex-1 font-titulo font-bold text-lg py-3">Unirse</button>
+        </div>
+        <p id="error-entrada" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
+      </div>
+    </section>
+
+    <!-- SALA (lobby) -->
+    <section id="pantalla-sala" class="flex-1 flex flex-col items-center justify-center px-6 gap-5 hidden">
+      <div class="floor-card p-6 w-full max-w-xs text-center">
+        <p class="text-[#2a5090] font-titulo text-xs uppercase tracking-widest mb-2">Código de sala</p>
+        <p id="sala-codigo" class="font-titulo text-6xl font-bold neon-gold tracking-[0.3em] mb-5"></p>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="w-2 h-2 rounded-full bg-[#ff1dce] shrink-0" style="box-shadow:0 0 8px #ff1dce"></span>
+          <span id="sala-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
+          <span class="text-[#2a5090] font-titulo text-xs ml-auto">anfitrión</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span id="sala-dot-b" class="w-2 h-2 rounded-full bg-[#2a5090] shrink-0"></span>
+          <span id="sala-nombre-b" class="font-titulo text-[#2a5090] text-sm italic">Esperando jugador 2...</span>
+        </div>
+      </div>
+      <button id="boton-sala-jugar" class="floor-btn floor-btn-gold w-full max-w-xs font-titulo font-bold text-xl py-4 hidden">Elegir modo →</button>
+      <p id="sala-info" class="text-[#2a5090] font-titulo text-xs text-center">Comparte el código con el otro jugador</p>
+    </section>
+
+    <!-- SETUP (host) -->
+    <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-5 hidden">
+      <div class="max-w-md w-full mx-auto">
+        <div class="floor-card p-5 space-y-4">
+          <div>
+            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Modo</label>
+            <div class="flex gap-2">
+              <button id="modo-rapida" class="floor-btn floor-btn-a flex-1 px-3 py-2 text-sm font-titulo">⚡ Partida rápida</button>
+              <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
+            </div>
+          </div>
+          <div id="seccion-categoria">
+            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Categoría</label>
+            <div class="grid grid-cols-2 gap-2">
+              {cats.map((cat) => (
+                <button class="cat-btn floor-card-small px-3 py-2 text-sm font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left" data-slug={cat.slug}>
+                  {cat.emoji} {cat.nombre}
+                </button>
+              ))}
+              <button class="cat-btn floor-card-small px-3 py-2 text-sm font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left col-span-2" data-slug="libre">
+                ✨ Categoría libre...
+              </button>
+            </div>
+            <div id="libre-container" class="hidden mt-2">
+              <input id="categoria-libre" type="text" placeholder="Ej: golfistas famosos..." maxlength="100" class="floor-input" />
+            </div>
+          </div>
+          <div id="nota-tablero" class="hidden floor-card-small px-4 py-3 border-[#ffcc0033]">
+            <p class="text-sm text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría aleatoria</p>
+          </div>
+          <div class="flex gap-2">
+            <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-6 py-4">¡A jugar! →</button>
+            <button id="boton-aleatorio" class="floor-btn floor-btn-gold font-titulo font-bold text-xl px-4 py-4" title="Categoría aleatoria">🎲</button>
+          </div>
+          <p id="error-setup" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SETUP GUEST (waiting) -->
+    <section id="pantalla-setup-guest" class="flex-1 flex flex-col items-center justify-center px-4 gap-3 hidden">
+      <div class="text-5xl wiggle">⏳</div>
+      <p class="font-titulo text-xl font-bold text-[#e8e8ff]">El anfitrión está eligiendo...</p>
+      <p id="setup-guest-nombres" class="text-[#2a5090] font-titulo text-sm"></p>
+    </section>
+
+    <!-- LOADER -->
+    <section id="pantalla-loader" class="flex-1 flex items-center justify-center px-4 hidden">
+      <div class="text-center">
+        <div class="text-6xl mb-4 wiggle inline-block">🔍</div>
+        <h2 class="font-titulo text-2xl font-bold text-[#e8e8ff] mb-2">Cargando imágenes...</h2>
+        <p id="loader-progreso" class="text-[#2a5090] text-sm font-titulo">Un momento.</p>
+      </div>
+    </section>
+
+    <!-- TABLERO -->
+    <section id="pantalla-tablero" class="flex-1 flex flex-col overflow-hidden hidden relative">
+      <div class="px-4 py-3 flex items-center justify-center gap-3 border-b-2 border-[#163575] shrink-0">
+        <span class="inline-block w-4 h-4 rounded-sm bg-[#ff1dce]" style="box-shadow:0 0 10px #ff1dce"></span>
+        <span id="tablero-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
+        <span id="tablero-count-a" class="font-titulo font-bold text-xl tabular-nums neon-a"></span>
+        <span class="font-titulo text-[#2a5090] text-sm px-2 font-bold">VS</span>
+        <span id="tablero-count-b" class="font-titulo font-bold text-xl tabular-nums neon-b"></span>
+        <span id="tablero-nombre-b" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
+        <span class="inline-block w-4 h-4 rounded-sm bg-[#ffe100]" style="box-shadow:0 0 10px #ffe100"></span>
+      </div>
+      <div class="flex-1 flex flex-col items-center justify-center px-4 py-4 min-h-0">
+        <div id="tablero-grid" class="grid grid-cols-5 gap-1.5 w-full max-w-sm"></div>
+      </div>
+      <div class="px-4 py-3 text-center shrink-0">
+        <p id="tablero-instruccion" class="font-titulo text-sm font-bold text-[#2a5090] uppercase tracking-wider"></p>
+      </div>
+      <div id="preduel-overlay" class="hidden absolute inset-0 flex flex-col items-center justify-center z-20 px-8" style="background:#07070fee">
+        <p class="text-xs text-[#2a5090] font-titulo uppercase tracking-widest mb-2">Categoría del duelo</p>
+        <div id="preduel-emoji" class="text-6xl my-2"></div>
+        <p id="preduel-nombre-cat" class="font-titulo font-bold text-2xl text-[#e8e8ff] text-center mb-8"></p>
+        <button id="preduel-empezar" class="floor-btn floor-btn-a font-titulo font-bold text-xl px-8 py-4 hidden">¡A jugar! →</button>
+        <p id="preduel-espera" class="text-[#2a5090] font-titulo text-sm hidden">Esperando al atacante...</p>
+      </div>
+    </section>
+
+    <!-- JUEGO -->
+    <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0">
+      <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
+        <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
+          <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
+          <span id="nombre-a-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
+        </div>
+        <div class="flex-1 flex flex-col items-center justify-center min-w-0 min-h-0">
+          <div class="w-full max-w-xs">
+            <div class="floor-image-box">
+              <img id="imagen-item" src="" alt="" class="absolute inset-0 w-full h-full object-contain hidden" />
+              <span id="imagen-placeholder" class="absolute inset-0 flex items-center justify-center text-5xl text-[#163575] font-titulo font-bold text-center px-2">📷</span>
+              <div id="overlay-acierto" class="floor-overlay-ok hidden">
+                <span class="font-titulo text-6xl font-bold text-[#07070f]">✓</span>
+                <span id="overlay-nombre" class="font-titulo text-sm font-bold text-[#07070f] mt-1 text-center px-2"></span>
+              </div>
+              <div id="overlay-pase" class="floor-overlay-pass hidden">
+                <span class="font-titulo text-2xl font-bold text-[#07070f]">Pasado →</span>
+                <span id="overlay-pase-nombre" class="font-titulo text-sm font-bold text-[#07070f] mt-1 text-center px-2"></span>
+              </div>
+            </div>
+          </div>
+          <p id="texto-voz" class="mt-1.5 text-xs text-[#2a5090] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
+        </div>
+        <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
+          <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
+          <span id="nombre-b-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
+        </div>
+      </div>
+      <div class="px-6 pt-2 pb-[max(16px,env(safe-area-inset-bottom))] flex items-center justify-center shrink-0">
+        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar −3s</button>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section id="pantalla-final" class="flex-1 flex items-center justify-center px-4 py-8 hidden relative overflow-hidden">
+      <div id="confeti" class="absolute inset-0 pointer-events-none"></div>
+      <div class="max-w-sm w-full text-center relative z-10">
+        <div class="text-7xl mb-4 flotar inline-block">🏆</div>
+        <h1 class="font-titulo text-3xl font-bold text-[#e8e8ff] mb-2 uppercase tracking-widest">¡Partida terminada!</h1>
+        <p id="texto-ganador" class="font-titulo text-2xl mb-6 neon-gold"></p>
+        <div class="grid grid-cols-2 gap-3 mb-8">
+          <div class="floor-card-small p-4" style="border-color:#ff1dce44">
+            <p id="final-nombre-a" class="font-titulo font-bold text-[#ff1dce] text-sm mb-1 uppercase tracking-wide"></p>
+            <p id="final-valor-a" class="font-titulo font-bold text-4xl floor-timer" style="color:#ff1dce">0s</p>
+            <p id="final-label-a" class="text-xs text-[#2a5090] font-titulo">tiempo restante</p>
+          </div>
+          <div class="floor-card-small p-4" style="border-color:#ffe10044">
+            <p id="final-nombre-b" class="font-titulo font-bold text-[#ffe100] text-sm mb-1 uppercase tracking-wide"></p>
+            <p id="final-valor-b" class="font-titulo font-bold text-4xl floor-timer" style="color:#ffe100">0s</p>
+            <p id="final-label-b" class="text-xs text-[#2a5090] font-titulo">tiempo restante</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <button id="boton-revancha" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">Revancha →</button>
+          <button id="boton-menu-final" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  #floor-root {
+    --a: #ff1dce; --b: #ffe100; --gold: #f5c518; --bg: #050c1e;
+    --card: #091728; --border: #163575; --text: #e8f0ff; --dim: #2a5090;
+    --ok: #00ff88; --font-titulo: 'Barlow Condensed', sans-serif;
+    background: var(--bg);
+    background-image: linear-gradient(rgba(30,80,200,.15) 1px,transparent 1px),linear-gradient(90deg,rgba(30,80,200,.15) 1px,transparent 1px);
+    background-size: 52px 52px;
+    color: var(--text);
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .neon-a { color: var(--a); text-shadow: 0 0 20px var(--a); }
+  .neon-b { color: var(--b); text-shadow: 0 0 20px var(--b); }
+  .neon-gold { color: var(--gold); text-shadow: 0 0 15px var(--gold); }
+  .floor-btn { background:transparent;border:2px solid currentColor;border-radius:4px;font-weight:700;transition:all .15s;letter-spacing:.08em;text-transform:uppercase; }
+  .floor-btn-a { color:var(--a);box-shadow:0 0 12px color-mix(in srgb,var(--a) 50%,transparent); }
+  .floor-btn-a:hover { background:color-mix(in srgb,var(--a) 15%,transparent); }
+  .floor-btn-gold { color:var(--gold);box-shadow:0 0 12px color-mix(in srgb,var(--gold) 50%,transparent); }
+  .floor-btn-gold:hover { background:color-mix(in srgb,var(--gold) 15%,transparent); }
+  .floor-input { background:#050e20;border:2px solid var(--border);border-radius:4px;color:var(--text);padding:8px 16px;width:100%;outline:none;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.04em;transition:border-color .2s; }
+  .floor-input::placeholder { color:var(--dim); }
+  .floor-input:focus { border-color:var(--gold); }
+  .floor-card { background:var(--card);border:2px solid var(--border);border-radius:6px; }
+  .floor-card-small { background:var(--card);border:1px solid var(--border);border-radius:4px; }
+  .floor-image-box { border:2px solid var(--border);border-radius:6px;overflow:hidden;background:#050e20;aspect-ratio:1;position:relative;box-shadow:0 0 40px rgba(0,0,0,.8); }
+  .floor-overlay-ok:not(.hidden) { position:absolute;inset:0;background:color-mix(in srgb,var(--ok) 88%,transparent);display:flex;flex-direction:column;align-items:center;justify-content:center; }
+  .floor-overlay-pass:not(.hidden) { position:absolute;inset:0;background:color-mix(in srgb,var(--gold) 90%,transparent);display:flex;flex-direction:column;align-items:center;justify-content:center; }
+  .floor-zona-active-a { background:color-mix(in srgb,var(--a) 12%,transparent);border:2px solid var(--a);box-shadow:0 0 20px color-mix(in srgb,var(--a) 40%,transparent);color:var(--a); }
+  .floor-zona-active-b { background:color-mix(in srgb,var(--b) 10%,transparent);border:2px solid var(--b);box-shadow:0 0 20px color-mix(in srgb,var(--b) 40%,transparent);color:var(--b); }
+  .floor-zona-inactive { color:#2a2a44;border:2px solid transparent; }
+  .floor-timer { text-shadow:0 0 20px currentColor; }
+  .floor-cat-selected { color:var(--gold)!important;border-color:var(--gold)!important; }
+  .floor-corner { position:absolute;width:20px;height:20px; }
+  .floor-corner-tl { top:0;left:0;border-top:4px solid var(--gold);border-left:4px solid var(--gold); }
+  .floor-corner-tr { top:0;right:0;border-top:4px solid var(--gold);border-right:4px solid var(--gold); }
+  .floor-corner-bl { bottom:0;left:0;border-bottom:4px solid var(--gold);border-left:4px solid var(--gold); }
+  .floor-corner-br { bottom:0;right:0;border-bottom:4px solid var(--gold);border-right:4px solid var(--gold); }
+  :global(.floor-square-neutral) { background:#0c1e48;border:2px solid #2a5285; }
+  :global(.floor-square-a) { background:#ff1dce;border:2px solid #ff80e8;box-shadow:0 0 24px #ff1dce; }
+  :global(.floor-square-b) { background:#ffe100;border:2px solid #fff380;box-shadow:0 0 24px #ffe100; }
+  :global(.floor-square-attackable) { border:2px solid var(--gold)!important;box-shadow:0 0 12px var(--gold)!important;animation:floor-pulse-gold 1.4s ease-in-out infinite; }
+  @keyframes floor-pulse-gold { 0%,100%{box-shadow:0 0 8px var(--gold)}50%{box-shadow:0 0 22px var(--gold)} }
+  :global(body) { background:#050c1e!important; }
+</style>
+
+<script>
+  import Pusher from "pusher-js";
+  import type { Channel } from "pusher-js";
+  import {
+    generarFloor, generarFloorPredefinida,
+    type ItemFloor, crearReconocedor, navegadorSoportaVoz,
+    type ReconocedorVoz, aciertoFlexible,
+  } from "../lib/floor-client.ts";
+  import { categoriasFloor as todasCats } from "../data/categoriasFloor.ts";
+
+  const env = (import.meta as unknown as { env: Record<string, string> }).env ?? {};
+  const PUSHER_KEY = env.PUBLIC_PUSHER_KEY ?? "";
+  const PUSHER_CLUSTER = env.PUBLIC_PUSHER_CLUSTER ?? "eu";
+
+  // ── DOM ────────────────────────────────────────────────────
+  const $ = (id: string) => document.getElementById(id)!;
+  const pEntrada = $("pantalla-entrada");
+  const pSala = $("pantalla-sala");
+  const pSetup = $("pantalla-setup");
+  const pSetupGuest = $("pantalla-setup-guest");
+  const pLoader = $("pantalla-loader");
+  const pTablero = $("pantalla-tablero");
+  const pJuego = $("pantalla-juego");
+  const pFinal = $("pantalla-final");
+  const PANTALLAS = [pEntrada, pSala, pSetup, pSetupGuest, pLoader, pTablero, pJuego, pFinal];
+
+  function mostrar(p: HTMLElement) {
+    PANTALLAS.forEach((s) => s.classList.add("hidden"));
+    p.classList.remove("hidden");
+  }
+
+  // ── Estado global ──────────────────────────────────────────
+  let canal: Channel | null = null;
+  let rol: "host" | "guest" = "host";
+  let rolPropio: "A" | "B" = "A";
+  let codigo = "";
+  let nombreA = "", nombreB = "";
+  let modo: "rapida" | "tablero" = "rapida";
+  let categoriaSlug = "";
+  let categoriaLibreTexto = "";
+  let turno: "A" | "B" = "A";
+  let decimasA = 450, decimasB = 450;
+  let timestampTurno = 0;
+  let indice = 0;
+  let items: ItemFloor[] = [];
+  let categoriaActual = "";
+  let bloqueado = false;
+  let terminado = false;
+  let reco: ReconocedorVoz | null = null;
+  let gameTimeout: ReturnType<typeof setTimeout> | null = null;
+  let renderInt: ReturnType<typeof setInterval> | null = null;
+
+  // Tablero (host-only full data)
+  interface CasillaSync { catSlug: string; catEmoji: string; catNombre: string; dueño: "A" | "B" | null; }
+  interface CasillaFull extends CasillaSync {
+    catNombres: string[] | null; catHardcoded: ItemFloor[] | null;
+    items: ItemFloor[]; itemsOffset: number; empateCuenta: number;
+  }
+  let casillasSync: CasillaSync[] = [];
+  let casillasHost: CasillaFull[] = [];
+  let casillaDuelo = -1;
+  let tableroAtacante: "A" | "B" = "A";
+
+  // ── Pusher helpers ─────────────────────────────────────────
+  interface SyncEstado {
+    fase: string; nombreA: string; nombreB: string; modo: string;
+    turno?: string; decimasA?: number; decimasB?: number;
+    timestampTurno?: number; indice?: number;
+    items?: ItemFloor[]; categoriaActual?: string;
+    aciertoNombre?: string; paseNombre?: string;
+    casillas?: CasillaSync[]; casillaDuelo?: number; tableroAtacante?: string;
+    preduelEmoji?: string; preduelNombreCat?: string; preduelEsAtacante?: boolean;
+    ganadorTexto?: string; valorA?: string; valorB?: string; labelA?: string; labelB?: string;
+  }
+
+  function sync(estado: SyncEstado) {
+    if (!canal || rol !== "host") return;
+    canal.trigger("client-estado", estado);
+  }
+
+  function accion(tipo: string, extra?: Record<string, unknown>) {
+    if (!canal || rol !== "guest") return;
+    canal.trigger("client-accion", { tipo, ...extra });
+  }
+
+  // ── Generador de código ────────────────────────────────────
+  function generarCodigo(): string {
+    const chars = "ABCDEFGHJKMNPQRSTUVWXYZ23456789";
+    return Array.from({ length: 4 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
+  }
+
+  // ── Pantalla entrada ───────────────────────────────────────
+  function mostrarError(el: HTMLElement, msg: string) {
+    el.textContent = msg;
+    el.classList.remove("hidden");
+  }
+
+  $("boton-crear").addEventListener("click", () => {
+    const nombre = ($("nombre-propio") as HTMLInputElement).value.trim() || "Jugador A";
+    const errEl = $("error-entrada");
+    errEl.classList.add("hidden");
+    if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
+    rol = "host"; rolPropio = "A";
+    nombreA = nombre; nombreB = "";
+    codigo = generarCodigo();
+    initPusher(() => {
+      $("sala-codigo").textContent = codigo;
+      $("sala-nombre-a").textContent = nombreA;
+      ($("sala-dot-b") as HTMLElement).style.backgroundColor = "#2a5090";
+      $("sala-nombre-b").textContent = "Esperando jugador 2...";
+      ($("sala-nombre-b") as HTMLElement).className = "font-titulo text-[#2a5090] text-sm italic";
+      $("boton-sala-jugar").classList.add("hidden");
+      $("sala-info").textContent = "Comparte el código con el otro jugador";
+      mostrar(pSala);
+    });
+  });
+
+  $("boton-unirse").addEventListener("click", () => {
+    const nombre = ($("nombre-propio") as HTMLInputElement).value.trim() || "Jugador B";
+    const cod = ($("codigo-sala") as HTMLInputElement).value.trim().toUpperCase();
+    const errEl = $("error-entrada");
+    errEl.classList.add("hidden");
+    if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
+    if (cod.length !== 4) { mostrarError(errEl, "Introduce un código de 4 letras."); return; }
+    rol = "guest"; rolPropio = "B";
+    nombreB = nombre;
+    codigo = cod;
+    initPusher(() => {
+      $("sala-codigo").textContent = codigo;
+      $("sala-nombre-b").textContent = nombreB;
+      ($("sala-nombre-b") as HTMLElement).className = "font-titulo font-bold text-[#e8e8ff] text-sm";
+      ($("sala-dot-b") as HTMLElement).style.cssText = "background:#ffe100;box-shadow:0 0 8px #ffe100";
+      $("sala-info").textContent = "Conectado. Esperando al anfitrión...";
+      $("boton-sala-jugar").classList.add("hidden");
+      mostrar(pSala);
+      canal!.trigger("client-unirse", { nombre: nombreB });
+    });
+  });
+
+  function initPusher(onOk: () => void) {
+    const pusher = new Pusher(PUSHER_KEY, { cluster: PUSHER_CLUSTER, authEndpoint: "/api/pusher-auth" });
+    canal = pusher.subscribe(`private-game-${codigo}`);
+    canal.bind("pusher:subscription_succeeded", onOk);
+    canal.bind("pusher:subscription_error", () => {
+      mostrarError($("error-entrada"), "No se pudo conectar. Verifica el código.");
+      mostrar(pEntrada);
+    });
+    canal.bind("client-estado", (d: SyncEstado) => { if (rol === "guest") applyEstado(d); });
+    canal.bind("client-unirse", (d: { nombre: string }) => {
+      if (rol !== "host") return;
+      nombreB = d.nombre;
+      $("sala-nombre-b").textContent = nombreB;
+      ($("sala-nombre-b") as HTMLElement).className = "font-titulo font-bold text-[#ffe100] text-sm";
+      ($("sala-dot-b") as HTMLElement).style.cssText = "background:#ffe100;box-shadow:0 0 8px #ffe100";
+      $("sala-info").textContent = `${nombreB} se ha unido 🎉`;
+      $("boton-sala-jugar").classList.remove("hidden");
+    });
+    canal.bind("client-solicitar-estado", () => {
+      if (rol !== "host") return;
+      // Re-send current state to reconnecting guest
+      syncEstadoActual();
+    });
+    canal.bind("client-accion", (d: { tipo: string; idx?: number }) => {
+      if (rol !== "host") return;
+      handleAccion(d);
+    });
+  }
+
+  function applyEstado(e: SyncEstado) {
+    nombreA = e.nombreA; nombreB = e.nombreB;
+    if (e.turno) turno = e.turno as "A" | "B";
+    if (e.decimasA !== undefined) decimasA = e.decimasA;
+    if (e.decimasB !== undefined) decimasB = e.decimasB;
+    if (e.timestampTurno !== undefined) timestampTurno = e.timestampTurno;
+    if (e.indice !== undefined) indice = e.indice;
+    if (e.items) items = e.items;
+    if (e.categoriaActual) categoriaActual = e.categoriaActual;
+    if (e.casillas) casillasSync = e.casillas;
+    if (e.casillaDuelo !== undefined) casillaDuelo = e.casillaDuelo;
+    if (e.tableroAtacante) tableroAtacante = e.tableroAtacante as "A" | "B";
+
+    if (e.fase === "sala") {
+      $("sala-nombre-a").textContent = e.nombreA;
+      if (e.nombreB) {
+        $("sala-nombre-b").textContent = e.nombreB;
+        ($("sala-dot-b") as HTMLElement).style.cssText = "background:#ff1dce;box-shadow:0 0 8px #ff1dce";
+      }
+      mostrar(pSala);
+    } else if (e.fase === "setup-espera") {
+      $("setup-guest-nombres").textContent = `${e.nombreA} vs ${e.nombreB}`;
+      mostrar(pSetupGuest);
+    } else if (e.fase === "cargando") {
+      mostrar(pLoader);
+    } else if (e.fase === "juego") {
+      bloqueado = false; terminado = false;
+      $("nombre-a-display").textContent = nombreA;
+      $("nombre-b-display").textContent = nombreB;
+      mostrar(pJuego);
+      mostrarImagen();
+      iniciarRenderLoop();
+      if (e.aciertoNombre) {
+        $("overlay-nombre").textContent = e.aciertoNombre;
+        $("overlay-acierto").classList.remove("hidden");
+        $("overlay-pase").classList.add("hidden");
+        setTimeout(() => $("overlay-acierto").classList.add("hidden"), 1000);
+      } else if (e.paseNombre) {
+        $("overlay-pase-nombre").textContent = e.paseNombre;
+        $("overlay-pase").classList.remove("hidden");
+        $("overlay-acierto").classList.add("hidden");
+        setTimeout(() => $("overlay-pase").classList.add("hidden"), 1000);
+      } else {
+        $("overlay-acierto").classList.add("hidden");
+        $("overlay-pase").classList.add("hidden");
+      }
+      if (turno === rolPropio) {
+        bloqueado = false;
+        iniciarReconocedor();
+        iniciarVoz();
+        $("boton-pasar").classList.remove("hidden");
+      } else {
+        pararVoz();
+        $("boton-pasar").classList.add("hidden");
+        $("texto-voz").textContent = `🎤 Turno de ${turno === "A" ? nombreA : nombreB}...`;
+      }
+      renderTurnoUI();
+    } else if (e.fase === "tablero") {
+      pararVoz();
+      stopRenderLoop();
+      renderTableroSync();
+      mostrar(pTablero);
+    } else if (e.fase === "preduel") {
+      $("preduel-emoji").textContent = e.preduelEmoji ?? "";
+      $("preduel-nombre-cat").textContent = e.preduelNombreCat ?? "";
+      const esAtacante = e.preduelEsAtacante ?? false;
+      $("preduel-empezar").classList.toggle("hidden", !esAtacante);
+      $("preduel-espera").classList.toggle("hidden", esAtacante);
+      $("preduel-overlay").classList.remove("hidden");
+      mostrar(pTablero);
+    } else if (e.fase === "final") {
+      pararVoz(); stopRenderLoop();
+      $("texto-ganador").textContent = e.ganadorTexto ?? "";
+      $("final-nombre-a").textContent = nombreA;
+      $("final-nombre-b").textContent = nombreB;
+      $("final-valor-a").textContent = e.valorA ?? "0s";
+      $("final-valor-b").textContent = e.valorB ?? "0s";
+      $("final-label-a").textContent = e.labelA ?? "tiempo restante";
+      $("final-label-b").textContent = e.labelB ?? "tiempo restante";
+      mostrar(pFinal);
+      lanzarConfeti();
+    }
+  }
+
+  function syncEstadoActual() {
+    // No-op placeholder; host builds state when needed
+  }
+
+  // ── Setup (host) ───────────────────────────────────────────
+  $("boton-sala-jugar").addEventListener("click", () => {
+    if (rol !== "host") return;
+    sync({ fase: "setup-espera", nombreA, nombreB, modo });
+    mostrar(pSetup);
+  });
+
+  let categoriaSeleccionada = "";
+  document.querySelectorAll<HTMLButtonElement>(".cat-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll<HTMLButtonElement>(".cat-btn").forEach((b) => b.classList.remove("floor-cat-selected"));
+      btn.classList.add("floor-cat-selected");
+      categoriaSeleccionada = btn.dataset.slug!;
+      $("libre-container").classList.toggle("hidden", categoriaSeleccionada !== "libre");
+    });
+  });
+  document.querySelector<HTMLButtonElement>(".cat-btn")?.click();
+
+  $("modo-rapida").addEventListener("click", () => {
+    modo = "rapida";
+    $("seccion-categoria").classList.remove("hidden");
+    $("nota-tablero").classList.add("hidden");
+    $("boton-aleatorio").classList.remove("hidden");
+    $("modo-rapida").classList.remove("text-[#2a5090]", "border-[#163575]");
+    $("modo-rapida").classList.add("floor-btn-a");
+    $("modo-tablero").classList.remove("floor-btn-a");
+    $("modo-tablero").classList.add("text-[#2a5090]", "border-[#163575]");
+  });
+
+  $("modo-tablero").addEventListener("click", () => {
+    modo = "tablero";
+    $("seccion-categoria").classList.add("hidden");
+    $("nota-tablero").classList.remove("hidden");
+    $("boton-aleatorio").classList.add("hidden");
+    $("modo-tablero").classList.remove("text-[#2a5090]", "border-[#163575]");
+    $("modo-tablero").classList.add("floor-btn-a");
+    $("modo-rapida").classList.remove("floor-btn-a");
+    $("modo-rapida").classList.add("text-[#2a5090]", "border-[#163575]");
+  });
+
+  const TEMAS_SORPRESA = [
+    "Superhéroes de Marvel","Pintores famosos","Astronautas","Inventores famosos",
+    "Tenistas famosos","Boxeadores históricos","Guitarristas de rock","Filósofos griegos",
+    "Jugadores de baloncesto","Pilotos de Fórmula 1","Directores de cine","Reyes y reinas de Europa",
+    "Escritores del siglo XX","Actrices de Hollywood clásico","Premios Nobel de la Paz",
+    "Faraones del antiguo Egipto","Capitales de Europa","Edificios modernos icónicos",
+    "Volcanes del mundo","Estadios de fútbol del mundo","Museos famosos del mundo",
+    "Razas de perros","Razas de gatos","Dinosaurios","Aves exóticas",
+    "Instrumentos musicales","Coches deportivos clásicos","Flores del mundo",
+    "Personajes de Disney","Videoconsolas clásicas","Golfistas famosos",
+  ];
+
+  $("boton-aleatorio").addEventListener("click", () => {
+    const tema = TEMAS_SORPRESA[Math.floor(Math.random() * TEMAS_SORPRESA.length)];
+    document.querySelector<HTMLButtonElement>(".cat-btn[data-slug='libre']")?.click();
+    ($("categoria-libre") as HTMLInputElement).value = tema;
+  });
+
+  $("boton-empezar").addEventListener("click", async () => {
+    if (rol !== "host") return;
+    const errEl = $("error-setup");
+    errEl.classList.add("hidden");
+    if (modo === "tablero") {
+      sync({ fase: "cargando", nombreA, nombreB, modo });
+      mostrar(pLoader);
+      pararVoz();
+      await initTablero();
+      return;
+    }
+    if (!categoriaSeleccionada) {
+      errEl.textContent = "Elige una categoría."; errEl.classList.remove("hidden"); return;
+    }
+    const libre = categoriaSeleccionada === "libre"
+      ? ($("categoria-libre") as HTMLInputElement).value.trim() : undefined;
+    if (categoriaSeleccionada === "libre" && !libre) {
+      errEl.textContent = "Escribe una categoría libre."; errEl.classList.remove("hidden"); return;
+    }
+    sync({ fase: "cargando", nombreA, nombreB, modo });
+    mostrar(pLoader);
+    try {
+      let raw: ItemFloor[];
+      if (categoriaSeleccionada === "libre") {
+        raw = await generarFloor({ libre, onProgreso: (m) => { $("loader-progreso").textContent = m; } });
+        categoriaActual = libre ?? "";
+      } else {
+        const cat = todasCats.find((c) => c.slug === categoriaSeleccionada)!;
+        categoriaActual = cat.nombre;
+        raw = cat.itemsHardcoded
+          ? [...cat.itemsHardcoded]
+          : await generarFloorPredefinida(cat.slug, cat.nombres!, cat.ocupacionesWikidata, cat.instanciasWikidata, cat.descripcionWikidata, cat.apiEspecializada);
+      }
+      items = [...raw].sort(() => Math.random() - 0.5).slice(0, 20);
+      turno = "A"; decimasA = 450; decimasB = 450;
+      indice = 0; terminado = false; bloqueado = false;
+      $("nombre-a-display").textContent = nombreA;
+      $("nombre-b-display").textContent = nombreB;
+      $("final-nombre-a").textContent = nombreA;
+      $("final-nombre-b").textContent = nombreB;
+      mostrar(pJuego);
+      iniciarRenderLoop();
+      iniciarTurno();
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : "Error";
+      errEl.textContent = `No se pudo cargar: ${msg}`; errEl.classList.remove("hidden");
+      mostrar(pSetup);
+      sync({ fase: "setup-espera", nombreA, nombreB, modo });
+    }
+  });
+
+  // ── Turno (host) ───────────────────────────────────────────
+  function iniciarTurno() {
+    bloqueado = false;
+    timestampTurno = Date.now();
+    const decimasInicio = turno === "A" ? decimasA : decimasB;
+    if (gameTimeout) clearTimeout(gameTimeout);
+    gameTimeout = setTimeout(() => {
+      if (!bloqueado && !terminado) handleTimeout();
+    }, decimasInicio * 100);
+    renderTurnoUI();
+    mostrarImagen();
+    // Sync state to guest
+    sync({ fase: "juego", nombreA, nombreB, modo, turno, decimasA, decimasB, timestampTurno, indice, items, categoriaActual });
+    // Voice on my turn only
+    if (turno === rolPropio) {
+      iniciarReconocedor(); iniciarVoz();
+      $("boton-pasar").classList.remove("hidden");
+    } else {
+      pararVoz();
+      $("boton-pasar").classList.add("hidden");
+      $("texto-voz").textContent = `🎤 Turno de ${turno === "A" ? nombreA : nombreB}...`;
+    }
+  }
+
+  function handleTimeout() {
+    if (bloqueado || terminado) return;
+    bloqueado = true;
+    pararVoz();
+    if (turno === "A") decimasA = 0; else decimasB = 0;
+    $("texto-voz").textContent = `⏱️ ¡Tiempo agotado!`;
+    setTimeout(() => terminar(), 1000);
+  }
+
+  function registrarAcierto() {
+    if (bloqueado || terminado) return;
+    bloqueado = true;
+    if (gameTimeout) clearTimeout(gameTimeout);
+    pararVoz();
+    const elapsed = (Date.now() - timestampTurno) / 100;
+    if (turno === "A") decimasA = Math.max(0, decimasA - elapsed);
+    else decimasB = Math.max(0, decimasB - elapsed);
+    const nombre = items[indice]?.nombre ?? "";
+    indice++;
+    $("overlay-nombre").textContent = nombre;
+    $("overlay-acierto").classList.remove("hidden");
+    $("overlay-pase").classList.add("hidden");
+    $("texto-voz").textContent = `✓ ¡${nombre}!`;
+    sync({ fase: "juego", nombreA, nombreB, modo, turno, decimasA, decimasB, timestampTurno, indice, items, categoriaActual, aciertoNombre: nombre });
+    setTimeout(() => {
+      $("overlay-acierto").classList.add("hidden");
+      cambiarTurno();
+    }, 1200);
+  }
+
+  function registrarPase() {
+    if (bloqueado || terminado) return;
+    bloqueado = true;
+    if (gameTimeout) clearTimeout(gameTimeout);
+    pararVoz();
+    const elapsed = (Date.now() - timestampTurno) / 100;
+    if (turno === "A") decimasA = Math.max(0, decimasA - elapsed - 30);
+    else decimasB = Math.max(0, decimasB - elapsed - 30);
+    const nombre = items[indice]?.nombre ?? "";
+    indice++;
+    $("overlay-pase-nombre").textContent = nombre;
+    $("overlay-pase").classList.remove("hidden");
+    $("overlay-acierto").classList.add("hidden");
+    sync({ fase: "juego", nombreA, nombreB, modo, turno, decimasA, decimasB, timestampTurno, indice, items, categoriaActual, paseNombre: nombre });
+    const j = turno;
+    setTimeout(() => {
+      $("overlay-pase").classList.add("hidden");
+      if ((j === "A" ? decimasA : decimasB) <= 0) { terminar(); return; }
+      cambiarTurno();
+    }, 1200);
+  }
+
+  function cambiarTurno() {
+    if (terminado) return;
+    turno = turno === "A" ? "B" : "A";
+    timestampTurno = Date.now();
+    iniciarTurno();
+  }
+
+  function terminar() {
+    if (terminado) return;
+    terminado = true;
+    if (gameTimeout) clearTimeout(gameTimeout);
+    pararVoz();
+    if (modo === "tablero") { terminarDuelo(); return; }
+    const sA = Math.max(0, Math.ceil(decimasA / 10));
+    const sB = Math.max(0, Math.ceil(decimasB / 10));
+    const ganador = sA > sB ? `🥇 Gana ${nombreA}` : sB > sA ? `🥇 Gana ${nombreB}` : "¡Empate! 🤝";
+    sync({ fase: "final", nombreA, nombreB, modo, ganadorTexto: ganador, valorA: `${sA}s`, valorB: `${sB}s`, labelA: "tiempo restante", labelB: "tiempo restante" });
+    $("texto-ganador").textContent = ganador;
+    $("final-nombre-a").textContent = nombreA;
+    $("final-nombre-b").textContent = nombreB;
+    $("final-valor-a").textContent = `${sA}s`; $("final-valor-b").textContent = `${sB}s`;
+    $("final-label-a").textContent = "tiempo restante"; $("final-label-b").textContent = "tiempo restante";
+    stopRenderLoop();
+    mostrar(pFinal);
+    lanzarConfeti();
+  }
+
+  // ── Guest actions ──────────────────────────────────────────
+  function handleAccion(d: { tipo: string; idx?: number }) {
+    if (d.tipo === "acierto" && turno !== rolPropio && !bloqueado && !terminado) {
+      registrarAcierto();
+    } else if (d.tipo === "pase" && turno !== rolPropio && !bloqueado && !terminado) {
+      registrarPase();
+    } else if (d.tipo === "casilla" && d.idx !== undefined) {
+      mostrarPreDuelo(d.idx);
+    } else if (d.tipo === "iniciar-duelo") {
+      $("preduel-overlay").classList.add("hidden");
+      atacarCasilla(casillaDuelo);
+    }
+  }
+
+  $("boton-pasar").addEventListener("click", () => {
+    if (rol === "host") registrarPase();
+    else accion("pase");
+  });
+
+  // ── Voice ──────────────────────────────────────────────────
+  function iniciarReconocedor() {
+    pararVoz();
+    if (!navegadorSoportaVoz()) return;
+    reco = crearReconocedor({
+      onTranscripcion: (texto) => {
+        if (bloqueado || terminado || turno !== rolPropio) return;
+        const item = items[indice];
+        if (!item) return;
+        $("texto-voz").textContent = `"${texto}"`;
+        if (aciertoFlexible(texto, item.nombre, categoriaActual)) {
+          if (rol === "host") registrarAcierto();
+          else accion("acierto");
+        }
+      },
+      onError: (err) => {
+        const msgs: Record<string, string> = {
+          "not-allowed": "Sin permiso de micrófono",
+          "audio-capture": "No se detecta micrófono",
+          "network": "Error de red",
+          "aborted": "", "no-speech": "",
+        };
+        const txt = msgs[err] ?? `Error: ${err}`;
+        if (txt) $("texto-voz").textContent = `⚠️ ${txt}`;
+      },
+      lang: "es-ES",
+    });
+    reco?.iniciar();
+  }
+
+  function iniciarVoz() {
+    if (!reco) { $("texto-voz").textContent = "⚠️ Sin voz — di la respuesta en voz alta"; return; }
+    reco.resetOffset();
+    $("texto-voz").textContent = "🎤 Escuchando...";
+  }
+
+  function pararVoz() { if (reco) { reco.parar(); reco = null; } }
+
+  // ── Render loop ────────────────────────────────────────────
+  const ZONA_BASE = "shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all";
+
+  function renderTurnoUI() {
+    const esA = turno === "A";
+    $("zona-a").className = `${ZONA_BASE} ${esA ? "floor-zona-active-a" : "floor-zona-inactive"}`;
+    $("zona-b").className = `${ZONA_BASE} ${!esA ? "floor-zona-active-b" : "floor-zona-inactive"}`;
+  }
+
+  function iniciarRenderLoop() {
+    stopRenderLoop();
+    renderInt = setInterval(() => {
+      const elapsed = (Date.now() - timestampTurno) / 100;
+      const da = turno === "A" ? Math.max(0, decimasA - elapsed) : decimasA;
+      const db = turno === "B" ? Math.max(0, decimasB - elapsed) : decimasB;
+      const sa = Math.ceil(da / 10); const sb = Math.ceil(db / 10);
+      $("timer-a").textContent = String(sa);
+      $("timer-b").textContent = String(sb);
+      $("timer-a").classList.toggle("animate-pulse", turno === "A" && sa <= 10);
+      $("timer-b").classList.toggle("animate-pulse", turno === "B" && sb <= 10);
+    }, 100);
+  }
+
+  function stopRenderLoop() { if (renderInt) { clearInterval(renderInt); renderInt = null; } }
+
+  function mostrarImagen() {
+    if (items.length === 0) return;
+    if (indice >= items.length) { items = [...items].sort(() => Math.random() - 0.5); indice = 0; }
+    const item = items[indice];
+    const img = $("imagen-item") as HTMLImageElement;
+    const ph = $("imagen-placeholder");
+    img.onload = () => { img.classList.remove("hidden"); ph.classList.add("hidden"); };
+    img.onerror = () => { img.classList.add("hidden"); ph.classList.remove("hidden"); (ph as HTMLElement).textContent = "📷"; };
+    img.classList.add("hidden");
+    ph.classList.remove("hidden");
+    (ph as HTMLElement).textContent = "📷";
+    img.src = item.imagen; img.alt = item.nombre;
+    $("overlay-acierto").classList.add("hidden");
+    $("overlay-pase").classList.add("hidden");
+    $("texto-voz").textContent = "🎤 Escuchando...";
+  }
+
+  // ── Tablero (host) ─────────────────────────────────────────
+  async function initTablero() {
+    const catsValidas = todasCats.filter((c) => c.nombres || c.itemsHardcoded);
+    casillasHost = Array.from({ length: 25 }, () => {
+      const cat = catsValidas[Math.floor(Math.random() * catsValidas.length)];
+      return { catSlug: cat.slug, catEmoji: cat.emoji, catNombre: cat.nombre, catNombres: cat.nombres ?? null, catHardcoded: cat.itemsHardcoded ?? null, dueño: null, items: [], itemsOffset: 0, empateCuenta: 0 };
+    });
+    casillasSync = casillasHost.map(({ catSlug, catEmoji, catNombre, dueño }) => ({ catSlug, catEmoji, catNombre, dueño }));
+    casillaDuelo = -1; tableroAtacante = "A";
+    turno = "A"; decimasA = 450; decimasB = 450;
+    $("tablero-nombre-a").textContent = nombreA; $("tablero-nombre-b").textContent = nombreB;
+    $("final-nombre-a").textContent = nombreA; $("final-nombre-b").textContent = nombreB;
+    $("nombre-a-display").textContent = nombreA; $("nombre-b-display").textContent = nombreB;
+    sync({ fase: "tablero", nombreA, nombreB, modo, casillas: casillasSync, casillaDuelo, tableroAtacante });
+    renderTableroSync();
+    mostrar(pTablero);
+  }
+
+  function renderTableroSync() {
+    const src = rol === "host" ? casillasHost as CasillaSync[] : casillasSync;
+    const countA = src.filter((c) => c.dueño === "A").length;
+    const countB = src.filter((c) => c.dueño === "B").length;
+    $("tablero-count-a").textContent = String(countA);
+    $("tablero-count-b").textContent = String(countB);
+    const atacante = tableroAtacante;
+    const attackable = getAttackable(src, atacante);
+    const grid = $("tablero-grid");
+    grid.innerHTML = "";
+    src.forEach((c, idx) => {
+      const btn = document.createElement("button");
+      const bgClass = c.dueño === "A" ? "floor-square-a" : c.dueño === "B" ? "floor-square-b" : "floor-square-neutral";
+      const esAtacable = attackable.has(idx) && atacante === rolPropio;
+      btn.className = [bgClass, "aspect-square rounded flex items-center justify-center text-xl transition-transform", esAtacable ? "floor-square-attackable hover:scale-105 cursor-pointer" : "cursor-default"].join(" ");
+      btn.textContent = c.catEmoji; btn.title = c.catNombre;
+      if (esAtacable) btn.addEventListener("click", () => {
+        if (rol === "host") mostrarPreDuelo(idx);
+        else accion("casilla", { idx });
+      });
+      grid.appendChild(btn);
+    });
+    const nombreAtacante = atacante === "A" ? nombreA : nombreB;
+    $("tablero-instruccion").textContent = atacante === rolPropio
+      ? "Toca una casilla para retarla"
+      : `Turno de ${nombreAtacante}`;
+  }
+
+  function getAttackable(src: CasillaSync[], player: "A" | "B"): Set<number> {
+    const mine = src.map((c, i) => c.dueño === player ? i : -1).filter((i) => i >= 0);
+    if (mine.length === 0) return new Set(src.map((_, i) => i).filter((i) => src[i].dueño !== player));
+    const s = new Set<number>();
+    for (const idx of mine) {
+      const r = Math.floor(idx / 5); const col = idx % 5;
+      if (r > 0 && src[(r-1)*5+col].dueño !== player) s.add((r-1)*5+col);
+      if (r < 4 && src[(r+1)*5+col].dueño !== player) s.add((r+1)*5+col);
+      if (col > 0 && src[r*5+col-1].dueño !== player) s.add(r*5+col-1);
+      if (col < 4 && src[r*5+col+1].dueño !== player) s.add(r*5+col+1);
+    }
+    return s;
+  }
+
+  function mostrarPreDuelo(idx: number) {
+    casillaDuelo = idx;
+    const c = casillasHost[idx];
+    $("preduel-emoji").textContent = c.catEmoji;
+    $("preduel-nombre-cat").textContent = c.catNombre;
+    $("preduel-empezar").classList.remove("hidden");
+    $("preduel-espera").classList.add("hidden");
+    $("preduel-overlay").classList.remove("hidden");
+    sync({ fase: "preduel", nombreA, nombreB, modo, casillaDuelo: idx, casillas: casillasSync, tableroAtacante, preduelEmoji: c.catEmoji, preduelNombreCat: c.catNombre, preduelEsAtacante: tableroAtacante !== rolPropio });
+  }
+
+  $("preduel-empezar").addEventListener("click", () => {
+    $("preduel-overlay").classList.add("hidden");
+    if (rol === "host") atacarCasilla(casillaDuelo);
+    else accion("iniciar-duelo");
+  });
+
+  async function atacarCasilla(idx: number) {
+    sync({ fase: "cargando", nombreA, nombreB, modo });
+    mostrar(pLoader);
+    const c = casillasHost[idx];
+    if (c.items.length === 0) {
+      try {
+        let raw: ItemFloor[];
+        if (c.catHardcoded) { raw = [...c.catHardcoded]; }
+        else {
+          const catDef = todasCats.find((cat) => cat.slug === c.catSlug);
+          raw = await generarFloorPredefinida(c.catSlug, c.catNombres!, catDef?.ocupacionesWikidata, catDef?.instanciasWikidata, catDef?.descripcionWikidata, catDef?.apiEspecializada);
+        }
+        c.items = [...raw].sort(() => Math.random() - 0.5);
+        c.itemsOffset = 0;
+      } catch { mostrar(pTablero); return; }
+    }
+    const off = c.itemsOffset;
+    items = [...c.items.slice(off), ...c.items.slice(0, off)].slice(0, 20);
+    categoriaActual = c.catNombre;
+    indice = 0; turno = tableroAtacante;
+    terminado = false; bloqueado = false;
+    decimasA = 450; decimasB = 450;
+    $("nombre-a-display").textContent = nombreA;
+    $("nombre-b-display").textContent = nombreB;
+    mostrar(pJuego);
+    iniciarRenderLoop();
+    iniciarTurno();
+  }
+
+  function terminarDuelo() {
+    const sA = decimasA; const sB = decimasB;
+    let ganador: "A" | "B" | null = sA > sB ? "A" : sB > sA ? "B" : null;
+    if (!ganador) {
+      casillasHost[casillaDuelo].empateCuenta++;
+      if (casillasHost[casillaDuelo].empateCuenta >= 3) {
+        ganador = Math.random() < 0.5 ? "A" : "B";
+        casillasHost[casillaDuelo].empateCuenta = 0;
+      }
+    }
+    if (ganador) {
+      casillasHost[casillaDuelo].empateCuenta = 0;
+      casillasHost[casillaDuelo].dueño = ganador;
+      tableroAtacante = ganador;
+    } else {
+      tableroAtacante = tableroAtacante === "A" ? "B" : "A";
+    }
+    const off = casillasHost[casillaDuelo].itemsOffset;
+    casillasHost[casillaDuelo].itemsOffset = (off + indice) % Math.max(1, casillasHost[casillaDuelo].items.length);
+    casillasSync = casillasHost.map(({ catSlug, catEmoji, catNombre, dueño }) => ({ catSlug, catEmoji, catNombre, dueño }));
+    const countA = casillasHost.filter((c) => c.dueño === "A").length;
+    const countB = casillasHost.filter((c) => c.dueño === "B").length;
+    if (countA === 25 || countB === 25) { terminarTablero(countA, countB); return; }
+    stopRenderLoop(); decimasA = 450; decimasB = 450;
+    sync({ fase: "tablero", nombreA, nombreB, modo, casillas: casillasSync, casillaDuelo, tableroAtacante });
+    renderTableroSync();
+    mostrar(pTablero);
+  }
+
+  function terminarTablero(cA: number, cB: number) {
+    const ganador = cA > cB ? `🥇 Gana ${nombreA}` : `🥇 Gana ${nombreB}`;
+    sync({ fase: "final", nombreA, nombreB, modo, ganadorTexto: ganador, valorA: String(cA), valorB: String(cB), labelA: "casillas", labelB: "casillas" });
+    $("texto-ganador").textContent = ganador;
+    $("final-nombre-a").textContent = nombreA; $("final-nombre-b").textContent = nombreB;
+    $("final-valor-a").textContent = String(cA); $("final-valor-b").textContent = String(cB);
+    $("final-label-a").textContent = "casillas"; $("final-label-b").textContent = "casillas";
+    stopRenderLoop();
+    mostrar(pFinal);
+    lanzarConfeti();
+  }
+
+  // ── Navegación ─────────────────────────────────────────────
+  $("boton-volver").addEventListener("click", () => {
+    pararVoz(); stopRenderLoop();
+    if (gameTimeout) clearTimeout(gameTimeout);
+    if (!pEntrada.classList.contains("hidden") || !pSala.classList.contains("hidden")) {
+      window.location.href = "/";
+    } else {
+      mostrar(pSala);
+    }
+  });
+
+  $("boton-revancha").addEventListener("click", () => {
+    if (rol !== "host") return;
+    sync({ fase: "setup-espera", nombreA, nombreB, modo });
+    mostrar(pSetup);
+  });
+
+  $("boton-menu-final").addEventListener("click", () => {
+    pararVoz(); stopRenderLoop();
+    window.location.href = "/";
+  });
+
+  // ── Confeti ────────────────────────────────────────────────
+  function lanzarConfeti() {
+    const colores = ["#FF5757","#FFD93D","#4ECDC4","#B084EE","#95E1D3","#FF6B9D"];
+    const cont = $("confeti"); cont.innerHTML = "";
+    for (let i = 0; i < 60; i++) {
+      const t = document.createElement("div");
+      const tam = 8 + Math.random() * 10;
+      t.style.cssText = `position:absolute;top:-20px;left:${Math.random()*100}%;width:${tam}px;height:${tam}px;background:${colores[Math.floor(Math.random()*colores.length)]};border:2px solid #1A1A1A;border-radius:${Math.random()>.5?"50%":"4px"};animation:confeti ${2+Math.random()*2}s ${Math.random()*1.5}s linear forwards;`;
+      cont.appendChild(t);
+    }
+  }
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible" && !pJuego.classList.contains("hidden") && turno === rolPropio && !bloqueado && !terminado) {
+      reco?.resetOffset();
+      $("texto-voz").textContent = "🎤 Escuchando...";
+    }
+  });
+</script>
