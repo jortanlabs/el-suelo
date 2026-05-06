@@ -180,9 +180,8 @@ const cats = categoriasFloor.map((c) => ({
         </div>
       </div>
 
-      <div class="px-4 py-2 flex items-center justify-center gap-3 shrink-0">
-        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold px-5 py-2 text-sm">Pasar −3s</button>
-        <button id="boton-acierto-manual" class="floor-btn floor-btn-ok font-titulo font-bold px-5 py-2 text-sm">✓ Acertó</button>
+      <div class="px-6 pt-2 pb-[max(16px,env(safe-area-inset-bottom))] flex items-center justify-center shrink-0">
+        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar −3s</button>
       </div>
     </section>
 
@@ -939,7 +938,6 @@ const cats = categoriasFloor.map((c) => ({
   }
 
   $("boton-pasar").addEventListener("click", registrarPase);
-  $("boton-acierto-manual").addEventListener("click", registrarAcierto);
 
   $("boton-revancha").addEventListener("click", () => {
     if (modo === "tablero") {
