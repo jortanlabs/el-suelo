@@ -24,7 +24,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <p class="text-[#2a5090] font-titulo text-sm">Modo 2 móviles</p>
       </div>
       <div class="w-full max-w-xs flex flex-col gap-3">
-        <input id="nombre-propio" type="text" placeholder="Tu nombre" maxlength="20"
+        <label class="font-titulo text-xs text-[#2a5090] uppercase tracking-widest text-center">① Tu nombre</label>
+        <input id="nombre-propio" type="text" placeholder="Escribe tu nombre aquí" maxlength="20"
           class="floor-input text-center text-lg" autocomplete="off" />
         <button id="boton-crear" class="floor-btn floor-btn-a w-full font-titulo font-bold text-xl py-4">Crear sala</button>
         <div class="flex items-center gap-2">
@@ -376,10 +377,19 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   });
 
   $("boton-unirse").addEventListener("click", () => {
-    const nombre = ($("nombre-propio") as HTMLInputElement).value.trim() || "Jugador B";
+    const nombreInput = $("nombre-propio") as HTMLInputElement;
+    const nombre = nombreInput.value.trim();
     const cod = ($("codigo-sala") as HTMLInputElement).value.trim().toUpperCase();
     const errEl = $("error-entrada");
     errEl.classList.add("hidden");
+    if (!nombre) {
+      nombreInput.focus();
+      nombreInput.style.borderColor = "#ff1dce";
+      nombreInput.style.boxShadow = "0 0 12px #ff1dce88";
+      mostrarError(errEl, "Primero escribe tu nombre ↑");
+      setTimeout(() => { nombreInput.style.borderColor = ""; nombreInput.style.boxShadow = ""; }, 2000);
+      return;
+    }
     if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
     if (cod.length !== 4) { mostrarError(errEl, "Introduce un código de 4 letras."); return; }
     rol = "guest"; rolPropio = "B";
