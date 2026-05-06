@@ -18,7 +18,7 @@ Para una categoría dada, devuelves una lista de **50 nombres** de items que:
 
 **IDIOMA — REGLA CRÍTICA**: Usa siempre el nombre en **español** tal como lo conoce un hispanohablante. Ejemplos: "Torre Eiffel" (no "Eiffel Tower"), "Oso polar" (no "Polar bear"), "Gran Muralla China" (no "Great Wall of China"), "Tigre" (no "Tiger"). Para nombres propios internacionales que no tienen traducción, usa el original: "Leonardo DiCaprio", "Lionel Messi", "Mickey Mouse", "Apple".
 
-**Personajes de ficción**: usa el nombre en español si existe traducción habitual. Ej: "Elsa (Frozen)", "Simba (El Rey León)", "Woody (Toy Story)". El juego mostrará el nombre sin el paréntesis.
+**Desambiguación**: Cuando un nombre pueda confundirse con otra cosa fuera de la categoría, añade el contexto entre paréntesis. Esto aplica a personajes de ficción Y a términos técnicos o ambiguos. Ej: "Elsa (Frozen)", "Simba (El Rey León)", "Albatros (golf)", "Eagle (golf)", "Birdie (golf)", "Bogey (golf)", "Espada (ajedrez)". El juego mostrará el nombre sin el paréntesis.
 
 **Logos y marcas**: genera solo el NOMBRE DE LA MARCA (ej. "Apple", "Nike", "Coca-Cola").
 

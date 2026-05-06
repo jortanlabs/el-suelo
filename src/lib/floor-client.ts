@@ -152,6 +152,7 @@ type WpPagesResp = {
 
 type WpRestSummary = {
   type?: string;
+  description?: string;
   thumbnail?: { source?: string };
 };
 
@@ -171,17 +172,23 @@ type WpRestSummary = {
 async function resolverConWikipedia(
   nombres: string[],
   paralelos = 8,
+  categoriaHint?: string,
 ): Promise<ItemFloor[]> {
+  const normStr = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").trim();
+  // Palabras significativas de la categoría (≥4 letras) para filtrar resultados ambiguos
+  const catWords = categoriaHint
+    ? normStr(categoriaHint).split(/\s+/).filter((w) => w.length >= 4)
+    : [];
+
   const result: ItemFloor[] = [];
   for (let i = 0; i < nombres.length; i += paralelos) {
     const lote = nombres.slice(i, i + paralelos);
     const resueltos = await Promise.all(
       lote.map(async (nombre): Promise<ItemFloor | null> => {
-        // Nombre de display: quita sufijo de desambiguación "Elsa (Frozen)" → "Elsa"
         const nombreDisplay = nombre.replace(/\s*\([^)]+\)\s*$/, "").trim() || nombre;
         const slug = nombre.replace(/ /g, "_");
 
-        // Fase 1: REST summary directo — más fiable cuando el nombre = título Wikipedia
+        // Fase 1: REST summary directo
         for (const lang of ["en", "es"]) {
           try {
             const url = `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(slug)}`;
@@ -190,18 +197,27 @@ async function resolverConWikipedia(
             const data = (await res.json()) as WpRestSummary;
             if (data.type === "disambiguation") continue;
             if (data.thumbnail?.source) {
+              // Si hay pista de categoría, verifica que el artículo no sea una entidad
+              // de dominio completamente diferente (ej: pájaro cuando se busca término de golf)
+              if (catWords.length > 0) {
+                const desc = normStr(data.description ?? "");
+                const coincide = catWords.some((w) => desc.includes(w));
+                // Solo descartamos si hay descripción Y ninguna palabra de la categoría aparece
+                if (data.description && !coincide) continue;
+              }
               return { nombre: nombreDisplay, imagen: data.thumbnail.source, palabraClave: palabraClaveDe(nombreDisplay) };
             }
           } catch {}
         }
 
-        // Fase 2: generator=search — para títulos aproximados o con variación ortográfica
-        const normNombre = nombre.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").trim();
+        // Fase 2: generator=search — incluye la categoría en la query si está disponible
+        const normNombre = normStr(nombre);
+        const queryBase = categoriaHint ? `${nombre} ${categoriaHint}` : nombre;
         for (const lang of ["en", "es"]) {
           try {
             const url =
               `https://${lang}.wikipedia.org/w/api.php` +
-              `?action=query&generator=search&gsrsearch=${encodeURIComponent(nombre)}` +
+              `?action=query&generator=search&gsrsearch=${encodeURIComponent(queryBase)}` +
               `&gsrlimit=5&prop=pageimages&pithumbsize=400&redirects=1&format=json&origin=*`;
             const res = await fetch(url);
             if (!res.ok) continue;
@@ -210,8 +226,7 @@ async function resolverConWikipedia(
               .filter((p) => !("missing" in p) && p.thumbnail?.source);
             if (pages.length === 0) continue;
             const ranked = pages.sort((a, b) => {
-              const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").trim();
-              const ta = norm(a.title ?? ""); const tb = norm(b.title ?? "");
+              const ta = normStr(a.title ?? ""); const tb = normStr(b.title ?? "");
               const sa = ta === normNombre ? 0 : ta.startsWith(normNombre) ? 1 : ta.includes(normNombre) ? 2 : 3;
               const sb = tb === normNombre ? 0 : tb.startsWith(normNombre) ? 1 : tb.includes(normNombre) ? 2 : 3;
               return sa - sb;
@@ -270,7 +285,7 @@ export async function generarFloor(
   }
 
   opts.onProgreso?.(`🔍 Buscando imágenes (${data.nombres.length} items)...`);
-  const wpItems = await resolverConWikipedia(data.nombres);
+  const wpItems = await resolverConWikipedia(data.nombres, 8, opts.libre);
 
   // Fallback Wikidata P18 para los que Wikipedia no resolvió
   const encontrados = new Set(wpItems.map((i) => i.nombre));
