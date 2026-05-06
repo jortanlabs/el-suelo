@@ -251,8 +251,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
 </style>
 
 <script define:vars={{ pusherKey, pusherCluster }}>
-  (window as any).__PK__ = pusherKey;
-  (window as any).__PC__ = pusherCluster;
+  window.__PK__ = pusherKey;
+  window.__PC__ = pusherCluster;
 </script>
 
 <script>
