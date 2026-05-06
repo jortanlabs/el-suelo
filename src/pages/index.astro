@@ -867,7 +867,7 @@ const cats = categoriasFloor.map((c) => ({
         const txt = msgs[err] ?? `Error de voz: ${err}`;
         if (txt) $("texto-voz").textContent = `⚠️ ${txt} — di la respuesta en voz alta`;
       },
-      lang: "es-ES",
+      lang: navigator.language || "es-ES",
     });
     reco?.iniciar();
   }

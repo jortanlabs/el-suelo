@@ -773,7 +773,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         const txt = msgs[err] ?? `Error: ${err}`;
         if (txt) $("texto-voz").textContent = `⚠️ ${txt}`;
       },
-      lang: "es-ES",
+      lang: navigator.language || "es-ES",
     });
     reco?.iniciar();
   }
