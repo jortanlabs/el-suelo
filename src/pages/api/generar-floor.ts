@@ -12,14 +12,20 @@ const SYSTEM_PROMPT = `Eres un asistente que genera listas de items reconocibles
 
 Para una categoría dada, devuelves una lista de **50 nombres** de items que:
 - Sean **lo suficientemente famosos** para que cualquiera adulto los reconozca por una imagen.
-- Tengan **artículo en Wikipedia** (en español o inglés) — si dudas, descarta.
+- Tengan **artículo en Wikipedia en inglés con foto** — si dudas, descarta.
 - Sean **identificables visualmente** (no abstractos como "felicidad" o "paz").
 - Sean **diversos** dentro de la categoría (no todos del mismo país, época o subcategoría).
 
-Devuelve los nombres **en español** cuando exista nombre español (ej. "León africano", "Torre Eiffel", "Mona Lisa", "Lionel Messi").
-Para categorías de **especies** (animales, plantas, peces, aves, hongos…): usa SIEMPRE el nombre común en español, NUNCA el nombre científico latino. Ej: "Roble común" (no "Quercus robur"), "Margarita" (no "Bellis perennis"), "Trucha común" (no "Salmo trutta"), "Flamenco rosa" (no "Phoenicopterus roseus").
-Usa el **nombre oficial y completo**: evita nombres cortos o ambiguos. Escribe "Fuente de la Cibeles" en lugar de "Cibeles", "Palacio Real de Madrid" en lugar de "Palacio Real". El nombre debe ser suficientemente específico para que una búsqueda en Wikipedia devuelva exactamente ese item y no otro.
-Para categorías sobre **logos, logotipos, marcas o empresas**: genera el NOMBRE DE LA MARCA o EMPRESA directamente (ej. "Apple", "Nike", "Coca-Cola", "McDonald's", "Adidas"), NUNCA frases descriptivas como "Logo de Apple" o "Logotipo de Nike". El juego mostrará la imagen y el jugador tiene que decir el nombre.
+**REGLA CRÍTICA — TÍTULO WIKIPEDIA EN INGLÉS**: El nombre que generes se usará para buscar directamente el artículo en Wikipedia en inglés. Por tanto DEBE coincidir con el título exacto de ese artículo. Ejemplos correctos: "Tiger Woods", "Mickey Mouse", "Eiffel Tower", "Lionel Messi", "Great Wall of China".
+
+**Personajes de ficción y desambiguación**: Si el título del artículo en Wikipedia incluye aclaración entre paréntesis, inclúyela. Ej: "Elsa (Frozen)", "Simba (The Lion King)", "Moana (Disney character)", "Robin Hood (1973 film)", "Goofy". El juego mostrará el nombre sin el paréntesis.
+
+**Personas reales y lugares**: Usa el nombre en inglés si ese es el título del artículo de Wikipedia en inglés, aunque exista traducción al español. Ej: "Eiffel Tower" (no "Torre Eiffel"), "Tiger Woods" (no "Tigre Woods"), "Colosseum" (no "Coliseo"). Excepción: si el artículo en inglés usa el nombre español (ej. "Sagrada Família"), úsalo tal cual.
+
+**Especies de animales y plantas**: Usa el nombre común en inglés tal como aparece en Wikipedia en inglés. Ej: "African elephant" (no "Elefante africano"), "Giant panda" (no "Panda gigante").
+
+**Logos y marcas**: genera solo el NOMBRE DE LA MARCA (ej. "Apple", "Nike", "Coca-Cola"), nunca frases como "Logo de Apple".
+
 Devuelve solo el array de strings, sin explicaciones ni numeración, usando la herramienta generar_items.`;
 
 const tools: Anthropic.Messages.Tool[] = [

@@ -62,10 +62,23 @@ type WpPagesResp = {
   query?: { pages?: Record<string, { title?: string; missing?: string; thumbnail?: { source?: string } }> };
 };
 
+type WpRestSummary = {
+  type?: string;
+  thumbnail?: { source?: string };
+};
+
 /**
- * Resuelve imágenes usando Wikipedia search (generator=search) en lugar de búsqueda directa
- * por título. Ventaja clave: evita páginas de desambiguación ("Nike" → "Nike, Inc." con logo).
- * Prueba inglés primero (mejor cobertura para marcas internacionales), luego español.
+ * Resuelve imágenes para categorías libres.
+ * El prompt de Claude genera nombres que coinciden con títulos de Wikipedia en inglés.
+ *
+ * Estrategia:
+ * 1. REST summary directo EN (más rápido y fiable si el nombre = título exacto)
+ * 2. REST summary directo ES
+ * 3. generator=search EN (fallback para títulos aproximados)
+ * 4. generator=search ES
+ *
+ * El nombre de display elimina el sufijo de desambiguación:
+ * "Elsa (Frozen)" → muestra "Elsa", busca "Elsa (Frozen)".
  */
 async function resolverConWikipedia(
   nombres: string[],
@@ -76,14 +89,32 @@ async function resolverConWikipedia(
     const lote = nombres.slice(i, i + paralelos);
     const resueltos = await Promise.all(
       lote.map(async (nombre): Promise<ItemFloor | null> => {
+        // Nombre de display: quita sufijo de desambiguación "Elsa (Frozen)" → "Elsa"
+        const nombreDisplay = nombre.replace(/\s*\([^)]+\)\s*$/, "").trim() || nombre;
+        const slug = nombre.replace(/ /g, "_");
+
+        // Fase 1: REST summary directo — más fiable cuando el nombre = título Wikipedia
+        for (const lang of ["en", "es"]) {
+          try {
+            const url = `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(slug)}`;
+            const res = await fetch(url, { headers: { accept: "application/json" } });
+            if (!res.ok) continue;
+            const data = (await res.json()) as WpRestSummary;
+            if (data.type === "disambiguation") continue;
+            if (data.thumbnail?.source) {
+              return { nombre: nombreDisplay, imagen: data.thumbnail.source, palabraClave: palabraClaveDe(nombreDisplay) };
+            }
+          } catch {}
+        }
+
+        // Fase 2: generator=search — para títulos aproximados o con variación ortográfica
         const normNombre = nombre.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").trim();
-        // Fase 1: generator=search — evita páginas de desambiguación
         for (const lang of ["en", "es"]) {
           try {
             const url =
               `https://${lang}.wikipedia.org/w/api.php` +
               `?action=query&generator=search&gsrsearch=${encodeURIComponent(nombre)}` +
-              `&gsrlimit=3&prop=pageimages&pithumbsize=400&redirects=1&format=json&origin=*`;
+              `&gsrlimit=5&prop=pageimages&pithumbsize=400&redirects=1&format=json&origin=*`;
             const res = await fetch(url);
             if (!res.ok) continue;
             const data = (await res.json()) as WpPagesResp;
@@ -97,21 +128,10 @@ async function resolverConWikipedia(
               const sb = tb === normNombre ? 0 : tb.startsWith(normNombre) ? 1 : tb.includes(normNombre) ? 2 : 3;
               return sa - sb;
             });
-            return { nombre, imagen: ranked[0].thumbnail!.source!, palabraClave: palabraClaveDe(nombre) };
+            return { nombre: nombreDisplay, imagen: ranked[0].thumbnail!.source!, palabraClave: palabraClaveDe(nombreDisplay) };
           } catch {}
         }
-        // Fase 2: REST summary — devuelve la imagen principal del artículo aunque sea fair-use
-        // (logos corporativos, personajes animados, portadas…)
-        for (const lang of ["en", "es"]) {
-          try {
-            const url = `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(nombre)}`;
-            const res = await fetch(url, { headers: { accept: "application/json" } });
-            if (!res.ok) continue;
-            const data = (await res.json()) as { thumbnail?: { source?: string } };
-            const thumb = data.thumbnail?.source;
-            if (thumb) return { nombre, imagen: thumb, palabraClave: palabraClaveDe(nombre) };
-          } catch {}
-        }
+
         return null;
       }),
     );
