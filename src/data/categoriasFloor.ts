@@ -16,7 +16,7 @@ export interface CategoriaFloor {
   /** Palabras clave en la descripción de Wikidata para preferir el match correcto al buscar. */
   descripcionWikidata?: string[];
   /** API especializada a usar en lugar de Wikidata para esta categoría. */
-  apiEspecializada?: "deezer";
+  apiEspecializada?: "deezer" | "tmdb";
 }
 
 const BANDERAS: Array<{ pais: string; codigo: string }> = [
@@ -63,8 +63,7 @@ export const categoriasFloor: CategoriaFloor[] = [
     slug: "actores",
     nombre: "Actores y actrices",
     emoji: "🎬",
-    // Q33999 actor · Q10800557 film actor · Q2526255 film director · Q3282637 film producer
-    ocupacionesWikidata: ["Q33999", "Q10800557", "Q2526255", "Q3282637"],
+    apiEspecializada: "tmdb",
     nombres: [
       "Tom Hanks", "Meryl Streep", "Leonardo DiCaprio", "Cate Blanchett",
       "Brad Pitt", "Angelina Jolie", "Denzel Washington", "Penélope Cruz",

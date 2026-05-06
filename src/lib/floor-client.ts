@@ -40,6 +40,39 @@ function guardarCache(k: string, data: ItemFloor[]): void {
   } catch {}
 }
 
+// ── TMDB ────────────────────────────────────────────────────────────────────
+
+type TMDBPerson = { name: string; profile_path: string | null; popularity: number };
+type TMDBSearchResp = { results?: TMDBPerson[] };
+
+async function resolverConTMDB(nombres: string[], paralelos = 6): Promise<ItemFloor[]> {
+  const token = ((import.meta as unknown as { env: Record<string, string> }).env?.PUBLIC_TMDB_TOKEN) ?? "";
+  if (!token) return [];
+  const result: ItemFloor[] = [];
+  for (let i = 0; i < nombres.length; i += paralelos) {
+    const lote = nombres.slice(i, i + paralelos);
+    const resueltos = await Promise.all(
+      lote.map(async (nombre): Promise<ItemFloor | null> => {
+        try {
+          const url = `https://api.themoviedb.org/3/search/person?query=${encodeURIComponent(nombre)}&language=en-US&page=1`;
+          const res = await fetch(url, { headers: { Authorization: `Bearer ${token}`, accept: "application/json" } });
+          if (!res.ok) return null;
+          const data = (await res.json()) as TMDBSearchResp;
+          const conFoto = (data.results ?? []).filter((p) => p.profile_path);
+          if (!conFoto.length) return null;
+          const normNombre = norm(nombre);
+          const exacto = conFoto.find((p) => norm(p.name) === normNombre);
+          const mejor = exacto ?? conFoto.sort((a, b) => b.popularity - a.popularity)[0];
+          if (!mejor.profile_path) return null;
+          return { nombre, imagen: `https://image.tmdb.org/t/p/w500${mejor.profile_path}`, palabraClave: palabraClaveDe(nombre) };
+        } catch { return null; }
+      }),
+    );
+    for (const item of resueltos) if (item) result.push(item);
+  }
+  return result;
+}
+
 // ── Deezer ──────────────────────────────────────────────────────────────────
 
 type DeezerArtist = { id: number; name: string; picture_xl: string; nb_fan: number };
@@ -94,10 +127,11 @@ export async function generarFloorPredefinida(
 
   let items: ItemFloor[];
 
-  if (apiEspecializada === "deezer") {
-    items = await resolverConDeezer(nombres);
+  if (apiEspecializada === "deezer" || apiEspecializada === "tmdb") {
+    items = apiEspecializada === "deezer"
+      ? await resolverConDeezer(nombres)
+      : await resolverConTMDB(nombres);
     if (items.length < 8) {
-      // Complementar con Wikidata para los que Deezer no encontró
       const encontrados = new Set(items.map((i) => i.nombre));
       const faltantes = nombres.filter((n) => !encontrados.has(n));
       const extra = await resolverNombres(faltantes, 5, ocupaciones, instancias, descripcion);
