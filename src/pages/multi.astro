@@ -57,6 +57,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         </div>
       </div>
       <button id="boton-sala-jugar" class="floor-btn floor-btn-gold w-full max-w-xs font-titulo font-bold text-xl py-4 hidden">Elegir modo →</button>
+      <button id="boton-compartir" class="floor-btn w-full max-w-xs font-titulo font-bold text-sm py-2" style="color:#7b9ef5;border-color:#163575;">📤 Compartir sala</button>
       <p id="sala-info" class="text-[#2a5090] font-titulo text-xs text-center">Comparte el código con el otro jugador</p>
     </section>
 
@@ -143,7 +144,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
     <!-- JUEGO -->
     <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0">
-      <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
+      <div class="px-4 pt-1 text-center shrink-0">
+        <p id="juego-categoria-label" class="font-titulo text-[10px] text-[#2a5090] uppercase tracking-widest"></p>
+      </div>
+      <div class="flex-1 flex items-stretch min-h-0 px-2 pt-1 pb-1 gap-2">
         <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all">
           <span id="turno-ind-a" class="font-titulo text-[10px] font-bold tracking-widest uppercase opacity-0 transition-opacity">▶ TURNO</span>
           <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer transition-all"></span>
@@ -453,6 +457,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       bloqueado = false; terminado = false;
       $("nombre-a-display").textContent = nombreA;
       $("nombre-b-display").textContent = nombreB;
+      $("juego-categoria-label").textContent = categoriaActual;
       mostrar(pJuego);
       mostrarImagen();
       iniciarRenderLoop();
@@ -513,6 +518,19 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   }
 
   // ── Setup (host) ───────────────────────────────────────────
+  $("boton-compartir").addEventListener("click", async () => {
+    const texto = `¡Únete a mi sala en El Suelo! Código: ${codigo}`;
+    const url = location.origin + "/multi";
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "El Suelo — 2 Móviles", text: texto, url });
+      } else {
+        await navigator.clipboard.writeText(`${texto}\n${url}`);
+        $("sala-info").textContent = "¡Enlace copiado! ✓";
+      }
+    } catch {}
+  });
+
   $("boton-sala-jugar").addEventListener("click", () => {
     if (rol !== "host") return;
     sync({ fase: "setup-espera", nombreA, nombreB, modo });
@@ -629,6 +647,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   // ── Turno (host) ───────────────────────────────────────────
   function iniciarTurno() {
     bloqueado = false;
+    $("juego-categoria-label").textContent = categoriaActual;
     timestampTurno = Date.now();
     const decimasInicio = turno === "A" ? decimasA : decimasB;
     if (gameTimeout) clearTimeout(gameTimeout);
