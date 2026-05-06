@@ -9,7 +9,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
 
 <Base titulo="El Suelo — 2 jugadores" descripcion="Juega El Suelo contra alguien desde otro móvil.">
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
-    <nav class="px-4 py-3 flex items-center border-b-2 border-[#163575] shrink-0">
+    <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
       <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">← Volver</button>
     </nav>
 
@@ -144,8 +144,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
     <!-- JUEGO -->
     <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0">
       <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
-        <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
-          <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
+        <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all">
+          <span id="turno-ind-a" class="font-titulo text-[10px] font-bold tracking-widest uppercase opacity-0 transition-opacity">▶ TURNO</span>
+          <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer transition-all"></span>
           <span id="nombre-a-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
         <div class="flex-1 flex flex-col items-center justify-center min-w-0 min-h-0">
@@ -165,8 +166,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
           </div>
           <p id="texto-voz" class="mt-1.5 text-xs text-[#2a5090] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
         </div>
-        <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
-          <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
+        <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all">
+          <span id="turno-ind-b" class="font-titulo text-[10px] font-bold tracking-widest uppercase opacity-0 transition-opacity">▶ TURNO</span>
+          <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer transition-all"></span>
           <span id="nombre-b-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
       </div>
@@ -784,6 +786,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
     const esA = turno === "A";
     $("zona-a").className = `${ZONA_BASE} ${esA ? "floor-zona-active-a" : "floor-zona-inactive"}`;
     $("zona-b").className = `${ZONA_BASE} ${!esA ? "floor-zona-active-b" : "floor-zona-inactive"}`;
+    $("timer-a").className = `font-titulo font-bold tabular-nums leading-none text-center floor-timer transition-all ${esA ? "text-5xl" : "text-2xl opacity-40"}`;
+    $("timer-b").className = `font-titulo font-bold tabular-nums leading-none text-center floor-timer transition-all ${!esA ? "text-5xl" : "text-2xl opacity-40"}`;
+    ($("turno-ind-a") as HTMLElement).style.opacity = esA ? "1" : "0";
+    ($("turno-ind-b") as HTMLElement).style.opacity = !esA ? "1" : "0";
   }
 
   function iniciarRenderLoop() {
