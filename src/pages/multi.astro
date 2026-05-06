@@ -1,9 +1,10 @@
 ---
-export const prerender = true;
 import Base from "../layouts/Base.astro";
 import { categoriasFloor } from "../data/categoriasFloor.ts";
 
 const cats = categoriasFloor.map((c) => ({ slug: c.slug, nombre: c.nombre, emoji: c.emoji }));
+const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY ?? "";
+const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
 ---
 
 <Base titulo="El Suelo — 2 jugadores" descripcion="Juega El Suelo contra alguien desde otro móvil.">
@@ -247,6 +248,11 @@ const cats = categoriasFloor.map((c) => ({ slug: c.slug, nombre: c.nombre, emoji
   :global(body) { background:#050c1e!important; }
 </style>
 
+<script define:vars={{ pusherKey, pusherCluster }}>
+  (window as any).__PK__ = pusherKey;
+  (window as any).__PC__ = pusherCluster;
+</script>
+
 <script>
   import Pusher from "pusher-js";
   import type { Channel } from "pusher-js";
@@ -257,9 +263,8 @@ const cats = categoriasFloor.map((c) => ({ slug: c.slug, nombre: c.nombre, emoji
   } from "../lib/floor-client.ts";
   import { categoriasFloor as todasCats } from "../data/categoriasFloor.ts";
 
-  const env = (import.meta as unknown as { env: Record<string, string> }).env ?? {};
-  const PUSHER_KEY = env.PUBLIC_PUSHER_KEY ?? "";
-  const PUSHER_CLUSTER = env.PUBLIC_PUSHER_CLUSTER ?? "eu";
+  const PUSHER_KEY = (window as any).__PK__ ?? "";
+  const PUSHER_CLUSTER = (window as any).__PC__ ?? "eu";
 
   // ── DOM ────────────────────────────────────────────────────
   const $ = (id: string) => document.getElementById(id)!;
