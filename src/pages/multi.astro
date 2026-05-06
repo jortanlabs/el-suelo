@@ -3,8 +3,8 @@ import Base from "../layouts/Base.astro";
 import { categoriasFloor } from "../data/categoriasFloor.ts";
 
 const cats = categoriasFloor.map((c) => ({ slug: c.slug, nombre: c.nombre, emoji: c.emoji }));
-const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY ?? "";
-const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER ?? "eu";
+const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "d8b48a4d7d6cb146cf1e";
+const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 ---
 
 <Base titulo="El Suelo — 2 jugadores" descripcion="Juega El Suelo contra alguien desde otro móvil.">
