@@ -397,8 +397,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     const pusher = new Pusher(PUSHER_KEY, { cluster: PUSHER_CLUSTER, authEndpoint: "/api/pusher-auth" });
     canal = pusher.subscribe(`private-game-${codigo}`);
     canal.bind("pusher:subscription_succeeded", onOk);
-    canal.bind("pusher:subscription_error", () => {
-      mostrarError($("error-entrada"), "No se pudo conectar. Verifica el código.");
+    canal.bind("pusher:subscription_error", (data: { status?: number; error?: string }) => {
+      const status = data?.status ?? "?";
+      mostrarError($("error-entrada"), `Error de conexión (${status}). Revisa las variables de entorno en Vercel.`);
+      console.error("Pusher subscription_error:", data);
       mostrar(pEntrada);
     });
     canal.bind("client-estado", (d: SyncEstado) => { if (rol === "guest") applyEstado(d); });
