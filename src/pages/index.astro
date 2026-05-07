@@ -168,6 +168,7 @@ const cineSlugsJugables = subcategorias
 
       <div class="px-4 py-3 text-center shrink-0">
         <p id="tablero-instruccion" class="font-titulo text-sm font-bold text-[#2a5090] uppercase tracking-wider"></p>
+        <button id="boton-reportar-tablero" onclick="abrirModalReportar()" class="hidden mt-2 font-titulo text-xs text-[#2a5090] hover:text-[#ff4444] transition-colors underline">🚩 Reportar categoría anterior</button>
       </div>
 
       <div id="preduel-overlay" class="hidden absolute inset-0 flex flex-col items-center justify-center z-20 px-8" style="background:#07070fee">
@@ -237,9 +238,37 @@ const cineSlugsJugables = subcategorias
         <div class="flex flex-col gap-3">
           <button id="boton-revancha" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">Revancha →</button>
           <button id="boton-menu" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
+          <button onclick="abrirModalReportar()" class="font-titulo text-xs text-[#2a5090] hover:text-[#ff4444] transition-colors underline mt-1">🚩 Reportar categoría</button>
         </div>
       </div>
     </section>
+
+  <!-- MODAL REPORTAR ERROR -->
+  <div id="modal-reportar" class="hidden fixed inset-0 z-50 flex items-center justify-center px-6" style="background:rgba(5,12,30,0.96)">
+    <div class="max-w-sm w-full floor-card p-6">
+      <h2 class="font-titulo font-bold text-lg text-[#e8e8ff] uppercase tracking-wide mb-1">Reportar categoría</h2>
+      <p id="reportar-cat-label" class="font-titulo text-sm text-[#2a5090] mb-5"></p>
+      <div class="flex flex-col gap-4 mb-6">
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="radio" name="tipo-error" value="Imágenes que no corresponden a la categoría" class="mt-1 accent-[#ff1dce]">
+          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Imágenes que no corresponden a la categoría</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="radio" name="tipo-error" value="Imágenes que no tienen sentido con la respuesta" class="mt-1 accent-[#ff1dce]">
+          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Imágenes que no tienen sentido con la respuesta</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="radio" name="tipo-error" value="Excesivamente rebuscado" class="mt-1 accent-[#ff1dce]">
+          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Excesivamente rebuscado</span>
+        </label>
+      </div>
+      <div class="flex gap-3">
+        <button id="reportar-cancelar" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-sm px-4 py-2 flex-1">Cancelar</button>
+        <button id="reportar-enviar" class="floor-btn floor-btn-a font-titulo font-bold text-sm px-4 py-2 flex-1">Enviar →</button>
+      </div>
+      <p id="reportar-feedback" class="hidden font-titulo text-xs text-center mt-3 text-[#00ff88]">✓ Reporte enviado, gracias</p>
+    </div>
+  </div>
   </main>
 </Base>
 
@@ -934,6 +963,7 @@ const cineSlugsJugables = subcategorias
     jug.B.decimas = 450;
     renderTablero();
     mostrar(pTablero);
+    document.getElementById("boton-reportar-tablero").classList.remove("hidden");
   }
 
   function mostrarFinalTablero() {
@@ -1151,6 +1181,38 @@ const cineSlugsJugables = subcategorias
       cont.appendChild(t);
     }
   }
+
+
+  // ── Reportar error ────────────────────────────────────────────────────
+  const WEBHOOK_REPORTAR = "https://script.google.com/macros/s/AKfycbxO1ttDJ46HP5ftZWIiDBbVDupH3BxLGL0Lr-SU-3aJa1MSSDnz2gz-MLN6RvfzkVUThQ/exec";
+
+  function abrirModalReportar() {
+    const modal = document.getElementById("modal-reportar");
+    document.getElementById("reportar-cat-label").textContent = categoriaActual || "Categoría desconocida";
+    document.querySelectorAll('input[name="tipo-error"]').forEach(r => (r).checked = false);
+    document.getElementById("reportar-feedback").classList.add("hidden");
+    modal.classList.remove("hidden");
+  }
+  window.abrirModalReportar = abrirModalReportar;
+
+  document.getElementById("reportar-cancelar").addEventListener("click", () => {
+    document.getElementById("modal-reportar").classList.add("hidden");
+  });
+
+  document.getElementById("reportar-enviar").addEventListener("click", async () => {
+    const sel = document.querySelector('input[name="tipo-error"]:checked');
+    if (!sel) return;
+    const btn = document.getElementById("reportar-enviar");
+    btn.textContent = "Enviando..."; btn.disabled = true;
+    try {
+      await fetch(WEBHOOK_REPORTAR, { method: "POST", body: JSON.stringify({
+        categoria: categoriaActual || "desconocida", elemento: "", tipoError: sel.value
+      })});
+    } catch {}
+    btn.textContent = "Enviar →"; btn.disabled = false;
+    document.getElementById("reportar-feedback").classList.remove("hidden");
+    setTimeout(() => document.getElementById("modal-reportar").classList.add("hidden"), 1500);
+  });
 
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible" && !bloqueado && !terminado && items.length > 0) {

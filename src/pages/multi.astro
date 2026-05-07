@@ -1042,6 +1042,38 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     }
   }
 
+
+  // ── Reportar error ───────────────────────────────────────────────
+  const WEBHOOK_REPORTAR = "https://script.google.com/macros/s/AKfycbxO1ttDJ46HP5ftZWIiDBbVDupH3BxLGL0Lr-SU-3aJa1MSSDnz2gz-MLN6RvfzkVUThQ/exec";
+
+  function abrirModalReportar() {
+    const modal = document.getElementById("modal-reportar");
+    document.getElementById("reportar-cat-label").textContent = categoriaActual || "Categoría desconocida";
+    document.querySelectorAll('input[name="tipo-error"]').forEach(r => (r).checked = false);
+    document.getElementById("reportar-feedback").classList.add("hidden");
+    modal.classList.remove("hidden");
+  }
+  window.abrirModalReportar = abrirModalReportar;
+
+  document.getElementById("reportar-cancelar").addEventListener("click", () => {
+    document.getElementById("modal-reportar").classList.add("hidden");
+  });
+
+  document.getElementById("reportar-enviar").addEventListener("click", async () => {
+    const sel = document.querySelector('input[name="tipo-error"]:checked');
+    if (!sel) return;
+    const btn = document.getElementById("reportar-enviar");
+    btn.textContent = "Enviando..."; btn.disabled = true;
+    try {
+      await fetch(WEBHOOK_REPORTAR, { method: "POST", body: JSON.stringify({
+        categoria: categoriaActual || "desconocida", elemento: "", tipoError: sel.value
+      })});
+    } catch {}
+    btn.textContent = "Enviar →"; btn.disabled = false;
+    document.getElementById("reportar-feedback").classList.remove("hidden");
+    setTimeout(() => document.getElementById("modal-reportar").classList.add("hidden"), 1500);
+  });
+
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible" && !pJuego.classList.contains("hidden") && turno === rolPropio && !bloqueado && !terminado) {
       reco?.resetOffset();
