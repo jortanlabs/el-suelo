@@ -1,13 +1,22 @@
 ---
 import Base from "../layouts/Base.astro";
-import { categoriasFloor } from "../data/categoriasFloor.ts";
+import { subcategorias } from "../data/catalogoCine.ts";
 
-const cats = categoriasFloor.map((c) => ({ slug: c.slug, nombre: c.nombre, emoji: c.emoji }));
+const cineSlugsJugables = subcategorias
+  .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
+  .map((s) => s.slug);
+const cineSlugsNombres: Record<string, string> = Object.fromEntries(
+  subcategorias
+    .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
+    .map((s) => [s.slug, s.nombre])
+);
 const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "d8b48a4d7d6cb146cf1e";
 const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 ---
 
 <Base titulo="El Suelo — 2 jugadores" descripcion="Juega El Suelo contra alguien desde otro móvil.">
+  <div id="datos-cine-slugs" data-json={JSON.stringify(cineSlugsJugables)} class="hidden"></div>
+  <div id="datos-cine-nombres" data-json={JSON.stringify(cineSlugsNombres)} class="hidden"></div>
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
       <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">← Volver</button>
@@ -74,19 +83,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
             </div>
           </div>
           <div id="seccion-categoria" class="hidden">
-            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Categoría</label>
-            <div class="grid grid-cols-2 gap-2">
-              {cats.map((cat) => (
-                <button class="cat-btn floor-card-small px-3 py-2 text-sm font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left" data-slug={cat.slug}>
-                  {cat.emoji} {cat.nombre}
-                </button>
-              ))}
-              <button class="cat-btn floor-card-small px-3 py-2 text-sm font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left col-span-2" data-slug="libre">
-                ✨ Categoría libre...
-              </button>
-            </div>
-            <div id="libre-container" class="hidden mt-2">
-              <input id="categoria-libre" type="text" placeholder="Ej: golfistas famosos..." maxlength="100" class="floor-input" />
+            <div class="floor-card-small px-4 py-3 border-[#ffcc00] text-center">
+              <span class="font-titulo font-bold text-[#ffcc00] text-base">🎬 Cine y Series</span>
+              <p class="text-[#2a5090] text-xs font-titulo mt-0.5">Subcategoría aleatoria en cada partida</p>
             </div>
           </div>
           <div id="nota-tablero" class="hidden floor-card-small px-4 py-3 border-[#ffcc0033]">
@@ -94,7 +93,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           </div>
           <div class="flex gap-2">
             <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-6 py-4">¡A jugar! →</button>
-            <button id="boton-aleatorio" class="hidden floor-btn floor-btn-gold font-titulo font-bold text-xl px-4 py-4" title="Categoría aleatoria">🎲</button>
+
           </div>
           <p id="error-setup" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
         </div>
@@ -264,14 +263,19 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   import Pusher from "pusher-js";
   import type { Channel } from "pusher-js";
   import {
-    generarFloor, generarFloorPredefinida,
+    generarFloor, generarFloorPredefinida, cargarCatalogoCine,
     type ItemFloor, crearReconocedor, navegadorSoportaVoz,
     type ReconocedorVoz, aciertoFlexible,
   } from "../lib/floor-client.ts";
-  import { categoriasFloor as todasCats } from "../data/categoriasFloor.ts";
 
   const PUSHER_KEY = (window as any).__PK__ ?? "";
   const PUSHER_CLUSTER = (window as any).__PC__ ?? "eu";
+  const cineSlugsJugables: string[] = JSON.parse(
+    (document.getElementById("datos-cine-slugs") as HTMLElement).dataset.json!,
+  );
+  const cineSlugsNombres: Record<string, string> = JSON.parse(
+    (document.getElementById("datos-cine-nombres") as HTMLElement).dataset.json!,
+  );
 
   // ── DOM ────────────────────────────────────────────────────
   const $ = (id: string) => document.getElementById(id)!;
@@ -547,22 +551,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     mostrar(pSetup);
   });
 
-  let categoriaSeleccionada = "";
-  document.querySelectorAll<HTMLButtonElement>(".cat-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll<HTMLButtonElement>(".cat-btn").forEach((b) => b.classList.remove("floor-cat-selected"));
-      btn.classList.add("floor-cat-selected");
-      categoriaSeleccionada = btn.dataset.slug!;
-      $("libre-container").classList.toggle("hidden", categoriaSeleccionada !== "libre");
-    });
-  });
-  document.querySelector<HTMLButtonElement>(".cat-btn")?.click();
-
   $("modo-rapida").addEventListener("click", () => {
     modo = "rapida"; modoElegido = true;
     $("seccion-categoria").classList.remove("hidden");
     $("nota-tablero").classList.add("hidden");
-    $("boton-aleatorio").classList.remove("hidden");
     $("modo-rapida").classList.remove("text-[#2a5090]", "border-[#163575]");
     $("modo-rapida").classList.add("floor-btn-a");
     $("modo-tablero").classList.remove("floor-btn-a");
@@ -573,29 +565,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     modo = "tablero"; modoElegido = true;
     $("seccion-categoria").classList.add("hidden");
     $("nota-tablero").classList.remove("hidden");
-    $("boton-aleatorio").classList.add("hidden");
     $("modo-tablero").classList.remove("text-[#2a5090]", "border-[#163575]");
     $("modo-tablero").classList.add("floor-btn-a");
     $("modo-rapida").classList.remove("floor-btn-a");
     $("modo-rapida").classList.add("text-[#2a5090]", "border-[#163575]");
-  });
-
-  const TEMAS_SORPRESA = [
-    "Superhéroes de Marvel","Pintores famosos","Astronautas","Inventores famosos",
-    "Tenistas famosos","Boxeadores históricos","Guitarristas de rock","Filósofos griegos",
-    "Jugadores de baloncesto","Pilotos de Fórmula 1","Directores de cine","Reyes y reinas de Europa",
-    "Escritores del siglo XX","Actrices de Hollywood clásico","Premios Nobel de la Paz",
-    "Faraones del antiguo Egipto","Capitales de Europa","Edificios modernos icónicos",
-    "Volcanes del mundo","Estadios de fútbol del mundo","Museos famosos del mundo",
-    "Razas de perros","Razas de gatos","Dinosaurios","Aves exóticas",
-    "Instrumentos musicales","Coches deportivos clásicos","Flores del mundo",
-    "Personajes de Disney","Videoconsolas clásicas","Golfistas famosos",
-  ];
-
-  $("boton-aleatorio").addEventListener("click", () => {
-    const tema = TEMAS_SORPRESA[Math.floor(Math.random() * TEMAS_SORPRESA.length)];
-    document.querySelector<HTMLButtonElement>(".cat-btn[data-slug='libre']")?.click();
-    ($("categoria-libre") as HTMLInputElement).value = tema;
   });
 
   let modoElegido = false;
@@ -614,28 +587,14 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       await initTablero();
       return;
     }
-    if (!categoriaSeleccionada) {
-      errEl.textContent = "Elige una categoría."; errEl.classList.remove("hidden"); return;
-    }
-    const libre = categoriaSeleccionada === "libre"
-      ? ($("categoria-libre") as HTMLInputElement).value.trim() : undefined;
-    if (categoriaSeleccionada === "libre" && !libre) {
-      errEl.textContent = "Escribe una categoría libre."; errEl.classList.remove("hidden"); return;
-    }
+    // Auto-pick random cine subcategory
+    const _slug = cineSlugsJugables[Math.floor(Math.random() * cineSlugsJugables.length)];
     sync({ fase: "cargando", nombreA, nombreB, modo });
     mostrar(pLoader);
     try {
       let raw: ItemFloor[];
-      if (categoriaSeleccionada === "libre") {
-        raw = await generarFloor({ libre, onProgreso: (m) => { $("loader-progreso").textContent = m; } });
-        categoriaActual = libre ?? "";
-      } else {
-        const cat = todasCats.find((c) => c.slug === categoriaSeleccionada)!;
-        categoriaActual = cat.nombre;
-        raw = cat.itemsHardcoded
-          ? [...cat.itemsHardcoded]
-          : await generarFloorPredefinida(cat.slug, cat.nombres!, cat.ocupacionesWikidata, cat.instanciasWikidata, cat.descripcionWikidata, cat.apiEspecializada);
-      }
+      raw = await cargarCatalogoCine(_slug);
+      categoriaActual = cineSlugsNombres[_slug] ?? _slug;
       items = [...raw].sort(() => Math.random() - 0.5).slice(0, 20);
       turno = "A"; decimasA = 450; decimasB = 450;
       indice = 0; terminado = false; bloqueado = false;
