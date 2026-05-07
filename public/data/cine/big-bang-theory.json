@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "Sheldon Cooper",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f7/Sheldon_and_Young_Sheldon.jpg",
+    "palabraClave": "cooper"
+  },
+  {
+    "nombre": "Leonard Hofstadter",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Galecki%2C_Johnny_%28FMC%29.jpg/330px-Galecki%2C_Johnny_%28FMC%29.jpg",
+    "palabraClave": "hofstadter"
+  },
+  {
+    "nombre": "Amy Farrah Fowler",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Mayim_Bialik_at_Gracie_Awards_Gala_crop.jpg/330px-Mayim_Bialik_at_Gracie_Awards_Gala_crop.jpg",
+    "palabraClave": "fowler"
+  },
+  {
+    "nombre": "Evan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/CES_2026_-_Simon_Helberg_02_%28cropped%29.jpg/330px-CES_2026_-_Simon_Helberg_02_%28cropped%29.jpg",
+    "palabraClave": "evan"
+  },
+  {
+    "nombre": "El sofá de Sheldon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e3/Childish_Gambino_Redbone.jpg",
+    "palabraClave": "sheldon"
+  },
+  {
+    "nombre": "Juego de tronos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Tron_Legacy_Logo.svg/langes-330px-Tron_Legacy_Logo.svg.png",
+    "palabraClave": "tronos"
+  },
+  {
+    "nombre": "Cómics",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Little_Nemo_moon.jpg/330px-Little_Nemo_moon.jpg",
+    "palabraClave": "comics"
+  },
+  {
+    "nombre": "Star Trek",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/TBBT_logo.svg/langes-330px-TBBT_logo.svg.png",
+    "palabraClave": "trek"
+  },
+  {
+    "nombre": "Bazinga",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Jim_Parsons.png/330px-Jim_Parsons.png",
+    "palabraClave": "bazinga"
+  },
+  {
+    "nombre": "La Pizzería",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Pizzeria_in_Venice.jpg/330px-Pizzeria_in_Venice.jpg",
+    "palabraClave": "pizzeria"
+  },
+  {
+    "nombre": "Raj's telescope",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a1/Rajesh_Koothrappali.jpg",
+    "palabraClave": "telescope"
+  },
+  {
+    "nombre": "Howard's space suit",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Iron_Man_-_2008_movie_logo.svg/langes-330px-Iron_Man_-_2008_movie_logo.svg.png",
+    "palabraClave": "suit"
+  },
+  {
+    "nombre": "Cheesecake Factory",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/The_Cheesecake_Factory_in_Downntown_Seattle_2009.JPG/330px-The_Cheesecake_Factory_in_Downntown_Seattle_2009.JPG",
+    "palabraClave": "factory"
+  },
+  {
+    "nombre": "El spot de Sheldon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/8e/Luis_Alfonso_Mendoza.jpg",
+    "palabraClave": "sheldon"
+  }
+]

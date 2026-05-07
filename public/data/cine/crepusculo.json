@@ -1,0 +1,117 @@
+[
+  {
+    "nombre": "Twilight",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Breaking-dawn.png/330px-Breaking-dawn.png",
+    "palabraClave": "twilight"
+  },
+  {
+    "nombre": "New Moon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Uyj.png/330px-Uyj.png",
+    "palabraClave": "moon"
+  },
+  {
+    "nombre": "Eclipse",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Solar_eclipse_1999_4.jpg/330px-Solar_eclipse_1999_4.jpg",
+    "palabraClave": "eclipse"
+  },
+  {
+    "nombre": "Edward Cullen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Robert_Pattinson_H%C3%B4tel_de_Crillon_2009.jpg/330px-Robert_Pattinson_H%C3%B4tel_de_Crillon_2009.jpg",
+    "palabraClave": "cullen"
+  },
+  {
+    "nombre": "Emmett Cullen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Elizabeth_Reaser_Comic-Con_2011.jpg/330px-Elizabeth_Reaser_Comic-Con_2011.jpg",
+    "palabraClave": "cullen"
+  },
+  {
+    "nombre": "Rosalie Hale",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Nikki_Reed_2_by_David_Shankbone.jpg/330px-Nikki_Reed_2_by_David_Shankbone.jpg",
+    "palabraClave": "hale"
+  },
+  {
+    "nombre": "Interview with the Vampire",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Interview_With_the_Vampire%2C_Anne_Rice.jpg/330px-Interview_With_the_Vampire%2C_Anne_Rice.jpg",
+    "palabraClave": "vampire"
+  },
+  {
+    "nombre": "Bram Stoker's Dracula",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/41/Francis_Ford_Coppola.jpg",
+    "palabraClave": "dracula"
+  },
+  {
+    "nombre": "From Dusk till Dawn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/From_Dusk_Till_Dawn_logo.png/330px-From_Dusk_Till_Dawn_logo.png",
+    "palabraClave": "dawn"
+  },
+  {
+    "nombre": "Blade",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/19/Blade_movie.jpg",
+    "palabraClave": "blade"
+  },
+  {
+    "nombre": "Let the Right One In",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/34/L%C3%A5t-den-r%C3%A4tte-komma-in-logotyp.png",
+    "palabraClave": "in"
+  },
+  {
+    "nombre": "What We Do in the Shadows",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Jackie_van_Beek_%28cropped%29.jpg/330px-Jackie_van_Beek_%28cropped%29.jpg",
+    "palabraClave": "shadows"
+  },
+  {
+    "nombre": "The Lost Boys",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/The_Lost_Boys_Logo.png/330px-The_Lost_Boys_Logo.png",
+    "palabraClave": "boys"
+  },
+  {
+    "nombre": "Near Dark",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Alone_in_the_dark.svg/langes-330px-Alone_in_the_dark.svg.png",
+    "palabraClave": "dark"
+  },
+  {
+    "nombre": "Only Lovers Left Alive",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Only_Lovers_Left_Alive_movie_logo.png/330px-Only_Lovers_Left_Alive_movie_logo.png",
+    "palabraClave": "alive"
+  },
+  {
+    "nombre": "The Vampire Diaries",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Vampire_diaries.jpg/330px-Vampire_diaries.jpg",
+    "palabraClave": "diaries"
+  },
+  {
+    "nombre": "True Blood",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Deborah_Ann_Woll_at_the_2010_SAG_Awards.jpg/330px-Deborah_Ann_Woll_at_the_2010_SAG_Awards.jpg",
+    "palabraClave": "blood"
+  },
+  {
+    "nombre": "Buffy the Vampire Slayer",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Buffy_the_vampire_slayer.svg/langes-330px-Buffy_the_vampire_slayer.svg.png",
+    "palabraClave": "slayer"
+  },
+  {
+    "nombre": "Dracula",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dracula_lotax_toapel.jpg/330px-Dracula_lotax_toapel.jpg",
+    "palabraClave": "dracula"
+  },
+  {
+    "nombre": "Underworld",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/cc/Underworld_%282003_film%29_poster.jpg",
+    "palabraClave": "underworld"
+  },
+  {
+    "nombre": "Van Helsing",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/55/Van_Helsing_poster.jpg",
+    "palabraClave": "helsing"
+  },
+  {
+    "nombre": "Warm Bodies",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/LioTiptonTIFFSept2011.jpg/330px-LioTiptonTIFFSept2011.jpg",
+    "palabraClave": "bodies"
+  },
+  {
+    "nombre": "Abraham Lincoln: Vampire Hunter",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Abraham-Lincoln-Vampirj%C3%A4ger.jpg/330px-Abraham-Lincoln-Vampirj%C3%A4ger.jpg",
+    "palabraClave": "hunter"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "nombre": "Superman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kirk_Alyn_as_Superman_in_a_publicity_still_from_1948.jpg/330px-Kirk_Alyn_as_Superman_in_a_publicity_still_from_1948.jpg",
+    "palabraClave": "superman"
+  },
+  {
+    "nombre": "Wonder Woman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Lynda_Carter_Wonder_Woman.JPG/330px-Lynda_Carter_Wonder_Woman.JPG",
+    "palabraClave": "woman"
+  },
+  {
+    "nombre": "Black Adam",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e3/Modern_Black_Adam.png",
+    "palabraClave": "adam"
+  },
+  {
+    "nombre": "Lex Luthor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/9/9b/Lex_Luthor_%28comic_book_supervillain%29_infobox_image.png",
+    "palabraClave": "luthor"
+  },
+  {
+    "nombre": "Dos Caras",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/75/Dos_Caras_in_1984_%28cropped%29.png",
+    "palabraClave": "caras"
+  },
+  {
+    "nombre": "Alfred Pennyworth",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/5c/Alfred_Pennyworth_%28Alex_Ross%29.jpg",
+    "palabraClave": "pennyworth"
+  },
+  {
+    "nombre": "Supergirl",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e1/The_Supergirls.jpg",
+    "palabraClave": "supergirl"
+  },
+  {
+    "nombre": "Zatanna",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/64/Zatanna_Bring_Down_The_House.jpeg",
+    "palabraClave": "zatanna"
+  },
+  {
+    "nombre": "Damian Wayne",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/ee/Robin_%28Damian_Wayne%29.png",
+    "palabraClave": "wayne"
+  },
+  {
+    "nombre": "Barbara Gordon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6c/Barbara_Gordon.jpg",
+    "palabraClave": "gordon"
+  },
+  {
+    "nombre": "Deadshot",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2d/DC_Deadshot.png",
+    "palabraClave": "deadshot"
+  },
+  {
+    "nombre": "Ocean Master",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Patrick_Wilson_at_Sundance_Film_Festival_2026-3_%28cropped%29.jpg/330px-Patrick_Wilson_at_Sundance_Film_Festival_2026-3_%28cropped%29.jpg",
+    "palabraClave": "master"
+  },
+  {
+    "nombre": "Metallo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/26/Metallo_%28John_Corben%29.png",
+    "palabraClave": "metallo"
+  }
+]

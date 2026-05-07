@@ -1,0 +1,197 @@
+[
+  {
+    "nombre": "Titanic",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/330px-RMS_Titanic_3.jpg",
+    "palabraClave": "titanic"
+  },
+  {
+    "nombre": "Pretty Woman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Arline_Pretty_%28Feb_1923%29.png/330px-Arline_Pretty_%28Feb_1923%29.png",
+    "palabraClave": "woman"
+  },
+  {
+    "nombre": "Dirty Dancing",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Logo_Dirty_Dancing.svg/langes-330px-Logo_Dirty_Dancing.svg.png",
+    "palabraClave": "dancing"
+  },
+  {
+    "nombre": "Notting Hill",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/London_110.jpg/330px-London_110.jpg",
+    "palabraClave": "hill"
+  },
+  {
+    "nombre": "Moulin Rouge!",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Henri_de_Toulouse-Lautrec_049.jpg/330px-Henri_de_Toulouse-Lautrec_049.jpg",
+    "palabraClave": "rouge"
+  },
+  {
+    "nombre": "The Notebook",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Gena_Rowlands_-_1967.JPG/330px-Gena_Rowlands_-_1967.JPG",
+    "palabraClave": "notebook"
+  },
+  {
+    "nombre": "Bridget Jones's Diary",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/93/Logo_Journal_de_Bridget_Jones.jpg",
+    "palabraClave": "diary"
+  },
+  {
+    "nombre": "Mamma Mia!",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Mamma_Mia%21_at_Teatro_Coliseum_in_Madrid.jpg/330px-Mamma_Mia%21_at_Teatro_Coliseum_in_Madrid.jpg",
+    "palabraClave": "mia"
+  },
+  {
+    "nombre": "La La Land",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spiral-jetty-from-rozel-point.png/330px-Spiral-jetty-from-rozel-point.png",
+    "palabraClave": "land"
+  },
+  {
+    "nombre": "Love Actually",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg",
+    "palabraClave": "actually"
+  },
+  {
+    "nombre": "Casablanca",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/CasablancaPoster-Gold.jpg/330px-CasablancaPoster-Gold.jpg",
+    "palabraClave": "casablanca"
+  },
+  {
+    "nombre": "Gone with the Wind",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Poster_-_Gone_With_the_Wind_01.jpg/330px-Poster_-_Gone_With_the_Wind_01.jpg",
+    "palabraClave": "wind"
+  },
+  {
+    "nombre": "Roman Holiday",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Roman_Holiday_%281953_poster%29.jpg/330px-Roman_Holiday_%281953_poster%29.jpg",
+    "palabraClave": "holiday"
+  },
+  {
+    "nombre": "Breakfast at Tiffany's",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Breakfast_at_Tiffany%27s_%281961_poster%29.jpg/330px-Breakfast_at_Tiffany%27s_%281961_poster%29.jpg",
+    "palabraClave": "tiffanys"
+  },
+  {
+    "nombre": "Sleepless in Seattle",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/SeattleMontage.png/330px-SeattleMontage.png",
+    "palabraClave": "seattle"
+  },
+  {
+    "nombre": "When Harry Met Sally...",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/UChicago_gate.jpg/330px-UChicago_gate.jpg",
+    "palabraClave": "sally"
+  },
+  {
+    "nombre": "Ghost",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ghost_opening_title.jpg/330px-Ghost_opening_title.jpg",
+    "palabraClave": "ghost"
+  },
+  {
+    "nombre": "Amélie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Amelie-les-crayons-woodstower-lyon-2008.jpg/330px-Amelie-les-crayons-woodstower-lyon-2008.jpg",
+    "palabraClave": "amelie"
+  },
+  {
+    "nombre": "Four Weddings and a Funeral",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/3/35/Four_weddings_poster.jpg",
+    "palabraClave": "funeral"
+  },
+  {
+    "nombre": "Jerry Maguire",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Jerry_Maguire_logo.jpg/330px-Jerry_Maguire_logo.jpg",
+    "palabraClave": "maguire"
+  },
+  {
+    "nombre": "Pride & Prejudice",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bust_of_Matthew_Macfadyen_as_Fitzwilliam_Darcy.jpg/330px-Bust_of_Matthew_Macfadyen_as_Fitzwilliam_Darcy.jpg",
+    "palabraClave": "prejudice"
+  },
+  {
+    "nombre": "Sense and Sensibility",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/SenseAndSensibilityTitlePage.jpg/330px-SenseAndSensibilityTitlePage.jpg",
+    "palabraClave": "sensibility"
+  },
+  {
+    "nombre": "Emma",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/EmmaTitlePage.jpg/330px-EmmaTitlePage.jpg",
+    "palabraClave": "emma"
+  },
+  {
+    "nombre": "Forrest Gump",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Forrestgump-logo.svg/langes-330px-Forrestgump-logo.svg.png",
+    "palabraClave": "gump"
+  },
+  {
+    "nombre": "A Walk to Remember",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Lauren_German_2015.jpg/330px-Lauren_German_2015.jpg",
+    "palabraClave": "remember"
+  },
+  {
+    "nombre": "10 Things I Hate About You",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ethan_Peck_June_2009.jpg/330px-Ethan_Peck_June_2009.jpg",
+    "palabraClave": "you"
+  },
+  {
+    "nombre": "Mean Girls",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/ac/Mean_Girls_film_poster.png",
+    "palabraClave": "girls"
+  },
+  {
+    "nombre": "The Princess Diaries",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/The_Princess_Diaries_2_logo.svg/langes-330px-The_Princess_Diaries_2_logo.svg.png",
+    "palabraClave": "diaries"
+  },
+  {
+    "nombre": "13 Going on 30",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/aa/13_Going_on_30_film_poster.png",
+    "palabraClave": "30"
+  },
+  {
+    "nombre": "Hitch",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/The_Hitch-Hiker_%281953_poster%29.jpeg/330px-The_Hitch-Hiker_%281953_poster%29.jpeg",
+    "palabraClave": "hitch"
+  },
+  {
+    "nombre": "My Big Fat Greek Wedding",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/3/3b/My_Big_Fat_Greek_Wedding_movie_poster.jpg",
+    "palabraClave": "wedding"
+  },
+  {
+    "nombre": "The Proposal",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/20220226_Ahn_Hyo-seop_%EC%95%88%ED%9A%A8%EC%84%AD_Kim_Se-jeong_%EA%B9%80%EC%84%B8%EC%A0%95_for_Marie_Claire_Korea_%281%29.jpg/330px-20220226_Ahn_Hyo-seop_%EC%95%88%ED%9A%A8%EC%84%AD_Kim_Se-jeong_%EA%B9%80%EC%84%B8%EC%A0%95_for_Marie_Claire_Korea_%281%29.jpg",
+    "palabraClave": "proposal"
+  },
+  {
+    "nombre": "Crazy, Stupid, Love",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/JohnRequaGlennFicarraSept2011.jpg/330px-JohnRequaGlennFicarraSept2011.jpg",
+    "palabraClave": "love"
+  },
+  {
+    "nombre": "The Fault in Our Stars",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/The_Fault_In_Our_Stars_movie_set_at_Wesfield_Bondi_%2815666998542%29.jpg/330px-The_Fault_In_Our_Stars_movie_set_at_Wesfield_Bondi_%2815666998542%29.jpg",
+    "palabraClave": "stars"
+  },
+  {
+    "nombre": "Me Before You",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/The_Nightmare_Before_Christmas_Logo.svg/langes-330px-The_Nightmare_Before_Christmas_Logo.svg.png",
+    "palabraClave": "you"
+  },
+  {
+    "nombre": "Eternal Sunshine of the Spotless Mind",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Charlie_Kaufman_Fantastic_Fest_2015-0257_%2827441349145%29_%28cropped%29.jpg/330px-Charlie_Kaufman_Fantastic_Fest_2015-0257_%2827441349145%29_%28cropped%29.jpg",
+    "palabraClave": "mind"
+  },
+  {
+    "nombre": "Moonrise Kingdom",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Kara_Hayward_2012_%28cropped%29.jpg/330px-Kara_Hayward_2012_%28cropped%29.jpg",
+    "palabraClave": "kingdom"
+  },
+  {
+    "nombre": "About Time",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_time_traveler%27s_wife.svg/langes-330px-The_time_traveler%27s_wife.svg.png",
+    "palabraClave": "time"
+  },
+  {
+    "nombre": "One Day",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/ad/One_Day_Poster.jpg",
+    "palabraClave": "day"
+  }
+]

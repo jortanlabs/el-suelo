@@ -1,0 +1,207 @@
+[
+  {
+    "nombre": "Cate Blanchett",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Cate_Blanchett-63298_%28cropped_2%29.jpg/330px-Cate_Blanchett-63298_%28cropped_2%29.jpg",
+    "palabraClave": "blanchett"
+  },
+  {
+    "nombre": "Natalie Portman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Natalie_Portman-4339.jpg/330px-Natalie_Portman-4339.jpg",
+    "palabraClave": "portman"
+  },
+  {
+    "nombre": "Scarlett Johansson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Scarlett_Johansson-8588.jpg/330px-Scarlett_Johansson-8588.jpg",
+    "palabraClave": "johansson"
+  },
+  {
+    "nombre": "Anne Hathaway",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Anne_Hathaway-_Press_conference_for_the_film_%22The_Devil_Wears_Prada_2%22_-_55194764955_%28cropped%29.jpg/330px-Anne_Hathaway-_Press_conference_for_the_film_%22The_Devil_Wears_Prada_2%22_-_55194764955_%28cropped%29.jpg",
+    "palabraClave": "hathaway"
+  },
+  {
+    "nombre": "Emma Stone",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emma_Stone_at_the_2025_Venice_Film_Festival-6313_%28cropped%29.jpg/330px-Emma_Stone_at_the_2025_Venice_Film_Festival-6313_%28cropped%29.jpg",
+    "palabraClave": "stone"
+  },
+  {
+    "nombre": "Julia Roberts",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Julia_Roberts_2025.jpg/330px-Julia_Roberts_2025.jpg",
+    "palabraClave": "roberts"
+  },
+  {
+    "nombre": "Jennifer Aniston",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/JenniferAnistonHWoFFeb2012.jpg/330px-JenniferAnistonHWoFFeb2012.jpg",
+    "palabraClave": "aniston"
+  },
+  {
+    "nombre": "Nicole Kidman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Nicole_Kidman-66059_%28cropped%29.jpg/330px-Nicole_Kidman-66059_%28cropped%29.jpg",
+    "palabraClave": "kidman"
+  },
+  {
+    "nombre": "Gwyneth Paltrow",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gwyneth_Paltrow_-_Marty_Supreme.jpg/330px-Gwyneth_Paltrow_-_Marty_Supreme.jpg",
+    "palabraClave": "paltrow"
+  },
+  {
+    "nombre": "Winona Ryder",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Winona_Ryder-63849.jpg/330px-Winona_Ryder-63849.jpg",
+    "palabraClave": "ryder"
+  },
+  {
+    "nombre": "Helen Mirren",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/MKr24712_Helen_Mirren_%28Golda%2C_Berlinale_2023%29_cropped.png/330px-MKr24712_Helen_Mirren_%28Golda%2C_Berlinale_2023%29_cropped.png",
+    "palabraClave": "mirren"
+  },
+  {
+    "nombre": "Keira Knightley",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Knightley_Bafta_2015_07.png/330px-Knightley_Bafta_2015_07.png",
+    "palabraClave": "knightley"
+  },
+  {
+    "nombre": "Jessica Chastain",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Jessica_Chastain-64631_%28cropped%29.jpg/330px-Jessica_Chastain-64631_%28cropped%29.jpg",
+    "palabraClave": "chastain"
+  },
+  {
+    "nombre": "Viola Davis",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Viola_Davis_at_the_Air_Premiere_at_SXSW_%28cropped%29.jpg/330px-Viola_Davis_at_the_Air_Premiere_at_SXSW_%28cropped%29.jpg",
+    "palabraClave": "davis"
+  },
+  {
+    "nombre": "Lupita Nyong'o",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Lupita_Nyong%27o_by_Gage_Skidmore_4.jpg/330px-Lupita_Nyong%27o_by_Gage_Skidmore_4.jpg",
+    "palabraClave": "nyongo"
+  },
+  {
+    "nombre": "Gal Gadot",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Gal_Gadot_by_Gage_Skidmore_3.jpg/330px-Gal_Gadot_by_Gage_Skidmore_3.jpg",
+    "palabraClave": "gadot"
+  },
+  {
+    "nombre": "Emma Watson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Emma_Watson_2013.jpg/330px-Emma_Watson_2013.jpg",
+    "palabraClave": "watson"
+  },
+  {
+    "nombre": "Jennifer Lopez",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_%28cropped_3%29.jpg/330px-Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_%28cropped_3%29.jpg",
+    "palabraClave": "lopez"
+  },
+  {
+    "nombre": "Salma Hayek",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/MKr383631_Salma_Hayek_%28Women_In_Motion%2C_Cannes_2025%29_crop.jpg/330px-MKr383631_Salma_Hayek_%28Women_In_Motion%2C_Cannes_2025%29_crop.jpg",
+    "palabraClave": "hayek"
+  },
+  {
+    "nombre": "Margot Robbie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Margot_Robbie_at_29th_Critics%27_Choice_Awards.jpg_%28brightened%29.png/330px-Margot_Robbie_at_29th_Critics%27_Choice_Awards.jpg_%28brightened%29.png",
+    "palabraClave": "robbie"
+  },
+  {
+    "nombre": "Florence Pugh",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Florence_Pugh_at_the_2024_Toronto_International_Film_Festival_13_%28cropped_2_%E2%80%93_color_adjusted%29.jpg/330px-Florence_Pugh_at_the_2024_Toronto_International_Film_Festival_13_%28cropped_2_%E2%80%93_color_adjusted%29.jpg",
+    "palabraClave": "pugh"
+  },
+  {
+    "nombre": "Ana de Armas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Ana_de_Armas_by_Gage_Skidmore_2.jpg/330px-Ana_de_Armas_by_Gage_Skidmore_2.jpg",
+    "palabraClave": "armas"
+  },
+  {
+    "nombre": "Anya Taylor-Joy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Anya_Taylor-Joy_at_the_2025_Toronto_International_Film_Festival._07_%28cropped%29.jpg/330px-Anya_Taylor-Joy_at_the_2025_Toronto_International_Film_Festival._07_%28cropped%29.jpg",
+    "palabraClave": "taylorjoy"
+  },
+  {
+    "nombre": "Sydney Sweeney",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sydney_Sweeney_at_the_2024_Toronto_International_Film_Festival_%28cropped%2C_rotated%29.jpg/330px-Sydney_Sweeney_at_the_2024_Toronto_International_Film_Festival_%28cropped%2C_rotated%29.jpg",
+    "palabraClave": "sweeney"
+  },
+  {
+    "nombre": "Zendaya",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Zendaya_-_2019_by_Glenn_Francis.jpg/330px-Zendaya_-_2019_by_Glenn_Francis.jpg",
+    "palabraClave": "zendaya"
+  },
+  {
+    "nombre": "Jessica Alba",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Jessica_Alba_-_Los_Angeles_Comic_Con_2025.jpg/330px-Jessica_Alba_-_Los_Angeles_Comic_Con_2025.jpg",
+    "palabraClave": "alba"
+  },
+  {
+    "nombre": "Eva Green",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/EVA_GREEN_CESAR_2020.jpg/330px-EVA_GREEN_CESAR_2020.jpg",
+    "palabraClave": "green"
+  },
+  {
+    "nombre": "Tilda Swinton",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Tilda_Swinton_at_Berlinale_2025-2.jpg/330px-Tilda_Swinton_at_Berlinale_2025-2.jpg",
+    "palabraClave": "swinton"
+  },
+  {
+    "nombre": "Penélope Cruz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Goyas_2024_-_Pen%C3%A9lope_Cruz-2_%28cropped%29.jpg/330px-Goyas_2024_-_Pen%C3%A9lope_Cruz-2_%28cropped%29.jpg",
+    "palabraClave": "cruz"
+  },
+  {
+    "nombre": "Audrey Hepburn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AudreyKHepburn.jpg/330px-AudreyKHepburn.jpg",
+    "palabraClave": "hepburn"
+  },
+  {
+    "nombre": "Marilyn Monroe",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Marilyn_Monroe_in_How_to_Marry_a_Millionaire.jpg/330px-Marilyn_Monroe_in_How_to_Marry_a_Millionaire.jpg",
+    "palabraClave": "monroe"
+  },
+  {
+    "nombre": "Bette Davis",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/BetteDavis1935.jpg/330px-BetteDavis1935.jpg",
+    "palabraClave": "davis"
+  },
+  {
+    "nombre": "Ingrid Bergman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ingrid_Bergman_by_Whitey_Schafer_1940.jpg/330px-Ingrid_Bergman_by_Whitey_Schafer_1940.jpg",
+    "palabraClave": "bergman"
+  },
+  {
+    "nombre": "Sophia Loren",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Gala_de_%C3%8Enchidere_TIFF_2016_%2827490660976%29_%28cropped%29.jpg/330px-Gala_de_%C3%8Enchidere_TIFF_2016_%2827490660976%29_%28cropped%29.jpg",
+    "palabraClave": "loren"
+  },
+  {
+    "nombre": "Isabelle Huppert",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Isabelle_Huppert_at_Berlinale_2026-1.jpg/330px-Isabelle_Huppert_at_Berlinale_2026-1.jpg",
+    "palabraClave": "huppert"
+  },
+  {
+    "nombre": "Juliette Binoche",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Juliette_Binoche_at_the_2025_Cannes_Film_Festival_19_%28cropped%29.jpg/330px-Juliette_Binoche_at_the_2025_Cannes_Film_Festival_19_%28cropped%29.jpg",
+    "palabraClave": "binoche"
+  },
+  {
+    "nombre": "Catherine Deneuve",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Catherine_Deneuve_Berlinale_2017.jpg/330px-Catherine_Deneuve_Berlinale_2017.jpg",
+    "palabraClave": "deneuve"
+  },
+  {
+    "nombre": "Sally Field",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sally_Field_1971.JPG/330px-Sally_Field_1971.JPG",
+    "palabraClave": "field"
+  },
+  {
+    "nombre": "Susan Sarandon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Premios_Goya_2026_-_Susan_Sarandon_%28cropped%29.jpg/330px-Premios_Goya_2026_-_Susan_Sarandon_%28cropped%29.jpg",
+    "palabraClave": "sarandon"
+  },
+  {
+    "nombre": "Lady Gaga",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lady_Gaga_at_the_White_House_in_2023_%282%29.jpg/330px-Lady_Gaga_at_the_White_House_in_2023_%282%29.jpg",
+    "palabraClave": "gaga"
+  },
+  {
+    "nombre": "Rihanna",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Rihanna_Fenty_2018.png/330px-Rihanna_Fenty_2018.png",
+    "palabraClave": "rihanna"
+  }
+]

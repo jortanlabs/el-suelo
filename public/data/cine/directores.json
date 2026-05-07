@@ -1,0 +1,167 @@
+[
+  {
+    "nombre": "Steven Spielberg",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/MKr25425_Steven_Spielberg_%28Berlinale_2023%29.jpg/330px-MKr25425_Steven_Spielberg_%28Berlinale_2023%29.jpg",
+    "palabraClave": "spielberg"
+  },
+  {
+    "nombre": "Francis Ford Coppola",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Francis_Ford_Coppola_on_December_8%2C_2024_in_the_White_House_Oval_Office_%28cropped%29.jpg",
+    "palabraClave": "coppola"
+  },
+  {
+    "nombre": "Stanley Kubrick",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Stanley_Kubrick_in_Dr._Strangelove_Trailer_%284%29_Cropped.jpg/330px-Stanley_Kubrick_in_Dr._Strangelove_Trailer_%284%29_Cropped.jpg",
+    "palabraClave": "kubrick"
+  },
+  {
+    "nombre": "Quentin Tarantino",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg/330px-Quentin_Tarantino_by_Gage_Skidmore.jpg",
+    "palabraClave": "tarantino"
+  },
+  {
+    "nombre": "James Cameron",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/James_Cameron_at_53rd_Saturn_Awards_2026-01_%28cropped%29.jpg/330px-James_Cameron_at_53rd_Saturn_Awards_2026-01_%28cropped%29.jpg",
+    "palabraClave": "cameron"
+  },
+  {
+    "nombre": "Ridley Scott",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/NASA_Journey_to_Mars_and_%E2%80%9CThe_Martian%E2%80%9D_%28201508180030HQ%29.jpg/330px-NASA_Journey_to_Mars_and_%E2%80%9CThe_Martian%E2%80%9D_%28201508180030HQ%29.jpg",
+    "palabraClave": "scott"
+  },
+  {
+    "nombre": "George Lucas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/George_Lucas_cropped_2009.jpg/330px-George_Lucas_cropped_2009.jpg",
+    "palabraClave": "lucas"
+  },
+  {
+    "nombre": "David Lynch",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/David_Lynch_%281990%29.jpg/330px-David_Lynch_%281990%29.jpg",
+    "palabraClave": "lynch"
+  },
+  {
+    "nombre": "Woody Allen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Woody_Allen_Cannes_2016.jpg/330px-Woody_Allen_Cannes_2016.jpg",
+    "palabraClave": "allen"
+  },
+  {
+    "nombre": "Alfred Hitchcock",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Hitchcock%2C_Alfred_02.jpg/330px-Hitchcock%2C_Alfred_02.jpg",
+    "palabraClave": "hitchcock"
+  },
+  {
+    "nombre": "Billy Wilder",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Gloria_Swanson_%26_Billy_Wilder_-_ca._1950.JPG/330px-Gloria_Swanson_%26_Billy_Wilder_-_ca._1950.JPG",
+    "palabraClave": "wilder"
+  },
+  {
+    "nombre": "Federico Fellini",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Federico_Fellini_NYWTS_2.jpg/330px-Federico_Fellini_NYWTS_2.jpg",
+    "palabraClave": "fellini"
+  },
+  {
+    "nombre": "Ingmar Bergman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ingmar_Bergman_%281966%29.jpg/330px-Ingmar_Bergman_%281966%29.jpg",
+    "palabraClave": "bergman"
+  },
+  {
+    "nombre": "Clint Eastwood",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Clint_Eastwood_visits_MCB_Camp_Pendleton_%281%29_%28cropped%29.jpg/330px-Clint_Eastwood_visits_MCB_Camp_Pendleton_%281%29_%28cropped%29.jpg",
+    "palabraClave": "eastwood"
+  },
+  {
+    "nombre": "Spike Lee",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Spike_Lee_%2854366842607%29_%28cropped2%29.jpg/330px-Spike_Lee_%2854366842607%29_%28cropped2%29.jpg",
+    "palabraClave": "lee"
+  },
+  {
+    "nombre": "Darren Aronofsky",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/OIFF_2015-07-17_184409_-_Darren_Aronofsky.jpg/330px-OIFF_2015-07-17_184409_-_Darren_Aronofsky.jpg",
+    "palabraClave": "aronofsky"
+  },
+  {
+    "nombre": "Guillermo del Toro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Guillermo_del_Toro_at_the_2026_Sundance_Film_Festival_01_%28cropped%29.jpg/330px-Guillermo_del_Toro_at_the_2026_Sundance_Film_Festival_01_%28cropped%29.jpg",
+    "palabraClave": "toro"
+  },
+  {
+    "nombre": "Alejandro González Iñárritu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MKr386809_Alejandro_Gonz%C3%A1lez_I%C3%B1%C3%A1rritu_%28Amores_Perros%2C_Cannes_2025%29.jpg/330px-MKr386809_Alejandro_Gonz%C3%A1lez_I%C3%B1%C3%A1rritu_%28Amores_Perros%2C_Cannes_2025%29.jpg",
+    "palabraClave": "inarritu"
+  },
+  {
+    "nombre": "Pedro Almodóvar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Pedro_Almod%C3%B3var-69720_%28cropped%29.jpg/330px-Pedro_Almod%C3%B3var-69720_%28cropped%29.jpg",
+    "palabraClave": "almodovar"
+  },
+  {
+    "nombre": "Alejandro Amenábar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Goyas_2025_-Alejandro_Amen%C3%A1bar_%28cropped%29.jpg/330px-Goyas_2025_-Alejandro_Amen%C3%A1bar_%28cropped%29.jpg",
+    "palabraClave": "amenabar"
+  },
+  {
+    "nombre": "Guy Ritchie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GuyRitchiebyKathyHutchins.jpg/330px-GuyRitchiebyKathyHutchins.jpg",
+    "palabraClave": "ritchie"
+  },
+  {
+    "nombre": "Wes Anderson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wes_Anderson-7541_%28cropped%29.jpg/330px-Wes_Anderson-7541_%28cropped%29.jpg",
+    "palabraClave": "anderson"
+  },
+  {
+    "nombre": "Sofia Coppola",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sofia_Coppola_at_82nd_Venice_International_Film_Festival-8_%28cropped%29.jpg/330px-Sofia_Coppola_at_82nd_Venice_International_Film_Festival-8_%28cropped%29.jpg",
+    "palabraClave": "coppola"
+  },
+  {
+    "nombre": "Paul Thomas Anderson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Paul_Thomas_Anderson_in_2025.jpg/330px-Paul_Thomas_Anderson_in_2025.jpg",
+    "palabraClave": "anderson"
+  },
+  {
+    "nombre": "Joel Coen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Joel_Coen_-_Berlin_Berlinale_66_%2824950127406%29_%28cropped%29.jpg/330px-Joel_Coen_-_Berlin_Berlinale_66_%2824950127406%29_%28cropped%29.jpg",
+    "palabraClave": "coen"
+  },
+  {
+    "nombre": "Terry Gilliam",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Terry_Gilliam_%2832703418337%29_CROPPED.jpg/330px-Terry_Gilliam_%2832703418337%29_CROPPED.jpg",
+    "palabraClave": "gilliam"
+  },
+  {
+    "nombre": "Michael Bay",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Michael.bay.png/330px-Michael.bay.png",
+    "palabraClave": "bay"
+  },
+  {
+    "nombre": "Denis Villeneuve",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DVilleneuveRFH121024_%2812_of_23%29_%2854061976489%29_%28cropped%29.jpg/330px-DVilleneuveRFH121024_%2812_of_23%29_%2854061976489%29_%28cropped%29.jpg",
+    "palabraClave": "villeneuve"
+  },
+  {
+    "nombre": "Jordan Peele",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/SXSW_2019_2_-_Jordan_Peele_%2847282560202%29_%28cropped%29.jpg/330px-SXSW_2019_2_-_Jordan_Peele_%2847282560202%29_%28cropped%29.jpg",
+    "palabraClave": "peele"
+  },
+  {
+    "nombre": "Greta Gerwig",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Greta_Gerwig.jpg/330px-Greta_Gerwig.jpg",
+    "palabraClave": "gerwig"
+  },
+  {
+    "nombre": "Ava DuVernay",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ava_DuVernay_at_the_2026_Sundance_Film_Festival_012326_%28cropped%29.jpg/330px-Ava_DuVernay_at_the_2026_Sundance_Film_Festival_012326_%28cropped%29.jpg",
+    "palabraClave": "duvernay"
+  },
+  {
+    "nombre": "Bong Joon-ho",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bong_Joon_Ho_at_Busan_Film_Festival%2C_smaller.jpg/330px-Bong_Joon_Ho_at_Busan_Film_Festival%2C_smaller.jpg",
+    "palabraClave": "joonho"
+  },
+  {
+    "nombre": "Werner Herzog",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Werner_Herzog_Venice_Film_Festival_2025.jpg/330px-Werner_Herzog_Venice_Film_Festival_2025.jpg",
+    "palabraClave": "herzog"
+  }
+]

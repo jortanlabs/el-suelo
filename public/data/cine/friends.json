@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Monica Geller",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d0/Courteney_Cox_as_Monica_Geller.jpg",
+    "palabraClave": "geller"
+  },
+  {
+    "nombre": "Ross Geller",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6f/David_Schwimmer_as_Ross_Geller.jpg",
+    "palabraClave": "geller"
+  }
+]

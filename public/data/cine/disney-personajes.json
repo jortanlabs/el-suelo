@@ -1,0 +1,352 @@
+[
+  {
+    "nombre": "Blancanieves",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schneewitchen_%281%29.jpg/330px-Schneewitchen_%281%29.jpg",
+    "palabraClave": "blancanieves"
+  },
+  {
+    "nombre": "Cenicienta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Offterdinger_Aschenbrodel_%281%29.jpg/330px-Offterdinger_Aschenbrodel_%281%29.jpg",
+    "palabraClave": "cenicienta"
+  },
+  {
+    "nombre": "Aurora",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Prince_Florimund_finds_the_Sleeping_Beauty_-_Project_Gutenberg_etext_19993.jpg/330px-Prince_Florimund_finds_the_Sleeping_Beauty_-_Project_Gutenberg_etext_19993.jpg",
+    "palabraClave": "aurora"
+  },
+  {
+    "nombre": "Ariel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Fantasmic%21_%2827663736393%29.jpg/330px-Fantasmic%21_%2827663736393%29.jpg",
+    "palabraClave": "ariel"
+  },
+  {
+    "nombre": "Bella",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Crane_beauty5.jpg/330px-Crane_beauty5.jpg",
+    "palabraClave": "bella"
+  },
+  {
+    "nombre": "Jasmine",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/D23_Expo_2015_-_Jasmine_%2820607061292%29.jpg/330px-D23_Expo_2015_-_Jasmine_%2820607061292%29.jpg",
+    "palabraClave": "jasmine"
+  },
+  {
+    "nombre": "Pocahontas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pocahontas_by_Simon_van_de_Passe_1616.jpg/330px-Pocahontas_by_Simon_van_de_Passe_1616.jpg",
+    "palabraClave": "pocahontas"
+  },
+  {
+    "nombre": "Mulan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mulan_Logo_Black.svg/langes-330px-Mulan_Logo_Black.svg.png",
+    "palabraClave": "mulan"
+  },
+  {
+    "nombre": "Tiana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/The_Princess_and_the_Frog_Logo_Black.svg/langes-330px-The_Princess_and_the_Frog_Logo_Black.svg.png",
+    "palabraClave": "tiana"
+  },
+  {
+    "nombre": "Rapunzel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Johnny_Gruelle_illustration_-_Rapunzel_-_Project_Gutenberg_etext_11027.jpg/330px-Johnny_Gruelle_illustration_-_Rapunzel_-_Project_Gutenberg_etext_11027.jpg",
+    "palabraClave": "rapunzel"
+  },
+  {
+    "nombre": "Elsa",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/A_Christmas_Fantasy_Parade_%2834852656933%29.jpg/330px-A_Christmas_Fantasy_Parade_%2834852656933%29.jpg",
+    "palabraClave": "elsa"
+  },
+  {
+    "nombre": "Anna",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Anna_-_La_Reine_des_neiges_-_20150803_16h44_%2810804%29.jpg/330px-Anna_-_La_Reine_des_neiges_-_20150803_16h44_%2810804%29.jpg",
+    "palabraClave": "anna"
+  },
+  {
+    "nombre": "Moana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Moana_Disney_Parks.jpg/330px-Moana_Disney_Parks.jpg",
+    "palabraClave": "moana"
+  },
+  {
+    "nombre": "Raya",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Raya_y_el_%C3%BAltimo_drag%C3%B3n.png/330px-Raya_y_el_%C3%BAltimo_drag%C3%B3n.png",
+    "palabraClave": "raya"
+  },
+  {
+    "nombre": "Mirabel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Disney%27s_Encanto_print_logo.svg/langes-330px-Disney%27s_Encanto_print_logo.svg.png",
+    "palabraClave": "mirabel"
+  },
+  {
+    "nombre": "Mickey Mouse",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Mickey_Mouse_%28poster_version%29.svg/langes-330px-Mickey_Mouse_%28poster_version%29.svg.png",
+    "palabraClave": "mouse"
+  },
+  {
+    "nombre": "Minnie Mouse",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Minnie_Mouse.svg/langes-330px-Minnie_Mouse.svg.png",
+    "palabraClave": "mouse"
+  },
+  {
+    "nombre": "Pato Donald",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Dhamma_hall_of_Wat_Buppharam_3_-_Donald_Duck_%28cropped%29.jpg/330px-Dhamma_hall_of_Wat_Buppharam_3_-_Donald_Duck_%28cropped%29.jpg",
+    "palabraClave": "donald"
+  },
+  {
+    "nombre": "Goofy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stamp_of_Albania_-_2001_-_Colnect_372091_-_Goofy_1932_Animal_Cartoon_Character.jpeg/330px-Stamp_of_Albania_-_2001_-_Colnect_372091_-_Goofy_1932_Animal_Cartoon_Character.jpeg",
+    "palabraClave": "goofy"
+  },
+  {
+    "nombre": "Pluto",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Rover_%28Pluto%29%2C_The_Picnic_1930.jpg/330px-Rover_%28Pluto%29%2C_The_Picnic_1930.jpg",
+    "palabraClave": "pluto"
+  },
+  {
+    "nombre": "Chip",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/07R01.jpg/330px-07R01.jpg",
+    "palabraClave": "chip"
+  },
+  {
+    "nombre": "Dale",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dale_Earnhardt_visits_Langley_AFB.jpg/330px-Dale_Earnhardt_visits_Langley_AFB.jpg",
+    "palabraClave": "dale"
+  },
+  {
+    "nombre": "Bambi",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bambi_8.jpg/330px-Bambi_8.jpg",
+    "palabraClave": "bambi"
+  },
+  {
+    "nombre": "Dumbo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dumbo_1.jpg/330px-Dumbo_1.jpg",
+    "palabraClave": "dumbo"
+  },
+  {
+    "nombre": "Pinocho",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Pinocchio.jpg/330px-Pinocchio.jpg",
+    "palabraClave": "pinocho"
+  },
+  {
+    "nombre": "Pepito Grillo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Jiminy_Cricket_%28cropped%29.png/330px-Jiminy_Cricket_%28cropped%29.png",
+    "palabraClave": "grillo"
+  },
+  {
+    "nombre": "Peter Pan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Peter_pan_1911_pipes.jpg/330px-Peter_pan_1911_pipes.jpg",
+    "palabraClave": "pan"
+  },
+  {
+    "nombre": "Campanilla",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/42/Tinkclose-1-.jpg",
+    "palabraClave": "campanilla"
+  },
+  {
+    "nombre": "Alicia",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/af/AlicesAdventuresInWonderlandTitlePage.jpg",
+    "palabraClave": "alicia"
+  },
+  {
+    "nombre": "Gato de Cheshire",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Tennel_Cheshire_proof.png/330px-Tennel_Cheshire_proof.png",
+    "palabraClave": "cheshire"
+  },
+  {
+    "nombre": "Sombrero Loco",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%22Alice%27s_Adventures_in_Wonderland%22_by_Lewis_Carroll%2C_1907_book_cover_%28cropped%29.jpg/330px-%22Alice%27s_Adventures_in_Wonderland%22_by_Lewis_Carroll%2C_1907_book_cover_%28cropped%29.jpg",
+    "palabraClave": "loco"
+  },
+  {
+    "nombre": "Mowgli",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mowgli-1895-illustration.png/330px-Mowgli-1895-illustration.png",
+    "palabraClave": "mowgli"
+  },
+  {
+    "nombre": "Baloo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/T2JB023_-_Bagheera_would_lie_out_on_a_branch.JPG/330px-T2JB023_-_Bagheera_would_lie_out_on_a_branch.JPG",
+    "palabraClave": "baloo"
+  },
+  {
+    "nombre": "Rey Louie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Mogli_und_Balu_-_panoramio.jpg/330px-Mogli_und_Balu_-_panoramio.jpg",
+    "palabraClave": "louie"
+  },
+  {
+    "nombre": "Simba",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/The_Lion_King_2_Simba%27s_Pride_logo.svg/langes-330px-The_Lion_King_2_Simba%27s_Pride_logo.svg.png",
+    "palabraClave": "simba"
+  },
+  {
+    "nombre": "Mufasa",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mufasa_The_Lion_King_logo.png/330px-Mufasa_The_Lion_King_logo.png",
+    "palabraClave": "mufasa"
+  },
+  {
+    "nombre": "Nala",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_Lion_King_at_Minskoff_Theatre_in_Broadway.jpg/330px-The_Lion_King_at_Minskoff_Theatre_in_Broadway.jpg",
+    "palabraClave": "nala"
+  },
+  {
+    "nombre": "Timón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/WPKiW_-_ZOO_-_Surykatka.jpg/330px-WPKiW_-_ZOO_-_Surykatka.jpg",
+    "palabraClave": "timon"
+  },
+  {
+    "nombre": "Pumba",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/The_Lion_King_1%C2%BD_logo.svg/langes-330px-The_Lion_King_1%C2%BD_logo.svg.png",
+    "palabraClave": "pumba"
+  },
+  {
+    "nombre": "Sebastián",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Little_Mermaid_%28Official_TV_Series_Logo%29.png/330px-The_Little_Mermaid_%28Official_TV_Series_Logo%29.png",
+    "palabraClave": "sebastian"
+  },
+  {
+    "nombre": "El Rey Tritón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/The_Little_Mermaid_logo.svg/langes-330px-The_Little_Mermaid_logo.svg.png",
+    "palabraClave": "triton"
+  },
+  {
+    "nombre": "Lumière",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fratelli_Lumiere.jpg/330px-Fratelli_Lumiere.jpg",
+    "palabraClave": "lumiere"
+  },
+  {
+    "nombre": "El Tic Tac",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Solange_Lackington_en_Entre_gallos_y_medianoche.jpg/330px-Solange_Lackington_en_Entre_gallos_y_medianoche.jpg",
+    "palabraClave": "tac"
+  },
+  {
+    "nombre": "Aladdin",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Aladdin-logo-2.svg/langes-330px-Aladdin-logo-2.svg.png",
+    "palabraClave": "aladdin"
+  },
+  {
+    "nombre": "Genio",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Shah_Namah%2C_the_Persian_Epic_of_the_Kings_Wellcome_L0035191.jpg/330px-Shah_Namah%2C_the_Persian_Epic_of_the_Kings_Wellcome_L0035191.jpg",
+    "palabraClave": "genio"
+  },
+  {
+    "nombre": "Abu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Wondercon_2014-7694_%2813987721412%29.jpg/330px-Wondercon_2014-7694_%2813987721412%29.jpg",
+    "palabraClave": "abu"
+  },
+  {
+    "nombre": "Hércules",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Godecharle_Hercule.jpg/330px-Godecharle_Hercule.jpg",
+    "palabraClave": "hercules"
+  },
+  {
+    "nombre": "Megara",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Greece_location_map.svg/langes-330px-Greece_location_map.svg.png",
+    "palabraClave": "megara"
+  },
+  {
+    "nombre": "Pegaso",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/NAMA_Epinetron_Bell%C3%A9rophon.jpg/330px-NAMA_Epinetron_Bell%C3%A9rophon.jpg",
+    "palabraClave": "pegaso"
+  },
+  {
+    "nombre": "Quasimodo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Quasimodo_%28Livre_I%2C_Chapitre_V%29%2C_2019.3.1.jpg/330px-Quasimodo_%28Livre_I%2C_Chapitre_V%29%2C_2019.3.1.jpg",
+    "palabraClave": "quasimodo"
+  },
+  {
+    "nombre": "Esmeralda",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/B%C3%A9ryl_var._%C3%A9meraude_sur_gangue_%28Muzo_Mine_Boyaca_-_Colombie%29_2.jpg/330px-B%C3%A9ryl_var._%C3%A9meraude_sur_gangue_%28Muzo_Mine_Boyaca_-_Colombie%29_2.jpg",
+    "palabraClave": "esmeralda"
+  },
+  {
+    "nombre": "Tarzán",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Tarzan_and_the_Golden_Lion-023.jpg/330px-Tarzan_and_the_Golden_Lion-023.jpg",
+    "palabraClave": "tarzan"
+  },
+  {
+    "nombre": "Lilo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Lilo_%26_Stitch_The_Series_Disney%2B_wordmark.png/330px-Lilo_%26_Stitch_The_Series_Disney%2B_wordmark.png",
+    "palabraClave": "lilo"
+  },
+  {
+    "nombre": "Stitch",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Sitch_at_Bugis%2C_Singapore.jpg/330px-Sitch_at_Bugis%2C_Singapore.jpg",
+    "palabraClave": "stitch"
+  },
+  {
+    "nombre": "Olaf",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Frozen_Logo_Black.svg/langes-330px-Frozen_Logo_Black.svg.png",
+    "palabraClave": "olaf"
+  },
+  {
+    "nombre": "Kristoff",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Oz_Comic-Con_2014_%2814415421809%29.jpg/330px-Oz_Comic-Con_2014_%2814415421809%29.jpg",
+    "palabraClave": "kristoff"
+  },
+  {
+    "nombre": "Judy Hopps",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zootropolis_2_logo.png/330px-Zootropolis_2_logo.png",
+    "palabraClave": "hopps"
+  },
+  {
+    "nombre": "Hiro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Big_Hero_6_logo.svg/langes-330px-Big_Hero_6_logo.svg.png",
+    "palabraClave": "hiro"
+  },
+  {
+    "nombre": "Ralph",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wreck-It_Ralph_Logo.webp/330px-Wreck-It_Ralph_Logo.webp.png",
+    "palabraClave": "ralph"
+  },
+  {
+    "nombre": "Vanellope",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Ralph_Breaks_the_Internet_Logo_Black.svg/langes-330px-Ralph_Breaks_the_Internet_Logo_Black.svg.png",
+    "palabraClave": "vanellope"
+  },
+  {
+    "nombre": "Maui",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/M%C4%81ui_Performer_Merrie_Monarch_Parade_DSC9524.jpg/330px-M%C4%81ui_Performer_Merrie_Monarch_Parade_DSC9524.jpg",
+    "palabraClave": "maui"
+  },
+  {
+    "nombre": "Winnie the Pooh",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Winnie-the-Pooh_19.png/330px-Winnie-the-Pooh_19.png",
+    "palabraClave": "pooh"
+  },
+  {
+    "nombre": "Tigger",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/WinnieThePooh-Tigro-OriginalChristopher.png/330px-WinnieThePooh-Tigro-OriginalChristopher.png",
+    "palabraClave": "tigger"
+  },
+  {
+    "nombre": "Piglet",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Winnie-the-Pooh_166-3.png/330px-Winnie-the-Pooh_166-3.png",
+    "palabraClave": "piglet"
+  },
+  {
+    "nombre": "Eeyore",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Winnie-the-Pooh_166-1.png/330px-Winnie-the-Pooh_166-1.png",
+    "palabraClave": "eeyore"
+  },
+  {
+    "nombre": "Lady",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Lady_and_the_Tramp_Logo.svg/langes-330px-Lady_and_the_Tramp_Logo.svg.png",
+    "palabraClave": "lady"
+  },
+  {
+    "nombre": "Scrooge McDuck",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Don_Rosa_Dragon_Con_2009.JPG/330px-Don_Rosa_Dragon_Con_2009.JPG",
+    "palabraClave": "mcduck"
+  },
+  {
+    "nombre": "Huey, Dewey y Louie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/U-Bahnhof_Oriente_-_Tick_Trick_und_Track_mit_Robben.jpg/330px-U-Bahnhof_Oriente_-_Tick_Trick_und_Track_mit_Robben.jpg",
+    "palabraClave": "louie"
+  },
+  {
+    "nombre": "Mérida",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/M%C3%A9rida_%28Brave%29.jpg/330px-M%C3%A9rida_%28Brave%29.jpg",
+    "palabraClave": "merida"
+  },
+  {
+    "nombre": "Mushu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Disneyland_Mulan_and_Mushu.jpg/330px-Disneyland_Mulan_and_Mushu.jpg",
+    "palabraClave": "mushu"
+  }
+]

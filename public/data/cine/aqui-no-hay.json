@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Concha",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Seashells_by_designerd_cc-by-sa-2.0.jpg/330px-Seashells_by_designerd_cc-by-sa-2.0.jpg",
+    "palabraClave": "concha"
+  },
+  {
+    "nombre": "Belén",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bethlehem_collage.jpg/330px-Bethlehem_collage.jpg",
+    "palabraClave": "belen"
+  }
+]

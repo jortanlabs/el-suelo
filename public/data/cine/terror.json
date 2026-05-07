@@ -1,0 +1,257 @@
+[
+  {
+    "nombre": "A Nightmare on Elm Street",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Nightmare_2.jpg/330px-Nightmare_2.jpg",
+    "palabraClave": "street"
+  },
+  {
+    "nombre": "Friday the 13th",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Friday_the_13th_%281979_Variety_advertisement%29.jpg/330px-Friday_the_13th_%281979_Variety_advertisement%29.jpg",
+    "palabraClave": "13th"
+  },
+  {
+    "nombre": "Halloween",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jack-o%27-Lantern_2003-10-31.jpg/330px-Jack-o%27-Lantern_2003-10-31.jpg",
+    "palabraClave": "halloween"
+  },
+  {
+    "nombre": "The Texas Chain Saw Massacre",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Texas_Chainsaw_Massacre_Logo.svg/langes-330px-Texas_Chainsaw_Massacre_Logo.svg.png",
+    "palabraClave": "massacre"
+  },
+  {
+    "nombre": "Scream",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Scre4m.png/330px-Scre4m.png",
+    "palabraClave": "scream"
+  },
+  {
+    "nombre": "Hellraiser",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Hellraiser_Puzzle_Box.jpg/330px-Hellraiser_Puzzle_Box.jpg",
+    "palabraClave": "hellraiser"
+  },
+  {
+    "nombre": "Child's Play",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Child%27s_play_1988.png/330px-Child%27s_play_1988.png",
+    "palabraClave": "play"
+  },
+  {
+    "nombre": "Psycho",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/American_psycho.svg/langes-330px-American_psycho.svg.png",
+    "palabraClave": "psycho"
+  },
+  {
+    "nombre": "The Shining",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/73/Margaret_Sullavan_in_The_Shining_Hour.JPG",
+    "palabraClave": "shining"
+  },
+  {
+    "nombre": "It",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/IT_%282017_film%29_logo.svg/langes-330px-IT_%282017_film%29_logo.svg.png",
+    "palabraClave": "it"
+  },
+  {
+    "nombre": "Annabelle",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Annabelle_3.png/330px-Annabelle_3.png",
+    "palabraClave": "annabelle"
+  },
+  {
+    "nombre": "The Nun",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Benedetta_crew_at_Cannes_2021.jpg/330px-Benedetta_crew_at_Cannes_2021.jpg",
+    "palabraClave": "nun"
+  },
+  {
+    "nombre": "The Ring",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/The-ring-logo.svg/langes-330px-The-ring-logo.svg.png",
+    "palabraClave": "ring"
+  },
+  {
+    "nombre": "The Exorcist",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/The_Exorcist_%281973%29_movie_logo.png/330px-The_Exorcist_%281973%29_movie_logo.png",
+    "palabraClave": "exorcist"
+  },
+  {
+    "nombre": "Nosferatu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wismar_Markt_Nosferatu_01_%28cropped%29.jpg/330px-Wismar_Markt_Nosferatu_01_%28cropped%29.jpg",
+    "palabraClave": "nosferatu"
+  },
+  {
+    "nombre": "Frankenstein",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Frankenstein%27s_monster_%28Boris_Karloff%29.jpg/330px-Frankenstein%27s_monster_%28Boris_Karloff%29.jpg",
+    "palabraClave": "frankenstein"
+  },
+  {
+    "nombre": "Dracula",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dracula_lotax_toapel.jpg/330px-Dracula_lotax_toapel.jpg",
+    "palabraClave": "dracula"
+  },
+  {
+    "nombre": "The Wolf Man",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/TheWolfManLobbyCard.jpg/330px-TheWolfManLobbyCard.jpg",
+    "palabraClave": "man"
+  },
+  {
+    "nombre": "The Mummy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Pavillon_Menarag%C3%A4rten.jpg/330px-Pavillon_Menarag%C3%A4rten.jpg",
+    "palabraClave": "mummy"
+  },
+  {
+    "nombre": "Creature from the Black Lagoon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Creature_from_the_Black_Lagoon_poster.jpg/330px-Creature_from_the_Black_Lagoon_poster.jpg",
+    "palabraClave": "lagoon"
+  },
+  {
+    "nombre": "The Conjuring",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/The_Conjuring.jpg/330px-The_Conjuring.jpg",
+    "palabraClave": "conjuring"
+  },
+  {
+    "nombre": "Insidious",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2d/Insidious_poster.jpg",
+    "palabraClave": "insidious"
+  },
+  {
+    "nombre": "Paranormal Activity",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/54/Paranormal_Activity_poster.jpg",
+    "palabraClave": "activity"
+  },
+  {
+    "nombre": "The Blair Witch Project",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Blair_Witch_Logo.png/330px-Blair_Witch_Logo.png",
+    "palabraClave": "project"
+  },
+  {
+    "nombre": "REC",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/4/4b/Rec_poster.jpg",
+    "palabraClave": "rec"
+  },
+  {
+    "nombre": "Saw",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Saw_movie_logo.png/330px-Saw_movie_logo.png",
+    "palabraClave": "saw"
+  },
+  {
+    "nombre": "Final Destination",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a3/Final_Destination_movie.jpg",
+    "palabraClave": "destination"
+  },
+  {
+    "nombre": "Hereditary",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hereditary_Logo.png/330px-Hereditary_Logo.png",
+    "palabraClave": "hereditary"
+  },
+  {
+    "nombre": "Midsommar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Midsommarafton%2C_Tr%C3%A4dg%C3%A5rdstorp_Tullinge_2019.webm/330px--Midsommarafton%2C_Tr%C3%A4dg%C3%A5rdstorp_Tullinge_2019.webm.jpg",
+    "palabraClave": "midsommar"
+  },
+  {
+    "nombre": "The Witch",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2a/Blair_Witch_2016_poster.png",
+    "palabraClave": "witch"
+  },
+  {
+    "nombre": "Get Out",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/GetOutFilm.jpg/330px-GetOutFilm.jpg",
+    "palabraClave": "out"
+  },
+  {
+    "nombre": "Us",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Us_2019_film_logo.svg/langes-330px-Us_2019_film_logo.svg.png",
+    "palabraClave": "us"
+  },
+  {
+    "nombre": "A Quiet Place",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Leonard_Bernstein_1971.jpg/330px-Leonard_Bernstein_1971.jpg",
+    "palabraClave": "place"
+  },
+  {
+    "nombre": "Alien",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DragonCon-AlienVsPredator.jpg/330px-DragonCon-AlienVsPredator.jpg",
+    "palabraClave": "alien"
+  },
+  {
+    "nombre": "Predator",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Predator_%282020225730%29.jpg/330px-Predator_%282020225730%29.jpg",
+    "palabraClave": "predator"
+  },
+  {
+    "nombre": "The Silence of the Lambs",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
+    "palabraClave": "lambs"
+  },
+  {
+    "nombre": "The Thing",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/New_York_Comic_Con_2015_-_The_Thing_%2821481502684%29.jpg/330px-New_York_Comic_Con_2015_-_The_Thing_%2821481502684%29.jpg",
+    "palabraClave": "thing"
+  },
+  {
+    "nombre": "The Birds",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Installation_of_For_the_Birds_memorial_%2830%29.jpg/330px-Installation_of_For_the_Birds_memorial_%2830%29.jpg",
+    "palabraClave": "birds"
+  },
+  {
+    "nombre": "Jaws",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Jaws_movie_poster.jpg/330px-Jaws_movie_poster.jpg",
+    "palabraClave": "jaws"
+  },
+  {
+    "nombre": "Poltergeist",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/41/Poltergeist-Therese_Selles.jpg",
+    "palabraClave": "poltergeist"
+  },
+  {
+    "nombre": "28 Days Later",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/28_days_later.jpg/330px-28_days_later.jpg",
+    "palabraClave": "later"
+  },
+  {
+    "nombre": "Dawn of the Dead",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Dawn_Of_The_Dead_logo.png/330px-Dawn_Of_The_Dead_logo.png",
+    "palabraClave": "dead"
+  },
+  {
+    "nombre": "Night of the Living Dead",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Night_Of_The_Living_Dead_trailer_screenshot.jpg/330px-Night_Of_The_Living_Dead_trailer_screenshot.jpg",
+    "palabraClave": "dead"
+  },
+  {
+    "nombre": "Interview with the Vampire",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Interview_With_the_Vampire%2C_Anne_Rice.jpg/330px-Interview_With_the_Vampire%2C_Anne_Rice.jpg",
+    "palabraClave": "vampire"
+  },
+  {
+    "nombre": "Blade",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/19/Blade_movie.jpg",
+    "palabraClave": "blade"
+  },
+  {
+    "nombre": "Salem's Lot",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/James_Mason_-_still.JPG/330px-James_Mason_-_still.JPG",
+    "palabraClave": "lot"
+  },
+  {
+    "nombre": "La Llorona",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/%22La_llorona%22_de_mandera.JPG/330px-%22La_llorona%22_de_mandera.JPG",
+    "palabraClave": "llorona"
+  },
+  {
+    "nombre": "The Orphanage",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/%EC%82%AC%EC%A7%84_100.jpg/330px-%EC%82%AC%EC%A7%84_100.jpg",
+    "palabraClave": "orphanage"
+  },
+  {
+    "nombre": "El cuerpo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Avenue_of_Stars_Statue.jpg/330px-Avenue_of_Stars_Statue.jpg",
+    "palabraClave": "cuerpo"
+  },
+  {
+    "nombre": "American Horror Story",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/American_Horror_Story.svg/langes-330px-American_Horror_Story.svg.png",
+    "palabraClave": "story"
+  },
+  {
+    "nombre": "The Walking Dead",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Thewalkingdead-comic-logo.svg/langes-330px-Thewalkingdead-comic-logo.svg.png",
+    "palabraClave": "dead"
+  }
+]

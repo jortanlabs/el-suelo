@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Harry Potter",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/langes-330px-Harry_Potter_wordmark.svg.png",
+    "palabraClave": "potter"
+  },
+  {
+    "nombre": "Hermione Granger",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg",
+    "palabraClave": "granger"
+  },
+  {
+    "nombre": "Albus Dumbledore",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Albus-DII_1.1.jpg/330px-Albus-DII_1.1.jpg",
+    "palabraClave": "dumbledore"
+  },
+  {
+    "nombre": "Lord Voldemort",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lord_Voldemort%27s_Figure.jpg/330px-Lord_Voldemort%27s_Figure.jpg",
+    "palabraClave": "voldemort"
+  },
+  {
+    "nombre": "Severus Snape",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b9/Ootp076.jpg",
+    "palabraClave": "snape"
+  },
+  {
+    "nombre": "Sirius Black",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6b/Sirius_Black.jpeg",
+    "palabraClave": "black"
+  },
+  {
+    "nombre": "Bellatrix Lestrange",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d8/Bellatrix.jpeg",
+    "palabraClave": "lestrange"
+  },
+  {
+    "nombre": "Quidditch",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Wizarding_World_of_Harry_Potter_-_Quidditch_gear_%285014156072%29.jpg/330px-Wizarding_World_of_Harry_Potter_-_Quidditch_gear_%285014156072%29.jpg",
+    "palabraClave": "quidditch"
+  }
+]

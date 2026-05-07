@@ -1,0 +1,267 @@
+[
+  {
+    "nombre": "Woody",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Disneyland_Hong_Kong_-_Toy_Story_Land_IMG_5461.JPG/330px-Disneyland_Hong_Kong_-_Toy_Story_Land_IMG_5461.JPG",
+    "palabraClave": "woody"
+  },
+  {
+    "nombre": "Buzz Lightyear",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Buzz_Lightyear_sculpture_of_Toy_Story_Hotel_Shanghai_%28cropped%29.jpg/330px-Buzz_Lightyear_sculpture_of_Toy_Story_Hotel_Shanghai_%28cropped%29.jpg",
+    "palabraClave": "lightyear"
+  },
+  {
+    "nombre": "Jessie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Jessie_at_Shanghai_Toy_Story_Land_%28cropped%29.jpg/330px-Jessie_at_Shanghai_Toy_Story_Land_%28cropped%29.jpg",
+    "palabraClave": "jessie"
+  },
+  {
+    "nombre": "Rex",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Hong_Kong_Disneyland_%2824176189482%29_%28cropped%29.jpg/330px-Hong_Kong_Disneyland_%2824176189482%29_%28cropped%29.jpg",
+    "palabraClave": "rex"
+  },
+  {
+    "nombre": "Hamm",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Hamm_Luftbild_Innenstadt_2007.jpg/330px-Hamm_Luftbild_Innenstadt_2007.jpg",
+    "palabraClave": "hamm"
+  },
+  {
+    "nombre": "Mr. Potato Head",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Mr_Potato_Head_1952.jpg/330px-Mr_Potato_Head_1952.jpg",
+    "palabraClave": "head"
+  },
+  {
+    "nombre": "Bo Peep",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Little_Bo_Peep_cosplayer_%2833483660770%29.jpg/330px-Little_Bo_Peep_cosplayer_%2833483660770%29.jpg",
+    "palabraClave": "peep"
+  },
+  {
+    "nombre": "Slinky",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/2006-02-04_Metal_spiral.jpg/330px-2006-02-04_Metal_spiral.jpg",
+    "palabraClave": "slinky"
+  },
+  {
+    "nombre": "Lotso",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Toystory3fix.png/330px-Toystory3fix.png",
+    "palabraClave": "lotso"
+  },
+  {
+    "nombre": "Forky",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Charleroi_-_SMOK_-_Forky_Asks_A_Question_-_01.jpg/330px-Charleroi_-_SMOK_-_Forky_Asks_A_Question_-_01.jpg",
+    "palabraClave": "forky"
+  },
+  {
+    "nombre": "Sully",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Watagashi_2013_%289527560798%29.jpg/330px-Watagashi_2013_%289527560798%29.jpg",
+    "palabraClave": "sully"
+  },
+  {
+    "nombre": "Boo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Halloween_Horror_Nights_Logo.JPG/330px-Halloween_Horror_Nights_Logo.JPG",
+    "palabraClave": "boo"
+  },
+  {
+    "nombre": "Randall",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Randall_Made_Knives_building_001_crop.jpg/330px-Randall_Made_Knives_building_001_crop.jpg",
+    "palabraClave": "randall"
+  },
+  {
+    "nombre": "Nemo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_de_Buscando_a_Nemo.svg/langes-330px-Logo_de_Buscando_a_Nemo.svg.png",
+    "palabraClave": "nemo"
+  },
+  {
+    "nombre": "Dory",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hoplite_fight_from_Athens_Museum.jpg/330px-Hoplite_fight_from_Athens_Museum.jpg",
+    "palabraClave": "dory"
+  },
+  {
+    "nombre": "Mr. Increíble",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/The_Incredibles_logo.svg/langes-330px-The_Incredibles_logo.svg.png",
+    "palabraClave": "increible"
+  },
+  {
+    "nombre": "Jack-Jack",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Incredibles_2_logo.png/330px-Incredibles_2_logo.png",
+    "palabraClave": "jackjack"
+  },
+  {
+    "nombre": "Edna Mode",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Edna_Moda%2C_Kent_Melton.jpg/330px-Edna_Moda%2C_Kent_Melton.jpg",
+    "palabraClave": "mode"
+  },
+  {
+    "nombre": "Rayo McQueen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Lightning_McQueen_Petersen_Automotive_Museum_2024.jpg/330px-Lightning_McQueen_Petersen_Automotive_Museum_2024.jpg",
+    "palabraClave": "mcqueen"
+  },
+  {
+    "nombre": "Mater",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Tow_Mater_%28265156851%29.jpg/330px-Tow_Mater_%28265156851%29.jpg",
+    "palabraClave": "mater"
+  },
+  {
+    "nombre": "Doc Hudson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Orlando_-_Disney_World_-_Disney%27s_Art_of_Animation_Resort_-_Cars_-_Doc_Hudson_%2817031439698%29.jpg/330px-Orlando_-_Disney_World_-_Disney%27s_Art_of_Animation_Resort_-_Cars_-_Doc_Hudson_%2817031439698%29.jpg",
+    "palabraClave": "hudson"
+  },
+  {
+    "nombre": "Sally",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Flickr_-_wbaiv_-_DSC_0074.jpg/330px-Flickr_-_wbaiv_-_DSC_0074.jpg",
+    "palabraClave": "sally"
+  },
+  {
+    "nombre": "Remy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/%C3%89glise_Saint-Denis_de_Remy_2013-09-06_16-06-14.jpg/330px-%C3%89glise_Saint-Denis_de_Remy_2013-09-06_16-06-14.jpg",
+    "palabraClave": "remy"
+  },
+  {
+    "nombre": "Linguini",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Linguine.jpg/330px-Linguine.jpg",
+    "palabraClave": "linguini"
+  },
+  {
+    "nombre": "Colette",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colette_-_photo.jpg/330px-Colette_-_photo.jpg",
+    "palabraClave": "colette"
+  },
+  {
+    "nombre": "Ego",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Ch%C3%A2teau_Cheval-Blanc.jpg/330px-Ch%C3%A2teau_Cheval-Blanc.jpg",
+    "palabraClave": "ego"
+  },
+  {
+    "nombre": "WALL-E",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Wall_Cover.svg/langes-330px-The_Wall_Cover.svg.png",
+    "palabraClave": "walle"
+  },
+  {
+    "nombre": "EVE",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/WALL-E_balloon_at_Shin_Kong_Cineplex_20080725a_%28cropped%29.jpg/330px-WALL-E_balloon_at_Shin_Kong_Cineplex_20080725a_%28cropped%29.jpg",
+    "palabraClave": "eve"
+  },
+  {
+    "nombre": "Carl Fredricksen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Up_%282009_film%29_logo.svg/langes-330px-Up_%282009_film%29_logo.svg.png",
+    "palabraClave": "fredricksen"
+  },
+  {
+    "nombre": "Kevin",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kevin_Bacon_addresses_audience_members_after_being_presented_the_Merit_Service_Award.jpg/330px-Kevin_Bacon_addresses_audience_members_after_being_presented_the_Merit_Service_Award.jpg",
+    "palabraClave": "kevin"
+  },
+  {
+    "nombre": "Mérida",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/M%C3%A9rida_%28Brave%29.jpg/330px-M%C3%A9rida_%28Brave%29.jpg",
+    "palabraClave": "merida"
+  },
+  {
+    "nombre": "Alegría",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Japan_Expo_2024_-_Cosplay_of_Joy.jpg/330px-Japan_Expo_2024_-_Cosplay_of_Joy.jpg",
+    "palabraClave": "alegria"
+  },
+  {
+    "nombre": "Tristeza",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Face_of_fatigue.jpg/330px-Face_of_fatigue.jpg",
+    "palabraClave": "tristeza"
+  },
+  {
+    "nombre": "Ira",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Inferno_Canto_7_lines_8-9.jpg/330px-Inferno_Canto_7_lines_8-9.jpg",
+    "palabraClave": "ira"
+  },
+  {
+    "nombre": "Asco",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Expression_of_the_Emotions_Plate_V%2C_2%2B3.jpg/330px-Expression_of_the_Emotions_Plate_V%2C_2%2B3.jpg",
+    "palabraClave": "asco"
+  },
+  {
+    "nombre": "Miedo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Prado_-_Los_Disparates_%281864%29_-_No._02_-_Disparate_de_miedo.jpg/330px-Prado_-_Los_Disparates_%281864%29_-_No._02_-_Disparate_de_miedo.jpg",
+    "palabraClave": "miedo"
+  },
+  {
+    "nombre": "Bing Bong",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Inside_Out_%282015_film%29_Logo.svg/langes-330px-Inside_Out_%282015_film%29_Logo.svg.png",
+    "palabraClave": "bong"
+  },
+  {
+    "nombre": "Miguel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Le_Grand_Saint_Michel%2C_by_Raffaello_Sanzio%2C_from_C2RMF_retouched.jpg/330px-Le_Grand_Saint_Michel%2C_by_Raffaello_Sanzio%2C_from_C2RMF_retouched.jpg",
+    "palabraClave": "miguel"
+  },
+  {
+    "nombre": "Héctor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Hector_Cassandra_Pomarici_Santomasi.jpg/330px-Hector_Cassandra_Pomarici_Santomasi.jpg",
+    "palabraClave": "hector"
+  },
+  {
+    "nombre": "Ernesto de la Cruz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ernesto_Natividad_De_la_Cruz_-_A%C3%B1o_1938.jpg/330px-Ernesto_Natividad_De_la_Cruz_-_A%C3%B1o_1938.jpg",
+    "palabraClave": "cruz"
+  },
+  {
+    "nombre": "Mamá Coco",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Disney%27s_Coco_logo.png/330px-Disney%27s_Coco_logo.png",
+    "palabraClave": "coco"
+  },
+  {
+    "nombre": "Dante",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Portrait_de_Dante.jpg/330px-Portrait_de_Dante.jpg",
+    "palabraClave": "dante"
+  },
+  {
+    "nombre": "Joe Gardner",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Logo_Soul.png/330px-Logo_Soul.png",
+    "palabraClave": "gardner"
+  },
+  {
+    "nombre": "Luca",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Luca_prodan_gabrielrocca_foto.jpg/330px-Luca_prodan_gabrielrocca_foto.jpg",
+    "palabraClave": "luca"
+  },
+  {
+    "nombre": "Alberto",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Einstein1921_by_F_Schmutzer_2.jpg/330px-Einstein1921_by_F_Schmutzer_2.jpg",
+    "palabraClave": "alberto"
+  },
+  {
+    "nombre": "Giulia",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Luca_logo.png/330px-Luca_logo.png",
+    "palabraClave": "giulia"
+  },
+  {
+    "nombre": "Ian Lightfoot",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tom_Holland_during_pro-am_Wentworth_golf_club_2023-2.jpg/330px-Tom_Holland_during_pro-am_Wentworth_golf_club_2023-2.jpg",
+    "palabraClave": "lightfoot"
+  },
+  {
+    "nombre": "Barley Lightfoot",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Chris_Pratt_2018.jpg/330px-Chris_Pratt_2018.jpg",
+    "palabraClave": "lightfoot"
+  },
+  {
+    "nombre": "Flik",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/A_bug%27s_life_logo.svg/langes-330px-A_bug%27s_life_logo.svg.png",
+    "palabraClave": "flik"
+  },
+  {
+    "nombre": "Atta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atta_mexicana_casent0421377_profile_1.jpg/330px-Atta_mexicana_casent0421377_profile_1.jpg",
+    "palabraClave": "atta"
+  },
+  {
+    "nombre": "Arlo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Berberis_vulgaris_var_atro-purp._ziedai.JPG/330px-Berberis_vulgaris_var_atro-purp._ziedai.JPG",
+    "palabraClave": "arlo"
+  },
+  {
+    "nombre": "Ember",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Title_logo_-_Elemental.png/330px-Title_logo_-_Elemental.png",
+    "palabraClave": "ember"
+  },
+  {
+    "nombre": "Meilin",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Turning-Red_logotype.png",
+    "palabraClave": "meilin"
+  }
+]

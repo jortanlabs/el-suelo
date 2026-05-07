@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "resolver": "tsx scripts/resolver-cine.ts",
+    "resolver:force": "tsx scripts/resolver-cine.ts --force"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.92.0",
@@ -24,6 +26,7 @@
     "vite": "^7"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0"
   }
 }

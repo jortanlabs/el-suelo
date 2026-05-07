@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "Han Solo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c9/Han_Solo_with_Blaster.jpg",
+    "palabraClave": "solo"
+  },
+  {
+    "nombre": "Darth Vader",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Darth_Vader_-_2007_Disney_Weekends.jpg/330px-Darth_Vader_-_2007_Disney_Weekends.jpg",
+    "palabraClave": "vader"
+  },
+  {
+    "nombre": "R2-D2",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/R2-D2_-_Genuine_Movie_Star.jpg/330px-R2-D2_-_Genuine_Movie_Star.jpg",
+    "palabraClave": "r2d2"
+  },
+  {
+    "nombre": "Lando Calrissian",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Lando6-2.jpg/330px-Lando6-2.jpg",
+    "palabraClave": "calrissian"
+  },
+  {
+    "nombre": "Darth Maul",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Darth_Maul_Cosplayer_at_MCM_Comic_Con_October_2016.jpg/330px-Darth_Maul_Cosplayer_at_MCM_Comic_Con_October_2016.jpg",
+    "palabraClave": "maul"
+  },
+  {
+    "nombre": "Mace Windu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/bf/Mace_Windu.png",
+    "palabraClave": "windu"
+  },
+  {
+    "nombre": "Padmé Amidala",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Amidala.png/330px-Amidala.png",
+    "palabraClave": "amidala"
+  },
+  {
+    "nombre": "Rey",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Heraldic_Royal_Crown_%28Common%29.svg/langes-330px-Heraldic_Royal_Crown_%28Common%29.svg.png",
+    "palabraClave": "rey"
+  },
+  {
+    "nombre": "Poe Dameron",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/0/0b/Poe_Dameron-Force_Awakens_%282015%29.png",
+    "palabraClave": "dameron"
+  },
+  {
+    "nombre": "BB-8",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/3/39/BB-8%2C_Star_Wars_The_Force_Awakens.jpg",
+    "palabraClave": "bb8"
+  },
+  {
+    "nombre": "Ahsoka Tano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d7/Ahsoka_Tano.png",
+    "palabraClave": "tano"
+  },
+  {
+    "nombre": "Cara Dune",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/64/Cara_Dune_Star_Wars.jpg",
+    "palabraClave": "dune"
+  }
+]

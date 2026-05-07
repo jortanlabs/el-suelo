@@ -1,0 +1,157 @@
+[
+  {
+    "nombre": "Pikachu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png",
+    "palabraClave": "pikachu"
+  },
+  {
+    "nombre": "Charizard",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Japan_Expo_2024_-_Charizard_Cosplayer.jpg/330px-Japan_Expo_2024_-_Charizard_Cosplayer.jpg",
+    "palabraClave": "charizard"
+  },
+  {
+    "nombre": "Mewtwo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Shibuya_Parco_200220f.jpg/330px-Shibuya_Parco_200220f.jpg",
+    "palabraClave": "mewtwo"
+  },
+  {
+    "nombre": "Gengar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gengar_face.png/330px-Gengar_face.png",
+    "palabraClave": "gengar"
+  },
+  {
+    "nombre": "Eevee",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pok%C3%A9mon_cosplay_at_SDCCI_2018_Nintendo_lounge_-_2.jpg/330px-Pok%C3%A9mon_cosplay_at_SDCCI_2018_Nintendo_lounge_-_2.jpg",
+    "palabraClave": "eevee"
+  },
+  {
+    "nombre": "Snorlax",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Expo_2025_in_Osaka%2C_Japan_13.jpg/330px-Expo_2025_in_Osaka%2C_Japan_13.jpg",
+    "palabraClave": "snorlax"
+  },
+  {
+    "nombre": "Lapras",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/330px-International_Pok%C3%A9mon_logo.svg.png",
+    "palabraClave": "lapras"
+  },
+  {
+    "nombre": "Squirtle",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Michele_Knotz_%284024190262%29.jpg/330px-Michele_Knotz_%284024190262%29.jpg",
+    "palabraClave": "squirtle"
+  },
+  {
+    "nombre": "Bulbasaur",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/May_cosplayer_%2832033322441%29.jpg/330px-May_cosplayer_%2832033322441%29.jpg",
+    "palabraClave": "bulbasaur"
+  },
+  {
+    "nombre": "Clefairy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Croquette_Cosplay.jpg/330px-Croquette_Cosplay.jpg",
+    "palabraClave": "clefairy"
+  },
+  {
+    "nombre": "Vulpix",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rumble_pack.jpg/330px-Rumble_pack.jpg",
+    "palabraClave": "vulpix"
+  },
+  {
+    "nombre": "Poliwag",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Misty_%2832338980325%29.jpg/330px-Misty_%2832338980325%29.jpg",
+    "palabraClave": "poliwag"
+  },
+  {
+    "nombre": "Slowpoke",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Slowpoke_Reactor_Montreal.jpg/330px-Slowpoke_Reactor_Montreal.jpg",
+    "palabraClave": "slowpoke"
+  },
+  {
+    "nombre": "Magikarp",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pokemon_Magikarp_Taiyaki_Pancake_from_Kurikoan%2C_Akihabara_shop%2C_Sotokanda_1-15-1_%28%E3%82%B3%E3%82%A4%E3%82%AD%E3%83%B3%E3%82%B0%E7%84%BC%E3%81%8D%2C_%E7%A7%8B%E8%91%89%E5%8E%9F_%E3%81%8F%E3%82%8A%E3%81%93%E5%BA%B5%2C_%E5%A4%96%E7%A5%9E%E7%94%B01-15-1%29_%282017-04-06_13.23.04_by_Tokyo_Girl%29.jpg/330px-thumbnail.jpg",
+    "palabraClave": "magikarp"
+  },
+  {
+    "nombre": "Ditto",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Beth_Ditto_IMG_5491.jpg/330px-Beth_Ditto_IMG_5491.jpg",
+    "palabraClave": "ditto"
+  },
+  {
+    "nombre": "Magmar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/89/Gobots-war-of-the-rock-lords-movie-poster-md.jpg",
+    "palabraClave": "magmar"
+  },
+  {
+    "nombre": "Onix",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Agat_wst%C4%99gowy%2C_grudka_polerowana.jpg/330px-Agat_wst%C4%99gowy%2C_grudka_polerowana.jpg",
+    "palabraClave": "onix"
+  },
+  {
+    "nombre": "Cubone",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/65/Cubone.png",
+    "palabraClave": "cubone"
+  },
+  {
+    "nombre": "Goldeen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Rachael_Lillis_%2838162592572%29.jpg/330px-Rachael_Lillis_%2838162592572%29.jpg",
+    "palabraClave": "goldeen"
+  },
+  {
+    "nombre": "Krabby",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Krusty_Krab.png/330px-The_Krusty_Krab.png",
+    "palabraClave": "krabby"
+  },
+  {
+    "nombre": "Jynx",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Jynx_torquilla_young_NRM.jpg/330px-Jynx_torquilla_young_NRM.jpg",
+    "palabraClave": "jynx"
+  },
+  {
+    "nombre": "Arcanine",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Pokemon_FireRed.svg/langes-330px-Pokemon_FireRed.svg.png",
+    "palabraClave": "arcanine"
+  },
+  {
+    "nombre": "Articuno",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Binburrum_articuno.png/330px-Binburrum_articuno.png",
+    "palabraClave": "articuno"
+  },
+  {
+    "nombre": "Zapdos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Binburrum_zapdos.png/330px-Binburrum_zapdos.png",
+    "palabraClave": "zapdos"
+  },
+  {
+    "nombre": "Moltres",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Binburrum_moltres.png/330px-Binburrum_moltres.png",
+    "palabraClave": "moltres"
+  },
+  {
+    "nombre": "Pichu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Pichu-pichu.jpg/330px-Pichu-pichu.jpg",
+    "palabraClave": "pichu"
+  },
+  {
+    "nombre": "Marill",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/USA_Michigan_location_map.svg/langes-330px-USA_Michigan_location_map.svg.png",
+    "palabraClave": "marill"
+  },
+  {
+    "nombre": "Lugia",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/langes-330px-International_Pok%C3%A9mon_logo.svg.png",
+    "palabraClave": "lugia"
+  },
+  {
+    "nombre": "Ho-Oh",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/%EC%A0%9C19%ED%9A%8C_%EB%B6%80%EC%B2%9C%EA%B5%AD%EC%A0%9C%ED%8C%90%ED%83%80%EC%8A%A4%ED%8B%B1%EC%98%81%ED%99%94%EC%A0%9C_%EA%B0%9C%EB%A7%89%EC%8B%9D_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_part.1_19.jpg/330px-%EC%A0%9C19%ED%9A%8C_%EB%B6%80%EC%B2%9C%EA%B5%AD%EC%A0%9C%ED%8C%90%ED%83%80%EC%8A%A4%ED%8B%B1%EC%98%81%ED%99%94%EC%A0%9C_%EA%B0%9C%EB%A7%89%EC%8B%9D_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_part.1_19.jpg",
+    "palabraClave": "hooh"
+  },
+  {
+    "nombre": "Cyndaquil",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Otakuthon_2014-_Pok%C3%A9mon_Trainers_%2815026590511%29.jpg/330px-Otakuthon_2014-_Pok%C3%A9mon_Trainers_%2815026590511%29.jpg",
+    "palabraClave": "cyndaquil"
+  },
+  {
+    "nombre": "Ampharos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/PokemonXY_Logo.png/330px-PokemonXY_Logo.png",
+    "palabraClave": "ampharos"
+  }
+]

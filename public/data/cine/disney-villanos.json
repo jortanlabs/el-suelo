@@ -1,0 +1,182 @@
+[
+  {
+    "nombre": "Reina Malvada",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/SnowWhite22.jpg/330px-SnowWhite22.jpg",
+    "palabraClave": "malvada"
+  },
+  {
+    "nombre": "Maléfica",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Maleficent_-_Sleeping_Beauty_1970_Reissue_Trailer.png/330px-Maleficent_-_Sleeping_Beauty_1970_Reissue_Trailer.png",
+    "palabraClave": "malefica"
+  },
+  {
+    "nombre": "Úrsula",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/The_Little_Mermaid_logo.svg/langes-330px-The_Little_Mermaid_logo.svg.png",
+    "palabraClave": "ursula"
+  },
+  {
+    "nombre": "Gastón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/D23_Expo_2013_-_Gaston_%289490879529%29.jpg/330px-D23_Expo_2013_-_Gaston_%289490879529%29.jpg",
+    "palabraClave": "gaston"
+  },
+  {
+    "nombre": "Jafar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Wondercon_2014-7694_%2813987721412%29.jpg/330px-Wondercon_2014-7694_%2813987721412%29.jpg",
+    "palabraClave": "jafar"
+  },
+  {
+    "nombre": "Iago",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Aladdin_2019_Logo_Black.svg/langes-330px-Aladdin_2019_Logo_Black.svg.png",
+    "palabraClave": "iago"
+  },
+  {
+    "nombre": "Scar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_Lion_King_at_Minskoff_Theatre_in_Broadway.jpg/330px-The_Lion_King_at_Minskoff_Theatre_in_Broadway.jpg",
+    "palabraClave": "scar"
+  },
+  {
+    "nombre": "Cruella de Vil",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/101_Dalmatians_Logo.svg/langes-330px-101_Dalmatians_Logo.svg.png",
+    "palabraClave": "vil"
+  },
+  {
+    "nombre": "Hades",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Hades_with_cerberus_Hade_y_Cancerbero.jpg",
+    "palabraClave": "hades"
+  },
+  {
+    "nombre": "Capitán Garfio",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Captain_Hook.PNG/330px-Captain_Hook.PNG",
+    "palabraClave": "garfio"
+  },
+  {
+    "nombre": "Frollo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Disney%27s_The_Hunchback_of_Notre_Dame_logo.png/330px-Disney%27s_The_Hunchback_of_Notre_Dame_logo.png",
+    "palabraClave": "frollo"
+  },
+  {
+    "nombre": "Shan Yu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mulan_Logo_Black.svg/langes-330px-Mulan_Logo_Black.svg.png",
+    "palabraClave": "yu"
+  },
+  {
+    "nombre": "Clayton",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Return_of_Tarzan.jpg/330px-Return_of_Tarzan.jpg",
+    "palabraClave": "clayton"
+  },
+  {
+    "nombre": "Madre Gothel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Johnny_Gruelle_illustration_-_Rapunzel_-_Project_Gutenberg_etext_11027.jpg/330px-Johnny_Gruelle_illustration_-_Rapunzel_-_Project_Gutenberg_etext_11027.jpg",
+    "palabraClave": "gothel"
+  },
+  {
+    "nombre": "Hans",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Frozen_Logo_Black.svg/langes-330px-Frozen_Logo_Black.svg.png",
+    "palabraClave": "hans"
+  },
+  {
+    "nombre": "Bellwether",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zootropolis_2_logo.png/330px-Zootropolis_2_logo.png",
+    "palabraClave": "bellwether"
+  },
+  {
+    "nombre": "Dr. Facilier",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/The_Princess_and_the_Frog_Logo_Black.svg/langes-330px-The_Princess_and_the_Frog_Logo_Black.svg.png",
+    "palabraClave": "facilier"
+  },
+  {
+    "nombre": "Reina de Corazones",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/John_Tenniel_-_Illustration_from_The_Nursery_Alice_%281890%29_-_c06544_02.jpg/330px-John_Tenniel_-_Illustration_from_The_Nursery_Alice_%281890%29_-_c06544_02.jpg",
+    "palabraClave": "corazones"
+  },
+  {
+    "nombre": "Shere Khan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Shere_Khan_illustration.jpg/330px-Shere_Khan_illustration.jpg",
+    "palabraClave": "khan"
+  },
+  {
+    "nombre": "Yzma",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Disney_The_Emperor%27s_New_School_logo.png/330px-Disney_The_Emperor%27s_New_School_logo.png",
+    "palabraClave": "yzma"
+  },
+  {
+    "nombre": "Chernabog",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fantasia_theatrical_trailer.png/330px-Fantasia_theatrical_trailer.png",
+    "palabraClave": "chernabog"
+  },
+  {
+    "nombre": "Stromboli",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Aerial_image_of_Stromboli_%28view_from_the_northeast%29.jpg/330px-Aerial_image_of_Stromboli_%28view_from_the_northeast%29.jpg",
+    "palabraClave": "stromboli"
+  },
+  {
+    "nombre": "Monstro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pinocchio_Logo.jpg/330px-Pinocchio_Logo.jpg",
+    "palabraClave": "monstro"
+  },
+  {
+    "nombre": "Lady Tremaine",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/1950_is_the_Cinderella_year.jpg/330px-1950_is_the_Cinderella_year.jpg",
+    "palabraClave": "tremaine"
+  },
+  {
+    "nombre": "Bicho Malo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Disney_Princess_2024_logo.svg/langes-330px-Disney_Princess_2024_logo.svg.png",
+    "palabraClave": "malo"
+  },
+  {
+    "nombre": "Lotso",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Toystory3fix.png/330px-Toystory3fix.png",
+    "palabraClave": "lotso"
+  },
+  {
+    "nombre": "Síndrome",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/The_Incredibles_logo.svg/langes-330px-The_Incredibles_logo.svg.png",
+    "palabraClave": "sindrome"
+  },
+  {
+    "nombre": "Randall",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Randall_Made_Knives_building_001_crop.jpg/330px-Randall_Made_Knives_building_001_crop.jpg",
+    "palabraClave": "randall"
+  },
+  {
+    "nombre": "Ernesto de la Cruz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ernesto_Natividad_De_la_Cruz_-_A%C3%B1o_1938.jpg/330px-Ernesto_Natividad_De_la_Cruz_-_A%C3%B1o_1938.jpg",
+    "palabraClave": "cruz"
+  },
+  {
+    "nombre": "Zurg",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Buzz_Lightyear_sculpture_of_Toy_Story_Hotel_Shanghai_%28cropped%29.jpg/330px-Buzz_Lightyear_sculpture_of_Toy_Story_Hotel_Shanghai_%28cropped%29.jpg",
+    "palabraClave": "zurg"
+  },
+  {
+    "nombre": "Alma Madrigal",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Disney%27s_Encanto_print_logo.svg/langes-330px-Disney%27s_Encanto_print_logo.svg.png",
+    "palabraClave": "madrigal"
+  },
+  {
+    "nombre": "Mordu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Busto_de_Alejandro_Casona-2.JPG/330px-Busto_de_Alejandro_Casona-2.JPG",
+    "palabraClave": "mordu"
+  },
+  {
+    "nombre": "Pete",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Mickey_Mouse_%26_Friends_logo.png/330px-Mickey_Mouse_%26_Friends_logo.png",
+    "palabraClave": "pete"
+  },
+  {
+    "nombre": "Magica DeHechizo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Abrakadabra%2C_Nordisk_familjebok.png/330px-Abrakadabra%2C_Nordisk_familjebok.png",
+    "palabraClave": "dehechizo"
+  },
+  {
+    "nombre": "Madam Mim",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Disneyland_Sword_in_the_Stone_by_Dave_Q.jpg/330px-Disneyland_Sword_in_the_Stone_by_Dave_Q.jpg",
+    "palabraClave": "mim"
+  },
+  {
+    "nombre": "Ursula",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ursula_Le_Guin_%283551195631%29_-_Restoration.jpg/330px-Ursula_Le_Guin_%283551195631%29_-_Restoration.jpg",
+    "palabraClave": "ursula"
+  }
+]

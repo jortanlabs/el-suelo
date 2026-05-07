@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "Ojo de Halcón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Phoenix_Comicon_2011_Hawkeye_from_the_Avengers.jpg/330px-Phoenix_Comicon_2011_Hawkeye_from_the_Avengers.jpg",
+    "palabraClave": "halcon"
+  },
+  {
+    "nombre": "Thanos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b7/Thanos_%28Infobox_image%29.png",
+    "palabraClave": "thanos"
+  },
+  {
+    "nombre": "Mantis",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NKN-2007-08-18_081042_praying_mantis_%28Yvan_Leduc_author_for_Wikipedia%29.jpg/330px-NKN-2007-08-18_081042_praying_mantis_%28Yvan_Leduc_author_for_Wikipedia%29.jpg",
+    "palabraClave": "mantis"
+  },
+  {
+    "nombre": "Jean Grey",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/8c/Jean_Grey_%28Modern%29.webp",
+    "palabraClave": "grey"
+  },
+  {
+    "nombre": "Daredevil",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Daredevil_Cosplayer_at_the_2022_Comic-Con_International.jpg/330px-Daredevil_Cosplayer_at_the_2022_Comic-Con_International.jpg",
+    "palabraClave": "daredevil"
+  },
+  {
+    "nombre": "Happy Hogan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Jon_Favreau_%2826267055561%29.jpg/330px-Jon_Favreau_%2826267055561%29.jpg",
+    "palabraClave": "hogan"
+  },
+  {
+    "nombre": "Venom",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Waspstinger1658-2.jpg/330px-Waspstinger1658-2.jpg",
+    "palabraClave": "venom"
+  }
+]

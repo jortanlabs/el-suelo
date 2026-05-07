@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Antonio Banderas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Goyas_2025_-_Antonio_Banderas_%28cropped%29.jpg/330px-Goyas_2025_-_Antonio_Banderas_%28cropped%29.jpg",
+    "palabraClave": "banderas"
+  },
+  {
+    "nombre": "Penélope Cruz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Goyas_2024_-_Pen%C3%A9lope_Cruz-2_%28cropped%29.jpg/330px-Goyas_2024_-_Pen%C3%A9lope_Cruz-2_%28cropped%29.jpg",
+    "palabraClave": "cruz"
+  },
+  {
+    "nombre": "Maribel Verdú",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Goyas_2025_-_Maribel_Verd%C3%BA.jpg/330px-Goyas_2025_-_Maribel_Verd%C3%BA.jpg",
+    "palabraClave": "verdu"
+  },
+  {
+    "nombre": "Victoria Abril",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Victoria_Abril_Cannes_2017_2_%28cropped%29.jpg",
+    "palabraClave": "abril"
+  },
+  {
+    "nombre": "Verónica Forqué",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Preg%C3%B3n_de_%22La_Noche_de_los_Teatros%22_%2846785085594%29_%28cropped%29.jpg/330px-Preg%C3%B3n_de_%22La_Noche_de_los_Teatros%22_%2846785085594%29_%28cropped%29.jpg",
+    "palabraClave": "forque"
+  },
+  {
+    "nombre": "Karra Elejalde",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Malaga_Film_Festival_2025_-_Karra_Elejalde-1_%28cropped%29.jpg/330px-Malaga_Film_Festival_2025_-_Karra_Elejalde-1_%28cropped%29.jpg",
+    "palabraClave": "elejalde"
+  },
+  {
+    "nombre": "Sergi López",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Festival_de_M%C3%A1laga_2020_-_Sergi_L%C3%B3pez_%28Cropped%29.jpg/330px-Festival_de_M%C3%A1laga_2020_-_Sergi_L%C3%B3pez_%28Cropped%29.jpg",
+    "palabraClave": "lopez"
+  },
+  {
+    "nombre": "María Valverde",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mar%C3%ADa_Valverde_2025.jpg/330px-Mar%C3%ADa_Valverde_2025.jpg",
+    "palabraClave": "valverde"
+  },
+  {
+    "nombre": "Alexandra Jiménez",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Malaga_Film_Festival_2025_-_Alexandra_Jim%C3%A9nez-1_%28cropped%29.jpg/330px-Malaga_Film_Festival_2025_-_Alexandra_Jim%C3%A9nez-1_%28cropped%29.jpg",
+    "palabraClave": "jimenez"
+  },
+  {
+    "nombre": "Inma Cuesta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Goyas_2024_-_Inma_Cuesta_%28cropped%29.jpg/330px-Goyas_2024_-_Inma_Cuesta_%28cropped%29.jpg",
+    "palabraClave": "cuesta"
+  },
+  {
+    "nombre": "Ester Expósito",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Goyas_2025_-_Ester_Exp%C3%B3sito_%28cropped_3%29.jpg/330px-Goyas_2025_-_Ester_Exp%C3%B3sito_%28cropped_3%29.jpg",
+    "palabraClave": "exposito"
+  },
+  {
+    "nombre": "Úrsula Corberó",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/%C3%9Arsula_Corber%C3%B3-65339.jpg/330px-%C3%9Arsula_Corber%C3%B3-65339.jpg",
+    "palabraClave": "corbero"
+  },
+  {
+    "nombre": "Álvaro Morte",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/%C3%81lvaro_Morte%2C_2020_%28cropped%29.jpg/330px-%C3%81lvaro_Morte%2C_2020_%28cropped%29.jpg",
+    "palabraClave": "morte"
+  },
+  {
+    "nombre": "Miguel Herrán",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Miguel_Herr%C3%A1n_at_82nd_Venice_International_Film_Festival-1_%28cropped%29.jpg/330px-Miguel_Herr%C3%A1n_at_82nd_Venice_International_Film_Festival-1_%28cropped%29.jpg",
+    "palabraClave": "herran"
+  },
+  {
+    "nombre": "Jaime Lorente",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Premios_Goya_2020_-_Jaime_Lorente_%28cropped%29.jpg/330px-Premios_Goya_2020_-_Jaime_Lorente_%28cropped%29.jpg",
+    "palabraClave": "lorente"
+  },
+  {
+    "nombre": "Paco Tous",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Paco_Tous_-_Seminci_2016_%28cropped%29.jpg/330px-Paco_Tous_-_Seminci_2016_%28cropped%29.jpg",
+    "palabraClave": "tous"
+  },
+  {
+    "nombre": "Najwa Nimri",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Najwa_Nimri_%28200x290%29.jpg/330px-Najwa_Nimri_%28200x290%29.jpg",
+    "palabraClave": "nimri"
+  },
+  {
+    "nombre": "Imanol Arias",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Imanol_Arias.jpg/330px-Imanol_Arias.jpg",
+    "palabraClave": "arias"
+  },
+  {
+    "nombre": "Carmen Machi",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Carmen_Machi%2C_Festival_de_Sitges_2017.jpg/330px-Carmen_Machi%2C_Festival_de_Sitges_2017.jpg",
+    "palabraClave": "machi"
+  },
+  {
+    "nombre": "Elsa Pataky",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Elsa_Pataky_Cannes_cropped.jpg",
+    "palabraClave": "pataky"
+  },
+  {
+    "nombre": "Alberto San Juan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Premios_Goya_2026_-_Alberto_San_Juan_%28cropped%29.jpg/330px-Premios_Goya_2026_-_Alberto_San_Juan_%28cropped%29.jpg",
+    "palabraClave": "juan"
+  },
+  {
+    "nombre": "Rosario Flores",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Rosario_Flores_en_Fuenlabrada.jpg/330px-Rosario_Flores_en_Fuenlabrada.jpg",
+    "palabraClave": "flores"
+  },
+  {
+    "nombre": "Anabel Alonso",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Goyas_2025_-_Anabel_Alonso_%28cropped%29.jpg/330px-Goyas_2025_-_Anabel_Alonso_%28cropped%29.jpg",
+    "palabraClave": "alonso"
+  },
+  {
+    "nombre": "Florentino Fernández",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Florentino_Fern%C3%A1ndez_entrevista.jpeg/330px-Florentino_Fern%C3%A1ndez_entrevista.jpeg",
+    "palabraClave": "fernandez"
+  }
+]

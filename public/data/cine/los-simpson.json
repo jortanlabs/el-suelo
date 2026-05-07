@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Homer Simpson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Graffiti_in_Lisbon_IMG_1126_%2817356609995%29.jpg/330px-Graffiti_in_Lisbon_IMG_1126_%2817356609995%29.jpg",
+    "palabraClave": "simpson"
+  },
+  {
+    "nombre": "Marge Simpson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/TIBS_P1000592_%285334950932%29.jpg/330px-TIBS_P1000592_%285334950932%29.jpg",
+    "palabraClave": "simpson"
+  },
+  {
+    "nombre": "Bart Simpson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Bart_Simpson_statue.jpg/330px-Bart_Simpson_statue.jpg",
+    "palabraClave": "simpson"
+  },
+  {
+    "nombre": "Maggie Simpson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Maggie_Simpson_Simpsons_Graffiti_Unterf%C3%BChrung_Friedrichspark_%28cropped%29.jpg/330px-Maggie_Simpson_Simpsons_Graffiti_Unterf%C3%BChrung_Friedrichspark_%28cropped%29.jpg",
+    "palabraClave": "simpson"
+  },
+  {
+    "nombre": "Sr. Burns",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Jesse_Jackson%2C_half-length_portrait_of_Jackson_seated_at_a_table%2C_July_1%2C_1983_edit.jpg/330px-Jesse_Jackson%2C_half-length_portrait_of_Jackson_seated_at_a_table%2C_July_1%2C_1983_edit.jpg",
+    "palabraClave": "burns"
+  },
+  {
+    "nombre": "Ned Flanders",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Simpsons_Chocolate_Bar_-_Buenos_Aires_Argentina_%285269179905%29.jpg/330px-Simpsons_Chocolate_Bar_-_Buenos_Aires_Argentina_%285269179905%29.jpg",
+    "palabraClave": "flanders"
+  },
+  {
+    "nombre": "Apu Nahasapeemapetilon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Apu_shirt.jpg/330px-Apu_shirt.jpg",
+    "palabraClave": "nahasapeemapetilon"
+  },
+  {
+    "nombre": "Moe Szyslak",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/80/Moe_Szyslak.png",
+    "palabraClave": "szyslak"
+  },
+  {
+    "nombre": "Barney Gumble",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/de/Barney_Gumble.png",
+    "palabraClave": "gumble"
+  },
+  {
+    "nombre": "Jefe Wiggum",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Casa_de_l%27antiga_pelleteria_de_Gen%C3%ADs_i_Riu_de_Vic_9.jpg/330px-Casa_de_l%27antiga_pelleteria_de_Gen%C3%ADs_i_Riu_de_Vic_9.jpg",
+    "palabraClave": "wiggum"
+  },
+  {
+    "nombre": "Milhouse Van Houten",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/11/Milhouse_Van_Houten.png",
+    "palabraClave": "houten"
+  },
+  {
+    "nombre": "Nelson Muntz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c6/Nelson_Muntz.PNG",
+    "palabraClave": "muntz"
+  },
+  {
+    "nombre": "Krusty el Payaso",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Krustyland_Orlando.jpg/330px-Krustyland_Orlando.jpg",
+    "palabraClave": "payaso"
+  },
+  {
+    "nombre": "Sideshow Bob",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c8/C-bob.png",
+    "palabraClave": "bob"
+  },
+  {
+    "nombre": "Sideshow Mel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Dan_Castellaneta_1988_Press_Photo_%283x4_cropped%29.jpg/330px-Dan_Castellaneta_1988_Press_Photo_%283x4_cropped%29.jpg",
+    "palabraClave": "mel"
+  },
+  {
+    "nombre": "Selma Bouvier",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f8/Patty_Bouvier.png",
+    "palabraClave": "bouvier"
+  },
+  {
+    "nombre": "Patty Bouvier",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Julie_Kavner_1974.JPG/330px-Julie_Kavner_1974.JPG",
+    "palabraClave": "bouvier"
+  },
+  {
+    "nombre": "Smithers",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Cyyd22.jpg/330px-Cyyd22.jpg",
+    "palabraClave": "smithers"
+  },
+  {
+    "nombre": "Alcalde Quimby",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Dan_Castellaneta_2.jpg/330px-Dan_Castellaneta_2.jpg",
+    "palabraClave": "quimby"
+  },
+  {
+    "nombre": "Dr. Hibbert",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Dr._Hibbert.svg/330px-Dr._Hibbert.svg.png",
+    "palabraClave": "hibbert"
+  }
+]

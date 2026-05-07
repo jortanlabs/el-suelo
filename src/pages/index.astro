@@ -2,15 +2,41 @@
 export const prerender = true;
 import Base from "../layouts/Base.astro";
 import { categoriasFloor } from "../data/categoriasFloor.ts";
+import { bloques, subcategorias } from "../data/catalogoCine.ts";
 
-const cats = categoriasFloor.map((c) => ({
-  slug: c.slug,
-  nombre: c.nombre,
-  emoji: c.emoji,
+// Categorías "otras" (todo excepto la antigua 'actores' que sustituimos con Cine y Series)
+const otrasFloor = categoriasFloor
+  .filter((c) => c.slug !== "actores")
+  .map((c) => ({ slug: c.slug, nombre: c.nombre, emoji: c.emoji, tipo: "otras" as const }));
+
+// Jerarquía Cine y Series para el picker
+const cineBloques = bloques.map((b) => ({
+  slug: b.slug,
+  nombre: b.nombre,
+  emoji: b.emoji,
+  subcats: subcategorias
+    .filter((s) => s.bloque === b.slug)
+    .map((s) => ({
+      slug: s.slug,
+      nombre: s.nombre,
+      emoji: s.emoji,
+      esMeta: !!s.esMetaCategoria,
+      subslugs: s.subcategorias ?? null,
+    })),
 }));
+
+// Todos los slugs de subcategorías jugables de Cine (para partida rápida aleatoria)
+const cineSlugsJugables = subcategorias
+  .filter((s) => !s.esMetaCategoria && !!s.nombres)
+  .map((s) => s.slug);
 ---
 
 <Base titulo="El Suelo" descripcion="Di qué ves antes de que se acabe tu tiempo.">
+  <!-- Datos para JS (no visibles) -->
+  <div id="datos-otras" data-json={JSON.stringify(otrasFloor)} class="hidden"></div>
+  <div id="datos-cine" data-json={JSON.stringify(cineBloques)} class="hidden"></div>
+  <div id="datos-cine-slugs" data-json={JSON.stringify(cineSlugsJugables)} class="hidden"></div>
+
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
       <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">
@@ -54,63 +80,63 @@ const cats = categoriasFloor.map((c) => ({
     </section>
 
     <!-- SETUP -->
-    <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-6 hidden">
-      <div class="max-w-md w-full mx-auto">
-        <div class="text-center mb-6">
-          <div class="inline-block relative px-10 py-3 mb-2">
+    <section id="pantalla-setup" class="flex-1 overflow-hidden px-4 py-3 hidden flex flex-col">
+      <div class="max-w-md w-full mx-auto flex flex-col flex-1 min-h-0">
+        <div class="text-center mb-2 shrink-0">
+          <div class="inline-block relative px-6 py-1.5">
             <span class="floor-corner floor-corner-tl"></span>
             <span class="floor-corner floor-corner-tr"></span>
             <span class="floor-corner floor-corner-bl"></span>
             <span class="floor-corner floor-corner-br"></span>
-            <h1 class="font-titulo text-4xl font-bold neon-gold uppercase tracking-[0.25em]">El suelo</h1>
+            <h1 class="font-titulo text-2xl font-bold neon-gold uppercase tracking-[0.3em]">El suelo</h1>
           </div>
-          <p class="text-[#2a5090] text-sm font-titulo mt-1">Di qué ves antes de que se acabe tu tiempo.</p>
         </div>
 
-        <div class="floor-card p-6 space-y-4">
-          <div>
-            <label class="font-titulo font-bold text-[#ff1dce] text-xs block mb-1 uppercase tracking-widest">Jugador 1</label>
-            <input id="nombre-a" type="text" placeholder="Jugador A" maxlength="20" class="floor-input floor-input-a" />
-          </div>
-          <div>
-            <label class="font-titulo font-bold text-[#ffe100] text-xs block mb-1 uppercase tracking-widest">Jugador 2</label>
-            <input id="nombre-b" type="text" placeholder="Jugador B" maxlength="20" class="floor-input floor-input-b" />
-          </div>
-
-          <div>
-            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Modo</label>
-            <div class="flex gap-2">
-              <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">⚡ Partida rápida</button>
-              <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
+        <div class="floor-card p-4 space-y-3 flex flex-col flex-1 min-h-0">
+          <!-- Nombres -->
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="font-titulo font-bold text-[#ff1dce] text-xs block mb-0.5 uppercase tracking-widest">Jugador 1</label>
+              <input id="nombre-a" type="text" placeholder="Jugador A" maxlength="20" class="floor-input floor-input-a py-1.5 text-sm" />
+            </div>
+            <div>
+              <label class="font-titulo font-bold text-[#ffe100] text-xs block mb-0.5 uppercase tracking-widest">Jugador 2</label>
+              <input id="nombre-b" type="text" placeholder="Jugador B" maxlength="20" class="floor-input floor-input-b py-1.5 text-sm" />
             </div>
           </div>
 
-          <div id="seccion-categoria" class="hidden">
-            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Categoría</label>
-            <div class="grid grid-cols-2 gap-2">
-              {cats.map((cat) => (
-                <button class="cat-btn floor-card-small px-3 py-2 text-sm font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left" data-slug={cat.slug}>
-                  {cat.emoji} {cat.nombre}
-                </button>
-              ))}
-              <button class="cat-btn floor-card-small px-3 py-2 text-sm font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left col-span-2" data-slug="libre">
-                ✨ Categoría libre...
-              </button>
-            </div>
-            <div id="libre-container" class="hidden mt-2">
-              <input id="categoria-libre" type="text" placeholder="Ej: presidentes de España..." maxlength="100" class="floor-input" />
-            </div>
-          </div>
-
-          <div id="nota-tablero" class="hidden floor-card-small px-4 py-3 border-[#ffcc0033]">
-            <p class="text-sm text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría aleatoria</p>
-          </div>
-
+          <!-- Modo -->
           <div class="flex gap-2">
-            <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-6 py-4">¡A jugar! →</button>
-            <button id="boton-aleatorio" class="hidden floor-btn floor-btn-gold font-titulo font-bold text-xl px-4 py-4" title="Categoría aleatoria">🎲</button>
+            <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">⚡ Rápida</button>
+            <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
           </div>
-          <p id="error-setup" class="hidden text-sm text-[#ff1dce] text-center font-bold"></p>
+
+          <!-- SELECTOR DE CATEGORÍA JERÁRQUICO -->
+          <div id="seccion-categoria" class="hidden flex flex-col gap-1.5 flex-1 min-h-0">
+            <!-- Tabs de bloque -->
+            <div id="bloque-tabs" class="flex gap-1 overflow-x-auto pb-0.5 no-scrollbar shrink-0">
+              <button class="bloque-tab shrink-0 floor-card-small px-2.5 py-1 text-xs font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition" data-bloque="otras">
+                ✨ Otras
+              </button>
+              <!-- generado por JS -->
+            </div>
+
+            <!-- Grid de subcategorías — 3 columnas, scrollable si hace falta -->
+            <div id="subcat-grid" class="grid grid-cols-3 gap-1.5 overflow-y-auto min-h-0 flex-1 content-start">
+              <!-- generado por JS -->
+            </div>
+          </div>
+
+          <div id="nota-tablero" class="hidden floor-card-small px-3 py-2 border-[#ffcc0033]">
+            <p class="text-xs text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría de Cine y Series</p>
+          </div>
+
+          <!-- Botón arrancar -->
+          <div class="flex gap-2 shrink-0">
+            <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-lg px-4 py-3">¡A jugar! →</button>
+            <button id="boton-aleatorio" class="hidden floor-btn floor-btn-gold font-titulo font-bold text-xl px-4 py-3" title="Subcategoría aleatoria de Cine y Series">🎲</button>
+          </div>
+          <p id="error-setup" class="hidden text-xs text-[#ff1dce] text-center font-bold shrink-0"></p>
         </div>
       </div>
     </section>
@@ -120,7 +146,7 @@ const cats = categoriasFloor.map((c) => ({
       <div class="text-center">
         <div class="text-6xl mb-4 wiggle inline-block">🔍</div>
         <h2 class="font-titulo text-2xl font-bold text-[#e8e8ff] mb-2">Cargando imágenes...</h2>
-        <p id="loader-progreso" class="text-[#2a5090] text-sm font-titulo">Buscando en Wikidata. Un momento.</p>
+        <p id="loader-progreso" class="text-[#2a5090] text-sm font-titulo">Un momento.</p>
       </div>
     </section>
 
@@ -341,25 +367,63 @@ const cats = categoriasFloor.map((c) => ({
     border-color: var(--gold) !important;
     text-shadow: 0 0 8px color-mix(in srgb, var(--gold) 60%, transparent);
   }
+  .bloque-tab-active {
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+  }
   .floor-corner { position: absolute; width: 20px; height: 20px; }
   .floor-corner-tl { top: 0; left: 0; border-top: 4px solid var(--gold); border-left: 4px solid var(--gold); }
   .floor-corner-tr { top: 0; right: 0; border-top: 4px solid var(--gold); border-right: 4px solid var(--gold); }
   .floor-corner-bl { bottom: 0; left: 0; border-bottom: 4px solid var(--gold); border-left: 4px solid var(--gold); }
   .floor-corner-br { bottom: 0; right: 0; border-bottom: 4px solid var(--gold); border-right: 4px solid var(--gold); }
+  .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
   :global(body) { background: #050c1e !important; }
 </style>
 
 <script>
   import {
-    generarFloor,
     generarFloorPredefinida,
     type ItemFloor,
     crearReconocedor,
     navegadorSoportaVoz,
     type ReconocedorVoz,
     aciertoFlexible,
+    cargarCatalogoCine,
+    cargarMezclaCine,
   } from "../lib/floor-client.ts";
-  import { categoriasFloor as todasCats } from "../data/categoriasFloor.ts";
+  import { categoriasFloor as todasCatsOtras } from "../data/categoriasFloor.ts";
+
+  // ── Datos del servidor ───────────────────────────────────────
+  interface SubcatMeta {
+    slug: string;
+    nombre: string;
+    emoji: string;
+    esMeta: boolean;
+    subslugs: string[] | null;
+  }
+  interface BloqueMeta {
+    slug: string;
+    nombre: string;
+    emoji: string;
+    subcats: SubcatMeta[];
+  }
+  interface OtrasCat {
+    slug: string;
+    nombre: string;
+    emoji: string;
+    tipo: "otras";
+  }
+
+  const cineBloques: BloqueMeta[] = JSON.parse(
+    (document.getElementById("datos-cine") as HTMLElement).dataset.json!,
+  );
+  const otrasFloor: OtrasCat[] = JSON.parse(
+    (document.getElementById("datos-otras") as HTMLElement).dataset.json!,
+  );
+  const cineSlugsJugables: string[] = JSON.parse(
+    (document.getElementById("datos-cine-slugs") as HTMLElement).dataset.json!,
+  );
 
   const $ = (id: string) => document.getElementById(id)!;
 
@@ -373,7 +437,13 @@ const cats = categoriasFloor.map((c) => ({
   function mostrar(p: HTMLElement) {
     [pBienvenida, pSetup, pLoader, pTablero, pJuego, pFinal].forEach((s) => s.classList.add("hidden"));
     p.classList.remove("hidden");
+    // El botón "← Volver" solo es útil en pantallas profundas (no en bienvenida ni setup)
+    const esSuperficial = p === pBienvenida || p === pSetup;
+    $("boton-volver").classList.toggle("invisible", esSuperficial);
   }
+
+  // Ocultar el botón de volver en la pantalla inicial
+  $("boton-volver").classList.add("invisible");
 
   $("boton-jugar").addEventListener("click", () => mostrar(pSetup));
   $("boton-menu").addEventListener("click", () => mostrar(pBienvenida));
@@ -408,66 +478,138 @@ const cats = categoriasFloor.map((c) => ({
     $("modo-rapida").classList.add("text-[#2a5090]", "border-[#163575]");
   });
 
-  // ── Selección de categoría ──────────────────────────────────
-  let categoriaSeleccionada = "";
-  const libreContainer = $("libre-container");
+  // ── Picker jerárquico de categorías ─────────────────────────
 
-  document.querySelectorAll<HTMLButtonElement>(".cat-btn").forEach((btn) => {
+  // Estado de selección
+  type CategoriaTipo = "otras" | "cine";
+  let categoriaTipo: CategoriaTipo = "otras";
+  let categoriaSlug = "";
+  let categoriaNombre = "";
+  let categoriaSlugsParaMezcla: string[] | null = null; // si es mezcla
+
+  let bloqueActivo = "otras";
+
+  // Renderiza las tabs de bloque
+  function renderBloques() {
+    const tabsEl = $("bloque-tabs");
+    // La tab "Otras" ya está en el HTML; añadimos las de Cine
+    const existingOtras = tabsEl.querySelector("[data-bloque='otras']") as HTMLButtonElement;
+    // Limpia tabs previas generadas
+    tabsEl.querySelectorAll("[data-bloque]:not([data-bloque='otras'])").forEach((el) => el.remove());
+
+    for (const bloque of cineBloques) {
+      const btn = document.createElement("button");
+      btn.className =
+        "bloque-tab shrink-0 floor-card-small px-2.5 py-1 text-xs font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition";
+      btn.dataset.bloque = bloque.slug;
+      btn.textContent = `${bloque.emoji} ${bloque.nombre}`;
+      tabsEl.appendChild(btn);
+    }
+
+    // Listeners en todos los tabs
+    tabsEl.querySelectorAll<HTMLButtonElement>(".bloque-tab").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        bloqueActivo = btn.dataset.bloque!;
+        actualizarTabActivo();
+        renderSubcats(bloqueActivo);
+        // Al cambiar de bloque se deselecciona la categoría actual
+        categoriaSlug = "";
+        categoriaNombre = "";
+        categoriaSlugsParaMezcla = null;
+      });
+    });
+
+    // Activar el tab "otras" por defecto
+    actualizarTabActivo();
+    renderSubcats("otras");
+  }
+
+  function actualizarTabActivo() {
+    $("bloque-tabs").querySelectorAll<HTMLButtonElement>(".bloque-tab").forEach((btn) => {
+      btn.classList.toggle("bloque-tab-active", btn.dataset.bloque === bloqueActivo);
+    });
+  }
+
+  function renderSubcats(bloque: string) {
+    const grid = $("subcat-grid");
+    grid.innerHTML = "";
+
+    if (bloque === "otras") {
+      categoriaTipo = "otras";
+      for (const cat of otrasFloor) {
+        const btn = crearBtnSubcat(cat.slug, `${cat.emoji} ${cat.nombre}`, false);
+        grid.appendChild(btn);
+      }
+    } else {
+      categoriaTipo = "cine";
+      const bloqueData = cineBloques.find((b) => b.slug === bloque);
+      if (!bloqueData) return;
+
+      for (const subcat of bloqueData.subcats) {
+        const label = `${subcat.emoji} ${subcat.nombre}`;
+        const isMeta = subcat.esMeta;
+        const btn = crearBtnSubcat(subcat.slug, label, isMeta, subcat.subslugs);
+        // Mezcla: ocupa toda la fila (3 columnas)
+        if (isMeta) btn.classList.add("col-span-3");
+        grid.appendChild(btn);
+      }
+    }
+  }
+
+  function crearBtnSubcat(
+    slug: string,
+    label: string,
+    isMeta: boolean,
+    subslugs?: string[] | null,
+  ): HTMLButtonElement {
+    const btn = document.createElement("button");
+    btn.className =
+      "subcat-btn floor-card-small px-2 py-1.5 text-xs font-titulo font-bold text-[#2a5090] hover:text-[#e8e8ff] hover:border-[#ffcc00] transition text-left leading-tight";
+    if (isMeta) btn.style.borderColor = "#ffcc0033";
+    btn.dataset.slug = slug;
+    if (subslugs) btn.dataset.subslugs = JSON.stringify(subslugs);
+    btn.textContent = label;
+
     btn.addEventListener("click", () => {
-      document.querySelectorAll<HTMLButtonElement>(".cat-btn").forEach((b) => {
+      grid.querySelectorAll<HTMLButtonElement>(".subcat-btn").forEach((b) => {
         b.classList.remove("floor-cat-selected");
       });
       btn.classList.add("floor-cat-selected");
-      categoriaSeleccionada = btn.dataset.slug!;
-      libreContainer.classList.toggle("hidden", categoriaSeleccionada !== "libre");
+      categoriaSlug = slug;
+      categoriaNombre = label.replace(/^[\p{Emoji}\s]+/u, "").trim();
+      categoriaSlugsParaMezcla = subslugs ?? null;
     });
-  });
 
-  const primerBtn = document.querySelector<HTMLButtonElement>(".cat-btn");
-  if (primerBtn) primerBtn.click();
+    return btn;
+  }
 
-  const TEMAS_SORPRESA = [
-    "Superhéroes de Marvel", "Pintores famosos", "Astronautas",
-    "Inventores famosos", "Cocineros famosos", "Tenistas famosos",
-    "Boxeadores históricos", "Guitarristas de rock", "Grupos musicales de los 80",
-    "Filósofos griegos", "Piratas históricos", "Exploradores famosos",
-    "Villanos de película", "Presidentes de Estados Unidos",
-    "Jugadores de baloncesto", "Pilotos de Fórmula 1",
-    "Ciclistas famosos", "Directores de cine", "Reyes y reinas de Europa",
-    "Tenistas femeninas", "Nadadoras olímpicas", "Escritores del siglo XX",
-    "Pintores del impresionismo", "Artistas del flamenco",
-    "Actrices de Hollywood clásico", "Comediantes famosos",
-    "Premios Nobel de la Paz", "Faraones del antiguo Egipto",
-    "Esculturas del mundo", "Capitales de Europa", "Edificios modernos icónicos",
-    "Castillos medievales", "Puentes famosos del mundo", "Islas famosas",
-    "Volcanes del mundo", "Cascadas del mundo",
-    "Capitales de América Latina", "Montañas más altas del mundo",
-    "Desiertos del mundo", "Estadios de fútbol del mundo",
-    "Museos famosos del mundo", "Catedrales del mundo",
-    "Parques nacionales del mundo", "Palacios reales del mundo",
-    "Templos de Asia", "Lagos del mundo",
-    "Razas de perros", "Razas de gatos", "Dinosaurios",
-    "Aves exóticas", "Peces de arrecife de coral",
-    "Mariposas del mundo", "Animales en peligro de extinción",
-    "Tiburones del mundo", "Serpientes del mundo",
-    "Aves rapaces", "Primates del mundo", "Felinos salvajes",
-    "Animales de Australia", "Insectos del mundo",
-    "Instrumentos musicales", "Coches deportivos clásicos",
-    "Flores del mundo", "Planetas y lunas del sistema solar",
-    "Personajes de Disney", "Escritores españoles",
-    "Videoconsolas clásicas", "Juguetes icónicos de los 90",
-    "Elementos de la tabla periódica", "Aviones históricos",
-    "Barcos históricos famosos", "Motocicletas clásicas",
-    "Marcas de coches del mundo", "Marcas de moda famosas",
-    "Películas de los años 80", "Personajes de Pixar",
-    "Objetos de los años 80", "Tecnología retro",
-  ];
+  const grid = $("subcat-grid");
 
+  // Inicializar el picker
+  renderBloques();
+
+  // ── Botón dado — subcategoría aleatoria de Cine ──────────────
   $("boton-aleatorio").addEventListener("click", () => {
-    const tema = TEMAS_SORPRESA[Math.floor(Math.random() * TEMAS_SORPRESA.length)];
-    const btnLibreBtn = document.querySelector<HTMLButtonElement>(".cat-btn[data-slug='libre']");
-    if (btnLibreBtn) btnLibreBtn.click();
-    ($("categoria-libre") as HTMLInputElement).value = tema;
+    if (cineSlugsJugables.length === 0) return;
+    const slug = cineSlugsJugables[Math.floor(Math.random() * cineSlugsJugables.length)];
+
+    // Encuentra el bloque al que pertenece
+    const bloqueDueno = cineBloques.find((b) =>
+      b.subcats.some((s) => s.slug === slug),
+    );
+    if (!bloqueDueno) return;
+
+    bloqueActivo = bloqueDueno.slug;
+    actualizarTabActivo();
+    renderSubcats(bloqueDueno.slug);
+
+    // Hace click en el botón correcto dentro del grid
+    setTimeout(() => {
+      const btn = $("subcat-grid").querySelector<HTMLButtonElement>(
+        `[data-slug="${slug}"]`,
+      );
+      btn?.click();
+    }, 50);
   });
 
   // ── Estado de juego ─────────────────────────────────────────
@@ -491,6 +633,7 @@ const cats = categoriasFloor.map((c) => ({
     catSlug: string;
     catEmoji: string;
     catNombre: string;
+    catTipo: "otras" | "cine";
     catNombres: string[] | null;
     catHardcoded: ItemFloor[] | null;
     dueño: "A" | "B" | null;
@@ -521,42 +664,39 @@ const cats = categoriasFloor.map((c) => ({
       return;
     }
 
-    if (!categoriaSeleccionada) {
+    if (!categoriaSlug) {
       errEl.textContent = "Elige una categoría.";
-      errEl.classList.remove("hidden");
-      return;
-    }
-
-    const libre = categoriaSeleccionada === "libre"
-      ? ($("categoria-libre") as HTMLInputElement).value.trim()
-      : undefined;
-
-    if (categoriaSeleccionada === "libre" && !libre) {
-      errEl.textContent = "Escribe una categoría libre.";
       errEl.classList.remove("hidden");
       return;
     }
 
     pararVoz();
     mostrar(pLoader);
+    $("loader-progreso").textContent = "Cargando…";
 
     try {
       let raw: ItemFloor[];
-      if (categoriaSeleccionada === "libre") {
-        raw = await generarFloor({
-          libre,
-          onProgreso: (msg) => { $("loader-progreso").textContent = msg; },
-        });
-        categoriaActual = libre ?? "";
+
+      if (categoriaTipo === "cine") {
+        if (categoriaSlugsParaMezcla) {
+          raw = await cargarMezclaCine(categoriaSlugsParaMezcla);
+        } else {
+          raw = await cargarCatalogoCine(categoriaSlug);
+        }
+        categoriaActual = categoriaNombre;
       } else {
-        const cat = todasCats.find((c) => c.slug === categoriaSeleccionada)!;
+        const cat = todasCatsOtras.find((c) => c.slug === categoriaSlug)!;
         categoriaActual = cat.nombre;
         if (cat.itemsHardcoded) {
           raw = [...cat.itemsHardcoded];
         } else {
-          raw = await generarFloorPredefinida(cat.slug, cat.nombres!, cat.ocupacionesWikidata, cat.instanciasWikidata, cat.descripcionWikidata, cat.apiEspecializada);
+          raw = await generarFloorPredefinida(
+            cat.slug, cat.nombres!, cat.ocupacionesWikidata,
+            cat.instanciasWikidata, cat.descripcionWikidata, cat.apiEspecializada,
+          );
         }
       }
+
       items = [...raw].sort(() => Math.random() - 0.5);
 
       jug = {
@@ -585,20 +725,41 @@ const cats = categoriasFloor.map((c) => ({
 
   // ── Tablero ──────────────────────────────────────────────────
   function initTablero(nombreA: string, nombreB: string) {
-    const catsValidas = todasCats.filter((c) => c.nombres || c.itemsHardcoded);
+    // Las casillas del tablero usan subcategorías jugables de Cine
+    const catsValidas = todasCatsOtras.filter((c) => c.nombres || c.itemsHardcoded);
+
     casillas = Array.from({ length: 25 }, () => {
-      const cat = catsValidas[Math.floor(Math.random() * catsValidas.length)];
-      return {
-        catSlug: cat.slug,
-        catEmoji: cat.emoji,
-        catNombre: cat.nombre,
-        catNombres: cat.nombres ?? null,
-        catHardcoded: cat.itemsHardcoded ?? null,
-        dueño: null as "A" | "B" | null,
-        items: [] as ItemFloor[],
-        itemsOffset: 0,
-        empateCuenta: 0,
-      };
+      // 70% Cine, 30% Otras — para variedad
+      if (cineSlugsJugables.length > 0 && Math.random() < 0.7) {
+        const slug = cineSlugsJugables[Math.floor(Math.random() * cineSlugsJugables.length)];
+        const meta = cineBloques.flatMap((b) => b.subcats).find((s) => s.slug === slug);
+        return {
+          catSlug: slug,
+          catEmoji: meta?.emoji ?? "🎬",
+          catNombre: meta?.nombre ?? slug,
+          catTipo: "cine" as const,
+          catNombres: null,
+          catHardcoded: null,
+          dueño: null as "A" | "B" | null,
+          items: [] as ItemFloor[],
+          itemsOffset: 0,
+          empateCuenta: 0,
+        };
+      } else {
+        const cat = catsValidas[Math.floor(Math.random() * catsValidas.length)];
+        return {
+          catSlug: cat.slug,
+          catEmoji: cat.emoji,
+          catNombre: cat.nombre,
+          catTipo: "otras" as const,
+          catNombres: cat.nombres ?? null,
+          catHardcoded: cat.itemsHardcoded ?? null,
+          dueño: null as "A" | "B" | null,
+          items: [] as ItemFloor[],
+          itemsOffset: 0,
+          empateCuenta: 0,
+        };
+      }
     });
 
     casillaDuelo = -1;
@@ -650,8 +811,8 @@ const cats = categoriasFloor.map((c) => ({
     $("tablero-count-b").textContent = String(countB);
 
     const attackable = getAttackableIndices(tableroAtacante);
-    const grid = $("tablero-grid");
-    grid.innerHTML = "";
+    const gridEl = $("tablero-grid");
+    gridEl.innerHTML = "";
 
     casillas.forEach((casilla, idx) => {
       const btn = document.createElement("button");
@@ -672,7 +833,7 @@ const cats = categoriasFloor.map((c) => ({
       btn.textContent = casilla.catEmoji;
       btn.title = casilla.catNombre;
       if (esAtacable) btn.addEventListener("click", () => mostrarPreDuelo(idx));
-      grid.appendChild(btn);
+      gridEl.appendChild(btn);
     });
 
     const nombreAtacante = jug ? (tableroAtacante === "A" ? jug.A.nombre : jug.B.nombre) : tableroAtacante;
@@ -699,16 +860,23 @@ const cats = categoriasFloor.map((c) => ({
 
   async function atacarCasilla(idx: number) {
     mostrar(pLoader);
+    $("loader-progreso").textContent = "Cargando…";
     const casilla = casillas[idx];
 
     if (casilla.items.length === 0) {
       try {
         let raw: ItemFloor[];
-        if (casilla.catHardcoded) {
+        if (casilla.catTipo === "cine") {
+          raw = await cargarCatalogoCine(casilla.catSlug);
+        } else if (casilla.catHardcoded) {
           raw = [...casilla.catHardcoded];
         } else {
-          const catDef = todasCats.find((c) => c.slug === casilla.catSlug);
-          raw = await generarFloorPredefinida(casilla.catSlug, casilla.catNombres!, catDef?.ocupacionesWikidata, catDef?.instanciasWikidata, catDef?.descripcionWikidata, catDef?.apiEspecializada);
+          const catDef = todasCatsOtras.find((c) => c.slug === casilla.catSlug);
+          raw = await generarFloorPredefinida(
+            casilla.catSlug, casilla.catNombres!,
+            catDef?.ocupacionesWikidata, catDef?.instanciasWikidata,
+            catDef?.descripcionWikidata, catDef?.apiEspecializada,
+          );
         }
         casilla.items = [...raw].sort(() => Math.random() - 0.5);
         casilla.itemsOffset = 0;
@@ -771,7 +939,7 @@ const cats = categoriasFloor.map((c) => ({
   function mostrarFinalTablero() {
     const countA = casillas.filter((c) => c.dueño === "A").length;
     const countB = casillas.filter((c) => c.dueño === "B").length;
-    let ganador = countA > countB ? `🥇 Gana ${jug.A.nombre}` : countB > countA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
+    const ganador = countA > countB ? `🥇 Gana ${jug.A.nombre}` : countB > countA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
     $("texto-ganador").textContent = ganador;
     $("final-tiempo-a").textContent = String(countA);
     $("final-tiempo-b").textContent = String(countB);
@@ -941,7 +1109,7 @@ const cats = categoriasFloor.map((c) => ({
     $("final-tiempo-b").textContent = `${sB}s`;
     $("final-label-a").textContent = "tiempo restante";
     $("final-label-b").textContent = "tiempo restante";
-    let ganador = sA > sB ? `🥇 Gana ${jug.A.nombre}` : sB > sA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
+    const ganador = sA > sB ? `🥇 Gana ${jug.A.nombre}` : sB > sA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
     $("texto-ganador").textContent = ganador;
     mostrar(pFinal);
     lanzarConfeti();
@@ -962,7 +1130,7 @@ const cats = categoriasFloor.map((c) => ({
 
   $("boton-volver").addEventListener("click", () => {
     if (!pBienvenida.classList.contains("hidden")) {
-      // ya en bienvenida, no hay nada a lo que volver
+      // ya en bienvenida
     } else if (!pSetup.classList.contains("hidden")) {
       mostrar(pBienvenida);
     } else {

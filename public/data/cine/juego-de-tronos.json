@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Jaime Lannister",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b4/Jaime_Lannister-Nikolaj_Coster-Waldau.jpg",
+    "palabraClave": "lannister"
+  },
+  {
+    "nombre": "Theon Greyjoy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/51/Theon_Greyjoy-Alfie_Allen.jpg",
+    "palabraClave": "greyjoy"
+  }
+]

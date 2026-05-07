@@ -1,0 +1,77 @@
+[
+  {
+    "nombre": "Totoro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2e/Tobacco_Barns_%28film%29_poster.jpg",
+    "palabraClave": "totoro"
+  },
+  {
+    "nombre": "Catbus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Joe_Hisaishi_2011.jpg/330px-Joe_Hisaishi_2011.jpg",
+    "palabraClave": "catbus"
+  },
+  {
+    "nombre": "Chihiro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png",
+    "palabraClave": "chihiro"
+  },
+  {
+    "nombre": "Sin Cara",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ryoi_Nopperabo.jpg",
+    "palabraClave": "cara"
+  },
+  {
+    "nombre": "Lin",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/2012_2013_-_Lin.jpg/330px-2012_2013_-_Lin.jpg",
+    "palabraClave": "lin"
+  },
+  {
+    "nombre": "Sofía",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Russian_church_%2837591925970%29.jpg/330px-Russian_church_%2837591925970%29.jpg",
+    "palabraClave": "sofia"
+  },
+  {
+    "nombre": "Moro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Automobile_of_the_Orient_NGM-v31-p259.jpg/330px-Automobile_of_the_Orient_NGM-v31-p259.jpg",
+    "palabraClave": "moro"
+  },
+  {
+    "nombre": "Kushana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Imp%C3%A9rio_Cuchana-es.svg/langes-330px-Imp%C3%A9rio_Cuchana-es.svg.png",
+    "palabraClave": "kushana"
+  },
+  {
+    "nombre": "Jiro Horikoshi",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/62/Jiro_Horikoshi.jpg",
+    "palabraClave": "horikoshi"
+  },
+  {
+    "nombre": "Barón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Heraldic_Crown_of_Spanish_Barons.svg/langes-330px-Heraldic_Crown_of_Spanish_Barons.svg.png",
+    "palabraClave": "baron"
+  },
+  {
+    "nombre": "Tanuki",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nyctereutes_procyonoides_4_%28Piotr_Kuczynski%29.jpg/330px-Nyctereutes_procyonoides_4_%28Piotr_Kuczynski%29.jpg",
+    "palabraClave": "tanuki"
+  },
+  {
+    "nombre": "Porco Rosso",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Kurenai_no_buta_title.svg/langes-330px-Kurenai_no_buta_title.svg.png",
+    "palabraClave": "rosso"
+  },
+  {
+    "nombre": "Kaguya",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/The_Tale_of_the_Bamboo_Cutter_-_Discovery_of_Princess_Kaguya.jpg/330px-The_Tale_of_the_Bamboo_Cutter_-_Discovery_of_Princess_Kaguya.jpg",
+    "palabraClave": "kaguya"
+  },
+  {
+    "nombre": "Marnie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Alfred_Hitchcock%27s_Marnie_Trailer_-_Tippi_Hedren_%282%29.png/330px-Alfred_Hitchcock%27s_Marnie_Trailer_-_Tippi_Hedren_%282%29.png",
+    "palabraClave": "marnie"
+  },
+  {
+    "nombre": "Kodama",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SekienKodama.jpg/330px-SekienKodama.jpg",
+    "palabraClave": "kodama"
+  }
+]

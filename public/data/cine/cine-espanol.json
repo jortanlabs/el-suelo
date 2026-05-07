@@ -1,0 +1,222 @@
+[
+  {
+    "nombre": "Pedro Almodóvar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Pedro_Almod%C3%B3var-69720_%28cropped%29.jpg/330px-Pedro_Almod%C3%B3var-69720_%28cropped%29.jpg",
+    "palabraClave": "almodovar"
+  },
+  {
+    "nombre": "Alejandro Amenábar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Goyas_2025_-Alejandro_Amen%C3%A1bar_%28cropped%29.jpg/330px-Goyas_2025_-Alejandro_Amen%C3%A1bar_%28cropped%29.jpg",
+    "palabraClave": "amenabar"
+  },
+  {
+    "nombre": "Alex de la Iglesia",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/MJK34833_%C3%81lex_de_la_Iglesia_%28El_Bar%2C_Berlinale_2017%29.jpg/330px-MJK34833_%C3%81lex_de_la_Iglesia_%28El_Bar%2C_Berlinale_2017%29.jpg",
+    "palabraClave": "iglesia"
+  },
+  {
+    "nombre": "J. A. Bayona",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Jurassic_World_Fallen_Kingdom_Japan_Premiere_Red_Carpet_J._A._Bayona_%28cropped%29_%28cropped%29.jpg/330px-Jurassic_World_Fallen_Kingdom_Japan_Premiere_Red_Carpet_J._A._Bayona_%28cropped%29_%28cropped%29.jpg",
+    "palabraClave": "bayona"
+  },
+  {
+    "nombre": "Fernando León de Aranoa",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Fernando_Le%C3%B3n_de_Aranoa_-_Seminci_2011.jpg/330px-Fernando_Le%C3%B3n_de_Aranoa_-_Seminci_2011.jpg",
+    "palabraClave": "aranoa"
+  },
+  {
+    "nombre": "Icíar Bollaín",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Festival_de_M%C3%A1laga_2020_-_Ic%C3%ADar_Bolla%C3%ADn_%28Cropped%29.jpg/330px-Festival_de_M%C3%A1laga_2020_-_Ic%C3%ADar_Bolla%C3%ADn_%28Cropped%29.jpg",
+    "palabraClave": "bollain"
+  },
+  {
+    "nombre": "Carlos Saura",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Premios_Goya_2018_-_Carlos_Saura.jpg/330px-Premios_Goya_2018_-_Carlos_Saura.jpg",
+    "palabraClave": "saura"
+  },
+  {
+    "nombre": "Bigas Luna",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Bigas_Luna_-_Seminci_2011_%281%29.jpg/330px-Bigas_Luna_-_Seminci_2011_%281%29.jpg",
+    "palabraClave": "luna"
+  },
+  {
+    "nombre": "José Luis Garci",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Jos%C3%A9_Luis_Garci_2013.jpg/330px-Jos%C3%A9_Luis_Garci_2013.jpg",
+    "palabraClave": "garci"
+  },
+  {
+    "nombre": "Fernando Colomo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Fernando_Colomo_en_los_Premios_Goya_2017.jpg/330px-Fernando_Colomo_en_los_Premios_Goya_2017.jpg",
+    "palabraClave": "colomo"
+  },
+  {
+    "nombre": "Isabel Coixet",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Premios_Goya_2018_-_Isabel_Coixet_%28cropped_2%29.jpg/330px-Premios_Goya_2018_-_Isabel_Coixet_%28cropped_2%29.jpg",
+    "palabraClave": "coixet"
+  },
+  {
+    "nombre": "Agustí Villaronga",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Agust%C3%AD_Villaronga%2C_XII_Premis_Gaud%C3%AD_%282020%29.jpg/330px-Agust%C3%AD_Villaronga%2C_XII_Premis_Gaud%C3%AD_%282020%29.jpg",
+    "palabraClave": "villaronga"
+  },
+  {
+    "nombre": "Rodrigo Sorogoyen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Premios_Goya_2019_-_Rodrigo_Sorogoyen_Goya.jpg/330px-Premios_Goya_2019_-_Rodrigo_Sorogoyen_Goya.jpg",
+    "palabraClave": "sorogoyen"
+  },
+  {
+    "nombre": "Antonio Banderas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Goyas_2025_-_Antonio_Banderas_%28cropped%29.jpg/330px-Goyas_2025_-_Antonio_Banderas_%28cropped%29.jpg",
+    "palabraClave": "banderas"
+  },
+  {
+    "nombre": "Javier Bardem",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Premios_Goya_2018_-_Javier_Bardem_%28cropped%29.jpg/330px-Premios_Goya_2018_-_Javier_Bardem_%28cropped%29.jpg",
+    "palabraClave": "bardem"
+  },
+  {
+    "nombre": "Penélope Cruz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Goyas_2024_-_Pen%C3%A9lope_Cruz-2_%28cropped%29.jpg/330px-Goyas_2024_-_Pen%C3%A9lope_Cruz-2_%28cropped%29.jpg",
+    "palabraClave": "cruz"
+  },
+  {
+    "nombre": "Carmen Maura",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/%28Carmen_Maura%29_Entrega_de_la_Medalla_internacional_de_las_Artes_de_la_Comunidad_de_Madrid_a_Carmen_Maura_%2833552184358%29_%28cropped%29.jpg/330px-%28Carmen_Maura%29_Entrega_de_la_Medalla_internacional_de_las_Artes_de_la_Comunidad_de_Madrid_a_Carmen_Maura_%2833552184358%29_%28cropped%29.jpg",
+    "palabraClave": "maura"
+  },
+  {
+    "nombre": "Victoria Abril",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Victoria_Abril_Cannes_2017_2_%28cropped%29.jpg",
+    "palabraClave": "abril"
+  },
+  {
+    "nombre": "Maribel Verdú",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Goyas_2025_-_Maribel_Verd%C3%BA.jpg/330px-Goyas_2025_-_Maribel_Verd%C3%BA.jpg",
+    "palabraClave": "verdu"
+  },
+  {
+    "nombre": "Luis Tosar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Premios_Goya_2026_-_Luis_Tosar_%28cropped%29.jpg/330px-Premios_Goya_2026_-_Luis_Tosar_%28cropped%29.jpg",
+    "palabraClave": "tosar"
+  },
+  {
+    "nombre": "José Coronado",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Premios_Goya_2020_-_Jos%C3%A9_Coronado_%28cropped%29.jpg/330px-Premios_Goya_2020_-_Jos%C3%A9_Coronado_%28cropped%29.jpg",
+    "palabraClave": "coronado"
+  },
+  {
+    "nombre": "Blanca Portillo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Blanca_Portillo_en_Almagro_%28cropped%29.jpg/330px-Blanca_Portillo_en_Almagro_%28cropped%29.jpg",
+    "palabraClave": "portillo"
+  },
+  {
+    "nombre": "José Sacristán",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Premios_Goya_2018_-_Jos%C3%A9_Sacrist%C3%A1n.jpg/330px-Premios_Goya_2018_-_Jos%C3%A9_Sacrist%C3%A1n.jpg",
+    "palabraClave": "sacristan"
+  },
+  {
+    "nombre": "Karra Elejalde",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Malaga_Film_Festival_2025_-_Karra_Elejalde-1_%28cropped%29.jpg/330px-Malaga_Film_Festival_2025_-_Karra_Elejalde-1_%28cropped%29.jpg",
+    "palabraClave": "elejalde"
+  },
+  {
+    "nombre": "Dani Rovira",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Dani_Rovira_en_los_premios_Goya_2017_%28cropped%29.jpg/330px-Dani_Rovira_en_los_premios_Goya_2017_%28cropped%29.jpg",
+    "palabraClave": "rovira"
+  },
+  {
+    "nombre": "Mario Casas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Malaga_Film_Festival_2025_-_Mario_Casas-2_%28cropped%29.jpg/330px-Malaga_Film_Festival_2025_-_Mario_Casas-2_%28cropped%29.jpg",
+    "palabraClave": "casas"
+  },
+  {
+    "nombre": "Bárbara Lennie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/B%C3%A1rbara_Lennie_at_Premios_Goya_2017_%28cropped%29.jpg/330px-B%C3%A1rbara_Lennie_at_Premios_Goya_2017_%28cropped%29.jpg",
+    "palabraClave": "lennie"
+  },
+  {
+    "nombre": "Marta Etura",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Festival_de_M%C3%A1laga_2024_-_Marta_Etura_%28cropped%29.jpg/330px-Festival_de_M%C3%A1laga_2024_-_Marta_Etura_%28cropped%29.jpg",
+    "palabraClave": "etura"
+  },
+  {
+    "nombre": "Paco León",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Premios_Goya_2018_-_Paco_Le%C3%B3n.jpg/330px-Premios_Goya_2018_-_Paco_Le%C3%B3n.jpg",
+    "palabraClave": "leon"
+  },
+  {
+    "nombre": "Pan's Labyrinth",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pan%27s_Labyrinth_movie_black_horizontal_logo.png/330px-Pan%27s_Labyrinth_movie_black_horizontal_logo.png",
+    "palabraClave": "labyrinth"
+  },
+  {
+    "nombre": "The Others",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/The_Others_Logo.jpg/330px-The_Others_Logo.jpg",
+    "palabraClave": "others"
+  },
+  {
+    "nombre": "Open Your Eyes",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Viola_Allen_seated.jpg/330px-Viola_Allen_seated.jpg",
+    "palabraClave": "eyes"
+  },
+  {
+    "nombre": "All About My Mother",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Nate_Buzolic_%289111878990%29_cropped.jpg/330px-Nate_Buzolic_%289111878990%29_cropped.jpg",
+    "palabraClave": "mother"
+  },
+  {
+    "nombre": "Volver",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2b/Volver_Poster.jpg",
+    "palabraClave": "volver"
+  },
+  {
+    "nombre": "[REC]",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/4/4b/Rec_poster.jpg",
+    "palabraClave": "rec"
+  },
+  {
+    "nombre": "The Platform",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Locarno_fg1.jpg/330px-Locarno_fg1.jpg",
+    "palabraClave": "platform"
+  },
+  {
+    "nombre": "Cell 211",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/BruceGreenwoodTIFFSept10.jpg/330px-BruceGreenwoodTIFFSept10.jpg",
+    "palabraClave": "211"
+  },
+  {
+    "nombre": "The Snow Society",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Eliza_Roxcy_Snow_photograph.PNG",
+    "palabraClave": "society"
+  },
+  {
+    "nombre": "A Monster Calls",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Bloop.jpg",
+    "palabraClave": "calls"
+  },
+  {
+    "nombre": "Champions",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/UEFA_Champions_League_logo.png/330px-UEFA_Champions_League_logo.png",
+    "palabraClave": "champions"
+  },
+  {
+    "nombre": "Ocho apellidos vascos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Getaria_-_Puerto_1.JPG/330px-Getaria_-_Puerto_1.JPG",
+    "palabraClave": "vascos"
+  },
+  {
+    "nombre": "El día de la bestia",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/El_%C3%81ngel_Ca%C3%ADdo_%28Ricardo_Bellver%29_01.jpg/330px-El_%C3%81ngel_Ca%C3%ADdo_%28Ricardo_Bellver%29_01.jpg",
+    "palabraClave": "bestia"
+  },
+  {
+    "nombre": "Torrente, el brazo tonto de la ley",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Cacharrito_Torrente_5_-Jerez-_IMG_20180508_202619_298.jpg/330px-Cacharrito_Torrente_5_-Jerez-_IMG_20180508_202619_298.jpg",
+    "palabraClave": "ley"
+  },
+  {
+    "nombre": "Mar adentro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Letra_Mar_adentro_Bunbury.jpg/330px-Letra_Mar_adentro_Bunbury.jpg",
+    "palabraClave": "adentro"
+  }
+]

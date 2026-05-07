@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Moscú",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg/330px-Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg",
+    "palabraClave": "moscu"
+  },
+  {
+    "nombre": "Bogotá",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Museo-del-Oro-Fachada_%2827842494739%29.jpg/330px-Museo-del-Oro-Fachada_%2827842494739%29.jpg",
+    "palabraClave": "bogota"
+  },
+  {
+    "nombre": "Manila",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Manila_Harbour_View_by_night_%28Thomas_Yie%29_-_Flickr.jpg/330px-Manila_Harbour_View_by_night_%28Thomas_Yie%29_-_Flickr.jpg",
+    "palabraClave": "manila"
+  },
+  {
+    "nombre": "Sagasta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Pr%C3%A1xedes_Mateo_Sagasta_por_Christian_Franzen_%28edit%29.jpg/330px-Pr%C3%A1xedes_Mateo_Sagasta_por_Christian_Franzen_%28edit%29.jpg",
+    "palabraClave": "sagasta"
+  }
+]

@@ -40,6 +40,19 @@ function guardarCache(k: string, data: ItemFloor[]): void {
   } catch {}
 }
 
+function deduplicar(items: ItemFloor[]): ItemFloor[] {
+  const seen = new Set<string>();
+  return items.filter((item) => {
+    const key = item.imagen
+      .replace(/\/\d+px-/g, "/")
+      .replace(/\?.*$/, "")
+      .toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 // ── TMDB ────────────────────────────────────────────────────────────────────
 
 type TMDBPerson = { name: string; profile_path: string | null; popularity: number };
@@ -141,6 +154,7 @@ export async function generarFloorPredefinida(
     items = await resolverNombres(nombres, 5, ocupaciones, instancias, descripcion);
   }
 
+  items = deduplicar(items);
   if (items.length < 8) throw new Error(`Solo se encontraron ${items.length} imágenes. Recarga para intentarlo de nuevo.`);
   guardarCache(k, items);
   return items;
@@ -300,10 +314,60 @@ export async function generarFloor(
     items = [...wpItems, ...wdExtra];
   }
 
+  items = deduplicar(items);
   if (items.length < 8) {
     throw new Error(`Solo se encontraron ${items.length} imágenes para esta categoría. Prueba con una categoría más específica o famosa.`);
   }
   guardarCache(k, items);
+  return items;
+}
+
+// ── Catálogo Cine (pre-resuelto) ─────────────────────────────────────────────
+
+const TTL_CINE_MS = 7 * 24 * 60 * 60 * 1000; // 7 días
+
+function claveCine(slug: string): string {
+  return `juegario:cine:v1:${slug}`;
+}
+
+/**
+ * Carga los items pre-resueltos de una subcategoría de Cine y Series.
+ * Primero consulta localStorage; si no hay caché válida, fetcha el JSON estático.
+ */
+export async function cargarCatalogoCine(slug: string): Promise<ItemFloor[]> {
+  const k = claveCine(slug);
+  const cached = leerCache(k);
+  if (cached && cached.length > 0) return cached;
+
+  const res = await fetch(`/data/cine/${slug}.json`);
+  if (!res.ok) throw new Error(`Categoría "${slug}" no encontrada`);
+  const items = (await res.json()) as ItemFloor[];
+  if (!items.length) throw new Error(`La categoría "${slug}" está vacía`);
+
+  // Guardar con TTL largo (datos estáticos)
+  try {
+    localStorage.setItem(k, JSON.stringify({ data: items, expira: Date.now() + TTL_CINE_MS }));
+  } catch {}
+
+  return items;
+}
+
+/**
+ * Carga y mezcla items de varias subcategorías (para categorías "Mezcla").
+ * Carga cada subcategoría en paralelo y baraja el resultado final.
+ */
+export async function cargarMezclaCine(slugs: string[]): Promise<ItemFloor[]> {
+  const k = claveCine(`mezcla:${slugs.sort().join(",")}`);
+  const cached = leerCache(k);
+  if (cached && cached.length > 0) return cached;
+
+  const todos = await Promise.all(slugs.map((s) => cargarCatalogoCine(s).catch(() => [] as ItemFloor[])));
+  const items = deduplicar(todos.flat().sort(() => Math.random() - 0.5));
+
+  try {
+    localStorage.setItem(k, JSON.stringify({ data: items, expira: Date.now() + TTL_CINE_MS }));
+  } catch {}
+
   return items;
 }
 
