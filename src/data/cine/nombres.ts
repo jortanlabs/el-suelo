@@ -165,7 +165,7 @@ export const subcategorias: SubcategoriaNombres[] = [
   },
   {
     slug: "disney-villanos",
-    nombre: "Villanos Disney",
+    nombre: "Villanos",
     emoji: "🦹",
     bloque: "animacion",
     bloqueNombre: "Animación",

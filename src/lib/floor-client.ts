@@ -455,7 +455,8 @@ export function aciertoFlexible(
   if (palabras.length === 1) return coincide(palabras[0]);
 
   // Palabras genéricas que nunca identifican un item concreto:
-  // base fija + todas las palabras significativas de la categoría activa (con sus formas)
+  // base fija + palabras de la categoría + palabras entre paréntesis del nombre
+  // (lo que va entre paréntesis es la película/contexto, no el nombre del personaje)
   const genericos = new Set(["pez", "flor", "flores"]);
   if (categoria) {
     normalizar(categoria)
@@ -463,6 +464,16 @@ export function aciertoFlexible(
       .filter((w) => w.length >= 3 && !STOP.has(w))
       .flatMap(formasCategoria)
       .forEach((w) => genericos.add(w));
+  }
+  // Añadir palabras dentro de paréntesis como genéricas (película/universo, no el personaje)
+  const parentesisMatch = nombre.match(/\(([^)]+)\)/g);
+  if (parentesisMatch) {
+    for (const m of parentesisMatch) {
+      normalizar(m.replace(/[()]/g, ""))
+        .split(/\s+/)
+        .filter((w) => w.length > 2 && !STOP.has(w))
+        .forEach((w) => genericos.add(w));
+    }
   }
 
   const aciertos = palabras.map((p, i) => ({ i, ok: coincide(p) })).filter((x) => x.ok);
