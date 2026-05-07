@@ -1,13 +1,12 @@
 ---
 export const prerender = true;
-import { subcategorias, bloques } from "../data/catalogoCine.ts";
+import { subcategorias } from "../data/catalogoCine.ts";
 
 const leafSubcats = subcategorias
   .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
   .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres! }));
 
-const bySlugs: Record<string, string[]> = {};
-for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
+const BUILD = Date.now();
 ---
 
 <!doctype html>
@@ -21,120 +20,69 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
     html, body { height: 100%; }
     body { background: #050c1e; color: #e8e8ff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; height: 100dvh; overflow: hidden; }
 
-    /* ── Top bar ── */
     .topbar { background: #050c1e; border-bottom: 1px solid #163575; padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-    .topbar h1 { color: #ffcc00; font-size: 1rem; font-weight: bold; white-space: nowrap; }
+    .topbar h1 { color: #ffcc00; font-size: 1rem; font-weight: bold; }
+    .ver { color: #163575; font-size: 0.65rem; }
     .topbar-spacer { flex: 1; }
-    .btn-export-cur { padding: 5px 12px; background: #ffcc00; color: #050c1e; border: none; border-radius: 4px; font-size: 0.75rem; font-weight: bold; cursor: pointer; white-space: nowrap; }
-    .btn-export-cur:hover { background: #ffe066; }
+    .btn-export-cur { padding: 5px 12px; background: #ffcc00; color: #050c1e; border: none; border-radius: 4px; font-size: 0.75rem; font-weight: bold; cursor: pointer; }
     .btn-export-cur:disabled { opacity: 0.4; cursor: default; }
 
-    /* ── Layout ── */
     .layout { display: flex; flex: 1; overflow: hidden; }
 
-    /* ── Sidebar ── */
-    .sidebar { width: 220px; flex-shrink: 0; border-right: 1px solid #163575; overflow-y: auto; background: #050c1e; }
-    @media (max-width: 600px) { .sidebar { width: 140px; } }
-    .sidebar-section { padding: 8px 0 4px; }
-    .sidebar-bloque { padding: 6px 12px 3px; font-size: 0.62rem; font-weight: bold; color: #2a5090; text-transform: uppercase; letter-spacing: 0.08em; }
-    .sidebar-btn {
-      display: flex; align-items: center; gap: 6px;
-      width: 100%; padding: 7px 12px;
-      background: transparent; border: none; color: #2a5090;
-      font-size: 0.75rem; text-align: left; cursor: pointer;
-      border-left: 2px solid transparent;
-    }
+    /* Sidebar */
+    .sidebar { width: 200px; flex-shrink: 0; border-right: 1px solid #163575; overflow-y: auto; }
+    .sidebar-bloque { padding: 8px 12px 3px; font-size: 0.6rem; font-weight: bold; color: #2a5090; text-transform: uppercase; letter-spacing: 0.08em; }
+    .sidebar-btn { display: flex; align-items: center; gap: 6px; width: 100%; padding: 6px 12px; background: transparent; border: none; color: #2a5090; font-size: 0.75rem; text-align: left; cursor: pointer; border-left: 2px solid transparent; }
     .sidebar-btn:hover { color: #e8e8ff; background: #0a1628; }
     .sidebar-btn.active { color: #ffcc00; border-left-color: #ffcc00; background: #0d1e3a; }
-    .sidebar-btn .emoji { width: 16px; text-align: center; flex-shrink: 0; }
-    .sidebar-btn .stats { margin-left: auto; font-size: 0.6rem; color: #163575; flex-shrink: 0; }
-    .sidebar-btn.active .stats { color: #2a5090; }
+    .sidebar-btn .sstat { margin-left: auto; font-size: 0.58rem; }
 
-    /* ── Main panel ── */
-    .main { flex: 1; overflow-y: auto; padding: 16px; }
-    .panel-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
-    .panel-title { font-size: 1.1rem; font-weight: bold; color: #e8e8ff; }
-    .panel-stats { display: flex; gap: 6px; margin-left: auto; flex-wrap: wrap; }
-    .badge-ok { background: #0d3a1a; color: #4cff8f; border: 1px solid #1a7a3a; padding: 2px 8px; border-radius: 3px; font-size: 0.65rem; }
-    .badge-miss { background: #3a0d1a; color: #ff6b8a; border: 1px solid #7a1a3a; padding: 2px 8px; border-radius: 3px; font-size: 0.65rem; }
-    .panel-toolbar { display: flex; gap: 8px; margin-bottom: 14px; }
-    .btn-add { padding: 5px 12px; background: transparent; color: #2a5090; border: 1px solid #163575; border-radius: 4px; font-size: 0.75rem; cursor: pointer; }
+    /* Main */
+    .main { flex: 1; overflow-y: auto; padding: 14px; }
+    .panel-hdr { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+    .panel-title { font-size: 1rem; font-weight: bold; }
+    .panel-stats { display: flex; gap: 6px; margin-left: auto; }
+    .bok { background: #0d3a1a; color: #4cff8f; border: 1px solid #1a7a3a; padding: 2px 7px; border-radius: 3px; font-size: 0.62rem; }
+    .bmiss { background: #3a0d1a; color: #ff6b8a; border: 1px solid #7a1a3a; padding: 2px 7px; border-radius: 3px; font-size: 0.62rem; }
+    .panel-toolbar { margin-bottom: 12px; }
+    .btn-add { padding: 4px 10px; background: transparent; color: #2a5090; border: 1px solid #163575; border-radius: 4px; font-size: 0.72rem; cursor: pointer; }
     .btn-add:hover { border-color: #ffcc00; color: #ffcc00; }
 
-    /* ── Items grid ── */
-    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, 56px); gap: 5px; justify-content: start; }
-
-    .item-card { background: #0a1628; border: 1px solid #163575; border-radius: 4px; overflow: hidden; width: 56px; }
-    .item-card.no-img { border-color: #ff1dce33; }
-    .item-card.edited { border-color: #ffcc0066; }
-    .item-card.deleted { opacity: 0.35; border-style: dashed; }
-
-    .img-wrap { position: relative; width: 56px; height: 56px; background: #050c1e; overflow: hidden; flex-shrink: 0; }
-    .img-wrap img { width: 56px; height: 56px; object-fit: cover; display: block; }
-    .img-placeholder { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: #163575; }
-    .btn-change-img {
-      position: absolute; inset: 0;
-      background: rgba(5,12,30,0.82);
-      color: #ffcc00; border: none;
-      font-size: 0.55rem; font-weight: bold;
-      cursor: pointer; opacity: 0; transition: opacity 0.15s;
-      display: flex; align-items: center; justify-content: center;
-      text-align: center; padding: 4px;
-    }
-    .img-wrap:hover .btn-change-img,
-    .img-wrap:focus-within .btn-change-img { opacity: 1; }
-    @media (pointer: coarse) { .btn-change-img { opacity: 1 !important; background: rgba(5,12,30,0.6); } }
-
-    .item-footer { padding: 3px 4px 2px; }
-    .item-name-row { display: flex; align-items: flex-start; gap: 4px; }
-    .item-name { font-size: 0.55rem; color: #e8e8ff; flex: 1; line-height: 1.2; }
-    .btn-pencil { background: transparent; border: none; color: #2a5090; font-size: 0.6rem; cursor: pointer; padding: 0; flex-shrink: 0; line-height: 1; }
-    .btn-pencil:hover { color: #ffcc00; }
-    .btn-del { display: block; width: 100%; margin-top: 2px; padding: 2px; background: transparent; border: 1px solid #163575; color: #2a5090; font-size: 0.52rem; border-radius: 3px; cursor: pointer; }
-    .btn-del:hover { border-color: #ff1dce; color: #ff1dce; }
-
-    /* ── Empty state ── */
-    .empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 60%; gap: 12px; color: #2a5090; }
-    .empty .big { font-size: 3rem; }
-
-    /* ── Dialogs ── */
-    dialog { background: #0d1e3a; border: 1px solid #163575; border-radius: 10px; padding: 22px; color: #e8e8ff; max-width: 420px; width: 92vw; }
+    /* Dialogs */
+    dialog { background: #0d1e3a; border: 1px solid #163575; border-radius: 10px; padding: 20px; color: #e8e8ff; max-width: 400px; width: 92vw; }
     dialog::backdrop { background: rgba(5,12,30,0.92); }
-    .dlg-title { color: #ffcc00; font-size: 1rem; font-weight: bold; margin-bottom: 14px; }
-    .dlg-label { color: #2a5090; font-size: 0.72rem; margin-bottom: 4px; }
-    .dlg-input { width: 100%; background: #050c1e; border: 1px solid #163575; color: #e8e8ff; padding: 9px; border-radius: 5px; font-size: 0.85rem; margin-bottom: 10px; }
+    .dlg-title { color: #ffcc00; font-size: 0.95rem; font-weight: bold; margin-bottom: 12px; }
+    .dlg-label { color: #2a5090; font-size: 0.7rem; margin-bottom: 4px; }
+    .dlg-input { width: 100%; background: #050c1e; border: 1px solid #163575; color: #e8e8ff; padding: 8px; border-radius: 5px; font-size: 0.82rem; margin-bottom: 10px; }
     .dlg-input:focus { outline: none; border-color: #ffcc00; }
-    .dlg-img-prev { width: 80px; height: 80px; object-fit: cover; border-radius: 5px; border: 1px solid #163575; display: none; margin-bottom: 10px; }
-    .dlg-note { color: #2a5090; font-size: 0.7rem; margin-bottom: 10px; line-height: 1.4; }
+    .dlg-img-prev { width: 70px; height: 70px; object-fit: cover; border-radius: 4px; border: 1px solid #163575; display: none; margin-bottom: 10px; }
+    .dlg-note { color: #2a5090; font-size: 0.68rem; margin-bottom: 10px; line-height: 1.4; }
     .dlg-actions { display: flex; gap: 8px; }
-    .btn-ok { flex: 1; padding: 9px; background: #ffcc00; color: #050c1e; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.85rem; }
+    .btn-ok { flex: 1; padding: 8px; background: #ffcc00; color: #050c1e; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.82rem; }
     .btn-ok:hover { background: #ffe066; }
-    .btn-cancel-dlg { flex: 1; padding: 9px; background: transparent; color: #2a5090; border: 1px solid #163575; border-radius: 5px; cursor: pointer; font-size: 0.85rem; }
+    .btn-cancel-dlg { flex: 1; padding: 8px; background: transparent; color: #2a5090; border: 1px solid #163575; border-radius: 5px; cursor: pointer; font-size: 0.82rem; }
     .btn-cancel-dlg:hover { color: #e8e8ff; border-color: #e8e8ff; }
+
+    .empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50%; gap: 10px; color: #2a5090; }
   </style>
 </head>
 <body>
 
 <div class="topbar">
   <h1>🎬 El Suelo — Admin</h1>
+  <span class="ver">v{BUILD}</span>
   <span class="topbar-spacer"></span>
-  <button class="btn-export-cur" id="btn-export-cur" disabled>⬇ Exportar esta categoría</button>
+  <button class="btn-export-cur" id="btn-export-cur" disabled>⬇ Exportar JSON</button>
 </div>
 
 <div class="layout">
-  <!-- Sidebar -->
   <nav class="sidebar" id="sidebar"></nav>
-
-  <!-- Main -->
   <div class="main" id="main-panel">
-    <div class="empty">
-      <div class="big">👈</div>
-      <div>Elige una categoría</div>
-    </div>
+    <div class="empty"><div style="font-size:2.5rem">👈</div><div>Elige una categoría</div></div>
   </div>
 </div>
 
-<!-- Dialog: nombre -->
+<!-- Dialog nombre -->
 <dialog id="dlg-name">
   <div class="dlg-title">✏️ Editar nombre</div>
   <div class="dlg-label">Nombre que aparece en el juego</div>
@@ -145,10 +93,10 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
   </div>
 </dialog>
 
-<!-- Dialog: imagen -->
+<!-- Dialog imagen -->
 <dialog id="dlg-img">
   <div class="dlg-title">🖼 Cambiar imagen</div>
-  <div class="dlg-note">Pega la URL de cualquier imagen. Puede ser de Wikipedia, Google Imágenes (clic derecho → "Copiar dirección de imagen"), o donde quieras.</div>
+  <div class="dlg-note">Pega la URL de cualquier imagen. Clic derecho sobre una foto en Google → "Copiar dirección de imagen".</div>
   <div class="dlg-label">URL de la imagen</div>
   <input id="dlg-img-val" type="url" class="dlg-input" placeholder="https://..." />
   <img id="dlg-img-prev" class="dlg-img-prev" alt="" />
@@ -158,12 +106,12 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
   </div>
 </dialog>
 
-<!-- Dialog: añadir -->
+<!-- Dialog añadir -->
 <dialog id="dlg-add">
   <div class="dlg-title">➕ Añadir item</div>
   <div class="dlg-label">Nombre</div>
   <input id="dlg-add-name" type="text" class="dlg-input" placeholder="Nombre del personaje / película" />
-  <div class="dlg-label">URL de imagen (opcional, puedes añadirla después)</div>
+  <div class="dlg-label">URL de imagen (opcional)</div>
   <input id="dlg-add-img" type="url" class="dlg-input" placeholder="https://..." />
   <div class="dlg-actions">
     <button class="btn-cancel-dlg" id="dlg-add-cancel">Cancelar</button>
@@ -172,63 +120,57 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
 </dialog>
 
 <script define:vars={{ leafSubcats }}>
-  const STORAGE_KEY = 'el-suelo:admin-edits-v3';
+  // ── Constants ──────────────────────────────────────────────────
+  const SZ = 60; // card image size in px
+  const STORAGE_KEY = 'el-suelo:admin-v4';
   let edits = {};
   try { const s = localStorage.getItem(STORAGE_KEY); if (s) edits = JSON.parse(s); } catch {}
   const saveEdits = () => { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(edits)); } catch {} };
 
-  const resolved = {}; // slug → [{nombre, imagen}]
+  const resolved = {};
   let currentSlug = null;
   let dialogCtx = null;
   let addSlug = null;
 
-  // ── Build sidebar ──────────────────────────────────────────────
+  // ── Sidebar ────────────────────────────────────────────────────
   const sidebar = document.getElementById('sidebar');
-  // Group by bloque
   const groups = {};
   for (const s of leafSubcats) {
     if (!groups[s.bloque]) groups[s.bloque] = { nombre: s.bloqueNombre, items: [] };
     groups[s.bloque].items.push(s);
   }
-
-  for (const [bloqueSlug, group] of Object.entries(groups)) {
+  for (const [, group] of Object.entries(groups)) {
     const sec = document.createElement('div');
-    sec.className = 'sidebar-section';
-
-    const label = document.createElement('div');
-    label.className = 'sidebar-bloque';
-    label.textContent = group.nombre;
-    sec.appendChild(label);
-
+    const lbl = document.createElement('div');
+    lbl.className = 'sidebar-bloque';
+    lbl.textContent = group.nombre;
+    sec.appendChild(lbl);
     for (const s of group.items) {
       const btn = document.createElement('button');
       btn.className = 'sidebar-btn';
       btn.dataset.slug = s.slug;
-      btn.innerHTML = `<span class="emoji">${s.emoji}</span><span>${s.nombre}</span><span class="stats" id="sidestat-${s.slug}"></span>`;
+      btn.innerHTML = `<span>${s.emoji} ${s.nombre}</span><span class="sstat" id="ss-${s.slug}" style="color:#163575"></span>`;
       btn.addEventListener('click', () => selectSlug(s.slug));
       sec.appendChild(btn);
     }
     sidebar.appendChild(sec);
   }
 
-  // ── Select slug ────────────────────────────────────────────────
+  // ── Select ─────────────────────────────────────────────────────
   async function selectSlug(slug) {
     currentSlug = slug;
     document.querySelectorAll('.sidebar-btn').forEach(b => b.classList.toggle('active', b.dataset.slug === slug));
     document.getElementById('btn-export-cur').disabled = false;
-
     if (!resolved[slug]) {
-      renderMain(slug, null); // show loading state
-      try {
-        const r = await fetch(`/data/cine/${slug}.json`);
-        resolved[slug] = r.ok ? await r.json() : [];
-      } catch { resolved[slug] = []; }
+      renderMain(slug, null);
+      try { const r = await fetch(`/data/cine/${slug}.json`); resolved[slug] = r.ok ? await r.json() : []; }
+      catch { resolved[slug] = []; }
     }
     renderMain(slug, resolved[slug]);
-    updateSidebarStat(slug);
+    updateStat(slug);
   }
 
-  // ── Render main panel ──────────────────────────────────────────
+  // ── Render main ────────────────────────────────────────────────
   function renderMain(slug, items) {
     const panel = document.getElementById('main-panel');
     const subcat = leafSubcats.find(s => s.slug === slug);
@@ -236,135 +178,138 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
     const resMap = {};
     if (items) for (const it of items) resMap[it.nombre] = it.imagen;
 
-    // All names: original + new
     const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
     const allEntries = [
-      ...subcat.nombres.map(n => ({ key: n, origNombre: n })),
-      ...addedKeys.map(k => ({ key: k, origNombre: slugEdits[k].nombre ?? k })),
+      ...subcat.nombres.map(n => ({ key: n, orig: n })),
+      ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
     ];
 
-    let nImg = 0, nTotal = allEntries.length;
+    let nImg = 0;
 
-    // Build cards
+    // Grid — inline styles for guaranteed sizing
     const grid = document.createElement('div');
-    grid.className = 'items-grid';
+    grid.style.cssText = `display:flex; flex-wrap:wrap; gap:6px;`;
 
-    for (const { key, origNombre } of allEntries) {
+    for (const { key, orig } of allEntries) {
       const e = slugEdits[key] || {};
       const deleted = !!e.deleted;
-      const nombre = e.nombre ?? origNombre;
-      const imagen = e.imagen !== undefined ? e.imagen : (resMap[origNombre] ?? null);
+      const nombre = e.nombre ?? orig;
+      const imagen = e.imagen !== undefined ? e.imagen : (resMap[orig] ?? null);
       if (imagen && !deleted) nImg++;
 
+      // Card
       const card = document.createElement('div');
-      card.className = 'item-card' +
-        (!imagen ? ' no-img' : '') +
-        (Object.keys(e).length ? ' edited' : '') +
-        (deleted ? ' deleted' : '');
+      card.style.cssText = `width:${SZ}px; border-radius:4px; overflow:hidden; background:#0a1628; border:1px solid ${imagen ? (Object.keys(e).length ? '#ffcc0066' : '#163575') : '#ff1dce33'}; ${deleted ? 'opacity:0.3;' : ''}`;
       card.dataset.slug = slug;
       card.dataset.key = key;
 
-      // Image
-      const imgWrap = document.createElement('div');
-      imgWrap.className = 'img-wrap';
+      // Image wrapper
+      const wrap = document.createElement('div');
+      wrap.style.cssText = `position:relative; width:${SZ}px; height:${SZ}px; overflow:hidden; background:#050c1e; cursor:pointer;`;
+      wrap.dataset.action = 'img';
+
       if (imagen) {
         const img = document.createElement('img');
-        img.src = imagen; img.alt = nombre;
+        img.src = imagen;
+        img.style.cssText = `width:${SZ}px; height:${SZ}px; object-fit:cover; display:block;`;
         img.onerror = () => { img.style.display = 'none'; ph.style.display = 'flex'; };
-        imgWrap.appendChild(img);
+        wrap.appendChild(img);
       }
+
       const ph = document.createElement('div');
-      ph.className = 'img-placeholder';
+      ph.style.cssText = `width:${SZ}px; height:${SZ}px; display:${imagen ? 'none' : 'flex'}; align-items:center; justify-content:center; font-size:1.2rem; color:#163575;`;
       ph.textContent = items ? '📷' : '⏳';
-      ph.style.display = imagen ? 'none' : 'flex';
-      imgWrap.appendChild(ph);
+      wrap.appendChild(ph);
 
-      const btnImg = document.createElement('button');
-      btnImg.className = 'btn-change-img';
-      btnImg.textContent = imagen ? '🖼 Cambiar foto' : '📷 Añadir foto';
-      btnImg.dataset.action = 'img';
-      imgWrap.appendChild(btnImg);
-      card.appendChild(imgWrap);
+      // Hover overlay
+      const overlay = document.createElement('div');
+      overlay.style.cssText = `position:absolute; inset:0; background:rgba(5,12,30,0.82); color:#ffcc00; font-size:0.55rem; font-weight:bold; display:flex; align-items:center; justify-content:center; text-align:center; padding:4px; opacity:0; transition:opacity 0.15s; pointer-events:none;`;
+      overlay.textContent = imagen ? '🖼 Cambiar' : '📷 Añadir';
+      wrap.appendChild(overlay);
+      wrap.addEventListener('mouseenter', () => overlay.style.opacity = '1');
+      wrap.addEventListener('mouseleave', () => overlay.style.opacity = '0');
+      card.appendChild(wrap);
 
-      // Footer
-      const footer = document.createElement('div');
-      footer.className = 'item-footer';
+      // Name
       const nameRow = document.createElement('div');
-      nameRow.className = 'item-name-row';
+      nameRow.style.cssText = `display:flex; align-items:flex-start; gap:2px; padding:3px 3px 1px;`;
       const nameSpan = document.createElement('span');
-      nameSpan.className = 'item-name';
+      nameSpan.style.cssText = `font-size:0.52rem; color:#e8e8ff; flex:1; line-height:1.2; overflow:hidden;`;
       nameSpan.textContent = nombre;
       const pencil = document.createElement('button');
-      pencil.className = 'btn-pencil'; pencil.textContent = '✏'; pencil.title = 'Editar nombre';
+      pencil.style.cssText = `background:transparent; border:none; color:#2a5090; font-size:0.58rem; cursor:pointer; padding:0; flex-shrink:0;`;
+      pencil.textContent = '✏';
       pencil.dataset.action = 'name';
-      nameRow.appendChild(nameSpan); nameRow.appendChild(pencil);
-      footer.appendChild(nameRow);
+      nameRow.appendChild(nameSpan);
+      nameRow.appendChild(pencil);
+      card.appendChild(nameRow);
 
-      const del = document.createElement('button');
-      del.className = 'btn-del'; del.textContent = deleted ? '↩ Restaurar' : '✕ Quitar';
-      del.dataset.action = 'del';
-      footer.appendChild(del);
-      card.appendChild(footer);
+      // Delete button
+      const delBtn = document.createElement('button');
+      delBtn.style.cssText = `display:block; width:100%; padding:2px; background:transparent; border:none; border-top:1px solid #163575; color:#2a5090; font-size:0.5rem; cursor:pointer;`;
+      delBtn.textContent = deleted ? '↩' : '✕';
+      delBtn.title = deleted ? 'Restaurar' : 'Quitar del juego';
+      delBtn.dataset.action = 'del';
+      card.appendChild(delBtn);
+
       grid.appendChild(card);
     }
 
-    const statsHtml = `<span class="badge-ok">✓ ${nImg} con foto</span>` +
-      (nTotal - nImg > 0 ? ` <span class="badge-miss">⚠ ${nTotal - nImg} sin foto</span>` : '');
+    const statsHtml = items
+      ? `<span class="bok">✓ ${nImg}</span>${allEntries.length - nImg > 0 ? ` <span class="bmiss">⚠ ${allEntries.length - nImg} sin foto</span>` : ''}`
+      : `<span style="color:#2a5090;font-size:0.72rem">Cargando…</span>`;
 
     panel.innerHTML = `
-      <div class="panel-header">
-        <span style="font-size:1.3rem">${subcat.emoji}</span>
+      <div class="panel-hdr">
+        <span style="font-size:1.2rem">${subcat.emoji}</span>
         <span class="panel-title">${subcat.nombre}</span>
-        <div class="panel-stats" id="panel-stats">${items ? statsHtml : '<span style="color:#2a5090;font-size:0.75rem">Cargando…</span>'}</div>
+        <div class="panel-stats">${statsHtml}</div>
       </div>
       <div class="panel-toolbar">
         <button class="btn-add" id="btn-add-item">+ Añadir item</button>
       </div>
     `;
     panel.appendChild(grid);
-
     document.getElementById('btn-add-item').addEventListener('click', () => openAddDialog(slug));
   }
 
-  // ── Event delegation on main panel ───────────────────────────
+  // ── Event delegation ───────────────────────────────────────────
   document.getElementById('main-panel').addEventListener('click', e => {
-    const btn = e.target.closest('[data-action]');
-    if (!btn) return;
-    const card = btn.closest('.item-card');
+    const target = e.target.closest('[data-action]');
+    if (!target) return;
+    const card = target.closest('[data-slug]');
     if (!card) return;
     const { slug, key } = card.dataset;
-    if (btn.dataset.action === 'img') openImgDialog(slug, key);
-    else if (btn.dataset.action === 'name') openNameDialog(slug, key);
-    else if (btn.dataset.action === 'del') toggleDelete(slug, key);
+    const action = target.dataset.action;
+    if (action === 'img') openImgDialog(slug, key);
+    else if (action === 'name') openNameDialog(slug, key);
+    else if (action === 'del') toggleDelete(slug, key);
   });
 
-  // ── Sidebar stats ──────────────────────────────────────────────
-  function updateSidebarStat(slug) {
-    const el = document.getElementById(`sidestat-${slug}`);
+  // ── Sidebar stat ───────────────────────────────────────────────
+  function updateStat(slug) {
+    const el = document.getElementById(`ss-${slug}`);
     if (!el) return;
-    const items = resolved[slug] || [];
     const resMap = {};
-    for (const it of items) resMap[it.nombre] = it.imagen;
+    for (const it of (resolved[slug] || [])) resMap[it.nombre] = it.imagen;
     const slugEdits = edits[slug] || {};
     const subcat = leafSubcats.find(s => s.slug === slug);
     let n = 0;
     for (const nombre of subcat.nombres) {
-      const e = slugEdits[nombre] || {};
-      const img = e.imagen !== undefined ? e.imagen : resMap[nombre];
-      if (img && !e.deleted) n++;
+      const ee = slugEdits[nombre] || {};
+      if (!ee.deleted && (ee.imagen !== undefined ? ee.imagen : resMap[nombre])) n++;
     }
     const total = subcat.nombres.length;
-    el.textContent = `${n}/${total}`;
-    el.style.color = n === total ? '#4cff8f' : n > 0 ? '#ffcc00' : '#ff1dce';
+    el.textContent = ` ${n}/${total}`;
+    el.style.color = n >= total ? '#4cff8f' : n > 0 ? '#ffcc00' : '#ff1dce88';
   }
 
   // ── Name dialog ────────────────────────────────────────────────
   function openNameDialog(slug, key) {
     const e = (edits[slug] || {})[key] || {};
-    const orig = key.startsWith('__new__') ? (e.nombre ?? '') : key;
     dialogCtx = { type: 'name', slug, key };
     const inp = document.getElementById('dlg-name-val');
-    inp.value = e.nombre ?? orig;
+    inp.value = e.nombre ?? (key.startsWith('__new__') ? '' : key);
     document.getElementById('dlg-name').showModal();
     setTimeout(() => inp.select(), 50);
   }
@@ -375,9 +320,7 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
     if (!val) return;
     if (!edits[slug]) edits[slug] = {};
     edits[slug][key] = { ...(edits[slug][key] || {}), nombre: val };
-    saveEdits();
-    document.getElementById('dlg-name').close();
-    renderMain(slug, resolved[slug] || null);
+    saveEdits(); document.getElementById('dlg-name').close(); renderMain(slug, resolved[slug] || null);
   });
   document.getElementById('dlg-name-cancel').addEventListener('click', () => document.getElementById('dlg-name').close());
   document.getElementById('dlg-name-val').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('dlg-name-ok').click(); });
@@ -387,32 +330,29 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
     const e = (edits[slug] || {})[key] || {};
     const resMap = {};
     for (const it of (resolved[slug] || [])) resMap[it.nombre] = it.imagen;
-    const origNombre = key.startsWith('__new__') ? (e.nombre ?? '') : key;
-    const cur = e.imagen !== undefined ? e.imagen : (resMap[origNombre] ?? '');
+    const orig = key.startsWith('__new__') ? (e.nombre ?? '') : key;
     dialogCtx = { type: 'img', slug, key };
     const inp = document.getElementById('dlg-img-val');
-    inp.value = cur || '';
-    refreshImgPreview();
+    inp.value = e.imagen !== undefined ? (e.imagen ?? '') : (resMap[orig] ?? '');
+    refreshPrev();
     document.getElementById('dlg-img').showModal();
     setTimeout(() => inp.select(), 50);
   }
-  function refreshImgPreview() {
+  function refreshPrev() {
     const url = document.getElementById('dlg-img-val').value.trim();
     const prev = document.getElementById('dlg-img-prev');
     prev.style.display = url ? 'block' : 'none';
     if (url) prev.src = url;
   }
-  document.getElementById('dlg-img-val').addEventListener('input', refreshImgPreview);
+  document.getElementById('dlg-img-val').addEventListener('input', refreshPrev);
   document.getElementById('dlg-img-ok').addEventListener('click', () => {
     if (!dialogCtx || dialogCtx.type !== 'img') return;
     const { slug, key } = dialogCtx;
     const url = document.getElementById('dlg-img-val').value.trim();
     if (!edits[slug]) edits[slug] = {};
     edits[slug][key] = { ...(edits[slug][key] || {}), imagen: url || null };
-    saveEdits();
-    document.getElementById('dlg-img').close();
-    renderMain(slug, resolved[slug] || null);
-    updateSidebarStat(slug);
+    saveEdits(); document.getElementById('dlg-img').close();
+    renderMain(slug, resolved[slug] || null); updateStat(slug);
   });
   document.getElementById('dlg-img-cancel').addEventListener('click', () => document.getElementById('dlg-img').close());
 
@@ -420,9 +360,7 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
   function toggleDelete(slug, key) {
     if (!edits[slug]) edits[slug] = {};
     edits[slug][key] = { ...(edits[slug][key] || {}), deleted: !edits[slug][key]?.deleted };
-    saveEdits();
-    renderMain(slug, resolved[slug] || null);
-    updateSidebarStat(slug);
+    saveEdits(); renderMain(slug, resolved[slug] || null); updateStat(slug);
   }
 
   // ── Add dialog ─────────────────────────────────────────────────
@@ -440,8 +378,7 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
     if (!nombre) return;
     if (!edits[addSlug]) edits[addSlug] = {};
     edits[addSlug]['__new__' + Date.now()] = { nombre, imagen: imagen || null };
-    saveEdits();
-    document.getElementById('dlg-add').close();
+    saveEdits(); document.getElementById('dlg-add').close();
     renderMain(addSlug, resolved[addSlug] || null);
   });
   document.getElementById('dlg-add-cancel').addEventListener('click', () => document.getElementById('dlg-add').close());
@@ -454,15 +391,15 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
     const slugEdits = edits[slug] || {};
     const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
     const allEntries = [
-      ...subcat.nombres.map(n => ({ key: n, origNombre: n })),
-      ...addedKeys.map(k => ({ key: k, origNombre: slugEdits[k].nombre ?? k })),
+      ...subcat.nombres.map(n => ({ key: n, orig: n })),
+      ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
     ];
     const result = [];
-    for (const { key, origNombre } of allEntries) {
+    for (const { key, orig } of allEntries) {
       const e = slugEdits[key] || {};
       if (e.deleted) continue;
-      const nombre = e.nombre ?? origNombre;
-      const imagen = e.imagen !== undefined ? e.imagen : (resMap[origNombre] ?? null);
+      const nombre = e.nombre ?? orig;
+      const imagen = e.imagen !== undefined ? e.imagen : (resMap[orig] ?? null);
       if (!imagen) continue;
       result.push({ nombre, imagen });
     }
@@ -471,10 +408,7 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
     const a = document.createElement('a'); a.href = url; a.download = slug + '.json'; a.click();
     URL.revokeObjectURL(url);
   }
-
-  document.getElementById('btn-export-cur').addEventListener('click', () => {
-    if (currentSlug) exportSlug(currentSlug);
-  });
+  document.getElementById('btn-export-cur').addEventListener('click', () => { if (currentSlug) exportSlug(currentSlug); });
 </script>
 </body>
 </html>
