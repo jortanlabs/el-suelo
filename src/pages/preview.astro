@@ -1,11 +1,13 @@
 ---
 export const prerender = true;
-import { subcategorias } from "../data/catalogoCine.ts";
+import { subcategorias, bloques } from "../data/catalogoCine.ts";
 
-// Only leaf subcategories (with names arrays, not metas)
 const leafSubcats = subcategorias
   .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
-  .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, nombres: s.nombres! }));
+  .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres! }));
+
+const bySlugs: Record<string, string[]> = {};
+for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
 ---
 
 <!doctype html>
@@ -13,506 +15,464 @@ const leafSubcats = subcategorias
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Preview — El Suelo Admin</title>
+  <title>Admin — El Suelo</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    body {
-      background: #050c1e;
-      color: #e8e8ff;
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 16px;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body { background: #050c1e; color: #e8e8ff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; height: 100dvh; overflow: hidden; }
+
+    /* ── Top bar ── */
+    .topbar { background: #050c1e; border-bottom: 1px solid #163575; padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .topbar h1 { color: #ffcc00; font-size: 1rem; font-weight: bold; white-space: nowrap; }
+    .topbar-spacer { flex: 1; }
+    .btn-export-cur { padding: 5px 12px; background: #ffcc00; color: #050c1e; border: none; border-radius: 4px; font-size: 0.75rem; font-weight: bold; cursor: pointer; white-space: nowrap; }
+    .btn-export-cur:hover { background: #ffe066; }
+    .btn-export-cur:disabled { opacity: 0.4; cursor: default; }
+
+    /* ── Layout ── */
+    .layout { display: flex; flex: 1; overflow: hidden; }
+
+    /* ── Sidebar ── */
+    .sidebar { width: 220px; flex-shrink: 0; border-right: 1px solid #163575; overflow-y: auto; background: #050c1e; }
+    @media (max-width: 600px) { .sidebar { width: 140px; } }
+    .sidebar-section { padding: 8px 0 4px; }
+    .sidebar-bloque { padding: 6px 12px 3px; font-size: 0.62rem; font-weight: bold; color: #2a5090; text-transform: uppercase; letter-spacing: 0.08em; }
+    .sidebar-btn {
+      display: flex; align-items: center; gap: 6px;
+      width: 100%; padding: 7px 12px;
+      background: transparent; border: none; color: #2a5090;
+      font-size: 0.75rem; text-align: left; cursor: pointer;
+      border-left: 2px solid transparent;
     }
-    h1 { color: #ffcc00; font-size: 1.5rem; margin: 0 0 4px; }
-    .subtitle { color: #2a5090; font-size: 0.8rem; margin: 0 0 24px; }
-    .subcat-section {
-      background: #0a1628;
-      border: 1px solid #163575;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 20px;
-    }
-    .subcat-header {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-    }
-    .subcat-title { font-size: 1rem; font-weight: bold; color: #e8e8ff; }
-    .subcat-slug { color: #2a5090; font-size: 0.7rem; }
-    .subcat-stats { color: #2a5090; font-size: 0.75rem; margin-left: auto; }
-    .items-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 8px;
-    }
-    .item-card {
-      background: #050c1e;
-      border: 1px solid #163575;
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-    }
-    .item-card.no-img { border-color: #ff1dce44; }
-    .item-card.edited { border-color: #ffcc00; }
-    .item-card.deleted { opacity: 0.3; border-style: dashed; }
-    .item-img {
-      width: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
-      display: block;
-      background: #0a1628;
-      cursor: pointer;
-    }
-    .item-img-placeholder {
-      width: 100%;
-      aspect-ratio: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #0a1628;
-      cursor: pointer;
-      font-size: 2rem;
-      color: #2a5090;
-      border-bottom: 1px solid #163575;
-    }
-    .item-name {
-      padding: 4px 6px;
-      font-size: 0.65rem;
-      color: #e8e8ff;
-      cursor: pointer;
-      border-top: 1px solid #163575;
-      min-height: 28px;
-      display: flex;
-      align-items: center;
-    }
-    .item-name:hover { background: #0d1e3a; color: #ffcc00; }
-    .item-actions {
-      display: flex;
-      gap: 2px;
-      padding: 2px 4px 4px;
-    }
-    .btn-small {
-      flex: 1;
-      padding: 2px 4px;
-      font-size: 0.6rem;
-      background: #0a1628;
-      border: 1px solid #163575;
-      color: #2a5090;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-    .btn-small:hover { border-color: #ffcc00; color: #ffcc00; }
-    .btn-small.danger:hover { border-color: #ff1dce; color: #ff1dce; }
-    .toolbar {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 8px;
-      flex-wrap: wrap;
-    }
-    .btn-export {
-      padding: 4px 10px;
-      background: #ffcc00;
-      color: #050c1e;
-      border: none;
-      border-radius: 4px;
-      font-size: 0.75rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .btn-export:hover { background: #ffe066; }
-    .btn-add {
-      padding: 4px 10px;
-      background: transparent;
-      color: #2a5090;
-      border: 1px solid #163575;
-      border-radius: 4px;
-      font-size: 0.75rem;
-      cursor: pointer;
-    }
+    .sidebar-btn:hover { color: #e8e8ff; background: #0a1628; }
+    .sidebar-btn.active { color: #ffcc00; border-left-color: #ffcc00; background: #0d1e3a; }
+    .sidebar-btn .emoji { width: 16px; text-align: center; flex-shrink: 0; }
+    .sidebar-btn .stats { margin-left: auto; font-size: 0.6rem; color: #163575; flex-shrink: 0; }
+    .sidebar-btn.active .stats { color: #2a5090; }
+
+    /* ── Main panel ── */
+    .main { flex: 1; overflow-y: auto; padding: 16px; }
+    .panel-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+    .panel-title { font-size: 1.1rem; font-weight: bold; color: #e8e8ff; }
+    .panel-stats { display: flex; gap: 6px; margin-left: auto; flex-wrap: wrap; }
+    .badge-ok { background: #0d3a1a; color: #4cff8f; border: 1px solid #1a7a3a; padding: 2px 8px; border-radius: 3px; font-size: 0.65rem; }
+    .badge-miss { background: #3a0d1a; color: #ff6b8a; border: 1px solid #7a1a3a; padding: 2px 8px; border-radius: 3px; font-size: 0.65rem; }
+    .panel-toolbar { display: flex; gap: 8px; margin-bottom: 14px; }
+    .btn-add { padding: 5px 12px; background: transparent; color: #2a5090; border: 1px solid #163575; border-radius: 4px; font-size: 0.75rem; cursor: pointer; }
     .btn-add:hover { border-color: #ffcc00; color: #ffcc00; }
-    .loading-indicator { color: #2a5090; font-size: 0.75rem; }
-    .badge-resolved { background: #0d3a1a; color: #4cff8f; border: 1px solid #1a7a3a; padding: 2px 6px; border-radius: 3px; font-size: 0.65rem; }
-    .badge-missing { background: #3a0d1a; color: #ff6b8a; border: 1px solid #7a1a3a; padding: 2px 6px; border-radius: 3px; font-size: 0.65rem; }
-    .top-bar {
-      position: sticky;
-      top: 0;
-      background: #050c1e;
-      padding: 8px 0 12px;
-      z-index: 100;
-      border-bottom: 1px solid #163575;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
+
+    /* ── Items grid ── */
+    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 8px; }
+
+    .item-card { background: #0a1628; border: 1px solid #163575; border-radius: 6px; overflow: hidden; }
+    .item-card.no-img { border-color: #ff1dce33; }
+    .item-card.edited { border-color: #ffcc0066; }
+    .item-card.deleted { opacity: 0.35; border-style: dashed; }
+
+    .img-wrap { position: relative; aspect-ratio: 1; background: #050c1e; overflow: hidden; }
+    .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #163575; }
+    .btn-change-img {
+      position: absolute; inset: 0;
+      background: rgba(5,12,30,0.75);
+      color: #ffcc00; border: none;
+      font-size: 0.65rem; font-weight: bold;
+      cursor: pointer; opacity: 0; transition: opacity 0.15s;
+      display: flex; align-items: center; justify-content: center;
     }
-    .filter-input {
-      background: #0a1628;
-      border: 1px solid #163575;
-      color: #e8e8ff;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      width: 200px;
-    }
-    .filter-input:focus { outline: none; border-color: #ffcc00; }
-    .btn-export-all {
-      padding: 6px 14px;
-      background: transparent;
-      color: #ffcc00;
-      border: 1px solid #ffcc00;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .btn-export-all:hover { background: #ffcc0022; }
-    dialog {
-      background: #0a1628;
-      border: 1px solid #163575;
-      border-radius: 8px;
-      padding: 20px;
-      color: #e8e8ff;
-      max-width: 400px;
-      width: 90vw;
-    }
-    dialog::backdrop { background: rgba(5,12,30,0.9); }
-    .dialog-title { color: #ffcc00; font-size: 1rem; font-weight: bold; margin: 0 0 12px; }
-    .dialog-input {
-      width: 100%;
-      background: #050c1e;
-      border: 1px solid #163575;
-      color: #e8e8ff;
-      padding: 8px;
-      border-radius: 4px;
-      font-size: 0.85rem;
-      margin-bottom: 8px;
-    }
-    .dialog-input:focus { outline: none; border-color: #ffcc00; }
-    .dialog-preview-img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 4px;
-      border: 1px solid #163575;
-      margin-bottom: 8px;
-    }
-    .dialog-actions { display: flex; gap: 8px; margin-top: 12px; }
-    .btn-confirm { flex: 1; padding: 8px; background: #ffcc00; color: #050c1e; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
-    .btn-cancel { flex: 1; padding: 8px; background: transparent; color: #2a5090; border: 1px solid #163575; border-radius: 4px; cursor: pointer; }
-    #edit-img-preview { display: none; }
+    .img-wrap:hover .btn-change-img,
+    .img-wrap:focus-within .btn-change-img { opacity: 1; }
+    @media (pointer: coarse) { .btn-change-img { opacity: 1 !important; background: rgba(5,12,30,0.5); } }
+
+    .item-footer { padding: 5px 6px 4px; }
+    .item-name-row { display: flex; align-items: flex-start; gap: 4px; }
+    .item-name { font-size: 0.58rem; color: #e8e8ff; flex: 1; line-height: 1.3; }
+    .btn-pencil { background: transparent; border: none; color: #2a5090; font-size: 0.65rem; cursor: pointer; padding: 0; flex-shrink: 0; line-height: 1; }
+    .btn-pencil:hover { color: #ffcc00; }
+    .btn-del { display: block; width: 100%; margin-top: 4px; padding: 3px; background: transparent; border: 1px solid #163575; color: #2a5090; font-size: 0.58rem; border-radius: 3px; cursor: pointer; }
+    .btn-del:hover { border-color: #ff1dce; color: #ff1dce; }
+
+    /* ── Empty state ── */
+    .empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 60%; gap: 12px; color: #2a5090; }
+    .empty .big { font-size: 3rem; }
+
+    /* ── Dialogs ── */
+    dialog { background: #0d1e3a; border: 1px solid #163575; border-radius: 10px; padding: 22px; color: #e8e8ff; max-width: 420px; width: 92vw; }
+    dialog::backdrop { background: rgba(5,12,30,0.92); }
+    .dlg-title { color: #ffcc00; font-size: 1rem; font-weight: bold; margin-bottom: 14px; }
+    .dlg-label { color: #2a5090; font-size: 0.72rem; margin-bottom: 4px; }
+    .dlg-input { width: 100%; background: #050c1e; border: 1px solid #163575; color: #e8e8ff; padding: 9px; border-radius: 5px; font-size: 0.85rem; margin-bottom: 10px; }
+    .dlg-input:focus { outline: none; border-color: #ffcc00; }
+    .dlg-img-prev { width: 80px; height: 80px; object-fit: cover; border-radius: 5px; border: 1px solid #163575; display: none; margin-bottom: 10px; }
+    .dlg-note { color: #2a5090; font-size: 0.7rem; margin-bottom: 10px; line-height: 1.4; }
+    .dlg-actions { display: flex; gap: 8px; }
+    .btn-ok { flex: 1; padding: 9px; background: #ffcc00; color: #050c1e; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.85rem; }
+    .btn-ok:hover { background: #ffe066; }
+    .btn-cancel-dlg { flex: 1; padding: 9px; background: transparent; color: #2a5090; border: 1px solid #163575; border-radius: 5px; cursor: pointer; font-size: 0.85rem; }
+    .btn-cancel-dlg:hover { color: #e8e8ff; border-color: #e8e8ff; }
   </style>
 </head>
 <body>
 
-<div class="top-bar">
-  <div>
-    <h1>🎬 Preview — El Suelo</h1>
-    <p class="subtitle">Haz clic en un nombre para editarlo · clic en imagen para cambiarla · los cambios se guardan localmente</p>
-  </div>
-  <input type="text" class="filter-input" id="filter-input" placeholder="Buscar categoría..." />
-  <button class="btn-export-all" onclick="exportarTodo()">⬇ Exportar todo</button>
+<div class="topbar">
+  <h1>🎬 El Suelo — Admin</h1>
+  <span class="topbar-spacer"></span>
+  <button class="btn-export-cur" id="btn-export-cur" disabled>⬇ Exportar esta categoría</button>
 </div>
 
-<div id="categories-container"></div>
+<div class="layout">
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar"></nav>
 
-<!-- Diálogo de edición de nombre -->
-<dialog id="dialog-name">
-  <p class="dialog-title">✏️ Editar nombre</p>
-  <input type="text" class="dialog-input" id="edit-name-input" placeholder="Nombre del item" />
-  <div class="dialog-actions">
-    <button class="btn-cancel" onclick="document.getElementById('dialog-name').close()">Cancelar</button>
-    <button class="btn-confirm" onclick="confirmarNombre()">Guardar</button>
+  <!-- Main -->
+  <div class="main" id="main-panel">
+    <div class="empty">
+      <div class="big">👈</div>
+      <div>Elige una categoría</div>
+    </div>
+  </div>
+</div>
+
+<!-- Dialog: nombre -->
+<dialog id="dlg-name">
+  <div class="dlg-title">✏️ Editar nombre</div>
+  <div class="dlg-label">Nombre que aparece en el juego</div>
+  <input id="dlg-name-val" type="text" class="dlg-input" />
+  <div class="dlg-actions">
+    <button class="btn-cancel-dlg" id="dlg-name-cancel">Cancelar</button>
+    <button class="btn-ok" id="dlg-name-ok">Guardar</button>
   </div>
 </dialog>
 
-<!-- Diálogo de edición de imagen -->
-<dialog id="dialog-img">
-  <p class="dialog-title">🖼 Cambiar imagen</p>
-  <input type="text" class="dialog-input" id="edit-img-input" placeholder="URL de la imagen" oninput="previewImgChange()" />
-  <img id="edit-img-preview" class="dialog-preview-img" alt="" />
-  <div class="dialog-actions">
-    <button class="btn-cancel" onclick="document.getElementById('dialog-img').close()">Cancelar</button>
-    <button class="btn-confirm" onclick="confirmarImagen()">Guardar</button>
+<!-- Dialog: imagen -->
+<dialog id="dlg-img">
+  <div class="dlg-title">🖼 Cambiar imagen</div>
+  <div class="dlg-note">Pega la URL de cualquier imagen. Puede ser de Wikipedia, Google Imágenes (clic derecho → "Copiar dirección de imagen"), o donde quieras.</div>
+  <div class="dlg-label">URL de la imagen</div>
+  <input id="dlg-img-val" type="url" class="dlg-input" placeholder="https://..." />
+  <img id="dlg-img-prev" class="dlg-img-prev" alt="" />
+  <div class="dlg-actions">
+    <button class="btn-cancel-dlg" id="dlg-img-cancel">Cancelar</button>
+    <button class="btn-ok" id="dlg-img-ok">Guardar</button>
   </div>
 </dialog>
 
-<!-- Diálogo de añadir item -->
-<dialog id="dialog-add">
-  <p class="dialog-title">➕ Añadir item</p>
-  <input type="text" class="dialog-input" id="add-name-input" placeholder="Nombre" />
-  <input type="text" class="dialog-input" id="add-img-input" placeholder="URL de imagen (opcional)" />
-  <div class="dialog-actions">
-    <button class="btn-cancel" onclick="document.getElementById('dialog-add').close()">Cancelar</button>
-    <button class="btn-confirm" onclick="confirmarAdd()">Añadir</button>
+<!-- Dialog: añadir -->
+<dialog id="dlg-add">
+  <div class="dlg-title">➕ Añadir item</div>
+  <div class="dlg-label">Nombre</div>
+  <input id="dlg-add-name" type="text" class="dlg-input" placeholder="Nombre del personaje / película" />
+  <div class="dlg-label">URL de imagen (opcional, puedes añadirla después)</div>
+  <input id="dlg-add-img" type="url" class="dlg-input" placeholder="https://..." />
+  <div class="dlg-actions">
+    <button class="btn-cancel-dlg" id="dlg-add-cancel">Cancelar</button>
+    <button class="btn-ok" id="dlg-add-ok">Añadir</button>
   </div>
 </dialog>
 
 <script define:vars={{ leafSubcats }}>
-  // ── Data ──────────────────────────────────────────────────────
-  // resolvedData[slug] = array of {nombre, imagen}
-  const resolvedData = {};
-  // edits[slug] = array of {nombre, imagen, deleted} (overrides)
+  const STORAGE_KEY = 'el-suelo:admin-edits-v3';
   let edits = {};
+  try { const s = localStorage.getItem(STORAGE_KEY); if (s) edits = JSON.parse(s); } catch {}
+  const saveEdits = () => { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(edits)); } catch {} };
 
-  const STORAGE_KEY = 'el-suelo:preview-edits';
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) edits = JSON.parse(saved);
-  } catch {}
+  const resolved = {}; // slug → [{nombre, imagen}]
+  let currentSlug = null;
+  let dialogCtx = null;
+  let addSlug = null;
 
-  function saveEdits() {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(edits)); } catch {}
+  // ── Build sidebar ──────────────────────────────────────────────
+  const sidebar = document.getElementById('sidebar');
+  // Group by bloque
+  const groups = {};
+  for (const s of leafSubcats) {
+    if (!groups[s.bloque]) groups[s.bloque] = { nombre: s.bloqueNombre, items: [] };
+    groups[s.bloque].items.push(s);
   }
 
-  // ── Build UI ──────────────────────────────────────────────────
-  const container = document.getElementById('categories-container');
+  for (const [bloqueSlug, group] of Object.entries(groups)) {
+    const sec = document.createElement('div');
+    sec.className = 'sidebar-section';
 
-  for (const subcat of leafSubcats) {
-    const section = document.createElement('div');
-    section.className = 'subcat-section';
-    section.dataset.slug = subcat.slug;
-    section.innerHTML = `
-      <div class="subcat-header">
-        <span>${subcat.emoji}</span>
-        <span class="subcat-title">${subcat.nombre}</span>
-        <span class="subcat-slug">${subcat.slug}</span>
-        <span class="subcat-stats" id="stats-${subcat.slug}">
-          <span class="loading-indicator">Cargando...</span>
-        </span>
-      </div>
-      <div class="toolbar">
-        <button class="btn-export" onclick="exportarCategoria('${subcat.slug}')">⬇ Exportar JSON</button>
-        <button class="btn-add" onclick="abrirAdd('${subcat.slug}')">+ Añadir item</button>
-      </div>
-      <div class="items-grid" id="grid-${subcat.slug}"></div>
-    `;
-    container.appendChild(section);
+    const label = document.createElement('div');
+    label.className = 'sidebar-bloque';
+    label.textContent = group.nombre;
+    sec.appendChild(label);
 
-    // Load resolved JSON
-    fetch(`/data/cine/${subcat.slug}.json`)
-      .then(r => r.ok ? r.json() : [])
-      .catch(() => [])
-      .then(items => {
-        resolvedData[subcat.slug] = items;
-        renderGrid(subcat.slug, subcat.nombres);
-      });
-  }
-
-  // ── Render grid ───────────────────────────────────────────────
-  function renderGrid(slug, allNames) {
-    const grid = document.getElementById(`grid-${slug}`);
-    const resolved = resolvedData[slug] || [];
-    const slugEdits = edits[slug] || {};
-    const statsEl = document.getElementById(`stats-${slug}`);
-
-    // Build a map: nombre -> imagen from resolved
-    const resolvedMap = {};
-    for (const it of resolved) {
-      resolvedMap[it.nombre] = it.imagen;
+    for (const s of group.items) {
+      const btn = document.createElement('button');
+      btn.className = 'sidebar-btn';
+      btn.dataset.slug = s.slug;
+      btn.innerHTML = `<span class="emoji">${s.emoji}</span><span>${s.nombre}</span><span class="stats" id="sidestat-${s.slug}"></span>`;
+      btn.addEventListener('click', () => selectSlug(s.slug));
+      sec.appendChild(btn);
     }
+    sidebar.appendChild(sec);
+  }
 
-    // Merge: all names + any added in edits
-    const addedNames = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
-    const allItems = [...allNames, ...addedNames.map(k => slugEdits[k].nombre)];
-    // Remove duplicates
-    const seen = new Set();
-    const unique = allItems.filter(n => {
-      if (seen.has(n)) return false;
-      seen.add(n);
-      return true;
-    });
+  // ── Select slug ────────────────────────────────────────────────
+  async function selectSlug(slug) {
+    currentSlug = slug;
+    document.querySelectorAll('.sidebar-btn').forEach(b => b.classList.toggle('active', b.dataset.slug === slug));
+    document.getElementById('btn-export-cur').disabled = false;
 
-    let resolvedCount = 0;
-    let totalCount = 0;
-    grid.innerHTML = '';
+    if (!resolved[slug]) {
+      renderMain(slug, null); // show loading state
+      try {
+        const r = await fetch(`/data/cine/${slug}.json`);
+        resolved[slug] = r.ok ? await r.json() : [];
+      } catch { resolved[slug] = []; }
+    }
+    renderMain(slug, resolved[slug]);
+    updateSidebarStat(slug);
+  }
 
-    for (const nombre of unique) {
-      const editKey = nombre;
-      const edit = slugEdits[editKey];
-      const deleted = edit?.deleted;
-      const editedNombre = edit?.nombre ?? nombre;
-      const imagen = edit?.imagen ?? resolvedMap[nombre] ?? null;
-      const hasImg = !!imagen;
-      if (hasImg) resolvedCount++;
-      totalCount++;
+  // ── Render main panel ──────────────────────────────────────────
+  function renderMain(slug, items) {
+    const panel = document.getElementById('main-panel');
+    const subcat = leafSubcats.find(s => s.slug === slug);
+    const slugEdits = edits[slug] || {};
+    const resMap = {};
+    if (items) for (const it of items) resMap[it.nombre] = it.imagen;
+
+    // All names: original + new
+    const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
+    const allEntries = [
+      ...subcat.nombres.map(n => ({ key: n, origNombre: n })),
+      ...addedKeys.map(k => ({ key: k, origNombre: slugEdits[k].nombre ?? k })),
+    ];
+
+    let nImg = 0, nTotal = allEntries.length;
+
+    // Build cards
+    const grid = document.createElement('div');
+    grid.className = 'items-grid';
+
+    for (const { key, origNombre } of allEntries) {
+      const e = slugEdits[key] || {};
+      const deleted = !!e.deleted;
+      const nombre = e.nombre ?? origNombre;
+      const imagen = e.imagen !== undefined ? e.imagen : (resMap[origNombre] ?? null);
+      if (imagen && !deleted) nImg++;
 
       const card = document.createElement('div');
-      card.className = `item-card${!hasImg ? ' no-img' : ''}${edit ? ' edited' : ''}${deleted ? ' deleted' : ''}`;
-      card.dataset.key = editKey;
+      card.className = 'item-card' +
+        (!imagen ? ' no-img' : '') +
+        (Object.keys(e).length ? ' edited' : '') +
+        (deleted ? ' deleted' : '');
       card.dataset.slug = slug;
+      card.dataset.key = key;
 
-      if (hasImg) {
-        card.innerHTML = `
-          <img class="item-img" src="${imagen}" alt="${editedNombre}"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-            onclick="abrirEditImg('${slug}','${CSS.escape(editKey)}')" />
-          <div class="item-img-placeholder" style="display:none" onclick="abrirEditImg('${slug}','${CSS.escape(editKey)}')">📷</div>
-        `;
-      } else {
-        card.innerHTML = `
-          <div class="item-img-placeholder" onclick="abrirEditImg('${slug}','${CSS.escape(editKey)}')">📷</div>
-        `;
+      // Image
+      const imgWrap = document.createElement('div');
+      imgWrap.className = 'img-wrap';
+      if (imagen) {
+        const img = document.createElement('img');
+        img.src = imagen; img.alt = nombre;
+        img.onerror = () => { img.style.display = 'none'; ph.style.display = 'flex'; };
+        imgWrap.appendChild(img);
       }
+      const ph = document.createElement('div');
+      ph.className = 'img-placeholder';
+      ph.textContent = items ? '📷' : '⏳';
+      ph.style.display = imagen ? 'none' : 'flex';
+      imgWrap.appendChild(ph);
 
-      card.innerHTML += `
-        <div class="item-name" onclick="abrirEditNombre('${slug}','${CSS.escape(editKey)}')">${editedNombre}</div>
-        <div class="item-actions">
-          <button class="btn-small danger" onclick="eliminarItem('${slug}','${CSS.escape(editKey)}')">${deleted ? '↩ Restaurar' : '✕'}</button>
-        </div>
-      `;
+      const btnImg = document.createElement('button');
+      btnImg.className = 'btn-change-img';
+      btnImg.textContent = imagen ? '🖼 Cambiar foto' : '📷 Añadir foto';
+      btnImg.dataset.action = 'img';
+      imgWrap.appendChild(btnImg);
+      card.appendChild(imgWrap);
+
+      // Footer
+      const footer = document.createElement('div');
+      footer.className = 'item-footer';
+      const nameRow = document.createElement('div');
+      nameRow.className = 'item-name-row';
+      const nameSpan = document.createElement('span');
+      nameSpan.className = 'item-name';
+      nameSpan.textContent = nombre;
+      const pencil = document.createElement('button');
+      pencil.className = 'btn-pencil'; pencil.textContent = '✏'; pencil.title = 'Editar nombre';
+      pencil.dataset.action = 'name';
+      nameRow.appendChild(nameSpan); nameRow.appendChild(pencil);
+      footer.appendChild(nameRow);
+
+      const del = document.createElement('button');
+      del.className = 'btn-del'; del.textContent = deleted ? '↩ Restaurar' : '✕ Quitar';
+      del.dataset.action = 'del';
+      footer.appendChild(del);
+      card.appendChild(footer);
       grid.appendChild(card);
     }
 
-    const resolvedBadge = `<span class="badge-resolved">✓ ${resolvedCount} con imagen</span>`;
-    const missingBadge = totalCount - resolvedCount > 0
-      ? ` <span class="badge-missing">⚠ ${totalCount - resolvedCount} sin imagen</span>`
-      : '';
-    statsEl.innerHTML = resolvedBadge + missingBadge;
+    const statsHtml = `<span class="badge-ok">✓ ${nImg} con foto</span>` +
+      (nTotal - nImg > 0 ? ` <span class="badge-miss">⚠ ${nTotal - nImg} sin foto</span>` : '');
+
+    panel.innerHTML = `
+      <div class="panel-header">
+        <span style="font-size:1.3rem">${subcat.emoji}</span>
+        <span class="panel-title">${subcat.nombre}</span>
+        <div class="panel-stats" id="panel-stats">${items ? statsHtml : '<span style="color:#2a5090;font-size:0.75rem">Cargando…</span>'}</div>
+      </div>
+      <div class="panel-toolbar">
+        <button class="btn-add" id="btn-add-item">+ Añadir item</button>
+      </div>
+    `;
+    panel.appendChild(grid);
+
+    document.getElementById('btn-add-item').addEventListener('click', () => openAddDialog(slug));
   }
 
-  // ── Edit nombre ───────────────────────────────────────────────
-  let editCtx = null;
-  function abrirEditNombre(slug, key) {
+  // ── Event delegation on main panel ───────────────────────────
+  document.getElementById('main-panel').addEventListener('click', e => {
+    const btn = e.target.closest('[data-action]');
+    if (!btn) return;
+    const card = btn.closest('.item-card');
+    if (!card) return;
+    const { slug, key } = card.dataset;
+    if (btn.dataset.action === 'img') openImgDialog(slug, key);
+    else if (btn.dataset.action === 'name') openNameDialog(slug, key);
+    else if (btn.dataset.action === 'del') toggleDelete(slug, key);
+  });
+
+  // ── Sidebar stats ──────────────────────────────────────────────
+  function updateSidebarStat(slug) {
+    const el = document.getElementById(`sidestat-${slug}`);
+    if (!el) return;
+    const items = resolved[slug] || [];
+    const resMap = {};
+    for (const it of items) resMap[it.nombre] = it.imagen;
     const slugEdits = edits[slug] || {};
-    const edit = slugEdits[key];
-    const currentName = edit?.nombre ?? key;
-    editCtx = { slug, key };
-    const input = document.getElementById('edit-name-input');
-    input.value = currentName;
-    document.getElementById('dialog-name').showModal();
-    setTimeout(() => { input.select(); }, 50);
-  }
-  function confirmarNombre() {
-    if (!editCtx) return;
-    const { slug, key } = editCtx;
-    const newName = document.getElementById('edit-name-input').value.trim();
-    if (!newName) return;
-    if (!edits[slug]) edits[slug] = {};
-    edits[slug][key] = { ...edits[slug][key], nombre: newName };
-    saveEdits();
-    document.getElementById('dialog-name').close();
-    renderGrid(slug, leafSubcats.find(s => s.slug === slug)?.nombres || []);
-  }
-
-  // ── Edit imagen ───────────────────────────────────────────────
-  function abrirEditImg(slug, key) {
-    const slugEdits = edits[slug] || {};
-    const edit = slugEdits[key];
-    const resolved = resolvedData[slug] || [];
-    const resolvedMap = {};
-    for (const it of resolved) resolvedMap[it.nombre] = it.imagen;
-    const currentImg = edit?.imagen ?? resolvedMap[key] ?? '';
-    editCtx = { slug, key };
-    const input = document.getElementById('edit-img-input');
-    input.value = currentImg;
-    previewImgChange();
-    document.getElementById('dialog-img').showModal();
-    setTimeout(() => { input.select(); }, 50);
-  }
-  function previewImgChange() {
-    const url = document.getElementById('edit-img-input').value.trim();
-    const prev = document.getElementById('edit-img-preview');
-    if (url) { prev.src = url; prev.style.display = 'block'; }
-    else prev.style.display = 'none';
-  }
-  function confirmarImagen() {
-    if (!editCtx) return;
-    const { slug, key } = editCtx;
-    const newImg = document.getElementById('edit-img-input').value.trim();
-    if (!edits[slug]) edits[slug] = {};
-    edits[slug][key] = { ...edits[slug][key], imagen: newImg || null };
-    saveEdits();
-    document.getElementById('dialog-img').close();
-    renderGrid(slug, leafSubcats.find(s => s.slug === slug)?.nombres || []);
-  }
-
-  // ── Eliminar / restaurar ──────────────────────────────────────
-  function eliminarItem(slug, key) {
-    if (!edits[slug]) edits[slug] = {};
-    const current = edits[slug][key]?.deleted;
-    edits[slug][key] = { ...edits[slug][key], deleted: !current };
-    saveEdits();
-    renderGrid(slug, leafSubcats.find(s => s.slug === slug)?.nombres || []);
-  }
-
-  // ── Añadir item ───────────────────────────────────────────────
-  let addCtx = null;
-  function abrirAdd(slug) {
-    addCtx = slug;
-    document.getElementById('add-name-input').value = '';
-    document.getElementById('add-img-input').value = '';
-    document.getElementById('dialog-add').showModal();
-  }
-  function confirmarAdd() {
-    if (!addCtx) return;
-    const slug = addCtx;
-    const nombre = document.getElementById('add-name-input').value.trim();
-    const imagen = document.getElementById('add-img-input').value.trim();
-    if (!nombre) return;
-    if (!edits[slug]) edits[slug] = {};
-    const newKey = `__new__${Date.now()}`;
-    edits[slug][newKey] = { nombre, imagen: imagen || null };
-    saveEdits();
-    document.getElementById('dialog-add').close();
-    renderGrid(slug, leafSubcats.find(s => s.slug === slug)?.nombres || []);
-  }
-
-  // ── Exportar ──────────────────────────────────────────────────
-  function buildExportData(slug) {
-    const resolved = resolvedData[slug] || [];
-    const slugEdits = edits[slug] || {};
-    const allNames = leafSubcats.find(s => s.slug === slug)?.nombres || [];
-
-    const resolvedMap = {};
-    for (const it of resolved) resolvedMap[it.nombre] = it.imagen;
-
-    const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
-    const allItems = [...allNames, ...addedKeys.map(k => slugEdits[k].nombre)];
-    const seen = new Set();
-    const unique = allItems.filter(n => { if (seen.has(n)) return false; seen.add(n); return true; });
-
-    const result = [];
-    for (const nombre of unique) {
-      const edit = slugEdits[nombre];
-      if (edit?.deleted) continue;
-      const editedNombre = edit?.nombre ?? nombre;
-      const imagen = edit?.imagen ?? resolvedMap[nombre] ?? null;
-      if (!imagen) continue; // only export items with images
-      result.push({ nombre: editedNombre, imagen });
+    const subcat = leafSubcats.find(s => s.slug === slug);
+    let n = 0;
+    for (const nombre of subcat.nombres) {
+      const e = slugEdits[nombre] || {};
+      const img = e.imagen !== undefined ? e.imagen : resMap[nombre];
+      if (img && !e.deleted) n++;
     }
-    return result;
+    const total = subcat.nombres.length;
+    el.textContent = `${n}/${total}`;
+    el.style.color = n === total ? '#4cff8f' : n > 0 ? '#ffcc00' : '#ff1dce';
   }
 
-  function exportarCategoria(slug) {
-    const data = buildExportData(slug);
-    const json = JSON.stringify(data, null, 2);
-    const blob = new Blob([json], { type: 'application/json' });
+  // ── Name dialog ────────────────────────────────────────────────
+  function openNameDialog(slug, key) {
+    const e = (edits[slug] || {})[key] || {};
+    const orig = key.startsWith('__new__') ? (e.nombre ?? '') : key;
+    dialogCtx = { type: 'name', slug, key };
+    const inp = document.getElementById('dlg-name-val');
+    inp.value = e.nombre ?? orig;
+    document.getElementById('dlg-name').showModal();
+    setTimeout(() => inp.select(), 50);
+  }
+  document.getElementById('dlg-name-ok').addEventListener('click', () => {
+    if (!dialogCtx || dialogCtx.type !== 'name') return;
+    const { slug, key } = dialogCtx;
+    const val = document.getElementById('dlg-name-val').value.trim();
+    if (!val) return;
+    if (!edits[slug]) edits[slug] = {};
+    edits[slug][key] = { ...(edits[slug][key] || {}), nombre: val };
+    saveEdits();
+    document.getElementById('dlg-name').close();
+    renderMain(slug, resolved[slug] || null);
+  });
+  document.getElementById('dlg-name-cancel').addEventListener('click', () => document.getElementById('dlg-name').close());
+  document.getElementById('dlg-name-val').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('dlg-name-ok').click(); });
+
+  // ── Img dialog ─────────────────────────────────────────────────
+  function openImgDialog(slug, key) {
+    const e = (edits[slug] || {})[key] || {};
+    const resMap = {};
+    for (const it of (resolved[slug] || [])) resMap[it.nombre] = it.imagen;
+    const origNombre = key.startsWith('__new__') ? (e.nombre ?? '') : key;
+    const cur = e.imagen !== undefined ? e.imagen : (resMap[origNombre] ?? '');
+    dialogCtx = { type: 'img', slug, key };
+    const inp = document.getElementById('dlg-img-val');
+    inp.value = cur || '';
+    refreshImgPreview();
+    document.getElementById('dlg-img').showModal();
+    setTimeout(() => inp.select(), 50);
+  }
+  function refreshImgPreview() {
+    const url = document.getElementById('dlg-img-val').value.trim();
+    const prev = document.getElementById('dlg-img-prev');
+    prev.style.display = url ? 'block' : 'none';
+    if (url) prev.src = url;
+  }
+  document.getElementById('dlg-img-val').addEventListener('input', refreshImgPreview);
+  document.getElementById('dlg-img-ok').addEventListener('click', () => {
+    if (!dialogCtx || dialogCtx.type !== 'img') return;
+    const { slug, key } = dialogCtx;
+    const url = document.getElementById('dlg-img-val').value.trim();
+    if (!edits[slug]) edits[slug] = {};
+    edits[slug][key] = { ...(edits[slug][key] || {}), imagen: url || null };
+    saveEdits();
+    document.getElementById('dlg-img').close();
+    renderMain(slug, resolved[slug] || null);
+    updateSidebarStat(slug);
+  });
+  document.getElementById('dlg-img-cancel').addEventListener('click', () => document.getElementById('dlg-img').close());
+
+  // ── Delete ─────────────────────────────────────────────────────
+  function toggleDelete(slug, key) {
+    if (!edits[slug]) edits[slug] = {};
+    edits[slug][key] = { ...(edits[slug][key] || {}), deleted: !edits[slug][key]?.deleted };
+    saveEdits();
+    renderMain(slug, resolved[slug] || null);
+    updateSidebarStat(slug);
+  }
+
+  // ── Add dialog ─────────────────────────────────────────────────
+  function openAddDialog(slug) {
+    addSlug = slug;
+    document.getElementById('dlg-add-name').value = '';
+    document.getElementById('dlg-add-img').value = '';
+    document.getElementById('dlg-add').showModal();
+    setTimeout(() => document.getElementById('dlg-add-name').focus(), 50);
+  }
+  document.getElementById('dlg-add-ok').addEventListener('click', () => {
+    if (!addSlug) return;
+    const nombre = document.getElementById('dlg-add-name').value.trim();
+    const imagen = document.getElementById('dlg-add-img').value.trim();
+    if (!nombre) return;
+    if (!edits[addSlug]) edits[addSlug] = {};
+    edits[addSlug]['__new__' + Date.now()] = { nombre, imagen: imagen || null };
+    saveEdits();
+    document.getElementById('dlg-add').close();
+    renderMain(addSlug, resolved[addSlug] || null);
+  });
+  document.getElementById('dlg-add-cancel').addEventListener('click', () => document.getElementById('dlg-add').close());
+
+  // ── Export ─────────────────────────────────────────────────────
+  function exportSlug(slug) {
+    const subcat = leafSubcats.find(s => s.slug === slug);
+    const resMap = {};
+    for (const it of (resolved[slug] || [])) resMap[it.nombre] = it.imagen;
+    const slugEdits = edits[slug] || {};
+    const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
+    const allEntries = [
+      ...subcat.nombres.map(n => ({ key: n, origNombre: n })),
+      ...addedKeys.map(k => ({ key: k, origNombre: slugEdits[k].nombre ?? k })),
+    ];
+    const result = [];
+    for (const { key, origNombre } of allEntries) {
+      const e = slugEdits[key] || {};
+      if (e.deleted) continue;
+      const nombre = e.nombre ?? origNombre;
+      const imagen = e.imagen !== undefined ? e.imagen : (resMap[origNombre] ?? null);
+      if (!imagen) continue;
+      result.push({ nombre, imagen });
+    }
+    const blob = new Blob([JSON.stringify(result, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${slug}.json`;
-    a.click();
+    const a = document.createElement('a'); a.href = url; a.download = slug + '.json'; a.click();
     URL.revokeObjectURL(url);
   }
 
-  function exportarTodo() {
-    for (const subcat of leafSubcats) {
-      setTimeout(() => exportarCategoria(subcat.slug), 100 * leafSubcats.indexOf(subcat));
-    }
-  }
-
-  // ── Filtro ────────────────────────────────────────────────────
-  document.getElementById('filter-input').addEventListener('input', (e) => {
-    const q = e.target.value.toLowerCase();
-    document.querySelectorAll('.subcat-section').forEach(el => {
-      const slug = el.dataset.slug;
-      const subcat = leafSubcats.find(s => s.slug === slug);
-      const visible = !q || subcat.nombre.toLowerCase().includes(q) || slug.includes(q);
-      el.style.display = visible ? '' : 'none';
-    });
+  document.getElementById('btn-export-cur').addEventListener('click', () => {
+    if (currentSlug) exportSlug(currentSlug);
   });
 </script>
 </body>
