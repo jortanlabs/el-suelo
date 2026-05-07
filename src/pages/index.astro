@@ -9,13 +9,13 @@ const otrasFloor = categoriasFloor
   .filter((c) => c.slug !== "actores")
   .map((c) => ({ slug: c.slug, nombre: c.nombre, emoji: c.emoji, tipo: "otras" as const }));
 
-// Jerarquía Cine y Series para el picker
+// Jerarquía Cine y Series para el picker (excluye pendientes)
 const cineBloques = bloques.map((b) => ({
   slug: b.slug,
   nombre: b.nombre,
   emoji: b.emoji,
   subcats: subcategorias
-    .filter((s) => s.bloque === b.slug)
+    .filter((s) => s.bloque === b.slug && !s.pendiente)
     .map((s) => ({
       slug: s.slug,
       nombre: s.nombre,
@@ -27,7 +27,7 @@ const cineBloques = bloques.map((b) => ({
 
 // Todos los slugs de subcategorías jugables de Cine (para partida rápida aleatoria)
 const cineSlugsJugables = subcategorias
-  .filter((s) => !s.esMetaCategoria && !!s.nombres)
+  .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
   .map((s) => s.slug);
 ---
 
