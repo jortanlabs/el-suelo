@@ -122,9 +122,26 @@ const BUILD = Date.now();
 <script define:vars={{ leafSubcats }}>
   // ── Constants ──────────────────────────────────────────────────
   const SZ = 60; // card image size in px
-  const STORAGE_KEY = 'el-suelo:admin-v4';
+  const STORAGE_KEY = 'el-suelo:admin-edits-v3';
   let edits = {};
-  try { const s = localStorage.getItem(STORAGE_KEY); if (s) edits = JSON.parse(s); } catch {}
+  // Load from current key, then migrate data from any old keys
+  const OLD_KEYS = ['el-suelo:admin-v4', 'el-suelo:preview-edits-v2', 'el-suelo:preview-edits'];
+  try {
+    const s = localStorage.getItem(STORAGE_KEY);
+    if (s) edits = JSON.parse(s);
+    // Merge any edits saved under old keys
+    for (const oldKey of OLD_KEYS) {
+      const old = localStorage.getItem(oldKey);
+      if (!old) continue;
+      const oldEdits = JSON.parse(old);
+      for (const [slug, slugData] of Object.entries(oldEdits)) {
+        if (!edits[slug]) edits[slug] = {};
+        Object.assign(edits[slug], slugData);
+      }
+      localStorage.removeItem(oldKey); // clean up old key
+    }
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(edits));
+  } catch {}
   const saveEdits = () => { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(edits)); } catch {} };
 
   const resolved = {};
