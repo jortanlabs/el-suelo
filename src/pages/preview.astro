@@ -255,8 +255,9 @@ const BUILD = Date.now();
       grid.appendChild(card);
     }
 
+    const nMissing = allEntries.length - nImg;
     const statsHtml = items
-      ? `<span class="bok">✓ ${nImg}</span>${allEntries.length - nImg > 0 ? ` <span class="bmiss">⚠ ${allEntries.length - nImg} sin foto</span>` : ''}`
+      ? `<span class="bok">✓ ${nImg}</span>${nMissing > 0 ? ` <span class="bmiss">⚠ ${nMissing} sin foto</span>` : ''}`
       : `<span style="color:#2a5090;font-size:0.72rem">Cargando…</span>`;
 
     panel.innerHTML = `
@@ -265,12 +266,31 @@ const BUILD = Date.now();
         <span class="panel-title">${subcat.nombre}</span>
         <div class="panel-stats">${statsHtml}</div>
       </div>
-      <div class="panel-toolbar">
+      <div class="panel-toolbar" style="display:flex;gap:8px;align-items:center;">
         <button class="btn-add" id="btn-add-item">+ Añadir item</button>
+        ${nMissing > 0 ? `<button class="btn-add" id="btn-filter-missing" style="border-color:#ff6b8a;color:#ff6b8a;">⚠ Ver ${nMissing} sin foto</button>` : ''}
       </div>
     `;
     panel.appendChild(grid);
     document.getElementById('btn-add-item').addEventListener('click', () => openAddDialog(slug));
+
+    const btnFilter = document.getElementById('btn-filter-missing');
+    if (btnFilter) {
+      let filtered = false;
+      btnFilter.addEventListener('click', () => {
+        filtered = !filtered;
+        btnFilter.textContent = filtered ? '✕ Ver todas' : `⚠ Ver ${nMissing} sin foto`;
+        btnFilter.style.borderColor = filtered ? '#ffcc00' : '#ff6b8a';
+        btnFilter.style.color = filtered ? '#ffcc00' : '#ff6b8a';
+        grid.querySelectorAll('[data-slug]').forEach(card => {
+          const key = card.dataset.key;
+          const e = (edits[slug] || {})[key] || {};
+          const orig = key.startsWith('__new__') ? (e.nombre ?? key) : key;
+          const imagen = e.imagen !== undefined ? e.imagen : (resMap[orig] ?? null);
+          card.style.display = (!filtered || !imagen) ? '' : 'none';
+        });
+      });
+    }
   }
 
   // ── Event delegation ───────────────────────────────────────────
