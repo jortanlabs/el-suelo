@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Home Alone",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Home_Alone_House.jpg/330px-Home_Alone_House.jpg",
+    "palabraClave": "alone"
+  },
+  {
+    "nombre": "Home Alone 2: Lost in New York",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/27/Devin_Ratray_2007.png",
+    "palabraClave": "york"
+  },
+  {
+    "nombre": "Elf",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/df/Elf_movie.jpg",
+    "palabraClave": "elf"
+  },
+  {
+    "nombre": "The Santa Clause",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Oakville-Ontario-Downtown.JPG/330px-Oakville-Ontario-Downtown.JPG",
+    "palabraClave": "clause"
+  },
+  {
+    "nombre": "A Christmas Carol",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Charles_Dickens-A_Christmas_Carol-Cloth-First_Edition_1843.jpg/330px-Charles_Dickens-A_Christmas_Carol-Cloth-First_Edition_1843.jpg",
+    "palabraClave": "carol"
+  },
+  {
+    "nombre": "A Christmas Story",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Looking_north_-_Cleveland_Public_Square.jpg/330px-Looking_north_-_Cleveland_Public_Square.jpg",
+    "palabraClave": "story"
+  },
+  {
+    "nombre": "It's a Wonderful Life",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/It%27s_a_Wonderful_Life_%281946_poster%29.jpeg/330px-It%27s_a_Wonderful_Life_%281946_poster%29.jpeg",
+    "palabraClave": "life"
+  },
+  {
+    "nombre": "How the Grinch Stole Christmas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Grinch_set.JPG/330px-Grinch_set.JPG",
+    "palabraClave": "christmas"
+  },
+  {
+    "nombre": "The Holiday",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Roman_Holiday_%281953_poster%29.jpg/330px-Roman_Holiday_%281953_poster%29.jpg",
+    "palabraClave": "holiday"
+  },
+  {
+    "nombre": "Love Actually",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg",
+    "palabraClave": "actually"
+  },
+  {
+    "nombre": "Die Hard",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Die_Hard_4_logo.png/330px-Die_Hard_4_logo.png",
+    "palabraClave": "hard"
+  },
+  {
+    "nombre": "Jingle All the Way",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/MOA4.jpg/330px-MOA4.jpg",
+    "palabraClave": "way"
+  },
+  {
+    "nombre": "Four Christmases",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/ca/Four_Christmases-Movie_Poster.PNG",
+    "palabraClave": "christmases"
+  },
+  {
+    "nombre": "The Nightmare Before Christmas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/The_Nightmare_Before_Christmas_Logo.svg/langes-330px-The_Nightmare_Before_Christmas_Logo.svg.png",
+    "palabraClave": "christmas"
+  },
+  {
+    "nombre": "The Polar Express",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/24/The_Polar_Express_%282004%29_poster.jpg",
+    "palabraClave": "express"
+  },
+  {
+    "nombre": "Arthur Christmas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sarah_Smith_Kings_Place.jpg/330px-Sarah_Smith_Kings_Place.jpg",
+    "palabraClave": "christmas"
+  },
+  {
+    "nombre": "Klaus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Klaus_Logo.png/330px-Klaus_Logo.png",
+    "palabraClave": "klaus"
+  },
+  {
+    "nombre": "Holiday Inn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Holiday_Inn_by_IHG_logo.svg/langes-330px-Holiday_Inn_by_IHG_logo.svg.png",
+    "palabraClave": "inn"
+  },
+  {
+    "nombre": "White Christmas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/White_Christmas_trailer_%281954%29_title_frame.jpg/330px-White_Christmas_trailer_%281954%29_title_frame.jpg",
+    "palabraClave": "christmas"
+  },
+  {
+    "nombre": "Miracle on 34th Street",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Miracle_on_34th_Street_%281947_film_poster%29.jpg/330px-Miracle_on_34th_Street_%281947_film_poster%29.jpg",
+    "palabraClave": "street"
+  },
+  {
+    "nombre": "National Lampoon's Christmas Vacation",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Nicholas_Guest_2019_by_Glenn_Francis.jpg/330px-Nicholas_Guest_2019_by_Glenn_Francis.jpg",
+    "palabraClave": "vacation"
+  },
+  {
+    "nombre": "Scrooged",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Carol_Kane_%2849489867821%29.jpg/330px-Carol_Kane_%2849489867821%29.jpg",
+    "palabraClave": "scrooged"
+  },
+  {
+    "nombre": "Jack Frost",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d0/Jack_frostmp98.jpg",
+    "palabraClave": "frost"
+  },
+  {
+    "nombre": "The Christmas Chronicles",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/5e/The_Christmas_Chronicles.png",
+    "palabraClave": "chronicles"
+  }
+]

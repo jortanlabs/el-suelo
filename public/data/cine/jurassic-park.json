@@ -1,0 +1,117 @@
+[
+  {
+    "nombre": "Jurassic Park",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
+    "palabraClave": "park"
+  },
+  {
+    "nombre": "The Lost World: Jurassic Park",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Jurassic_World_Fallen_Kingdom_Japan_Premiere_Red_Carpet_%2828237190517%29.jpg/330px-Jurassic_World_Fallen_Kingdom_Japan_Premiere_Red_Carpet_%2828237190517%29.jpg",
+    "palabraClave": "park"
+  },
+  {
+    "nombre": "Jurassic Park III",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6d/Jurassic_Park_III_poster.jpg",
+    "palabraClave": "iii"
+  },
+  {
+    "nombre": "Jurassic World",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/DeWanda_Wise_%26_Mamoudou_Athie.jpg/330px-DeWanda_Wise_%26_Mamoudou_Athie.jpg",
+    "palabraClave": "world"
+  },
+  {
+    "nombre": "Tyrannosaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tyrannosaurus_Rex_Holotype.jpg/330px-Tyrannosaurus_Rex_Holotype.jpg",
+    "palabraClave": "tyrannosaurus"
+  },
+  {
+    "nombre": "Velociraptor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Velociraptor_Wyoming_Dinosaur_Center.jpg/330px-Velociraptor_Wyoming_Dinosaur_Center.jpg",
+    "palabraClave": "velociraptor"
+  },
+  {
+    "nombre": "Brachiosaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Brachiosaurus_altithorax.jpg/330px-Brachiosaurus_altithorax.jpg",
+    "palabraClave": "brachiosaurus"
+  },
+  {
+    "nombre": "Triceratops",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/LA-Triceratops_mount-2.jpg/330px-LA-Triceratops_mount-2.jpg",
+    "palabraClave": "triceratops"
+  },
+  {
+    "nombre": "Stegosaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Stegosaurus_stenops_Life_Reconstruction.png/330px-Stegosaurus_stenops_Life_Reconstruction.png",
+    "palabraClave": "stegosaurus"
+  },
+  {
+    "nombre": "Pteranodon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pteranodon_amnh_martyniuk.jpg/330px-Pteranodon_amnh_martyniuk.jpg",
+    "palabraClave": "pteranodon"
+  },
+  {
+    "nombre": "Spinosaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Spinosaurus_new_skull.jpg/330px-Spinosaurus_new_skull.jpg",
+    "palabraClave": "spinosaurus"
+  },
+  {
+    "nombre": "Mosasaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/MosasaurMaastricht080910.JPG/330px-MosasaurMaastricht080910.JPG",
+    "palabraClave": "mosasaurus"
+  },
+  {
+    "nombre": "Dilophosaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Dilophosaurus_wetherilli.PNG/330px-Dilophosaurus_wetherilli.PNG",
+    "palabraClave": "dilophosaurus"
+  },
+  {
+    "nombre": "Gallimimus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Gallimimus_Restoration.png/330px-Gallimimus_Restoration.png",
+    "palabraClave": "gallimimus"
+  },
+  {
+    "nombre": "Ankylosaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ankylosaurus_magniventris_reconstruction.png/330px-Ankylosaurus_magniventris_reconstruction.png",
+    "palabraClave": "ankylosaurus"
+  },
+  {
+    "nombre": "Parasaurolophus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/FMNH_Parasaurolophus_fossil.jpg/330px-FMNH_Parasaurolophus_fossil.jpg",
+    "palabraClave": "parasaurolophus"
+  },
+  {
+    "nombre": "Baryonyx",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Baryonyx_NHM.jpg/330px-Baryonyx_NHM.jpg",
+    "palabraClave": "baryonyx"
+  },
+  {
+    "nombre": "Carnotaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Carnotaurus%2C_Chlup%C3%A1%C4%8D_Museum%2C_Prague-2.jpg/330px-Carnotaurus%2C_Chlup%C3%A1%C4%8D_Museum%2C_Prague-2.jpg",
+    "palabraClave": "carnotaurus"
+  },
+  {
+    "nombre": "Indominus rex",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/%D0%86%D0%BD%D0%B4%D0%BE%D0%BC%D1%96%D0%BD%D1%83%D1%81.jpg/330px-%D0%86%D0%BD%D0%B4%D0%BE%D0%BC%D1%96%D0%BD%D1%83%D1%81.jpg",
+    "palabraClave": "rex"
+  },
+  {
+    "nombre": "Protoceratops",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Protoceratops_reconstruction.png/330px-Protoceratops_reconstruction.png",
+    "palabraClave": "protoceratops"
+  },
+  {
+    "nombre": "Iguanodon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Iguanodon_de_Bernissart_IRSNB_01.JPG/330px-Iguanodon_de_Bernissart_IRSNB_01.JPG",
+    "palabraClave": "iguanodon"
+  },
+  {
+    "nombre": "Allosaurus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Allosaurus_SDNHM.jpg/330px-Allosaurus_SDNHM.jpg",
+    "palabraClave": "allosaurus"
+  },
+  {
+    "nombre": "Diplodocus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Diplodocus_model.jpg/330px-Diplodocus_model.jpg",
+    "palabraClave": "diplodocus"
+  }
+]

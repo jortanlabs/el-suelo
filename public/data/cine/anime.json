@@ -1,0 +1,207 @@
+[
+  {
+    "nombre": "Goku",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/NYCC_2018_pics_27.jpg/330px-NYCC_2018_pics_27.jpg",
+    "palabraClave": "goku"
+  },
+  {
+    "nombre": "Vegeta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/15/DBZ_%28cropped%29.jpg",
+    "palabraClave": "vegeta"
+  },
+  {
+    "nombre": "Gohan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Preestrena_de_Bola_de_Drac_Super_el_Superheroi_04.jpg/330px-Preestrena_de_Bola_de_Drac_Super_el_Superheroi_04.jpg",
+    "palabraClave": "gohan"
+  },
+  {
+    "nombre": "Piccolo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Piccolo_Teatro_Milano.jpg/330px-Piccolo_Teatro_Milano.jpg",
+    "palabraClave": "piccolo"
+  },
+  {
+    "nombre": "Krillin",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Sam_Vincent_actor.jpg/330px-Sam_Vincent_actor.jpg",
+    "palabraClave": "krillin"
+  },
+  {
+    "nombre": "Bulma",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Morocco_location_map.svg/langes-330px-Morocco_location_map.svg.png",
+    "palabraClave": "bulma"
+  },
+  {
+    "nombre": "Frieza",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Cape_Verde_location_map.svg/langes-330px-Cape_Verde_location_map.svg.png",
+    "palabraClave": "frieza"
+  },
+  {
+    "nombre": "Cell",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Bushwick_Brooklyn_Art_445.jpg/330px-Bushwick_Brooklyn_Art_445.jpg",
+    "palabraClave": "cell"
+  },
+  {
+    "nombre": "Majin Buu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6c/MajinBooDaizenshuu.png",
+    "palabraClave": "buu"
+  },
+  {
+    "nombre": "Trunks",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Cosplayers_of_Android_17_and_Android_18%2C_Dragon_Ball_Z_20150531a.jpg/330px-Cosplayers_of_Android_17_and_Android_18%2C_Dragon_Ball_Z_20150531a.jpg",
+    "palabraClave": "trunks"
+  },
+  {
+    "nombre": "Goten",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Katsushika_Hokusai%2C_Goten-yama_hill%2C_Shinagawa_on_the_T%C5%8Dkaid%C5%8D%2C_ca._1832.jpg/330px-Katsushika_Hokusai%2C_Goten-yama_hill%2C_Shinagawa_on_the_T%C5%8Dkaid%C5%8D%2C_ca._1832.jpg",
+    "palabraClave": "goten"
+  },
+  {
+    "nombre": "Master Roshi",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Robert_Baker_Aitken.JPG/330px-Robert_Baker_Aitken.JPG",
+    "palabraClave": "roshi"
+  },
+  {
+    "nombre": "Broly",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/3/34/Broly_DBS_Movie.png",
+    "palabraClave": "broly"
+  },
+  {
+    "nombre": "Sailor Moon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sailor_Moon_Japanese_stylized.png/330px-Sailor_Moon_Japanese_stylized.png",
+    "palabraClave": "moon"
+  },
+  {
+    "nombre": "Sailor Mercury",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Cosplayer_of_Sailor_Mercury_from_Sailor_Moon_20140822.jpg/330px-Cosplayer_of_Sailor_Mercury_from_Sailor_Moon_20140822.jpg",
+    "palabraClave": "mercury"
+  },
+  {
+    "nombre": "Sailor Mars",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Otakon_2014_IMGP0381_%2814888069185%29.jpg/330px-Otakon_2014_IMGP0381_%2814888069185%29.jpg",
+    "palabraClave": "mars"
+  },
+  {
+    "nombre": "Sailor Jupiter",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Otakon_2014_IMGP0380_%2814887742832%29.jpg/330px-Otakon_2014_IMGP0380_%2814887742832%29.jpg",
+    "palabraClave": "jupiter"
+  },
+  {
+    "nombre": "Sailor Venus",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Otakon_2014_IMGP0382_%2814701546277%29.jpg/330px-Otakon_2014_IMGP0382_%2814701546277%29.jpg",
+    "palabraClave": "venus"
+  },
+  {
+    "nombre": "Tuxedo Mask",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Cosplay_of_Tuxedo_Mask_from_Sailor_Moon_at_Geek_Kon_2014_%2814910030228%29.jpg/330px-Cosplay_of_Tuxedo_Mask_from_Sailor_Moon_at_Geek_Kon_2014_%2814910030228%29.jpg",
+    "palabraClave": "mask"
+  },
+  {
+    "nombre": "Seiya",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Saint_Seiya_logo.jpg",
+    "palabraClave": "seiya"
+  },
+  {
+    "nombre": "Doraemon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Doraemon_1979Logo.jpg",
+    "palabraClave": "doraemon"
+  },
+  {
+    "nombre": "Nobita Nobi",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Cosplay_of_Nobita_Nobi_at_Weekend_Car_Boot_Sale_2021.jpg/330px-Cosplay_of_Nobita_Nobi_at_Weekend_Car_Boot_Sale_2021.jpg",
+    "palabraClave": "nobi"
+  },
+  {
+    "nombre": "Naruto Uzumaki",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Naruto_Uzumaki_Stats.svg/langes-330px-Naruto_Uzumaki_Stats.svg.png",
+    "palabraClave": "uzumaki"
+  },
+  {
+    "nombre": "Sasuke Uchiha",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Sharingan2.png/330px-Sharingan2.png",
+    "palabraClave": "uchiha"
+  },
+  {
+    "nombre": "Sakura Haruno",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Cosplayer_of_Sakura_Haruno_20140829.jpg/330px-Cosplayer_of_Sakura_Haruno_20140829.jpg",
+    "palabraClave": "haruno"
+  },
+  {
+    "nombre": "Kakashi Hatake",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Kakashi_Hatake.png/330px-Kakashi_Hatake.png",
+    "palabraClave": "hatake"
+  },
+  {
+    "nombre": "Itachi Uchiha",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Cosplay_d%27Itachi_Uchiwa_%40aanthonym.jpg/330px-Cosplay_d%27Itachi_Uchiwa_%40aanthonym.jpg",
+    "palabraClave": "uchiha"
+  },
+  {
+    "nombre": "Rock Lee",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tommy_Lee_2012.jpg/330px-Tommy_Lee_2012.jpg",
+    "palabraClave": "lee"
+  },
+  {
+    "nombre": "Gaara",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Gaara_Paris_Manga_8.jpg/330px-Gaara_Paris_Manga_8.jpg",
+    "palabraClave": "gaara"
+  },
+  {
+    "nombre": "Ash Ketchum",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Ash_Ketchum_%285764005330%29.jpg/330px-Ash_Ketchum_%285764005330%29.jpg",
+    "palabraClave": "ketchum"
+  },
+  {
+    "nombre": "Misty",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Misty_%2832338980325%29.jpg/330px-Misty_%2832338980325%29.jpg",
+    "palabraClave": "misty"
+  },
+  {
+    "nombre": "Brock",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Montreal_Comiccon_2016_-_Brock_%2828202688661%29.jpg/330px-Montreal_Comiccon_2016_-_Brock_%2828202688661%29.jpg",
+    "palabraClave": "brock"
+  },
+  {
+    "nombre": "Jessie",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Team_Rocket_Logo.svg/langes-330px-Team_Rocket_Logo.svg.png",
+    "palabraClave": "jessie"
+  },
+  {
+    "nombre": "Tsubasa Ozora",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/TsubasaOozoramanga.png/330px-TsubasaOozoramanga.png",
+    "palabraClave": "ozora"
+  },
+  {
+    "nombre": "Benji Price",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Merlin_Collections.svg/330px-Merlin_Collections.svg.png",
+    "palabraClave": "price"
+  },
+  {
+    "nombre": "Monkey D. Luffy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Figura_Monkey_D_Luffy_A74007320250206.jpg/330px-Figura_Monkey_D_Luffy_A74007320250206.jpg",
+    "palabraClave": "luffy"
+  },
+  {
+    "nombre": "Roronoa Zoro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Straw_Hat_Pirates%27_Jolly_Roger.jpg/330px-Straw_Hat_Pirates%27_Jolly_Roger.jpg",
+    "palabraClave": "zoro"
+  },
+  {
+    "nombre": "Conan Edogawa",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Edogawa_Ranpo.jpg/330px-Edogawa_Ranpo.jpg",
+    "palabraClave": "edogawa"
+  },
+  {
+    "nombre": "Shinji Ikari",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cosplayer_of_Gendo_Ikari_20100919b.jpg/330px-Cosplayer_of_Gendo_Ikari_20100919b.jpg",
+    "palabraClave": "ikari"
+  },
+  {
+    "nombre": "Rei Ayanami",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Cosplayer_of_Rei_Ayanami_at_PF27_20171021b.jpg/330px-Cosplayer_of_Rei_Ayanami_at_PF27_20171021b.jpg",
+    "palabraClave": "ayanami"
+  },
+  {
+    "nombre": "Asuka Langley Soryu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Annie_Chen_as_Asuka_Langley_Soryu_standing%2C_front_view_20220109d.jpg/330px-Annie_Chen_as_Asuka_Langley_Soryu_standing%2C_front_view_20220109d.jpg",
+    "palabraClave": "soryu"
+  }
+]

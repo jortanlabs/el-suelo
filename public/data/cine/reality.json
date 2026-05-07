@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Gran Hermano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/34/International_Logo_of_Big_Brother.png",
+    "palabraClave": "hermano"
+  },
+  {
+    "nombre": "Operación Triunfo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Logo_oficial_de_OT_2025.png/330px-Logo_oficial_de_OT_2025.png",
+    "palabraClave": "triunfo"
+  },
+  {
+    "nombre": "Supervivientes",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/32/Foto_tocha03.jpg",
+    "palabraClave": "supervivientes"
+  },
+  {
+    "nombre": "La Voz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/La_Voz_%28Mexican_TV%29.png/330px-La_Voz_%28Mexican_TV%29.png",
+    "palabraClave": "voz"
+  },
+  {
+    "nombre": "MasterChef",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/48/Lorena_Castell_2016.jpg",
+    "palabraClave": "masterchef"
+  },
+  {
+    "nombre": "Got Talent España",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Got_Talent_logo.PNG/330px-Got_Talent_logo.PNG",
+    "palabraClave": "espana"
+  },
+  {
+    "nombre": "Factor X",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Tom_Dice_%28cropped%29.jpg/330px-Tom_Dice_%28cropped%29.jpg",
+    "palabraClave": "x"
+  },
+  {
+    "nombre": "Tu cara me suena",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f9/Univision_Tu_cara_me_suena_logo.png",
+    "palabraClave": "suena"
+  },
+  {
+    "nombre": "First Dates",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Apple_TV_logo.svg/langes-330px-Apple_TV_logo.svg.png",
+    "palabraClave": "dates"
+  },
+  {
+    "nombre": "Mujeres y hombres y viceversa",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Oriana_Marzoli_2024_02.png/330px-Oriana_Marzoli_2024_02.png",
+    "palabraClave": "viceversa"
+  },
+  {
+    "nombre": "El número uno",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/NumberSetinC.svg/langes-330px-NumberSetinC.svg.png",
+    "palabraClave": "uno"
+  },
+  {
+    "nombre": "Bake Off España",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/8/83/The_Great_British_Bake_Off_title.jpg/330px-The_Great_British_Bake_Off_title.jpg",
+    "palabraClave": "espana"
+  },
+  {
+    "nombre": "Survivor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kiefer_Sutherland_2_SDCC_2014.jpg/330px-Kiefer_Sutherland_2_SDCC_2014.jpg",
+    "palabraClave": "survivor"
+  },
+  {
+    "nombre": "American Idol",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/American_Idol_logo.svg/langes-330px-American_Idol_logo.svg.png",
+    "palabraClave": "idol"
+  },
+  {
+    "nombre": "The Voice",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/The_Voice_logo.svg/langes-330px-The_Voice_logo.svg.png",
+    "palabraClave": "voice"
+  },
+  {
+    "nombre": "Britain's Got Talent",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Britain%27s_Got_Talent_logo.svg/langes-330px-Britain%27s_Got_Talent_logo.svg.png",
+    "palabraClave": "talent"
+  },
+  {
+    "nombre": "Dancing with the Stars",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dancing_With_the_Stars_Map.svg/langes-330px-Dancing_With_the_Stars_Map.svg.png",
+    "palabraClave": "stars"
+  },
+  {
+    "nombre": "Strictly Come Dancing",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Strictly_Come_Dancing_title_card.jpg/330px-Strictly_Come_Dancing_title_card.jpg",
+    "palabraClave": "dancing"
+  },
+  {
+    "nombre": "RuPaul's Drag Race",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Drag_Race_Espa%C3%B1a_logo.webp/330px-Drag_Race_Espa%C3%B1a_logo.webp.png",
+    "palabraClave": "race"
+  },
+  {
+    "nombre": "The Bachelor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ABC-2021-LOGO.svg/langes-330px-ABC-2021-LOGO.svg.png",
+    "palabraClave": "bachelor"
+  },
+  {
+    "nombre": "Love Island",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/James_Wilby.jpg/330px-James_Wilby.jpg",
+    "palabraClave": "island"
+  },
+  {
+    "nombre": "MasterChef",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Rhodes%2C_Gary_%28crop%29.jpg/330px-Rhodes%2C_Gary_%28crop%29.jpg",
+    "palabraClave": "masterchef"
+  },
+  {
+    "nombre": "Top Chef",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Top-chef.jpg/330px-Top-chef.jpg",
+    "palabraClave": "chef"
+  },
+  {
+    "nombre": "Project Runway",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/27/Project_Runway_season_21.jpg",
+    "palabraClave": "runway"
+  }
+]

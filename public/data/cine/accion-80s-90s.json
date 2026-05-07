@@ -1,0 +1,162 @@
+[
+  {
+    "nombre": "The Terminator",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6d/The_Terminator.png",
+    "palabraClave": "terminator"
+  },
+  {
+    "nombre": "Terminator 2: Judgment Day",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/5e/Terminator_2-Judgment_Day.png",
+    "palabraClave": "day"
+  },
+  {
+    "nombre": "Die Hard",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Die_Hard_4_logo.png/330px-Die_Hard_4_logo.png",
+    "palabraClave": "hard"
+  },
+  {
+    "nombre": "Die Hard with a Vengeance",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/4/4c/Die_Hard_With_A_Vengance.jpg",
+    "palabraClave": "vengeance"
+  },
+  {
+    "nombre": "RoboCop",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/16/RoboCop_%281987%29_theatrical_poster.jpg",
+    "palabraClave": "robocop"
+  },
+  {
+    "nombre": "Total Recall",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/1991_Academy_Award_Condor_Films.jpg/330px-1991_Academy_Award_Condor_Films.jpg",
+    "palabraClave": "recall"
+  },
+  {
+    "nombre": "Predator",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Predator_%282020225730%29.jpg/330px-Predator_%282020225730%29.jpg",
+    "palabraClave": "predator"
+  },
+  {
+    "nombre": "Commando",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Rae_Dawn_Chong.jpg/330px-Rae_Dawn_Chong.jpg",
+    "palabraClave": "commando"
+  },
+  {
+    "nombre": "Rambo: First Blood",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/John_Rambo.jpg/330px-John_Rambo.jpg",
+    "palabraClave": "blood"
+  },
+  {
+    "nombre": "Lethal Weapon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Leathal_weapon_2_de.svg/langes-330px-Leathal_weapon_2_de.svg.png",
+    "palabraClave": "weapon"
+  },
+  {
+    "nombre": "Top Gun",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/4/46/Top_Gun_Movie.jpg",
+    "palabraClave": "gun"
+  },
+  {
+    "nombre": "Beverly Hills Cop",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logo_Beverly_Hills_Cop.JPG/330px-Logo_Beverly_Hills_Cop.JPG",
+    "palabraClave": "cop"
+  },
+  {
+    "nombre": "48 Hrs.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/48_HRS_Logo.png/330px-48_HRS_Logo.png",
+    "palabraClave": "hrs"
+  },
+  {
+    "nombre": "The Running Man",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Yaphet_Koto.jpg/330px-Yaphet_Koto.jpg",
+    "palabraClave": "man"
+  },
+  {
+    "nombre": "Universal Soldier",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Prescott%2C_Arizona.jpg/330px-Prescott%2C_Arizona.jpg",
+    "palabraClave": "soldier"
+  },
+  {
+    "nombre": "Demolition Man",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/0/05/Demolition_man.jpg",
+    "palabraClave": "man"
+  },
+  {
+    "nombre": "Speed",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Jan_de_Bont%2C_premi%C3%A8re-voorstelling_Turks_Fruit_in_Tuschinski%2C_Amsterdam.jpg/330px-Jan_de_Bont%2C_premi%C3%A8re-voorstelling_Turks_Fruit_in_Tuschinski%2C_Amsterdam.jpg",
+    "palabraClave": "speed"
+  },
+  {
+    "nombre": "Con Air",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Air_Europa%2C_EC-MTI%2C_Boeing_787-9_Dreamliner.jpg/330px-Air_Europa%2C_EC-MTI%2C_Boeing_787-9_Dreamliner.jpg",
+    "palabraClave": "air"
+  },
+  {
+    "nombre": "Face/Off",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/1c/FaceOff_poster.jpg",
+    "palabraClave": "faceoff"
+  },
+  {
+    "nombre": "The Rock",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Dwayne_Johnson-1809_%28cropped%29.jpg/330px-Dwayne_Johnson-1809_%28cropped%29.jpg",
+    "palabraClave": "rock"
+  },
+  {
+    "nombre": "Mission: Impossible",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Mission_Impossible_Fallout_logo.png/330px-Mission_Impossible_Fallout_logo.png",
+    "palabraClave": "impossible"
+  },
+  {
+    "nombre": "True Lies",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/True_lies_de.svg/langes-330px-True_lies_de.svg.png",
+    "palabraClave": "lies"
+  },
+  {
+    "nombre": "Air Force One",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Air_Force_One_over_Mt._Rushmore.jpg/330px-Air_Force_One_over_Mt._Rushmore.jpg",
+    "palabraClave": "one"
+  },
+  {
+    "nombre": "The Fugitive",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Cook_County_Hospital.jpg/330px-Cook_County_Hospital.jpg",
+    "palabraClave": "fugitive"
+  },
+  {
+    "nombre": "Point Break",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lori_Petty_Photo_Op_GalaxyCon_Raleigh_2023.jpg/330px-Lori_Petty_Photo_Op_GalaxyCon_Raleigh_2023.jpg",
+    "palabraClave": "break"
+  },
+  {
+    "nombre": "Heat",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/In_the_Heat_of_the_Night.jpg/330px-In_the_Heat_of_the_Night.jpg",
+    "palabraClave": "heat"
+  },
+  {
+    "nombre": "The Silence of the Lambs",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
+    "palabraClave": "lambs"
+  },
+  {
+    "nombre": "Seven",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/68/Seven_%28movie%29_poster.jpg",
+    "palabraClave": "seven"
+  },
+  {
+    "nombre": "Pulp Fiction",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Pulp_Fiction_Logo.svg/langes-330px-Pulp_Fiction_Logo.svg.png",
+    "palabraClave": "fiction"
+  },
+  {
+    "nombre": "Reservoir Dogs",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Reservoir-songs-en-vivo.jpg/330px-Reservoir-songs-en-vivo.jpg",
+    "palabraClave": "dogs"
+  },
+  {
+    "nombre": "Goodfellas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Lorraine_Bracco.jpg/330px-Lorraine_Bracco.jpg",
+    "palabraClave": "goodfellas"
+  },
+  {
+    "nombre": "Scarface",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Scarface_movie_red_logo.png/330px-Scarface_movie_red_logo.png",
+    "palabraClave": "scarface"
+  }
+]

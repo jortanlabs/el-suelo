@@ -1,0 +1,187 @@
+[
+  {
+    "nombre": "Lost",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Lost_letters.jpg/330px-Lost_letters.jpg",
+    "palabraClave": "lost"
+  },
+  {
+    "nombre": "Grey's Anatomy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d3/Greys_Anatomy_season_22_promotional_poster.jpg",
+    "palabraClave": "anatomy"
+  },
+  {
+    "nombre": "Desperate Housewives",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2d/DHCharacters.jpg",
+    "palabraClave": "housewives"
+  },
+  {
+    "nombre": "Prison Break",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d3/Prison-break-s1-intro.jpg",
+    "palabraClave": "break"
+  },
+  {
+    "nombre": "24",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/24-title.svg/langes-330px-24-title.svg.png",
+    "palabraClave": "24"
+  },
+  {
+    "nombre": "Heroes",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Big_Hero_6_The_Series_Logo.png",
+    "palabraClave": "heroes"
+  },
+  {
+    "nombre": "The X-Files",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/The_X-Files_original_title_screen.webp/330px-The_X-Files_original_title_screen.webp.png",
+    "palabraClave": "xfiles"
+  },
+  {
+    "nombre": "ER",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/ER_%28Amblin_Television_series%29_logo.svg/langes-330px-ER_%28Amblin_Television_series%29_logo.svg.png",
+    "palabraClave": "er"
+  },
+  {
+    "nombre": "The West Wing",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Martinsheennavy.jpg/330px-Martinsheennavy.jpg",
+    "palabraClave": "wing"
+  },
+  {
+    "nombre": "Six Feet Under",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Six_Feet_Under_House.jpg/330px-Six_Feet_Under_House.jpg",
+    "palabraClave": "under"
+  },
+  {
+    "nombre": "Alias",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pepe_botella.jpg/330px-Pepe_botella.jpg",
+    "palabraClave": "alias"
+  },
+  {
+    "nombre": "Buffy the Vampire Slayer",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Buffy_the_vampire_slayer.svg/langes-330px-Buffy_the_vampire_slayer.svg.png",
+    "palabraClave": "slayer"
+  },
+  {
+    "nombre": "Dawson's Creek",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Kerr_Smith_at_Galaxy_Con_Columbus.jpg/330px-Kerr_Smith_at_Galaxy_Con_Columbus.jpg",
+    "palabraClave": "creek"
+  },
+  {
+    "nombre": "Gossip Girl",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gossip_Girl_title_card.jpg/330px-Gossip_Girl_title_card.jpg",
+    "palabraClave": "girl"
+  },
+  {
+    "nombre": "The O.C.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/The_OC_logo.svg/langes-330px-The_OC_logo.svg.png",
+    "palabraClave": "oc"
+  },
+  {
+    "nombre": "Beverly Hills, 90210",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Beverly_hills_90210.svg/langes-330px-Beverly_hills_90210.svg.png",
+    "palabraClave": "90210"
+  },
+  {
+    "nombre": "Gilmore Girls",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Gilmore_girls_title_screen.jpg/330px-Gilmore_girls_title_screen.jpg",
+    "palabraClave": "girls"
+  },
+  {
+    "nombre": "One Tree Hill",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chad_Michael_Murray_at_Decades_Days_Orlando_2025.jpg/330px-Chad_Michael_Murray_at_Decades_Days_Orlando_2025.jpg",
+    "palabraClave": "hill"
+  },
+  {
+    "nombre": "Smallville",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Erica_Durance_2010_%282%29.jpg/330px-Erica_Durance_2010_%282%29.jpg",
+    "palabraClave": "smallville"
+  },
+  {
+    "nombre": "Charmed",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Charmed_%281996%29_logo.svg/langes-330px-Charmed_%281996%29_logo.svg.png",
+    "palabraClave": "charmed"
+  },
+  {
+    "nombre": "Seinfeld",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Seinfeld_logo.svg/langes-330px-Seinfeld_logo.svg.png",
+    "palabraClave": "seinfeld"
+  },
+  {
+    "nombre": "Everybody Loves Raymond",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Everybody_Loves_Raymond_logo.png/330px-Everybody_Loves_Raymond_logo.png",
+    "palabraClave": "raymond"
+  },
+  {
+    "nombre": "Will & Grace",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/WiLL_%26_GRACe.jpg/330px-WiLL_%26_GRACe.jpg",
+    "palabraClave": "grace"
+  },
+  {
+    "nombre": "Scrubs",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Scrubs.png/330px-Scrubs.png",
+    "palabraClave": "scrubs"
+  },
+  {
+    "nombre": "Malcolm in the Middle",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Malcolm_in_the_Middle_logo.svg/langes-330px-Malcolm_in_the_Middle_logo.svg.png",
+    "palabraClave": "middle"
+  },
+  {
+    "nombre": "Frasier",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Frasier_title_logo.svg/langes-330px-Frasier_title_logo.svg.png",
+    "palabraClave": "frasier"
+  },
+  {
+    "nombre": "Ally McBeal",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ally_McBeal_pilot_opening_title.jpg/330px-Ally_McBeal_pilot_opening_title.jpg",
+    "palabraClave": "mcbeal"
+  },
+  {
+    "nombre": "Sex and the City",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/B%C3%B6y%C3%BCk_%C5%9F%C9%99h%C9%99rd%C9%99_seks.png/330px-B%C3%B6y%C3%BCk_%C5%9F%C9%99h%C9%99rd%C9%99_seks.png",
+    "palabraClave": "city"
+  },
+  {
+    "nombre": "Two and a Half Men",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Two_and_a_half_men_intertitle.svg/langes-330px-Two_and_a_half_men_intertitle.svg.png",
+    "palabraClave": "men"
+  },
+  {
+    "nombre": "House",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Full_House_1987_TV_series_logo.png/330px-Full_House_1987_TV_series_logo.png",
+    "palabraClave": "house"
+  },
+  {
+    "nombre": "Médico de familia",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Francisco_Valles._Reproduction_of_line_engraving_by_M._Alleg_Wellcome_V0005966.jpg/330px-Francisco_Valles._Reproduction_of_line_engraving_by_M._Alleg_Wellcome_V0005966.jpg",
+    "palabraClave": "familia"
+  },
+  {
+    "nombre": "Cuéntame cómo pasó",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Cu%C3%A9ntame_c%C3%B3mo_pas%C3%B3_%2822.%C2%AA_temporada%29.jpg/330px-Cu%C3%A9ntame_c%C3%B3mo_pas%C3%B3_%2822.%C2%AA_temporada%29.jpg",
+    "palabraClave": "paso"
+  },
+  {
+    "nombre": "El internado",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Personajes_de_El_Internado.jpg/330px-Personajes_de_El_Internado.jpg",
+    "palabraClave": "internado"
+  },
+  {
+    "nombre": "Hospital Central",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/HCD_GOMEZ_ULLA.jpg/330px-HCD_GOMEZ_ULLA.jpg",
+    "palabraClave": "central"
+  },
+  {
+    "nombre": "Aída",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Aida_poster_colors_fixed.jpg/330px-Aida_poster_colors_fixed.jpg",
+    "palabraClave": "aida"
+  },
+  {
+    "nombre": "7 vidas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/VidaLogoTV.svg/330px-VidaLogoTV.svg.png",
+    "palabraClave": "vidas"
+  },
+  {
+    "nombre": "El comisario",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/97017_Punta_Secca%2C_Province_of_Ragusa%2C_Italy_-_panoramio.jpg/330px-97017_Punta_Secca%2C_Province_of_Ragusa%2C_Italy_-_panoramio.jpg",
+    "palabraClave": "comisario"
+  }
+]

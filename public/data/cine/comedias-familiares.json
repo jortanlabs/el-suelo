@@ -1,0 +1,162 @@
+[
+  {
+    "nombre": "Home Alone",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Home_Alone_House.jpg/330px-Home_Alone_House.jpg",
+    "palabraClave": "alone"
+  },
+  {
+    "nombre": "Home Alone 2: Lost in New York",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/27/Devin_Ratray_2007.png",
+    "palabraClave": "york"
+  },
+  {
+    "nombre": "Mrs. Doubtfire",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Matthew_Lawrence_Photo_Op_GalaxyCon_Raleigh_2023.jpg/330px-Matthew_Lawrence_Photo_Op_GalaxyCon_Raleigh_2023.jpg",
+    "palabraClave": "doubtfire"
+  },
+  {
+    "nombre": "The Mask",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Themask-logo.svg/langes-330px-Themask-logo.svg.png",
+    "palabraClave": "mask"
+  },
+  {
+    "nombre": "Ace Ventura: Pet Detective",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/84/Ace_ventura_pet_detective.jpg",
+    "palabraClave": "detective"
+  },
+  {
+    "nombre": "The Truman Show",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Torino_-_Museo_nazionale_del_cinema_-_2024-09-15_17-43-44_001.jpg/330px-Torino_-_Museo_nazionale_del_cinema_-_2024-09-15_17-43-44_001.jpg",
+    "palabraClave": "show"
+  },
+  {
+    "nombre": "Liar Liar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Mentirosomentiroso.png",
+    "palabraClave": "liar"
+  },
+  {
+    "nombre": "Bruce Almighty",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bruce_Almighty_logo.png/330px-Bruce_Almighty_logo.png",
+    "palabraClave": "almighty"
+  },
+  {
+    "nombre": "The Nutty Professor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Der_verr%C3%BCckte_Professor_1963_Logo.png/330px-Der_verr%C3%BCckte_Professor_1963_Logo.png",
+    "palabraClave": "professor"
+  },
+  {
+    "nombre": "Honey, I Shrunk the Kids",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Honey%2C_I_Shrunk_The_Kids_%28logo%29.png/330px-Honey%2C_I_Shrunk_The_Kids_%28logo%29.png",
+    "palabraClave": "kids"
+  },
+  {
+    "nombre": "Beethoven",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/330px-Beethoven.jpg",
+    "palabraClave": "beethoven"
+  },
+  {
+    "nombre": "Matilda",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b7/Matildaposter.jpg",
+    "palabraClave": "matilda"
+  },
+  {
+    "nombre": "Big",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bigsleep2.JPG/330px-Bigsleep2.JPG",
+    "palabraClave": "big"
+  },
+  {
+    "nombre": "Beetlejuice",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Beetlejuice_logo.svg/langes-330px-Beetlejuice_logo.svg.png",
+    "palabraClave": "beetlejuice"
+  },
+  {
+    "nombre": "Sister Act",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a3/Sister_Act_film_poster.jpg",
+    "palabraClave": "act"
+  },
+  {
+    "nombre": "Kindergarten Cop",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Logo_en_espa%C3%B1ol_de_Poli_de_Guarder%C3%ADa_%22Kindergarten_Cop%22.png/330px-Logo_en_espa%C3%B1ol_de_Poli_de_Guarder%C3%ADa_%22Kindergarten_Cop%22.png",
+    "palabraClave": "cop"
+  },
+  {
+    "nombre": "Twins",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/66/Thompson_Twins_Feb84.JPG",
+    "palabraClave": "twins"
+  },
+  {
+    "nombre": "Jingle All the Way",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/MOA4.jpg/330px-MOA4.jpg",
+    "palabraClave": "way"
+  },
+  {
+    "nombre": "Daddy Day Care",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Provo%2C_Utah.jpg/330px-Provo%2C_Utah.jpg",
+    "palabraClave": "care"
+  },
+  {
+    "nombre": "The Sandlot",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d4/Sandlot_poster.jpg",
+    "palabraClave": "sandlot"
+  },
+  {
+    "nombre": "Richie Rich",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Cover_of_Richie_Rich_no._10_%28May_1962%29.jpg/330px-Cover_of_Richie_Rich_no._10_%28May_1962%29.jpg",
+    "palabraClave": "rich"
+  },
+  {
+    "nombre": "The Little Rascals",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Tommy-bond-now.jpg/330px-Tommy-bond-now.jpg",
+    "palabraClave": "rascals"
+  },
+  {
+    "nombre": "Dennis the Menace",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Dennis_the_Menace_nose_art.jpg/330px-Dennis_the_Menace_nose_art.jpg",
+    "palabraClave": "menace"
+  },
+  {
+    "nombre": "Three Men and a Baby",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Baby_Sandy_Cine_M411.jpg/330px-Baby_Sandy_Cine_M411.jpg",
+    "palabraClave": "baby"
+  },
+  {
+    "nombre": "Spy Kids",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/TexasStateCapitol-2010-02.JPG/330px-TexasStateCapitol-2010-02.JPG",
+    "palabraClave": "kids"
+  },
+  {
+    "nombre": "The Goonies",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Goonies_letras.jpg/330px-Goonies_letras.jpg",
+    "palabraClave": "goonies"
+  },
+  {
+    "nombre": "E.T. the Extra-Terrestrial",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/ET_logo.svg/langes-330px-ET_logo.svg.png",
+    "palabraClave": "extraterrestrial"
+  },
+  {
+    "nombre": "Ghostbusters",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Ghostbusters_2016_logo.png/330px-Ghostbusters_2016_logo.png",
+    "palabraClave": "ghostbusters"
+  },
+  {
+    "nombre": "Bill & Ted's Excellent Adventure",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/bc/Bill_%26_Ted.jpg",
+    "palabraClave": "adventure"
+  },
+  {
+    "nombre": "Ferris Bueller's Day Off",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/1961-ferrari-rc.jpg/330px-1961-ferrari-rc.jpg",
+    "palabraClave": "off"
+  },
+  {
+    "nombre": "Forrest Gump",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Forrestgump-logo.svg/langes-330px-Forrestgump-logo.svg.png",
+    "palabraClave": "gump"
+  },
+  {
+    "nombre": "The Princess Diaries",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/The_Princess_Diaries_2_logo.svg/langes-330px-The_Princess_Diaries_2_logo.svg.png",
+    "palabraClave": "diaries"
+  }
+]

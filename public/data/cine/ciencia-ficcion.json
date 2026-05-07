@@ -1,0 +1,157 @@
+[
+  {
+    "nombre": "2001: A Space Odyssey",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/2001_A_Space_Odyssey_en.svg/langes-330px-2001_A_Space_Odyssey_en.svg.png",
+    "palabraClave": "odyssey"
+  },
+  {
+    "nombre": "Blade Runner",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Blade_Runner_computer_game_%28without_CD_cover%29.jpg/330px-Blade_Runner_computer_game_%28without_CD_cover%29.jpg",
+    "palabraClave": "runner"
+  },
+  {
+    "nombre": "Blade Runner 2049",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+    "palabraClave": "2049"
+  },
+  {
+    "nombre": "Alien",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DragonCon-AlienVsPredator.jpg/330px-DragonCon-AlienVsPredator.jpg",
+    "palabraClave": "alien"
+  },
+  {
+    "nombre": "Aliens",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/fb/Aliens_poster.jpg",
+    "palabraClave": "aliens"
+  },
+  {
+    "nombre": "E.T. the Extra-Terrestrial",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/ET_logo.svg/langes-330px-ET_logo.svg.png",
+    "palabraClave": "extraterrestrial"
+  },
+  {
+    "nombre": "Close Encounters of the Third Kind",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubsy_in_Claws_Encounters_of_the_Furred_Kind_%281993%29_logo_official_%28SGDB_111937%29.png/330px-Bubsy_in_Claws_Encounters_of_the_Furred_Kind_%281993%29_logo_official_%28SGDB_111937%29.png",
+    "palabraClave": "kind"
+  },
+  {
+    "nombre": "Back to the Future",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Back-to-the-future-logo.svg/langes-330px-Back-to-the-future-logo.svg.png",
+    "palabraClave": "future"
+  },
+  {
+    "nombre": "Back to the Future Part II",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Delorean5.jpg/330px-Delorean5.jpg",
+    "palabraClave": "ii"
+  },
+  {
+    "nombre": "Back to the Future Part III",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/ExpoSYFY_-_Back_to_the_Future_%2810756982993%29.jpg/330px-ExpoSYFY_-_Back_to_the_Future_%2810756982993%29.jpg",
+    "palabraClave": "iii"
+  },
+  {
+    "nombre": "The Matrix",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The.Matrix.glmatrix.2.png/330px-The.Matrix.glmatrix.2.png",
+    "palabraClave": "matrix"
+  },
+  {
+    "nombre": "Inception",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+    "palabraClave": "inception"
+  },
+  {
+    "nombre": "Interstellar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Interstellar-logo.jpg/330px-Interstellar-logo.jpg",
+    "palabraClave": "interstellar"
+  },
+  {
+    "nombre": "Tenet",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/ChrisNolanBFI150224_%2810_of_12%29_%2853532289710%29_%28cropped2%29.jpg/330px-ChrisNolanBFI150224_%2810_of_12%29_%2853532289710%29_%28cropped2%29.jpg",
+    "palabraClave": "tenet"
+  },
+  {
+    "nombre": "Arrival",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Bouddha_Edamasa_1934.jpg/330px-Bouddha_Edamasa_1934.jpg",
+    "palabraClave": "arrival"
+  },
+  {
+    "nombre": "Ex Machina",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Florence_and_the_Machine_12_09_2018_-11_%2832834296408%29_%28cropped%29.jpg/330px-Florence_and_the_Machine_12_09_2018_-11_%2832834296408%29_%28cropped%29.jpg",
+    "palabraClave": "machina"
+  },
+  {
+    "nombre": "Annihilation",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f6/Annihilation_%28film%29.png",
+    "palabraClave": "annihilation"
+  },
+  {
+    "nombre": "Dune",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dune_Frank_Herbert_logo.svg/langes-330px-Dune_Frank_Herbert_logo.svg.png",
+    "palabraClave": "dune"
+  },
+  {
+    "nombre": "Gravity",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gravity_%28movie_logo%29.jpg/330px-Gravity_%28movie_logo%29.jpg",
+    "palabraClave": "gravity"
+  },
+  {
+    "nombre": "The Martian",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg",
+    "palabraClave": "martian"
+  },
+  {
+    "nombre": "Edge of Tomorrow",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Bridget_Jones_L%27%C3%A2ge_de_raison_logo.JPG/330px-Bridget_Jones_L%27%C3%A2ge_de_raison_logo.JPG",
+    "palabraClave": "tomorrow"
+  },
+  {
+    "nombre": "Minority Report",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Lexus_2054_Minority_Report_concept1.jpg/330px-Lexus_2054_Minority_Report_concept1.jpg",
+    "palabraClave": "report"
+  },
+  {
+    "nombre": "A.I. Artificial Intelligence",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e6/AI_Poster.jpg",
+    "palabraClave": "intelligence"
+  },
+  {
+    "nombre": "I, Robot",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Irobot_head.jpg/330px-Irobot_head.jpg",
+    "palabraClave": "robot"
+  },
+  {
+    "nombre": "Planet of the Apes",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Heston_and_harrison_planet_of_the_apes.jpg/330px-Heston_and_harrison_planet_of_the_apes.jpg",
+    "palabraClave": "apes"
+  },
+  {
+    "nombre": "District 9",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Garment-district-39th-and-ninth.JPG/330px-Garment-district-39th-and-ninth.JPG",
+    "palabraClave": "9"
+  },
+  {
+    "nombre": "Moon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/20210604_Moon_So-ri_%EB%AC%B8%EC%86%8C%EB%A6%AC_Marie_Claire_Korea_%282%29.jpg/330px-20210604_Moon_So-ri_%EB%AC%B8%EC%86%8C%EB%A6%AC_Marie_Claire_Korea_%282%29.jpg",
+    "palabraClave": "moon"
+  },
+  {
+    "nombre": "Snowpiercer",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Snowpiercer_%28TV_series%29_Title_Card.png",
+    "palabraClave": "snowpiercer"
+  },
+  {
+    "nombre": "Looper",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Star_Wars-_The_Last_Jedi_Japan_Premiere_Red_Carpet-_Rian_Johnson_%2838905495792%29.jpg/330px-Star_Wars-_The_Last_Jedi_Japan_Premiere_Red_Carpet-_Rian_Johnson_%2838905495792%29.jpg",
+    "palabraClave": "looper"
+  },
+  {
+    "nombre": "Source Code",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Source_Code_Pro_-_sample.svg/langes-330px-Source_Code_Pro_-_sample.svg.png",
+    "palabraClave": "code"
+  },
+  {
+    "nombre": "Her",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Spike_Jonze_-_Her.jpg/330px-Spike_Jonze_-_Her.jpg",
+    "palabraClave": "her"
+  }
+]

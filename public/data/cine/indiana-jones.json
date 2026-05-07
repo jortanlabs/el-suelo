@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "Raiders of the Lost Ark",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Indy%27s_Arc.jpg/330px-Indy%27s_Arc.jpg",
+    "palabraClave": "ark"
+  },
+  {
+    "nombre": "Indiana Jones and the Temple of Doom",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/10/Indiana_Jones_and_the_Temple_of_Doom_PosterB.jpg",
+    "palabraClave": "doom"
+  },
+  {
+    "nombre": "Indiana Jones and the Last Crusade",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/ExpoSYFY_-_Indiana_Jones_and_the_Last_Crusade_%2810746697934%29.jpg/330px-ExpoSYFY_-_Indiana_Jones_and_the_Last_Crusade_%2810746697934%29.jpg",
+    "palabraClave": "crusade"
+  },
+  {
+    "nombre": "Indiana Jones and the Kingdom of the Crystal Skull",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Image_of_Mauna_Kea_from_the_Hilo_suburbs.jpg/330px-Image_of_Mauna_Kea_from_the_Hilo_suburbs.jpg",
+    "palabraClave": "skull"
+  },
+  {
+    "nombre": "Indiana Jones and the Dial of Destiny",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Indiana_Jones_e_il_quadrante_del_destino_logo.jpg/330px-Indiana_Jones_e_il_quadrante_del_destino_logo.jpg",
+    "palabraClave": "destiny"
+  },
+  {
+    "nombre": "Holy Grail",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Die_Ritter_der_Kokosnuss_Logo.png/330px-Die_Ritter_der_Kokosnuss_Logo.png",
+    "palabraClave": "grail"
+  },
+  {
+    "nombre": "Henry Walton Jones Jr.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Indianajones4.jpg/330px-Indianajones4.jpg",
+    "palabraClave": "jr"
+  },
+  {
+    "nombre": "Marion Ravenwood",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Karenallen17_cropped.jpg",
+    "palabraClave": "ravenwood"
+  },
+  {
+    "nombre": "Harrison Ford",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Harrison_Ford_by_Gage_Skidmore_3.jpg/330px-Harrison_Ford_by_Gage_Skidmore_3.jpg",
+    "palabraClave": "ford"
+  },
+  {
+    "nombre": "Steven Spielberg",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/MKr25425_Steven_Spielberg_%28Berlinale_2023%29.jpg/330px-MKr25425_Steven_Spielberg_%28Berlinale_2023%29.jpg",
+    "palabraClave": "spielberg"
+  },
+  {
+    "nombre": "George Lucas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/George_Lucas_cropped_2009.jpg/330px-George_Lucas_cropped_2009.jpg",
+    "palabraClave": "lucas"
+  },
+  {
+    "nombre": "Grail",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Mary_Sargant_Florence.jpg",
+    "palabraClave": "grail"
+  },
+  {
+    "nombre": "René Belloq",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Paul_Freeman.jpg/330px-Paul_Freeman.jpg",
+    "palabraClave": "belloq"
+  },
+  {
+    "nombre": "Walter Donovan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Julian_Glover_2014_%28cropped%29.jpg/330px-Julian_Glover_2014_%28cropped%29.jpg",
+    "palabraClave": "donovan"
+  }
+]

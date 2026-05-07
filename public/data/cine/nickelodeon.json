@@ -1,0 +1,147 @@
+[
+  {
+    "nombre": "SpongeBob SquarePants",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bob_esponja_logotipo.svg/langes-330px-Bob_esponja_logotipo.svg.png",
+    "palabraClave": "squarepants"
+  },
+  {
+    "nombre": "Patrick Star",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Patrick_Stewart_by_Gage_Skidmore_2.jpg/330px-Patrick_Stewart_by_Gage_Skidmore_2.jpg",
+    "palabraClave": "star"
+  },
+  {
+    "nombre": "Sandy Cheeks",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Carolyn_Lawrence_%28cropped%29.jpg/330px-Carolyn_Lawrence_%28cropped%29.jpg",
+    "palabraClave": "cheeks"
+  },
+  {
+    "nombre": "Mr. Krabs",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Mr_Krabs_character.png",
+    "palabraClave": "krabs"
+  },
+  {
+    "nombre": "Gary the Snail",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png",
+    "palabraClave": "snail"
+  },
+  {
+    "nombre": "Plankton",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Diatoms_through_the_microscope.jpg/330px-Diatoms_through_the_microscope.jpg",
+    "palabraClave": "plankton"
+  },
+  {
+    "nombre": "Tommy Pickles",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tommy_Pickles_character.png/330px-Tommy_Pickles_character.png",
+    "palabraClave": "pickles"
+  },
+  {
+    "nombre": "Chuckie Finster",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Rugrats_logo2.png/330px-Rugrats_logo2.png",
+    "palabraClave": "finster"
+  },
+  {
+    "nombre": "Phil DeVille",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Phil_lesh_12-06-2013.jpg/330px-Phil_lesh_12-06-2013.jpg",
+    "palabraClave": "deville"
+  },
+  {
+    "nombre": "Arnold",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%C2%A1Oye_Arnold%21_Logo_en_espa%C3%B1ol.png/330px-%C2%A1Oye_Arnold%21_Logo_en_espa%C3%B1ol.png",
+    "palabraClave": "arnold"
+  },
+  {
+    "nombre": "Helga Pataki",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Hey_Arnold%21_The_Jungle_Movie_logo.png/330px-Hey_Arnold%21_The_Jungle_Movie_logo.png",
+    "palabraClave": "pataki"
+  },
+  {
+    "nombre": "Gerald",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Canada_location_map_2.svg/langes-330px-Canada_location_map_2.svg.png",
+    "palabraClave": "gerald"
+  },
+  {
+    "nombre": "Timmy Turner",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/4/42/AFairlyOddMoviePoster.jpg",
+    "palabraClave": "turner"
+  },
+  {
+    "nombre": "Cosmo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Timmy_Turner.png/330px-Timmy_Turner.png",
+    "palabraClave": "cosmo"
+  },
+  {
+    "nombre": "Aang",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Japan_Expo_2024_-_Cosplay_of_Aang.jpg/330px-Japan_Expo_2024_-_Cosplay_of_Aang.jpg",
+    "palabraClave": "aang"
+  },
+  {
+    "nombre": "Katara",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Katara_character.png/330px-Katara_character.png",
+    "palabraClave": "katara"
+  },
+  {
+    "nombre": "Sokka",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Logo_de_Avatar_la_leyenda_de_Aang.png/330px-Logo_de_Avatar_la_leyenda_de_Aang.png",
+    "palabraClave": "sokka"
+  },
+  {
+    "nombre": "Toph Beifong",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Toph_cosplay_1.jpg/330px-Toph_cosplay_1.jpg",
+    "palabraClave": "beifong"
+  },
+  {
+    "nombre": "Azula",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Fire_Lord_Azula_cosplay_at_Katsucon_2015.jpg/330px-Fire_Lord_Azula_cosplay_at_Katsucon_2015.jpg",
+    "palabraClave": "azula"
+  },
+  {
+    "nombre": "Invader Zim",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Invader_Zim_comic_logo.png/330px-Invader_Zim_comic_logo.png",
+    "palabraClave": "zim"
+  },
+  {
+    "nombre": "Danny Phantom",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/09/Neues_Danny_Phantom_Logo.jpg",
+    "palabraClave": "phantom"
+  },
+  {
+    "nombre": "Leonardo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Francesco_Melzi_-_Portrait_of_Leonardo_-_WGA14795.jpg/330px-Francesco_Melzi_-_Portrait_of_Leonardo_-_WGA14795.jpg",
+    "palabraClave": "leonardo"
+  },
+  {
+    "nombre": "Michelangelo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg/330px-Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg",
+    "palabraClave": "michelangelo"
+  },
+  {
+    "nombre": "Raphael",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Raphael_at_2014_MIFF.jpg/330px-Raphael_at_2014_MIFF.jpg",
+    "palabraClave": "raphael"
+  },
+  {
+    "nombre": "Donatello",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Uffizi_Donatello.jpg/330px-Uffizi_Donatello.jpg",
+    "palabraClave": "donatello"
+  },
+  {
+    "nombre": "Shredder",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Shredder_C2E2_2016_%2825670012540%29.jpg/330px-Shredder_C2E2_2016_%2825670012540%29.jpg",
+    "palabraClave": "shredder"
+  },
+  {
+    "nombre": "Rocko",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Rocko%27s_Modern_Life_logo.png/330px-Rocko%27s_Modern_Life_logo.png",
+    "palabraClave": "rocko"
+  },
+  {
+    "nombre": "CatDog",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Peter_Hannan_holding_up_CatDog.jpg/330px-Peter_Hannan_holding_up_CatDog.jpg",
+    "palabraClave": "catdog"
+  },
+  {
+    "nombre": "Lincoln Loud",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Loud_House_logo.svg/langes-330px-The_Loud_House_logo.svg.png",
+    "palabraClave": "loud"
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "nombre": "Grease",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Film_Grease_met_John_Travolta_nog_steeds_succes_lang_rij_wachtenden_voor_bios%2C_Bestanddeelnr_930-0604.jpg/330px-Film_Grease_met_John_Travolta_nog_steeds_succes_lang_rij_wachtenden_voor_bios%2C_Bestanddeelnr_930-0604.jpg",
+    "palabraClave": "grease"
+  },
+  {
+    "nombre": "Mamma Mia!",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Mamma_Mia%21_at_Teatro_Coliseum_in_Madrid.jpg/330px-Mamma_Mia%21_at_Teatro_Coliseum_in_Madrid.jpg",
+    "palabraClave": "mia"
+  },
+  {
+    "nombre": "La La Land",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spiral-jetty-from-rozel-point.png/330px-Spiral-jetty-from-rozel-point.png",
+    "palabraClave": "land"
+  },
+  {
+    "nombre": "Chicago",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Chicago_River_ferry_b.jpg/330px-Chicago_River_ferry_b.jpg",
+    "palabraClave": "chicago"
+  },
+  {
+    "nombre": "West Side Story",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/West_Side_Story_1961_film_poster.jpg/330px-West_Side_Story_1961_film_poster.jpg",
+    "palabraClave": "story"
+  },
+  {
+    "nombre": "The Sound of Music",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/The_Sound_of_Music_Christopher_Plummer_and_Julie_Andrews.jpg/330px-The_Sound_of_Music_Christopher_Plummer_and_Julie_Andrews.jpg",
+    "palabraClave": "music"
+  },
+  {
+    "nombre": "Mary Poppins",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mary_Poppins_Returns_Logo_Black.svg/langes-330px-Mary_Poppins_Returns_Logo_Black.svg.png",
+    "palabraClave": "poppins"
+  },
+  {
+    "nombre": "Singin' in the Rain",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Singin%27_in_the_Rain_%281952_poster%29.jpg/330px-Singin%27_in_the_Rain_%281952_poster%29.jpg",
+    "palabraClave": "rain"
+  },
+  {
+    "nombre": "An American in Paris",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/An_American_in_Paris_%281951_film_poster%29.jpg/330px-An_American_in_Paris_%281951_film_poster%29.jpg",
+    "palabraClave": "paris"
+  },
+  {
+    "nombre": "Funny Girl",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/88/FunnyGirlPoster.jpg",
+    "palabraClave": "girl"
+  },
+  {
+    "nombre": "The Wizard of Oz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/WIZARD_OF_OZ_ORIGINAL_POSTER_1939.jpg/330px-WIZARD_OF_OZ_ORIGINAL_POSTER_1939.jpg",
+    "palabraClave": "oz"
+  },
+  {
+    "nombre": "Cabaret",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Moulin_Rouge_dsc07334.jpg/330px-Moulin_Rouge_dsc07334.jpg",
+    "palabraClave": "cabaret"
+  },
+  {
+    "nombre": "Sweeney Todd: The Demon Barber of Fleet Street",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/4/4b/Sweeneylarge.jpg",
+    "palabraClave": "street"
+  },
+  {
+    "nombre": "Les Misérables",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cosette-sweeping-les-miserables-emile-bayard-1862.jpg/330px-Cosette-sweeping-les-miserables-emile-bayard-1862.jpg",
+    "palabraClave": "miserables"
+  },
+  {
+    "nombre": "Into the Woods",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Into_the_Woods_%284117107651%29.jpg/330px-Into_the_Woods_%284117107651%29.jpg",
+    "palabraClave": "woods"
+  },
+  {
+    "nombre": "The Greatest Showman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Greatest_Showman.png/330px-The_Greatest_Showman.png",
+    "palabraClave": "showman"
+  },
+  {
+    "nombre": "Bohemian Rhapsody",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bohemian_Rhapsody_cast_on_MTV_Movies.jpg/330px-Bohemian_Rhapsody_cast_on_MTV_Movies.jpg",
+    "palabraClave": "rhapsody"
+  },
+  {
+    "nombre": "Rocketman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Baltasar_Korm%C3%A1kur-68717.jpg/330px-Baltasar_Korm%C3%A1kur-68717.jpg",
+    "palabraClave": "rocketman"
+  },
+  {
+    "nombre": "Mamma Mia! Here We Go Again",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mamma_Mia%21_Here_We_Go_Again_logo%28edited%29.png/330px-Mamma_Mia%21_Here_We_Go_Again_logo%28edited%29.png",
+    "palabraClave": "again"
+  },
+  {
+    "nombre": "Hairspray",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/34809_Torpoint_-_Flickr_-_megabus13601.jpg/330px-34809_Torpoint_-_Flickr_-_megabus13601.jpg",
+    "palabraClave": "hairspray"
+  },
+  {
+    "nombre": "High School Musical",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/High_School_Musical_Text_Logo.png/330px-High_School_Musical_Text_Logo.png",
+    "palabraClave": "musical"
+  },
+  {
+    "nombre": "Pitch Perfect",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Pitch_perfect.png/330px-Pitch_perfect.png",
+    "palabraClave": "perfect"
+  },
+  {
+    "nombre": "Dirty Dancing",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Logo_Dirty_Dancing.svg/langes-330px-Logo_Dirty_Dancing.svg.png",
+    "palabraClave": "dancing"
+  },
+  {
+    "nombre": "Footloose",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e4/FootloosePoster.jpg",
+    "palabraClave": "footloose"
+  },
+  {
+    "nombre": "Saturday Night Fever",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Disco_Ball3.jpg/330px-Disco_Ball3.jpg",
+    "palabraClave": "fever"
+  },
+  {
+    "nombre": "Evita",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Eva_Per%C3%B3n_vestida_lujosamente.jpg/330px-Eva_Per%C3%B3n_vestida_lujosamente.jpg",
+    "palabraClave": "evita"
+  },
+  {
+    "nombre": "Rent",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Rent_at_Nederlander_Theatre_in_Broadway.jpg/330px-Rent_at_Nederlander_Theatre_in_Broadway.jpg",
+    "palabraClave": "rent"
+  },
+  {
+    "nombre": "The Phantom of the Opera",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/The_Phantom_of_the_Opera_title_card.jpg/330px-The_Phantom_of_the_Opera_title_card.jpg",
+    "palabraClave": "opera"
+  },
+  {
+    "nombre": "Beauty and the Beast",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Crane_beauty5.jpg/330px-Crane_beauty5.jpg",
+    "palabraClave": "beast"
+  }
+]
