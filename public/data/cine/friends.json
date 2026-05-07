@@ -1,12 +1,152 @@
 [
   {
+    "nombre": "Rachel Green",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/JenniferAnistonFeb09.jpg/330px-JenniferAnistonFeb09.jpg",
+    "palabraClave": "green"
+  },
+  {
     "nombre": "Monica Geller",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d0/Courteney_Cox_as_Monica_Geller.jpg",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0f/CourteneyCoxFeb09.jpg",
     "palabraClave": "geller"
   },
   {
+    "nombre": "Phoebe Buffay",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Lisa_Kudrow_3.jpg",
+    "palabraClave": "buffay"
+  },
+  {
     "nombre": "Ross Geller",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6f/David_Schwimmer_as_Ross_Geller.jpg",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/David_Schwimmer.jpg/330px-David_Schwimmer.jpg",
     "palabraClave": "geller"
+  },
+  {
+    "nombre": "Chandler Bing",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Matthew_Perry_2013.jpg/330px-Matthew_Perry_2013.jpg",
+    "palabraClave": "bing"
+  },
+  {
+    "nombre": "Joey Tribbiani",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Matt_leblanc_1995_emmy_awards.jpg/330px-Matt_leblanc_1995_emmy_awards.jpg",
+    "palabraClave": "tribbiani"
+  },
+  {
+    "nombre": "Janice",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/J%C3%A9ne.JPG/330px-J%C3%A9ne.JPG",
+    "palabraClave": "janice"
+  },
+  {
+    "nombre": "Gunther",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Peter_von_Cornelius_Hagen_versenkt_den_Nibelungenhort_1859.jpg/330px-Peter_von_Cornelius_Hagen_versenkt_den_Nibelungenhort_1859.jpg",
+    "palabraClave": "gunther"
+  },
+  {
+    "nombre": "Richard Burke",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Richard_Burke%2C_April_1983_%28cropped%29.jpg/330px-Richard_Burke%2C_April_1983_%28cropped%29.jpg",
+    "palabraClave": "burke"
+  },
+  {
+    "nombre": "Susan Bunch",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Brady_Bunch_full_cast_1973.JPG/330px-Brady_Bunch_full_cast_1973.JPG",
+    "palabraClave": "bunch"
+  },
+  {
+    "nombre": "Charlie Wheeler",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ted_Wheeler_portrait.jpg/330px-Ted_Wheeler_portrait.jpg",
+    "palabraClave": "wheeler"
+  },
+  {
+    "nombre": "David el Científico",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Happy_Tree_Friends_Logo.svg/langes-330px-Happy_Tree_Friends_Logo.svg.png",
+    "palabraClave": "cientifico"
+  },
+  {
+    "nombre": "Tag Jones",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Eddie_Cahill_SDCC_2014_%28cropped%29.jpg/330px-Eddie_Cahill_SDCC_2014_%28cropped%29.jpg",
+    "palabraClave": "jones"
+  },
+  {
+    "nombre": "Marcel el Mono",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mart%C3%ADn_Fabio.jpg/330px-Mart%C3%ADn_Fabio.jpg",
+    "palabraClave": "mono"
+  },
+  {
+    "nombre": "Paolo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Leocadio.jpg/330px-Leocadio.jpg",
+    "palabraClave": "paolo"
+  },
+  {
+    "nombre": "Barry Farber",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Barry_Farber.jpg",
+    "palabraClave": "farber"
+  },
+  {
+    "nombre": "Mindy Hunter",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ike_Barinholtz_%282018_crop%29.jpg/330px-Ike_Barinholtz_%282018_crop%29.jpg",
+    "palabraClave": "hunter"
+  },
+  {
+    "nombre": "Alice Knight",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Debra_Jo_Rupp_%2840443370043%29_%28cropped%29.jpg/330px-Debra_Jo_Rupp_%2840443370043%29_%28cropped%29.jpg",
+    "palabraClave": "knight"
+  },
+  {
+    "nombre": "Tommy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Tommy-Trash-Portrait.jpg/330px-Tommy-Trash-Portrait.jpg",
+    "palabraClave": "tommy"
+  },
+  {
+    "nombre": "Mona",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/IVAM_-_Mona_Hatoum.jpg/330px-IVAM_-_Mona_Hatoum.jpg",
+    "palabraClave": "mona"
+  },
+  {
+    "nombre": "Elizabeth Stevens",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Alexandra_Holden_%287505483532%29.jpg/330px-Alexandra_Holden_%287505483532%29.jpg",
+    "palabraClave": "stevens"
+  },
+  {
+    "nombre": "Danny",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Danny_Devito_supporting_John_Kerry_%2801%29.jpg/330px-Danny_Devito_supporting_John_Kerry_%2801%29.jpg",
+    "palabraClave": "danny"
+  },
+  {
+    "nombre": "Kathy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Caterin_Escobar.png/330px-Caterin_Escobar.png",
+    "palabraClave": "kathy"
+  },
+  {
+    "nombre": "Kate Miller",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/KateWinslet_%28cropped%29.jpg/330px-KateWinslet_%28cropped%29.jpg",
+    "palabraClave": "miller"
+  },
+  {
+    "nombre": "Gary",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Are_%27Friends%27_Electric%3F_by_Tubeway_Army_UK_vinyl_single.png/330px-Are_%27Friends%27_Electric%3F_by_Tubeway_Army_UK_vinyl_single.png",
+    "palabraClave": "gary"
+  },
+  {
+    "nombre": "Central Perk",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Friends_Central_Perk_couch.jpg/330px-Friends_Central_Perk_couch.jpg",
+    "palabraClave": "perk"
+  },
+  {
+    "nombre": "Smelly Cat",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Friends_Again.jpg/330px-Friends_Again.jpg",
+    "palabraClave": "cat"
+  },
+  {
+    "nombre": "Los de la puerta de enfrente",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/MADRID_100206_UDCI_023.jpg/330px-MADRID_100206_UDCI_023.jpg",
+    "palabraClave": "enfrente"
+  },
+  {
+    "nombre": "El pollo de Joey",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0b/RobotchickenTest.png",
+    "palabraClave": "joey"
+  },
+  {
+    "nombre": "Nueva York",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg/330px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg",
+    "palabraClave": "york"
   }
 ]

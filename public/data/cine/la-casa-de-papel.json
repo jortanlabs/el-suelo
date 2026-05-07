@@ -1,8 +1,58 @@
 [
   {
+    "nombre": "El Profesor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Wandgem%C3%A4lde_Alba_Flores_-_Nairobi_-_Venloer_Stra%C3%9Fe_274%2C_K%C3%B6ln-Ehrenfeld-7360.jpg/330px-Wandgem%C3%A4lde_Alba_Flores_-_Nairobi_-_Venloer_Stra%C3%9Fe_274%2C_K%C3%B6ln-Ehrenfeld-7360.jpg",
+    "palabraClave": "profesor"
+  },
+  {
+    "nombre": "Berlín",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg/330px-Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg",
+    "palabraClave": "berlin"
+  },
+  {
+    "nombre": "Tokio",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Shinjuku_central_park_southwest.jpg/330px-Shinjuku_central_park_southwest.jpg",
+    "palabraClave": "tokio"
+  },
+  {
+    "nombre": "Nairobi",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Nairobi_Montage_A.jpg/330px-Nairobi_Montage_A.jpg",
+    "palabraClave": "nairobi"
+  },
+  {
+    "nombre": "Río",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Horseshoe_Bend_TC_27-09-2012_15-34-14.jpg/330px-Horseshoe_Bend_TC_27-09-2012_15-34-14.jpg",
+    "palabraClave": "rio"
+  },
+  {
+    "nombre": "Denver",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Montage_Denver.jpg/330px-Montage_Denver.jpg",
+    "palabraClave": "denver"
+  },
+  {
     "nombre": "Moscú",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg/330px-Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg",
     "palabraClave": "moscu"
+  },
+  {
+    "nombre": "Palermo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Montage_of_Palermo.jpg/330px-Montage_of_Palermo.jpg",
+    "palabraClave": "palermo"
+  },
+  {
+    "nombre": "Helsinki",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Helsinki_montage_2015.jpg/330px-Helsinki_montage_2015.jpg",
+    "palabraClave": "helsinki"
+  },
+  {
+    "nombre": "Oslo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Oslo_newer_montage_2013.png/330px-Oslo_newer_montage_2013.png",
+    "palabraClave": "oslo"
+  },
+  {
+    "nombre": "Estocolmo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Dramaten_September_2012.jpg/330px-Dramaten_September_2012.jpg",
+    "palabraClave": "estocolmo"
   },
   {
     "nombre": "Bogotá",
@@ -15,8 +65,78 @@
     "palabraClave": "manila"
   },
   {
+    "nombre": "Marsella",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mucem_et_Cath%C3%A9drale_Sainte-Marie-Majeure_de_Marseille.jpg/330px-Mucem_et_Cath%C3%A9drale_Sainte-Marie-Majeure_de_Marseille.jpg",
+    "palabraClave": "marsella"
+  },
+  {
+    "nombre": "Raquel Murillo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Bartolom%C3%A9_Esteban_Murillo_-_Autorretrato.jpg/330px-Bartolom%C3%A9_Esteban_Murillo_-_Autorretrato.jpg",
+    "palabraClave": "murillo"
+  },
+  {
+    "nombre": "Arturo Román",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Enriquearce.jpg",
+    "palabraClave": "roman"
+  },
+  {
+    "nombre": "Ángel Rubio",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Miguel_Herr%C3%A1n_at_82nd_Venice_International_Film_Festival-1_%28cropped%29.jpg/330px-Miguel_Herr%C3%A1n_at_82nd_Venice_International_Film_Festival-1_%28cropped%29.jpg",
+    "palabraClave": "rubio"
+  },
+  {
+    "nombre": "Mónica Gaztambide",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Esther_Acebo.jpg/330px-Esther_Acebo.jpg",
+    "palabraClave": "gaztambide"
+  },
+  {
+    "nombre": "Gandia",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bandera_de_Gandia.svg/langes-330px-Bandera_de_Gandia.svg.png",
+    "palabraClave": "gandia"
+  },
+  {
+    "nombre": "Tatiana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Tatiana_Nikolaevna.jpg/330px-Tatiana_Nikolaevna.jpg",
+    "palabraClave": "tatiana"
+  },
+  {
     "nombre": "Sagasta",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Pr%C3%A1xedes_Mateo_Sagasta_por_Christian_Franzen_%28edit%29.jpg/330px-Pr%C3%A1xedes_Mateo_Sagasta_por_Christian_Franzen_%28edit%29.jpg",
     "palabraClave": "sagasta"
+  },
+  {
+    "nombre": "Suárez",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Blas%C3%B3n_del_II_Conde_de_Feria.jpg/330px-Blas%C3%B3n_del_II_Conde_de_Feria.jpg",
+    "palabraClave": "suarez"
+  },
+  {
+    "nombre": "El mono rojo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Monkey_brains.jpg/330px-Monkey_brains.jpg",
+    "palabraClave": "rojo"
+  },
+  {
+    "nombre": "Máscara de Dalí",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Salvador_Dal%C3%AD_1939.jpg/330px-Salvador_Dal%C3%AD_1939.jpg",
+    "palabraClave": "dali"
+  },
+  {
+    "nombre": "Bella Ciao",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/BellaCiao_Accordion.png/330px-BellaCiao_Accordion.png",
+    "palabraClave": "ciao"
+  },
+  {
+    "nombre": "La Casa de Papel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/GrantHomeParlor.JPG/330px-GrantHomeParlor.JPG",
+    "palabraClave": "papel"
+  },
+  {
+    "nombre": "El Banco de España",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Banco_de_Espa%C3%B1a_%28Madrid%29_06.jpg/330px-Banco_de_Espa%C3%B1a_%28Madrid%29_06.jpg",
+    "palabraClave": "espana"
+  },
+  {
+    "nombre": "La Fábrica Nacional de Moneda",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/FNMT_%28Madrid%29_06.jpg/330px-FNMT_%28Madrid%29_06.jpg",
+    "palabraClave": "moneda"
   }
 ]

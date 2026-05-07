@@ -1,7 +1,117 @@
 [
   {
-    "nombre": "Joyce Byers",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/54/Joyce_Byers.png",
+    "nombre": "Eleven",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Millie_Bobby_Brown_-_MBB_-_Portrait_1_-_SFM5_-_July_10%2C_2022_at_Stranger_Fan_Meet_5_People_Convention.jpg/330px-Millie_Bobby_Brown_-_MBB_-_Portrait_1_-_SFM5_-_July_10%2C_2022_at_Stranger_Fan_Meet_5_People_Convention.jpg",
+    "palabraClave": "eleven"
+  },
+  {
+    "nombre": "Mike Wheeler",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Finn_Wolfhard_by_Gage_Skidmore_2.jpg/330px-Finn_Wolfhard_by_Gage_Skidmore_2.jpg",
+    "palabraClave": "wheeler"
+  },
+  {
+    "nombre": "Dustin Henderson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Gaten_matarazzo_2022_1.jpg/330px-Gaten_matarazzo_2022_1.jpg",
+    "palabraClave": "henderson"
+  },
+  {
+    "nombre": "Lucas Sinclair",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Caleb_mclaughlin_2022_3.jpg/330px-Caleb_mclaughlin_2022_3.jpg",
+    "palabraClave": "sinclair"
+  },
+  {
+    "nombre": "Will Byers",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Noah_Schnapp_by_Gage_Skidmore.jpg/330px-Noah_Schnapp_by_Gage_Skidmore.jpg",
     "palabraClave": "byers"
+  },
+  {
+    "nombre": "Joyce Byers",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Winona_Ryder_2010_TIFF.jpg/330px-Winona_Ryder_2010_TIFF.jpg",
+    "palabraClave": "byers"
+  },
+  {
+    "nombre": "Jim Hopper",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/David_Harbour_by_Gage_Skidmore.jpg/330px-David_Harbour_by_Gage_Skidmore.jpg",
+    "palabraClave": "hopper"
+  },
+  {
+    "nombre": "Nancy Wheeler",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Natalia_Dyer_by_Gage_Skidmore.jpg/330px-Natalia_Dyer_by_Gage_Skidmore.jpg",
+    "palabraClave": "wheeler"
+  },
+  {
+    "nombre": "Steve Harrington",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Joe_Keery_by_Gage_Skidmore.jpg/330px-Joe_Keery_by_Gage_Skidmore.jpg",
+    "palabraClave": "harrington"
+  },
+  {
+    "nombre": "Billy Hargrove",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Dacre_Montgomery_by_Gage_Skidmore.jpg/330px-Dacre_Montgomery_by_Gage_Skidmore.jpg",
+    "palabraClave": "hargrove"
+  },
+  {
+    "nombre": "Max Mayfield",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sadie_Sink_%2843914734441%29.jpg/330px-Sadie_Sink_%2843914734441%29.jpg",
+    "palabraClave": "mayfield"
+  },
+  {
+    "nombre": "Robin Buckley",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/William_F._Buckley%2C_Jr._1985.jpg/330px-William_F._Buckley%2C_Jr._1985.jpg",
+    "palabraClave": "buckley"
+  },
+  {
+    "nombre": "Eddie Munson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Joseph_Quinn_en_2022.jpg/330px-Joseph_Quinn_en_2022.jpg",
+    "palabraClave": "munson"
+  },
+  {
+    "nombre": "Erica Sinclair",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Priah_Ferguson_in_2019.png",
+    "palabraClave": "sinclair"
+  },
+  {
+    "nombre": "Murray Bauman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Brett_Gelman_by_Gage_Skidmore.jpg/330px-Brett_Gelman_by_Gage_Skidmore.jpg",
+    "palabraClave": "bauman"
+  },
+  {
+    "nombre": "Bob Newby",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Callum_Blue.jpg/330px-Callum_Blue.jpg",
+    "palabraClave": "newby"
+  },
+  {
+    "nombre": "Dr. Martin Brenner",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Matthew_Modine_by_Gage_Skidmore.jpg/330px-Matthew_Modine_by_Gage_Skidmore.jpg",
+    "palabraClave": "brenner"
+  },
+  {
+    "nombre": "El Demogorgon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Demogorgon_in_de_Grot_van_de_Eeuwigheid._NL-HlmNHA_1477_53008515_M.JPG/330px-Demogorgon_in_de_Grot_van_de_Eeuwigheid._NL-HlmNHA_1477_53008515_M.JPG",
+    "palabraClave": "demogorgon"
+  },
+  {
+    "nombre": "Vecna",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jamie_Campbell_Bower_by_Gage_Skidmore%2C_2013.jpg/330px-Jamie_Campbell_Bower_by_Gage_Skidmore%2C_2013.jpg",
+    "palabraClave": "vecna"
+  },
+  {
+    "nombre": "El Mundo del Revés",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/330px-Stranger_Things_logo.png",
+    "palabraClave": "reves"
+  },
+  {
+    "nombre": "Dungeons & Dragons",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/PHBR1_TSR2110_The_Complete_Fighter%27s_Handbook_AD%26D_2nd_Edition.jpg/330px-PHBR1_TSR2110_The_Complete_Fighter%27s_Handbook_AD%26D_2nd_Edition.jpg",
+    "palabraClave": "dragons"
+  },
+  {
+    "nombre": "Eggo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Toaster_waffles_with_maple_syrup.jpg/330px-Toaster_waffles_with_maple_syrup.jpg",
+    "palabraClave": "eggo"
+  },
+  {
+    "nombre": "Joyce con el alfabeto",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nuria_Barrios_y_John_Banville_-_38556525416_%28cropped%29.jpg/330px-Nuria_Barrios_y_John_Banville_-_38556525416_%28cropped%29.jpg",
+    "palabraClave": "alfabeto"
   }
 ]

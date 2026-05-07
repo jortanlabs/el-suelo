@@ -1,7 +1,172 @@
 [
   {
+    "nombre": "Walter White",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bryan_Cranston_%289362420359%29.jpg/330px-Bryan_Cranston_%289362420359%29.jpg",
+    "palabraClave": "white"
+  },
+  {
+    "nombre": "Jesse Pinkman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Aaron_Paul_%287598828942%29.jpg/330px-Aaron_Paul_%287598828942%29.jpg",
+    "palabraClave": "pinkman"
+  },
+  {
+    "nombre": "Skyler White",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Anna_Gunn_by_Gage_Skidmore_3.jpg/330px-Anna_Gunn_by_Gage_Skidmore_3.jpg",
+    "palabraClave": "white"
+  },
+  {
+    "nombre": "Hank Schrader",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Dean_Norris_by_Gage_Skidmore_3.jpg/330px-Dean_Norris_by_Gage_Skidmore_3.jpg",
+    "palabraClave": "schrader"
+  },
+  {
+    "nombre": "Marie Schrader",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Betsy_Brandt_by_Gage_Skidmore.jpg/330px-Betsy_Brandt_by_Gage_Skidmore.jpg",
+    "palabraClave": "schrader"
+  },
+  {
+    "nombre": "Walter White Jr.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/RJ_Mitte_April_2015.jpg/330px-RJ_Mitte_April_2015.jpg",
+    "palabraClave": "jr"
+  },
+  {
+    "nombre": "Gus Fring",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Giancarlo_Esposito_2012_2.jpg/330px-Giancarlo_Esposito_2012_2.jpg",
+    "palabraClave": "fring"
+  },
+  {
+    "nombre": "Saul Goodman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Bob_Odenkirk_by_Gage_Skidmore_2.jpg/330px-Bob_Odenkirk_by_Gage_Skidmore_2.jpg",
+    "palabraClave": "goodman"
+  },
+  {
     "nombre": "Mike Ehrmantraut",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/ea/Mike_Ehrmantraut_BCS_S3.png",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Jonathan_Banks_2012_2.jpg/330px-Jonathan_Banks_2012_2.jpg",
     "palabraClave": "ehrmantraut"
+  },
+  {
+    "nombre": "Jane Margolis",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/langes-330px-Breaking_Bad_logo.svg.png",
+    "palabraClave": "margolis"
+  },
+  {
+    "nombre": "Tuco Salamanca",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Raymond_Cruz_February_2015.jpg/330px-Raymond_Cruz_February_2015.jpg",
+    "palabraClave": "salamanca"
+  },
+  {
+    "nombre": "Héctor Salamanca",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Tony_Dalton_%28cropped%29.jpg/330px-Tony_Dalton_%28cropped%29.jpg",
+    "palabraClave": "salamanca"
+  },
+  {
+    "nombre": "Marco Salamanca",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Bandera_de_Salamanca1.svg/langes-330px-Bandera_de_Salamanca1.svg.png",
+    "palabraClave": "salamanca"
+  },
+  {
+    "nombre": "Leonel Salamanca",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Daniel_Moncada_by_Gage_Skidmore.jpg/330px-Daniel_Moncada_by_Gage_Skidmore.jpg",
+    "palabraClave": "salamanca"
+  },
+  {
+    "nombre": "Lydia Rodarte-Quayle",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Laura_Fraser_At_Premiere_of_The_Boys_Are_Back_%28cropped%29.jpg/330px-Laura_Fraser_At_Premiere_of_The_Boys_Are_Back_%28cropped%29.jpg",
+    "palabraClave": "rodartequayle"
+  },
+  {
+    "nombre": "Todd Alquist",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Jesse_Plemons.png/330px-Jesse_Plemons.png",
+    "palabraClave": "alquist"
+  },
+  {
+    "nombre": "Uncle Jack",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dean_Norris_by_Gage_Skidmore_2.jpg/330px-Dean_Norris_by_Gage_Skidmore_2.jpg",
+    "palabraClave": "jack"
+  },
+  {
+    "nombre": "Steven Gomez",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bryan_G%C3%B3mez_Campeonato_nacional_de_ruta_de_Colombia_2018.jpg/330px-Bryan_G%C3%B3mez_Campeonato_nacional_de_ruta_de_Colombia_2018.jpg",
+    "palabraClave": "gomez"
+  },
+  {
+    "nombre": "Andrea Cantillo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Emilyrios.jpg/330px-Emilyrios.jpg",
+    "palabraClave": "cantillo"
+  },
+  {
+    "nombre": "Badger",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Breaking_Bad_Season_2_Episode_08_%22Better_Call_Saul%22.jpg/330px-Breaking_Bad_Season_2_Episode_08_%22Better_Call_Saul%22.jpg",
+    "palabraClave": "badger"
+  },
+  {
+    "nombre": "Skinny Pete",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/El_Camino_-_PTB-GRE.svg/langes-330px-El_Camino_-_PTB-GRE.svg.png",
+    "palabraClave": "pete"
+  },
+  {
+    "nombre": "Huell Babineaux",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/LavellCrawfordByPhilKonstantin.JPG/330px-LavellCrawfordByPhilKonstantin.JPG",
+    "palabraClave": "babineaux"
+  },
+  {
+    "nombre": "Patrick Kuby",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bill_Burr_by_Gage_Skidmore.jpg/330px-Bill_Burr_by_Gage_Skidmore.jpg",
+    "palabraClave": "kuby"
+  },
+  {
+    "nombre": "Emilio Koyama",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Misano_World_Circuit_2007.svg/langes-330px-Misano_World_Circuit_2007.svg.png",
+    "palabraClave": "koyama"
+  },
+  {
+    "nombre": "Krazy-8",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png",
+    "palabraClave": "krazy8"
+  },
+  {
+    "nombre": "Don Eladio",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eladio_Rodr%C3%ADguez_Gonz%C3%A1lez_1926.jpg/330px-Eladio_Rodr%C3%ADguez_Gonz%C3%A1lez_1926.jpg",
+    "palabraClave": "eladio"
+  },
+  {
+    "nombre": "Juan Bolsa",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Torre_Axtel_y_Bolsa_de_Valores.jpg/330px-Torre_Axtel_y_Bolsa_de_Valores.jpg",
+    "palabraClave": "bolsa"
+  },
+  {
+    "nombre": "Gaff",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d9/Breaking_Bad_season_4_DVD.png",
+    "palabraClave": "gaff"
+  },
+  {
+    "nombre": "La RV",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/4/4e/El_camino_bb_film_poster.jpg",
+    "palabraClave": "rv"
+  },
+  {
+    "nombre": "El laboratorio de metanfetamina",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Metamfetamine_enantiomers_ball-and-stick_models_from_xtal.png/330px-Metamfetamine_enantiomers_ball-and-stick_models_from_xtal.png",
+    "palabraClave": "metanfetamina"
+  },
+  {
+    "nombre": "Heisenberg",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Bundesarchiv_Bild183-R57262%2C_Werner_Heisenberg.jpg/330px-Bundesarchiv_Bild183-R57262%2C_Werner_Heisenberg.jpg",
+    "palabraClave": "heisenberg"
+  },
+  {
+    "nombre": "Albuquerque",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Albuquerque%2C_New_Mexico_skyline.jpg/330px-Albuquerque%2C_New_Mexico_skyline.jpg",
+    "palabraClave": "albuquerque"
+  },
+  {
+    "nombre": "El coche de Walter",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Poliedro_de_Caracas.jpg/330px-Poliedro_de_Caracas.jpg",
+    "palabraClave": "walter"
+  },
+  {
+    "nombre": "La ropa interior amarilla",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Denim_shirt_and_leggings.jpg/330px-Denim_shirt_and_leggings.jpg",
+    "palabraClave": "amarilla"
   }
 ]

@@ -1,12 +1,87 @@
 [
   {
+    "nombre": "Emilio Delgado",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fernando_Tejero_-_Seminci_2012.jpg/330px-Fernando_Tejero_-_Seminci_2012.jpg",
+    "palabraClave": "delgado"
+  },
+  {
+    "nombre": "Mauri Castellano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_C%C3%B3rdoba%2C_Spain.svg/langes-330px-Flag_of_C%C3%B3rdoba%2C_Spain.svg.png",
+    "palabraClave": "castellano"
+  },
+  {
+    "nombre": "Paloma Cuesta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/ANHQV.svg/langes-330px-ANHQV.svg.png",
+    "palabraClave": "cuesta"
+  },
+  {
+    "nombre": "Lucía Alcántara",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ana_Cristina_Garc%C3%ADa_Alc%C3%A1zar.jpg/330px-Ana_Cristina_Garc%C3%ADa_Alc%C3%A1zar.jpg",
+    "palabraClave": "alcantara"
+  },
+  {
     "nombre": "Concha",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Seashells_by_designerd_cc-by-sa-2.0.jpg/330px-Seashells_by_designerd_cc-by-sa-2.0.jpg",
     "palabraClave": "concha"
   },
   {
+    "nombre": "Doña Dolores",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Parroquia_de_Nuestra_Se%C3%B1ora_de_los_Dolores_en_Dolores_Hidalgo%2C_Guanajuato%2C_M%C3%A9xico.jpg/330px-Parroquia_de_Nuestra_Se%C3%B1ora_de_los_Dolores_en_Dolores_Hidalgo%2C_Guanajuato%2C_M%C3%A9xico.jpg",
+    "palabraClave": "dolores"
+  },
+  {
+    "nombre": "Juan Cuesta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Jos%C3%A9_Luis_Gil.jpg/330px-Jos%C3%A9_Luis_Gil.jpg",
+    "palabraClave": "cuesta"
+  },
+  {
+    "nombre": "Lola Alcántara",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Cu%C3%A9ntame_c%C3%B3mo_pas%C3%B3_%2822.%C2%AA_temporada%29.jpg/330px-Cu%C3%A9ntame_c%C3%B3mo_pas%C3%B3_%2822.%C2%AA_temporada%29.jpg",
+    "palabraClave": "alcantara"
+  },
+  {
+    "nombre": "Alicia Barredo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Antonio_Tejero.jpg/330px-Antonio_Tejero.jpg",
+    "palabraClave": "barredo"
+  },
+  {
+    "nombre": "Eric",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Nacho_Guerreros.jpg/330px-Nacho_Guerreros.jpg",
+    "palabraClave": "eric"
+  },
+  {
     "nombre": "Belén",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bethlehem_collage.jpg/330px-Bethlehem_collage.jpg",
     "palabraClave": "belen"
+  },
+  {
+    "nombre": "El comunero",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Monolito-villalar.jpg/330px-Monolito-villalar.jpg",
+    "palabraClave": "comunero"
+  },
+  {
+    "nombre": "La junta de vecinos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Junta_De_Vecinos.png/330px-Junta_De_Vecinos.png",
+    "palabraClave": "vecinos"
+  },
+  {
+    "nombre": "El portal del edificio",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Altos_del_Portal.jpg/330px-Altos_del_Portal.jpg",
+    "palabraClave": "edificio"
+  },
+  {
+    "nombre": "La portería",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bogorodica_Stadium_in_winter.jpg/330px-Bogorodica_Stadium_in_winter.jpg",
+    "palabraClave": "porteria"
+  },
+  {
+    "nombre": "La escalera del edificio",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Loretto_Chapel.jpg/330px-Loretto_Chapel.jpg",
+    "palabraClave": "edificio"
+  },
+  {
+    "nombre": "Calle Desengaño 21",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/68/Daniel_Guzm%C3%A1n.jpg",
+    "palabraClave": "21"
   }
 ]

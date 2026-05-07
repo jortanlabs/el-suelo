@@ -1,7 +1,217 @@
 [
   {
+    "nombre": "Frodo Bolsón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Frodo_by_Mark_Ferrari.jpg/330px-Frodo_by_Mark_Ferrari.jpg",
+    "palabraClave": "bolson"
+  },
+  {
+    "nombre": "Sam Gamyi",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Paisaje_de_la_Comarca.jpg/330px-Paisaje_de_la_Comarca.jpg",
+    "palabraClave": "gamyi"
+  },
+  {
+    "nombre": "Gandalf",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/GANDALF.jpg/330px-GANDALF.jpg",
+    "palabraClave": "gandalf"
+  },
+  {
+    "nombre": "Aragorn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Aragorn.png/330px-Aragorn.png",
+    "palabraClave": "aragorn"
+  },
+  {
+    "nombre": "Legolas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Legolas_Greenleaf_by_Benjamin_Drake.png/330px-Legolas_Greenleaf_by_Benjamin_Drake.png",
+    "palabraClave": "legolas"
+  },
+  {
+    "nombre": "Gimli",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Gimli.png/330px-Gimli.png",
+    "palabraClave": "gimli"
+  },
+  {
+    "nombre": "Boromir",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Boromir.png/330px-Boromir.png",
+    "palabraClave": "boromir"
+  },
+  {
+    "nombre": "Pippin",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/LotR21.png/330px-LotR21.png",
+    "palabraClave": "pippin"
+  },
+  {
+    "nombre": "Gollum",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Gollum_s_journey_commences_by_Frederic_Bennett_%28detail%29.jpg/330px-Gollum_s_journey_commences_by_Frederic_Bennett_%28detail%29.jpg",
+    "palabraClave": "gollum"
+  },
+  {
+    "nombre": "Sauron",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Dark_Lord_Sauron.jpg/330px-Dark_Lord_Sauron.jpg",
+    "palabraClave": "sauron"
+  },
+  {
+    "nombre": "Saruman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Curun%C3%ADr.jpg/330px-Curun%C3%ADr.jpg",
+    "palabraClave": "saruman"
+  },
+  {
+    "nombre": "Arwen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Arwen_by_Anna_Kulisz.jpg/330px-Arwen_by_Anna_Kulisz.jpg",
+    "palabraClave": "arwen"
+  },
+  {
+    "nombre": "Elrond",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cour_interieure_Fondcombe.jpg/330px-Cour_interieure_Fondcombe.jpg",
+    "palabraClave": "elrond"
+  },
+  {
+    "nombre": "Galadriel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Ficha_de_Tengwar.png",
+    "palabraClave": "galadriel"
+  },
+  {
+    "nombre": "Éowyn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%C3%89owyn_de_Rohan.jpg/330px-%C3%89owyn_de_Rohan.jpg",
+    "palabraClave": "eowyn"
+  },
+  {
+    "nombre": "Éomer",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Karl_Urban_by_Gage_Skidmore.jpg/330px-Karl_Urban_by_Gage_Skidmore.jpg",
+    "palabraClave": "eomer"
+  },
+  {
+    "nombre": "Faramir",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Faramir-tj01.JPG/330px-Faramir-tj01.JPG",
+    "palabraClave": "faramir"
+  },
+  {
+    "nombre": "Balrog",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gothmog%2C_Lord_of_Balrogs.jpg/330px-Gothmog%2C_Lord_of_Balrogs.jpg",
+    "palabraClave": "balrog"
+  },
+  {
+    "nombre": "Ella-Laraña",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Calle_Lara%C3%B1a_%28Sevilla%29.jpg/330px-Calle_Lara%C3%B1a_%28Sevilla%29.jpg",
+    "palabraClave": "ellalarana"
+  },
+  {
+    "nombre": "Rey Brujo de Angmar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Rey_Brujo_de_Angmar.jpg/330px-Rey_Brujo_de_Angmar.jpg",
+    "palabraClave": "angmar"
+  },
+  {
+    "nombre": "Bárbol",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4d/TREEBEARD.jpg",
+    "palabraClave": "barbol"
+  },
+  {
+    "nombre": "Glorfindel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/The_Fall_of_Turgon%27s_Tower.jpg/330px-The_Fall_of_Turgon%27s_Tower.jpg",
+    "palabraClave": "glorfindel"
+  },
+  {
+    "nombre": "Bilbo Bolsón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Over_Hill_-_Bilbo_and_Gandalf_by_Joel_Lee.jpg/330px-Over_Hill_-_Bilbo_and_Gandalf_by_Joel_Lee.jpg",
+    "palabraClave": "bolson"
+  },
+  {
+    "nombre": "Thorin Escudo de Roble",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Thorin_in_blue_mountains.jpg/330px-Thorin_in_blue_mountains.jpg",
+    "palabraClave": "roble"
+  },
+  {
+    "nombre": "Balin",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Thehobbittrilogy.png",
+    "palabraClave": "balin"
+  },
+  {
+    "nombre": "Thranduil",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Elvenking_by_Nolwyn.jpg/330px-Elvenking_by_Nolwyn.jpg",
+    "palabraClave": "thranduil"
+  },
+  {
+    "nombre": "Smaug",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Smaug_par_David_Demaret.jpg/330px-Smaug_par_David_Demaret.jpg",
+    "palabraClave": "smaug"
+  },
+  {
+    "nombre": "Radagast",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Radagast_the_Brown%2C_Weta_Exhibit%2C_Seoul%2C_South_Korea_%2815153582065%29.jpg/330px-Radagast_the_Brown%2C_Weta_Exhibit%2C_Seoul%2C_South_Korea_%2815153582065%29.jpg",
+    "palabraClave": "radagast"
+  },
+  {
+    "nombre": "Rosita Cotton",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Niamh_Kavanagh_in_Oslo_2010.jpg/330px-Niamh_Kavanagh_in_Oslo_2010.jpg",
+    "palabraClave": "cotton"
+  },
+  {
     "nombre": "Tom Bombadil",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tom_Bombadil_frees_the_Hobbits_from_Old_Man_Willow.jpg/330px-Tom_Bombadil_frees_the_Hobbits_from_Old_Man_Willow.jpg",
     "palabraClave": "bombadil"
+  },
+  {
+    "nombre": "Mordor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mordor.jpg/330px-Mordor.jpg",
+    "palabraClave": "mordor"
+  },
+  {
+    "nombre": "El Anillo Único",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Unico_Anello.png/330px-Unico_Anello.png",
+    "palabraClave": "unico"
+  },
+  {
+    "nombre": "Rohan",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_Rohan.svg/langes-330px-Flag_of_Rohan.svg.png",
+    "palabraClave": "rohan"
+  },
+  {
+    "nombre": "Gondor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_Gondor.svg/langes-330px-Flag_of_Gondor.svg.png",
+    "palabraClave": "gondor"
+  },
+  {
+    "nombre": "Minas Tirith",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Minas-Tirith-Rama-c.svg/langes-330px-Minas-Tirith-Rama-c.svg.png",
+    "palabraClave": "tirith"
+  },
+  {
+    "nombre": "Helm's Deep",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Dana_Warrior_and_Corey_Graves_181115-D-SW162-3107_%2845861489382%29_%28cropped%29.jpg/330px-Dana_Warrior_and_Corey_Graves_181115-D-SW162-3107_%2845861489382%29_%28cropped%29.jpg",
+    "palabraClave": "deep"
+  },
+  {
+    "nombre": "Ungoliant",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Morgoth_y_Ungoliant.jpg/330px-Morgoth_y_Ungoliant.jpg",
+    "palabraClave": "ungoliant"
+  },
+  {
+    "nombre": "Nazgûl",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Nazg%C3%BBl_mirando_el_crep%C3%BAsculo.jpg/330px-Nazg%C3%BBl_mirando_el_crep%C3%BAsculo.jpg",
+    "palabraClave": "nazgul"
+  },
+  {
+    "nombre": "Uruk-hai",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a1/Lord_Rings_Two_Towers.jpg",
+    "palabraClave": "urukhai"
+  },
+  {
+    "nombre": "Ent",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Beardtree_In_Fangorn_%2819169349%29.jpeg/330px-Beardtree_In_Fangorn_%2819169349%29.jpeg",
+    "palabraClave": "ent"
+  },
+  {
+    "nombre": "Palantír",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Alex_Karp_attends_AI_Summit_%2853302457013%29_4-5_ratio.jpg/330px-Alex_Karp_attends_AI_Summit_%2853302457013%29_4-5_ratio.jpg",
+    "palabraClave": "palantir"
+  },
+  {
+    "nombre": "Elfo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/%C3%84ngs%C3%A4lvor_-_Nils_Blomm%C3%A9r_1850.jpg/330px-%C3%84ngs%C3%A4lvor_-_Nils_Blomm%C3%A9r_1850.jpg",
+    "palabraClave": "elfo"
+  },
+  {
+    "nombre": "Hobbit",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Un_hobbit.jpg/330px-Un_hobbit.jpg",
+    "palabraClave": "hobbit"
   }
 ]

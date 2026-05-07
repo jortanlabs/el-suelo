@@ -1,12 +1,257 @@
 [
   {
-    "nombre": "Jaime Lannister",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b4/Jaime_Lannister-Nikolaj_Coster-Waldau.jpg",
+    "nombre": "Jon Nieve",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Jon_Snow_and_Ghost.jpg/330px-Jon_Snow_and_Ghost.jpg",
+    "palabraClave": "nieve"
+  },
+  {
+    "nombre": "Daenerys Targaryen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Daenerys.jpg/330px-Daenerys.jpg",
+    "palabraClave": "targaryen"
+  },
+  {
+    "nombre": "Tyrion Lannister",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/A_Song_of_Ice_and_Fire_arms_of_House_Lannister_red_scroll.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Lannister_red_scroll.png",
     "palabraClave": "lannister"
   },
   {
+    "nombre": "Cersei Lannister",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/IgroMir_2017_003.jpg/330px-IgroMir_2017_003.jpg",
+    "palabraClave": "lannister"
+  },
+  {
+    "nombre": "Jaime Lannister",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/New_York_Comic_Con_2015_-_Lannister_vs_Sons_of_the_Harpy_%2821858555090%29.jpg/330px-New_York_Comic_Con_2015_-_Lannister_vs_Sons_of_the_Harpy_%2821858555090%29.jpg",
+    "palabraClave": "lannister"
+  },
+  {
+    "nombre": "Arya Stark",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Arya_Stark_in_MultiVersus_3.png",
+    "palabraClave": "stark"
+  },
+  {
+    "nombre": "Sansa Stark",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/LBCC_2014_-_Game_of_Thrones_%2815383053186%29.jpg/330px-LBCC_2014_-_Game_of_Thrones_%2815383053186%29.jpg",
+    "palabraClave": "stark"
+  },
+  {
+    "nombre": "Ned Stark",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Lyanna_Stark.png/330px-Lyanna_Stark.png",
+    "palabraClave": "stark"
+  },
+  {
+    "nombre": "Robb Stark",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/93/A_Song_of_Ice_and_Fire_arms_of_House_Stark_running_direwolf_white_scroll.png",
+    "palabraClave": "stark"
+  },
+  {
+    "nombre": "Bran Stark",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Isaac_Hempstead-Wright_%28November_2011%29_%28headshot%29.jpg/330px-Isaac_Hempstead-Wright_%28November_2011%29_%28headshot%29.jpg",
+    "palabraClave": "stark"
+  },
+  {
+    "nombre": "Hodor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kristian_Nairn_by_Gage_Skidmore_2.jpg/330px-Kristian_Nairn_by_Gage_Skidmore_2.jpg",
+    "palabraClave": "hodor"
+  },
+  {
+    "nombre": "Joffrey Baratheon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Joffrey_Baratheon_Flag.png/330px-Joffrey_Baratheon_Flag.png",
+    "palabraClave": "baratheon"
+  },
+  {
+    "nombre": "Margaery Tyrell",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Cosplay_Show_%2820%29_%D0%BD%D0%B0_Geek_Picnic_2018_SPb.jpg/330px-Cosplay_Show_%2820%29_%D0%BD%D0%B0_Geek_Picnic_2018_SPb.jpg",
+    "palabraClave": "tyrell"
+  },
+  {
+    "nombre": "Olenna Tyrell",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/A_Song_of_Ice_and_Fire_arms_of_House_Tyrell_yellow_scroll.jpg/330px-A_Song_of_Ice_and_Fire_arms_of_House_Tyrell_yellow_scroll.jpg",
+    "palabraClave": "tyrell"
+  },
+  {
+    "nombre": "Stannis Baratheon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/A_Song_of_Ice_and_Fire_arms_of_House_Stannis_Baratheon_pixellated.jpg/330px-A_Song_of_Ice_and_Fire_arms_of_House_Stannis_Baratheon_pixellated.jpg",
+    "palabraClave": "baratheon"
+  },
+  {
+    "nombre": "Davos Seaworth",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/A_Song_of_Ice_and_Fire_arms_of_House_Seaworth.gif/330px-A_Song_of_Ice_and_Fire_arms_of_House_Seaworth.gif",
+    "palabraClave": "seaworth"
+  },
+  {
+    "nombre": "Brienne de Tarth",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2015_C2E2_Cosplay_-_Brienne_of_Tarth_%2816766397373%29_%28cropped%29.jpg/330px-2015_C2E2_Cosplay_-_Brienne_of_Tarth_%2816766397373%29_%28cropped%29.jpg",
+    "palabraClave": "tarth"
+  },
+  {
+    "nombre": "Samwell Tarly",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/John_Bradley_by_Gage_Skidmore_3.jpg/330px-John_Bradley_by_Gage_Skidmore_3.jpg",
+    "palabraClave": "tarly"
+  },
+  {
+    "nombre": "Gilly",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/80/Melisandre-Carice_van_Houten.jpg",
+    "palabraClave": "gilly"
+  },
+  {
+    "nombre": "El Perro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/86/Tr%C3%B4nedeFer1.png",
+    "palabraClave": "perro"
+  },
+  {
+    "nombre": "La Montaña",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Physical_map_of_Cantabria_-_Spain.png/330px-Physical_map_of_Cantabria_-_Spain.png",
+    "palabraClave": "montana"
+  },
+  {
+    "nombre": "Varys",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Dragon_Con_2013_Parade_-_Game_of_Thrones_%289678352411%29_%28cropped%29.jpg/330px-Dragon_Con_2013_Parade_-_Game_of_Thrones_%289678352411%29_%28cropped%29.jpg",
+    "palabraClave": "varys"
+  },
+  {
+    "nombre": "Oberyn Martell",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Pedro_Pascal_SDCC_2014.jpg/330px-Pedro_Pascal_SDCC_2014.jpg",
+    "palabraClave": "martell"
+  },
+  {
+    "nombre": "Ellaria Sand",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Indira_varma_by_sachyn_mital_%28cropped%29.jpg/330px-Indira_varma_by_sachyn_mital_%28cropped%29.jpg",
+    "palabraClave": "sand"
+  },
+  {
+    "nombre": "Missandei",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Nathalie_Emmanuel_at_82nd_Venice_International_Film_Festival-3.jpg/330px-Nathalie_Emmanuel_at_82nd_Venice_International_Film_Festival-3.jpg",
+    "palabraClave": "missandei"
+  },
+  {
+    "nombre": "Jorah Mormont",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Ian_glen.JPG/330px-Ian_glen.JPG",
+    "palabraClave": "mormont"
+  },
+  {
+    "nombre": "Daario Naharis",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ed_Skrein_%2821366540989%29.jpg/330px-Ed_Skrein_%2821366540989%29.jpg",
+    "palabraClave": "naharis"
+  },
+  {
+    "nombre": "Khal Drogo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Malta_Gozo%2C_Azure_Window_%2810264176345%29.jpg/330px-Malta_Gozo%2C_Azure_Window_%2810264176345%29.jpg",
+    "palabraClave": "drogo"
+  },
+  {
+    "nombre": "Viserys Targaryen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/House_Targaryen.png/330px-House_Targaryen.png",
+    "palabraClave": "targaryen"
+  },
+  {
+    "nombre": "Ramsay Bolton",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/House-Bolton-Main-Shield.png/330px-House-Bolton-Main-Shield.png",
+    "palabraClave": "bolton"
+  },
+  {
     "nombre": "Theon Greyjoy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/51/Theon_Greyjoy-Alfie_Allen.jpg",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/A_Song_of_Ice_and_Fire_arms_of_House_Greyjoy_black_scroll.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Greyjoy_black_scroll.png",
     "palabraClave": "greyjoy"
+  },
+  {
+    "nombre": "Yara Greyjoy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Gemma_Whelan_%28cropped%29.jpg/330px-Gemma_Whelan_%28cropped%29.jpg",
+    "palabraClave": "greyjoy"
+  },
+  {
+    "nombre": "Bronn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Jerome_Flynn_2013_%28cropped%29.jpg/330px-Jerome_Flynn_2013_%28cropped%29.jpg",
+    "palabraClave": "bronn"
+  },
+  {
+    "nombre": "Podrick Payne",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Daniel_Portman_GCCDORTMUND_2016.JPG/330px-Daniel_Portman_GCCDORTMUND_2016.JPG",
+    "palabraClave": "payne"
+  },
+  {
+    "nombre": "Shireen Baratheon",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/A_Song_of_Ice_and_Fire_arms_of_House_Baratheon_yellow_scroll_English.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Baratheon_yellow_scroll_English.png",
+    "palabraClave": "baratheon"
+  },
+  {
+    "nombre": "Ygritte",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/32/Kit_harrington_by_sachyn_mital_%28cropped_2%29.jpg",
+    "palabraClave": "ygritte"
+  },
+  {
+    "nombre": "El Rey de la Noche",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Orsino_and_viola_Frederick_Richard_Pickersgill.jpg/330px-Orsino_and_viola_Frederick_Richard_Pickersgill.jpg",
+    "palabraClave": "noche"
+  },
+  {
+    "nombre": "Los Caminantes Blancos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Pasto_20060106_001.jpg/330px-Pasto_20060106_001.jpg",
+    "palabraClave": "blancos"
+  },
+  {
+    "nombre": "Grey Worm",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jacob_Anderson_by_Gage_Skidmore.jpg/330px-Jacob_Anderson_by_Gage_Skidmore.jpg",
+    "palabraClave": "worm"
+  },
+  {
+    "nombre": "Lysa Arryn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/A_Song_of_Ice_and_Fire_arms_of_House_Tully_red_scroll.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Tully_red_scroll.png",
+    "palabraClave": "arryn"
+  },
+  {
+    "nombre": "Robin Arryn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/A_Song_of_Ice_and_Fire_arms_of_House_Arryn_blue_scroll.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Arryn_blue_scroll.png",
+    "palabraClave": "arryn"
+  },
+  {
+    "nombre": "Petyr Baelish",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Aidan_Gillen_%28headshot%29.jpg",
+    "palabraClave": "baelish"
+  },
+  {
+    "nombre": "Ros",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Esm%C3%A9_Bianco_2014.jpg/330px-Esm%C3%A9_Bianco_2014.jpg",
+    "palabraClave": "ros"
+  },
+  {
+    "nombre": "Ser Barristan Selmy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ian_McElhinney_%28cropped%29.jpg/330px-Ian_McElhinney_%28cropped%29.jpg",
+    "palabraClave": "selmy"
+  },
+  {
+    "nombre": "Ilyn Payne",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Wilko_Johnson_en_2008.jpg/330px-Wilko_Johnson_en_2008.jpg",
+    "palabraClave": "payne"
+  },
+  {
+    "nombre": "Jaqen H'ghar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tom_Wlaschiha_June_2013_%28headshot%29.jpg/330px-Tom_Wlaschiha_June_2013_%28headshot%29.jpg",
+    "palabraClave": "hghar"
+  },
+  {
+    "nombre": "Syrio Forel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Miltos_Yerolemou_Brussels_Comic_Con_2018.jpg/330px-Miltos_Yerolemou_Brussels_Comic_Con_2018.jpg",
+    "palabraClave": "forel"
+  },
+  {
+    "nombre": "Trono de Hierro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Palacio_de_Hierro_Mexico.jpg/330px-Palacio_de_Hierro_Mexico.jpg",
+    "palabraClave": "hierro"
+  },
+  {
+    "nombre": "Desembarco del Rey",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/14._La_playa_de_Morro_Nuevo_en_los_d%C3%ADas_del_desembarco.jpg/330px-14._La_playa_de_Morro_Nuevo_en_los_d%C3%ADas_del_desembarco.jpg",
+    "palabraClave": "rey"
+  },
+  {
+    "nombre": "La Guardia de la Noche",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/La_Guardia%2C_Bolivia_-_panoramio.jpg/330px-La_Guardia%2C_Bolivia_-_panoramio.jpg",
+    "palabraClave": "noche"
+  },
+  {
+    "nombre": "Los Dothraki",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg/330px-Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg",
+    "palabraClave": "dothraki"
   }
 ]

@@ -1,12 +1,137 @@
 [
   {
+    "nombre": "Ted Mosby",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Josh_Radnor_-_Sundance_Film_Festival_2013.jpg/330px-Josh_Radnor_-_Sundance_Film_Festival_2013.jpg",
+    "palabraClave": "mosby"
+  },
+  {
+    "nombre": "Lily Aldrin",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Alyson_Hannigan.jpg/330px-Alyson_Hannigan.jpg",
+    "palabraClave": "aldrin"
+  },
+  {
+    "nombre": "Marshall Eriksen",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Jason_Segel_2011.jpg/330px-Jason_Segel_2011.jpg",
+    "palabraClave": "eriksen"
+  },
+  {
+    "nombre": "Barney Stinson",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/5.3.10NeilPatrickHarrisByDavidShankbone.jpg/330px-5.3.10NeilPatrickHarrisByDavidShankbone.jpg",
+    "palabraClave": "stinson"
+  },
+  {
+    "nombre": "Robin Scherbatsky",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cobie_Smulders_%282009%29.jpg/330px-Cobie_Smulders_%282009%29.jpg",
+    "palabraClave": "scherbatsky"
+  },
+  {
+    "nombre": "Tracy McConnell",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Cristin_Milioti_July_13%2C_2014_%28cropped%29.jpg/330px-Cristin_Milioti_July_13%2C_2014_%28cropped%29.jpg",
+    "palabraClave": "mcconnell"
+  },
+  {
+    "nombre": "Victoria",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/HowIMetYourMother.svg/langes-330px-HowIMetYourMother.svg.png",
+    "palabraClave": "victoria"
+  },
+  {
+    "nombre": "Stella Zinman",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/SarahChalkeDec08.jpg/330px-SarahChalkeDec08.jpg",
+    "palabraClave": "zinman"
+  },
+  {
     "nombre": "Ranjit Singh",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Company_School_Oval_painting_of_Ranjit_%28Detailed%29.png/330px-Company_School_Oval_painting_of_Ranjit_%28Detailed%29.png",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Maharaj_Ranjit_Singh.jpg/330px-Maharaj_Ranjit_Singh.jpg",
     "palabraClave": "singh"
   },
   {
-    "nombre": "Marvin Eriksen Sr.",
+    "nombre": "Brad Morris",
     "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/How_I_Met_Your_Mother_%28cast%29.jpg/330px-How_I_Met_Your_Mother_%28cast%29.jpg",
+    "palabraClave": "morris"
+  },
+  {
+    "nombre": "Quinn Garvey",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Michael_Landon_Pa_Ingalls_Little_House_on_the_Prairie_1974.jpg/330px-Michael_Landon_Pa_Ingalls_Little_House_on_the_Prairie_1974.jpg",
+    "palabraClave": "garvey"
+  },
+  {
+    "nombre": "Becky",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e8/How_I_Met_Your_Father_%28Hulu_logo%29.png",
+    "palabraClave": "becky"
+  },
+  {
+    "nombre": "Marvin Eriksen Sr.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/BillFagerbakke.jpg/330px-BillFagerbakke.jpg",
     "palabraClave": "sr"
+  },
+  {
+    "nombre": "Jerry Whittaker",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/EdMcMahon05.jpg/330px-EdMcMahon05.jpg",
+    "palabraClave": "whittaker"
+  },
+  {
+    "nombre": "Sam Gibbs",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/TSM350_-_2015_-_Sam_Hornish_Jr_-_Stierch.jpg/330px-TSM350_-_2015_-_Sam_Hornish_Jr_-_Stierch.jpg",
+    "palabraClave": "gibbs"
+  },
+  {
+    "nombre": "Billie Zabka",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Elisabeth_Shue_at_the_2009_Tribeca_Film_Festival_2.jpg/330px-Elisabeth_Shue_at_the_2009_Tribeca_Film_Festival_2.jpg",
+    "palabraClave": "zabka"
+  },
+  {
+    "nombre": "Penelope",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Penelope_jacquacu01.jpg/330px-Penelope_jacquacu01.jpg",
+    "palabraClave": "penelope"
+  },
+  {
+    "nombre": "Dowisetrepla",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Maggie_Wheeler_2013.jpg/330px-Maggie_Wheeler_2013.jpg",
+    "palabraClave": "dowisetrepla"
+  },
+  {
+    "nombre": "El apartamento de Ted",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ted_%28film%29_logo.svg/langes-330px-Ted_%28film%29_logo.svg.png",
+    "palabraClave": "ted"
+  },
+  {
+    "nombre": "La silla de Bob",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/BobYoungJI1.jpg/330px-BobYoungJI1.jpg",
+    "palabraClave": "bob"
+  },
+  {
+    "nombre": "La leyenda del traje",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Goyas_2025_-_Natalia_Verbeke.jpg/330px-Goyas_2025_-_Natalia_Verbeke.jpg",
+    "palabraClave": "traje"
+  },
+  {
+    "nombre": "The Playbook",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/9/9a/Silver_Linings_Playbook_Poster.jpg",
+    "palabraClave": "playbook"
+  },
+  {
+    "nombre": "Canadian Heritage Minute",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Sunset_on_the_inuksuk_at_English_Bay.jpg/330px-Sunset_on_the_inuksuk_at_English_Bay.jpg",
+    "palabraClave": "minute"
+  },
+  {
+    "nombre": "Lily's Kibble",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Rubble_%26_Crew_Logo.png/330px-Rubble_%26_Crew_Logo.png",
+    "palabraClave": "kibble"
+  },
+  {
+    "nombre": "El Paraguas Amarillo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Casa_Amarilla_de_Caracas_-_2015.JPG/330px-Casa_Amarilla_de_Caracas_-_2015.JPG",
+    "palabraClave": "amarillo"
+  },
+  {
+    "nombre": "La chaqueta roja",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Clothing_of_Michael_Jackson_%28Grammy_Museum%29_July_2022_%283%29.JPG/330px-Clothing_of_Michael_Jackson_%28Grammy_Museum%29_July_2022_%283%29.JPG",
+    "palabraClave": "roja"
+  },
+  {
+    "nombre": "Marshall's map",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/SC_-_Confederate_Overlook_%285224666640%29.jpg/330px-SC_-_Confederate_Overlook_%285224666640%29.jpg",
+    "palabraClave": "map"
   }
 ]

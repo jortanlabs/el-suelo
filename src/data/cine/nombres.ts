@@ -577,7 +577,10 @@ export const subcategorias: SubcategoriaNombres[] = [
     subcategorias: [
       "harry-potter",
       "star-wars",
+      "tolkien",
+      "marvel",
       "dc",
+      "juego-de-tronos",
     ],
   },
   {
@@ -748,7 +751,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "💍",
     bloque: "fantasia",
     bloqueNombre: "Universos Fantásticos",
-    pendiente: true,
     nombres: [
       "Frodo Bolsón",
       "Sam Gamyi",
@@ -815,7 +817,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "🦸",
     bloque: "fantasia",
     bloqueNombre: "Universos Fantásticos",
-    pendiente: true,
     nombres: [
       "Iron Man",
       "Capitán América",
@@ -971,7 +972,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "👑",
     bloque: "fantasia",
     bloqueNombre: "Universos Fantásticos",
-    pendiente: true,
     nombres: [
       "Jon Nieve",
       "Daenerys Targaryen",
@@ -1055,8 +1055,15 @@ export const subcategorias: SubcategoriaNombres[] = [
     bloqueNombre: "Series",
     esMetaCategoria: true,
     subcategorias: [
+      "friends",
+      "himym",
       "big-bang-theory",
       "los-simpson",
+      "aqui-no-hay",
+      "los-serrano",
+      "la-casa-de-papel",
+      "breaking-bad",
+      "stranger-things",
     ],
   },
   {
@@ -1065,7 +1072,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "☕",
     bloque: "series",
     bloqueNombre: "Series",
-    pendiente: true,
     nombres: [
       "Rachel Green",
       "Monica Geller",
@@ -1123,7 +1129,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "🍍",
     bloque: "series",
     bloqueNombre: "Series",
-    pendiente: true,
     nombres: [
       "Ted Mosby",
       "Lily Aldrin",
@@ -1305,7 +1310,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "🏢",
     bloque: "series",
     bloqueNombre: "Series",
-    pendiente: true,
     nombres: [
       "Emilio Delgado (Aquí no hay quien viva)",
       "Mauri Castellano (Aquí no hay quien viva)",
@@ -1341,7 +1345,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "👨‍👩‍👧‍👦",
     bloque: "series",
     bloqueNombre: "Series",
-    pendiente: true,
     nombres: [
       "Diego Serrano (Los Serrano)",
       "Lucía de Castro (Los Serrano)",
@@ -1369,7 +1372,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "💰",
     bloque: "series",
     bloqueNombre: "Series",
-    pendiente: true,
     nombres: [
       "El Profesor (La Casa de Papel)",
       "Berlín (La Casa de Papel)",
@@ -1409,7 +1411,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "🧪",
     bloque: "series",
     bloqueNombre: "Series",
-    pendiente: true,
     nombres: [
       "Walter White",
       "Jesse Pinkman",
@@ -1459,7 +1460,6 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "🔴",
     bloque: "series",
     bloqueNombre: "Series",
-    pendiente: true,
     nombres: [
       "Eleven (Stranger Things)",
       "Mike Wheeler",

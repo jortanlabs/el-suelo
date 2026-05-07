@@ -1,7 +1,67 @@
 [
   {
+    "nombre": "Diego Serrano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2a/1924-11-26%2C_La_Palanca%2C_Manuel_Serrano_y_Sanz_%28cropped%29.jpg",
+    "palabraClave": "serrano"
+  },
+  {
+    "nombre": "Lucía de Castro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/LosSerrano.png/330px-LosSerrano.png",
+    "palabraClave": "castro"
+  },
+  {
+    "nombre": "Marcos Serrano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Marcos_Serrano.Ciclista_galego.jpg/330px-Marcos_Serrano.Ciclista_galego.jpg",
+    "palabraClave": "serrano"
+  },
+  {
+    "nombre": "Eva Serrano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Enrique_serrano.jpg/330px-Enrique_serrano.jpg",
+    "palabraClave": "serrano"
+  },
+  {
+    "nombre": "Fiti",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Cyprus_location_map.svg/langes-330px-Cyprus_location_map.svg.png",
+    "palabraClave": "fiti"
+  },
+  {
+    "nombre": "Carmen Serrano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/52/S%C3%BA%C3%B1er_en_Alemania.jpg",
+    "palabraClave": "serrano"
+  },
+  {
+    "nombre": "Gonzalo de Castro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Gonzalo_de_Castro_-_Tat.jpg/330px-Gonzalo_de_Castro_-_Tat.jpg",
+    "palabraClave": "castro"
+  },
+  {
+    "nombre": "Rita",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Retrato_de_Vicenta_Rita_Aguilar.png/330px-Retrato_de_Vicenta_Rita_Aguilar.png",
+    "palabraClave": "rita"
+  },
+  {
     "nombre": "Manolo",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/El_paseo_de_Andaluc%C3%ADa.jpg/330px-El_paseo_de_Andaluc%C3%ADa.jpg",
     "palabraClave": "manolo"
+  },
+  {
+    "nombre": "Paz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Peace_dove.svg/langes-330px-Peace_dove.svg.png",
+    "palabraClave": "paz"
+  },
+  {
+    "nombre": "Tito Serrano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Roly_Serrano_en_%22Nuestro_Teatro%22_%28cropped%29.jpg/330px-Roly_Serrano_en_%22Nuestro_Teatro%22_%28cropped%29.jpg",
+    "palabraClave": "serrano"
+  },
+  {
+    "nombre": "El bar de Diego",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Polemica_en_el_bar.jpg/330px-Polemica_en_el_bar.jpg",
+    "palabraClave": "diego"
+  },
+  {
+    "nombre": "La pandilla del barrio",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Latin_King.jpg/330px-Latin_King.jpg",
+    "palabraClave": "barrio"
   }
 ]
