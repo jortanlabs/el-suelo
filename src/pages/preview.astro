@@ -62,7 +62,8 @@ for (const s of leafSubcats) bySlugs[s.slug] = s.nombres;
     .btn-add:hover { border-color: #ffcc00; color: #ffcc00; }
 
     /* ── Items grid ── */
-    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 8px; }
+    .items-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+    @media (max-width: 500px) { .items-grid { grid-template-columns: repeat(3, 1fr); } }
 
     .item-card { background: #0a1628; border: 1px solid #163575; border-radius: 6px; overflow: hidden; }
     .item-card.no-img { border-color: #ff1dce33; }
