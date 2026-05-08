@@ -1,0 +1,226 @@
+[
+  {
+    "nombre": "Español",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWauxiA_4ZbVuJRYZShI7p7kwLzHWFHehjAA&s"
+  },
+  {
+    "nombre": "Inglés",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26NwrYeBDk3vAnO7Yhm1hRfwO1v0NMUzpnw&s"
+  },
+  {
+    "nombre": "Francés",
+    "imagen": "https://img.freepik.com/vector-premium/saludo-hola-frances-burbuja-habla-rosada-ilustracion-vectorial_644677-4360.jpg"
+  },
+  {
+    "nombre": "Alemán",
+    "imagen": "https://img.freepik.com/vector-premium/hallo-significa-hola-aleman-burbuja-habla-verde-ilustracion-vectorial-dibujada-mano-sobre-fondo-blanco_644677-4326.jpg"
+  },
+  {
+    "nombre": "Portugués",
+    "imagen": "https://previews.123rf.com/images/jpgon/jpgon1703/jpgon170302955/74730423-illustration-of-an-isolated-line-art-comic-balloon-with-the-text-hello-in-the-portuguese-language.jpg"
+  },
+  {
+    "nombre": "Italiano",
+    "imagen": "https://img.freepik.com/vector-premium/ciao-hola-idioma-italiano-ilustracion-vectorial-sobre-fondo-blanco_644677-4369.jpg"
+  },
+  {
+    "nombre": "Chino mandarín",
+    "imagen": "https://img.freepik.com/vector-premium/hao-ni-burbuja-habla-roja-hola-chino-ilustracion-vectorial-sobre-fondo-blanco_644677-4332.jpg"
+  },
+  {
+    "nombre": "Japonés",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WWbbZZx6X1bKwSfZJ8cOR2nMoESXLRo1xQ&s"
+  },
+  {
+    "nombre": "Árabe",
+    "imagen": "https://thumbs.dreamstime.com/b/marhaba-la-palabra-%C3%A1rabe-que-significa-hola-escrita-mano-en-un-fondo-blanco-171056348.jpg"
+  },
+  {
+    "nombre": "Ruso",
+    "imagen": "https://ih1.redbubble.net/image.4039788757.1860/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Hindi",
+    "imagen": "https://previews.123rf.com/images/sudowoodo/sudowoodo1606/sudowoodo160600031/58952679-hand-drawn-namaste-lettering-indian-greeting-hello-in-hindi-stylish-cursive-handwriting-modern.jpg"
+  },
+  {
+    "nombre": "Coreano",
+    "imagen": "https://ih1.redbubble.net/image.1921212866.8848/st,small,507x507-pad,600x600,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Neerlandés",
+    "imagen": "https://www.shutterstock.com/image-vector/hallo-herfst-quote-dutch-translated-260nw-2650531947.jpg"
+  },
+  {
+    "nombre": "Polaco",
+    "imagen": "https://i0.wp.com/cms.babbel.news/wp-content/uploads/2018/09/hallo-auf-polnisch-700.png?resize=640%2C360"
+  },
+  {
+    "nombre": "Sueco",
+    "imagen": "https://img.freepik.com/vector-premium/su-significado-hej-hola-sueco-ilustracion-vectorial-fondo-blanco_644677-2855.jpg"
+  },
+  {
+    "nombre": "Turco",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Xn55BL0sJmPi2yIC0p2mc7Qdx274fcXuWg&s"
+  },
+  {
+    "nombre": "Griego",
+    "imagen": "https://previews.123rf.com/images/jpgon/jpgon1708/jpgon170802266/84123159-illustration-of-a-isolated-square-flat-color-button-with-the-text-hello-in-the-greek-language.jpg"
+  },
+  {
+    "nombre": "Checo",
+    "imagen": "https://ih1.redbubble.net/image.1139072240.9570/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Rumano",
+    "imagen": "https://ih1.redbubble.net/image.2465505225.2028/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Húngaro",
+    "imagen": "https://ih1.redbubble.net/image.1138944103.9125/raf,750x1000,075,t,8DB3D2:e6f0370482.u4.webp"
+  },
+  {
+    "nombre": "Ucraniano",
+    "imagen": "https://www.shutterstock.com/image-vector/ukrainian-language-word-means-hi-260nw-2246096625.jpg"
+  },
+  {
+    "nombre": "Hebreo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdAlDQPlJ1zNKSpH5GqIQfD8ACn9UM7VMqeA&s"
+  },
+  {
+    "nombre": "Persa (Farsi)",
+    "imagen": "https://thumbs.dreamstime.com/b/la-inscripci%C3%B3n-saludo-salam-en-traducci%C3%B3n-de-azeri-significa-hola-227761157.jpg"
+  },
+  {
+    "nombre": "Indonesio",
+    "imagen": "https://i1.sndcdn.com/artworks-000218222581-r6cgyf-t1080x1080.jpg"
+  },
+  {
+    "nombre": "Malayo",
+    "imagen": "https://i5.walmartimages.com/asr/142b2e25-5294-4144-9afd-00c0b8d35de3.323c3087c150c793dc9e442083902793.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+  },
+  {
+    "nombre": "Bengalí",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlw0qluR80scsvH6BjTLC3NQPYlJ8p6flzOA&s"
+  },
+  {
+    "nombre": "Swahili",
+    "imagen": "https://preply.com/wp-content/uploads/0137.png"
+  },
+  {
+    "nombre": "Vietnamita",
+    "imagen": "https://preview.redd.it/hello-in-vietnamese-v0-cs8nbxwta85e1.jpeg?auto=webp&s=72465e3ea73f08ee21be7e228f02ff88dee39598"
+  },
+  {
+    "nombre": "Tailandés",
+    "imagen": "https://thumbs.dreamstime.com/b/sawasdee-palavra-tailandesa-que-significa-hello-escrita-%C3%A0-m%C3%A3o-sobre-fundo-branco-171056877.jpg"
+  },
+  {
+    "nombre": "Filipino (Tagalo)",
+    "imagen": "https://preply.com/wp-content/uploads/0129-820x470.png"
+  },
+  {
+    "nombre": "Catalán",
+    "imagen": "https://static1.ara.cat/clip/a9be87e0-d65f-48c2-801d-be94d1a4c7d6_16-9-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Euskera",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtTcOS9jeC7gs88dgXhFC3NNVRV7rcUjMANw&s"
+  },
+  {
+    "nombre": "Gallego",
+    "imagen": "https://m.media-amazon.com/images/I/41UmV+ZoEaL.jpg"
+  },
+  {
+    "nombre": "Finlandés",
+    "imagen": "https://ih1.redbubble.net/image.1138991831.8040/flat,750x,075,f-pad,750x1000,f8f8f8.u6.jpg"
+  },
+  {
+    "nombre": "Danés",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHM-iFPzsYvrIxbOL661r5Rzlx-3UODOkkEQ&s"
+  },
+  {
+    "nombre": "Noruego",
+    "imagen": "https://ih1.redbubble.net/image.1139499877.3731/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Serbio",
+    "imagen": "https://ih1.redbubble.net/image.1139106527.7568/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Croata",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLA98IIuLA6Q3EzJFG3YEfjF4cBNMZ333pAQ&s"
+  },
+  {
+    "nombre": "Búlgaro",
+    "imagen": "https://ih1.redbubble.net/image.1538203651.0130/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Eslovaco",
+    "imagen": "https://ih1.redbubble.net/image.614340825.2612/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg"
+  },
+  {
+    "nombre": "Esloveno",
+    "imagen": "https://thumbs.dreamstime.com/b/hola-en-idioma-esloveno-letras-ilustraci%C3%B3n-de-l%C3%A1piz-caligraf%C3%ADa-moderna-pincel-zivjo-traducci%C3%B3n-saludo-elemento-para-pancartas-258417732.jpg"
+  },
+  {
+    "nombre": "Albanés",
+    "imagen": "https://ih1.redbubble.net/image.2366984815.3262/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Macedonio",
+    "imagen": "https://ih1.redbubble.net/image.1538172487.0362/raf,750x1000,075,t,heather_mid_grey.jpg"
+  },
+  {
+    "nombre": "Lituano",
+    "imagen": "https://ih1.redbubble.net/image.2463867829.4317/st,small,507x507-pad,600x600,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Letón",
+    "imagen": "https://ih1.redbubble.net/image.614340825.2612/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg"
+  },
+  {
+    "nombre": "Estonio",
+    "imagen": "https://ih1.redbubble.net/image.5402614732.9157/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Islandés",
+    "imagen": "https://ih1.redbubble.net/image.1138934700.9954/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Galés",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuo13w-UDkEQJ74nC20My8xZPtw6oDNeY9Q&s"
+  },
+  {
+    "nombre": "Irlandés",
+    "imagen": "https://ih1.redbubble.net/image.1138908297.0796/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Maltés",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdymV-sU9fMS3Nr-TNUwAUsv4Zz2ioSvctlQ&s"
+  },
+  {
+    "nombre": "Afrikáans",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdoodYyxvI3BHyWynECTfw9dGL11Zgbu8Idw&s"
+  },
+  {
+    "nombre": "Hausa",
+    "imagen": "https://www.shutterstock.com/image-photo/words-sanu-on-white-background-260nw-2134954923.jpg"
+  },
+  {
+    "nombre": "Zulú",
+    "imagen": "https://www.wikihow.com/images/9/9a/Say-Hello-in-Different-Languages-Step-55.jpg"
+  },
+  {
+    "nombre": "Birmano",
+    "imagen": "https://png.pngtree.com/png-clipart/20230825/original/pngtree-burmese-boy-saying-hello-nationality-child-clip-vector-png-image_10648537.png"
+  },
+  {
+    "nombre": "Jemer (Camboyano)",
+    "imagen": "https://rlv.zcache.es/pegatina_hola_sua_sdei_en_jemer_escritura_camboyana-rb5b262b37eba4e2b9e423637ccebe004_07caf_644.webp?rlvnet=1"
+  },
+  {
+    "nombre": "Armenio",
+    "imagen": "https://m.media-amazon.com/images/I/51ZvHJiA6UL.jpg"
+  }
+]
