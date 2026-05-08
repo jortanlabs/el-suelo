@@ -1,192 +1,218 @@
 [
   {
-    "nombre": "Shrek",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Shrek_Forever_After_logo.png/330px-Shrek_Forever_After_logo.png",
-    "palabraClave": "shrek"
+    "nombre": "Shrek (Shrek)",
+    "imagen": "https://i.ytimg.com/vi/H-c1QNsfnTE/maxresdefault.jpg"
   },
   {
-    "nombre": "Fiona",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Russian_cosplay_fiona_shrek.jpg/330px-Russian_cosplay_fiona_shrek.jpg",
-    "palabraClave": "fiona"
+    "nombre": "Fiona (Shrek)",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BNGVlNmZkMjAtNTQ3OS00Njg1LTk2MWQtNWVmNmI0N2EzYjA4XkEyXkFqcGc@._V1_QL75_UY281_CR32,0,500,281_.jpg"
   },
   {
-    "nombre": "Burro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg/330px-Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg",
-    "palabraClave": "burro"
+    "nombre": "Burro (Shrek)",
+    "imagen": "https://static-live.nmas.com.mx/nmas-news/2025-01/shrek-muere-perry-burro-que-inspiro-personaje.jpg"
   },
   {
-    "nombre": "Gato con Botas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chat_pott%C3%A9.jpg/330px-Chat_pott%C3%A9.jpg",
-    "palabraClave": "botas"
+    "nombre": "Gato con Botas (Shrek)",
+    "imagen": "https://static.cdn.cadena3.com/admin/playerswf/fotos/ARCHI_865584.png"
   },
   {
-    "nombre": "Lord Farquaad",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/USJ-4D_Cinema.jpg/330px-USJ-4D_Cinema.jpg",
-    "palabraClave": "farquaad"
+    "nombre": "Lord Farquaad (Shrek)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRA3O70INdMKLct-GAeVw2_Vb2sa0UIOLg2Q&s"
   },
   {
-    "nombre": "Hada Madrina",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Shrek_The_Third_logo.png/330px-Shrek_The_Third_logo.png",
-    "palabraClave": "madrina"
+    "nombre": "Hada Madrina (Shrek 2)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR04_EcPw9YA0C5hSF5s8qvCHVI2qT_VYGjNg&s"
   },
   {
-    "nombre": "Príncipe Encantador",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Prince_of_Sleeping_Beauty.jpg/330px-Prince_of_Sleeping_Beauty.jpg",
-    "palabraClave": "encantador"
+    "nombre": "Príncipe Encantador (Shrek 2)",
+    "imagen": "https://static.wikia.nocookie.net/doblaje/images/e/e7/SHKAPPr%C3%ADncipeEncantador.png/revision/latest?cb=20160501010435&path-prefix=es"
   },
   {
-    "nombre": "Rumpelstiltskin",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Rumpelstiltskin.jpg/330px-Rumpelstiltskin.jpg",
-    "palabraClave": "rumpelstiltskin"
+    "nombre": "Rumpelstiltskin (Shrek)",
+    "imagen": "https://cdn.prod.website-files.com/685a9f733bffabb9fe2ec24a/68c831f2c60bcda1275659e8_Shrek%204%20image%20cropped.jpg"
   },
   {
-    "nombre": "Pinocho",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Pinocchio.jpg/330px-Pinocchio.jpg",
-    "palabraClave": "pinocho"
+    "nombre": "Gingi (Shrek)",
+    "imagen": "https://static.wikia.nocookie.net/shrek/images/8/84/Gingy_1.jpg/revision/latest/scale-to-width-down/1696?cb=20210615062736"
   },
   {
-    "nombre": "Po",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Po_bei_Mantova.jpg/330px-Po_bei_Mantova.jpg",
-    "palabraClave": "po"
+    "nombre": "Dragona (Shrek)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYug8zPWwpb9RH5KskYemsB-yXDqt_moKIA&s"
   },
   {
-    "nombre": "Tigresa",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Tigress_at_Jim_Corbett_National_Park.jpg/330px-Tigress_at_Jim_Corbett_National_Park.jpg",
-    "palabraClave": "tigresa"
+    "nombre": "Pinocho (Shrek)",
+    "imagen": "https://plusqueparoles.wordpress.com/wp-content/uploads/2013/04/p.png"
   },
   {
-    "nombre": "Shifu",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kung_Fu_Panda_2_premiere_in_Sydney_%285828005141%29.jpg/330px-Kung_Fu_Panda_2_premiere_in_Sydney_%285828005141%29.jpg",
-    "palabraClave": "shifu"
+    "nombre": "Po (Kung Fu Panda)",
+    "imagen": "https://img2.rtve.es/n/1312701"
   },
   {
-    "nombre": "Tai Lung",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/7/7f/Kung_Fu_Panda_4_poster.jpg",
-    "palabraClave": "lung"
+    "nombre": "Tigresa (Kung Fu Panda)",
+    "imagen": "https://static.wikia.nocookie.net/el-mundo-de-mafe-y-julio-cat/images/4/41/Avatar_Tigress5.png/revision/latest/scale-to-width-down/400?cb=20210503175155"
   },
   {
-    "nombre": "Víbora",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Vipere_ottomane.JPG/330px-Vipere_ottomane.JPG",
-    "palabraClave": "vibora"
+    "nombre": "Shifu (Kung Fu Panda)",
+    "imagen": "https://static.wikia.nocookie.net/dreamworks/images/5/54/Shifu_Profile.jpg/revision/latest/thumbnail/width/360/height/450?cb=20240210032942"
   },
   {
-    "nombre": "Grulla",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sarus_Crane_%28Grus_antigone%29_at_Sultanpur_I_Picture_151.jpg/330px-Sarus_Crane_%28Grus_antigone%29_at_Sultanpur_I_Picture_151.jpg",
-    "palabraClave": "grulla"
+    "nombre": "Oogway (Kung Fu Panda)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLX9_sHEhZmpB6fxeoY8A9mCNcxkp5zXdSLA&s"
   },
   {
-    "nombre": "Mantis",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NKN-2007-08-18_081042_praying_mantis_%28Yvan_Leduc_author_for_Wikipedia%29.jpg/330px-NKN-2007-08-18_081042_praying_mantis_%28Yvan_Leduc_author_for_Wikipedia%29.jpg",
-    "palabraClave": "mantis"
+    "nombre": "Tai Lung (Kung Fu Panda)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ftuFrFwbtyO36jE-6mxn6cdir84ML0--gA&s"
   },
   {
-    "nombre": "Alex",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Madagascar_Escape_2_Africa_logo.png/330px-Madagascar_Escape_2_Africa_logo.png",
-    "palabraClave": "alex"
+    "nombre": "Víbora (Kung Fu Panda)",
+    "imagen": "https://i.redd.it/n30rzxeys79c1.jpeg"
   },
   {
-    "nombre": "Marty",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Marty_%281955_film_poster%29.jpg/330px-Marty_%281955_film_poster%29.jpg",
-    "palabraClave": "marty"
+    "nombre": "Grulla (Kung Fu Panda)",
+    "imagen": "https://static.wikia.nocookie.net/doblaje/images/7/7b/Grulla_KFP3.png/revision/latest?cb=20240304030441&path-prefix=es"
   },
   {
-    "nombre": "Rey Julien",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/It_stole_my_bag%21_%286806598232%29.jpg/330px-It_stole_my_bag%21_%286806598232%29.jpg",
-    "palabraClave": "julien"
+    "nombre": "Mantis (Kung Fu Panda)",
+    "imagen": "https://static.wikia.nocookie.net/dreamworks/images/4/43/Mantis_Profile.jpg/revision/latest?cb=20240204171902"
   },
   {
-    "nombre": "Mort",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Madagascar_penguins_%286952709943%29.jpg/330px-Madagascar_penguins_%286952709943%29.jpg",
-    "palabraClave": "mort"
+    "nombre": "Hermanastra fea (Shrek)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOcFjh0msHhCDQ2w0Pxrj76Xv5ACVmaL_Lg&s"
   },
   {
-    "nombre": "Rico",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Massysm_Quentin_%E2%80%94_The_Moneylender_and_his_Wife_%E2%80%94_1514.jpg/330px-Massysm_Quentin_%E2%80%94_The_Moneylender_and_his_Wife_%E2%80%94_1514.jpg",
-    "palabraClave": "rico"
+    "nombre": "Alex (Madagascar)",
+    "imagen": "https://i.ytimg.com/vi/6HNsHI-JULc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB2lKli7b20GBD-nxRo9jYfVu-g0Q"
   },
   {
-    "nombre": "Hipo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Diafragma2.gif/330px-Diafragma2.gif",
-    "palabraClave": "hipo"
+    "nombre": "Marty (Madagascar)",
+    "imagen": "https://i.ytimg.com/vi/j2jhJuVJGmQ/maxresdefault.jpg"
   },
   {
-    "nombre": "Desdentado",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Xenarthra.jpg/330px-Xenarthra.jpg",
-    "palabraClave": "desdentado"
+    "nombre": "Gloria (Madagascar)",
+    "imagen": "https://images.hitpaw.com/topics/ai-voice/travel-diaries-gloria-hippo-madagascar.jpg"
   },
   {
-    "nombre": "Astrid",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/How_to_Train_Your_Dragon_logo.svg/langes-330px-How_to_Train_Your_Dragon_logo.svg.png",
-    "palabraClave": "astrid"
+    "nombre": "Melman (Madagascar)",
+    "imagen": "https://i.pinimg.com/474x/53/5f/89/535f8954fe52a1043f75ca5a66bf2301.jpg"
   },
   {
-    "nombre": "Megamente",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Marco_Antonio_Regil.jpg/330px-Marco_Antonio_Regil.jpg",
-    "palabraClave": "megamente"
+    "nombre": "Rey Julien (Madagascar)",
+    "imagen": "https://img2.rtve.es/n/1270941"
   },
   {
-    "nombre": "Moisés",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/%27Moses%27_by_Michelangelo_JBU140.jpg/330px-%27Moses%27_by_Michelangelo_JBU140.jpg",
-    "palabraClave": "moises"
+    "nombre": "Mort (Madagascar)",
+    "imagen": "https://i.ytimg.com/vi/jqgm-mQeLVo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDJGoENY2pEz5RRwiWc1pdaqJxngA"
   },
   {
-    "nombre": "Ramsés",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rams%C3%A9s_II_en_Qadesh%2C_relieve_de_Abu_Simbel.jpg/330px-Rams%C3%A9s_II_en_Qadesh%2C_relieve_de_Abu_Simbel.jpg",
-    "palabraClave": "ramses"
+    "nombre": "Maurice (Madagascar)",
+    "imagen": "https://i.namu.wiki/i/uqMoqYJQ-yiQtFyXm6w6c-_Qy0Z3YK5C-sLGI-y2rrX2Bd_BE2_142tL_NdlhIMUPGPA6y9ohGVQv8w1L5QB7A.webp"
   },
   {
-    "nombre": "Spirit",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Spirit-entry-descent-landing.jpg/330px-Spirit-entry-descent-landing.jpg",
-    "palabraClave": "spirit"
+    "nombre": "Skipper (Madagascar)",
+    "imagen": "https://static.wikia.nocookie.net/penguinsofmadagascar/images/2/25/SkipperNew.png/revision/latest?cb=20220516220338"
   },
   {
-    "nombre": "Poppy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Trolls_World_Tour_logo.png/330px-Trolls_World_Tour_logo.png",
-    "palabraClave": "poppy"
+    "nombre": "Kowalski (Madagascar)",
+    "imagen": "https://i.pinimg.com/474x/94/e5/32/94e5325468d2859b075bfabb4dc83c4e.jpg"
   },
   {
-    "nombre": "El Bebé Jefazo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Jesulink_-_Sal%C3%B3n_del_Manga_2011.jpg/330px-Jesulink_-_Sal%C3%B3n_del_Manga_2011.jpg",
-    "palabraClave": "jefazo"
+    "nombre": "Rico (Madagascar)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc010OD-Y_6tVY4PneXxPrFhGatmmg8cnpTw&s"
   },
   {
-    "nombre": "Yeti",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/da/B5bugerbear.jpg",
-    "palabraClave": "yeti"
+    "nombre": "Private (Madagascar)",
+    "imagen": "https://static.wikia.nocookie.net/penguinsofmadagascar/images/7/70/PrivateNew.png/revision/latest/scale-to-width-down/1200?cb=20220516220511"
   },
   {
-    "nombre": "Yi",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/%E4%B8%87%E8%8C%9C_%281%29_%28cropped%29.jpg/330px-%E4%B8%87%E8%8C%9C_%281%29_%28cropped%29.jpg",
-    "palabraClave": "yi"
+    "nombre": "Hipo (Cómo entrenar a tu dragón)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0KgzT6gIqr5tOvraO1_eZX03LZ5NxfSsUA&s"
   },
   {
-    "nombre": "Humpty Dumpty",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2f/HumptyDumpty.jpg",
-    "palabraClave": "dumpty"
+    "nombre": "Desdentado (Cómo entrenar a tu dragón)",
+    "imagen": "https://i.etsystatic.com/30835996/r/il/94e4ba/3376100366/il_570xN.3376100366_43mw.jpg"
   },
   {
-    "nombre": "RJ",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Artibeusfamilia.jpg/330px-Artibeusfamilia.jpg",
-    "palabraClave": "rj"
+    "nombre": "Astrid (Cómo entrenar a tu dragón)",
+    "imagen": "https://i.pinimg.com/236x/73/5e/a8/735ea872a23475c0c039151ac58a0780.jpg"
   },
   {
-    "nombre": "Verne",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Erophila_verna_210406c.jpg/330px-Erophila_verna_210406c.jpg",
-    "palabraClave": "verne"
+    "nombre": "Gobber (Cómo entrenar a tu dragón)",
+    "imagen": "https://static.wikia.nocookie.net/como-entrnar-a-tu-dragon-2/images/4/49/Boc%C3%B3n_el_Rudo.jpg/revision/latest?cb=20140802000741&path-prefix=es"
   },
   {
-    "nombre": "Z",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Antz-logo.svg/langes-330px-Antz-logo.svg.png",
-    "palabraClave": "z"
+    "nombre": "Stoico (Cómo entrenar a tu dragón)",
+    "imagen": "https://static.wikia.nocookie.net/como-entrnar-a-tu-dragon-2/images/f/fc/Estoico_El_Vasto.jpg/revision/latest?cb=20140603172137&path-prefix=es"
   },
   {
-    "nombre": "Barry B. Benson",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/5f/Bee_Movie_%282007_animated_feature_film%29.jpg",
-    "palabraClave": "benson"
+    "nombre": "Furiosa Nocturna (Cómo entrenar a tu dragón)",
+    "imagen": "https://i.redd.it/t9f4akfnhxbf1.jpeg"
   },
   {
-    "nombre": "El Pingüino Marlowe",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Carrol_O%27Connor_as_Archie_Bunker.JPG/330px-Carrol_O%27Connor_as_Archie_Bunker.JPG",
-    "palabraClave": "marlowe"
+    "nombre": "Megamente (Megamente)",
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVgvdyVKynseo36Fjm7pfRIZqyYpOKbcLZeEIbiIjkBrrX9dk6jovpn5SGTlJyM3uuFsB_pUnAUJ3TeBtxAeQXZa1v40O10ezOXjdfNRQIJZA0ClU0_Pg4CQc3vtWwtVy-vSfhSH270-nQRIES2RQiC5pHmDYVgRLWCLOnfIYsF5Kc9SjME8HQb51J2XrJ/s1920/megamind-vs-the-1920x1200-15050.jpg"
+  },
+  {
+    "nombre": "MetroMan (Megamente)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2gC4Gs-Iyb1dzlxhVOIaYihWPZPrWDONPiA&s"
+  },
+  {
+    "nombre": "Roxanne (Megamente)",
+    "imagen": "https://static.wikia.nocookie.net/dreamworks/images/4/4d/RoxanneRitchi.png/revision/latest?cb=20211217173759&path-prefix=es"
+  },
+  {
+    "nombre": "Minion (Megamente)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcT900j88HpbR7unJPC44_sY5RkiuYXgBHVg&s"
+  },
+  {
+    "nombre": "Moisés (El Príncipe de Egipto)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNjwVTunMXzNNyCnXgpFJaEyJ8vgMpbcXlAw&s"
+  },
+  {
+    "nombre": "Ramsés (El Príncipe de Egipto)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxoeQvWPEdZo_Alu1sMcrlkraE97nn6vlFg&s"
+  },
+  {
+    "nombre": "Spirit (Spirit: El Corcel Indomable)",
+    "imagen": "https://e01-elmundo.uecdn.es/television/programacion-tv/img/v2/programas/0b/135947.png"
+  },
+  {
+    "nombre": "Poppy (Trolls)",
+    "imagen": "https://static.wikia.nocookie.net/dreamworks/images/5/5d/Poppy_Profile.jpg/revision/latest/thumbnail/width/360/height/360?cb=20240313174629"
+  },
+  {
+    "nombre": "Branch (Trolls)",
+    "imagen": "https://static.wikia.nocookie.net/dreamworks/images/1/11/Branch_Profile.jpg/revision/latest/scale-to-width-down/1200?cb=20240313220904"
+  },
+  {
+    "nombre": "El Bebé Jefazo (El Bebé Jefazo)",
+    "imagen": "https://img.rtve.es/n/1520661?w=1600"
+  },
+  {
+    "nombre": "Yeti (Abominable)",
+    "imagen": "https://i.ytimg.com/vi/CAup87zvoL8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBov5hstnu9I2xeBBwjhK7Ax1ebRw"
+  },
+  {
+    "nombre": "Yi (Abominable)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPJTb4kOPX8GpRG0VKGRN414x2D3gu8mAhA&s"
+  },
+  {
+    "nombre": "Humpty Dumpty (El Gato con Botas)",
+    "imagen": "https://static.wikia.nocookie.net/shrek/images/e/e5/Humpty_alexander_dumpty.jpg/revision/latest/scale-to-width-down/300?cb=20140907212557&path-prefix=es"
+  },
+  {
+    "nombre": "Kitty Softpaws (El Gato con Botas)",
+    "imagen": "https://i.pinimg.com/736x/ae/eb/d7/aeebd71e30d633dd107afe27fd63d831.jpg"
+  },
+  {
+    "nombre": "General Mandible (Antz)",
+    "imagen": "https://static.wikia.nocookie.net/dreamworks/images/f/fd/Mandible_Profile.jpg/revision/latest?cb=20240410033543"
+  },
+  {
+    "nombre": "Princesa Bala (Antz)",
+    "imagen": "https://static.wikia.nocookie.net/universalstudios/images/c/c7/Sharon_stone_antz_001.jpg/revision/latest?cb=20201026201224"
+  },
+  {
+    "nombre": "Z (Antz)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5juYGAm8ig9M1aioQVUZwkLzUvSdzynRPYw&s"
   }
 ]
