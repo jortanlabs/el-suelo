@@ -27,9 +27,19 @@ const cineBloques = bloques.map((b) => ({
 
 // Solo slugs aprobados/publicados (los que aparecen en publicadas.json)
 import publicadas from "../../public/data/publicadas.json";
+const pub = publicadas as string[];
 const cineSlugsJugables = subcategorias
-  .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente && (publicadas as string[]).includes(s.slug))
+  .filter((s) => !s.esMetaCategoria && !s.pendiente && !s.derivadoDe && !!s.nombres && pub.includes(s.slug))
   .map((s) => s.slug);
+
+// Categorías derivadas: activas si su base está publicada
+const cineSlugsDerivados: Record<string, { baseSlug: string }> = {};
+for (const s of subcategorias) {
+  if (s.derivadoDe && s.modoDerivado === "pelicula" && pub.includes(s.derivadoDe)) {
+    cineSlugsDerivados[s.slug] = { baseSlug: s.derivadoDe };
+    cineSlugsJugables.push(s.slug);
+  }
+}
 ---
 
 <Base titulo="El Suelo" descripcion="Di qué ves antes de que se acabe tu tiempo.">
@@ -37,6 +47,7 @@ const cineSlugsJugables = subcategorias
   <div id="datos-otras" data-json={JSON.stringify(otrasFloor)} class="hidden"></div>
   <div id="datos-cine" data-json={JSON.stringify(cineBloques)} class="hidden"></div>
   <div id="datos-cine-slugs" data-json={JSON.stringify(cineSlugsJugables)} class="hidden"></div>
+  <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
@@ -413,6 +424,7 @@ const cineSlugsJugables = subcategorias
     type ReconocedorVoz,
     aciertoFlexible,
     cargarCatalogoCine,
+    cargarCatalogoCinePeli,
     cargarMezclaCine,
   } from "../lib/floor-client.ts";
   import { categoriasFloor as todasCatsOtras } from "../data/categoriasFloor.ts";
@@ -446,6 +458,9 @@ const cineSlugsJugables = subcategorias
   );
   const cineSlugsJugables: string[] = JSON.parse(
     (document.getElementById("datos-cine-slugs") as HTMLElement).dataset.json!,
+  );
+  const cineSlugsDerivados: Record<string, { baseSlug: string }> = JSON.parse(
+    (document.getElementById("datos-cine-derivados") as HTMLElement).dataset.json!,
   );
 
   const $ = (id: string) => document.getElementById(id)!;
@@ -582,7 +597,10 @@ const cineSlugsJugables = subcategorias
         if (categoriaSlugsParaMezcla) {
           raw = await cargarMezclaCine(categoriaSlugsParaMezcla);
         } else {
-          raw = await cargarCatalogoCine(categoriaSlug);
+          const derivado = cineSlugsDerivados[categoriaSlug];
+          raw = derivado
+            ? await cargarCatalogoCinePeli(categoriaSlug, derivado.baseSlug)
+            : await cargarCatalogoCine(categoriaSlug);
         }
         categoriaActual = categoriaNombre;
         $("juego-cat-label").textContent = categoriaNombre;
@@ -769,7 +787,10 @@ const cineSlugsJugables = subcategorias
       try {
         let raw: ItemFloor[];
         if (casilla.catTipo === "cine") {
-          raw = await cargarCatalogoCine(casilla.catSlug);
+          const derivado = cineSlugsDerivados[casilla.catSlug];
+          raw = derivado
+            ? await cargarCatalogoCinePeli(casilla.catSlug, derivado.baseSlug)
+            : await cargarCatalogoCine(casilla.catSlug);
         } else if (casilla.catHardcoded) {
           raw = [...casilla.catHardcoded];
         } else {

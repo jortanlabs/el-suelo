@@ -353,6 +353,37 @@ export async function cargarCatalogoCine(slug: string): Promise<ItemFloor[]> {
 }
 
 /**
+ * Carga una categoría derivada de película: carga el JSON base y usa el contenido
+ * entre paréntesis de cada nombre como respuesta, conservando la imagen del personaje.
+ */
+export async function cargarCatalogoCinePeli(derivedSlug: string, baseSlug: string): Promise<ItemFloor[]> {
+  const k = claveCine(derivedSlug);
+  const cached = leerCache(k);
+  if (cached && cached.length > 0) return cached;
+
+  const res = await fetch(`/data/cine/${baseSlug}.json`);
+  if (!res.ok) throw new Error(`Categoría base "${baseSlug}" no encontrada`);
+  const base = (await res.json()) as ItemFloor[];
+
+  const items: ItemFloor[] = base
+    .map((it) => {
+      const m = it.nombre.match(/\(([^)]+)\)$/);
+      if (!m) return null;
+      const peli = m[1].trim();
+      return { nombre: peli, imagen: it.imagen, palabraClave: palabraClaveDe(peli) };
+    })
+    .filter((it): it is ItemFloor => it !== null);
+
+  if (!items.length) throw new Error(`La categoría "${derivedSlug}" no tiene entradas de película`);
+
+  try {
+    localStorage.setItem(k, JSON.stringify({ data: items, expira: Date.now() + TTL_CINE_MS }));
+  } catch {}
+
+  return items;
+}
+
+/**
  * Carga y mezcla items de varias subcategorías (para categorías "Mezcla").
  * Carga cada subcategoría en paralelo y baraja el resultado final.
  */

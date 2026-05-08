@@ -9,6 +9,8 @@ export interface SubcategoriaNombres {
   nombres?: string[];
   usarTmdb?: boolean; // true = personas reales → usar TMDB
   pendiente?: boolean; // true = no mostrar en el picker (pocos items resueltos)
+  derivadoDe?: string; // slug base del que se deriva en tiempo real
+  modoDerivado?: "pelicula"; // extrae el contenido entre paréntesis como respuesta
 }
 
 export interface BloqueInfo {
@@ -164,6 +166,15 @@ export const subcategorias: SubcategoriaNombres[] = [
     ],
   },
   {
+    slug: "disney-personajes-pelicula",
+    nombre: "Personajes Disney — ¿De qué película?",
+    emoji: "🎬",
+    bloque: "animacion",
+    bloqueNombre: "Animación",
+    derivadoDe: "disney-personajes",
+    modoDerivado: "pelicula" as const,
+  },
+  {
     slug: "disney-villanos",
     nombre: "Villanos",
     emoji: "🦹",
@@ -213,6 +224,15 @@ export const subcategorias: SubcategoriaNombres[] = [
       "Gaston (La Bella y la Bestia)",
       "Cruella de Vil",
     ],
+  },
+  {
+    slug: "disney-villanos-pelicula",
+    nombre: "Villanos — ¿De qué película?",
+    emoji: "🎬",
+    bloque: "animacion",
+    bloqueNombre: "Animación",
+    derivadoDe: "disney-villanos",
+    modoDerivado: "pelicula" as const,
   },
   {
     slug: "pixar",
@@ -310,6 +330,15 @@ export const subcategorias: SubcategoriaNombres[] = [
     ],
   },
   {
+    slug: "pixar-pelicula",
+    nombre: "Pixar — ¿De qué película?",
+    emoji: "🎬",
+    bloque: "animacion",
+    bloqueNombre: "Animación",
+    derivadoDe: "pixar",
+    modoDerivado: "pelicula" as const,
+  },
+  {
     slug: "dreamworks",
     nombre: "DreamWorks",
     emoji: "🦁",
@@ -396,6 +425,15 @@ export const subcategorias: SubcategoriaNombres[] = [
     ],
   },
   {
+    slug: "dreamworks-pelicula",
+    nombre: "DreamWorks — ¿De qué película?",
+    emoji: "🎬",
+    bloque: "animacion",
+    bloqueNombre: "Animación",
+    derivadoDe: "dreamworks",
+    modoDerivado: "pelicula" as const,
+  },
+  {
     slug: "ghibli",
     nombre: "Studio Ghibli",
     emoji: "🌿",
@@ -469,6 +507,15 @@ export const subcategorias: SubcategoriaNombres[] = [
       "Robot Guerrero (El Castillo en el Cielo)",
       "Espíritu del Árbol (Mi Vecino Totoro)",
     ],
+  },
+  {
+    slug: "ghibli-pelicula",
+    nombre: "Ghibli — ¿De qué película?",
+    emoji: "🎬",
+    bloque: "animacion",
+    bloqueNombre: "Animación",
+    derivadoDe: "ghibli",
+    modoDerivado: "pelicula" as const,
   },
   {
     slug: "pokemon",
