@@ -1,0 +1,138 @@
+[
+  {
+    "nombre": "Madrid (España)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwhPNc0NZS4H4ZHWBDKPjdgraq8YMzGcXOvA&s"
+  },
+  {
+    "nombre": "París (Francia)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfz-b-xZRJeV1rdieQXSesR8l5tEowTS7qQQ&s"
+  },
+  {
+    "nombre": "Berlín (Alemania)",
+    "imagen": "https://content-viajes.nationalgeographic.com.es/medio/2017/02/09/qpx-152378209_cbb96df3.jpg"
+  },
+  {
+    "nombre": "Roma (Italia)",
+    "imagen": "https://inlifehousing.com/wp-content/uploads/2023/06/Roma.jpg"
+  },
+  {
+    "nombre": "Lisboa (Portugal)",
+    "imagen": "https://cdn2.civitatis.com/portugal/lisboa/guia/lisbon-tram-seo.jpg"
+  },
+  {
+    "nombre": "Londres (Reino Unido)",
+    "imagen": "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/london-pass/blog/London_Big_Ben_phone_boxes_ss_non-editorial_qsmska?_a=BAVAZGDY0"
+  },
+  {
+    "nombre": "Ámsterdam (Países Bajos)",
+    "imagen": "https://media.traveler.es/photos/6231abc7d03e1c5549e648ca/16:9/w_2560%2Cc_limit/The%2520Best%2520Places%2520for%2520Female%2520Solo%2520Travelers_Amsterdam_GettyImages-923546342.jpg"
+  },
+  {
+    "nombre": "Bruselas (Bélgica)",
+    "imagen": "https://content-viajes.nationalgeographic.com.es/medio/2024/07/10/mont-des-arts_3736e4f3_240710090356_1200x706.jpg"
+  },
+  {
+    "nombre": "Viena (Austria)",
+    "imagen": "https://fuutazbsb.filerobot.com/Freigegeben/Volksgarten-zum-Erholen_Oesterreich-Werbung_Sebastian-Burziwal.jpeg"
+  },
+  {
+    "nombre": "Berna (Suiza)",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/A3JJYQETYFBL5C6PPQLVTCUA4U.jpg?auth=491506d2e8ab4983978f58f66ad76f64b0ae63b4e8c8314b6d4e64c6a49fddda&width=1960&height=1470&focal=3483%2C1922"
+  },
+  {
+    "nombre": "Varsovia (Polonia)",
+    "imagen": "https://fotos.hoteles.net/articulos/que-ver-y-hacer-en-varsovia-polonia-2621-1.jpg"
+  },
+  {
+    "nombre": "Praga (República Checa)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHEuHJwSEDzzICS07Fx97jf8bj6JxtD1kVIw&s"
+  },
+  {
+    "nombre": "Budapest (Hungría)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgWxb--pRiIKhAU19B6xiBufd9-zxgofwMDw&s"
+  },
+  {
+    "nombre": "Bucarest (Rumanía)",
+    "imagen": "https://i0.wp.com/www.exoticca.com/wp-content/uploads/2019/08/Los-lugares-mas-bonitos-que-ver-en-Bucarest-y-alrededores.jpg?fit=1000%2C667&ssl=1"
+  },
+  {
+    "nombre": "Atenas (Grecia)",
+    "imagen": "https://www.turium.es/wp-content/uploads/sites/4/2024/06/psiri-atenas-920x796.jpg"
+  },
+  {
+    "nombre": "Ankara (Turquía)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRyOcjKzku8GfBZPcWF0TSab1BeudRxZXCFg&s"
+  },
+  {
+    "nombre": "Moscú (Rusia)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdh7JVHIcg7PDD5F3LNR-jNkmlGyhPdG0OdQ&s"
+  },
+  {
+    "nombre": "Tokio (Japón)",
+    "imagen": "https://easycdn.es/4/i/tokio-en-4-dias-que-ver-y-hacer_23053.jpg"
+  },
+  {
+    "nombre": "Pekín (China)",
+    "imagen": "https://d2l4159s3q6ni.cloudfront.net/resize/1200x600/filters:max_age(2604800):quality(65)/s3/dam/photos/41/78/ab/ae/00295e5556f31d9e76b4a85954cc60b376630e6bf26a1f01a1a4c48d.jpg"
+  },
+  {
+    "nombre": "Nueva Delhi (India)",
+    "imagen": "https://www.lasociedadgeografica.com/blog/uploads/2016/05/templo-sij-en-nueva-delhi-exterior-edmund-gall.jpg"
+  },
+  {
+    "nombre": "Seúl (Corea del Sur)",
+    "imagen": "https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Seoul-1.jpg"
+  },
+  {
+    "nombre": "Brasilia (Brasil)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxkypkbN8ZHO79YCxo7Xugjb6UE7Fj1vOoA&s"
+  },
+  {
+    "nombre": "Buenos Aires (Argentina)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScGWEXum8tO1_hY75WzMZvuGOcDhPucIlcAg&s"
+  },
+  {
+    "nombre": "Ciudad de México (México)",
+    "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2022/11/angel-independencia-ciudad-mexico.jpg"
+  },
+  {
+    "nombre": "Washington D.C. (EE.UU.)",
+    "imagen": "https://elordenmundial.com/wp-content/uploads/2024/07/por-que-capital-estados-unidos-washington-dc.jpg"
+  },
+  {
+    "nombre": "Ottawa (Canadá)",
+    "imagen": "https://decouvrirensemble.com/wp-content/uploads/2019/06/Ottawa-blog-voyage-1280x960.jpg"
+  },
+  {
+    "nombre": "Canberra (Australia)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzShCS9IbJsEJBy-VABMNOunWK136ctRx9w&s"
+  },
+  {
+    "nombre": "Pretoria (Sudáfrica)",
+    "imagen": "https://content.r9cdn.net/rimg/dimg/c2/18/9a370f03-city-32072-17314d6e9cf.jpg?width=1366&height=768&xhint=2612&yhint=1528&crop=true"
+  },
+  {
+    "nombre": "El Cairo (Egipto)",
+    "imagen": "https://panavision-tours.com/viajes/el-cairo-turismo/el-cairo.jpg"
+  },
+  {
+    "nombre": "Riad (Arabia Saudí)",
+    "imagen": "https://live.staticflickr.com/4731/38442529345_8f59066764_b.jpg"
+  },
+  {
+    "nombre": "Oslo (Noruega)",
+    "imagen": "https://image.urlaubspiraten.de/640/image/upload/v1603284267/mediavault_images/vbpuwqt5bo5ss0hs1h6g.jpg"
+  },
+  {
+    "nombre": "Estocolmo (Suecia)",
+    "imagen": "https://inteligenciaviajera.com/wp-content/uploads/2021/05/que-ver-en-estocolmo.jpg"
+  },
+  {
+    "nombre": "Helsinki (Finlandia)",
+    "imagen": "https://www.visitfinland.com/dam/jcr:f2ccb1e5-ab81-4baa-9ece-e5ec8c3fd812/Helsinki_Islands_04_Suomenlinna_bridge%20-%20AdobeStock.jpg"
+  },
+  {
+    "nombre": "Dublín (Irlanda)",
+    "imagen": "https://www.pasaportealatierra.com/wp-content/uploads/2018/12/South-Anne-Street-cerca-de-Grafton-St.jpg"
+  }
+]
