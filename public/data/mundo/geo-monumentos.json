@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Torre Eiffel",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIlwLgWdqHPAD9QgTtxi8qvtvPmn1P4OUI-Q&s"
+  },
+  {
+    "nombre": "Coliseo Romano",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7-PQ_p9z4dE8PWckyPPk9movaYRUNb70Vg&s"
+  },
+  {
+    "nombre": "Sagrada Familia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHJNHzT7CIux5CKMtqm0mUgUv261MI8qPiKg&s"
+  },
+  {
+    "nombre": "Big Ben",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGdnIQDBct1mcDZPpl6I9eLfvuCwzlirMsIg&s"
+  },
+  {
+    "nombre": "Machu Picchu",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Machu_Picchu%2C_Peru_%282018%29.jpg/500px-Machu_Picchu%2C_Peru_%282018%29.jpg"
+  },
+  {
+    "nombre": "Chichén Itzá",
+    "imagen": "https://www.worldhistory.org/uploads/images/3048.jpg"
+  },
+  {
+    "nombre": "Petra",
+    "imagen": "https://farm3.staticflickr.com/2106/5748356313_e3d389c8d4_z.jpg"
+  },
+  {
+    "nombre": "Gran Muralla China",
+    "imagen": "https://static.comunicae.com/photos/notas/1044173/1361796139_gran-muralla-china.jpg"
+  },
+  {
+    "nombre": "Taj Mahal",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQztD8e1R-30C3zKrbYQSHawJdeupi8yIrWiA&s"
+  },
+  {
+    "nombre": "Estatua de la Libertad",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCf6j3bIpIIE8ImJyfSvPTDmN6WRt_xRURw&s"
+  },
+  {
+    "nombre": "Acrópolis de Atenas",
+    "imagen": "https://cdn-imgix.headout.com/microbrands-banner-image/image/b698f96a3bf7e35418940973f33c4708-The%20Acropolis%20of%20Athens.jpeg"
+  },
+  {
+    "nombre": "Alhambra de Granada",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREf-m7wUqHipyAkD0MZF5VkVCEDhI8mwaNSQ&s"
+  },
+  {
+    "nombre": "Palacio de Versalles",
+    "imagen": "https://ingeoexpert.com/wp-content/uploads/2025/10/Palacio-de-Versalles.jpg"
+  },
+  {
+    "nombre": "Basílica de San Pedro",
+    "imagen": "https://cdn-imgix.headout.com/microbrands-content-image/image/1c6797c269c9e214698fc63a4264caaa-St.%20Peter's%20Basilica.jpg"
+  },
+  {
+    "nombre": "Ópera de Sídney",
+    "imagen": "https://content-historia.nationalgeographic.com.es/medio/2023/10/19/un-edificio-muy-caro_114ddd43_509843968_231019181438_2000x1333.jpg"
+  },
+  {
+    "nombre": "Stonehenge",
+    "imagen": "https://www.dedibujo.net/wp-content/uploads/2025/01/stonehenge1.webp"
+  },
+  {
+    "nombre": "Pirámides de Giza",
+    "imagen": "https://content-historia.nationalgeographic.com.es/medio/2024/09/03/shutterstock-2267726773_3a948c25_240903101038_1280x855.jpg"
+  },
+  {
+    "nombre": "Angkor Wat",
+    "imagen": "https://lonelyplanetes.cdnstatics2.com/cdn/ff/W0qXoJ3mv_WaVHX76DA0qo8ZsMiSASHA0Un3B_sZEq4/1726129510/public/styles/469x469_scale_crop/public/media/camboya_siemreap_angkorwat_shutterstockrf_312461543_waj_shutterstock.jpg?itok=UvkXe53Z"
+  },
+  {
+    "nombre": "Cristo Redentor",
+    "imagen": "https://dynamic-media.tacdn.com/media/photo-o/30/33/90/d9/caption.jpg?w=700&h=500&s=1"
+  },
+  {
+    "nombre": "Torre de Pisa",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcN9IQUsSEjHvKKHXgNEogwouaz2OfSsMsw&s"
+  },
+  {
+    "nombre": "Torres Petronas",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/e9eec1b9-31f5-464d-911e-761b36191c03_source-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Castillo de Neuschwanstein",
+    "imagen": "https://www.neuschwanstein.de/bilder/schloss/neuschwanstein_ostansicht_www.kreativ-instinkt.de_DI016842-790.jpg"
+  },
+  {
+    "nombre": "Catedral de Notre Dame",
+    "imagen": "https://media.admagazine.com/photos/618a6b4651755659575567d1/16:9/w_2992,h_1683,c_limit/60267.jpg"
+  },
+  {
+    "nombre": "Palacio del Kremlin",
+    "imagen": "https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/LPZA7EEUIVC4RHSHU6I3SPTUMU.webp"
+  },
+  {
+    "nombre": "Catedral de Santiago de Compostela",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZy4JX1fqbjbIrQAB5Ms9pTLAz4qTkFpApYg&s"
+  },
+  {
+    "nombre": "Gran Cañón del Colorado",
+    "imagen": "https://www.civitatis.com/f/estados-unidos/las-vegas/guia/gran-canon.jpg"
+  },
+  {
+    "nombre": "Catarata del Niágara",
+    "imagen": "https://static.nationalgeographicla.com/files/styles/image_3200/public/niagara-falls---aerial-view--niagara-falls-tourism-.3l0.webp?w=1600&h=900"
+  },
+  {
+    "nombre": "Monte Fuji",
+    "imagen": "https://res.cloudinary.com/jnto/image/upload/w_750,h_503,fl_lossy,f_auto/v1531981666/fujiguide/SG010_6"
+  },
+  {
+    "nombre": "Coliseo de Éfeso",
+    "imagen": "https://st3.depositphotos.com/13517526/18989/i/1600/depositphotos_189891448-stock-photo-amphitheater-coliseum-in-ephesus-efes.jpg"
+  },
+  {
+    "nombre": "Templo de Karnak",
+    "imagen": "https://www.guiassinia.com/wp-content/uploads/2024/10/templo-de-karnak-guias-sin-ia.jpg"
+  }
+]
