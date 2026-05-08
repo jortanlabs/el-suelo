@@ -1,352 +1,342 @@
 [
   {
     "nombre": "Blancanieves",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schneewitchen_%281%29.jpg/330px-Schneewitchen_%281%29.jpg",
-    "palabraClave": "blancanieves"
+    "imagen": "https://static.wikia.nocookie.net/disney/images/9/96/Blancanieve1.jpg/revision/latest?cb=20200501040907&path-prefix=es"
   },
   {
-    "nombre": "Cenicienta",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Offterdinger_Aschenbrodel_%281%29.jpg/330px-Offterdinger_Aschenbrodel_%281%29.jpg",
-    "palabraClave": "cenicienta"
+    "nombre": "Aurora (La Bella Durmiente)",
+    "imagen": "https://www.actitudfem.com/800x600/filters:format(jpg):quality(75)/media/files/images/2021/09/principal-historia-de-la-bella-durmiente.jpg"
   },
   {
-    "nombre": "Aurora",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Prince_Florimund_finds_the_Sleeping_Beauty_-_Project_Gutenberg_etext_19993.jpg/330px-Prince_Florimund_finds_the_Sleeping_Beauty_-_Project_Gutenberg_etext_19993.jpg",
-    "palabraClave": "aurora"
+    "nombre": "Ariel (La Sirenita)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIczdaMf_F2ebCPUjEE3lugZyFd5O60swIdg&s"
   },
   {
-    "nombre": "Ariel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Fantasmic%21_%2827663736393%29.jpg/330px-Fantasmic%21_%2827663736393%29.jpg",
-    "palabraClave": "ariel"
+    "nombre": "Bella (La Bella y la Bestia)",
+    "imagen": "https://supercurioso.com/wp-content/uploads/2017/05/Cu%C3%A1l-es-el-libro-que-est%C3%A1-leyendo-Bella-en-la-Bella-y-la-Bestia-1.jpg"
   },
   {
-    "nombre": "Bella",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Crane_beauty5.jpg/330px-Crane_beauty5.jpg",
-    "palabraClave": "bella"
-  },
-  {
-    "nombre": "Jasmine",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/D23_Expo_2015_-_Jasmine_%2820607061292%29.jpg/330px-D23_Expo_2015_-_Jasmine_%2820607061292%29.jpg",
-    "palabraClave": "jasmine"
+    "nombre": "Jasmine (Aladdin)",
+    "imagen": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/11/Princess-Jasmine-in-Aladdin-(1992).jpg?w=1200&h=900&fit=crop"
   },
   {
     "nombre": "Pocahontas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pocahontas_by_Simon_van_de_Passe_1616.jpg/330px-Pocahontas_by_Simon_van_de_Passe_1616.jpg",
-    "palabraClave": "pocahontas"
+    "imagen": "https://weloversize.com/wp-content/uploads/2020/07/12-Datos-curiosos-de-la-princesa-Pocahontas.jpg"
   },
   {
     "nombre": "Mulan",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mulan_Logo_Black.svg/langes-330px-Mulan_Logo_Black.svg.png",
-    "palabraClave": "mulan"
+    "imagen": "https://img.elo7.com.br/product/685x685/16EA727/painel-mulan-g-frete-gratis-painel-desenho.jpg"
   },
   {
-    "nombre": "Tiana",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/The_Princess_and_the_Frog_Logo_Black.svg/langes-330px-The_Princess_and_the_Frog_Logo_Black.svg.png",
-    "palabraClave": "tiana"
+    "nombre": "Tiana (Tiana y el Sapo)",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/2024_hb_disneyprincess_tiana_mobile_3497_906df4c1.jpeg?region=0%2C0%2C1024%2C768"
   },
   {
-    "nombre": "Rapunzel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Johnny_Gruelle_illustration_-_Rapunzel_-_Project_Gutenberg_etext_11027.jpg/330px-Johnny_Gruelle_illustration_-_Rapunzel_-_Project_Gutenberg_etext_11027.jpg",
-    "palabraClave": "rapunzel"
+    "nombre": "Rapunzel (Enredados)",
+    "imagen": "https://sm.ign.com/ign_es/screenshot/default/unnamed-1_tmqp.jpg"
   },
   {
-    "nombre": "Elsa",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/A_Christmas_Fantasy_Parade_%2834852656933%29.jpg/330px-A_Christmas_Fantasy_Parade_%2834852656933%29.jpg",
-    "palabraClave": "elsa"
+    "nombre": "Elsa (Frozen)",
+    "imagen": "https://m.media-amazon.com/images/I/610p++okJXL._AC_UF894,1000_QL80_.jpg"
   },
   {
-    "nombre": "Anna",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Anna_-_La_Reine_des_neiges_-_20150803_16h44_%2810804%29.jpg/330px-Anna_-_La_Reine_des_neiges_-_20150803_16h44_%2810804%29.jpg",
-    "palabraClave": "anna"
+    "nombre": "Anna (Frozen)",
+    "imagen": "https://images2.alphacoders.com/522/thumb-1920-522319.jpg"
   },
   {
     "nombre": "Moana",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Moana_Disney_Parks.jpg/330px-Moana_Disney_Parks.jpg",
-    "palabraClave": "moana"
+    "imagen": "https://static.wikia.nocookie.net/disney/images/f/f5/Moana.jpg/revision/latest/scale-to-width-down/1200?cb=20190727231251&path-prefix=es"
   },
   {
-    "nombre": "Raya",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Raya_y_el_%C3%BAltimo_drag%C3%B3n.png/330px-Raya_y_el_%C3%BAltimo_drag%C3%B3n.png",
-    "palabraClave": "raya"
+    "nombre": "Raya (Raya y el Último Dragón)",
+    "imagen": "https://static.eldiario.es/clip/31ef5bbb-6840-4c7d-9f5e-ad8b599c9cd3_16-9-discover-aspect-ratio_default_0.jpg"
   },
   {
-    "nombre": "Mirabel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Disney%27s_Encanto_print_logo.svg/langes-330px-Disney%27s_Encanto_print_logo.svg.png",
-    "palabraClave": "mirabel"
+    "nombre": "Mirabel (Encanto)",
+    "imagen": "https://www.soldemedianochenews.org/uploads/1/3/6/5/136504124/mirabel-44_orig.jpg"
   },
   {
     "nombre": "Mickey Mouse",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Mickey_Mouse_%28poster_version%29.svg/langes-330px-Mickey_Mouse_%28poster_version%29.svg.png",
-    "palabraClave": "mouse"
+    "imagen": "https://static.wikia.nocookie.net/house-of-mouse/images/d/d8/MickeyMouse.png/revision/latest?cb=20140401212830&path-prefix=es"
   },
   {
     "nombre": "Minnie Mouse",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Minnie_Mouse.svg/langes-330px-Minnie_Mouse.svg.png",
-    "palabraClave": "mouse"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxC6UWrVgcvM6VgaM3p5oO-PqMO2nXkRqu-w&s"
   },
   {
     "nombre": "Pato Donald",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Dhamma_hall_of_Wat_Buppharam_3_-_Donald_Duck_%28cropped%29.jpg/330px-Dhamma_hall_of_Wat_Buppharam_3_-_Donald_Duck_%28cropped%29.jpg",
-    "palabraClave": "donald"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7JwOwtF3IdDR9hjDFTy4-TqnukPlEIb5og&s"
   },
   {
     "nombre": "Goofy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stamp_of_Albania_-_2001_-_Colnect_372091_-_Goofy_1932_Animal_Cartoon_Character.jpeg/330px-Stamp_of_Albania_-_2001_-_Colnect_372091_-_Goofy_1932_Animal_Cartoon_Character.jpeg",
-    "palabraClave": "goofy"
+    "imagen": "https://i.scdn.co/image/ab67616100005174df3a8706ed65e617d97f62a4"
   },
   {
     "nombre": "Pluto",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Rover_%28Pluto%29%2C_The_Picnic_1930.jpg/330px-Rover_%28Pluto%29%2C_The_Picnic_1930.jpg",
-    "palabraClave": "pluto"
+    "imagen": "https://i.scdn.co/image/ab6761610000e5eb5114aa3f93ee335c3a7cf2dc"
   },
   {
     "nombre": "Chip",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/07R01.jpg/330px-07R01.jpg",
-    "palabraClave": "chip"
+    "imagen": "https://static.wikia.nocookie.net/disney/images/6/6f/Chip.png/revision/latest?cb=20140215104012&path-prefix=es"
   },
   {
-    "nombre": "Dale",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dale_Earnhardt_visits_Langley_AFB.jpg/330px-Dale_Earnhardt_visits_Langley_AFB.jpg",
-    "palabraClave": "dale"
+    "nombre": "Chop",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/e/e3/Chop.png/revision/latest?cb=20140215104015&path-prefix=es"
   },
   {
     "nombre": "Bambi",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bambi_8.jpg/330px-Bambi_8.jpg",
-    "palabraClave": "bambi"
+    "imagen": "https://static.wikia.nocookie.net/house-of-mouse/images/6/68/Profile_-_Bambi.webp/revision/latest?cb=20241015131624&path-prefix=es"
   },
   {
     "nombre": "Dumbo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dumbo_1.jpg/330px-Dumbo_1.jpg",
-    "palabraClave": "dumbo"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbuFCXtrAL2uDKjbWpzQfFSDwOJd0B_zsHw&s"
   },
   {
     "nombre": "Pinocho",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Pinocchio.jpg/330px-Pinocchio.jpg",
-    "palabraClave": "pinocho"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lX8bqpHvkxE0kWRSi1H-oalVpY81NZE6cw&s"
   },
   {
     "nombre": "Pepito Grillo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Jiminy_Cricket_%28cropped%29.png/330px-Jiminy_Cricket_%28cropped%29.png",
-    "palabraClave": "grillo"
+    "imagen": "https://media.licdn.com/dms/image/v2/C4D12AQFckegFflFZSw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1595497385163?e=2147483647&v=beta&t=MM5ft6lUnwnWao3zfuBvD4lRlTGtHUhZTqfbv_8DHHA"
   },
   {
     "nombre": "Peter Pan",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Peter_pan_1911_pipes.jpg/330px-Peter_pan_1911_pipes.jpg",
-    "palabraClave": "pan"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyXzAKbsbz16CAja9awjWXVZpeZ9tFbAwpQQ&s"
   },
   {
     "nombre": "Campanilla",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/42/Tinkclose-1-.jpg",
-    "palabraClave": "campanilla"
+    "imagen": "https://i.pinimg.com/736x/98/17/5a/98175a50469e5b39c27c6c59cce5acaf.jpg"
   },
   {
-    "nombre": "Alicia",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/af/AlicesAdventuresInWonderlandTitlePage.jpg",
-    "palabraClave": "alicia"
+    "nombre": "Wendy (Peter Pan)",
+    "imagen": "https://static.wikia.nocookie.net/disneyheroines/images/9/91/Wendy_Moira_Angela_Darling.jpg/revision/latest?cb=20120105231456"
+  },
+  {
+    "nombre": "Alicia (País de las Maravillas)",
+    "imagen": "https://micuento.com/blog/wp-content/uploads/2021/03/Curiosidades-de-Alicia-en-el-Pais-de-las-Maravillas_01.jpg"
   },
   {
     "nombre": "Gato de Cheshire",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Tennel_Cheshire_proof.png/330px-Tennel_Cheshire_proof.png",
-    "palabraClave": "cheshire"
+    "imagen": "https://static.wikia.nocookie.net/aliceinwonderland/images/f/fd/1951-Cheshire.png/revision/latest?cb=20100411005853&path-prefix=es"
   },
   {
     "nombre": "Sombrero Loco",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%22Alice%27s_Adventures_in_Wonderland%22_by_Lewis_Carroll%2C_1907_book_cover_%28cropped%29.jpg/330px-%22Alice%27s_Adventures_in_Wonderland%22_by_Lewis_Carroll%2C_1907_book_cover_%28cropped%29.jpg",
-    "palabraClave": "loco"
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc2HBC4_1Q-H_2_YLpM2_Qpd8hBs7rEucNm3S4cDz561pQEiWLr0UdScZHU9cvqjW15-AwUtPQmDA6rtW8l1Lf68aqH5VFpSuEKx_Dx9eXrYLM7Wzw3EW7ZAPoC6K-pvC_zjYR/s1600/Sombrerero-Loco.jpg"
   },
   {
-    "nombre": "Mowgli",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mowgli-1895-illustration.png/330px-Mowgli-1895-illustration.png",
-    "palabraClave": "mowgli"
+    "nombre": "Mowgli (El Libro de la Selva)",
+    "imagen": "https://www.mubis.es/media/articles/5865/57603/contenidos-completos-de-el-libro-de-la-selva-edicion-diamante-blu-ray-original.jpg"
   },
   {
-    "nombre": "Baloo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/T2JB023_-_Bagheera_would_lie_out_on_a_branch.JPG/330px-T2JB023_-_Bagheera_would_lie_out_on_a_branch.JPG",
-    "palabraClave": "baloo"
+    "nombre": "Baloo (El Libro de la Selva)",
+    "imagen": "https://i.redd.it/fw1kd9klbyl71.png"
   },
   {
-    "nombre": "Rey Louie",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Mogli_und_Balu_-_panoramio.jpg/330px-Mogli_und_Balu_-_panoramio.jpg",
-    "palabraClave": "louie"
+    "nombre": "Rey Louie (El Libro de la Selva)",
+    "imagen": "https://culturacientifica.com/app/uploads/2017/03/King-louie-640x470.jpg"
   },
   {
-    "nombre": "Simba",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/The_Lion_King_2_Simba%27s_Pride_logo.svg/langes-330px-The_Lion_King_2_Simba%27s_Pride_logo.svg.png",
-    "palabraClave": "simba"
+    "nombre": "Simba (El Rey León)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHT1IvM5hxFQj-_LLRdYt0AELDnFVfk9QRw&s"
   },
   {
-    "nombre": "Mufasa",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mufasa_The_Lion_King_logo.png/330px-Mufasa_The_Lion_King_logo.png",
-    "palabraClave": "mufasa"
+    "nombre": "Mufasa (El Rey León)",
+    "imagen": "https://static.wikia.nocookie.net/el-reyleon/images/e/e5/Mufasa.png/revision/latest?cb=20201111185038&path-prefix=es"
   },
   {
-    "nombre": "Nala",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_Lion_King_at_Minskoff_Theatre_in_Broadway.jpg/330px-The_Lion_King_at_Minskoff_Theatre_in_Broadway.jpg",
-    "palabraClave": "nala"
+    "nombre": "Nala (El Rey León)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/3/3d/Nala_joven.jpg/revision/latest?cb=20100909183456&path-prefix=es"
   },
   {
-    "nombre": "Timón",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/WPKiW_-_ZOO_-_Surykatka.jpg/330px-WPKiW_-_ZOO_-_Surykatka.jpg",
-    "palabraClave": "timon"
+    "nombre": "Timón (El Rey León)",
+    "imagen": "https://static.wikia.nocookie.net/el-reyleon/images/a/ab/200px-Bluraytimon.jpg/revision/latest?cb=20120120144704&path-prefix=es"
   },
   {
-    "nombre": "Pumba",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/The_Lion_King_1%C2%BD_logo.svg/langes-330px-The_Lion_King_1%C2%BD_logo.svg.png",
-    "palabraClave": "pumba"
+    "nombre": "Pumba (El Rey León)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUIjm9beiqndGrZJ91I6cdxP8eOlce3TgXxA&s"
   },
   {
-    "nombre": "Sebastián",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Little_Mermaid_%28Official_TV_Series_Logo%29.png/330px-The_Little_Mermaid_%28Official_TV_Series_Logo%29.png",
-    "palabraClave": "sebastian"
+    "nombre": "Rafiki (El Rey León)",
+    "imagen": "https://static.wikia.nocookie.net/el-reyleon/images/3/3a/Rafiki.png/revision/latest?cb=20130808025941&path-prefix=es"
   },
   {
-    "nombre": "El Rey Tritón",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/The_Little_Mermaid_logo.svg/langes-330px-The_Little_Mermaid_logo.svg.png",
-    "palabraClave": "triton"
+    "nombre": "Sebastián (La Sirenita)",
+    "imagen": "https://www.adnradio.cl/resizer/v2/OIYDAQCA6ZO7JCHH6RHJU4R4SE.jpg?auth=e0cf0ed07e1fb3ef5eb0b3bc13a5d04e1dbb93917a8316ab722c577b57db8115&width=768&height=576&quality=70&smart=true"
   },
   {
-    "nombre": "Lumière",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fratelli_Lumiere.jpg/330px-Fratelli_Lumiere.jpg",
-    "palabraClave": "lumiere"
+    "nombre": "El Rey Tritón (La Sirenita)",
+    "imagen": "https://static.wikia.nocookie.net/doblaje/images/1/16/Rey_Triton_-_La_sirenita_1989.png/revision/latest?cb=20230116173350&path-prefix=es"
   },
   {
-    "nombre": "El Tic Tac",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Solange_Lackington_en_Entre_gallos_y_medianoche.jpg/330px-Solange_Lackington_en_Entre_gallos_y_medianoche.jpg",
-    "palabraClave": "tac"
+    "nombre": "La Bestia (La Bella y la Bestia)",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/VHSS5LPY3ZJF3FIR7JXQR3QO6M.jpg?auth=2f1a26162953b25fdd2b180d7662fdc5c0ba59ccdd8e147773097147ae83f87f&width=414"
+  },
+  {
+    "nombre": "Lumière (La Bella y la Bestia)",
+    "imagen": "https://upload.wikimedia.org/wikipedia/it/thumb/2/2b/Lumiere_Disney.jpg/1280px-Lumiere_Disney.jpg"
+  },
+  {
+    "nombre": "Din Don (La Bella y la Bestia)",
+    "imagen": "https://img.buzzfeed.com/buzzfeed-static/static/2017-07/5/4/asset/buzzfeed-prod-fastlane-01/sub-buzz-32627-1499242829-1.jpg?downsize=900:*&output-format=auto&output-quality=auto"
   },
   {
     "nombre": "Aladdin",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Aladdin-logo-2.svg/langes-330px-Aladdin-logo-2.svg.png",
-    "palabraClave": "aladdin"
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMzlkYTI3MWItMjU2NS00MjIzLTg2MzAtZDNiODQzMjBhMmM3XkEyXkFqcGdeQTNwaW5nZXN0._V1_.jpg"
   },
   {
-    "nombre": "Genio",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Shah_Namah%2C_the_Persian_Epic_of_the_Kings_Wellcome_L0035191.jpg/330px-Shah_Namah%2C_the_Persian_Epic_of_the_Kings_Wellcome_L0035191.jpg",
-    "palabraClave": "genio"
+    "nombre": "Genio (Aladdin)",
+    "imagen": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/peliculas-para-ninos-cine-infantil/personajes-disney-orgullo-lgtbi2/el-genio-aladdin/138118132-1-esl-ES/El-Genio-Aladdin.jpg?crop=0.754xw:1.00xh;0.124xw,0&resize=1200:*"
   },
   {
-    "nombre": "Abu",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Wondercon_2014-7694_%2813987721412%29.jpg/330px-Wondercon_2014-7694_%2813987721412%29.jpg",
-    "palabraClave": "abu"
+    "nombre": "Abu (Aladdin)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/5/50/Enchantedtales_542.jpg/revision/latest?cb=20111128195825"
   },
   {
     "nombre": "Hércules",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Godecharle_Hercule.jpg/330px-Godecharle_Hercule.jpg",
-    "palabraClave": "hercules"
+    "imagen": "https://rebeccainprint.com/wp-content/uploads/2025/09/Image-1-1024x576.jpeg"
   },
   {
-    "nombre": "Megara",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Greece_location_map.svg/langes-330px-Greece_location_map.svg.png",
-    "palabraClave": "megara"
+    "nombre": "Megara (Hércules)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/9/91/Profile_-_Megara.jpeg/revision/latest?cb=20190312030229"
   },
   {
-    "nombre": "Pegaso",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/NAMA_Epinetron_Bell%C3%A9rophon.jpg/330px-NAMA_Epinetron_Bell%C3%A9rophon.jpg",
-    "palabraClave": "pegaso"
+    "nombre": "Pegaso (Hércules)",
+    "imagen": "https://static.wikia.nocookie.net/dominios-encantados/images/f/f8/WIKI_PEGASO-0.png/revision/latest?cb=20150319121025&path-prefix=es"
   },
   {
-    "nombre": "Quasimodo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Quasimodo_%28Livre_I%2C_Chapitre_V%29%2C_2019.3.1.jpg/330px-Quasimodo_%28Livre_I%2C_Chapitre_V%29%2C_2019.3.1.jpg",
-    "palabraClave": "quasimodo"
+    "nombre": "Quasimodo (El Jorobado de Notre Dame)",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/quasimodo_36_64b0407b.jpeg?region=419,0,1213,1214"
   },
   {
-    "nombre": "Esmeralda",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/B%C3%A9ryl_var._%C3%A9meraude_sur_gangue_%28Muzo_Mine_Boyaca_-_Colombie%29_2.jpg/330px-B%C3%A9ryl_var._%C3%A9meraude_sur_gangue_%28Muzo_Mine_Boyaca_-_Colombie%29_2.jpg",
-    "palabraClave": "esmeralda"
+    "nombre": "Esmeralda (El Jorobado de Notre Dame)",
+    "imagen": "https://media.glamour.es/photos/616f931bc16487e5fd1bd2bb/1:1/w_1800,h_1800,c_limit/625304.jpg"
   },
   {
     "nombre": "Tarzán",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Tarzan_and_the_Golden_Lion-023.jpg/330px-Tarzan_and_the_Golden_Lion-023.jpg",
-    "palabraClave": "tarzan"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtYOPCAb023r1yVz-olzx7BmxIn5rTmIYDw&s"
   },
   {
-    "nombre": "Lilo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Lilo_%26_Stitch_The_Series_Disney%2B_wordmark.png/330px-Lilo_%26_Stitch_The_Series_Disney%2B_wordmark.png",
-    "palabraClave": "lilo"
+    "nombre": "Jane (Tarzán)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/e/ef/Profile_-_Jane_Porter.png/revision/latest?cb=20190312070932"
   },
   {
-    "nombre": "Stitch",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Sitch_at_Bugis%2C_Singapore.jpg/330px-Sitch_at_Bugis%2C_Singapore.jpg",
-    "palabraClave": "stitch"
+    "nombre": "Lilo (Lilo y Stitch)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/1/1f/Profile_-_Lilo.png/revision/latest?cb=20190312072611"
   },
   {
-    "nombre": "Olaf",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Frozen_Logo_Black.svg/langes-330px-Frozen_Logo_Black.svg.png",
-    "palabraClave": "olaf"
+    "nombre": "Stitch (Lilo y Stitch)",
+    "imagen": "https://i.etsystatic.com/42919322/r/il/5da703/5702221647/il_570xN.5702221647_ibkz.jpg"
   },
   {
-    "nombre": "Kristoff",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Oz_Comic-Con_2014_%2814415421809%29.jpg/330px-Oz_Comic-Con_2014_%2814415421809%29.jpg",
-    "palabraClave": "kristoff"
+    "nombre": "Olaf (Frozen)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbaDnf56ZLkaEKXheYQ9vK6fpFtAkYDT5kHg&s"
   },
   {
-    "nombre": "Judy Hopps",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zootropolis_2_logo.png/330px-Zootropolis_2_logo.png",
-    "palabraClave": "hopps"
+    "nombre": "Kristoff (Frozen)",
+    "imagen": "https://depor.com/resizer/rzohsh6ELgqbhmtmotOtf09Gr7E=/1200x900/smart/filters:format(jpeg):quality(90)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/MSN6LUOSRFA7TKPW25ZWRSEWLA.webp"
   },
   {
-    "nombre": "Hiro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Big_Hero_6_logo.svg/langes-330px-Big_Hero_6_logo.svg.png",
-    "palabraClave": "hiro"
+    "nombre": "Sven (Frozen)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlQvKCYmH5N3iln-MVjs0Q7yDYY-VuhgGlXw&s"
   },
   {
-    "nombre": "Ralph",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wreck-It_Ralph_Logo.webp/330px-Wreck-It_Ralph_Logo.webp.png",
-    "palabraClave": "ralph"
+    "nombre": "Judy Hopps (Zootrópolis)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-HDLdtrP4VvuUY3dQuwC2zKhu0rrNe2_TQ&s"
   },
   {
-    "nombre": "Vanellope",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Ralph_Breaks_the_Internet_Logo_Black.svg/langes-330px-Ralph_Breaks_the_Internet_Logo_Black.svg.png",
-    "palabraClave": "vanellope"
+    "nombre": "Nick Wilde (Zootrópolis)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3n7Ms0tp91busG_jtyxHRHpgUcJ_pcm8qQ&s"
   },
   {
-    "nombre": "Maui",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/M%C4%81ui_Performer_Merrie_Monarch_Parade_DSC9524.jpg/330px-M%C4%81ui_Performer_Merrie_Monarch_Parade_DSC9524.jpg",
-    "palabraClave": "maui"
+    "nombre": "Hiro (Big Hero 6)",
+    "imagen": "https://i.redd.it/hiro-from-big-hero-6-is-canonically-aroace-v0-5qy6vfjcmyz91.png?width=1280&format=png&auto=webp&s=9732158cbce9c82a67541286f5114f1961fcd2bd"
+  },
+  {
+    "nombre": "Baymax (Big Hero 6)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzp8fX0mbAe3wVHdEL8KD0dK0ITc9VGGQuDQ&s"
+  },
+  {
+    "nombre": "Ralph (Ralph el Demoledor)",
+    "imagen": "https://static.wikia.nocookie.net/ralpheldemoledor/images/0/05/Wreck-It_Ralph_Bio_-_Pic.png/revision/latest?cb=20121226072958&path-prefix=es"
+  },
+  {
+    "nombre": "Vanellope (Ralph el Demoledor)",
+    "imagen": "https://cdn.milenio.com/uploads/media/2018/11/06/ralph-el-demoledor-foto-especial_551_54_1052_655.jpg"
+  },
+  {
+    "nombre": "Maui (Moana)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/6/6f/Profile_-_Maui.jpeg/revision/latest/scale-to-width-down/1200?cb=20250309150414"
+  },
+  {
+    "nombre": "Luisa (Encanto)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjdSqIBZrG24yp4NjQLyYERh-hUys2r2ZqfQ&s"
+  },
+  {
+    "nombre": "Isabela (Encanto)",
+    "imagen": "https://i.redd.it/9jfc8d32mbk91.jpg"
   },
   {
     "nombre": "Winnie the Pooh",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Winnie-the-Pooh_19.png/330px-Winnie-the-Pooh_19.png",
-    "palabraClave": "pooh"
+    "imagen": "https://static.wikia.nocookie.net/disney/images/0/03/Profile_-_Winnie_the_Pooh.png/revision/latest?cb=20250323022729"
   },
   {
-    "nombre": "Tigger",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/WinnieThePooh-Tigro-OriginalChristopher.png/330px-WinnieThePooh-Tigro-OriginalChristopher.png",
-    "palabraClave": "tigger"
+    "nombre": "Tigger (Winnie the Pooh)",
+    "imagen": "https://static.wikia.nocookie.net/winniethepooh/images/6/66/Static-assets-upload8187676302237847203.jpg/revision/latest?cb=20231214203650"
   },
   {
-    "nombre": "Piglet",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Winnie-the-Pooh_166-3.png/330px-Winnie-the-Pooh_166-3.png",
-    "palabraClave": "piglet"
+    "nombre": "Piglet (Winnie the Pooh)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/5/5d/Profile_-_Piglet.png/revision/latest?cb=20190424074931"
   },
   {
-    "nombre": "Eeyore",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Winnie-the-Pooh_166-1.png/330px-Winnie-the-Pooh_166-1.png",
-    "palabraClave": "eeyore"
+    "nombre": "Eeyore (Winnie the Pooh)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/1/1c/Profile_-_Eeyore.png/revision/latest/scale-to-width-down/1200?cb=20210516060155"
   },
   {
-    "nombre": "Lady",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Lady_and_the_Tramp_Logo.svg/langes-330px-Lady_and_the_Tramp_Logo.svg.png",
-    "palabraClave": "lady"
+    "nombre": "Lady (La Dama y el Vagabundo)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3VrJEtwf2oRJ-z6aL-qU1FmN4nD5tqi7HXQ&s"
   },
   {
-    "nombre": "Scrooge McDuck",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Don_Rosa_Dragon_Con_2009.JPG/330px-Don_Rosa_Dragon_Con_2009.JPG",
-    "palabraClave": "mcduck"
+    "nombre": "El tío Gilito",
+    "imagen": "https://img.europapress.es/fotoweb/fotonoticia_20130910131520_412.jpg"
   },
   {
     "nombre": "Huey, Dewey y Louie",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/U-Bahnhof_Oriente_-_Tick_Trick_und_Track_mit_Robben.jpg/330px-U-Bahnhof_Oriente_-_Tick_Trick_und_Track_mit_Robben.jpg",
-    "palabraClave": "louie"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1iqx2lLK7L93yCDfh3bSLBMnoO3W0gtswQ&s"
   },
   {
-    "nombre": "Mérida",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/M%C3%A9rida_%28Brave%29.jpg/330px-M%C3%A9rida_%28Brave%29.jpg",
-    "palabraClave": "merida"
+    "nombre": "Mérida (Brave)",
+    "imagen": "https://blogs.hoy.es/extremaduraenlista/wp-content/uploads/sites/20/2012/08/la-foto-de-M%C3%A9rida.jpg"
   },
   {
-    "nombre": "Mushu",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Disneyland_Mulan_and_Mushu.jpg/330px-Disneyland_Mulan_and_Mushu.jpg",
-    "palabraClave": "mushu"
+    "nombre": "Mushu (Mulan)",
+    "imagen": "https://imagenes.hobbyconsolas.com/files/image_1920_1080/uploads/imagenes/2023/04/25/6902f0b40f971.jpeg"
+  },
+  {
+    "nombre": "Yasmin (Aladdin)",
+    "imagen": "https://i.ebayimg.com/images/g/7J0AAOSwUbFkDqJ~/s-l1200.jpg"
+  },
+  {
+    "nombre": "Kuzko (El emperador y sus locuras)",
+    "imagen": "https://e01-elmundo.uecdn.es/television/programacion-tv/img/v2/programas/b7/149175.png"
+  },
+  {
+    "nombre": "Gretchen Grundler (La Banda del Patio)",
+    "imagen": "https://static.wikia.nocookie.net/doblaje/images/9/95/Gretchen_-_ALG_WGS.png/revision/latest?cb=20211006090118&path-prefix=es"
+  },
+  {
+    "nombre": "Ashley Spinelli (La Banda del Patio)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQebZYl3iFNTUn8FmshVeKFqf3Q6bo6cNZWsQ&s"
+  },
+  {
+    "nombre": "T.J.\" Detweiler (La Banda del Patio)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSefm80S_ZYHUDaMUehrcFFSkAQQXaQFW7WCA&s"
+  },
+  {
+    "nombre": "Gus Griswald (La Banda del Patio)",
+    "imagen": "https://static.wikia.nocookie.net/doblaje/images/4/4e/Gus_-_ALG.png/revision/latest?cb=20211006090158&path-prefix=es"
+  },
+  {
+    "nombre": "Randall Recess (La Banda del Patio)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/4/40/RandallWeems.jpg/revision/latest?cb=20120515081155"
   }
 ]
