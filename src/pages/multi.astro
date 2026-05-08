@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { subcategorias } from "../data/catalogoCine.ts";
+import { subcategoriasMundo } from "../data/catalogoMundo.ts";
 import publicadas from "../../public/data/publicadas.json";
 
 const pub = publicadas as string[];
@@ -22,14 +23,30 @@ for (const s of subcategorias) {
     cineSlugsNombres[s.slug] = s.nombre;
   }
 }
+
+// Mundo: slugs publicados
+const mundoSlugsJugables = subcategoriasMundo
+  .filter((s) => !s.esMetaCategoria && !!s.nombres && pub.includes(s.slug))
+  .map((s) => s.slug);
+const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
+  subcategoriasMundo
+    .filter((s) => !s.esMetaCategoria && !!s.nombres)
+    .map((s) => [s.slug, s.nombre])
+);
+
+// Pool combinado
+const todasSlugsJugables = [...cineSlugsJugables, ...mundoSlugsJugables];
+const todasSlugsNombres: Record<string, string> = { ...cineSlugsNombres, ...mundoSlugsNombres };
+
 const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "d8b48a4d7d6cb146cf1e";
 const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 ---
 
 <Base titulo="El Suelo — 2 jugadores" descripcion="Juega El Suelo contra alguien desde otro móvil.">
-  <div id="datos-cine-slugs" data-json={JSON.stringify(cineSlugsJugables)} class="hidden"></div>
-  <div id="datos-cine-nombres" data-json={JSON.stringify(cineSlugsNombres)} class="hidden"></div>
+  <div id="datos-cine-slugs" data-json={JSON.stringify(todasSlugsJugables)} class="hidden"></div>
+  <div id="datos-cine-nombres" data-json={JSON.stringify(todasSlugsNombres)} class="hidden"></div>
   <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
+  <div id="datos-mundo-slugs" data-json={JSON.stringify(mundoSlugsJugables)} class="hidden"></div>
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
       <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">← Volver</button>
@@ -278,6 +295,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   import type { Channel } from "pusher-js";
   import {
     generarFloor, generarFloorPredefinida, cargarCatalogoCine, cargarCatalogoCinePeli,
+    cargarCatalogoMundo,
     type ItemFloor, crearReconocedor, navegadorSoportaVoz,
     type ReconocedorVoz, aciertoFlexible,
   } from "../lib/floor-client.ts";
@@ -292,6 +310,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   );
   const cineSlugsDerivados: Record<string, { baseSlug: string }> = JSON.parse(
     (document.getElementById("datos-cine-derivados") as HTMLElement).dataset.json!,
+  );
+  const mundoSlugsJugables: string[] = JSON.parse(
+    (document.getElementById("datos-mundo-slugs") as HTMLElement).dataset.json!,
   );
 
   // ── DOM ────────────────────────────────────────────────────
@@ -611,10 +632,14 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     $("loader-cat-name").textContent = cineSlugsNombres[_slug] ?? _slug;
     try {
       let raw: ItemFloor[];
-      const derivado = cineSlugsDerivados[_slug];
-      raw = derivado
-        ? await cargarCatalogoCinePeli(_slug, derivado.baseSlug)
-        : await cargarCatalogoCine(_slug);
+      if (mundoSlugsJugables.includes(_slug)) {
+        raw = await cargarCatalogoMundo(_slug);
+      } else {
+        const derivado = cineSlugsDerivados[_slug];
+        raw = derivado
+          ? await cargarCatalogoCinePeli(_slug, derivado.baseSlug)
+          : await cargarCatalogoCine(_slug);
+      }
       categoriaActual = cineSlugsNombres[_slug] ?? _slug;
       items = [...raw].sort(() => Math.random() - 0.5).slice(0, 20);
       turno = "A"; decimasA = 450; decimasB = 450;

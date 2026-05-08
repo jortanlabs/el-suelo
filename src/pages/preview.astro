@@ -1,10 +1,16 @@
 ---
 export const prerender = true;
 import { subcategorias } from "../data/catalogoCine.ts";
+import { subcategoriasMundo, bloquesMundo } from "../data/catalogoMundo.ts";
 
-const leafSubcats = subcategorias
-  .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
-  .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres! }));
+const leafSubcats = [
+  ...subcategorias
+    .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
+    .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres!, dataPath: "cine", grupo: "cine" })),
+  ...subcategoriasMundo
+    .filter((s) => !s.esMetaCategoria && !!s.nombres)
+    .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres!, dataPath: "mundo", grupo: "mundo" })),
+];
 
 const BUILD = Date.now();
 ---
@@ -184,41 +190,70 @@ const BUILD = Date.now();
   const REPO = 'tanKobra/el-suelo';
   const BRANCH = 'master';
 
+  // Global bloque registry (populated by buildSidebarGroup)
+  const allGroups = {};
+
   // ── Sidebar ────────────────────────────────────────────────────
   const sidebar = document.getElementById('sidebar');
-  const groups = {};
-  for (const s of leafSubcats) {
-    if (!groups[s.bloque]) groups[s.bloque] = { nombre: s.bloqueNombre, items: [] };
-    groups[s.bloque].items.push(s);
-  }
-  for (const [bloqueSlug, group] of Object.entries(groups)) {
-    const sec = document.createElement('div');
-    const lbl = document.createElement('div');
-    lbl.className = 'sidebar-bloque';
-    lbl.textContent = group.nombre;
-    sec.appendChild(lbl);
-    for (const s of group.items) {
-      const btn = document.createElement('button');
-      btn.className = 'sidebar-btn';
-      btn.dataset.slug = s.slug;
-      btn.innerHTML = `<span>${s.emoji} ${s.nombre}</span><span class="sstat" id="ss-${s.slug}" style="color:#163575"></span>`;
-      btn.addEventListener('click', () => selectSlug(s.slug));
-      sec.appendChild(btn);
+
+  function buildSidebarGroup(grupoSlug, grupoLabel, grupoEmoji, subcats) {
+    // Collapsible section header
+    const grupoWrap = document.createElement('div');
+    let collapsed = false;
+    const grupoBtn = document.createElement('button');
+    grupoBtn.style.cssText = 'width:100%;padding:8px 12px;background:#0a1628;border:none;border-bottom:1px solid #163575;color:#ffcc00;font-size:0.75rem;font-weight:bold;text-align:left;cursor:pointer;display:flex;align-items:center;gap:6px;';
+    grupoBtn.innerHTML = `<span>${grupoEmoji}</span><span style="flex:1">${grupoLabel}</span><span id="arr-${grupoSlug}" style="font-size:0.6rem">▾</span>`;
+    const grupoBody = document.createElement('div');
+    grupoBody.id = `grupo-body-${grupoSlug}`;
+    grupoBtn.addEventListener('click', () => {
+      collapsed = !collapsed;
+      grupoBody.style.display = collapsed ? 'none' : '';
+      document.getElementById(`arr-${grupoSlug}`).textContent = collapsed ? '▸' : '▾';
+    });
+    grupoWrap.appendChild(grupoBtn);
+    grupoWrap.appendChild(grupoBody);
+
+    // Group items by bloque and register globally
+    const groups = {};
+    for (const s of subcats) {
+      if (!groups[s.bloque]) groups[s.bloque] = { nombre: s.bloqueNombre, items: [], dataPath: s.dataPath };
+      groups[s.bloque].items.push(s);
     }
-    // Publish button per block
-    const pubBtn = document.createElement('button');
-    pubBtn.className = 'btn-publish-block';
-    pubBtn.dataset.bloque = bloqueSlug;
-    pubBtn.textContent = `🚀 Publicar ${group.nombre}`;
-    pubBtn.addEventListener('click', () => iniciarPublicar(bloqueSlug));
-    const pubBarWrap = document.createElement('div');
-    pubBarWrap.className = 'pub-bar';
-    pubBarWrap.id = `pubbar-${bloqueSlug}`;
-    pubBarWrap.innerHTML = `<div class="pub-bar-fill" id="pubfill-${bloqueSlug}"></div>`;
-    sec.appendChild(pubBtn);
-    sec.appendChild(pubBarWrap);
-    sidebar.appendChild(sec);
+    Object.assign(allGroups, groups);
+    for (const [bloqueSlug, group] of Object.entries(groups)) {
+      const sec = document.createElement('div');
+      const lbl = document.createElement('div');
+      lbl.className = 'sidebar-bloque';
+      lbl.textContent = group.nombre;
+      sec.appendChild(lbl);
+      for (const s of group.items) {
+        const btn = document.createElement('button');
+        btn.className = 'sidebar-btn';
+        btn.dataset.slug = s.slug;
+        btn.innerHTML = `<span>${s.emoji} ${s.nombre}</span><span class="sstat" id="ss-${s.slug}" style="color:#163575"></span>`;
+        btn.addEventListener('click', () => selectSlug(s.slug));
+        sec.appendChild(btn);
+      }
+      const pubBtn = document.createElement('button');
+      pubBtn.className = 'btn-publish-block';
+      pubBtn.dataset.bloque = bloqueSlug;
+      pubBtn.textContent = `🚀 Publicar ${group.nombre}`;
+      pubBtn.addEventListener('click', () => iniciarPublicar(bloqueSlug));
+      const pubBarWrap = document.createElement('div');
+      pubBarWrap.className = 'pub-bar';
+      pubBarWrap.id = `pubbar-${bloqueSlug}`;
+      pubBarWrap.innerHTML = `<div class="pub-bar-fill" id="pubfill-${bloqueSlug}"></div>`;
+      sec.appendChild(pubBtn);
+      sec.appendChild(pubBarWrap);
+      grupoBody.appendChild(sec);
+    }
+    sidebar.appendChild(grupoWrap);
   }
+
+  const cineSubcats = leafSubcats.filter(s => s.grupo === 'cine');
+  const mundoSubcats = leafSubcats.filter(s => s.grupo === 'mundo');
+  buildSidebarGroup('cine', 'Cine y Series', '🎬', cineSubcats);
+  buildSidebarGroup('mundo', 'El Mundo', '🌍', mundoSubcats);
 
   // ── Select ─────────────────────────────────────────────────────
   async function selectSlug(slug) {
@@ -227,7 +262,8 @@ const BUILD = Date.now();
     document.getElementById('btn-export-cur').disabled = false;
     if (!resolved[slug]) {
       renderMain(slug, null);
-      try { const r = await fetch(`/data/cine/${slug}.json`); resolved[slug] = r.ok ? await r.json() : []; }
+      const dp = (leafSubcats.find(s => s.slug === slug) || {}).dataPath || 'cine';
+      try { const r = await fetch(`/data/${dp}/${slug}.json`); resolved[slug] = r.ok ? await r.json() : []; }
       catch { resolved[slug] = []; }
     }
     renderMain(slug, resolved[slug]);
@@ -490,8 +526,8 @@ const BUILD = Date.now();
     return result;
   }
 
-  async function commitFile(slug, items, token) {
-    const path = `public/data/cine/${slug}.json`;
+  async function commitFile(slug, items, token, dataPath = 'cine') {
+    const path = `public/data/${dataPath}/${slug}.json`;
     const apiBase = `https://api.github.com/repos/${REPO}/contents/${path}`;
     const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' };
     // Get current SHA
@@ -535,8 +571,9 @@ const BUILD = Date.now();
   });
 
   async function ejecutarPublicar(bloqueSlug, token) {
-    const group = groups[bloqueSlug];
+    const group = allGroups[bloqueSlug];
     const slugs = group.items.map(s => s.slug);
+    const dataPath = group.dataPath || 'cine';
     const dlg = document.getElementById('dlg-pub');
     const msg = document.getElementById('dlg-pub-msg');
     const bar = document.getElementById('dlg-pub-bar');
@@ -549,7 +586,7 @@ const BUILD = Date.now();
     for (const slug of slugs) {
       if (!resolved[slug]) {
         msg.textContent = `Cargando ${slug}...`;
-        try { const r = await fetch(`/data/cine/${slug}.json`); resolved[slug] = r.ok ? await r.json() : []; }
+        try { const r = await fetch(`/data/${dataPath}/${slug}.json`); resolved[slug] = r.ok ? await r.json() : []; }
         catch { resolved[slug] = []; }
       }
     }
@@ -561,7 +598,7 @@ const BUILD = Date.now();
       bar.style.width = `${Math.round((done / slugs.length) * 100)}%`;
       try {
         const items = buildFinalItems(slug);
-        await commitFile(slug, items, token);
+        await commitFile(slug, items, token, dataPath);
         publishedSlugs.push(slug);
         log.innerHTML += `<div style="color:#4cff8f">✓ ${slug} (${items.length} items)</div>`;
       } catch (e) {

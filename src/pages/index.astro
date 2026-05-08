@@ -27,12 +27,15 @@ const cineBloques = bloques.map((b) => ({
 
 // Solo slugs aprobados/publicados (los que aparecen en publicadas.json)
 import publicadas from "../../public/data/publicadas.json";
+import { subcategoriasMundo } from "../data/catalogoMundo.ts";
 const pub = publicadas as string[];
+
+// Cine: slugs directos publicados
 const cineSlugsJugables = subcategorias
   .filter((s) => !s.esMetaCategoria && !s.pendiente && !s.derivadoDe && !!s.nombres && pub.includes(s.slug))
   .map((s) => s.slug);
 
-// Categorías derivadas: activas si su base está publicada
+// Categorías derivadas de cine: activas si su base está publicada
 const cineSlugsDerivados: Record<string, { baseSlug: string }> = {};
 for (const s of subcategorias) {
   if (s.derivadoDe && s.modoDerivado === "pelicula" && pub.includes(s.derivadoDe)) {
@@ -40,6 +43,16 @@ for (const s of subcategorias) {
     cineSlugsJugables.push(s.slug);
   }
 }
+
+// Mundo: slugs publicados (dataPath: "mundo")
+const mundoSlugsJugables = subcategoriasMundo
+  .filter((s) => !s.esMetaCategoria && !!s.nombres && pub.includes(s.slug))
+  .map((s) => s.slug);
+const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
+  subcategoriasMundo
+    .filter((s) => !s.esMetaCategoria && !!s.nombres)
+    .map((s) => [s.slug, s.nombre])
+);
 ---
 
 <Base titulo="El Suelo" descripcion="Di qué ves antes de que se acabe tu tiempo.">
@@ -48,6 +61,8 @@ for (const s of subcategorias) {
   <div id="datos-cine" data-json={JSON.stringify(cineBloques)} class="hidden"></div>
   <div id="datos-cine-slugs" data-json={JSON.stringify(cineSlugsJugables)} class="hidden"></div>
   <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
+  <div id="datos-mundo-slugs" data-json={JSON.stringify(mundoSlugsJugables)} class="hidden"></div>
+  <div id="datos-mundo-nombres" data-json={JSON.stringify(mundoSlugsNombres)} class="hidden"></div>
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
@@ -425,6 +440,7 @@ for (const s of subcategorias) {
     aciertoFlexible,
     cargarCatalogoCine,
     cargarCatalogoCinePeli,
+    cargarCatalogoMundo,
     cargarMezclaCine,
   } from "../lib/floor-client.ts";
   import { categoriasFloor as todasCatsOtras } from "../data/categoriasFloor.ts";
@@ -462,6 +478,14 @@ for (const s of subcategorias) {
   const cineSlugsDerivados: Record<string, { baseSlug: string }> = JSON.parse(
     (document.getElementById("datos-cine-derivados") as HTMLElement).dataset.json!,
   );
+  const mundoSlugsJugables: string[] = JSON.parse(
+    (document.getElementById("datos-mundo-slugs") as HTMLElement).dataset.json!,
+  );
+  const mundoSlugsNombres: Record<string, string> = JSON.parse(
+    (document.getElementById("datos-mundo-nombres") as HTMLElement).dataset.json!,
+  );
+  // Pool combinado: cine + mundo publicados
+  const todasSlugsJugables: string[] = [...cineSlugsJugables, ...mundoSlugsJugables];
 
   const $ = (id: string) => document.getElementById(id)!;
 
@@ -514,12 +538,13 @@ for (const s of subcategorias) {
     $("modo-rapida").classList.add("text-[#2a5090]", "border-[#163575]");
   });
 
-  // ── Categoría (siempre Cine y Series) ───────────────────────
+  // ── Categoría ───────────────────────────────────────────────
   type CategoriaTipo = "otras" | "cine";
   let categoriaTipo: CategoriaTipo = "cine";
   let categoriaSlug = "";
   let categoriaNombre = "";
   let categoriaSlugsParaMezcla: string[] | null = null;
+  let categoriaDataPath = "cine"; // "cine" | "mundo"
 
     // ── Estado de juego ─────────────────────────────────────────
   interface Jugador {
@@ -573,15 +598,19 @@ for (const s of subcategorias) {
       return;
     }
 
-    // Auto-pick random cine subcategory
-    const _slug = cineSlugsJugables[Math.floor(Math.random() * cineSlugsJugables.length)];
+    // Auto-pick random subcategory (cine + mundo pool)
+    const _slug = todasSlugsJugables[Math.floor(Math.random() * todasSlugsJugables.length)];
+    const _esMundo = mundoSlugsJugables.includes(_slug);
     categoriaTipo = "cine";
     categoriaSlug = _slug;
+    categoriaDataPath = _esMundo ? "mundo" : "cine";
     categoriaSlugsParaMezcla = null;
-    let _nombre = _slug;
-    for (const bloque of cineBloques) {
-      const s = (bloque as any).subcats.find((s: any) => s.slug === _slug);
-      if (s) { _nombre = s.nombre; break; }
+    let _nombre = _esMundo ? (mundoSlugsNombres[_slug] ?? _slug) : _slug;
+    if (!_esMundo) {
+      for (const bloque of cineBloques) {
+        const s = (bloque as any).subcats.find((s: any) => s.slug === _slug);
+        if (s) { _nombre = s.nombre; break; }
+      }
     }
     categoriaNombre = _nombre;
 
@@ -596,6 +625,8 @@ for (const s of subcategorias) {
       if (categoriaTipo === "cine") {
         if (categoriaSlugsParaMezcla) {
           raw = await cargarMezclaCine(categoriaSlugsParaMezcla);
+        } else if (categoriaDataPath === "mundo") {
+          raw = await cargarCatalogoMundo(categoriaSlug);
         } else {
           const derivado = cineSlugsDerivados[categoriaSlug];
           raw = derivado

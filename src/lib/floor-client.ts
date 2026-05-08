@@ -322,12 +322,16 @@ export async function generarFloor(
   return items;
 }
 
-// ── Catálogo Cine (pre-resuelto) ─────────────────────────────────────────────
+// ── Catálogos pre-resueltos (Cine, Mundo…) ───────────────────────────────────
 
 const TTL_CINE_MS = 7 * 24 * 60 * 60 * 1000; // 7 días
 
 function claveCine(slug: string): string {
   return `juegario:cine:v2:${slug}`;
+}
+
+function claveMundo(slug: string): string {
+  return `juegario:mundo:v1:${slug}`;
 }
 
 /**
@@ -344,7 +348,26 @@ export async function cargarCatalogoCine(slug: string): Promise<ItemFloor[]> {
   const items = (await res.json()) as ItemFloor[];
   if (!items.length) throw new Error(`La categoría "${slug}" está vacía`);
 
-  // Guardar con TTL largo (datos estáticos)
+  try {
+    localStorage.setItem(k, JSON.stringify({ data: items, expira: Date.now() + TTL_CINE_MS }));
+  } catch {}
+
+  return items;
+}
+
+/**
+ * Carga los items pre-resueltos de una subcategoría de El Mundo.
+ */
+export async function cargarCatalogoMundo(slug: string): Promise<ItemFloor[]> {
+  const k = claveMundo(slug);
+  const cached = leerCache(k);
+  if (cached && cached.length > 0) return cached;
+
+  const res = await fetch(`/data/mundo/${slug}.json`);
+  if (!res.ok) throw new Error(`Categoría "${slug}" no encontrada`);
+  const items = (await res.json()) as ItemFloor[];
+  if (!items.length) throw new Error(`La categoría "${slug}" está vacía`);
+
   try {
     localStorage.setItem(k, JSON.stringify({ data: items, expira: Date.now() + TTL_CINE_MS }));
   } catch {}

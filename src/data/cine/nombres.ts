@@ -11,6 +11,7 @@ export interface SubcategoriaNombres {
   pendiente?: boolean; // true = no mostrar en el picker (pocos items resueltos)
   derivadoDe?: string; // slug base del que se deriva en tiempo real
   modoDerivado?: "pelicula"; // extrae el contenido entre paréntesis como respuesta
+  dataPath?: string; // carpeta dentro de public/data/ ("cine" por defecto, "mundo" para El Mundo)
 }
 
 export interface BloqueInfo {
