@@ -1,67 +1,254 @@
 [
   {
     "nombre": "Superman",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kirk_Alyn_as_Superman_in_a_publicity_still_from_1948.jpg/330px-Kirk_Alyn_as_Superman_in_a_publicity_still_from_1948.jpg",
-    "palabraClave": "superman"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/henry-cavill-superman-64e5f44558477.jpg?crop=1xw:0.8995098039215687xh;0,0"
+  },
+  {
+    "nombre": "Batman",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm4UvkBEJ3Cen3hxnvxLfhf5ifT4Uu0LPTBQ&s"
   },
   {
     "nombre": "Wonder Woman",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Lynda_Carter_Wonder_Woman.JPG/330px-Lynda_Carter_Wonder_Woman.JPG",
-    "palabraClave": "woman"
+    "imagen": "https://media.gq.com.mx/photos/5dea8d105b7e8300097bc961/16:9/w_2560%2Cc_limit/wonder.png"
+  },
+  {
+    "nombre": "The Flash",
+    "imagen": "https://i.blogs.es/be7ee1/the-flash/1366_2000.jpg"
+  },
+  {
+    "nombre": "Aquaman",
+    "imagen": "https://i0.wp.com/elplanetaurbano.com/wp-content/uploads/2022/06/jason-momoa-aquaman-2-epu-oceanos.jpeg?resize=1250%2C781&ssl=1"
+  },
+  {
+    "nombre": "Linterna Verde",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6AHy1DrEYPzvbXEzd8GIMoXA5qUBV9jX5Cw&s"
+  },
+  {
+    "nombre": "Cyborg (DC)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8-F7VN2yBKVm4MugUiZfZEiY6WqwxdBLAPw&s"
+  },
+  {
+    "nombre": "Shazam",
+    "imagen": "https://www.akiracomics.com/imagenes/poridentidad?identidad=754abe24-af23-4a7b-8170-717d2cf4807d&ancho=850&alto="
   },
   {
     "nombre": "Black Adam",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e3/Modern_Black_Adam.png",
-    "palabraClave": "adam"
+    "imagen": "https://m.media-amazon.com/images/M/MV5BYjgxYjcxYzktOTNhNi00MmU0LWJkZmMtMjEwNmY1NGI1MzU1XkEyXkFqcGdeQXZ3ZXNsZXk@._V1_.jpg"
+  },
+  {
+    "nombre": "Joker",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrRznvv2XYd0YUn4yAQWK7u5p5WZUBIwgSaw&s"
   },
   {
     "nombre": "Lex Luthor",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/9/9b/Lex_Luthor_%28comic_book_supervillain%29_infobox_image.png",
-    "palabraClave": "luthor"
+    "imagen": "https://i.blogs.es/3eeada/superman/500_333.webp"
+  },
+  {
+    "nombre": "Catwoman",
+    "imagen": "https://i.blogs.es/fe3290/catwoman-cartel/450_1000.jpg"
+  },
+  {
+    "nombre": "Harley Quinn",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTftsJnpjuHIFefW_E9Zb-VMsjevLlBf5XQ&s"
+  },
+  {
+    "nombre": "Pingüino (DC)",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/batman-pinguino-cine-66e9ace9c8473.jpeg?resize=980:*"
+  },
+  {
+    "nombre": "El Acertijo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a2/NYCC_2011_-_The_Riddler_%286310757623%29.jpg"
   },
   {
     "nombre": "Dos Caras",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/75/Dos_Caras_in_1984_%28cropped%29.png",
-    "palabraClave": "caras"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXcM-YRjk-TlaW4oiMkAx0o9_4frnEoEteBw&s"
+  },
+  {
+    "nombre": "Bane (DC)",
+    "imagen": "https://fotografias-2.larazon.es/assets/videojuegos/2025/08/dc-presenta-una-version-terrorifica-de-bane.jpg?width=1900&height=1069"
+  },
+  {
+    "nombre": "Espantapájaros (DC)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHINjX1_D6TMnz5RsWkfYvDBct0xym5tg9g&s"
+  },
+  {
+    "nombre": "Hiedra Venenosa",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zd3xBvQT9dEAawnHKM-zG7m07u0Uf5ZGAw&s"
+  },
+  {
+    "nombre": "Deathstroke",
+    "imagen": "https://media.revistagq.com/photos/5ca5f958b7380830aa8194dc/master/w_1600%2Cc_limit/deathstroke_41.jpg"
+  },
+  {
+    "nombre": "Mr. Freeze",
+    "imagen": "https://preview.redd.it/the-coldest-knight-mr-freeze-as-batman-by-vic-bazaine-v0-7eljhq14sxnf1.jpeg?width=640&crop=smart&auto=webp&s=83e44602440eda5407e2f2485c1bef705ce51991"
+  },
+  {
+    "nombre": "Ra's al Ghul",
+    "imagen": "https://external-preview.redd.it/breaking-news-ras-al-ghul-is-coming-to-gotham-v0-eYDyiH7O4x7SO4HA_9itdBvbtcYtbZDZQGSK2OLzZ1s.jpg?auto=webp&s=d477c0ce51b8526bb1431d333bbb4d03775278b7"
+  },
+  {
+    "nombre": "Darkseid",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Darkseid_Snyder_Cut.jpg/250px-Darkseid_Snyder_Cut.jpg"
+  },
+  {
+    "nombre": "Doomsday (DC)",
+    "imagen": "https://static0.srcdn.com/wordpress/wp-content/uploads/2016/08/doomsday-dinosaur.jpg?w=1200&h=675&fit=crop"
+  },
+  {
+    "nombre": "Brainiac",
+    "imagen": "https://spoiler.mx/wp-content/uploads/2025/12/Blake-Ritson-in-Krypton-1.jpeg"
+  },
+  {
+    "nombre": "General Zod",
+    "imagen": "https://static.wikia.nocookie.net/superman/images/0/00/General_Zod_Man_of_Steel.jpg/revision/latest?cb=20130703005526"
+  },
+  {
+    "nombre": "Lois Lane",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAI1xgfUaqZoxrlN2pJQALxF50ym_3NuuuVA&s"
   },
   {
     "nombre": "Alfred Pennyworth",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/5c/Alfred_Pennyworth_%28Alex_Ross%29.jpg",
-    "palabraClave": "pennyworth"
+    "imagen": "https://static.wikia.nocookie.net/youngjustice/images/2/24/Alfred_Pennyworth.png/revision/latest?cb=20190813174827"
+  },
+  {
+    "nombre": "Comisario Gordon",
+    "imagen": "https://album.mediaset.es/eimg/2017/09/23/9XaweVkE0YRYwUoxYdSya.jpg?w=1200"
+  },
+  {
+    "nombre": "Jimmy Olsen",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyY2zPORP_s3ELB5Gx25oTmNb_JYbvBIXaQw&s"
+  },
+  {
+    "nombre": "Nightwing",
+    "imagen": "https://static0.srcdn.com/wordpress/wp-content/uploads/2023/06/nightwing-dan-mora.jpg?w=1200&h=675&fit=crop"
+  },
+  {
+    "nombre": "Batgirl",
+    "imagen": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/03/DC-Comics_-Cosplayer-le-da-vida-a-Batgirl-mostrando-como-luciria-despues-de-una-batalla-2.jpg"
   },
   {
     "nombre": "Supergirl",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e1/The_Supergirls.jpg",
-    "palabraClave": "supergirl"
+    "imagen": "https://m.media-amazon.com/images/M/MV5BY2FkNDhhMzItM2JjMi00ODEwLWEzYjgtNmMzN2ZhODkxOWQ2XkEyXkFqcGdeQWFybm8@._V1_QL75_UY281_CR0,0,500,281_.jpg"
+  },
+  {
+    "nombre": "Martian Manhunter",
+    "imagen": "https://static.wikia.nocookie.net/dcanimated/images/a/ad/J%27onn.png/revision/latest/thumbnail/width/360/height/450?cb=20180621170830"
+  },
+  {
+    "nombre": "Flecha Verde",
+    "imagen": "https://www.zonanegativa.com/imagenes/2024/05/GREEN-DES.jpg"
+  },
+  {
+    "nombre": "Canario Negro",
+    "imagen": "https://static.wikia.nocookie.net/youngjustice-fanon/images/9/9b/Canario_Negro.png/revision/latest?cb=20160502015301&path-prefix=es"
+  },
+  {
+    "nombre": "The Atom",
+    "imagen": "https://comicbook.com/wp-content/uploads/sites/4/2017/09/0b39e99a3248a72f26b7f0ff63dbe0e9.jpg"
   },
   {
     "nombre": "Zatanna",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/64/Zatanna_Bring_Down_The_House.jpeg",
-    "palabraClave": "zatanna"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkordHYFycrD76ixJQ67EC8V9wJlrjgFzWTQ&s"
   },
   {
-    "nombre": "Damian Wayne",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/ee/Robin_%28Damian_Wayne%29.png",
-    "palabraClave": "wayne"
+    "nombre": "Starfire",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlDjh1rVwElt1te0tVQEI009Sjkhxg0oB-w&s"
   },
   {
-    "nombre": "Barbara Gordon",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6c/Barbara_Gordon.jpg",
-    "palabraClave": "gordon"
+    "nombre": "Raven (DC)",
+    "imagen": "https://geek-verse-comics.com/wp-content/uploads/2026/01/RAVEN_01_Cov_gallery_59e0004840adc6.94828587.jpg"
+  },
+  {
+    "nombre": "Beast Boy",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStm1RXwX9dXdGXZYyHu7tOIV5wT0cvo7pjGA&s"
+  },
+  {
+    "nombre": "Robin (Dick Grayson)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2t8aDjrfEKL785ASdaavEkCc5W30XFxHlCA&s"
+  },
+  {
+    "nombre": "Robin (Jason Todd)",
+    "imagen": "https://static.wikia.nocookie.net/justiciajoven/images/f/fe/Jason_Todd.png/revision/latest?cb=20120929175155&path-prefix=es"
+  },
+  {
+    "nombre": "Robin (Tim Drake)",
+    "imagen": "https://i.pinimg.com/736x/4f/dd/da/4fddda44d3a33626f517f71d5fee3dd3.jpg"
+  },
+  {
+    "nombre": "Mercy Graves",
+    "imagen": "https://static.wikia.nocookie.net/dcanimated/images/4/49/Mercy_Graves.png/revision/latest?cb=20210407215926"
+  },
+  {
+    "nombre": "Amanda Waller",
+    "imagen": "https://static.wikia.nocookie.net/dcanimated/images/b/b4/Amanda_Waller.png/revision/latest?cb=20180708125201"
   },
   {
     "nombre": "Deadshot",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2d/DC_Deadshot.png",
-    "palabraClave": "deadshot"
+    "imagen": "https://cdn.theplaylist.net/wp-content/uploads/2019/02/14211005/will-smith-dead-shot-suicide-squad.jpg"
+  },
+  {
+    "nombre": "Captain Boomerang",
+    "imagen": "https://static.posters.cz/image/1300/197719.jpg"
+  },
+  {
+    "nombre": "Rick Flag",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Rick-Flag.Suicide-Squad.webp"
+  },
+  {
+    "nombre": "King Shark",
+    "imagen": "https://imagenes.hobbyconsolas.com/files/image_1920_1080/uploads/imagenes/2023/04/25/690197e52f590.jpeg"
+  },
+  {
+    "nombre": "Polka-Dot Man",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlAWpFN55DOW6OmQdcGmA9WtcZElloboW2A&s"
+  },
+  {
+    "nombre": "Ratcatcher",
+    "imagen": "https://preview.redd.it/i-would-really-like-to-see-ratcatcher-2-in-something-again-v0-dttgrvqe6c1a1.jpg?auto=webp&s=223f6a3dec59ee0191e88a4e978644153d82645d"
+  },
+  {
+    "nombre": "El Hombre Polilla",
+    "imagen": "https://static.wikia.nocookie.net/creepypasta/images/b/b9/Mothman2.jpg/revision/latest?cb=20141125012936&path-prefix=es"
+  },
+  {
+    "nombre": "Solomon Grundy",
+    "imagen": "https://static.wikia.nocookie.net/batman/images/1/17/Solomongrundy.jpg/revision/latest/thumbnail/width/360/height/360?cb=20111224022444&path-prefix=es"
+  },
+  {
+    "nombre": "Black Manta",
+    "imagen": "https://www.denofgeek.com/wp-content/uploads/2021/10/aquaman-black-manta-yahya-abdul-mateen-ii-warner.jpg?resize=768%2C432"
   },
   {
     "nombre": "Ocean Master",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Patrick_Wilson_at_Sundance_Film_Festival_2026-3_%28cropped%29.jpg/330px-Patrick_Wilson_at_Sundance_Film_Festival_2026-3_%28cropped%29.jpg",
-    "palabraClave": "master"
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/AquamanOceanMaster2018.jpg/330px-AquamanOceanMaster2018.jpg"
+  },
+  {
+    "nombre": "Reverse Flash",
+    "imagen": "https://static0.srcdn.com/wordpress/wp-content/uploads/2024/04/reverse-flash-tearing-his-way-into-view.jpg?w=1200&h=675&fit=crop"
+  },
+  {
+    "nombre": "Captain Cold",
+    "imagen": "https://modernmythologies.files.wordpress.com/2014/10/captain-cold3.jpg"
+  },
+  {
+    "nombre": "Gorilla Grodd",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw0v9KpMnLRC-7GZRm-lI-3I25MV-BqYp7Kg&s"
+  },
+  {
+    "nombre": "Weather Wizard",
+    "imagen": "https://comicvine.gamespot.com/a/uploads/square_small/6/66303/2240466-flash_10.jpeg"
   },
   {
     "nombre": "Metallo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/26/Metallo_%28John_Corben%29.png",
-    "palabraClave": "metallo"
+    "imagen": "https://static.wikia.nocookie.net/superman/images/6/6d/Metallo_N52.png/revision/latest?cb=20150111194248&path-prefix=es"
+  },
+  {
+    "nombre": "Livewire",
+    "imagen": "https://static.wikia.nocookie.net/dcanimated/images/9/97/Livewire.png/revision/latest?cb=20210411192302"
+  },
+  {
+    "nombre": "Parasite (DC)",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/0/0a/Parasitesuperman.PNG"
   }
 ]
