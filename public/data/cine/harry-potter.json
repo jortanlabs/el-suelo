@@ -1,42 +1,318 @@
 [
   {
     "nombre": "Harry Potter",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/langes-330px-Harry_Potter_wordmark.svg.png",
-    "palabraClave": "potter"
+    "imagen": "https://www.tasteofcinema.com/wp-content/uploads/2017/06/Daniel-Radcliffe-as-Harry-Potter.jpg"
+  },
+  {
+    "nombre": "Ron Weasley",
+    "imagen": "https://i.blogs.es/bc829c/ron/500_333.jpeg"
   },
   {
     "nombre": "Hermione Granger",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg",
-    "palabraClave": "granger"
+    "imagen": "https://images.ecestaticos.com/oVSrVSFyysbXZJ5Rdeu1QMphDmc=/3x0:1600x901/1440x810/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fac7%2F92a%2F6ab%2Fac792a6ab21d2ef1d150961814c4cdf1.jpg"
   },
   {
     "nombre": "Albus Dumbledore",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Albus-DII_1.1.jpg/330px-Albus-DII_1.1.jpg",
-    "palabraClave": "dumbledore"
+    "imagen": "https://image.europafm.com/clipping/cmsimages02/2022/01/07/1AB6589B-3604-45B3-8D92-2E9E1926EB8A/98.jpg?crop=2048,1152,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
     "nombre": "Lord Voldemort",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lord_Voldemort%27s_Figure.jpg/330px-Lord_Voldemort%27s_Figure.jpg",
-    "palabraClave": "voldemort"
+    "imagen": "https://i.redd.it/can-they-please-make-voldemort-scarier-v0-yzrrd3v356dg1.jpg?width=780&format=pjpg&auto=webp&s=12597fa1c6156e7d3c51982b976475baa283645d"
   },
   {
     "nombre": "Severus Snape",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b9/Ootp076.jpg",
-    "palabraClave": "snape"
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/toxlayPDePtX8yx2wvWun/b65f6acd9087031b1ff39461d8f22d0a/severus-snape_2_1800x1248.png?q=75&fm=jpg&w=600&h=416&fit=pad"
+  },
+  {
+    "nombre": "Minerva McGonagall",
+    "imagen": "https://diariohoynet.nyc3.cdn.digitaloceanspaces.com/adjuntos/galerias/000/627/0000627404.jpg"
+  },
+  {
+    "nombre": "Rubeus Hagrid",
+    "imagen": "https://s.yimg.com/ny/api/res/1.2/HPt9b9msE45f77yYEfLqFg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04MTg7Y2Y9d2VicA--/https://media.zenfs.com/es/lanacion.com.ar/a8509ee64d36c54c04a8fbfa174238bd"
+  },
+  {
+    "nombre": "Neville Longbottom",
+    "imagen": "https://static0.srcdn.com/wordpress/wp-content/uploads/2019/10/Neville-Longbottom-Cropped.v1.jpg"
+  },
+  {
+    "nombre": "Luna Lovegood",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c2/LunaLovegood.jpeg"
+  },
+  {
+    "nombre": "Ginny Weasley",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/2gLG1c21U1NigisKwPq2GJ/9006f27bda86ec54cfd28de9c89c6e51/ginny-weasley_3_1800x1248.png"
+  },
+  {
+    "nombre": "Fred Weasley",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Fred-Weasley.Harry-Potter-Series.webp"
+  },
+  {
+    "nombre": "George Weasley",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzNroHUrYmBgUh8xlb49PNN9DrVnCBlYUh_A&s"
+  },
+  {
+    "nombre": "Draco Malfoy",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/6yl7KHNCnoctW5TGrOyNE1/d81e73479f15d2dfeb37dcf56c47b6b0/HP-F6-half-blood-prince-draco-malfoy-looking-concerned-web-landscape?q=75&fm=jpg&w=2560"
   },
   {
     "nombre": "Sirius Black",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6b/Sirius_Black.jpeg",
-    "palabraClave": "black"
+    "imagen": "https://imagenes.hobbyconsolas.com/files/image_640_360/uploads/imagenes/2023/04/25/6900ef50e1dc4.jpeg"
+  },
+  {
+    "nombre": "Remus Lupin",
+    "imagen": "https://elcomercio.pe/resizer/v2/O4K7E4SSKJFCBP7EBDDMP5CIG4.jpg?auth=9d5d05c78dd9bb7dd1293d1b246b5e9bdcddfb472fd5cc043c4254656bb4ae56&width=657&height=421&quality=75&smart=true"
   },
   {
     "nombre": "Bellatrix Lestrange",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d8/Bellatrix.jpeg",
-    "palabraClave": "lestrange"
+    "imagen": "https://sm.ign.com/ign_latam/screenshot/default/bellatrix_u7ha.jpg"
+  },
+  {
+    "nombre": "Dolores Umbridge",
+    "imagen": "https://www.catholicmom.com/hubfs/Imported_Blog_Media/5936224846_772db8ffef_o-edit.jpg"
+  },
+  {
+    "nombre": "Argus Filch",
+    "imagen": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/04/argus-filch-harry-potter.jpeg?w=1200&h=900&fit=crop"
+  },
+  {
+    "nombre": "Molly Weasley",
+    "imagen": "https://fotografias.antena3.com/clipping/cmsimages02/2020/10/19/973F5F3E-32AD-47C8-AA57-6E125C339242/98.jpg?crop=981,552,x73,y0&width=1900&height=1069&optimize=high&format=webply"
+  },
+  {
+    "nombre": "Arthur Weasley",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/2D8hGya1jOl2LtQmNiqtij/d116660d6b9a4671f912d65596f20f1c/arthur-weasley_2_1800x1248.png"
+  },
+  {
+    "nombre": "Percy Weasley",
+    "imagen": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/11/chris-rankin-as-percy-weasley-in-harry-potter.jpg?w=1200&h=900&fit=crop"
+  },
+  {
+    "nombre": "Cho Chang",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/2etTX5DhYmujFyyePBZlxE/26d0fe01bfc74016de6a893b34faab71/cho-chang_3_1800x1248.png?w=1200&fit=fill&f=top"
+  },
+  {
+    "nombre": "Cedric Diggory",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUTsnKBG0mMr3f2e4RLVmDV4xBLUTNEMyPA&s"
+  },
+  {
+    "nombre": "Viktor Krum",
+    "imagen": "https://static.wikia.nocookie.net/harrypotter/images/9/93/Viktor_Krum_promo_Yule_Ball.png/revision/latest/thumbnail/width/360/height/360?cb=20120207173113"
+  },
+  {
+    "nombre": "Fleur Delacour",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/16JF6sY4qwniCC7OnXNuJE/693657a5bd45587b8f6e98556ae7a444/fact-file-veela-crop.jpg"
+  },
+  {
+    "nombre": "Alastor Moody",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/7i69Kt4D53SmlEspVmOVmV/055fc05219b45558c3cedb8b122af3c8/alastor-mad-eye-moody_1_1800x1248.png"
+  },
+  {
+    "nombre": "Dobby",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXebXsuH7_jijMcRASPZAvcs35jkuvACqOQ&s"
+  },
+  {
+    "nombre": "Kreacher",
+    "imagen": "https://preview.redd.it/kreacher-from-harry-potter-v0-tkef7v0ir40e1.jpg?width=1080&crop=smart&auto=webp&s=a913b950438a7d04fc0bd49cf47521f80fa76839"
+  },
+  {
+    "nombre": "Lucius Malfoy",
+    "imagen": "https://media.vandalsports.com/i/640x360/2-2026/202621613717_1.jpg"
+  },
+  {
+    "nombre": "Narcissa Malfoy",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/595blrWjfGQJ58GAtHDWS1/0a286733d2782d7ef1b74e2a0f13beee/narcissa-malfoy_1_1800x1248.png?w=1200&fit=fill&f=top"
+  },
+  {
+    "nombre": "Peter Pettigrew",
+    "imagen": "https://people.com/thmb/6RvMPfO58ChQ2qNzVJakg4FR_U4=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(1134x0:1136x2)/Timothy-Spall-harry-potter-1-120925-946eaafc4c294e2da2eb95da59e5979e.jpg"
+  },
+  {
+    "nombre": "James Potter",
+    "imagen": "https://preview.redd.it/im-sorry-but-i-dont-like-james-potter-v0-uhnviifd5owc1.jpeg?auto=webp&s=14641dd4cb1ea1bb253988fe902848364e6f9797"
+  },
+  {
+    "nombre": "Lily Potter",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/5pwZPLVaPSceyqIaIAaSgI/a7053682358352a8dbff83b57a27182c/WB_F8_Lily_young_hand_open_landscape_HPDH2-08067.jpg"
+  },
+  {
+    "nombre": "Nymphadora Tonks",
+    "imagen": "https://s2.ppllstatics.com/lasprovincias/www/multimedia/201903/28/media/cortadas/natalia-tena-k2cF-U701030820716ZgF-624x385@Las%20Provincias.jpg"
+  },
+  {
+    "nombre": "Kingsley Shacklebolt",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/58gkjv9a8vemVcsZtG9lzY/2a6a80343126a14aa2987e0435c2ee62/kingsley-shacklebolt_1_1800x1248.png"
+  },
+  {
+    "nombre": "Sybill Trelawney",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/1296BxymyCQA4Ioiu6Cwm6/902bf92e31fa7365b64d8ff6966c7618/SybilTrelawney_WB_F3_HeadshotOfTrelawney_Still_080615_Land.jpg?q=75&fm=jpg&w=2560"
+  },
+  {
+    "nombre": "Horace Slughorn",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/7FgO5SHmyaRv6uKcEwfdKE/772b561bb758d2c34522a034b01ebc15/horace-slughorn_1_1800x1248.png"
+  },
+  {
+    "nombre": "Gilderoy Lockhart",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Gilderoy-Lockhart.Harry-Potter-Series.webp"
+  },
+  {
+    "nombre": "Quirinus Quirrell",
+    "imagen": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/07/quirinus-quirrell-ian-hart-harry-potter-and-the-sorcerer-s-stone.jpg"
+  },
+  {
+    "nombre": "Tom Riddle",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMRHh8kv0PxdqKkmvpLmVPvqRK4sG4Ke-xbQ&s"
+  },
+  {
+    "nombre": "Dudley Dursley",
+    "imagen": "https://static.wikia.nocookie.net/esharrypotter/images/a/aa/Duddy.jpg/revision/latest?cb=20180716135933"
+  },
+  {
+    "nombre": "Vernon Dursley",
+    "imagen": "https://e.snmc.io/lk/o/x/af5b3800ce1ad7582727382c9daa7eac/10293162"
+  },
+  {
+    "nombre": "Hedwig",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/6OqzGUJxO8OekUQokywEwm/ff39e851001eb24607f09d6364743eed/Hedwig_WB_F3_HedwigInTheForest_Still_100615_Port.jpg"
+  },
+  {
+    "nombre": "Fawkes (Harry Potter)",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/4FxE0yWPD7PmybsSfCAtMP/cd8e62949e2fc57bf8c1c082cfa4277b/fawkes-hero.jpg"
+  },
+  {
+    "nombre": "Buckbeak (Harry Potter)",
+    "imagen": "https://wradio.com.mx/resizer/v2/ZSW7TTFBIBJ2RIQFWWC5QIQR4Y.jpg?auth=db991548a9e1f05af970bc794993ffc95dbc68b9c7539159cf2da879f6a997da&width=768&height=576&quality=70&smart=true"
+  },
+  {
+    "nombre": "Crookshanks (Harry Potter)",
+    "imagen": "https://i.pinimg.com/736x/11/43/67/114367037defc57fa4ec8c8aa92076fe.jpg"
+  },
+  {
+    "nombre": "Myrtle la Llorona",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5XKF9XfhJlhrsku8_d6t0XFusMhyX3Qrng&s"
+  },
+  {
+    "nombre": "Peeves (Harry Potter)",
+    "imagen": "https://miro.medium.com/0*89JICAzOQPpVm5PW.png"
+  },
+  {
+    "nombre": "Nick Casi Decapitado",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvp6p6hs4mtyvQW-e2vycgTq2MQCBb_5f2qg&s"
+  },
+  {
+    "nombre": "Lavender Brown",
+    "imagen": "https://static.wikia.nocookie.net/harrypotter/images/e/e4/Harry-potter-half-blood-lavender_neville.jpg/revision/latest/smart/width/300/height/300?cb=20180306005629"
+  },
+  {
+    "nombre": "Seamus Finnigan",
+    "imagen": "https://fotografias.antena3.com/clipping/cmsimages02/2016/04/13/92E14415-CEFD-4D59-8FCB-39F5F39B3BFA/98.jpg?crop=1000,563,x0,y50&width=1900&height=1069&optimize=high&format=webply"
+  },
+  {
+    "nombre": "Dean Thomas",
+    "imagen": "https://contentful.harrypotter.com/usf1vwtuqyxm/7tEWxKH0FGXWimjRCIymcf/41650baec08b0c8400c2a1381f7ba332/dean-thomas_1_1800x1248.png"
+  },
+  {
+    "nombre": "Pansy Parkinson",
+    "imagen": "https://cdn.polyspeak.ai/speakmaster/68a5dd0ddd6c192e43ca0dd4dced2a90.webp?x-oss-process=image/resize,w_400,m_lfit"
+  },
+  {
+    "nombre": "Blaise Zabini",
+    "imagen": "https://static.wikia.nocookie.net/harrypotter/images/e/e5/Zabini.jpg/revision/latest?cb=20170102052623"
+  },
+  {
+    "nombre": "Gregory Goyle",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/gregory-goyle-1520514373.jpg?crop=1xw:0.75xh;center,top&resize=640:*"
+  },
+  {
+    "nombre": "Vincent Crabbe",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/vincent-crabbe-fotogramas-1626898866.jpg?crop=1xw:0.5273809523809524xh;center,top&resize=1200:*"
+  },
+  {
+    "nombre": "Madam Pomfrey",
+    "imagen": "https://external-preview.redd.it/not-much-is-ever-said-about-this-lady-but-she-deserves-a-v0-5SrkqGyQjlOk-QQK4IufHWCYGJacanMjoQFDWKIJYXk.jpg?width=640&crop=smart&auto=webp&s=6ba04cca793fb856c1b47fb4c2eff4e9ee792617"
+  },
+  {
+    "nombre": "Madam Hooch",
+    "imagen": "https://preview.redd.it/whyd-madam-hooch-never-appear-after-the-first-film-v0-8c4lc2p0dxlg1.jpeg?auto=webp&s=452dfd75a87d2856fefc6a124e03802f068f07cf"
+  },
+  {
+    "nombre": "Ollivander (Harry Potter)",
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-vdbyxTQ1gZMXdNZos57CShCc9Cv01XRVEr9N0mdP32AWp0v7cue2GkI17Bo3wBC4MG5D6Yklfnwryw4UIdGojmLRoFA-2KcSV6eBo7eRkKkolCmMS2sg8AyIZo0pjO3EQRgIrxWhYTk/w1200-h630-p-k-no-nu/Ollivander.jpg"
+  },
+  {
+    "nombre": "Dementor",
+    "imagen": "https://static0.srcdn.com/wordpress/wp-content/uploads/2019/12/Harry-Potter-Dementors.jpg?w=1200&h=675&fit=crop"
+  },
+  {
+    "nombre": "Basilisco",
+    "imagen": "https://static.wikia.nocookie.net/esharrypotter/images/f/f5/Basilisco2.jpg/revision/latest?cb=20110904170339"
+  },
+  {
+    "nombre": "Petunia Dursley",
+    "imagen": "https://fotografias.antena3.com/clipping/cmsimages02/2024/11/14/866E62CF-F8C7-4812-BF47-CF46BB6BC6CC/104.jpg?crop=410,410,x223,y0&width=1200&height=1200&optimize=low&format=webply"
+  },
+  {
+    "nombre": "Coche volador",
+    "imagen": "https://www.puromotor.com/wp-content/uploads/2017/06/ford-anglia-puromotor.jpg"
+  },
+  {
+    "nombre": "Nagini",
+    "imagen": "https://static.wikia.nocookie.net/harrypotter/images/2/2f/Nagini.jpg/revision/latest?cb=20170704132513&path-prefix=ca"
+  },
+  {
+    "nombre": "Aragog",
+    "imagen": "https://static.wikia.nocookie.net/harrypotter/images/2/2c/Aragog_in_his_lair_COSF.jpg/revision/latest?cb=20100611145604"
+  },
+  {
+    "nombre": "Diario del Profeta",
+    "imagen": "https://i.redd.it/6ut1e78966j71.jpg"
+  },
+  {
+    "nombre": "Patronus",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwhkW0PO63RJzre6IKg5SB4fmTMVO2kQ-9Q&s"
+  },
+  {
+    "nombre": "Varita de Saúco",
+    "imagen": "https://preview.redd.it/i-have-the-elder-wand-v0-ub5txi9k6wtd1.jpeg?auto=webp&s=8c755003abe3331934387c07acb669f1a53670ff"
+  },
+  {
+    "nombre": "Mandrágora",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2r2sCuM0A__nEEAAjBCxes4I0g9GiXxE8w&s"
+  },
+  {
+    "nombre": "Piedra Filosofal",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfa-XtQIvlS7WAMJt3Mu2GOtAmBGaZi0Df1A&s"
+  },
+  {
+    "nombre": "Pensadero",
+    "imagen": "https://d2duuy9yo5pldo.cloudfront.net/zyngasupport/4d8ca586-bef4-461c-a0a9-f4f9170abb1c-2t.png"
+  },
+  {
+    "nombre": "Hogwarts",
+    "imagen": "https://media.posterstore.com/site_images/68631b00603ad773cc39b736_806037358_WB0008-5.jpg?auto=compress%2Cformat&fit=max&w=3840"
+  },
+  {
+    "nombre": "Callejón Diagón",
+    "imagen": "https://media.posterstore.com/site_images/68631af8603ad773cc39b735_1960951366_WB0007-5.jpg?auto=compress%2Cformat&fit=max&w=3840"
+  },
+  {
+    "nombre": "Azkaban",
+    "imagen": "https://static1-es.millenium.gg/articles/1/52/15/1/@/290451-azkaban-article_cover_bd-1.jpg"
   },
   {
     "nombre": "Quidditch",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Wizarding_World_of_Harry_Potter_-_Quidditch_gear_%285014156072%29.jpg/330px-Wizarding_World_of_Harry_Potter_-_Quidditch_gear_%285014156072%29.jpg",
-    "palabraClave": "quidditch"
+    "imagen": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/harrypotterquidditchchampions_1/nswitch_harrypotterquidditchchampions/HarryPotterQuidditchChampions_02.jpg"
+  },
+  {
+    "nombre": "Nimbus 2000",
+    "imagen": "https://fbi.cults3d.com/uploaders/23481498/illustration-file/55d35831-e14b-4d14-a5fd-ff6663dd9808/5.jpg"
+  },
+  {
+    "nombre": "Sauce Boxeador",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0u-gMZLFxx1DFmk-m1GkIlWzyvJ6wfOSwQ&s"
+  },
+  {
+    "nombre": "Rita Skeeter",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpXY9_7HwdXi2pqxpGJGQSCY60KRTB9880w&s"
   }
 ]
