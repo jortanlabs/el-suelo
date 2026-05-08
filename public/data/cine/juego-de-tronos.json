@@ -1,257 +1,270 @@
 [
   {
     "nombre": "Jon Nieve",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Jon_Snow_and_Ghost.jpg/330px-Jon_Snow_and_Ghost.jpg",
-    "palabraClave": "nieve"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Jon_Snow_and_Ghost.jpg/330px-Jon_Snow_and_Ghost.jpg"
   },
   {
     "nombre": "Daenerys Targaryen",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Daenerys.jpg/330px-Daenerys.jpg",
-    "palabraClave": "targaryen"
+    "imagen": "https://elpais.com/especiales/2019/final-juego-de-tronos/daenerys-targaryen/img/1558121378_487187_1558121508_noticia_normal.jpg"
   },
   {
     "nombre": "Tyrion Lannister",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/A_Song_of_Ice_and_Fire_arms_of_House_Lannister_red_scroll.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Lannister_red_scroll.png",
-    "palabraClave": "lannister"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyutfMFYP2iN9ByvgGjtXIMNh7o5duXO0_6w&s"
   },
   {
     "nombre": "Cersei Lannister",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/IgroMir_2017_003.jpg/330px-IgroMir_2017_003.jpg",
-    "palabraClave": "lannister"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/IgroMir_2017_003.jpg/330px-IgroMir_2017_003.jpg"
   },
   {
     "nombre": "Jaime Lannister",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/New_York_Comic_Con_2015_-_Lannister_vs_Sons_of_the_Harpy_%2821858555090%29.jpg/330px-New_York_Comic_Con_2015_-_Lannister_vs_Sons_of_the_Harpy_%2821858555090%29.jpg",
-    "palabraClave": "lannister"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/jaime-game-of-thrones-1551987282.jpg?crop=0.501xw:1.00xh;0.0915xw,0&resize=1200:*"
   },
   {
     "nombre": "Arya Stark",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Arya_Stark_in_MultiVersus_3.png",
-    "palabraClave": "stark"
+    "imagen": "https://media.vogue.es/photos/5ce6ddd6f8984b26f1ab60d2/master/w_1600%2Cc_limit/vogue_news_tendencias_197972855.jpg"
   },
   {
     "nombre": "Sansa Stark",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/LBCC_2014_-_Game_of_Thrones_%2815383053186%29.jpg/330px-LBCC_2014_-_Game_of_Thrones_%2815383053186%29.jpg",
-    "palabraClave": "stark"
+    "imagen": "https://cdn.artphotolimited.com/images/64a3c718bd40b8ebb5668725/1000x1000/sansa-stark-queen-of-the-north.jpg"
   },
   {
     "nombre": "Ned Stark",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Lyanna_Stark.png/330px-Lyanna_Stark.png",
-    "palabraClave": "stark"
+    "imagen": "https://static1.purebreak.com.br/articles/2/17/44/2/@/87052-ned-stark-vai-voltar-como-menino-de-13-1200x630-1.jpg"
   },
   {
     "nombre": "Robb Stark",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/93/A_Song_of_Ice_and_Fire_arms_of_House_Stark_running_direwolf_white_scroll.png",
-    "palabraClave": "stark"
+    "imagen": "https://static.wikia.nocookie.net/gameofthronesfanon/images/f/fc/Robb_Stark_HBO.jpg/revision/latest?cb=20190205171859&path-prefix=es"
   },
   {
     "nombre": "Bran Stark",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Isaac_Hempstead-Wright_%28November_2011%29_%28headshot%29.jpg/330px-Isaac_Hempstead-Wright_%28November_2011%29_%28headshot%29.jpg",
-    "palabraClave": "stark"
+    "imagen": "https://static.wikia.nocookie.net/hieloyfuego/images/3/3b/Juego-de-tronos-zonafandom-bran-stark.jpg/revision/latest?cb=20120119115627"
   },
   {
     "nombre": "Hodor",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kristian_Nairn_by_Gage_Skidmore_2.jpg/330px-Kristian_Nairn_by_Gage_Skidmore_2.jpg",
-    "palabraClave": "hodor"
+    "imagen": "https://static01.nyt.com/images/2016/05/24/arts/hodor/hodor-videoSixteenByNineJumbo1600-v2.jpg"
   },
   {
     "nombre": "Joffrey Baratheon",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Joffrey_Baratheon_Flag.png/330px-Joffrey_Baratheon_Flag.png",
-    "palabraClave": "baratheon"
+    "imagen": "https://es.gizmodo.com/app/uploads/2024/04/a8593969adeb77dd35d5f8571d648bf9.jpg"
   },
   {
     "nombre": "Margaery Tyrell",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Cosplay_Show_%2820%29_%D0%BD%D0%B0_Geek_Picnic_2018_SPb.jpg/330px-Cosplay_Show_%2820%29_%D0%BD%D0%B0_Geek_Picnic_2018_SPb.jpg",
-    "palabraClave": "tyrell"
+    "imagen": "https://preview.redd.it/margaery-tyrell-the-queen-we-could-have-had-v0-8ewlmazarymf1.png?width=1080&crop=smart&auto=webp&s=8b391e407f706cd4fe39ba67862ef2d23303f176"
   },
   {
     "nombre": "Olenna Tyrell",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/A_Song_of_Ice_and_Fire_arms_of_House_Tyrell_yellow_scroll.jpg/330px-A_Song_of_Ice_and_Fire_arms_of_House_Tyrell_yellow_scroll.jpg",
-    "palabraClave": "tyrell"
+    "imagen": "https://media.vanityfair.com/photos/597e950ae1dc9029878d7512/master/w_2560%2Cc_limit/olenna.jpg"
+  },
+  {
+    "nombre": "Tywin Lannister",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p-o_flggroQYG3sFxZji5WWpnDibhb-kqA&s"
   },
   {
     "nombre": "Stannis Baratheon",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/A_Song_of_Ice_and_Fire_arms_of_House_Stannis_Baratheon_pixellated.jpg/330px-A_Song_of_Ice_and_Fire_arms_of_House_Stannis_Baratheon_pixellated.jpg",
-    "palabraClave": "baratheon"
+    "imagen": "https://preview.redd.it/the-rightful-king-stannis-baratheon-v0-ucqua0ozssjc1.jpeg?auto=webp&s=6fc89d1e843efb64644f5cf2cdbc0dfa7f9dc408"
+  },
+  {
+    "nombre": "Melisandre",
+    "imagen": "https://preview.redd.it/never-understood-melisandre-could-she-genuinely-see-the-v0-sdt6cj9pagoe1.jpeg?width=640&crop=smart&auto=webp&s=99187acd54e0c47636e7079f283e8ae8e37d268c"
   },
   {
     "nombre": "Davos Seaworth",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/A_Song_of_Ice_and_Fire_arms_of_House_Seaworth.gif/330px-A_Song_of_Ice_and_Fire_arms_of_House_Seaworth.gif",
-    "palabraClave": "seaworth"
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/5/5b/Davos_seaworth_photo.jpg"
   },
   {
     "nombre": "Brienne de Tarth",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2015_C2E2_Cosplay_-_Brienne_of_Tarth_%2816766397373%29_%28cropped%29.jpg/330px-2015_C2E2_Cosplay_-_Brienne_of_Tarth_%2816766397373%29_%28cropped%29.jpg",
-    "palabraClave": "tarth"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSnBNZmMjEL0p6OcNimdA9wtiaCkTGQDasg&s"
+  },
+  {
+    "nombre": "Tormund Matagigantes",
+    "imagen": "https://s1.abcstatics.com/media/play/2019/04/23/juego-de-tronos-tormund-matagigantes-ki1--1248x698@abc.jpg"
   },
   {
     "nombre": "Samwell Tarly",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/John_Bradley_by_Gage_Skidmore_3.jpg/330px-John_Bradley_by_Gage_Skidmore_3.jpg",
-    "palabraClave": "tarly"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8oaa_t_VVg1Mc289_RS5c-zgAqxIADc6s-A&s"
   },
   {
-    "nombre": "Gilly",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/80/Melisandre-Carice_van_Houten.jpg",
-    "palabraClave": "gilly"
+    "nombre": "Gilly (Juego de Tronos)",
+    "imagen": "https://www.hola.com/horizon/original_aspect_ratio/ccc1d636b42a-gilly-hbo.jpg"
   },
   {
-    "nombre": "El Perro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/86/Tr%C3%B4nedeFer1.png",
-    "palabraClave": "perro"
+    "nombre": "El Perro (Juego de Tronos)",
+    "imagen": "https://phantom-elmundo.unidadeditorial.es/b2cfbfaa593e166d35be258aa682bba2/crop/0x0/509x339/resize/414/f/jpg/assets/multimedia/imagenes/2019/12/03/15754003798806.jpg"
   },
   {
-    "nombre": "La Montaña",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Physical_map_of_Cantabria_-_Spain.png/330px-Physical_map_of_Cantabria_-_Spain.png",
-    "palabraClave": "montana"
+    "nombre": "La Montaña (Juego de Tronos)",
+    "imagen": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/revelado-el-misterioso-rostro-de-la-montana-de-juego-de-tronos/111381117-1-esl-ES/Revelado-el-misterioso-rostro-de-La-Montana-de-Juego-de-Tronos.jpg?resize=640:*"
   },
   {
-    "nombre": "Varys",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Dragon_Con_2013_Parade_-_Game_of_Thrones_%289678352411%29_%28cropped%29.jpg/330px-Dragon_Con_2013_Parade_-_Game_of_Thrones_%289678352411%29_%28cropped%29.jpg",
-    "palabraClave": "varys"
+    "nombre": "Meñique (Juego de Tronos)",
+    "imagen": "https://static.wikia.nocookie.net/hieloyfuego/images/1/15/Petyr_baelish.JPG/revision/latest?cb=20131018183405"
+  },
+  {
+    "nombre": "Varys (Juego de Tronos)",
+    "imagen": "https://static-abcblogs.abc.es/wp-content/uploads/sites/94/2026/05/1557842821-game-of-thrones-lord-varys-8x05.jpg"
   },
   {
     "nombre": "Oberyn Martell",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Pedro_Pascal_SDCC_2014.jpg/330px-Pedro_Pascal_SDCC_2014.jpg",
-    "palabraClave": "martell"
+    "imagen": "https://static0.srcdn.com/wordpress/wp-content/uploads/2020/03/got-oberyn-martell-featured-1710x900.jpg"
   },
   {
     "nombre": "Ellaria Sand",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Indira_varma_by_sachyn_mital_%28cropped%29.jpg/330px-Indira_varma_by_sachyn_mital_%28cropped%29.jpg",
-    "palabraClave": "sand"
+    "imagen": "https://preview.redd.it/i-hated-ellaria-sand-because-she-betrayed-everything-oberyn-v0-19etcsik5l2d1.png?auto=webp&s=ac19070df3c36c1c2612eded62b0e53b98adf32c"
   },
   {
     "nombre": "Missandei",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Nathalie_Emmanuel_at_82nd_Venice_International_Film_Festival-3.jpg/330px-Nathalie_Emmanuel_at_82nd_Venice_International_Film_Festival-3.jpg",
-    "palabraClave": "missandei"
+    "imagen": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/bltdab96cb1d9593efd/6988d6db0a4a22af309cf283/game-of-thrones-dragonstone-missandei.jpeg?branch=production&width=3840&quality=75&auto=webp&crop=3:2"
   },
   {
     "nombre": "Jorah Mormont",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Ian_glen.JPG/330px-Ian_glen.JPG",
-    "palabraClave": "mormont"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOZiK0-d8OVxDhagiiXiwcLLSm-6zu83weg&s"
   },
   {
     "nombre": "Daario Naharis",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ed_Skrein_%2821366540989%29.jpg/330px-Ed_Skrein_%2821366540989%29.jpg",
-    "palabraClave": "naharis"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ41ygLO56WpC1Bdhfie_XrJrOmAQunzX2L9Q&s"
   },
   {
     "nombre": "Khal Drogo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Malta_Gozo%2C_Azure_Window_%2810264176345%29.jpg/330px-Malta_Gozo%2C_Azure_Window_%2810264176345%29.jpg",
-    "palabraClave": "drogo"
+    "imagen": "https://preview.redd.it/i-cant-stand-khal-drogo-and-i-dont-see-why-he-has-fans-v0-dpx8oz8in3ce1.jpeg?width=640&crop=smart&auto=webp&s=cf1c6627110cce4949601f5611f4e3a3e57a998b"
   },
   {
     "nombre": "Viserys Targaryen",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/House_Targaryen.png/330px-House_Targaryen.png",
-    "palabraClave": "targaryen"
+    "imagen": "https://media.revistagq.com/photos/63452ea6bde63c1026d9cda3/16:9/w_1280,c_limit/viserys-i-casa-del-dragon-mejor-rey.jpeg?mbid=social_retweet"
   },
   {
     "nombre": "Ramsay Bolton",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/House-Bolton-Main-Shield.png/330px-House-Bolton-Main-Shield.png",
-    "palabraClave": "bolton"
+    "imagen": "https://preview.redd.it/say-something-nice-about-ramsay-bolton-v0-7zxhdizhnhed1.jpeg?width=640&crop=smart&auto=webp&s=65a4b2ccfa1da86fbc30743e97fca9805b595127"
+  },
+  {
+    "nombre": "Roose Bolton",
+    "imagen": "https://okdiario.com/img/series/2015/12/game-of-thrones-roose-bolton.jpg"
   },
   {
     "nombre": "Theon Greyjoy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/A_Song_of_Ice_and_Fire_arms_of_House_Greyjoy_black_scroll.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Greyjoy_black_scroll.png",
-    "palabraClave": "greyjoy"
+    "imagen": "https://miro.medium.com/v2/resize:fit:1400/1*-gDptk0nn2dGpMCx3K9Ftw.jpeg"
   },
   {
     "nombre": "Yara Greyjoy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Gemma_Whelan_%28cropped%29.jpg/330px-Gemma_Whelan_%28cropped%29.jpg",
-    "palabraClave": "greyjoy"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1stEZwdD9-ssOTGmm7_Si3DEOdI6MZalKFQ&s"
   },
   {
-    "nombre": "Bronn",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Jerome_Flynn_2013_%28cropped%29.jpg/330px-Jerome_Flynn_2013_%28cropped%29.jpg",
-    "palabraClave": "bronn"
+    "nombre": "Euron Greyjoy",
+    "imagen": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/juego-de-tronos-spoilers-temporada-7-euron-greyjoy/115000765-1-esl-ES/Cual-sera-el-papel-de-Euron-Greyjoy-en-la-septima-temporada-de-Juego-de-Tronos.jpg?crop=1xw:0.8178119349005425xh;center,top&resize=1200:*"
+  },
+  {
+    "nombre": "Bronn (Juego de Tronos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrTp_BR38hxGF2zXtKVfU_D3HxoKBfVJlbw&s"
   },
   {
     "nombre": "Podrick Payne",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Daniel_Portman_GCCDORTMUND_2016.JPG/330px-Daniel_Portman_GCCDORTMUND_2016.JPG",
-    "palabraClave": "payne"
+    "imagen": "https://static.wikia.nocookie.net/hieloyfuego/images/9/9b/Podrick_Payne_HBO.jpg/revision/latest?cb=20140518085842"
   },
   {
     "nombre": "Shireen Baratheon",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/A_Song_of_Ice_and_Fire_arms_of_House_Baratheon_yellow_scroll_English.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Baratheon_yellow_scroll_English.png",
-    "palabraClave": "baratheon"
+    "imagen": "https://awoiaf.westeros.org/images/thumb/8/83/Sara_Biddle_Shireen_BaratheonII.png/350px-Sara_Biddle_Shireen_BaratheonII.png"
   },
   {
-    "nombre": "Ygritte",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/32/Kit_harrington_by_sachyn_mital_%28cropped_2%29.jpg",
-    "palabraClave": "ygritte"
+    "nombre": "Catelyn Stark",
+    "imagen": "https://preview.redd.it/catelyn-destroyed-house-stark-v0-7g91ftk7la0e1.png?auto=webp&s=cc5ce35d99e459ff32ab43580e1e52bb3d9d5019"
+  },
+  {
+    "nombre": "Rickon Stark",
+    "imagen": "https://fotografias.larazon.es/clipping/cmsimages01/2025/02/11/C3312BC3-8E3B-48CA-AA79-4E78BE3C5CDF/recuerdas-rickon-stark-ahora-sirve-cafes-derry_98.jpg?crop=1273,716,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "nombre": "Ygritte (Juego de Tronos)",
+    "imagen": "https://fotografias.antena3.com/clipping/cmsimages02/2013/06/20/26AB4ECC-45EB-45E5-B9E5-02D40480F210/98.jpg?crop=1024,576,x0,y0&width=1900&height=1069&optimize=high&format=webply"
+  },
+  {
+    "nombre": "Mance Rayder",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3jnwq2f_M2F0vPGs0eKv87EuG_30bZjZTwA&s"
   },
   {
     "nombre": "El Rey de la Noche",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Orsino_and_viola_Frederick_Richard_Pickersgill.jpg/330px-Orsino_and_viola_Frederick_Richard_Pickersgill.jpg",
-    "palabraClave": "noche"
+    "imagen": "https://media.revistagq.com/photos/5cc88a2ac46d3abd5135dc36/16:9/w_2560%2Cc_limit/rey%2520noche%2520edi.jpg"
   },
   {
     "nombre": "Los Caminantes Blancos",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Pasto_20060106_001.jpg/330px-Pasto_20060106_001.jpg",
-    "palabraClave": "blancos"
+    "imagen": "https://www.despertaferro-ediciones.com/wp-content/uploads/2019/04/maxresdefault.jpg"
+  },
+  {
+    "nombre": "Drogon (Juego de Tronos)",
+    "imagen": "https://images.ecestaticos.com/cg2_3avP-OwF2IOAKg8z58w61aQ=/0x0:1918x1078/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F4d9%2F762%2F3b6%2F4d97623b607a48773e18281b42a418f1.jpg"
   },
   {
     "nombre": "Grey Worm",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jacob_Anderson_by_Gage_Skidmore.jpg/330px-Jacob_Anderson_by_Gage_Skidmore.jpg",
-    "palabraClave": "worm"
+    "imagen": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/35/1504282564-greyworm.jpg?crop=1xw:0.75xh;center,top&resize=1200:*"
+  },
+  {
+    "nombre": "Gendry (Juego de Tronos)",
+    "imagen": "https://as01.epimg.net/epik/imagenes/2018/04/05/portada/1522940150_322363_1522940341_noticia_normal.jpg"
   },
   {
     "nombre": "Lysa Arryn",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/A_Song_of_Ice_and_Fire_arms_of_House_Tully_red_scroll.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Tully_red_scroll.png",
-    "palabraClave": "arryn"
+    "imagen": "https://beam-images.warnermediacdn.com/2025-07/lysa-arryn-1920.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
   },
   {
     "nombre": "Robin Arryn",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/A_Song_of_Ice_and_Fire_arms_of_House_Arryn_blue_scroll.png/330px-A_Song_of_Ice_and_Fire_arms_of_House_Arryn_blue_scroll.png",
-    "palabraClave": "arryn"
+    "imagen": "https://fotografias.antena3.com/clipping/cmsimages02/2019/05/22/AEB100CC-8382-49FB-B411-8D4FB94DD2E2/98.jpg?crop=1818,1023,x0,y0&width=1900&height=1069&optimize=high&format=webply"
   },
   {
     "nombre": "Petyr Baelish",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Aidan_Gillen_%28headshot%29.jpg",
-    "palabraClave": "baelish"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Aidan_Gillen_%28headshot%29.jpg"
   },
   {
-    "nombre": "Ros",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Esm%C3%A9_Bianco_2014.jpg/330px-Esm%C3%A9_Bianco_2014.jpg",
-    "palabraClave": "ros"
+    "nombre": "Shae (Juego de Tronos)",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/d318e7eb-8d0c-4c61-93a1-1e24b7ea1709_16-9-discover-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Ros (Juego de Tronos)",
+    "imagen": "https://i.redd.it/p4hayiihgg331.jpg"
   },
   {
     "nombre": "Ser Barristan Selmy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ian_McElhinney_%28cropped%29.jpg/330px-Ian_McElhinney_%28cropped%29.jpg",
-    "palabraClave": "selmy"
+    "imagen": "https://static.wikia.nocookie.net/hieloyfuego/images/3/35/Barristan_Selmy_HBO.jpg/revision/latest?cb=20150320185553"
   },
   {
     "nombre": "Ilyn Payne",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Wilko_Johnson_en_2008.jpg/330px-Wilko_Johnson_en_2008.jpg",
-    "palabraClave": "payne"
+    "imagen": "https://static.wikia.nocookie.net/hieloyfuego/images/9/94/Ilyn_payne.JPG/revision/latest?cb=20120618052604"
   },
   {
     "nombre": "Jaqen H'ghar",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tom_Wlaschiha_June_2013_%28headshot%29.jpg/330px-Tom_Wlaschiha_June_2013_%28headshot%29.jpg",
-    "palabraClave": "hghar"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD4bw2AHfn944NHIkQ4n8yvMOg4elWWVkQ6A&s"
   },
   {
     "nombre": "Syrio Forel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Miltos_Yerolemou_Brussels_Comic_Con_2018.jpg/330px-Miltos_Yerolemou_Brussels_Comic_Con_2018.jpg",
-    "palabraClave": "forel"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJLV71IlQiotSNNa_SA8Gu9Ft-nJYZgRpwQ&s"
   },
   {
     "nombre": "Trono de Hierro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Palacio_de_Hierro_Mexico.jpg/330px-Palacio_de_Hierro_Mexico.jpg",
-    "palabraClave": "hierro"
+    "imagen": "https://www.aceroymagia.com/Images/articulo/figura-trono-de-hierro-master-craft/01-figura-trono-de-hierro-master-craft.jpg"
   },
   {
     "nombre": "Desembarco del Rey",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/14._La_playa_de_Morro_Nuevo_en_los_d%C3%ADas_del_desembarco.jpg/330px-14._La_playa_de_Morro_Nuevo_en_los_d%C3%ADas_del_desembarco.jpg",
-    "palabraClave": "rey"
+    "imagen": "https://static.wikia.nocookie.net/hieloyfuego/images/9/9f/Desembarco_del_Rey_by_Tomasz_Jedruzek%2C_Fantasy_Flight_Games%C2%A9.jpg/revision/latest?cb=20130421203441"
+  },
+  {
+    "nombre": "Invernalia (Juego de Tronos)",
+    "imagen": "https://sm.ign.com/t/ign_es/screenshot/default/winterfell-wallpaper_pu65.1280.png"
+  },
+  {
+    "nombre": "Rocadragón (Juego de Tronos)",
+    "imagen": "https://www.hotelpaisvasco.com/wp-content/uploads/2020/03/rocadragon-1-1170x680.jpg"
+  },
+  {
+    "nombre": "El Muro (Juego de Tronos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNt-RmMWffWx1pj5OURVgVn5szEfynJoEHyw&s"
   },
   {
     "nombre": "La Guardia de la Noche",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/La_Guardia%2C_Bolivia_-_panoramio.jpg/330px-La_Guardia%2C_Bolivia_-_panoramio.jpg",
-    "palabraClave": "noche"
+    "imagen": "https://media.vogue.es/photos/5cc758788f6f67867a5bf145/master/w_1600%2Cc_limit/vogue_news_843656392.jpeg"
   },
   {
     "nombre": "Los Dothraki",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg/330px-Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg",
-    "palabraClave": "dothraki"
+    "imagen": "https://fotografias.antena3.com/clipping/cmsimages02/2012/08/28/13261D53-A7D8-4736-9FC8-0EA71B899D49/98.jpg?crop=1200,675,x0,y61&width=1900&height=1069&optimize=high&format=webply"
+  },
+  {
+    "nombre": "Los No Muertos (Juego de Tronos)",
+    "imagen": "https://sm.ign.com/t/ign_es/articlepage/g/game-of-th/game-of-thrones-everything-we-know-about-white-wal_4ma9.1280.jpg"
   }
 ]
