@@ -1,0 +1,162 @@
+[
+  {
+    "nombre": "España",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/YRHDTCOHMRPBRGBCU62FTKQ6IA.jpg?auth=9af4a6679c00601a343cbfbefaf6992e2b43b7a7156c4f73c25a73e8d53d2996&width=1200"
+  },
+  {
+    "nombre": "Francia",
+    "imagen": "https://asset-prod.france.fr/optimized_valentinpacaut_theexplorers_Ilede_France_Seineet_Marne_Chateau_Fontainebleau_20220721_72_jpg_Valentin_Pacaut_The_5b8e6ae65b.jpg"
+  },
+  {
+    "nombre": "Alemania",
+    "imagen": "https://www.deutschland.de/sites/default/files/media/image/istock-486585530.jpg"
+  },
+  {
+    "nombre": "Italia",
+    "imagen": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_cinque_terre_liguria_3?wid=800&hei=500&fit=constrain,1&fmt=webp"
+  },
+  {
+    "nombre": "Portugal",
+    "imagen": "https://i0.wp.com/www.rejsrejsrejs.dk/wp-content/uploads/2019/12/portugal-3029665_1280.jpg?resize=1024%2C583&ssl=1"
+  },
+  {
+    "nombre": "Reino Unido",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/4e51c882-7d60-4223-b7e1-ca2259eeedf6_16-9-discover-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Países Bajos",
+    "imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt2e98d8ab50e7c381/684370948b7c8e0bd2f13efd/iStock-937057490-MOBILE_HEADER.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart"
+  },
+  {
+    "nombre": "Bélgica",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJYnc4x9JIaPNYSYl_yXzjirn6HONCLLTHg&s"
+  },
+  {
+    "nombre": "Austria",
+    "imagen": "https://cdn.sanity.io/images/nxpteyfv/goguides/174cbe5e8a23f68fa89394b8fd838cdec8a62baf-1600x1066.jpg"
+  },
+  {
+    "nombre": "Suiza",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/ciudades-mas-bonitas-suiza-escapada-lauterbrunnen-66852f4c73851.jpg"
+  },
+  {
+    "nombre": "Polonia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kHy4Vxxq0N2U-dgcWUEmKKKUCxnXEIM8Hg&s"
+  },
+  {
+    "nombre": "Grecia",
+    "imagen": "https://static.barcelo.com/content/dam/bpt/posts/2017/9/vacaciones-en-grecia-viaje-a-grecia.jpg"
+  },
+  {
+    "nombre": "Turquía",
+    "imagen": "https://cdn.sanity.io/images/mkg24y51/production/ddcdb4e07165dd58563d72e5e1f70b8599ca7daf-700x467.webp/que-hacer-en-turquia-3.webp"
+  },
+  {
+    "nombre": "Rusia",
+    "imagen": "https://consulrusoandalucia.com/wp-content/uploads/2015/07/rusia1.jpg"
+  },
+  {
+    "nombre": "Noruega",
+    "imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/45/f3/a-noruega-fica-no-norte.jpg?w=600&h=500&s=1"
+  },
+  {
+    "nombre": "Suecia",
+    "imagen": "https://i0.wp.com/www.exoticca.com/wp-content/uploads/2020/01/exoticca-mejor-epoca-para-viajar-a-suecia.jpg?resize=750%2C560&ssl=1"
+  },
+  {
+    "nombre": "Finlandia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfgGbdno6cOLdwyyByowBGztFJX2-h2cNwg&s"
+  },
+  {
+    "nombre": "Irlanda",
+    "imagen": "https://content-viajes.nationalgeographic.com.es/medio/2024/05/15/01-puerto-de-cobh_6aa8bc71_240515153103_1280x854.jpg"
+  },
+  {
+    "nombre": "Japón",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc9ksteeuVjVKSuEgRRsgVllEtqDPCq5Ov9Q&s"
+  },
+  {
+    "nombre": "China",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNTTA956I5kIy2SEk2Lv7Ay9DbldXerLXrJg&s"
+  },
+  {
+    "nombre": "India",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/03f6d35c-6d58-4a71-87bf-df3ace3fc00d_source-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Corea del Sur",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Ze60dsGhYGkERBmXyj2PxPpoI8D5xn_AmA&s"
+  },
+  {
+    "nombre": "Brasil",
+    "imagen": "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/travel/brazil-travel/copacabana_m.jpg.image.694.390.low.jpg"
+  },
+  {
+    "nombre": "Argentina",
+    "imagen": "https://d2l4159s3q6ni.cloudfront.net/resize/1440x800/filters:max_age(2604800):quality(85)/s3/dam/photos/c7/17/ca/50/f4f3eef649937b7fabf238ff684623dde80ae2dcf34e31f03c41df8f.jpg"
+  },
+  {
+    "nombre": "México",
+    "imagen": "https://static-dm.barcelo.com/is/image/barcelo/pueblos-magicos-de-mexico-?&&fmt=webp-alpha&qlt=75&wid=1300&fit=crop,1"
+  },
+  {
+    "nombre": "Estados Unidos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1xTgMnnVMIzPqri8CpZnRfZcG43TVmHVsqg&s"
+  },
+  {
+    "nombre": "Canadá",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstauJ1nGtj4-GaMe3gIHRA4GKOCA8v9zdeg&s"
+  },
+  {
+    "nombre": "Australia",
+    "imagen": "https://www.hostelworld.com/blog/wp-content/uploads/2019/12/travel-east-coast-Australia-Sydney-Getty-Images.jpg"
+  },
+  {
+    "nombre": "Sudáfrica",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Wse9aBD5yAHt_ofBkpYSgLRpegsl6oRpUw&s"
+  },
+  {
+    "nombre": "Nigeria",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_eci82uWmCo9VAOuiHzdvgskUfYvZ4g2VMg&s"
+  },
+  {
+    "nombre": "Egipto",
+    "imagen": "https://losviajesdeali.com/wp-content/uploads/2025/04/El-Cairo-Egipto-249.jpg"
+  },
+  {
+    "nombre": "Marruecos",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/8e769db4-2f29-45ee-a60d-86fea31d3e01_source-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Arabia Saudí",
+    "imagen": "https://images.trvl-media.com/place/553248621532391442/d8f20f82-9d44-4fc0-b025-a335875c75c3.jpg"
+  },
+  {
+    "nombre": "Colombia",
+    "imagen": "https://blackpepper.travel/cache/2025-07/viajes-colombia-blackpepper-calles-2x-1008x671.jpg"
+  },
+  {
+    "nombre": "Chile",
+    "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2024/09/panorama-santiago-de-chile.jpg"
+  },
+  {
+    "nombre": "Perú",
+    "imagen": "https://www.liligo.es/magazine-viajes/wp-content/uploads/sites/43/2019/10/monta%C3%B1a-vinicunca_peru.jpg"
+  },
+  {
+    "nombre": "Venezuela",
+    "imagen": "https://blackpepper.travel/cache/2024-01/viajes-venezuela-blackpepper-0143-canaima-saltoangel-2x-1008x671.jpg"
+  },
+  {
+    "nombre": "Cuba",
+    "imagen": "https://www.travelzoo.com/images/tzoo.98779.0.729674.havana.jpg"
+  },
+  {
+    "nombre": "Nueva Zelanda",
+    "imagen": "https://www.globalrescue.com/grcom/Queenstown_NZ_Mountains_Harbor.jpg"
+  },
+  {
+    "nombre": "Islandia",
+    "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2020/02/que-ver-islandia.jpg"
+  }
+]
