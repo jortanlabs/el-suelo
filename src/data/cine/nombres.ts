@@ -898,8 +898,7 @@ export const subcategorias: SubcategoriaNombres[] = [
     emoji: "🦸",
     bloque: "fantasia",
     bloqueNombre: "Universos Fantásticos",
-    esMetaCategoria: true,
-    subcategorias: ["marvel", "dc"],
+    subcategorias: ["marvel", "dc"], // mezcla jugable: combina marvel+dc
   },
   {
     slug: "harry-potter",

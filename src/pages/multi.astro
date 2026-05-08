@@ -24,6 +24,18 @@ for (const s of subcategorias) {
   }
 }
 
+// Mezcla jugable (ej: superheroes = marvel+dc)
+const cineSlugsMetaMezcla: Record<string, string[]> = {};
+for (const s of subcategorias) {
+  if (!s.esMetaCategoria && s.subcategorias?.length && !s.derivadoDe && !s.pendiente) {
+    if (s.subcategorias.every((sub) => pub.includes(sub))) {
+      cineSlugsMetaMezcla[s.slug] = s.subcategorias;
+      cineSlugsJugables.push(s.slug);
+      cineSlugsNombres[s.slug] = s.nombre;
+    }
+  }
+}
+
 // Mundo: slugs publicados
 const mundoSlugsJugables = subcategoriasMundo
   .filter((s) => !s.esMetaCategoria && !!s.nombres && pub.includes(s.slug))
@@ -46,6 +58,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   <div id="datos-cine-slugs" data-json={JSON.stringify(todasSlugsJugables)} class="hidden"></div>
   <div id="datos-cine-nombres" data-json={JSON.stringify(todasSlugsNombres)} class="hidden"></div>
   <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
+  <div id="datos-cine-mezcla" data-json={JSON.stringify(cineSlugsMetaMezcla)} class="hidden"></div>
   <div id="datos-mundo-slugs" data-json={JSON.stringify(mundoSlugsJugables)} class="hidden"></div>
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
@@ -295,7 +308,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   import type { Channel } from "pusher-js";
   import {
     generarFloor, generarFloorPredefinida, cargarCatalogoCine, cargarCatalogoCinePeli,
-    cargarCatalogoMundo,
+    cargarCatalogoMundo, cargarMezclaCine,
     type ItemFloor, crearReconocedor, navegadorSoportaVoz,
     type ReconocedorVoz, aciertoFlexible,
   } from "../lib/floor-client.ts";
@@ -310,6 +323,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   );
   const cineSlugsDerivados: Record<string, { baseSlug: string }> = JSON.parse(
     (document.getElementById("datos-cine-derivados") as HTMLElement).dataset.json!,
+  );
+  const cineSlugsMetaMezcla: Record<string, string[]> = JSON.parse(
+    (document.getElementById("datos-cine-mezcla") as HTMLElement).dataset.json!,
   );
   const mundoSlugsJugables: string[] = JSON.parse(
     (document.getElementById("datos-mundo-slugs") as HTMLElement).dataset.json!,
@@ -634,6 +650,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       let raw: ItemFloor[];
       if (mundoSlugsJugables.includes(_slug)) {
         raw = await cargarCatalogoMundo(_slug);
+      } else if (cineSlugsMetaMezcla[_slug]) {
+        raw = await cargarMezclaCine(cineSlugsMetaMezcla[_slug]);
       } else {
         const derivado = cineSlugsDerivados[_slug];
         raw = derivado

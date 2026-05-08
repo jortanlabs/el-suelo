@@ -44,6 +44,17 @@ for (const s of subcategorias) {
   }
 }
 
+// Mezcla jugable (ej: superheroes = marvel+dc): activa cuando todos sus slugs están publicados
+const cineSlugsMetaMezcla: Record<string, string[]> = {};
+for (const s of subcategorias) {
+  if (!s.esMetaCategoria && s.subcategorias?.length && !s.derivadoDe && !s.pendiente) {
+    if (s.subcategorias.every((sub) => pub.includes(sub))) {
+      cineSlugsMetaMezcla[s.slug] = s.subcategorias;
+      cineSlugsJugables.push(s.slug);
+    }
+  }
+}
+
 // Mundo: slugs publicados (dataPath: "mundo")
 const mundoSlugsJugables = subcategoriasMundo
   .filter((s) => !s.esMetaCategoria && !!s.nombres && pub.includes(s.slug))
@@ -61,6 +72,7 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   <div id="datos-cine" data-json={JSON.stringify(cineBloques)} class="hidden"></div>
   <div id="datos-cine-slugs" data-json={JSON.stringify(cineSlugsJugables)} class="hidden"></div>
   <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
+  <div id="datos-cine-mezcla" data-json={JSON.stringify(cineSlugsMetaMezcla)} class="hidden"></div>
   <div id="datos-mundo-slugs" data-json={JSON.stringify(mundoSlugsJugables)} class="hidden"></div>
   <div id="datos-mundo-nombres" data-json={JSON.stringify(mundoSlugsNombres)} class="hidden"></div>
 
@@ -478,6 +490,9 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   const cineSlugsDerivados: Record<string, { baseSlug: string }> = JSON.parse(
     (document.getElementById("datos-cine-derivados") as HTMLElement).dataset.json!,
   );
+  const cineSlugsMetaMezcla: Record<string, string[]> = JSON.parse(
+    (document.getElementById("datos-cine-mezcla") as HTMLElement).dataset.json!,
+  );
   const mundoSlugsJugables: string[] = JSON.parse(
     (document.getElementById("datos-mundo-slugs") as HTMLElement).dataset.json!,
   );
@@ -604,7 +619,7 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
     categoriaTipo = "cine";
     categoriaSlug = _slug;
     categoriaDataPath = _esMundo ? "mundo" : "cine";
-    categoriaSlugsParaMezcla = null;
+    categoriaSlugsParaMezcla = cineSlugsMetaMezcla[_slug] ?? null;
     let _nombre = _esMundo ? (mundoSlugsNombres[_slug] ?? _slug) : _slug;
     if (!_esMundo) {
       for (const bloque of cineBloques) {
