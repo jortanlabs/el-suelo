@@ -1,0 +1,178 @@
+[
+  {
+    "nombre": "Madrid",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlKE6eS9GcNUQPkNpM7hlKrx53wM6lMsqOQ&s"
+  },
+  {
+    "nombre": "Barcelona",
+    "imagen": "https://air-production-cms-uploads.storage.googleapis.com/uploads/2024/04/05083419/barcelona-costa.jpg"
+  },
+  {
+    "nombre": "París",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZhZPdQUxm1-V3UzJRkh8sVqwM3Wr9eCrvQg&s"
+  },
+  {
+    "nombre": "Londres",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/250px-London_Skyline_%28125508655%29.jpeg"
+  },
+  {
+    "nombre": "Roma",
+    "imagen": "https://img.100r.systems/img/0b1b7e8452721052fd57e9cbce893362.jpg"
+  },
+  {
+    "nombre": "Berlín",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg/330px-Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg"
+  },
+  {
+    "nombre": "Ámsterdam",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1eFzLukS13Q618r1_wOk5ge6z8R1NLx-yCg&s"
+  },
+  {
+    "nombre": "Viena",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPCKTgRskbU-GkHsatuRPeTuVFKYRLsWmxQ&s"
+  },
+  {
+    "nombre": "Praga",
+    "imagen": "https://img.100r.systems/img/9dc792b6f550021d3ceeecf105732434.jpg"
+  },
+  {
+    "nombre": "Budapest",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgWxb--pRiIKhAU19B6xiBufd9-zxgofwMDw&s"
+  },
+  {
+    "nombre": "Lisboa",
+    "imagen": "https://www.farejaviagens.com.br/wp-content/uploads/2024/11/Castelo-de-Sa%CC%83o-Jorge-Lisboa-Portugal-scaled.jpeg"
+  },
+  {
+    "nombre": "Dublín",
+    "imagen": "https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/03/River-Liffey-in-Dublin-1200x834.jpg"
+  },
+  {
+    "nombre": "Bruselas",
+    "imagen": "https://content-viajes.nationalgeographic.com.es/medio/2025/12/05/shutterstock_d1035b54_2488933077_251205104013_1280x848.webp"
+  },
+  {
+    "nombre": "Estocolmo",
+    "imagen": "https://content.skyscnr.com/m/243efc611d0a3d6b/original/GettyImages-163731559_doc.jpg?resize=1224%3Aauto"
+  },
+  {
+    "nombre": "Oslo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9oIzZNCi9q5XqUbgo97yKymhPM41ak-cvsw&s"
+  },
+  {
+    "nombre": "Helsinki",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0jFC_TVvER5AmlqZZJLbm-NZ6NDmF1gJNg&s"
+  },
+  {
+    "nombre": "Varsovia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f4wYWjL4zXFAl5Ri1nABykQrtke0tZEzLg&s"
+  },
+  {
+    "nombre": "Atenas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/91/View_of_the_Acropolis_Athens_%28pixinn.net%29.jpg"
+  },
+  {
+    "nombre": "Estambul",
+    "imagen": "https://cdn2.civitatis.com/turquia/estambul/galeria/vista-panoramica-istambul.jpg"
+  },
+  {
+    "nombre": "Moscú",
+    "imagen": "https://www.rusiaparadescubrir.com/userfiles/images/gallery/moscow/Depositphotos_90926998_s-2019.jpg"
+  },
+  {
+    "nombre": "Tokio",
+    "imagen": "https://content-viajes.nationalgeographic.com.es/medio/2024/09/03/tokio_133ce43a_1284581217_240903122054_1280x854.jpg"
+  },
+  {
+    "nombre": "Pekín",
+    "imagen": "https://gsagua.com/wp-content/uploads/2016/07/pekin-2.jpg"
+  },
+  {
+    "nombre": "Shanghái",
+    "imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt9610c59c9fbe1449/68501f319fd25f2cf6055455/Shanghai_Night-HEADER_MOBILE.jpg?format=webp&quality=60&width=1440"
+  },
+  {
+    "nombre": "Mumbai",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSWcQg1Pnyrwe6SypXqIdQcEERTC280G0hA&s"
+  },
+  {
+    "nombre": "Dubái",
+    "imagen": "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/dubai/Dubai_Skyline_sunset_2465341947_ss_non-editorial_mdxz95?_a=BAVAZGDY0"
+  },
+  {
+    "nombre": "Singapur",
+    "imagen": "https://www.hostelworld.com/blog/wp-content/uploads/2019/07/hu-chen-__cBlRzLSTg-unsplash.jpg"
+  },
+  {
+    "nombre": "Bangkok",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV-ObMOCxpCRea38aVoZccza4isMEXapsjwA&s"
+  },
+  {
+    "nombre": "Seúl",
+    "imagen": "https://content.r9cdn.net/rimg/dimg/30/0c/6318617a-city-35982-163ff913019.jpg?width=1366&height=768&xhint=2421&yhint=1876&crop=true"
+  },
+  {
+    "nombre": "El Cairo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjLkfZ-XUWWsXaqQyOEfeN0xGkMc8WY9dtyA&s"
+  },
+  {
+    "nombre": "Johannesburgo",
+    "imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt610a4c1aa32e5a2a/6872e056eebbde729e27bd99/clodagh-da-paixao-xvJVDUoGpoU-unsplash-Header_Mobile.jpg?format=webp&auto=avif&quality=60&crop=1%3A1&width=1440"
+  },
+  {
+    "nombre": "Nairobi",
+    "imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blta6e0de21a01faae4/686e5f5b6cdcee1f9dc379dc/kenny-murgor-E_0kbeQbyV0-unsplash-HEADERMOBILE.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart"
+  },
+  {
+    "nombre": "Nueva York",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/nueva-york-1521191396.jpg?crop=0.889xw:1xh;center,top&resize=1200:*"
+  },
+  {
+    "nombre": "Los Ángeles",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/elle-los-angeles02-1559906859.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*"
+  },
+  {
+    "nombre": "Chicago",
+    "imagen": "https://res.klook.com/image/upload/fl_lossy.progressive,q_60/Mobile/City/gbxg9ii1n2h1uynyclix.jpg"
+  },
+  {
+    "nombre": "Miami",
+    "imagen": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fit,w_1440,h_900/crm/miamifl/CityOfMiamiBeach_2B4867CD-5056-A36A-0B06BD1F65D0FBA7-2b4862e65056a36_2b486f7e-5056-a36a-0b236ac9d9cdc4fc.jpg"
+  },
+  {
+    "nombre": "São Paulo",
+    "imagen": "https://cdn.sanity.io/images/nxpteyfv/goguides/58d64875a029587f5ba015a0c457b0db56b001d9-1600x1066.jpg"
+  },
+  {
+    "nombre": "Buenos Aires",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7SG2ginFxOocQ3PORzig99-YOzE-De4y8iQ&s"
+  },
+  {
+    "nombre": "Ciudad de México",
+    "imagen": "https://media.traveler.es/photos/61376d14cb06ad0f20e1263c/master/w_1600%2Cc_limit/138975.jpg"
+  },
+  {
+    "nombre": "Bogotá",
+    "imagen": "https://content.skyscnr.com/m/67f4e21849187647/original/GettyImages-167217640_doc.jpg?resize=1224%3Aauto"
+  },
+  {
+    "nombre": "Lima",
+    "imagen": "https://www.peru.travel/Contenido/Noticia/Imagen/es/1923/1.0/Principal/plaza-de-armas-lima-desktop.jpg"
+  },
+  {
+    "nombre": "Santiago de Chile",
+    "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2024/09/panorama-santiago-de-chile.jpg"
+  },
+  {
+    "nombre": "Sydney",
+    "imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/bltdec7db7befab477a/67a8adf0e0ac120ce628d957/iStock-1498418424-2-Header_Mobile.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart"
+  },
+  {
+    "nombre": "Toronto",
+    "imagen": "https://d1l57x9nwbbkz.cloudfront.net/files/s3fs-public/2025-03/toronto-financial-district-cn-tower-skyline.jpg?VersionId=tx68tJbKmCQPv5WJT_hHiBh41FwbZPwf"
+  },
+  {
+    "nombre": "Vancouver",
+    "imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt157c0563be6b05d2/6842f851d2161d1ba4d3c408/iStock-1966003836-HEADER_MOBILE.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart"
+  }
+]
