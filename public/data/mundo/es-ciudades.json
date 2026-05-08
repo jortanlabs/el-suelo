@@ -1,0 +1,162 @@
+[
+  {
+    "nombre": "Madrid",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTLl0qV_iVbiVIRE0fn0imhrYGuewQThih4A&s"
+  },
+  {
+    "nombre": "Barcelona",
+    "imagen": "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/cataluna/park-guell-barcelona-s-305364611.jpg"
+  },
+  {
+    "nombre": "Valencia",
+    "imagen": "https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Valencia-1.jpg"
+  },
+  {
+    "nombre": "Sevilla",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIAq_o7sX5sECNiEDJsUm5PcUcsh5eEnLLiw&s"
+  },
+  {
+    "nombre": "Zaragoza",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTmOU3JQOxQfXmhpiUDNOrcP4UJ_SDrPNs5A&s"
+  },
+  {
+    "nombre": "Málaga",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTa5N2UR0R2VYZTh61W_2b__XWA5JntV42g&s"
+  },
+  {
+    "nombre": "Murcia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizpn6S6br1WynuhTbIE1phhJaOJuUYEem2g&s"
+  },
+  {
+    "nombre": "Palma de Mallorca",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqo0Szq9vq7gVCU9AQD1jv4ZjDAjH_1Xjwtw&s"
+  },
+  {
+    "nombre": "Las Palmas de Gran Canaria",
+    "imagen": "https://static.elcorreo.com/www/pre2017/multimedia/noticias/201606/30/media/cortadas/risco-kOKG-U2011865623975yE-575x380@El%20Correo.jpg"
+  },
+  {
+    "nombre": "Bilbao",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPaE1I007dszP7Wh54k1JqTSSfOEokW8TBxw&s"
+  },
+  {
+    "nombre": "Alicante",
+    "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2025/09/shutterstock_2500071029-scaled-e1757064551257.jpg"
+  },
+  {
+    "nombre": "Córdoba",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCjKcM1X--o-40OuWELyKA640tEyLKWhNfmg&s"
+  },
+  {
+    "nombre": "Valladolid",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQBw0gkzS8e8MS7FZIJch8xth93DKd4gt_w&s"
+  },
+  {
+    "nombre": "Vigo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNK-PAkMEIfDsEDuVfZPS6Rr94ohCFzLuyjg&s"
+  },
+  {
+    "nombre": "Gijón",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRvGlSOwxzON9Ub_THdJlDBSSN7WCqNqnlQ&s"
+  },
+  {
+    "nombre": "Granada",
+    "imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/bltfe84b60fcde838af/68061cda696c05ff4835e25c/BCC-2024-EXPLORER-GRANADA-WINTER_GUIDE-HEADER-MOBILE.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart"
+  },
+  {
+    "nombre": "A Coruña",
+    "imagen": "https://mundoestrellagalicia.es/content/mega/es/home/blog/categorias/galicia/que-ver-en-a-coruna/_jcr_content/root/container/container/multi_image_1882056453/image-1.coreimg.png/1715587239942/img-mega-blog-que-ver-puerto-es.png"
+  },
+  {
+    "nombre": "Vitoria-Gasteiz",
+    "imagen": "https://media.traveler.es/photos/6751bc63997e6c57cc38f396/3:2/w_3000,h_2000,c_limit/vitoria.jpg"
+  },
+  {
+    "nombre": "Elche",
+    "imagen": "https://alicanteout.com/wp-content/uploads/elche-patrimonio-humanidad.jpg"
+  },
+  {
+    "nombre": "Santa Cruz de Tenerife",
+    "imagen": "https://www.guiarepsol.com/content/dam/repsol-guia/contenidos-imagenes/viajar/vamos-de-excursion/qu%C3%A9-ver-en-santa-cruz-de-tenerife/01SantaCruz.jpg.transform/rp-rendition-md/image.jpg"
+  },
+  {
+    "nombre": "Oviedo",
+    "imagen": "https://www.turismoasturias.es/documents/39908/62676/PORTADA-atardecer-naranco.jpg/4191c470-669c-921c-ac26-89aade7ad67a?t=1674189061057"
+  },
+  {
+    "nombre": "Badalona",
+    "imagen": "https://st3.idealista.com/news/archivos/styles/amp_1200x675_16_9/public/2024-01/images/vista-badalona-espana.jpg?VersionId=t8rYl4g6zr2dwGln67ZPpS56qrX6X0xK&itok=F6-LccZ3"
+  },
+  {
+    "nombre": "Cartagena",
+    "imagen": "https://checkinblog.it/wp-content/uploads/2024/03/informaciones-historia-entrada-teatro-romano-cartagena-espana.jpg"
+  },
+  {
+    "nombre": "Móstoles",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbPnu6gz8wRcoMxM-N2AJ7f0aMggXazHFgmg&s"
+  },
+  {
+    "nombre": "Jerez de la Frontera",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqCquJeV0gSzLLHiONZ0DMXGgRBA9sXUfiQ&s"
+  },
+  {
+    "nombre": "Sabadell",
+    "imagen": "https://urbansabadell.com/wp-content/uploads/2019/04/lugares-que-visitar-en-Sabadell.jpg"
+  },
+  {
+    "nombre": "Pamplona",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcyVxn6vYNyYsWuJHUBrI0g284BDUJnf4RA&s"
+  },
+  {
+    "nombre": "Almería",
+    "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2025/06/portada-almeria-1-scaled.jpg"
+  },
+  {
+    "nombre": "Fuenlabrada",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6wNUh1s6TzgaaTqnva1LTu3F9n52twn6ZPQ&s"
+  },
+  {
+    "nombre": "Leganés",
+    "imagen": "https://visitmadrid-files.s3.eu-west-1.amazonaws.com/files/styles/scale_webp_1280x720/public/2025-03/iglesia_san_salvador_1.jpg?itok=lcvXXt6A"
+  },
+  {
+    "nombre": "Donostia-San Sebastián",
+    "imagen": "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/pais-vasco/san-sebastian-vista-aerea-s628199351.jpg"
+  },
+  {
+    "nombre": "Burgos",
+    "imagen": "https://media.traveler.es/photos/65ce3917721c53b2e03a1b40/4:3/w_1884,h_1413,c_limit/GettyImages-499401225.jpg"
+  },
+  {
+    "nombre": "Santander",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/elle-santander-bahia-magdalena-1570356115.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*"
+  },
+  {
+    "nombre": "Albacete",
+    "imagen": "https://s1.abcstatics.com/abc/www/multimedia/espana/2024/05/17/pueblo-playa-albacete-k3HE-U6024725419081yC-1200x840@diario_abc.jpg"
+  },
+  {
+    "nombre": "Salamanca",
+    "imagen": "https://images.ecestaticos.com/clpafKUOtLR_t57veBY_fa_KA1c=/0x0:1992x1494/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F1c6%2F2b6%2Fdbc%2F1c62b6dbcc61feaf8d1dec736be258c5.jpg"
+  },
+  {
+    "nombre": "Logroño",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtpc3dhu4cf-UY26feryfmU5pWA4AQoo4-w&s"
+  },
+  {
+    "nombre": "Toledo",
+    "imagen": "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/castilla-mancha/vistas-toledo-s535820527.jpg"
+  },
+  {
+    "nombre": "Cádiz",
+    "imagen": "https://media.traveler.es/photos/67bdcc1254c93944932ac0da/16:9/w_2560%2Cc_limit/2T8471R%2520(1).jpg"
+  },
+  {
+    "nombre": "Huelva",
+    "imagen": "https://parkia.es/wp-content/uploads/huelva.jpg"
+  },
+  {
+    "nombre": "Marbella",
+    "imagen": "https://tevienes.com/cities/marbella-2.webp"
+  }
+]
