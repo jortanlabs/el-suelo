@@ -1,62 +1,262 @@
 [
   {
+    "nombre": "Luke Skywalker",
+    "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2026/04/Luke-Skywalker-Sar-Wars.jpg?fit=2500%2C1500&quality=70&strip=all&ssl=1"
+  },
+  {
+    "nombre": "Princesa Leia",
+    "imagen": "https://hips.hearstapps.com/es.h-cdn.co/hares/images/cultura/ocio/princesa-leia-que-el-feninismo-te-acompane/2732668-3-esl-ES/princesa-leia-que-el-feminismo-te-acompane.jpg?crop=1xw:0.6313193588162762xh;center,top&resize=1200:*"
+  },
+  {
     "nombre": "Han Solo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c9/Han_Solo_with_Blaster.jpg",
-    "palabraClave": "solo"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/han-solo-shrug-1524608163.jpg?crop=0.853xw:1.00xh;0.149xw,0"
   },
   {
     "nombre": "Darth Vader",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Darth_Vader_-_2007_Disney_Weekends.jpg/330px-Darth_Vader_-_2007_Disney_Weekends.jpg",
-    "palabraClave": "vader"
+    "imagen": "https://media.revistagq.com/photos/62a0a996223a33e985e4d59a/4:3/w_1199,h_899,c_limit/1072434_110615-cc-Darth-Vader-Thumb.jpg"
+  },
+  {
+    "nombre": "Yoda",
+    "imagen": "https://es.digitaltrends.com/tachyon/sites/13/2020/05/yoda-star-wars-the-empire-strikes-back.jpg?resize=620%2C349"
+  },
+  {
+    "nombre": "Obi-Wan Kenobi",
+    "imagen": "https://ca-times.brightspotcdn.com/dims4/default/f731f3b/2147483647/strip/false/crop/1263x720+0+0/resize/1263x720!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F57%2F32%2F9f488c2d4bc288bcfce63e749811%2Fobi-wan.JPG"
+  },
+  {
+    "nombre": "C-3PO",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQry_QoayQTeTNpJR9Dlaa5tId6npFU9KtOmw&s"
   },
   {
     "nombre": "R2-D2",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/R2-D2_-_Genuine_Movie_Star.jpg/330px-R2-D2_-_Genuine_Movie_Star.jpg",
-    "palabraClave": "r2d2"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCa7i0DrQN8Rrlmg6_2fp2mUTi20v-QYRjg&s"
+  },
+  {
+    "nombre": "Chewbacca",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbZ_cYxWxwdxTrIQD31H8WArxxAUn0ucqB2A&s"
   },
   {
     "nombre": "Lando Calrissian",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Lando6-2.jpg/330px-Lando6-2.jpg",
-    "palabraClave": "calrissian"
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/cb/Lando6-2.jpg"
+  },
+  {
+    "nombre": "Emperador Palpatine",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/palpatine-return-of-the-jedi-tal_d881391a.jpeg?region=336,0,864,864"
+  },
+  {
+    "nombre": "Boba Fett",
+    "imagen": "https://cdn.artphotolimited.com/images/6718bf5f258c849397f6133d/1000x1000/star-wars-boba-fett.jpg"
+  },
+  {
+    "nombre": "Jabba the Hutt",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/Jabba-The-Hutt_b5a08a70.jpeg?region=150%2C0%2C900%2C675"
   },
   {
     "nombre": "Darth Maul",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Darth_Maul_Cosplayer_at_MCM_Comic_Con_October_2016.jpg/330px-Darth_Maul_Cosplayer_at_MCM_Comic_Con_October_2016.jpg",
-    "palabraClave": "maul"
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9gfJmldd80_yNeTeOfLe_5CUhRfiI0RWcCzyWwsNkoEy29jafkgfTUxNN8XT5jCF7G5ENTlBaL9FiBAo1BpoTXyRh8TcjTAxzM5NBXYzSKOJgkE5VdqWAdrn7WYspZbOC5e-tFCGfNkQG/w1200-h630-p-k-no-nu/Maul1.jpg"
+  },
+  {
+    "nombre": "Qui-Gon Jinn",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/ad/Qui-Gon_Jinn.png"
   },
   {
     "nombre": "Mace Windu",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/bf/Mace_Windu.png",
-    "palabraClave": "windu"
+    "imagen": "https://imagenes.20minutos.es/files/image_640_360/uploads/imagenes/2020/09/15/Samuel.jpg"
   },
   {
     "nombre": "Padmé Amidala",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Amidala.png/330px-Amidala.png",
-    "palabraClave": "amidala"
+    "imagen": "https://img.asmedia.epimg.net/resizer/v2/UF2B2MQXURBHNPHQMHQYUZS56U.jpg?auth=a30e3d472a6cec07b696637606ddbd49d8a81d9005808074fe046c985332f047&width=1472&height=1104&smart=true"
+  },
+  {
+    "nombre": "Anakin Skywalker",
+    "imagen": "https://sm.ign.com/t/ign_latam/screenshot/default/anakinsky1_7kyq.1280.jpg"
+  },
+  {
+    "nombre": "Jar Jar Binks",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/databank_jarjarbinks_01_169_c70767ab.jpeg?region=0%2C0%2C1560%2C780"
+  },
+  {
+    "nombre": "Conde Dooku",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8e_N53-5NnuiKEF43OYdb8ttq4tkGYDQow&s"
+  },
+  {
+    "nombre": "General Grievous",
+    "imagen": "https://cdn.shopify.com/s/files/1/0817/1657/6536/files/General-Grievous-03_480x480.jpg?v=1740210248"
   },
   {
     "nombre": "Rey",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Heraldic_Royal_Crown_%28Common%29.svg/langes-330px-Heraldic_Royal_Crown_%28Common%29.svg.png",
-    "palabraClave": "rey"
+    "imagen": "https://www.denofgeek.com/wp-content/uploads/2020/05/star-wars-rey.jpg?resize=768%2C432"
+  },
+  {
+    "nombre": "Finn",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Finn.Star-Wars.webp"
   },
   {
     "nombre": "Poe Dameron",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/0/0b/Poe_Dameron-Force_Awakens_%282015%29.png",
-    "palabraClave": "dameron"
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/0/0b/Poe_Dameron-Force_Awakens_%282015%29.png"
+  },
+  {
+    "nombre": "Kylo Ren",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJUJ81i4rNWiYjK0fObmkZza7nJ1FHGTvoaQ&s"
   },
   {
     "nombre": "BB-8",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/3/39/BB-8%2C_Star_Wars_The_Force_Awakens.jpg",
-    "palabraClave": "bb8"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz3sq_8bB9-RTmSu6s3nFaLdCqBbH47EgZgg&s"
+  },
+  {
+    "nombre": "Captain Phasma",
+    "imagen": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/star-wars-8-los-ultimos-jedi-capitan-phasma/137729021-1-esl-ES/Star-Wars-Los-ultimos-Jedi-Por-que-no-se-quita-el-casco-la-Capitan-Phasma.jpg?crop=1xw:0.7757575757575758xh;center,top&resize=1200:*"
+  },
+  {
+    "nombre": "Snoke (Star Wars)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5XjbSEnlWplkP5q5IuCO20suZ0me40EcddA&s"
+  },
+  {
+    "nombre": "Mando (The Mandalorian)",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a1/TheMandalorian.jpg"
+  },
+  {
+    "nombre": "Grogu (Baby Yoda)",
+    "imagen": "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2023/03/22/16794859073347.jpg"
   },
   {
     "nombre": "Ahsoka Tano",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d7/Ahsoka_Tano.png",
-    "palabraClave": "tano"
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/who-is-ahsoka-tano-article-feature_60dc019d.jpeg?region=0,0,1600,900"
+  },
+  {
+    "nombre": "Bo-Katan Kryze",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c8/Bo-katan_Kryze.jpg"
+  },
+  {
+    "nombre": "Jango Fett",
+    "imagen": "https://sm.ign.com/t/ign_es/screenshot/default/aquaman-casts-jango-fett-actor-temuera-morrison-as-dc_azfc.1200.jpg"
+  },
+  {
+    "nombre": "Capitán Rex",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYMapVnKZdN0JO5GvBljRjeG9T4fx083uDQ&s"
+  },
+  {
+    "nombre": "General Hux",
+    "imagen": "https://www.starwarsnewsnet.com/wp-content/uploads/2025/04/General-Hux-speech-TFA.webp"
+  },
+  {
+    "nombre": "Nute Gunray",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_odQYBO_QYIEf8HClARMwau7B44FYjpfc5A&s"
+  },
+  {
+    "nombre": "Tarkin (Star Wars)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mkTWRlyfT6p8waBTlxNcbnOHPb113Ei4UQ&s"
+  },
+  {
+    "nombre": "Wedge Antilles",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9MDSDaa4FXpvNZeTzolVg7bL_0yjMjlw43w&s"
+  },
+  {
+    "nombre": "Admiral Ackbar",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Admiral_Ackbar_Cosplayer_at_Dragon_Con_2012.jpg"
+  },
+  {
+    "nombre": "IG-88 (Star Wars)",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/ig_88_cdd5cc52.jpeg?region=0%2C83%2C2453%2C1221"
+  },
+  {
+    "nombre": "Bossk (Star Wars)",
+    "imagen": "https://xombitgames.com/files/2016/09/bossk-battlefront.jpg"
+  },
+  {
+    "nombre": "Wicket (Star Wars)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrQOugHoiKdw7dANe5ZYs2bdSlkEIz272c0g&s"
+  },
+  {
+    "nombre": "Sebulba (Star Wars)",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/sebulba_1f3fe180.jpeg?region=0%2C0%2C2453%2C1380"
+  },
+  {
+    "nombre": "Watto (Star Wars)",
+    "imagen": "https://www.starwarsnewsnet.com/wp-content/uploads/2025/07/Watto-only-money-e1751884851833.jpg"
+  },
+  {
+    "nombre": "Shmi Skywalker",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtKof1WJmiTcfLW40TpH5yAXX9EnBp13RsA&s"
+  },
+  {
+    "nombre": "Rose Tico",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/rose-tico-main_cbac29b9.jpeg?region=242%2C113%2C741%2C741"
   },
   {
     "nombre": "Cara Dune",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/64/Cara_Dune_Star_Wars.jpg",
-    "palabraClave": "dune"
+    "imagen": "https://as01.epimg.net/epik/imagenes/2021/02/11/portada/1613065206_127269_1613065365_noticia_normal_recorte1.jpg"
+  },
+  {
+    "nombre": "Kuiil (The Mandalorian)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzr1ThV9pmCgarnp0WP7kdSVMqCBIiPjr_VQ&s"
+  },
+  {
+    "nombre": "Stormtrooper",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCXAnRCmHLgADfwgKFTJcQxZ9I11HwkxG6kg&s"
+  },
+  {
+    "nombre": "Jawa (Star Wars)",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Jawa_%285763464057%29.jpg/960px-Jawa_%285763464057%29.jpg"
+  },
+  {
+    "nombre": "Tusken Raider",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/tusken-raiders-main-bobf-2_135f8e1e.jpeg?region=0%2C0%2C1280%2C720"
+  },
+  {
+    "nombre": "Droide de Batalla",
+    "imagen": "https://static.wikia.nocookie.net/esstarwars/images/0/07/Battle_Droid_SWD_2018_Season_2_OP_Elite_Prize_Card.png/revision/latest?cb=20210605094829"
+  },
+  {
+    "nombre": "AT-AT (Star Wars)",
+    "imagen": "https://static.posters.cz/image/1300/67847.jpg"
+  },
+  {
+    "nombre": "Halcón Milenario",
+    "imagen": "https://static.wikia.nocookie.net/especiesaliens/images/8/88/Milleniumfalcon-forocepos-com.jpg/revision/latest?cb=20111217215956&path-prefix=es"
+  },
+  {
+    "nombre": "X-Wing",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1AAL7lVwWzQLqkN34zM0tL0oF8Sh4bbRQA&s"
+  },
+  {
+    "nombre": "TIE Fighter",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/vaders-tie-fighter_8bcb92e1.jpeg?region=0%2C147%2C1560%2C878"
+  },
+  {
+    "nombre": "Estrella de la Muerte",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTItVyBZkXMMXyYS3eiVBrB4ubd1kmW-jiI2g&s"
+  },
+  {
+    "nombre": "Sable de Luz",
+    "imagen": "https://www.aceroymagia.com/Images/articulo/sable-de-luz-obi-wan-hoja-extraible/01-sable-de-luz-obi-wan-hoja-extraible.jpg"
+  },
+  {
+    "nombre": "La Fuerza (Star Wars)",
+    "imagen": "https://lh5.googleusercontent.com/proxy/V9ZYzsESKNgi3kcok-OctCVujJxQBbF8GPiW4oUumEqvCaYmiIE8pc6mAyTfCL15iVHdEW16mFKYsPbvVK621-iTInemn_Rv37zp"
+  },
+  {
+    "nombre": "Tatooine (Star Wars)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhvwYJ6YbgW9a-V4sPuEqly9_jW08_uWSeA&s"
+  },
+  {
+    "nombre": "Naboo (Star Wars)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNfX14tSUMnwnVbvMWzA3432g2MZMygUtkg&s"
+  },
+  {
+    "nombre": "Coruscant",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/coruscant-main_d2fad5f2.jpeg?region=424%2C0%2C1072%2C804"
+  },
+  {
+    "nombre": "Hoth (Star Wars)",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-83g3lt_76fb492d.jpeg?region=0%2C0%2C1200%2C675"
+  },
+  {
+    "nombre": "Dagobah (Star Wars)",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/Dagobah_890df592.jpeg?region=0%2C80%2C1260%2C711"
+  },
+  {
+    "nombre": "Endor (Star Wars)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzOHa2nNNv-TknPqH5rqg--xfGJIhitiUpmQ&s"
   }
 ]
