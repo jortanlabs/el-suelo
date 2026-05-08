@@ -1,212 +1,150 @@
 [
   {
-    "nombre": "Mortadelo y Filemón",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/LogotipoMyF.jpg/330px-LogotipoMyF.jpg",
-    "palabraClave": "filemon"
+    "nombre": "Mortadelo (Mortadelo y Filemón)",
+    "imagen": "https://cdn.polyspeak.ai/speakmaster/044559b01ea7a1fa71dcebc9e4f8a497.webp"
   },
   {
-    "nombre": "Mortadelo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Exhibition_cartoons_on_wheels%2C_with_Smart_%26_Clever.JPG/330px-Exhibition_cartoons_on_wheels%2C_with_Smart_%26_Clever.JPG",
-    "palabraClave": "mortadelo"
+    "nombre": "Filemón (Mortadelo y Filemón)",
+    "imagen": "https://static.wikia.nocookie.net/digimonfanones/images/0/06/Mortadelo-filemon-pelicula-fg.jpg/revision/latest?cb=20210923172426&path-prefix=es"
   },
   {
-    "nombre": "Tintin",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Aventures-de-Tintin.svg/langes-330px-Aventures-de-Tintin.svg.png",
-    "palabraClave": "tintin"
+    "nombre": "Tintin (Tintin)",
+    "imagen": "https://cdn001.tintin.com/public/tintin/img/characters/tintin/tintin@2x.png"
   },
   {
-    "nombre": "Captain Haddock",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Comic_mural_of_Captain_Haddock_%28cropped%29.jpg/330px-Comic_mural_of_Captain_Haddock_%28cropped%29.jpg",
-    "palabraClave": "haddock"
+    "nombre": "Captain Haddock (Tintin)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD17Zw8qGgEt1l6322TphRbeLVmN3qbFoNAA&s"
   },
   {
-    "nombre": "Milou",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/66_Tint%C3%ADn_i_Mil%C3%BA%2C_mural_de_Werens_a_la_pla%C3%A7a_del_Tint%C3%ADn_%28Sabadell%29.jpg/330px-66_Tint%C3%ADn_i_Mil%C3%BA%2C_mural_de_Werens_a_la_pla%C3%A7a_del_Tint%C3%ADn_%28Sabadell%29.jpg",
-    "palabraClave": "milou"
+    "nombre": "Milou (Tintin)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScR0rkABm7Fbl__G60970XkZVb5ciYC0ZJAQ&s"
   },
   {
-    "nombre": "Thomson and Thompson",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/J.J._Thomson_LCCN2014715407.jpg/330px-J.J._Thomson_LCCN2014715407.jpg",
-    "palabraClave": "thompson"
+    "nombre": "Hernández y Fernández",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgnGb4rXrhv4fJDZLADJ9zhG2RLB6WIQ1YQA&s"
   },
   {
-    "nombre": "Professor Calculus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Tom_Apostol_1965.png/330px-Tom_Apostol_1965.png",
-    "palabraClave": "calculus"
+    "nombre": "Professor Calculus (Tintin)",
+    "imagen": "https://static.wikia.nocookie.net/tintin/images/4/4a/Cartoon_Professor.png/revision/latest?cb=20210426194341"
   },
   {
-    "nombre": "Asterix",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Asterix%26Obelix_Brussels.jpg/330px-Asterix%26Obelix_Brussels.jpg",
-    "palabraClave": "asterix"
+    "nombre": "Asterix (Astérix y Obélix)",
+    "imagen": "https://asterix.com/wp-content/uploads/2024/11/asterix.jpg"
   },
   {
-    "nombre": "Getafix",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Asterix.svg/langes-330px-Asterix.svg.png",
-    "palabraClave": "getafix"
+    "nombre": "Obelix (Astérix y Obélix)",
+    "imagen": "https://asterix.com/wp-content/uploads/2024/11/obelix.jpg"
   },
   {
-    "nombre": "Dogmatix",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/86/Id%C3%A9fix.JPG",
-    "palabraClave": "dogmatix"
+    "nombre": "Getafix (Astérix y Obélix)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS4DJyIlpu2XRjVIBpVVzCgTQRrgJ_lizEQA&s"
   },
   {
-    "nombre": "Papa Smurf",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jonathan_Winters_-_publicity.jpg/330px-Jonathan_Winters_-_publicity.jpg",
-    "palabraClave": "smurf"
+    "nombre": "Dogmatix (Astérix y Obélix)",
+    "imagen": "https://asterix.com/wp-content/uploads/2024/11/idefix.jpg"
   },
   {
-    "nombre": "Smurfette",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kelly_Asbury_Photo_Select_%28cropped%29.jpg",
-    "palabraClave": "smurfette"
+    "nombre": "Vitalstatistix (Astérix y Obélix)",
+    "imagen": "https://asterix.com/wp-content/uploads/2024/10/abraracourcix.jpg"
   },
   {
-    "nombre": "Brainy Smurf",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/UKISS_Soohyun_2023.png/330px-UKISS_Soohyun_2023.png",
-    "palabraClave": "smurf"
+    "nombre": "Papá Pitufo (Los Pitufos)",
+    "imagen": "https://www.diamondartclub.com/cdn/shop/files/papa-smurf-diamond-art-painting-45438862885057.jpg?v=1762460900&width=3000"
   },
   {
-    "nombre": "Gargamel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Bramberg_am_Wildkogel_-_Wenns_-_Motiv_-_2024_06_20-3.jpg/330px-Bramberg_am_Wildkogel_-_Wenns_-_Motiv_-_2024_06_20-3.jpg",
-    "palabraClave": "gargamel"
+    "nombre": "Pitufina (Los Pitufos)",
+    "imagen": "https://hanna-barberawiki.s3.us-east-va.io.cloud.ovh.us/thumb/3/37/Smurfette.png/1200px-Smurfette.png"
   },
   {
-    "nombre": "Azrael",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/13/Esriel.jpg",
-    "palabraClave": "azrael"
+    "nombre": "Pitufo Filosófico (Los Pitufos)",
+    "imagen": "https://www.syfy.com/sites/syfy/files/2020/04/brainy-smurf.jpg"
   },
   {
-    "nombre": "Heidi",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Spyri_Heidi_Cover_1887.jpg/330px-Spyri_Heidi_Cover_1887.jpg",
-    "palabraClave": "heidi"
+    "nombre": "Gargamel (Los Pitufos)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:42a147eb-2ebe-40b9-bed8-8282a2f0948a?quality=0.7&gen=ntrn&format=webp&crop=true&width=660"
   },
   {
     "nombre": "Clara Sesemann",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Heidi_-_facing_p104.png/330px-Heidi_-_facing_p104.png",
-    "palabraClave": "sesemann"
-  },
-  {
-    "nombre": "Peter",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Pope-peter_pprubens.jpg/330px-Pope-peter_pprubens.jpg",
-    "palabraClave": "peter"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Heidi_-_facing_p104.png/330px-Heidi_-_facing_p104.png"
   },
   {
     "nombre": "Lucky Luke",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Charleroi_-_Parc_%28station_de_m%C3%A9tro%29_-_Lucky_Luke_-_l%27homme_qui_tire_plus_vite_que_son_ombre_-_c%C3%A9ramique_-_01.jpg/330px-Charleroi_-_Parc_%28station_de_m%C3%A9tro%29_-_Lucky_Luke_-_l%27homme_qui_tire_plus_vite_que_son_ombre_-_c%C3%A9ramique_-_01.jpg",
-    "palabraClave": "luke"
-  },
-  {
-    "nombre": "The Daltons",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Charleroi_-_station_Janson_-_Les_Daltons_-_01.jpg/330px-Charleroi_-_station_Janson_-_Les_Daltons_-_01.jpg",
-    "palabraClave": "daltons"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Charleroi_-_Parc_%28station_de_m%C3%A9tro%29_-_Lucky_Luke_-_l%27homme_qui_tire_plus_vite_que_son_ombre_-_c%C3%A9ramique_-_01.jpg/330px-Charleroi_-_Parc_%28station_de_m%C3%A9tro%29_-_Lucky_Luke_-_l%27homme_qui_tire_plus_vite_que_son_ombre_-_c%C3%A9ramique_-_01.jpg"
   },
   {
     "nombre": "Pocoyo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Zinkia_Entertainment_Logo.png",
-    "palabraClave": "pocoyo"
-  },
-  {
-    "nombre": "Elly",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/190515_LE_01.jpg/330px-190515_LE_01.jpg",
-    "palabraClave": "elly"
-  },
-  {
-    "nombre": "Pato",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Pato_en_parque_Tezoz%C3%B3moc%2C_M%C3%A9xico..jpg/330px-Pato_en_parque_Tezoz%C3%B3moc%2C_M%C3%A9xico..jpg",
-    "palabraClave": "pato"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Zinkia_Entertainment_Logo.png"
   },
   {
     "nombre": "Bugs Bunny",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FB-111_Bugs_Bunny_Nose_Art.jpeg/330px-FB-111_Bugs_Bunny_Nose_Art.jpeg",
-    "palabraClave": "bunny"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FB-111_Bugs_Bunny_Nose_Art.jpeg/330px-FB-111_Bugs_Bunny_Nose_Art.jpeg"
   },
   {
     "nombre": "Daffy Duck",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Campo_de_Marte_MISTURA_2012_Lima_Peru_009.jpg/330px-Campo_de_Marte_MISTURA_2012_Lima_Peru_009.jpg",
-    "palabraClave": "duck"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Campo_de_Marte_MISTURA_2012_Lima_Peru_009.jpg/330px-Campo_de_Marte_MISTURA_2012_Lima_Peru_009.jpg"
   },
   {
     "nombre": "Tweety",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ataleoftwokitties_restored.jpg/330px-Ataleoftwokitties_restored.jpg",
-    "palabraClave": "tweety"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ataleoftwokitties_restored.jpg/330px-Ataleoftwokitties_restored.jpg"
   },
   {
     "nombre": "Sylvester the Cat",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jeff_Bergman_by_Gage_Skidmore.jpg/330px-Jeff_Bergman_by_Gage_Skidmore.jpg",
-    "palabraClave": "cat"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jeff_Bergman_by_Gage_Skidmore.jpg/330px-Jeff_Bergman_by_Gage_Skidmore.jpg"
   },
   {
     "nombre": "Speedy Gonzales",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Speedy_Gonzales_at_Celebration_Parade%2C_Six_Flags_Magic_Mountain_2007-07_1.JPG/330px-Speedy_Gonzales_at_Celebration_Parade%2C_Six_Flags_Magic_Mountain_2007-07_1.JPG",
-    "palabraClave": "gonzales"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Speedy_Gonzales_at_Celebration_Parade%2C_Six_Flags_Magic_Mountain_2007-07_1.JPG/330px-Speedy_Gonzales_at_Celebration_Parade%2C_Six_Flags_Magic_Mountain_2007-07_1.JPG"
   },
   {
     "nombre": "Porky Pig",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Looney_Tunes_Art_Trail_%5E7%2C_Porky_Pig_-_geograph.org.uk_-_6884580.jpg/330px-Looney_Tunes_Art_Trail_%5E7%2C_Porky_Pig_-_geograph.org.uk_-_6884580.jpg",
-    "palabraClave": "pig"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Looney_Tunes_Art_Trail_%5E7%2C_Porky_Pig_-_geograph.org.uk_-_6884580.jpg/330px-Looney_Tunes_Art_Trail_%5E7%2C_Porky_Pig_-_geograph.org.uk_-_6884580.jpg"
   },
   {
     "nombre": "Elmer Fudd",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Elmer%27s_Pet_Rabbit_Lobby_Card.jpg/330px-Elmer%27s_Pet_Rabbit_Lobby_Card.jpg",
-    "palabraClave": "fudd"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Elmer%27s_Pet_Rabbit_Lobby_Card.jpg/330px-Elmer%27s_Pet_Rabbit_Lobby_Card.jpg"
   },
   {
     "nombre": "Wile E. Coyote",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Acme_anvil.gif/330px-Acme_anvil.gif",
-    "palabraClave": "coyote"
-  },
-  {
-    "nombre": "Road Runner",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/The_Looney_Tunes_Show_logo.svg/langes-330px-The_Looney_Tunes_Show_logo.svg.png",
-    "palabraClave": "runner"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Acme_anvil.gif/330px-Acme_anvil.gif"
   },
   {
     "nombre": "Pepé Le Pew",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Pepe_le_Pew_%284260881809%29.jpg/330px-Pepe_le_Pew_%284260881809%29.jpg",
-    "palabraClave": "pew"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Pepe_le_Pew_%284260881809%29.jpg/330px-Pepe_le_Pew_%284260881809%29.jpg"
   },
   {
     "nombre": "Tom Cat",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Stamp_of_Albania_-_2005_-_Colnect_374067_-_Tom.jpeg",
-    "palabraClave": "cat"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Stamp_of_Albania_-_2005_-_Colnect_374067_-_Tom.jpeg"
   },
   {
     "nombre": "Jerry Mouse",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Jerry_art_in_MultiVersus.png",
-    "palabraClave": "mouse"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Jerry_art_in_MultiVersus.png"
   },
   {
     "nombre": "Fred Flintstone",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/The_Flintstones.png/330px-The_Flintstones.png",
-    "palabraClave": "flintstone"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/The_Flintstones.png/330px-The_Flintstones.png"
   },
   {
     "nombre": "Barney Rubble",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Barney_Rubble_Harikalar_Diyari_Flintstones_06019_nevit.jpg/330px-Barney_Rubble_Harikalar_Diyari_Flintstones_06019_nevit.jpg",
-    "palabraClave": "rubble"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Barney_Rubble_Harikalar_Diyari_Flintstones_06019_nevit.jpg/330px-Barney_Rubble_Harikalar_Diyari_Flintstones_06019_nevit.jpg"
   },
   {
     "nombre": "Pebbles Flintstone",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/0/0a/Pebbles_Flintstone.png",
-    "palabraClave": "flintstone"
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/0/0a/Pebbles_Flintstone.png"
   },
   {
     "nombre": "Bamm-Bamm Rubble",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/df/Annie_Awards_Lucille_Bliss.jpg",
-    "palabraClave": "rubble"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/df/Annie_Awards_Lucille_Bliss.jpg"
   },
   {
     "nombre": "Judy Jetson",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Janet-Waldo_2013-11-16_%28cropped%29.jpg/330px-Janet-Waldo_2013-11-16_%28cropped%29.jpg",
-    "palabraClave": "jetson"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Janet-Waldo_2013-11-16_%28cropped%29.jpg/330px-Janet-Waldo_2013-11-16_%28cropped%29.jpg"
   },
   {
     "nombre": "Elroy Jetson",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/The_Jetsons_%28television_series_logo%29.svg/langes-330px-The_Jetsons_%28television_series_logo%29.svg.png",
-    "palabraClave": "jetson"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/The_Jetsons_%28television_series_logo%29.svg/langes-330px-The_Jetsons_%28television_series_logo%29.svg.png"
   },
   {
     "nombre": "Maya the Bee",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/The_adventures_of_Maya_the_bee_%28IA_adventuresofmaya00bonsiala%29.pdf/page1-330px-The_adventures_of_Maya_the_bee_%28IA_adventuresofmaya00bonsiala%29.pdf.jpg",
-    "palabraClave": "bee"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/The_adventures_of_Maya_the_bee_%28IA_adventuresofmaya00bonsiala%29.pdf/page1-330px-The_adventures_of_Maya_the_bee_%28IA_adventuresofmaya00bonsiala%29.pdf.jpg"
   }
 ]
