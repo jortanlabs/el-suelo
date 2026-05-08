@@ -1,267 +1,278 @@
 [
   {
-    "nombre": "Woody",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Disneyland_Hong_Kong_-_Toy_Story_Land_IMG_5461.JPG/330px-Disneyland_Hong_Kong_-_Toy_Story_Land_IMG_5461.JPG",
-    "palabraClave": "woody"
+    "nombre": "Woody (Toy Story)",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/b_toystory_characterbanner_woody_mobile_gradient_v2_32211a98.jpeg"
   },
   {
-    "nombre": "Buzz Lightyear",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Buzz_Lightyear_sculpture_of_Toy_Story_Hotel_Shanghai_%28cropped%29.jpg/330px-Buzz_Lightyear_sculpture_of_Toy_Story_Hotel_Shanghai_%28cropped%29.jpg",
-    "palabraClave": "lightyear"
+    "nombre": "Buzz Lightyear (Toy Story)",
+    "imagen": "https://lumiere-a.akamaihd.net/v1/images/b_toystory_characterbanner_buzz_mobile_gradient_v2_14ddf7ec.jpeg?region=0,0,640,480"
   },
   {
-    "nombre": "Jessie",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Jessie_at_Shanghai_Toy_Story_Land_%28cropped%29.jpg/330px-Jessie_at_Shanghai_Toy_Story_Land_%28cropped%29.jpg",
-    "palabraClave": "jessie"
+    "nombre": "Jessie (Toy Story)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCMNS5i7YPmsTXjCiD7NKTqNg8YF_wGy7pXA&s"
   },
   {
-    "nombre": "Rex",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Hong_Kong_Disneyland_%2824176189482%29_%28cropped%29.jpg/330px-Hong_Kong_Disneyland_%2824176189482%29_%28cropped%29.jpg",
-    "palabraClave": "rex"
+    "nombre": "Rex (Toy Story)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROk_I4KM1zPtLvP4A5MtICVjtkiI4Up0JccA&s"
   },
   {
-    "nombre": "Hamm",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Hamm_Luftbild_Innenstadt_2007.jpg/330px-Hamm_Luftbild_Innenstadt_2007.jpg",
-    "palabraClave": "hamm"
+    "nombre": "Hamm (Toy Story)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSofNkddPnT83V2hwNRkSKdNruOfQx3OKfdYw&s"
   },
   {
-    "nombre": "Mr. Potato Head",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Mr_Potato_Head_1952.jpg/330px-Mr_Potato_Head_1952.jpg",
-    "palabraClave": "head"
+    "nombre": "Mr. Potato Head (Toy Story)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/5/55/Profile_-_Mr._Potato_Head.jpeg/revision/latest/thumbnail/width/360/height/360?cb=20190313050826"
   },
   {
-    "nombre": "Bo Peep",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Little_Bo_Peep_cosplayer_%2833483660770%29.jpg/330px-Little_Bo_Peep_cosplayer_%2833483660770%29.jpg",
-    "palabraClave": "peep"
+    "nombre": "Bo Peep (Toy Story)",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f0/Bo_Peep.png"
   },
   {
-    "nombre": "Slinky",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/2006-02-04_Metal_spiral.jpg/330px-2006-02-04_Metal_spiral.jpg",
-    "palabraClave": "slinky"
+    "nombre": "Slinky (Toy Story)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtg0W67-byrtpmPVe142sccYS_Hc6uKDmL5w&s"
   },
   {
-    "nombre": "Lotso",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Toystory3fix.png/330px-Toystory3fix.png",
-    "palabraClave": "lotso"
+    "nombre": "Andy (Toy Story)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/1/1f/Andy%26Woody.png/revision/latest?cb=20120226201106&path-prefix=es"
   },
   {
-    "nombre": "Forky",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Charleroi_-_SMOK_-_Forky_Asks_A_Question_-_01.jpg/330px-Charleroi_-_SMOK_-_Forky_Asks_A_Question_-_01.jpg",
-    "palabraClave": "forky"
+    "nombre": "Forky (Toy Story 4)",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/forky-toy-story-4-1561448227.jpg"
   },
   {
-    "nombre": "Sully",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Watagashi_2013_%289527560798%29.jpg/330px-Watagashi_2013_%289527560798%29.jpg",
-    "palabraClave": "sully"
+    "nombre": "Sully (Monstruos S.A.)",
+    "imagen": "https://static.wikia.nocookie.net/disneyypixar/images/d/df/Sullivan_KH3.jpg/revision/latest?cb=20180920022756&path-prefix=es"
   },
   {
-    "nombre": "Boo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Halloween_Horror_Nights_Logo.JPG/330px-Halloween_Horror_Nights_Logo.JPG",
-    "palabraClave": "boo"
+    "nombre": "Mike Wazowski (Monstruos S.A.)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZ4G5BtD8F4O2VeptO7sNsXseLe9cVaSuZQ&s"
   },
   {
-    "nombre": "Randall",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Randall_Made_Knives_building_001_crop.jpg/330px-Randall_Made_Knives_building_001_crop.jpg",
-    "palabraClave": "randall"
+    "nombre": "Boo (Monstruos S.A.)",
+    "imagen": "https://sm.ign.com/t/ign_es/screenshot/default/sin-titulo-1_qsg9.1200.jpg"
   },
   {
-    "nombre": "Nemo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_de_Buscando_a_Nemo.svg/langes-330px-Logo_de_Buscando_a_Nemo.svg.png",
-    "palabraClave": "nemo"
+    "nombre": "Darla (Buscando a Nemo)",
+    "imagen": "https://i.pinimg.com/736x/27/aa/09/27aa09641d764e5b41521a98b53b63fe.jpg"
   },
   {
-    "nombre": "Dory",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hoplite_fight_from_Athens_Museum.jpg/330px-Hoplite_fight_from_Athens_Museum.jpg",
-    "palabraClave": "dory"
+    "nombre": "Nemo (Buscando a Nemo)",
+    "imagen": "https://media.quever.news/p/56a4fbdfa551d3fd5d0b8a977ceb8e71/adjuntos/374/imagenes/000/047/0000047317/466x262/smart/buscando-nemo.jpg"
   },
   {
-    "nombre": "Mr. Increíble",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/The_Incredibles_logo.svg/langes-330px-The_Incredibles_logo.svg.png",
-    "palabraClave": "increible"
+    "nombre": "Dory (Buscando a Nemo)",
+    "imagen": "https://www.uv.es/recursos/fatwirepub/ccurl/301/940/Dory.jpg"
   },
   {
-    "nombre": "Jack-Jack",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Incredibles_2_logo.png/330px-Incredibles_2_logo.png",
-    "palabraClave": "jackjack"
+    "nombre": "Marlin (Buscando a Nemo)",
+    "imagen": "https://static.voices.com/wp-content/uploads/2022/12/ezgif-2-c9af4d9f6e-e1672673406534.jpg"
   },
   {
-    "nombre": "Edna Mode",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Edna_Moda%2C_Kent_Melton.jpg/330px-Edna_Moda%2C_Kent_Melton.jpg",
-    "palabraClave": "mode"
+    "nombre": "Crush (Buscando a Nemo)",
+    "imagen": "https://i.pinimg.com/736x/52/64/9b/52649b50761e97a0e6bdfe6ab9f94eaa.jpg"
   },
   {
-    "nombre": "Rayo McQueen",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Lightning_McQueen_Petersen_Automotive_Museum_2024.jpg/330px-Lightning_McQueen_Petersen_Automotive_Museum_2024.jpg",
-    "palabraClave": "mcqueen"
+    "nombre": "Mr. Increíble (Los Increíbles)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxk3BFoFbMvf85HrXa___NTOAnX-HW9gwkQ&s"
   },
   {
-    "nombre": "Mater",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Tow_Mater_%28265156851%29.jpg/330px-Tow_Mater_%28265156851%29.jpg",
-    "palabraClave": "mater"
+    "nombre": "Elastigirl (Los Increíbles)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQFUVuD8RINlVnEjtuELhVKwTrmxQTlJ0uzQ&s"
   },
   {
-    "nombre": "Doc Hudson",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Orlando_-_Disney_World_-_Disney%27s_Art_of_Animation_Resort_-_Cars_-_Doc_Hudson_%2817031439698%29.jpg/330px-Orlando_-_Disney_World_-_Disney%27s_Art_of_Animation_Resort_-_Cars_-_Doc_Hudson_%2817031439698%29.jpg",
-    "palabraClave": "hudson"
+    "nombre": "Violeta (Los Increíbles)",
+    "imagen": "https://assets.puzzlefactory.com/puzzle/403/956/original.jpg"
   },
   {
-    "nombre": "Sally",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Flickr_-_wbaiv_-_DSC_0074.jpg/330px-Flickr_-_wbaiv_-_DSC_0074.jpg",
-    "palabraClave": "sally"
+    "nombre": "Dash (Los Increíbles)",
+    "imagen": "https://static.wikia.nocookie.net/los-increibles/images/0/00/Dash_1.jpg/revision/latest?cb=20251205163302&path-prefix=es"
   },
   {
-    "nombre": "Remy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/%C3%89glise_Saint-Denis_de_Remy_2013-09-06_16-06-14.jpg/330px-%C3%89glise_Saint-Denis_de_Remy_2013-09-06_16-06-14.jpg",
-    "palabraClave": "remy"
+    "nombre": "Jack-Jack (Los Increíbles)",
+    "imagen": "https://static.wikia.nocookie.net/los-increibles/images/d/da/50bfea44b552a.jpg/revision/latest/scale-to-width-down/294?cb=20151029124202&path-prefix=es"
   },
   {
-    "nombre": "Linguini",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Linguine.jpg/330px-Linguine.jpg",
-    "palabraClave": "linguini"
+    "nombre": "Frozono (Los Increíbles)",
+    "imagen": "https://static.wikia.nocookie.net/los-increibles/images/e/e1/Frozono_1.jpg/revision/latest/scale-to-width-down/1200?cb=20251205162642&path-prefix=es"
   },
   {
-    "nombre": "Colette",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colette_-_photo.jpg/330px-Colette_-_photo.jpg",
-    "palabraClave": "colette"
+    "nombre": "Ellie Fredericksen (Up)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/d/dd/1E67CF55-6FA6-46FF-AA77-A2FB7F3BCCB1.jpeg/revision/latest?cb=20180305014232&path-prefix=es"
   },
   {
-    "nombre": "Ego",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Ch%C3%A2teau_Cheval-Blanc.jpg/330px-Ch%C3%A2teau_Cheval-Blanc.jpg",
-    "palabraClave": "ego"
+    "nombre": "Edna Mode (Los Increíbles)",
+    "imagen": "https://i.pinimg.com/474x/8b/0a/61/8b0a61ddb5e39ddad699b4fa8c7756cd.jpg"
   },
   {
-    "nombre": "WALL-E",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Wall_Cover.svg/langes-330px-The_Wall_Cover.svg.png",
-    "palabraClave": "walle"
+    "nombre": "Rayo McQueen (Cars)",
+    "imagen": "https://cars-boutique.com/cdn/shop/articles/flash_mcqueen.jpg?v=1744382510&width=1100"
   },
   {
-    "nombre": "EVE",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/WALL-E_balloon_at_Shin_Kong_Cineplex_20080725a_%28cropped%29.jpg/330px-WALL-E_balloon_at_Shin_Kong_Cineplex_20080725a_%28cropped%29.jpg",
-    "palabraClave": "eve"
+    "nombre": "Mater (Cars)",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f7/Mater_%28Cars%29.png"
   },
   {
-    "nombre": "Carl Fredricksen",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Up_%282009_film%29_logo.svg/langes-330px-Up_%282009_film%29_logo.svg.png",
-    "palabraClave": "fredricksen"
+    "nombre": "Doc Hudson (Cars)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/e/e8/Profile-Doc_hudson.png/revision/latest?cb=20221003162257"
   },
   {
-    "nombre": "Kevin",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kevin_Bacon_addresses_audience_members_after_being_presented_the_Merit_Service_Award.jpg/330px-Kevin_Bacon_addresses_audience_members_after_being_presented_the_Merit_Service_Award.jpg",
-    "palabraClave": "kevin"
+    "nombre": "Sally (Cars)",
+    "imagen": "https://cdn.motor1.com/images/mgl/1ZzvOM/s3/porsche-making-one-off-sally-carrera-911-with-pixar.jpg"
   },
   {
-    "nombre": "Mérida",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/M%C3%A9rida_%28Brave%29.jpg/330px-M%C3%A9rida_%28Brave%29.jpg",
-    "palabraClave": "merida"
+    "nombre": "Remy (Ratatouille)",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Remy.Ratatouille.webp"
   },
   {
-    "nombre": "Alegría",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Japan_Expo_2024_-_Cosplay_of_Joy.jpg/330px-Japan_Expo_2024_-_Cosplay_of_Joy.jpg",
-    "palabraClave": "alegria"
+    "nombre": "Linguini (Ratatouille)",
+    "imagen": "https://gibbonsgazette.org/wp-content/uploads/2022/11/Alfredo-Linguini-from-the-movie-Ratatouille-3.webp"
   },
   {
-    "nombre": "Tristeza",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Face_of_fatigue.jpg/330px-Face_of_fatigue.jpg",
-    "palabraClave": "tristeza"
+    "nombre": "Colette (Ratatouille)",
+    "imagen": "https://i.redd.it/opinions-on-colette-tatou-v0-rcqs1vh6rgxd1.png?width=300&format=png&auto=webp&s=8e80ca36b32b7b14455b1a49bca5321acbdfd8e1"
   },
   {
-    "nombre": "Ira",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Inferno_Canto_7_lines_8-9.jpg/330px-Inferno_Canto_7_lines_8-9.jpg",
-    "palabraClave": "ira"
+    "nombre": "Ego (Ratatouille)",
+    "imagen": "https://i.ytimg.com/vi/Cxpm-xYSvkU/maxresdefault.jpg"
   },
   {
-    "nombre": "Asco",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Expression_of_the_Emotions_Plate_V%2C_2%2B3.jpg/330px-Expression_of_the_Emotions_Plate_V%2C_2%2B3.jpg",
-    "palabraClave": "asco"
+    "nombre": "WALL-E (WALL-E)",
+    "imagen": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/peliculas/wall-e/galeria/3139610-3-esl-ES/Wall-E.jpg?resize=640:*"
   },
   {
-    "nombre": "Miedo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Prado_-_Los_Disparates_%281864%29_-_No._02_-_Disparate_de_miedo.jpg/330px-Prado_-_Los_Disparates_%281864%29_-_No._02_-_Disparate_de_miedo.jpg",
-    "palabraClave": "miedo"
+    "nombre": "EVE (WALL-E)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/4/4f/Profile_-_EVE.png/revision/latest?cb=20190314123837"
   },
   {
-    "nombre": "Bing Bong",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Inside_Out_%282015_film%29_Logo.svg/langes-330px-Inside_Out_%282015_film%29_Logo.svg.png",
-    "palabraClave": "bong"
+    "nombre": "AUTO (WALL-E)",
+    "imagen": "https://i.redd.it/lets-face-it-we-all-thought-auto-had-cared-about-wall-e-v0-bpbjdsf7ob7e1.png?width=1600&format=png&auto=webp&s=c0da8d8453629ab9b0a35c056e3f1ad82660f4b0"
   },
   {
-    "nombre": "Miguel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Le_Grand_Saint_Michel%2C_by_Raffaello_Sanzio%2C_from_C2RMF_retouched.jpg/330px-Le_Grand_Saint_Michel%2C_by_Raffaello_Sanzio%2C_from_C2RMF_retouched.jpg",
-    "palabraClave": "miguel"
+    "nombre": "Carl Fredricksen (Up)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/2/28/Profile-_Carl_Fredricksen.png/revision/latest?cb=20210525075534"
   },
   {
-    "nombre": "Héctor",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Hector_Cassandra_Pomarici_Santomasi.jpg/330px-Hector_Cassandra_Pomarici_Santomasi.jpg",
-    "palabraClave": "hector"
+    "nombre": "Russell (Up)",
+    "imagen": "https://wallpapers.com/images/hd/up-movie-russell-close-up-amp33ozkydwx6fz6.jpg"
   },
   {
-    "nombre": "Ernesto de la Cruz",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ernesto_Natividad_De_la_Cruz_-_A%C3%B1o_1938.jpg/330px-Ernesto_Natividad_De_la_Cruz_-_A%C3%B1o_1938.jpg",
-    "palabraClave": "cruz"
+    "nombre": "Dug (Up)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXS4Rs440ZH03VNFM0rWp7ZbckcHzEqadzQ&s"
   },
   {
-    "nombre": "Mamá Coco",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Disney%27s_Coco_logo.png/330px-Disney%27s_Coco_logo.png",
-    "palabraClave": "coco"
+    "nombre": "Kevin (Up)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/9/99/Profile-_Kevin.png/revision/latest?cb=20190414091213"
   },
   {
-    "nombre": "Dante",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Portrait_de_Dante.jpg/330px-Portrait_de_Dante.jpg",
-    "palabraClave": "dante"
+    "nombre": "Charles Muntz (Up)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/1/18/Profile_-_Charles_Muntz.jpg/revision/latest/thumbnail/width/360/height/360?cb=20220127075106"
   },
   {
-    "nombre": "Joe Gardner",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Logo_Soul.png/330px-Logo_Soul.png",
-    "palabraClave": "gardner"
+    "nombre": "Nostalgia (Inside Out)",
+    "imagen": "https://static.wikia.nocookie.net/inside-out-emotions/images/1/18/Nostalgia.png/revision/latest?cb=20240622011440"
   },
   {
-    "nombre": "Luca",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Luca_prodan_gabrielrocca_foto.jpg/330px-Luca_prodan_gabrielrocca_foto.jpg",
-    "palabraClave": "luca"
+    "nombre": "Alegría (Inside Out)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghWfAn_g58pVuRv4bH8lDN0dTYEOhDt5LcA&s"
   },
   {
-    "nombre": "Alberto",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Einstein1921_by_F_Schmutzer_2.jpg/330px-Einstein1921_by_F_Schmutzer_2.jpg",
-    "palabraClave": "alberto"
+    "nombre": "Tristeza (Inside Out)",
+    "imagen": "https://static.wikia.nocookie.net/inside-out/images/e/e1/Sadness_inside_out_2_profile.png/revision/latest/thumbnail/width/360/height/360?cb=20240509023443&path-prefix=es"
   },
   {
-    "nombre": "Giulia",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Luca_logo.png/330px-Luca_logo.png",
-    "palabraClave": "giulia"
+    "nombre": "Ira (Inside Out)",
+    "imagen": "https://static.wikia.nocookie.net/inside-out/images/0/0a/Anger_inside_out_2_profile.png/revision/latest?cb=20240509024224&path-prefix=es"
   },
   {
-    "nombre": "Ian Lightfoot",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tom_Holland_during_pro-am_Wentworth_golf_club_2023-2.jpg/330px-Tom_Holland_during_pro-am_Wentworth_golf_club_2023-2.jpg",
-    "palabraClave": "lightfoot"
+    "nombre": "Asco (Inside Out)",
+    "imagen": "https://filmaporter.wordpress.com/wp-content/uploads/2015/07/disgust-vestido-inside-out.jpg"
   },
   {
-    "nombre": "Barley Lightfoot",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Chris_Pratt_2018.jpg/330px-Chris_Pratt_2018.jpg",
-    "palabraClave": "lightfoot"
+    "nombre": "Miedo (Inside Out)",
+    "imagen": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/del-reves-nuevo-clip-protagonizado-por-miedo/53466155-1-esl-ES/Del-reves-Nuevo-clip-protagonizado-por-Miedo.jpg"
   },
   {
-    "nombre": "Flik",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/A_bug%27s_life_logo.svg/langes-330px-A_bug%27s_life_logo.svg.png",
-    "palabraClave": "flik"
+    "nombre": "Bing Bong (Inside Out)",
+    "imagen": "https://www.wdwinfo.com/wp-content/uploads/2024/01/disney-pixar-bing-bong-inside-out-01.jpg"
   },
   {
-    "nombre": "Atta",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atta_mexicana_casent0421377_profile_1.jpg/330px-Atta_mexicana_casent0421377_profile_1.jpg",
-    "palabraClave": "atta"
+    "nombre": "Miguel (Coco)",
+    "imagen": "https://static.wikia.nocookie.net/heros/images/7/71/Profile_-_Miguel_Rivera.webp/revision/latest?cb=20240420152019&path-prefix=fr"
   },
   {
-    "nombre": "Arlo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Berberis_vulgaris_var_atro-purp._ziedai.JPG/330px-Berberis_vulgaris_var_atro-purp._ziedai.JPG",
-    "palabraClave": "arlo"
+    "nombre": "Héctor (Coco)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/1/1e/Profile_-_Hector.png/revision/latest?cb=20190315012658"
   },
   {
-    "nombre": "Ember",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Title_logo_-_Elemental.png/330px-Title_logo_-_Elemental.png",
-    "palabraClave": "ember"
+    "nombre": "Envidia (Inside Out 2)",
+    "imagen": "https://static.wikia.nocookie.net/inside-out/images/6/69/Envy_inside_out_2_profile.png/revision/latest?cb=20240625192950&path-prefix=es"
   },
   {
-    "nombre": "Meilin",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Turning-Red_logotype.png",
-    "palabraClave": "meilin"
+    "nombre": "Mamá Coco (Coco)",
+    "imagen": "https://s2.ppllstatics.com/diariosur/www/multimedia/202210/18/media/cortadas/mama-coco-k64D-U1804195814062EE-1248x770@Diario%20Sur.jpg"
+  },
+  {
+    "nombre": "Dante (Coco)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/2/2a/Dante1.jpg/revision/latest?cb=20171009184512&path-prefix=es"
+  },
+  {
+    "nombre": "Joe Gardner (Soul)",
+    "imagen": "https://www.comingsoon.net/wp-content/uploads/sites/3/2020/11/057a_9781452179810.jpg?w=800"
+  },
+  {
+    "nombre": "Luca (Luca)",
+    "imagen": "https://i.ytimg.com/vi/wSUN1rzbPr8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC0XwdarC6Cr-TrAZII-AGS7Ax3uw"
+  },
+  {
+    "nombre": "Alberto (Luca)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVM9smIcxxys7amr4urvlJoyFPdb2XXKb-wA&s"
+  },
+  {
+    "nombre": "Giulia (Luca)",
+    "imagen": "https://static.wikia.nocookie.net/disneyypixar/images/5/5c/Giulia_Marcovaldo.png/revision/latest?cb=20210603214233&path-prefix=es"
+  },
+  {
+    "nombre": "Ian Lightfoot (Onward)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Hw_qc4AK2_kihDg3CRn2ENJUd4bkyzBIwQ&s"
+  },
+  {
+    "nombre": "Barley Lightfoot (Onward)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8cqB2WvDO77fLOFlHUJkrAMEKx6qlehBxg&s"
+  },
+  {
+    "nombre": "Flik (Bichos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfcjEVuWJUcRghtNoEZkCkx0bL7-W9BHfcw&s"
+  },
+  {
+    "nombre": "Atta (Bichos)",
+    "imagen": "https://cdn.meadd.com/photos/full/65896583.jpg"
+  },
+  {
+    "nombre": "Hopper (Bichos)",
+    "imagen": "https://preview.redd.it/how-evil-was-hopper-by-pixar-villain-standards-v0-9sw214i396ag1.jpeg?width=1080&crop=smart&auto=webp&s=b3b57fc268e0a0fe65287b72c72062e2aa1d64c9"
+  },
+  {
+    "nombre": "Aburrimiento (Inside Out 2)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHedLvBvEArgFRqlueKgwleR1NOD5LYnP9XA&s"
+  },
+  {
+    "nombre": "Ember (Elemental)",
+    "imagen": "https://www.metacritic.com/a/img/resize/57b3cd329f66a458b6dd77a729c8d9ea33f15425/hub/2022/11/17/385bdc1e-dc9d-4bcf-9553-45fabb2d5499/screen-shot-2022-11-17-at-9-08-28-am.png?auto=webp&width=1092"
+  },
+  {
+    "nombre": "Wade (Elemental)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/0/0f/Profile_-_Wade_Ripple.png/revision/latest?cb=20240713220837"
+  },
+  {
+    "nombre": "Sid (Toy Story)",
+    "imagen": "https://media.gq.com.mx/photos/5be9dd655c1fcbe36c4c33e5/master/pass/sid_toy_story_4824.jpg"
+  },
+  {
+    "nombre": "Ansiedad (Inside Out 2)",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/inside-out-2-anxiety-6673e260b585b.jpg?resize=980:*"
+  },
+  {
+    "nombre": "22 (Soul)",
+    "imagen": "https://static.wikia.nocookie.net/soulpixar/images/7/75/22.png/revision/latest?cb=20200517100620"
   }
 ]
