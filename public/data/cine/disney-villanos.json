@@ -1,182 +1,154 @@
 [
   {
-    "nombre": "Reina Malvada",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/SnowWhite22.jpg/330px-SnowWhite22.jpg",
-    "palabraClave": "malvada"
+    "nombre": "Reina Malvada (Blancanieves)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/8/8c/Profile_-_The_Evil_Queen.jpg/revision/latest?cb=20200429133900&path-prefix=es"
   },
   {
-    "nombre": "Maléfica",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Maleficent_-_Sleeping_Beauty_1970_Reissue_Trailer.png/330px-Maleficent_-_Sleeping_Beauty_1970_Reissue_Trailer.png",
-    "palabraClave": "malefica"
+    "nombre": "Maléfica (La Bella Durmiente)",
+    "imagen": "https://paginassueltasydecolores.wordpress.com/wp-content/uploads/2014/06/d61ba-la-bella-durmiente.jpg"
   },
   {
-    "nombre": "Úrsula",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/The_Little_Mermaid_logo.svg/langes-330px-The_Little_Mermaid_logo.svg.png",
-    "palabraClave": "ursula"
+    "nombre": "Úrsula (La Sirenita)",
+    "imagen": "https://media.revistagq.com/photos/646b6eecb0f2820cf5252614/4:3/w_1920,h_1440,c_limit/Captura%20de%20pantalla%202023-05-22%20a%20las%2015.29.42.png"
   },
   {
-    "nombre": "Gastón",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/D23_Expo_2013_-_Gaston_%289490879529%29.jpg/330px-D23_Expo_2013_-_Gaston_%289490879529%29.jpg",
-    "palabraClave": "gaston"
+    "nombre": "Gastón (La Bella y la Bestia)",
+    "imagen": "https://www.ecartelera.com/images/noticias/82700/82727-h3.jpg"
   },
   {
-    "nombre": "Jafar",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Wondercon_2014-7694_%2813987721412%29.jpg/330px-Wondercon_2014-7694_%2813987721412%29.jpg",
-    "palabraClave": "jafar"
+    "nombre": "Iago (Aladdin)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/b/bc/Profile_-_Iago.jpg/revision/latest?cb=20210601020817&path-prefix=es"
   },
   {
-    "nombre": "Iago",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Aladdin_2019_Logo_Black.svg/langes-330px-Aladdin_2019_Logo_Black.svg.png",
-    "palabraClave": "iago"
+    "nombre": "Scar (El Rey León)",
+    "imagen": "https://static.wikia.nocookie.net/elreyleonfanon/images/f/f3/Scar-1-.jpg/revision/latest?cb=20201220102238&path-prefix=es"
   },
   {
-    "nombre": "Scar",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_Lion_King_at_Minskoff_Theatre_in_Broadway.jpg/330px-The_Lion_King_at_Minskoff_Theatre_in_Broadway.jpg",
-    "palabraClave": "scar"
+    "nombre": "Cruella de Vil (101 Dálmatas)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/9/92/Profile_-_Cruella.png/revision/latest?cb=20210224000255&path-prefix=es"
   },
   {
-    "nombre": "Cruella de Vil",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/101_Dalmatians_Logo.svg/langes-330px-101_Dalmatians_Logo.svg.png",
-    "palabraClave": "vil"
+    "nombre": "Hades (Hércules)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd9vu9LGspsWSXqJcfWrPPQzmyOQINGEmTTg&s"
   },
   {
-    "nombre": "Hades",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Hades_with_cerberus_Hade_y_Cancerbero.jpg",
-    "palabraClave": "hades"
+    "nombre": "Capitán Garfio (Peter Pan)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Otoxi9eWgHUZPsIzP621AXAmgDxvuMKI_Q&s"
   },
   {
-    "nombre": "Capitán Garfio",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Captain_Hook.PNG/330px-Captain_Hook.PNG",
-    "palabraClave": "garfio"
+    "nombre": "Frollo (El Jorobado de Notre Dame)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/7/75/Frollo.png/revision/latest?cb=20130831141408&path-prefix=es"
   },
   {
-    "nombre": "Frollo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Disney%27s_The_Hunchback_of_Notre_Dame_logo.png/330px-Disney%27s_The_Hunchback_of_Notre_Dame_logo.png",
-    "palabraClave": "frollo"
+    "nombre": "Shan Yu (Mulan)",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Shan-Yu.Mulan.webp"
   },
   {
-    "nombre": "Shan Yu",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mulan_Logo_Black.svg/langes-330px-Mulan_Logo_Black.svg.png",
-    "palabraClave": "yu"
+    "nombre": "Gobernador Ratcliffe (Pocahontas)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/9/98/Ratcliffe.png/revision/latest/scale-to-width-down/250?cb=20140215114139&path-prefix=es"
   },
   {
-    "nombre": "Clayton",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Return_of_Tarzan.jpg/330px-Return_of_Tarzan.jpg",
-    "palabraClave": "clayton"
+    "nombre": "Clayton (Tarzán)",
+    "imagen": "https://heraldodemexico.com.mx/u/fotografias/m/2024/12/20/f1280x720-1060381_1192056_5520.png"
   },
   {
-    "nombre": "Madre Gothel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Johnny_Gruelle_illustration_-_Rapunzel_-_Project_Gutenberg_etext_11027.jpg/330px-Johnny_Gruelle_illustration_-_Rapunzel_-_Project_Gutenberg_etext_11027.jpg",
-    "palabraClave": "gothel"
+    "nombre": "Madre Gothel (Enredados)",
+    "imagen": "https://preview.redd.it/mother-gothel-was-actually-a-pretty-great-mum-hear-me-out-v0-xk9fel9t8pgd1.jpeg?auto=webp&s=d6b6cf04373ef9ecc95cf7428dcc74d9fd90f200"
   },
   {
-    "nombre": "Hans",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Frozen_Logo_Black.svg/langes-330px-Frozen_Logo_Black.svg.png",
-    "palabraClave": "hans"
+    "nombre": "Hans (Frozen)",
+    "imagen": "https://www.theodysseyonline.com/media-library/image.jpg?id=17165091&width=980"
   },
   {
-    "nombre": "Bellwether",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zootropolis_2_logo.png/330px-Zootropolis_2_logo.png",
-    "palabraClave": "bellwether"
+    "nombre": "Bellwether (Zootrópolis)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/8/85/Profile_-_Bellwether_.jpeg/revision/latest?cb=20190312051343"
   },
   {
-    "nombre": "Dr. Facilier",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/The_Princess_and_the_Frog_Logo_Black.svg/langes-330px-The_Princess_and_the_Frog_Logo_Black.svg.png",
-    "palabraClave": "facilier"
+    "nombre": "Dr. Facilier (Tiana y el Sapo)",
+    "imagen": "https://i.ytimg.com/vi/mB70tRqLCZU/sddefault.jpg"
   },
   {
-    "nombre": "Reina de Corazones",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/John_Tenniel_-_Illustration_from_The_Nursery_Alice_%281890%29_-_c06544_02.jpg/330px-John_Tenniel_-_Illustration_from_The_Nursery_Alice_%281890%29_-_c06544_02.jpg",
-    "palabraClave": "corazones"
+    "nombre": "Reina de Corazones (Alicia en el País de las Maravillas)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXIh8tGrxHkowtKq77cRKeTEs_6ZTRMoMZJA&s"
   },
   {
-    "nombre": "Shere Khan",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Shere_Khan_illustration.jpg/330px-Shere_Khan_illustration.jpg",
-    "palabraClave": "khan"
+    "nombre": "Shere Khan (El Libro de la Selva)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTDQPJrGBDqFWP0p0nHf-X0NxFBmIcPFNPXQ&s"
   },
   {
-    "nombre": "Yzma",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Disney_The_Emperor%27s_New_School_logo.png/330px-Disney_The_Emperor%27s_New_School_logo.png",
-    "palabraClave": "yzma"
+    "nombre": "Yzma (El Emperador y sus Locuras)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/6/62/Yzma1.png/revision/latest?cb=20140304103343&path-prefix=es"
   },
   {
-    "nombre": "Chernabog",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fantasia_theatrical_trailer.png/330px-Fantasia_theatrical_trailer.png",
-    "palabraClave": "chernabog"
+    "nombre": "Chernabog (Fantasía)",
+    "imagen": "https://static.wikia.nocookie.net/monster/images/8/8f/Chernabog-0.jpg/revision/latest?cb=20170709194110"
   },
   {
-    "nombre": "Stromboli",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Aerial_image_of_Stromboli_%28view_from_the_northeast%29.jpg/330px-Aerial_image_of_Stromboli_%28view_from_the_northeast%29.jpg",
-    "palabraClave": "stromboli"
+    "nombre": "Stromboli (Pinocho)",
+    "imagen": "https://static.wikia.nocookie.net/hitlerparody/images/8/88/Stromboli_Disney.jpg/revision/latest?cb=20210314162620&path-prefix=es"
   },
   {
-    "nombre": "Monstro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pinocchio_Logo.jpg/330px-Pinocchio_Logo.jpg",
-    "palabraClave": "monstro"
+    "nombre": "Monstro (Pinocho)",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Un_burattino_di_nome_Pinocchio_-_Terribile_Pesce-Cane.jpg/250px-Un_burattino_di_nome_Pinocchio_-_Terribile_Pesce-Cane.jpg"
   },
   {
-    "nombre": "Lady Tremaine",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/1950_is_the_Cinderella_year.jpg/330px-1950_is_the_Cinderella_year.jpg",
-    "palabraClave": "tremaine"
+    "nombre": "Lady Tremaine (Cenicienta)",
+    "imagen": "https://static.wikia.nocookie.net/dominios-encantados/images/a/a1/Lady_Tremaine_16.jpg/revision/latest?cb=20150405171748&path-prefix=es"
   },
   {
-    "nombre": "Bicho Malo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Disney_Princess_2024_logo.svg/langes-330px-Disney_Princess_2024_logo.svg.png",
-    "palabraClave": "malo"
+    "nombre": "Anastasia (Cenicienta)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/0/0c/ImagesCADPFE3Q.jpg/revision/latest?cb=20170802034714&path-prefix=es"
   },
   {
-    "nombre": "Lotso",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Toystory3fix.png/330px-Toystory3fix.png",
-    "palabraClave": "lotso"
+    "nombre": "Drizella (Cenicienta)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/e/e3/Cinderella-disneyscreencaps_com-7363.jpg/revision/latest?cb=20170914225028&path-prefix=es"
   },
   {
-    "nombre": "Síndrome",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/The_Incredibles_logo.svg/langes-330px-The_Incredibles_logo.svg.png",
-    "palabraClave": "sindrome"
+    "nombre": "Bicho Malo (Toy Story)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRar3WSNyhHhsHeqWXTC4ovbbkjrMFFwgvHpg&s"
   },
   {
-    "nombre": "Randall",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Randall_Made_Knives_building_001_crop.jpg/330px-Randall_Made_Knives_building_001_crop.jpg",
-    "palabraClave": "randall"
+    "nombre": "Lotso (Toy Story 3)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/3/30/Profile_-_Lots-o%27-Huggin%27_Bear.jpg/revision/latest?cb=20250213231319"
   },
   {
-    "nombre": "Ernesto de la Cruz",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ernesto_Natividad_De_la_Cruz_-_A%C3%B1o_1938.jpg/330px-Ernesto_Natividad_De_la_Cruz_-_A%C3%B1o_1938.jpg",
-    "palabraClave": "cruz"
+    "nombre": "Síndrome (Los Increíbles)",
+    "imagen": "https://static.wikia.nocookie.net/los-increibles/images/8/80/S%C3%ADndrome_1.jpg/revision/latest/scale-to-width-down/1200?cb=20251205163006&path-prefix=es"
   },
   {
-    "nombre": "Zurg",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Buzz_Lightyear_sculpture_of_Toy_Story_Hotel_Shanghai_%28cropped%29.jpg/330px-Buzz_Lightyear_sculpture_of_Toy_Story_Hotel_Shanghai_%28cropped%29.jpg",
-    "palabraClave": "zurg"
+    "nombre": "Randall (Monstruos S.A.)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn2tg3rI4deIk3JGbXDRsNzi5t_ak1JOLaVg&s"
   },
   {
-    "nombre": "Alma Madrigal",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Disney%27s_Encanto_print_logo.svg/langes-330px-Disney%27s_Encanto_print_logo.svg.png",
-    "palabraClave": "madrigal"
+    "nombre": "Ernesto de la Cruz (Coco)",
+    "imagen": "https://i.pinimg.com/736x/6e/d1/3f/6ed13fd79bd95b758df6fbdf421bf726.jpg"
   },
   {
-    "nombre": "Mordu",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Busto_de_Alejandro_Casona-2.JPG/330px-Busto_de_Alejandro_Casona-2.JPG",
-    "palabraClave": "mordu"
+    "nombre": "Zurg (Buzz Lightyear)",
+    "imagen": "https://static.wikia.nocookie.net/blosc/images/f/f4/Zurg.png/revision/latest?cb=20120926190227"
   },
   {
-    "nombre": "Pete",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Mickey_Mouse_%26_Friends_logo.png/330px-Mickey_Mouse_%26_Friends_logo.png",
-    "palabraClave": "pete"
+    "nombre": "Alma Madrigal (Encanto)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/d/df/Alma_Madrigal.png/revision/latest/thumbnail/width/360/height/360?cb=20220203221001&path-prefix=es"
   },
   {
-    "nombre": "Magica DeHechizo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Abrakadabra%2C_Nordisk_familjebok.png/330px-Abrakadabra%2C_Nordisk_familjebok.png",
-    "palabraClave": "dehechizo"
+    "nombre": "Mordu (Brave)",
+    "imagen": "https://www.ed92.org/wp-content/uploads/2022/10/morddu-1280x720.jpg"
   },
   {
-    "nombre": "Madam Mim",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Disneyland_Sword_in_the_Stone_by_Dave_Q.jpg/330px-Disneyland_Sword_in_the_Stone_by_Dave_Q.jpg",
-    "palabraClave": "mim"
+    "nombre": "Pete (Mickey Mouse)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fO_iXxlBUtSOocDpytkfrQj6Z4D8URRrgQ&s"
   },
   {
-    "nombre": "Ursula",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ursula_Le_Guin_%283551195631%29_-_Restoration.jpg/330px-Ursula_Le_Guin_%283551195631%29_-_Restoration.jpg",
-    "palabraClave": "ursula"
+    "nombre": "Madam Mim (La Espada Mágica)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/0/0b/MadamMim2.png/revision/latest?cb=20110816151322&path-prefix=es"
+  },
+  {
+    "nombre": "Percival McLeach (El Rescatador en Cangurolandia)",
+    "imagen": "https://static.wikia.nocookie.net/dominios-encantados/images/a/a0/McLeach_4.jpg/revision/latest?cb=20141226091518&path-prefix=es"
+  },
+  {
+    "nombre": "Gaston (La Bella y la Bestia)",
+    "imagen": "https://www.ecartelera.com/images/noticias/82700/82727-h3.jpg"
   }
 ]
