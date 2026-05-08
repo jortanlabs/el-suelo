@@ -1,217 +1,218 @@
 [
   {
     "nombre": "Frodo Bolsón",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Frodo_by_Mark_Ferrari.jpg/330px-Frodo_by_Mark_Ferrari.jpg",
-    "palabraClave": "bolson"
+    "imagen": "https://static.wikia.nocookie.net/sranillos/images/8/8a/Frodofe0.jpg/revision/latest?cb=20101009201540&path-prefix=es"
   },
   {
     "nombre": "Sam Gamyi",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Paisaje_de_la_Comarca.jpg/330px-Paisaje_de_la_Comarca.jpg",
-    "palabraClave": "gamyi"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yEa-c8LazBXfiiBBiUIM0AfwyH-jTzeknw&s"
   },
   {
     "nombre": "Gandalf",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/GANDALF.jpg/330px-GANDALF.jpg",
-    "palabraClave": "gandalf"
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/5/55/GandalfBlanco.jpg/revision/latest?cb=20121226134121&path-prefix=es"
   },
   {
     "nombre": "Aragorn",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Aragorn.png/330px-Aragorn.png",
-    "palabraClave": "aragorn"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFpkzGvIJwmdh2oRHRiC3l4QEvsPDX6Yt4sQ&s"
   },
   {
     "nombre": "Legolas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Legolas_Greenleaf_by_Benjamin_Drake.png/330px-Legolas_Greenleaf_by_Benjamin_Drake.png",
-    "palabraClave": "legolas"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSHkEtK_6H2w4_8gO-T3hftvNYbAgM6zi8Mg&s"
   },
   {
     "nombre": "Gimli",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Gimli.png/330px-Gimli.png",
-    "palabraClave": "gimli"
+    "imagen": "https://sm.ign.com/ign_es/screenshot/default/gimli_4a81.jpg"
   },
   {
     "nombre": "Boromir",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Boromir.png/330px-Boromir.png",
-    "palabraClave": "boromir"
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/b/b3/Boromir.png/revision/latest/thumbnail/width/360/height/360?cb=20121221142047&path-prefix=es"
   },
   {
-    "nombre": "Pippin",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/LotR21.png/330px-LotR21.png",
-    "palabraClave": "pippin"
+    "nombre": "Pippin (El Señor de los Anillos)",
+    "imagen": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/01/01/billy-boyd-esdla-620x349.png"
+  },
+  {
+    "nombre": "Merry (El Señor de los Anillos)",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/merry-esdla-1-1659694033.jpg"
   },
   {
     "nombre": "Gollum",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Gollum_s_journey_commences_by_Frederic_Bennett_%28detail%29.jpg/330px-Gollum_s_journey_commences_by_Frederic_Bennett_%28detail%29.jpg",
-    "palabraClave": "gollum"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZOezcwKp7475aSHLffdBtbRZ2jXRhDNpB2w&s"
   },
   {
     "nombre": "Sauron",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Dark_Lord_Sauron.jpg/330px-Dark_Lord_Sauron.jpg",
-    "palabraClave": "sauron"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3CvqEgCNfySbG6iR2aIFzgmIMzsxSfViWyA&s"
   },
   {
     "nombre": "Saruman",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Curun%C3%ADr.jpg/330px-Curun%C3%ADr.jpg",
-    "palabraClave": "saruman"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Sttzuh4ydcKEGJtRFm3GBm_CDUz4YKwx3g&s"
   },
   {
     "nombre": "Arwen",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Arwen_by_Anna_Kulisz.jpg/330px-Arwen_by_Anna_Kulisz.jpg",
-    "palabraClave": "arwen"
+    "imagen": "https://static.wikia.nocookie.net/pjmidearthfilms/images/2/2c/Mj7pJrBW_400x400.jpg/revision/latest/thumbnail/width/360/height/360?cb=20210621114120"
   },
   {
     "nombre": "Elrond",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cour_interieure_Fondcombe.jpg/330px-Cour_interieure_Fondcombe.jpg",
-    "palabraClave": "elrond"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGO8lQzwoaC5PO016X1VV2pDcQtDEL-JSaGw&s"
   },
   {
     "nombre": "Galadriel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Ficha_de_Tengwar.png",
-    "palabraClave": "galadriel"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLco5CUUZEmsrzvs7t91sGb__kY6RTHSUwnw&s"
   },
   {
     "nombre": "Éowyn",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%C3%89owyn_de_Rohan.jpg/330px-%C3%89owyn_de_Rohan.jpg",
-    "palabraClave": "eowyn"
+    "imagen": "https://i.redd.it/a59tzifdccx41.jpg"
   },
   {
     "nombre": "Éomer",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Karl_Urban_by_Gage_Skidmore.jpg/330px-Karl_Urban_by_Gage_Skidmore.jpg",
-    "palabraClave": "eomer"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWCT4Jap90vbY7GLaC_NpcWOiTCn_SGaTWoQ&s"
+  },
+  {
+    "nombre": "Théoden",
+    "imagen": "https://sm.ign.com/t/ign_es/screenshot/default/theoden_ef74.1280.jpg"
   },
   {
     "nombre": "Faramir",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Faramir-tj01.JPG/330px-Faramir-tj01.JPG",
-    "palabraClave": "faramir"
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/e/e2/Faramir.png/revision/latest?cb=20121018110309&path-prefix=es"
   },
   {
-    "nombre": "Balrog",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gothmog%2C_Lord_of_Balrogs.jpg/330px-Gothmog%2C_Lord_of_Balrogs.jpg",
-    "palabraClave": "balrog"
+    "nombre": "Denethor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Denethor.JPG/250px-Denethor.JPG"
+  },
+  {
+    "nombre": "Balrog (El Señor de los Anillos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYO2f7_PaxyyzGuHyjODjYVrrc3mEquufxQ&s"
   },
   {
     "nombre": "Ella-Laraña",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Calle_Lara%C3%B1a_%28Sevilla%29.jpg/330px-Calle_Lara%C3%B1a_%28Sevilla%29.jpg",
-    "palabraClave": "ellalarana"
+    "imagen": "https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2017/07/23/513EC257-D63F-4C4D-9579-6CC1BF7299FB/69.jpg?crop=1280,720,x0,y0&width=1280&height=720&optimize=low"
   },
   {
     "nombre": "Rey Brujo de Angmar",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Rey_Brujo_de_Angmar.jpg/330px-Rey_Brujo_de_Angmar.jpg",
-    "palabraClave": "angmar"
+    "imagen": "https://sw6.elbenwald.de/media/d2/3b/96/1652567867/E1071635_7.jpg"
   },
   {
-    "nombre": "Bárbol",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4d/TREEBEARD.jpg",
-    "palabraClave": "barbol"
+    "nombre": "Bárbol (El Señor de los Anillos)",
+    "imagen": "https://truthofmyth.com/wp-content/uploads/2024/08/barbol-las-dos-torres.jpg"
+  },
+  {
+    "nombre": "Haldir (El Señor de los Anillos)",
+    "imagen": "https://www.elfenomeno.com/imag/lord_of_the_rings_craig_parker_haldir___Buscar_con_Google_69443c6c0b084.jpg"
   },
   {
     "nombre": "Glorfindel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/The_Fall_of_Turgon%27s_Tower.jpg/330px-The_Fall_of_Turgon%27s_Tower.jpg",
-    "palabraClave": "glorfindel"
+    "imagen": "https://i.redd.it/and-who-said-glorfindel-wasnt-in-the-movies-v0-0c9gka3jbo1f1.png?width=516&format=png&auto=webp&s=e4efabcafe63d21bb94122c8c0d61ead66038be0"
   },
   {
     "nombre": "Bilbo Bolsón",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Over_Hill_-_Bilbo_and_Gandalf_by_Joel_Lee.jpg/330px-Over_Hill_-_Bilbo_and_Gandalf_by_Joel_Lee.jpg",
-    "palabraClave": "bolson"
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/7/75/Bilbo.png/revision/latest/scale-to-width/360?cb=20121217202753&path-prefix=es"
   },
   {
     "nombre": "Thorin Escudo de Roble",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Thorin_in_blue_mountains.jpg/330px-Thorin_in_blue_mountains.jpg",
-    "palabraClave": "roble"
+    "imagen": "https://saltodeeje.ideal.es/wp-content/uploads/2013/12/hobbit-salto.jpg"
   },
   {
-    "nombre": "Balin",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Thehobbittrilogy.png",
-    "palabraClave": "balin"
+    "nombre": "Balin (El Hobbit)",
+    "imagen": "https://elanillounico.com/wp-content/gallery/un-viaje-inesperado/hobbit-set68.jpg"
+  },
+  {
+    "nombre": "Kíli (El Hobbit)",
+    "imagen": "https://www.elfenomeno.com/imag/usuarios/5/imagenes_hobbitactores_103.jpg"
+  },
+  {
+    "nombre": "Fíli (El Hobbit)",
+    "imagen": "https://static.wikia.nocookie.net/pjhobbitlotr/images/d/dd/FiliBOFA.jpg/revision/latest?cb=20170324023832"
+  },
+  {
+    "nombre": "Bard el Arquero",
+    "imagen": "https://www.elfenomeno.com/imag/usuarios/5/imagenes_hobbitactores_167.jpg"
   },
   {
     "nombre": "Thranduil",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Elvenking_by_Nolwyn.jpg/330px-Elvenking_by_Nolwyn.jpg",
-    "palabraClave": "thranduil"
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/e/e0/The-hobbit-the-battle-of-the-five-armies-thranduil-feature.jpg/revision/latest?cb=20141201230736&path-prefix=es"
   },
   {
-    "nombre": "Smaug",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Smaug_par_David_Demaret.jpg/330px-Smaug_par_David_Demaret.jpg",
-    "palabraClave": "smaug"
+    "nombre": "Azog (El Hobbit)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsenT_GieVkSbbFVYi58v4d58RDJusIKKBYw&s"
   },
   {
-    "nombre": "Radagast",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Radagast_the_Brown%2C_Weta_Exhibit%2C_Seoul%2C_South_Korea_%2815153582065%29.jpg/330px-Radagast_the_Brown%2C_Weta_Exhibit%2C_Seoul%2C_South_Korea_%2815153582065%29.jpg",
-    "palabraClave": "radagast"
+    "nombre": "Smaug (El Hobbit)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlLggT5Da2Iw_XHiZg6UgYzsUGot5UBgQO_w&s"
+  },
+  {
+    "nombre": "Radagast (El Hobbit)",
+    "imagen": "https://static.wikia.nocookie.net/bibliotecadelatierramedia/images/e/e3/Radagast.jpg/revision/latest?cb=20140914104841&path-prefix=es"
+  },
+  {
+    "nombre": "Grima Lengua de Serpiente",
+    "imagen": "https://i.redd.it/a57a90k7p4471.jpg"
   },
   {
     "nombre": "Rosita Cotton",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Niamh_Kavanagh_in_Oslo_2010.jpg/330px-Niamh_Kavanagh_in_Oslo_2010.jpg",
-    "palabraClave": "cotton"
+    "imagen": "https://static.wikia.nocookie.net/pjlotrfilms/images/2/2b/RosieCotton.png/revision/latest?cb=20161230203732"
   },
   {
     "nombre": "Tom Bombadil",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tom_Bombadil_frees_the_Hobbits_from_Old_Man_Willow.jpg/330px-Tom_Bombadil_frees_the_Hobbits_from_Old_Man_Willow.jpg",
-    "palabraClave": "bombadil"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/tom-bombadil-66d6d23ae7670.jpg?crop=0.566xw:1.00xh;0.0917xw,0&resize=1200:*"
   },
   {
     "nombre": "Mordor",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mordor.jpg/330px-Mordor.jpg",
-    "palabraClave": "mordor"
+    "imagen": "https://static.wikia.nocookie.net/shadow-of-mordor/images/5/50/Yre1o.jpg/revision/latest/scale-to-width-down/1200?cb=20141222202027&path-prefix=es"
   },
   {
     "nombre": "El Anillo Único",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Unico_Anello.png/330px-Unico_Anello.png",
-    "palabraClave": "unico"
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/7/75/Anillo_Unico.jpg/revision/latest?cb=20140414195508&path-prefix=es"
   },
   {
-    "nombre": "Rohan",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_Rohan.svg/langes-330px-Flag_of_Rohan.svg.png",
-    "palabraClave": "rohan"
+    "nombre": "Rivendel",
+    "imagen": "https://www.elfenomeno.com/imag/usuarios/5/imagenes_nasmith_1_41.jpg"
   },
   {
-    "nombre": "Gondor",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_Gondor.svg/langes-330px-Flag_of_Gondor.svg.png",
-    "palabraClave": "gondor"
+    "nombre": "Moria (El Señor de los Anillos)",
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/0/07/Moria_doors.jpg/revision/latest/scale-to-width-down/269?cb=20130105192518&path-prefix=es"
+  },
+  {
+    "nombre": "Rohan (El Señor de los Anillos)",
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/c/c8/Helm.jpg/revision/latest?cb=20120129171806&path-prefix=es"
+  },
+  {
+    "nombre": "Gondor (El Señor de los Anillos)",
+    "imagen": "https://static.wikia.nocookie.net/lugaresesdla/images/c/cf/34397_1216345233135_454_300.jpg/revision/latest?cb=20180329115746&path-prefix=es"
+  },
+  {
+    "nombre": "La Comarca (El Señor de los Anillos)",
+    "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2023/05/donde-visitar-escenarios-senor-anillos.jpg"
   },
   {
     "nombre": "Minas Tirith",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Minas-Tirith-Rama-c.svg/langes-330px-Minas-Tirith-Rama-c.svg.png",
-    "palabraClave": "tirith"
+    "imagen": "https://static.wikia.nocookie.net/eldragonverde/images/2/22/ROTK-Minas-Tirith.jpg/revision/latest/scale-to-width-down/1200?cb=20130105121746&path-prefix=es"
   },
   {
-    "nombre": "Helm's Deep",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Dana_Warrior_and_Corey_Graves_181115-D-SW162-3107_%2845861489382%29_%28cropped%29.jpg/330px-Dana_Warrior_and_Corey_Graves_181115-D-SW162-3107_%2845861489382%29_%28cropped%29.jpg",
-    "palabraClave": "deep"
+    "nombre": "Helm's Deep (El Abismo de Helm)",
+    "imagen": "https://preview.redd.it/any-good-stories-or-lore-about-helms-deep-v0-vrx1x3jpj2rd1.jpeg?auto=webp&s=a03f2bd7ebb8b1d183e541951576b661c2c84ab3"
+  },
+  {
+    "nombre": "Aguila Gigante (El Señor de los Anillos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQE15e_VYsiGAn9Ue08plBHkWo7tIzxLm08w&s"
   },
   {
     "nombre": "Ungoliant",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Morgoth_y_Ungoliant.jpg/330px-Morgoth_y_Ungoliant.jpg",
-    "palabraClave": "ungoliant"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBUf30TtaDjU1FJ2z6LAXmQzDIdZokH5-4Q&s"
   },
   {
     "nombre": "Nazgûl",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Nazg%C3%BBl_mirando_el_crep%C3%BAsculo.jpg/330px-Nazg%C3%BBl_mirando_el_crep%C3%BAsculo.jpg",
-    "palabraClave": "nazgul"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJscDA-Sz6yU3xACyp2xjEhuGvlR0hxxOO2w&s"
   },
   {
     "nombre": "Uruk-hai",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a1/Lord_Rings_Two_Towers.jpg",
-    "palabraClave": "urukhai"
+    "imagen": "https://static.wikia.nocookie.net/lotr/images/c/c9/Murgash2.webp/revision/latest/thumbnail/width/360/height/360?cb=20210521171104"
   },
   {
-    "nombre": "Ent",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Beardtree_In_Fangorn_%2819169349%29.jpeg/330px-Beardtree_In_Fangorn_%2819169349%29.jpeg",
-    "palabraClave": "ent"
+    "nombre": "Ent (El Señor de los Anillos)",
+    "imagen": "https://static.wikitide.net/intercriaturaswiki/f/f6/Ents_por_Andrey_Mironishin.jpg"
   },
   {
     "nombre": "Palantír",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Alex_Karp_attends_AI_Summit_%2853302457013%29_4-5_ratio.jpg/330px-Alex_Karp_attends_AI_Summit_%2853302457013%29_4-5_ratio.jpg",
-    "palabraClave": "palantir"
-  },
-  {
-    "nombre": "Elfo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/%C3%84ngs%C3%A4lvor_-_Nils_Blomm%C3%A9r_1850.jpg/330px-%C3%84ngs%C3%A4lvor_-_Nils_Blomm%C3%A9r_1850.jpg",
-    "palabraClave": "elfo"
-  },
-  {
-    "nombre": "Hobbit",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Un_hobbit.jpg/330px-Un_hobbit.jpg",
-    "palabraClave": "hobbit"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgAKd0wKD4iQvcM_ODKcwMkh855Gjmo3mjEg&s"
   }
 ]
