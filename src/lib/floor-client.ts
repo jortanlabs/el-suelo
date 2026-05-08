@@ -327,7 +327,7 @@ export async function generarFloor(
 const TTL_CINE_MS = 7 * 24 * 60 * 60 * 1000; // 7 días
 
 function claveCine(slug: string): string {
-  return `juegario:cine:v1:${slug}`;
+  return `juegario:cine:v2:${slug}`;
 }
 
 /**
