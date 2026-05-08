@@ -1,147 +1,114 @@
 [
   {
-    "nombre": "SpongeBob SquarePants",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bob_esponja_logotipo.svg/langes-330px-Bob_esponja_logotipo.svg.png",
-    "palabraClave": "squarepants"
+    "nombre": "Bob Esponja (Bob Esponja)",
+    "imagen": "https://static.wikia.nocookie.net/cartoons/images/e/ed/Profile_-_SpongeBob_SquarePants.png/revision/latest?cb=20240420115914"
   },
   {
-    "nombre": "Patrick Star",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Patrick_Stewart_by_Gage_Skidmore_2.jpg/330px-Patrick_Stewart_by_Gage_Skidmore_2.jpg",
-    "palabraClave": "star"
+    "nombre": "Patrick Star (Bob Esponja)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:bd09be5c-2d6a-4b82-ba32-fd8aabac45ec?quality=0.7&gen=ntrn&format=jpg&width=1200&height=630&crop=true"
   },
   {
-    "nombre": "Sandy Cheeks",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Carolyn_Lawrence_%28cropped%29.jpg/330px-Carolyn_Lawrence_%28cropped%29.jpg",
-    "palabraClave": "cheeks"
+    "nombre": "Calamardo Tentáculos (Bob Esponja)",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Squidward-Tentacles.SpongeBob-SquarePants.webp"
   },
   {
-    "nombre": "Mr. Krabs",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Mr_Krabs_character.png",
-    "palabraClave": "krabs"
+    "nombre": "Arenita Mejillas (Bob Esponja)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:9a69c9f1-8a8b-46e5-a02c-b0f1087d6543?quality=0.7&gen=ntrn&format=webp&crop=true&width=660"
   },
   {
-    "nombre": "Gary the Snail",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png",
-    "palabraClave": "snail"
+    "nombre": "Señor Cangrejo (Bob Esponja)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:1d8c4c5e-269e-4e74-bea3-a24b60b99633?quality=0.7&gen=ntrn&format=webp&crop=true&width=660"
   },
   {
-    "nombre": "Plankton",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Diatoms_through_the_microscope.jpg/330px-Diatoms_through_the_microscope.jpg",
-    "palabraClave": "plankton"
+    "nombre": "Gary el caracol (Bob Esponja)",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Gary-the-Snail.SpongeBob-SquarePants.webp"
   },
   {
-    "nombre": "Tommy Pickles",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tommy_Pickles_character.png/330px-Tommy_Pickles_character.png",
-    "palabraClave": "pickles"
+    "nombre": "Plankton (Bob Esponja)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:7a8685b3-527c-4078-b89f-aef0bf6d0801?quality=0.7&gen=ntrn&format=jpg&width=1200&height=630&crop=true"
   },
   {
-    "nombre": "Chuckie Finster",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Rugrats_logo2.png/330px-Rugrats_logo2.png",
-    "palabraClave": "finster"
+    "nombre": "Tommy Pickles (Rugrats)",
+    "imagen": "https://whatisxwearing.com/wp-content/uploads/2025/02/tommy-pickles-feature-image-768x549.png"
   },
   {
-    "nombre": "Phil DeVille",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Phil_lesh_12-06-2013.jpg/330px-Phil_lesh_12-06-2013.jpg",
-    "palabraClave": "deville"
+    "nombre": "Chuckie Finster (Rugrats)",
+    "imagen": "https://static.wikia.nocookie.net/rugrats/images/b/b6/Chuckie.jpg/revision/latest/scale-to-width-down/480?cb=20190531192013&path-prefix=es"
   },
   {
-    "nombre": "Arnold",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%C2%A1Oye_Arnold%21_Logo_en_espa%C3%B1ol.png/330px-%C2%A1Oye_Arnold%21_Logo_en_espa%C3%B1ol.png",
-    "palabraClave": "arnold"
+    "nombre": "Angelica Pickles (Rugrats)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8MUp1S89GnBP_LofaeKqqIa5U0GMTavH9A&s"
   },
   {
-    "nombre": "Helga Pataki",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Hey_Arnold%21_The_Jungle_Movie_logo.png/330px-Hey_Arnold%21_The_Jungle_Movie_logo.png",
-    "palabraClave": "pataki"
+    "nombre": "Phil DeVille (Rugrats)",
+    "imagen": "https://i.pinimg.com/474x/2a/74/d5/2a74d5fa83792775c8f1b0c76daa1765.jpg"
   },
   {
-    "nombre": "Gerald",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Canada_location_map_2.svg/langes-330px-Canada_location_map_2.svg.png",
-    "palabraClave": "gerald"
+    "nombre": "Arnold (Hey Arnold!)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYbluw08JtI1ijrhNF82FWu2PePZkTkgIjg&s"
   },
   {
-    "nombre": "Timmy Turner",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/4/42/AFairlyOddMoviePoster.jpg",
-    "palabraClave": "turner"
+    "nombre": "Helga Pataki (Hey Arnold!)",
+    "imagen": "https://img.buzzfeed.com/buzzfeed-static/static/2017-11/27/15/asset/buzzfeed-prod-fastlane-01/sub-buzz-23690-1511815529-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto"
   },
   {
-    "nombre": "Cosmo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Timmy_Turner.png/330px-Timmy_Turner.png",
-    "palabraClave": "cosmo"
+    "nombre": "Gerald (Hey Arnold!)",
+    "imagen": "https://img.buzzfeed.com/buzzfeed-static/static/2022-01/26/2/asset/b60a30c459c0/sub-buzz-4093-1643163382-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto"
   },
   {
-    "nombre": "Aang",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Japan_Expo_2024_-_Cosplay_of_Aang.jpg/330px-Japan_Expo_2024_-_Cosplay_of_Aang.jpg",
-    "palabraClave": "aang"
+    "nombre": "Timmy Turner (Los padrinos mágicos)",
+    "imagen": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/05/timmy-turner-tfop.jpg"
   },
   {
-    "nombre": "Katara",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Katara_character.png/330px-Katara_character.png",
-    "palabraClave": "katara"
+    "nombre": "Cosmo (Los padrinos mágicos)",
+    "imagen": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2018/10/9.jpg?q=50&fit=crop&w=825&dpr=1.5"
   },
   {
-    "nombre": "Sokka",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Logo_de_Avatar_la_leyenda_de_Aang.png/330px-Logo_de_Avatar_la_leyenda_de_Aang.png",
-    "palabraClave": "sokka"
+    "nombre": "Wanda (Los padrinos mágicos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSAcUaY9LUfxhMXUbLfmdvBXmz0PX45QY1Ow&s"
+  },
+  {
+    "nombre": "Aang (Avatar Wiki)",
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/f/fa/Aang_en_el_Drag%C3%B3n_del_Jazm%C3%ADn.png/revision/latest/scale-to-width/360?cb=20150414231706&path-prefix=es"
+  },
+  {
+    "nombre": "Katara (Avatar Wiki)",
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/f/fb/Katara.png/revision/latest/scale-to-width/360?cb=20150731013219&path-prefix=es"
+  },
+  {
+    "nombre": "Sokka (Avatar Wiki)",
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/c/cc/Sokka.png/revision/latest/scale-to-width/360?cb=20150323230403&path-prefix=es"
   },
   {
     "nombre": "Toph Beifong",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Toph_cosplay_1.jpg/330px-Toph_cosplay_1.jpg",
-    "palabraClave": "beifong"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Toph_cosplay_1.jpg/330px-Toph_cosplay_1.jpg"
   },
   {
-    "nombre": "Azula",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Fire_Lord_Azula_cosplay_at_Katsucon_2015.jpg/330px-Fire_Lord_Azula_cosplay_at_Katsucon_2015.jpg",
-    "palabraClave": "azula"
+    "nombre": "Jimmy Neutron (Jimmy Neutron)",
+    "imagen": "https://cineyeducacion.com/wp-content/uploads/Jimmy-Neutron-el-ni%C3%B1o-inventor.jpg"
   },
   {
-    "nombre": "Invader Zim",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Invader_Zim_comic_logo.png/330px-Invader_Zim_comic_logo.png",
-    "palabraClave": "zim"
+    "nombre": "Sheen Estevez (Jimmy Neutron)",
+    "imagen": "https://static.wikia.nocookie.net/doblaje-fanon/images/3/3a/Character_large_332x363_sheen.jpg/revision/latest/scale-to-width/360?cb=20180619025826&path-prefix=es"
   },
   {
-    "nombre": "Danny Phantom",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/09/Neues_Danny_Phantom_Logo.jpg",
-    "palabraClave": "phantom"
+    "nombre": "Carl Wheezer (Jimmy Neutron)",
+    "imagen": "https://preview.redd.it/who-thinks-carl-wheezer-boy-genius-showed-carl-at-his-worst-v0-nbjb9y05nhtf1.jpeg?width=1080&crop=smart&auto=webp&s=3500afd0d84699cc38d46e193160ecc5397ab635"
   },
   {
-    "nombre": "Leonardo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Francesco_Melzi_-_Portrait_of_Leonardo_-_WGA14795.jpg/330px-Francesco_Melzi_-_Portrait_of_Leonardo_-_WGA14795.jpg",
-    "palabraClave": "leonardo"
+    "nombre": "Eliza Thornberry (Los Thornberrys)",
+    "imagen": "https://static.wikia.nocookie.net/characters/images/f/f5/Eliza_Thornberry.jpg/revision/latest?cb=20220523202906"
   },
   {
-    "nombre": "Michelangelo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg/330px-Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg",
-    "palabraClave": "michelangelo"
+    "nombre": "Debbie Thornberry (Los Thornberrys)",
+    "imagen": "https://pbs.twimg.com/media/GPCZFWWXUAA7ukT.jpg"
   },
   {
-    "nombre": "Raphael",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Raphael_at_2014_MIFF.jpg/330px-Raphael_at_2014_MIFF.jpg",
-    "palabraClave": "raphael"
+    "nombre": "Phil DeVille (Rugrats)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DB-nR_UKXDCNpCKwnFa_TQr4J0oZhFbvqw&s"
   },
   {
-    "nombre": "Donatello",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Uffizi_Donatello.jpg/330px-Uffizi_Donatello.jpg",
-    "palabraClave": "donatello"
-  },
-  {
-    "nombre": "Shredder",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Shredder_C2E2_2016_%2825670012540%29.jpg/330px-Shredder_C2E2_2016_%2825670012540%29.jpg",
-    "palabraClave": "shredder"
-  },
-  {
-    "nombre": "Rocko",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Rocko%27s_Modern_Life_logo.png/330px-Rocko%27s_Modern_Life_logo.png",
-    "palabraClave": "rocko"
-  },
-  {
-    "nombre": "CatDog",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Peter_Hannan_holding_up_CatDog.jpg/330px-Peter_Hannan_holding_up_CatDog.jpg",
-    "palabraClave": "catdog"
-  },
-  {
-    "nombre": "Lincoln Loud",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Loud_House_logo.svg/langes-330px-The_Loud_House_logo.svg.png",
-    "palabraClave": "loud"
+    "nombre": "Dil Pickles (Rugrats)",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMTgxMjg3MTA1M15BMl5BanBnXkFtZTgwNTEwNDY2MjE@._V1_FMjpg_UX1000_.jpg"
   }
 ]
