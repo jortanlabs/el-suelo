@@ -76,6 +76,7 @@ const BUILD = Date.now();
   <h1>🎬 El Suelo — Admin</h1>
   <span class="ver">v{BUILD}</span>
   <span class="topbar-spacer"></span>
+  <button id="btn-reset-token" style="padding:5px 10px;background:transparent;color:#2a5090;border:1px solid #163575;border-radius:4px;font-size:0.72rem;cursor:pointer" title="Cambiar token de GitHub">🔑 Token</button>
   <button class="btn-export-cur" id="btn-export-cur" disabled>⬇ Exportar JSON</button>
 </div>
 
@@ -526,6 +527,12 @@ const BUILD = Date.now();
     if (pendingPublishBloque) ejecutarPublicar(pendingPublishBloque, token);
   });
   document.getElementById('dlg-token-cancel').addEventListener('click', () => document.getElementById('dlg-token').close());
+  document.getElementById('btn-reset-token').addEventListener('click', () => {
+    localStorage.removeItem(GH_TOKEN_KEY);
+    document.getElementById('dlg-token-val').value = '';
+    document.getElementById('dlg-token').showModal();
+    setTimeout(() => document.getElementById('dlg-token-val').focus(), 50);
+  });
 
   async function ejecutarPublicar(bloqueSlug, token) {
     const group = groups[bloqueSlug];
