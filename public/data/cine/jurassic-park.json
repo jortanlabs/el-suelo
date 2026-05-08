@@ -1,117 +1,106 @@
 [
   {
-    "nombre": "Jurassic Park",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
-    "palabraClave": "park"
+    "nombre": "Ellie Sattler",
+    "imagen": "https://people.com/thmb/nuw-_EGc1gfl1Fd1nLCNGlIQxb4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(739x398:741x400)/laura-dern-1-fc353203450844fcb42564871210985f.jpg"
   },
   {
-    "nombre": "The Lost World: Jurassic Park",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Jurassic_World_Fallen_Kingdom_Japan_Premiere_Red_Carpet_%2828237190517%29.jpg/330px-Jurassic_World_Fallen_Kingdom_Japan_Premiere_Red_Carpet_%2828237190517%29.jpg",
-    "palabraClave": "park"
+    "nombre": "Alan Grant",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/18/Alan_Grant_%28Sam_Neill%29.jpg"
   },
   {
-    "nombre": "Jurassic Park III",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6d/Jurassic_Park_III_poster.jpg",
-    "palabraClave": "iii"
+    "nombre": "John Hammond",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b5/John_Hammond.webp"
   },
   {
-    "nombre": "Jurassic World",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/DeWanda_Wise_%26_Mamoudou_Athie.jpg/330px-DeWanda_Wise_%26_Mamoudou_Athie.jpg",
-    "palabraClave": "world"
+    "nombre": "Ian Malcolm",
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/b/b3/Ian_Malcolm_%28JP%29.jpg/revision/latest/scale-to-width-down/250?cb=20171007230816&path-prefix=es"
+  },
+  {
+    "nombre": "Lex Murphy",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXIP13OV5A5J-auP0LzaqzsYI39bRtwWH0tA&s"
+  },
+  {
+    "nombre": "Tim Murphy",
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/8/81/2844104-tim_1.png/revision/latest/scale-to-width-down/250?cb=20130724083945&path-prefix=es"
   },
   {
     "nombre": "Tyrannosaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tyrannosaurus_Rex_Holotype.jpg/330px-Tyrannosaurus_Rex_Holotype.jpg",
-    "palabraClave": "tyrannosaurus"
+    "imagen": "https://i.redd.it/8e8i0ia5x3311.jpg"
   },
   {
     "nombre": "Velociraptor",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Velociraptor_Wyoming_Dinosaur_Center.jpg/330px-Velociraptor_Wyoming_Dinosaur_Center.jpg",
-    "palabraClave": "velociraptor"
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/7/74/Jurassic_Park_Velociraptors.webp"
   },
   {
     "nombre": "Brachiosaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Brachiosaurus_altithorax.jpg/330px-Brachiosaurus_altithorax.jpg",
-    "palabraClave": "brachiosaurus"
+    "imagen": "https://i.redd.it/moliv3xpqcp41.jpg"
   },
   {
     "nombre": "Triceratops",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/LA-Triceratops_mount-2.jpg/330px-LA-Triceratops_mount-2.jpg",
-    "palabraClave": "triceratops"
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/8/8c/Intro-1629910029.webp/revision/latest?cb=20240630114331"
   },
   {
     "nombre": "Stegosaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Stegosaurus_stenops_Life_Reconstruction.png/330px-Stegosaurus_stenops_Life_Reconstruction.png",
-    "palabraClave": "stegosaurus"
+    "imagen": "https://i.redd.it/zv4sozymrnu71.png"
   },
   {
     "nombre": "Pteranodon",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pteranodon_amnh_martyniuk.jpg/330px-Pteranodon_amnh_martyniuk.jpg",
-    "palabraClave": "pteranodon"
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/1/1f/Pteroface-300x188.png/revision/latest/scale-to-width-down/284?cb=20210803141512&path-prefix=es"
   },
   {
     "nombre": "Spinosaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Spinosaurus_new_skull.jpg/330px-Spinosaurus_new_skull.jpg",
-    "palabraClave": "spinosaurus"
+    "imagen": "https://preview.redd.it/why-is-jurassic-park-iii-and-the-spinosaurus-so-hated-v0-5iohhhll3nsc1.jpeg?width=720&format=pjpg&auto=webp&s=5e4cd3153d613c720988826eefbe22358a23cbda"
   },
   {
     "nombre": "Mosasaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/MosasaurMaastricht080910.JPG/330px-MosasaurMaastricht080910.JPG",
-    "palabraClave": "mosasaurus"
+    "imagen": "https://m.media-amazon.com/images/I/51pbCZy1-EL._AC_UF894,1000_QL80_.jpg"
   },
   {
     "nombre": "Dilophosaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Dilophosaurus_wetherilli.PNG/330px-Dilophosaurus_wetherilli.PNG",
-    "palabraClave": "dilophosaurus"
+    "imagen": "https://preview.redd.it/if-you-could-rewrite-how-the-dilophosaurus-was-presented-in-v0-o96bff2yfe8d1.jpeg?auto=webp&s=e450b1a0d8205217f4b7ddd4cd6b3e42c9339c35"
   },
   {
     "nombre": "Gallimimus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Gallimimus_Restoration.png/330px-Gallimimus_Restoration.png",
-    "palabraClave": "gallimimus"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4DAPBLsAD3AIayzqiB3jml_KmO99zrZ3UbA&s"
   },
   {
     "nombre": "Ankylosaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ankylosaurus_magniventris_reconstruction.png/330px-Ankylosaurus_magniventris_reconstruction.png",
-    "palabraClave": "ankylosaurus"
+    "imagen": "https://i.ytimg.com/vi/C3HdCtWLmeI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC5sRpymiQk5Xc1_f1wiNap14jtbQ"
   },
   {
     "nombre": "Parasaurolophus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/FMNH_Parasaurolophus_fossil.jpg/330px-FMNH_Parasaurolophus_fossil.jpg",
-    "palabraClave": "parasaurolophus"
+    "imagen": "https://m.media-amazon.com/images/I/81pA2-AvX9L.jpg"
   },
   {
     "nombre": "Baryonyx",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Baryonyx_NHM.jpg/330px-Baryonyx_NHM.jpg",
-    "palabraClave": "baryonyx"
+    "imagen": "https://i.ytimg.com/vi/uFM-alJcJcY/maxresdefault.jpg"
   },
   {
     "nombre": "Carnotaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Carnotaurus%2C_Chlup%C3%A1%C4%8D_Museum%2C_Prague-2.jpg/330px-Carnotaurus%2C_Chlup%C3%A1%C4%8D_Museum%2C_Prague-2.jpg",
-    "palabraClave": "carnotaurus"
+    "imagen": "https://i.redd.it/tgwzctuufwef1.jpeg"
   },
   {
     "nombre": "Indominus rex",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/%D0%86%D0%BD%D0%B4%D0%BE%D0%BC%D1%96%D0%BD%D1%83%D1%81.jpg/330px-%D0%86%D0%BD%D0%B4%D0%BE%D0%BC%D1%96%D0%BD%D1%83%D1%81.jpg",
-    "palabraClave": "rex"
+    "imagen": "https://www.ecartelera.com/images/noticias/fotos/22700/22751/1.jpg"
+  },
+  {
+    "nombre": "Indoraptor",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzMsm9xudl5q-5h4EcL0HX9DsG8y6FBMRlCw&s"
   },
   {
     "nombre": "Protoceratops",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Protoceratops_reconstruction.png/330px-Protoceratops_reconstruction.png",
-    "palabraClave": "protoceratops"
+    "imagen": "https://cdn.paleo.gg/games/jwa/images/creature/protoceratops.png"
   },
   {
     "nombre": "Iguanodon",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Iguanodon_de_Bernissart_IRSNB_01.JPG/330px-Iguanodon_de_Bernissart_IRSNB_01.JPG",
-    "palabraClave": "iguanodon"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Ea9MD4pn4ArSO4ud5MY3U3FlJmuSu2xANw&s"
   },
   {
     "nombre": "Allosaurus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Allosaurus_SDNHM.jpg/330px-Allosaurus_SDNHM.jpg",
-    "palabraClave": "allosaurus"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcZbqGtXbHRFrPwHpQBgnmLspX23H9mb9Ow&s"
   },
   {
     "nombre": "Diplodocus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Diplodocus_model.jpg/330px-Diplodocus_model.jpg",
-    "palabraClave": "diplodocus"
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/3/3d/DiploPaul_64_Hours.png/revision/latest/scale-to-width-down/250?cb=20180718143321&path-prefix=es"
   }
 ]
