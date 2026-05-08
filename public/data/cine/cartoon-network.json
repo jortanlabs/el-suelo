@@ -1,142 +1,158 @@
 [
   {
-    "nombre": "Dexter",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Dexter_Logo.svg/langes-330px-Dexter_Logo.svg.png",
-    "palabraClave": "dexter"
+    "nombre": "Dexter (El laboratorio de Dexter)",
+    "imagen": "https://cdn.costumewall.com/wp-content/uploads/2015/09/dexters-laboratory-costume.jpg"
   },
   {
-    "nombre": "Dee Dee",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Dexter-logo.png/330px-Dexter-logo.png",
-    "palabraClave": "dee"
+    "nombre": "Dee Dee (El laboratorio de Dexter)",
+    "imagen": "https://static.wikia.nocookie.net/el-laboratorio-de-dexter/images/c/ca/Imagesded.jpg/revision/latest?cb=20140219173229&path-prefix=es"
   },
   {
-    "nombre": "Blossom",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Blossom_TV_show_logo.png/330px-Blossom_TV_show_logo.png",
-    "palabraClave": "blossom"
+    "nombre": "Mojo Jojo (Las Supernenas)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdbkZeYiwIr4PP6UCTQVT92V3sPWqoECJxzw&s"
   },
   {
-    "nombre": "Bubbles",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/The_Powerpuff_Girls_%282016%29_reboot_logo.svg/langes-330px-The_Powerpuff_Girls_%282016%29_reboot_logo.svg.png",
-    "palabraClave": "bubbles"
+    "nombre": "Johnny Bravo (Johnny Bravo)",
+    "imagen": "https://adamnostalgia.wordpress.com/wp-content/uploads/2020/04/vlcsnap-00726.jpg"
   },
   {
-    "nombre": "Mojo Jojo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Roger_L._Jackson_-_Creep_I.E._Con_2025.jpg/330px-Roger_L._Jackson_-_Creep_I.E._Con_2025.jpg",
-    "palabraClave": "jojo"
+    "nombre": "Ben Tennyson (Ben 10)",
+    "imagen": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2024/11/entry-2-three-cropped.jpg"
   },
   {
-    "nombre": "Johnny Bravo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Johnny_Bravo_first_logo.png/330px-Johnny_Bravo_first_logo.png",
-    "palabraClave": "bravo"
+    "nombre": "Gwen Tennyson (Ben 10)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0rwdpNWyLPyS_6FGGd-0nWPpUAGCzqhoyw&s"
   },
   {
-    "nombre": "Ben Tennyson",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Ben_Tennyson_%28Ben_10_2016_reboot%29.svg/langes-330px-Ben_Tennyson_%28Ben_10_2016_reboot%29.svg.png",
-    "palabraClave": "tennyson"
+    "nombre": "Max Tennyson (Ben 10)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOPvrGaoy_YpKcYRXAwLrj1O8i1_VKyCXaA&s"
   },
   {
-    "nombre": "Vilgax",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c3/Ben10VA_Xbox_Cover.jpg",
-    "palabraClave": "vilgax"
+    "nombre": "Vilgax (Ben 10)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThs6ffODR00bq4ti4oTj3ezppVy6BtIPAHw&s"
   },
   {
-    "nombre": "Ed",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Ed%2C_Edd_n_Eddy_characters.png/330px-Ed%2C_Edd_n_Eddy_characters.png",
-    "palabraClave": "ed"
+    "nombre": "Ed (Ed, Edd n Eddy)",
+    "imagen": "https://i.redd.it/8d4zprxpngae1.jpeg"
   },
   {
-    "nombre": "Eddy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/5a/SDE_-_GCF_._%2824443327986%29_%28cropped%29.jpg",
-    "palabraClave": "eddy"
+    "nombre": "Edd (Ed, Edd n Eddy)",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BYjIxMWZmZjUtYTZmOC00YWRkLWFiYTAtZGVkMWE2MzkxYTM2XkEyXkFqcGc@._V1_.jpg"
   },
   {
-    "nombre": "Samurai Jack",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Satsuma-samurai-during-boshin-war-period.jpg/330px-Satsuma-samurai-during-boshin-war-period.jpg",
-    "palabraClave": "jack"
+    "nombre": "Eddy (Ed, Edd n Eddy)",
+    "imagen": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2023/06/ed-cropped.jpg?w=1600&h=900&fit=crop"
   },
   {
-    "nombre": "Aku",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/7/7f/The_Samurai.jpg",
-    "palabraClave": "aku"
+    "nombre": "Samurai Jack (Samurai Jack)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJbIALNOnTBRTQ8bDwt4FZmRYHWLBRNaJ0g&s"
   },
   {
-    "nombre": "Mac",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Foster%27s_Home_for_Imaginary_Friends_logo.svg/langes-330px-Foster%27s_Home_for_Imaginary_Friends_logo.svg.png",
-    "palabraClave": "mac"
+    "nombre": "Aku (Samurai Jack)",
+    "imagen": "https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2022/10/13/6347e01c1b7ca.jpeg"
   },
   {
-    "nombre": "Finn the Human",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Finn_the_Human_sprite.png/330px-Finn_the_Human_sprite.png",
-    "palabraClave": "human"
+    "nombre": "Mac (Foster, la casa de los amigos imaginarios)",
+    "imagen": "https://static.wikia.nocookie.net/fhifanon/images/6/60/Loser336_LynnLoud909_Icon.jpg/revision/latest?cb=20200505153157"
   },
   {
-    "nombre": "Jake the Dog",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Jake_the_Dog_character.svg/langes-330px-Jake_the_Dog_character.svg.png",
-    "palabraClave": "dog"
+    "nombre": "Bloo (Foster, la casa de los amigos imaginarios)",
+    "imagen": "https://static.wikia.nocookie.net/daffysbizarreadventure/images/d/db/Real_Bloo.png/revision/latest?cb=20180226014356"
   },
   {
-    "nombre": "Princess Bubblegum",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/PrincessBubblegum.jpg/330px-PrincessBubblegum.jpg",
-    "palabraClave": "bubblegum"
+    "nombre": "Finn, el humano (Hora de aventuras)",
+    "imagen": "https://static.wikia.nocookie.net/adventuretimewithfinnandjake/images/9/97/S1e25_Finn_with_five_fingers.png/revision/latest/scale-to-width-down/732?cb=20131128031157"
   },
   {
-    "nombre": "Ice King",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Icekingnewminiprint.jpg/330px-Icekingnewminiprint.jpg",
-    "palabraClave": "king"
+    "nombre": "Jake, el perro (Hora de aventuras)",
+    "imagen": "https://w0.peakpx.com/wallpaper/193/84/HD-wallpaper-adventure-time-with-finn-and-jake-show-finn-jake-dog.jpg"
   },
   {
-    "nombre": "Steven Universe",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Steven_Universe_sprite.png/330px-Steven_Universe_sprite.png",
-    "palabraClave": "universe"
+    "nombre": "Princesa chicle (Hora de aventuras)",
+    "imagen": "https://bi.org/wp-content/uploads/2021/07/featured-bi-character-princess-bubblegum.jpg"
   },
   {
-    "nombre": "Garnet",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Garnet_MultiVersus.png/330px-Garnet_MultiVersus.png",
-    "palabraClave": "garnet"
+    "nombre": "Marceline, la Reina Vampiro (Hora de aventuras)",
+    "imagen": "https://bi.org/wp-content/uploads/2019/10/featured-bi-character-marceline-the-vampire-queen.jpg"
   },
   {
-    "nombre": "Amethyst",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Michaela_Dietz_at_the_Florida_Supercon_2016_%284%29_%28cropped%29.jpg/330px-Michaela_Dietz_at_the_Florida_Supercon_2016_%284%29_%28cropped%29.jpg",
-    "palabraClave": "amethyst"
+    "nombre": "Rey Hielo (Hora de aventuras)",
+    "imagen": "https://static.wikia.nocookie.net/warner-bros-entertainment/images/d/d8/Icekingsmile.jpg/revision/latest?cb=20210128163046"
   },
   {
-    "nombre": "Pearl",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/93/Pearl_%28Steven_Universe%29_sprite.png",
-    "palabraClave": "pearl"
+    "nombre": "Steven Universe (Steven Universe)",
+    "imagen": "https://www.watchmojo.com/uploads/thumbs720/Fi-T-Top10-Steven-Universe-Characters-720p30.jpg"
   },
   {
-    "nombre": "Rigby",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/1a/Regular_Show_the_Movie.jpg",
-    "palabraClave": "rigby"
+    "nombre": "Garnet (Steven Universe)",
+    "imagen": "https://static.wikia.nocookie.net/universosteven/images/6/64/A_Very_Special_Episode_%2861%29.png/revision/latest?cb=20200112212907&path-prefix=es"
   },
   {
-    "nombre": "Gumball Watterson",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/26/Amazing_World_of_Gumball_Wattersons.png",
-    "palabraClave": "watterson"
+    "nombre": "Amethyst (Steven Universe)",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Amethyst.Steven-Universe.webp"
   },
   {
-    "nombre": "Darwin Watterson",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Charles_Darwin_portrait.jpg/330px-Charles_Darwin_portrait.jpg",
-    "palabraClave": "watterson"
+    "nombre": "Pearl (Steven Universe)",
+    "imagen": "https://preview.redd.it/i-have-some-questions-about-pearl-v0-5rhzrfhhpihd1.jpeg?width=640&crop=smart&auto=webp&s=eede144191c4b06355df7c7e90bf8f80afc38dcd"
   },
   {
-    "nombre": "Dipper Pines",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Montreal_Comiccon_2016_-_Mabel_Pines_%2828225216046%29.jpg/330px-Montreal_Comiccon_2016_-_Mabel_Pines_%2828225216046%29.jpg",
-    "palabraClave": "pines"
+    "nombre": "Mordecai (Historias corrientes)",
+    "imagen": "https://preview.redd.it/regular-show-fun-fact-mordecai-says-dude-in-every-single-v0-z99ypvhebrp81.jpg?width=640&crop=smart&auto=webp&s=ea020c2ded26efe4ad1b2da381daa655541dec9e"
   },
   {
-    "nombre": "Grunkle Stan",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Fan_Expo_Canada_2016_Grunkle_Stan_IMG_0246.jpg/330px-Fan_Expo_Canada_2016_Grunkle_Stan_IMG_0246.jpg",
-    "palabraClave": "stan"
+    "nombre": "Rigby (Historias corrientes)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNwIkMIt46_E9Dz5Wjr_v_dmbwcVqVo2dc7w&s"
   },
   {
-    "nombre": "Bill Cipher",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Bill_Cipher_%2834833424174%29.png/330px-Bill_Cipher_%2834833424174%29.png",
-    "palabraClave": "cipher"
+    "nombre": "Benson (Historias corrientes)",
+    "imagen": "https://static.wikia.nocookie.net/regularshow/images/f/ff/Un_Show_M%C3%A1s_-_El_Bot%C3%B3n_-_134.png/revision/latest?cb=20161120234721&path-prefix=es"
   },
   {
-    "nombre": "Courage the Cowardly Dog",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Courage_The_Cowardly_Dog_logo.png/330px-Courage_The_Cowardly_Dog_logo.png",
-    "palabraClave": "dog"
+    "nombre": "Gumball Watterson (El asombroso mundo de Gumball)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAoSzF1krlxiVp-9-MmWdJkxLNPEEmfwLmBA&s"
+  },
+  {
+    "nombre": "Darwin Watterson (El asombroso mundo de Gumball)",
+    "imagen": "https://static.wikia.nocookie.net/heroes-and-villain/images/a/ae/Darwin_Watterson.jpg/revision/latest?cb=20241021044846"
+  },
+  {
+    "nombre": "Dipper Pines (Gravity Falls: un verano de misterios)",
+    "imagen": "https://static.wikia.nocookie.net/gravityfalls/images/0/08/S1e3_dipper%27s_keen_powers_of_observation.png/revision/latest?cb=20240514023236"
+  },
+  {
+    "nombre": "Mabel Pines (Gravity Falls: un verano de misterios)",
+    "imagen": "https://static.wikia.nocookie.net/gravityfalls/images/9/97/S1e1_are_you_actually_not_gonna_show_me.png/revision/latest?cb=20250627053831"
+  },
+  {
+    "nombre": "Grunkle Stan (Gravity Falls: un verano de misterios)",
+    "imagen": "https://static.wikia.nocookie.net/gravityfalls/images/9/92/S1e16_something_about_you.png/revision/latest/scale-to-width-down/1200?cb=20130530141339"
+  },
+  {
+    "nombre": "Bill Cipher  (Gravity Falls: un verano de misterios)",
+    "imagen": "https://static.wikia.nocookie.net/gravityfalls/images/e/ea/S1e19_bill_snap.png/revision/latest?cb=20130905173319"
+  },
+  {
+    "nombre": "Agallas (Agallas, el perro cobarde)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4ZOcQPuNr29Z0WZzGGpcbJdDD4S-LMiLlg&s"
+  },
+  {
+    "nombre": "Justo Bolsa (Agallas, el perro cobarde)",
+    "imagen": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/08/R-3.jpg?w=1200&h=675&fit=crop"
+  },
+  {
+    "nombre": "Muriel Bolsa (Agallas, el perro cobarde)",
+    "imagen": "https://static.wikia.nocookie.net/scoobydoo/images/a/ad/Muriel_Bagge.jpg/revision/latest?cb=20240220205206"
+  },
+  {
+    "nombre": "Cactus (Las Supernenas)",
+    "imagen": "https://i.pinimg.com/222x/c8/63/b7/c863b76e45e5515ac7df419754cb4bc7.jpg"
+  },
+  {
+    "nombre": "Burbuja (Las Supernenas)",
+    "imagen": "https://i.pinimg.com/736x/5f/c7/2d/5fc72d70ceeacc94b6f68f2b2b2b9b10.jpg"
+  },
+  {
+    "nombre": "Bombón (Las Supernenas)",
+    "imagen": "https://i.pinimg.com/474x/ac/88/a6/ac88a6cb05dee86c2da23402ffa717f1.jpg"
   }
 ]
