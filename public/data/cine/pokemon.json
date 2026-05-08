@@ -1,157 +1,350 @@
 [
   {
     "nombre": "Pikachu",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png",
-    "palabraClave": "pikachu"
+    "imagen": "https://i.redd.it/what-makes-pikachu-an-amazing-mascot-v0-u9j632nio6vg1.png?width=768&format=png&auto=webp&s=f4b5afe84a00fb19a13593c4d31d669157e6099d"
   },
   {
     "nombre": "Charizard",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Japan_Expo_2024_-_Charizard_Cosplayer.jpg/330px-Japan_Expo_2024_-_Charizard_Cosplayer.jpg",
-    "palabraClave": "charizard"
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2c/latest/20220617161927/EP1204_Charizard_de_Alain.png/640px-EP1204_Charizard_de_Alain.png"
+  },
+  {
+    "nombre": "Blastoise",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPU1CKEx77K0gJvn2KiAJKS5ILzokKyfL6g&s"
+  },
+  {
+    "nombre": "Venusaur",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtlHbdmhpdwYbKeVo5D3KjflpcRZy7NrKow&s"
   },
   {
     "nombre": "Mewtwo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Shibuya_Parco_200220f.jpg/330px-Shibuya_Parco_200220f.jpg",
-    "palabraClave": "mewtwo"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQO_lVEg6Vq3bir8Hrl1lbi-mfzIw1DUez7A&s"
+  },
+  {
+    "nombre": "Mew",
+    "imagen": "https://fotografias-2.larazon.es/assets/videojuegos/2019/08/pokemon-mew.jpg?width=1900&height=1069"
   },
   {
     "nombre": "Gengar",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gengar_face.png/330px-Gengar_face.png",
-    "palabraClave": "gengar"
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ad/latest/20211225033009/EP1181_Gengar_de_Ash.png"
   },
   {
     "nombre": "Eevee",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pok%C3%A9mon_cosplay_at_SDCCI_2018_Nintendo_lounge_-_2.jpg/330px-Pok%C3%A9mon_cosplay_at_SDCCI_2018_Nintendo_lounge_-_2.jpg",
-    "palabraClave": "eevee"
+    "imagen": "https://media.vandal.net/m/11-2019/2019111919193821_1.jpg"
   },
   {
     "nombre": "Snorlax",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Expo_2025_in_Osaka%2C_Japan_13.jpg/330px-Expo_2025_in_Osaka%2C_Japan_13.jpg",
-    "palabraClave": "snorlax"
+    "imagen": "https://easycdn.es/1/imagenes/pokemon-edicion-verde_346141.jpg"
+  },
+  {
+    "nombre": "Psyduck",
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/b/b2/latest/20230325202418/EP1234_Psyduck_de_Misty.png"
+  },
+  {
+    "nombre": "Meowth",
+    "imagen": "https://easycdn.es/1/imagenes/pokemaster_343358.jpg"
+  },
+  {
+    "nombre": "Gyarados",
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/c/c4/Misty_Gyarados.png?width=325"
   },
   {
     "nombre": "Lapras",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/330px-International_Pok%C3%A9mon_logo.svg.png",
-    "palabraClave": "lapras"
+    "imagen": "https://media.vandal.net/i/960x720/12-2018/2018121213223_1.jpg"
+  },
+  {
+    "nombre": "Dragonite",
+    "imagen": "https://static.wikia.nocookie.net/espokemon/images/1/15/EP1103_Dragonite_de_Ash.png/revision/latest?cb=20200317233102"
+  },
+  {
+    "nombre": "Alakazam",
+    "imagen": "https://static.wikia.nocookie.net/espokemon/images/0/05/EP922_Alakazam_de_Fabio.png/revision/latest?cb=20180606190337"
+  },
+  {
+    "nombre": "Machamp",
+    "imagen": "https://i.blogs.es/fcc82b/pokemon-fan-turns-machamp-into-a-rock-type/840_560.jpeg"
+  },
+  {
+    "nombre": "Haunter",
+    "imagen": "https://static.wikia.nocookie.net/pokemonleyendas/images/c/cb/Haunter_de_Hunter.png/revision/latest/scale-to-width-down/250?cb=20150511153813&path-prefix=es"
+  },
+  {
+    "nombre": "Raichu",
+    "imagen": "https://es.kotaku.com/app/uploads/2023/11/12c009740dd417921542011b5d02bcee.jpg"
+  },
+  {
+    "nombre": "Charmander",
+    "imagen": "https://imagenes.hobbyconsolas.com/files/image_640_360/uploads/imagenes/2023/04/25/69021bec04048.jpeg"
   },
   {
     "nombre": "Squirtle",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Michele_Knotz_%284024190262%29.jpg/330px-Michele_Knotz_%284024190262%29.jpg",
-    "palabraClave": "squirtle"
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/4/4b/Ash_Squirtle.png"
   },
   {
     "nombre": "Bulbasaur",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/May_cosplayer_%2832033322441%29.jpg/330px-May_cosplayer_%2832033322441%29.jpg",
-    "palabraClave": "bulbasaur"
+    "imagen": "https://static.wikia.nocookie.net/pokemon/images/1/19/Ash_Bulbasaur.png/revision/latest?cb=20230211060446"
   },
   {
     "nombre": "Clefairy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Croquette_Cosplay.jpg/330px-Croquette_Cosplay.jpg",
-    "palabraClave": "clefairy"
+    "imagen": "https://assetsio.gnwcdn.com/clefairy_thumbnail_pokemon_go.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
   },
   {
     "nombre": "Vulpix",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rumble_pack.jpg/330px-Rumble_pack.jpg",
-    "palabraClave": "vulpix"
+    "imagen": "https://www.nintenderos.com/wp-content/uploads/2022/07/Pokemon-Fan-Art-imagina-como-se-verian-Vulpix-y-Ninetales-Cropped.jpg"
+  },
+  {
+    "nombre": "Growlithe",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwvcYHTImiJLfXVDBChb9XL0h0Cd34QFLEkA&s"
   },
   {
     "nombre": "Poliwag",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Misty_%2832338980325%29.jpg/330px-Misty_%2832338980325%29.jpg",
-    "palabraClave": "poliwag"
+    "imagen": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/pokemon-anime-poliwag-facing-forward.jpg?w=1600&h=900&fit=crop"
+  },
+  {
+    "nombre": "Ponyta",
+    "imagen": "https://i.ytimg.com/vi/2Zporr29zSo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA9OIHVCmL6q9X0fp5PdKQ58HhdSQ"
   },
   {
     "nombre": "Slowpoke",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Slowpoke_Reactor_Montreal.jpg/330px-Slowpoke_Reactor_Montreal.jpg",
-    "palabraClave": "slowpoke"
+    "imagen": "https://static.pokemonpets.com/images/monsters-images-800-800/2079-Shiny-Slowpoke.webp"
   },
   {
     "nombre": "Magikarp",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pokemon_Magikarp_Taiyaki_Pancake_from_Kurikoan%2C_Akihabara_shop%2C_Sotokanda_1-15-1_%28%E3%82%B3%E3%82%A4%E3%82%AD%E3%83%B3%E3%82%B0%E7%84%BC%E3%81%8D%2C_%E7%A7%8B%E8%91%89%E5%8E%9F_%E3%81%8F%E3%82%8A%E3%81%93%E5%BA%B5%2C_%E5%A4%96%E7%A5%9E%E7%94%B01-15-1%29_%282017-04-06_13.23.04_by_Tokyo_Girl%29.jpg/330px-thumbnail.jpg",
-    "palabraClave": "magikarp"
+    "imagen": "https://static.wikia.nocookie.net/pokemon/images/e/e5/Goh_Magikarp.png/revision/latest/scale-to-width-down/1200?cb=20200622002446"
   },
   {
     "nombre": "Ditto",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Beth_Ditto_IMG_5491.jpg/330px-Beth_Ditto_IMG_5491.jpg",
-    "palabraClave": "ditto"
+    "imagen": "https://assetsio.gnwcdn.com/pokemon_go_ditto_disguises_A16ilOs.png?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+  },
+  {
+    "nombre": "Scyther",
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/2/2f/latest/20120305173219/EH04_Scyther_de_Tracey.png"
+  },
+  {
+    "nombre": "Electabuzz",
+    "imagen": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22036519/Tony_Electabuzz.png"
   },
   {
     "nombre": "Magmar",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/89/Gobots-war-of-the-rock-lords-movie-poster-md.jpg",
-    "palabraClave": "magmar"
+    "imagen": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22060600/Magmar_JN001.png"
   },
   {
     "nombre": "Onix",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Agat_wst%C4%99gowy%2C_grudka_polerowana.jpg/330px-Agat_wst%C4%99gowy%2C_grudka_polerowana.jpg",
-    "palabraClave": "onix"
+    "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/095.png"
   },
   {
     "nombre": "Cubone",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/65/Cubone.png",
-    "palabraClave": "cubone"
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/6/65/Cubone.png"
+  },
+  {
+    "nombre": "Hitmonlee",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRXyuDMMlwNpcKwYiTENfCZv9GAkv7xywNw&s"
+  },
+  {
+    "nombre": "Hitmonchan",
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-blue-version/1/1d/Hitmonchan.gif"
+  },
+  {
+    "nombre": "Chansey",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3vy_m59gHQkJnRBpvmMPBFJ5Zmcf4MAMvQ&s"
   },
   {
     "nombre": "Goldeen",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Rachael_Lillis_%2838162592572%29.jpg/330px-Rachael_Lillis_%2838162592572%29.jpg",
-    "palabraClave": "goldeen"
+    "imagen": "https://static.wikia.nocookie.net/espokemon/images/c/c2/EP1113_Goldeen_de_Go.png/revision/latest?cb=20200628161017"
+  },
+  {
+    "nombre": "Starmie",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYIcGOVHMiIL_K_VKmKELlOzE536sUqGrroA&s"
+  },
+  {
+    "nombre": "Lickitung",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUMagYXl2tEs5qbQ6-eUiUXhSAU055LU5fIw&s"
   },
   {
     "nombre": "Krabby",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Krusty_Krab.png/330px-The_Krusty_Krab.png",
-    "palabraClave": "krabby"
+    "imagen": "https://img.pokemondb.net/artwork/large/krabby.jpg"
   },
   {
     "nombre": "Jynx",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Jynx_torquilla_young_NRM.jpg/330px-Jynx_torquilla_young_NRM.jpg",
-    "palabraClave": "jynx"
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/e/e1/Lorelei_Jynx.png"
   },
   {
     "nombre": "Arcanine",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Pokemon_FireRed.svg/langes-330px-Pokemon_FireRed.svg.png",
-    "palabraClave": "arcanine"
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/f/fe/Gary_Arcanine.png?width=396&format=jpg&auto=webp&quality=80"
+  },
+  {
+    "nombre": "Kadabra",
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/2/29/Sabrina_Kadabra.png?width=396&format=jpg&auto=webp&quality=80"
+  },
+  {
+    "nombre": "Exeggutor",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnmQbTGtxqYkuqZzUdUJ0kOUFnGeUjO1dD3Q&s"
   },
   {
     "nombre": "Articuno",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Binburrum_articuno.png/330px-Binburrum_articuno.png",
-    "palabraClave": "articuno"
+    "imagen": "https://assetsio.gnwcdn.com/pokemon-go-articuno-header.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
   },
   {
     "nombre": "Zapdos",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Binburrum_zapdos.png/330px-Binburrum_zapdos.png",
-    "palabraClave": "zapdos"
+    "imagen": "https://assetsio.gnwcdn.com/pokemon-go-zapdos-header.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
   },
   {
     "nombre": "Moltres",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Binburrum_moltres.png/330px-Binburrum_moltres.png",
-    "palabraClave": "moltres"
+    "imagen": "https://assetsio.gnwcdn.com/pokemon-go-moltres-header.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+  },
+  {
+    "nombre": "Vaporeon",
+    "imagen": "https://rarecards.nl/cdn/shop/articles/here-is-some-vaporeon-art-v0-nubh6d28kbmc1_94404cbc-d053-4058-a71d-f1621efa8a09.jpg?v=1755095447"
+  },
+  {
+    "nombre": "Jolteon",
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/7/7c/800px-Volkner_Jolteon.png"
+  },
+  {
+    "nombre": "Flareon",
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/9/91/latest/20250628124528/EP1337_Flareon_de_Noa.png"
+  },
+  {
+    "nombre": "Togepi",
+    "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/watch-pokemon-tv/seasons/season12/season12_ep37_ss01.jpg"
   },
   {
     "nombre": "Pichu",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Pichu-pichu.jpg/330px-Pichu-pichu.jpg",
-    "palabraClave": "pichu"
+    "imagen": "https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/2YBCNAH24RIKHABV6JYNZNCJVU.jpg"
   },
   {
     "nombre": "Marill",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/USA_Michigan_location_map.svg/langes-330px-USA_Michigan_location_map.svg.png",
-    "palabraClave": "marill"
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/5/5e/Pietra_Marill.png"
+  },
+  {
+    "nombre": "Espeon",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgs_871f4AiIH7C5aQXqlQbJnt_WeQFHMukg&s"
+  },
+  {
+    "nombre": "Umbreon",
+    "imagen": "https://static.wikia.nocookie.net/non-aliencreatures/images/c/c5/Umbreon1.png/revision/latest?cb=20190325142258"
   },
   {
     "nombre": "Lugia",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/langes-330px-International_Pok%C3%A9mon_logo.svg.png",
-    "palabraClave": "lugia"
+    "imagen": "https://easycdn.es/1/imagenes/animanga-0_345749.jpg"
   },
   {
     "nombre": "Ho-Oh",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/%EC%A0%9C19%ED%9A%8C_%EB%B6%80%EC%B2%9C%EA%B5%AD%EC%A0%9C%ED%8C%90%ED%83%80%EC%8A%A4%ED%8B%B1%EC%98%81%ED%99%94%EC%A0%9C_%EA%B0%9C%EB%A7%89%EC%8B%9D_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_part.1_19.jpg/330px-%EC%A0%9C19%ED%9A%8C_%EB%B6%80%EC%B2%9C%EA%B5%AD%EC%A0%9C%ED%8C%90%ED%83%80%EC%8A%A4%ED%8B%B1%EC%98%81%ED%99%94%EC%A0%9C_%EA%B0%9C%EB%A7%89%EC%8B%9D_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_part.1_19.jpg",
-    "palabraClave": "hooh"
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/07/latest/20200119205018/EP1098_Ho-Oh.png/1200px-EP1098_Ho-Oh.png"
   },
   {
     "nombre": "Cyndaquil",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Otakuthon_2014-_Pok%C3%A9mon_Trainers_%2815026590511%29.jpg/330px-Otakuthon_2014-_Pok%C3%A9mon_Trainers_%2815026590511%29.jpg",
-    "palabraClave": "cyndaquil"
+    "imagen": "https://static.wikia.nocookie.net/espokemon/images/5/5b/EP651_Cyndaquil_de_Ash.png/revision/latest?cb=20100628162741"
+  },
+  {
+    "nombre": "Totodile",
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/f/fd/latest/20100624172102/EP651_Totodile.png"
+  },
+  {
+    "nombre": "Chikorita",
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/b1/latest/20191205162540/EP612_Chikorita_de_Lira.png/1200px-EP612_Chikorita_de_Lira.png"
   },
   {
     "nombre": "Ampharos",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/PokemonXY_Logo.png/330px-PokemonXY_Logo.png",
-    "palabraClave": "ampharos"
+    "imagen": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/01/Screen-Shot-2020-12-16-at-4.28.29-AM-copy-13.jpg"
+  },
+  {
+    "nombre": "Scizor",
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e1/latest/20210219231909/EP1145_Scizor.png/640px-EP1145_Scizor.png"
+  },
+  {
+    "nombre": "Heracross",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Jw6ivv4qWVFQ056Bm62VTqsYTZnQcQLqxQ&s"
+  },
+  {
+    "nombre": "Tyranitar",
+    "imagen": "https://i.etsystatic.com/6549424/r/il/a68a36/1689172522/il_1080xN.1689172522_bxl8.jpg"
+  },
+  {
+    "nombre": "Houndoom",
+    "imagen": "https://static.wikia.nocookie.net/espokemon/images/0/02/EP273_Houndoom_de_Harrison_saliendo_de_su_Pok%C3%A9_Ball.png/revision/latest/thumbnail/width/360/height/360?cb=20140630220321"
+  },
+  {
+    "nombre": "Bellossom",
+    "imagen": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/0/0e/Noelle_Bellossom.png?width=396&format=jpg&auto=webp&quality=80"
+  },
+  {
+    "nombre": "Blaziken",
+    "imagen": "https://easycdn.es/1/imagenes/animanga-0_347677.jpg"
+  },
+  {
+    "nombre": "Mudkip",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuBz_j57ovb_hDyswaP0CP8M0pU5-MudE4A&s"
+  },
+  {
+    "nombre": "Gardevoir",
+    "imagen": "https://preview.redd.it/gardevoir-and-cutiefly-v0-ph435bdlxkee1.jpg?width=640&crop=smart&auto=webp&s=901de23793d67de9d842c02c6798e21ebb8c29c8"
+  },
+  {
+    "nombre": "Flygon",
+    "imagen": "https://static.wikia.nocookie.net/alpheapedia/images/7/72/Flygon.png/revision/latest/scale-to-width-down/1200?cb=20220108030525"
+  },
+  {
+    "nombre": "Metagross",
+    "imagen": "https://imagenes.hobbyconsolas.com/files/image_640_360/uploads/imagenes/2023/04/25/6902071f8834a.jpeg"
+  },
+  {
+    "nombre": "Rayquaza",
+    "imagen": "https://preview.redd.it/i-made-a-drawing-of-rayquaza-i-hope-you-guys-like-it-v0-2i8ocnjqj6ye1.jpeg?width=640&crop=smart&auto=webp&s=41dd0a13e37fa066d62ddd3226caf2698ec20a86"
+  },
+  {
+    "nombre": "Lucario",
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/8/87/latest/20210813230829/EP1165_Lucario_de_Ash.png"
+  },
+  {
+    "nombre": "Garchomp",
+    "imagen": "https://i.pokebase.app/pokemongo/mega-garchomp.png"
+  },
+  {
+    "nombre": "Glaceon",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3pfjFdbUDeInz_nkutW6PLZ5jnv6vAD7Dg&s"
+  },
+  {
+    "nombre": "Leafeon",
+    "imagen": "https://static.wikia.nocookie.net/non-aliencreatures/images/f/f0/Leafeon1.png/revision/latest?cb=20190325142258"
+  },
+  {
+    "nombre": "Dialga",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZky-4GIcHo-bWgb70gER1GqWtZonx0iqRuA&s"
+  },
+  {
+    "nombre": "Palkia",
+    "imagen": "https://assetsio.gnwcdn.com/pokemon_go_palkia_thumbnail_hAx8hcI.jpg?width=1200&height=600&fit=crop&enable=upscale&auto=webp"
+  },
+  {
+    "nombre": "Giratina",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf4ao-VEkdBt900T0z5_dIB26pz8qOwuqwwg&s"
+  },
+  {
+    "nombre": "Greninja",
+    "imagen": "https://easycdn.es/1/imagenes/pokemon-escarlata-y-pokemon-purpura_346499.jpg"
+  },
+  {
+    "nombre": "Sylveon",
+    "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/37/latest/20181124155216/EP908_Sylveon_de_Serena.png/1200px-EP908_Sylveon_de_Serena.png"
+  },
+  {
+    "nombre": "Zygarde",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfiPVO1v8du7AxqeH-vkE_re-KHJBOv9Y9gQ&s"
+  },
+  {
+    "nombre": "Mimikyu",
+    "imagen": "https://img.asmedia.epimg.net/resizer/v2/PTWSXJABZVK5NBI3JURALV676Y.jpg?auth=7fbf6dd1173e41913242364308c94fa88e1451f5557a95f65dc574f8e4b5313e&width=1200&height=1200&smart=true"
+  },
+  {
+    "nombre": "Lycanroc",
+    "imagen": "https://static.wikia.nocookie.net/espokemon/images/4/4a/EP985_Lycanroc_de_Ash.png/revision/latest?cb=20180326181129"
+  },
+  {
+    "nombre": "Jigglypuff",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdd8wOEk2BqOPvSZAzFefZmkLyWyUgrwgbQ&s"
+  },
+  {
+    "nombre": "Ash Ketchum",
+    "imagen": "https://i.redd.it/recreating-the-original-90s-pok%C3%A9mon-anime-ash-ketchum-v0-l2ciqhv7d9tb1.jpg?width=2048&format=pjpg&auto=webp&s=89a6493545dcede240d8c26b63aa34e08f00d9e0"
   }
 ]
