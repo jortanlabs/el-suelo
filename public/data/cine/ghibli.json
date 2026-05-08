@@ -1,77 +1,178 @@
 [
   {
-    "nombre": "Totoro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/2e/Tobacco_Barns_%28film%29_poster.jpg",
-    "palabraClave": "totoro"
+    "nombre": "Totoro (Mi Vecino Totoro)",
+    "imagen": "https://images.squarespace-cdn.com/content/v1/50ea8efce4b0955e460213c5/1447209791195-6BQWPFLDWFJ6LQPW6YHF/image-asset.jpeg"
   },
   {
-    "nombre": "Catbus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Joe_Hisaishi_2011.jpg/330px-Joe_Hisaishi_2011.jpg",
-    "palabraClave": "catbus"
+    "nombre": "Satsuki (Mi Vecino Totoro)",
+    "imagen": "https://preview.redd.it/til-that-satsuki-from-my-neighbor-totoro-has-the-same-dub-v0-uxrm3xigeu1f1.png?width=555&format=png&auto=webp&s=c720b8334584f15b174294e937c10a4d0f5ce5af"
   },
   {
-    "nombre": "Chihiro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png",
-    "palabraClave": "chihiro"
+    "nombre": "Mei (Mi Vecino Totoro)",
+    "imagen": "https://static.wikia.nocookie.net/studio-ghibli/images/0/01/Mei_Kusakabe.jpg/revision/latest?cb=20181012193530"
   },
   {
-    "nombre": "Sin Cara",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ryoi_Nopperabo.jpg",
-    "palabraClave": "cara"
+    "nombre": "Catbus (Mi Vecino Totoro)",
+    "imagen": "https://preview.redd.it/ok-why-does-appa-kind-of-look-like-cat-bus-from-my-v0-86wp03t3q0ga1.jpg?width=640&crop=smart&auto=webp&s=75a95e1bf73f7126366b2a1ce02fe89b87c26a8b"
   },
   {
-    "nombre": "Lin",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/2012_2013_-_Lin.jpg/330px-2012_2013_-_Lin.jpg",
-    "palabraClave": "lin"
+    "nombre": "Chihiro (El Viaje de Chihiro)",
+    "imagen": "https://ethic.es/wp-content/uploads/2023/02/Ethic-foto-articulos-29.jpg"
   },
   {
-    "nombre": "Sofía",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Russian_church_%2837591925970%29.jpg/330px-Russian_church_%2837591925970%29.jpg",
-    "palabraClave": "sofia"
+    "nombre": "Haku (El Viaje de Chihiro)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFIHZfWJgM230hVk99RslKGTzhM8IlXMIAyg&s"
   },
   {
-    "nombre": "Moro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Automobile_of_the_Orient_NGM-v31-p259.jpg/330px-Automobile_of_the_Orient_NGM-v31-p259.jpg",
-    "palabraClave": "moro"
+    "nombre": "Sin Cara (El Viaje de Chihiro)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnKkaCcZlm8yTsDF2UjT97SjYf_erIThXLUQ&s"
   },
   {
-    "nombre": "Kushana",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Imp%C3%A9rio_Cuchana-es.svg/langes-330px-Imp%C3%A9rio_Cuchana-es.svg.png",
-    "palabraClave": "kushana"
+    "nombre": "Yubaba (El Viaje de Chihiro)",
+    "imagen": "https://i.redd.it/vz31u8pcr7tf1.jpeg"
   },
   {
-    "nombre": "Jiro Horikoshi",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/62/Jiro_Horikoshi.jpg",
-    "palabraClave": "horikoshi"
+    "nombre": "Kamajii (El Viaje de Chihiro)",
+    "imagen": "https://static.wikia.nocookie.net/elviajedechihiro/images/1/14/Url-1.jpeg/revision/latest?cb=20130707065645&path-prefix=es"
   },
   {
-    "nombre": "Barón",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Heraldic_Crown_of_Spanish_Barons.svg/langes-330px-Heraldic_Crown_of_Spanish_Barons.svg.png",
-    "palabraClave": "baron"
+    "nombre": "Lin (El Viaje de Chihiro)",
+    "imagen": "https://i.redd.it/kwlexsrv3ghe1.jpeg"
   },
   {
-    "nombre": "Tanuki",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nyctereutes_procyonoides_4_%28Piotr_Kuczynski%29.jpg/330px-Nyctereutes_procyonoides_4_%28Piotr_Kuczynski%29.jpg",
-    "palabraClave": "tanuki"
+    "nombre": "Sofía (El Castillo Ambulante)",
+    "imagen": "https://conadeanimacion.upv.es/wp-content/uploads/2022/10/7_metamorfosis.jpg"
   },
   {
-    "nombre": "Porco Rosso",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Kurenai_no_buta_title.svg/langes-330px-Kurenai_no_buta_title.svg.png",
-    "palabraClave": "rosso"
+    "nombre": "Howl (El Castillo Ambulante)",
+    "imagen": "https://areajugones.sport.es/wp-content/uploads/2021/05/studio-ghibli-howl.jpeg.webp"
   },
   {
-    "nombre": "Kaguya",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/The_Tale_of_the_Bamboo_Cutter_-_Discovery_of_Princess_Kaguya.jpg/330px-The_Tale_of_the_Bamboo_Cutter_-_Discovery_of_Princess_Kaguya.jpg",
-    "palabraClave": "kaguya"
+    "nombre": "Calcifer (El Castillo Ambulante)",
+    "imagen": "https://i.blogs.es/38c982/caldifer-1/500_333.webp"
   },
   {
-    "nombre": "Marnie",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Alfred_Hitchcock%27s_Marnie_Trailer_-_Tippi_Hedren_%282%29.png/330px-Alfred_Hitchcock%27s_Marnie_Trailer_-_Tippi_Hedren_%282%29.png",
-    "palabraClave": "marnie"
+    "nombre": "Marcl (El Castillo Ambulante)",
+    "imagen": "https://pbs.twimg.com/media/EYpLbmLWAAckUOd.jpg"
   },
   {
-    "nombre": "Kodama",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SekienKodama.jpg/330px-SekienKodama.jpg",
-    "palabraClave": "kodama"
+    "nombre": "San (La Princesa Mononoke)",
+    "imagen": "https://i.pinimg.com/474x/e5/f7/e2/e5f7e241e46c0ab42693d6999e4f35b9.jpg"
+  },
+  {
+    "nombre": "Ashitaka (La Princesa Mononoke)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7uulh6QnuRSIgG63KDVnB4_JnPci67GVjrQ&s"
+  },
+  {
+    "nombre": "Moro (La Princesa Mononoke)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCDKn8-I9GWf5MVkM7D_HfM33HepIaDab9xg&s"
+  },
+  {
+    "nombre": "Eboshi (La Princesa Mononoke)",
+    "imagen": "https://static.wikia.nocookie.net/disney/images/9/9f/Eboshi.png/revision/latest?cb=20140421233409"
+  },
+  {
+    "nombre": "Nausicaä (Nausicaä del Valle del Viento)",
+    "imagen": "https://www.lavozdegalicia.es/default/2024/06/21/00121719006242375813400/Foto/j_20240621_153412000.jpg"
+  },
+  {
+    "nombre": "Kushana (Nausicaä)",
+    "imagen": "https://preview.redd.it/princess-kushana-from-nausica%C3%A4-of-the-valley-of-the-wind-v0-d3427uygxkef1.jpg?width=640&crop=smart&auto=webp&s=adcfc9c21b1794b781d000a81ffb30bbfaf17caf"
+  },
+  {
+    "nombre": "Kiki (Kiki, la Aprendiz de Bruja)",
+    "imagen": "https://lamanodelextranjero.com/wp-content/uploads/2014/04/la-bella-simplicidad-del-dibujo-de-miyazaki.jpg"
+  },
+  {
+    "nombre": "Jiji (Kiki, la Aprendiz de Bruja)",
+    "imagen": "https://static.wikia.nocookie.net/studioghibli/images/e/ef/Jiji_2.jpg/revision/latest?cb=20200627232343&path-prefix=es"
+  },
+  {
+    "nombre": "Tombo (Kiki, la Aprendiz de Bruja)",
+    "imagen": "https://static.wikia.nocookie.net/studioghibli/images/f/f9/Tombo_Kopoli_sin_sueter.png/revision/latest?cb=20200627232821&path-prefix=es"
+  },
+  {
+    "nombre": "Sheeta (El Castillo en el Cielo)",
+    "imagen": "https://i.pinimg.com/474x/cf/88/8f/cf888fb4719d041edbde8501e59fdbe5.jpg"
+  },
+  {
+    "nombre": "Pazu (El Castillo en el Cielo)",
+    "imagen": "https://pbs.twimg.com/media/Dm0hwvCXgAAGR02.jpg"
+  },
+  {
+    "nombre": "Muska (El Castillo en el Cielo)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDEak_1ATUo0ftCG3iBWpG8LGyPAr_BNFCw&s"
+  },
+  {
+    "nombre": "Seita (La Tumba de las Luciérnagas)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeftuNbY8pEB1uzWO4vzKw-HvX1rp1dSLkjQ&s"
+  },
+  {
+    "nombre": "Setsuko (La Tumba de las Luciérnagas)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWjOL83ViZXIBqNmvS8WdAIJsbGTiLSSVaaw&s"
+  },
+  {
+    "nombre": "Ponyo (Ponyo)",
+    "imagen": "https://www.academymuseum.org/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fm3qyzuwrf176%2F6plUQr1pA7QLEYldcsF2or%2F094ccbca05ed08bdb3bcc6d0a18449eb%2FHayao-Miyazaki-PONYO-Thumbnail.jpg&w=1920&q=70"
+  },
+  {
+    "nombre": "Sosuke (Ponyo)",
+    "imagen": "https://static.wikia.nocookie.net/p__/images/8/86/Sosuke_n%C3%A4rbilden.png/revision/latest?cb=20130227090701&path-prefix=protagonist"
+  },
+  {
+    "nombre": "Arrietty (El Mundo Secreto de Arrietty)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScnnFCIK6fti5qBzCtoc-3bjXrYtZniKPJeA&s"
+  },
+  {
+    "nombre": "Jiro Horikoshi (El Viento se Levanta)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsSJJ4NZv-eY6eRO55X5BfxaZ3bM0jVKScVg&s"
+  },
+  {
+    "nombre": "Barón (El Reino de los Gatos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTed2aWRNqabE9m93E9_mjxUbyairgHzjNTHA&s"
+  },
+  {
+    "nombre": "Haru (El Reino de los Gatos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNC6JBzwllHbMLWy7BSnKVt7WIs98C_VwnLw&s"
+  },
+  {
+    "nombre": "Tanuki (Pompoko)",
+    "imagen": "https://static.wikia.nocookie.net/studio-ghibli/images/c/cc/Tanuki_050.jpg/revision/latest/scale-to-width-down/1920?cb=20201123143521"
+  },
+  {
+    "nombre": "Porco Rosso (Porco Rosso)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJHU5sSkctn8C621UN87pbtqtGdvmjic1b-w&s"
+  },
+  {
+    "nombre": "Kaguya (El Cuento de la Princesa Kaguya)",
+    "imagen": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2016/03/18/tale-of-princess-kaguya.jpg"
+  },
+  {
+    "nombre": "Anna (Cuando Marnie Estaba Allí)",
+    "imagen": "https://farm6.staticflickr.com/5347/17489370175_82d932f46f_o_d.jpg"
+  },
+  {
+    "nombre": "Marnie (Cuando Marnie Estaba Allí)",
+    "imagen": "https://farm6.staticflickr.com/5325/16869059453_7e0ce62f54_o_d.jpg"
+  },
+  {
+    "nombre": "Kodama (La Princesa Mononoke)",
+    "imagen": "https://www.kdeblog.com/wp-content/uploads/2014/01/Bkodama_plasmoide_01.jpg"
+  },
+  {
+    "nombre": "Espíritu del Bosque (La Princesa Mononoke)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_5nvzhuzfz5FSHeHzUasIrxtnIwmIOpunzQ&s"
+  },
+  {
+    "nombre": "Ohmu (Nausicaä)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-lXHCGeJxobtontzdoz7TxTqxgwknjHD6w&s"
+  },
+  {
+    "nombre": "Shizuku (Si Escuchas tu Corazón)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qaCC6CsgSkO4odMP-WqU0w2UjUi8kOU_kQ&s"
+  },
+  {
+    "nombre": "Robot Guerrero (El Castillo en el Cielo)",
+    "imagen": "https://pbs.twimg.com/media/DlPir0vVsAAz_T9.jpg"
   }
 ]
