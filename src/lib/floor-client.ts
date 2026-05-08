@@ -425,6 +425,24 @@ export async function cargarMezclaCine(slugs: string[]): Promise<ItemFloor[]> {
   return items;
 }
 
+const PUB_TTL_MS = 5 * 60 * 1000; // 5 minutos
+const PUB_CACHE_KEY = "juegario:publicadas:v1";
+
+export async function cargarPublicadas(): Promise<string[]> {
+  try {
+    const raw = localStorage.getItem(PUB_CACHE_KEY);
+    if (raw) {
+      const { data, expira } = JSON.parse(raw);
+      if (Date.now() < expira) return data;
+    }
+    const res = await fetch("/data/publicadas.json");
+    if (!res.ok) return [];
+    const data: string[] = await res.json();
+    localStorage.setItem(PUB_CACHE_KEY, JSON.stringify({ data, expira: Date.now() + PUB_TTL_MS }));
+    return data;
+  } catch { return []; }
+}
+
 /* ============ Reconocimiento de voz ============ */
 
 export function navegadorSoportaVoz(): boolean {

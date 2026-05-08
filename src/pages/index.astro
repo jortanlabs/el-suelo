@@ -25,40 +25,33 @@ const cineBloques = bloques.map((b) => ({
     })),
 }));
 
-// Solo slugs aprobados/publicados (los que aparecen en publicadas.json)
-import publicadas from "../../public/data/publicadas.json";
+// Todos los slugs disponibles — el filtro por "publicadas" ocurre en runtime (cargarPublicadas)
 import { subcategoriasMundo } from "../data/catalogoMundo.ts";
-const pub = publicadas as string[];
 
-// Cine: slugs directos publicados
-const cineSlugsJugables = subcategorias
-  .filter((s) => !s.esMetaCategoria && !s.pendiente && !s.derivadoDe && !!s.nombres && pub.includes(s.slug))
-  .map((s) => s.slug);
+// Cine: slug → nombre para todos los slugs directos + derivados + mezclas
+const cineSlugsNombres: Record<string, string> = Object.fromEntries(
+  subcategorias
+    .filter((s) => !s.esMetaCategoria && !s.pendiente && !s.derivadoDe && !!s.nombres)
+    .map((s) => [s.slug, s.nombre])
+);
 
-// Categorías derivadas de cine: activas si su base está publicada
 const cineSlugsDerivados: Record<string, { baseSlug: string }> = {};
 for (const s of subcategorias) {
-  if (s.derivadoDe && s.modoDerivado === "pelicula" && pub.includes(s.derivadoDe)) {
+  if (s.derivadoDe && s.modoDerivado === "pelicula") {
     cineSlugsDerivados[s.slug] = { baseSlug: s.derivadoDe };
-    cineSlugsJugables.push(s.slug);
+    cineSlugsNombres[s.slug] = s.nombre;
   }
 }
 
-// Mezcla jugable (ej: superheroes = marvel+dc): activa cuando todos sus slugs están publicados
 const cineSlugsMetaMezcla: Record<string, string[]> = {};
 for (const s of subcategorias) {
   if (!s.esMetaCategoria && s.subcategorias?.length && !s.derivadoDe && !s.pendiente) {
-    if (s.subcategorias.every((sub) => pub.includes(sub))) {
-      cineSlugsMetaMezcla[s.slug] = s.subcategorias;
-      cineSlugsJugables.push(s.slug);
-    }
+    cineSlugsMetaMezcla[s.slug] = s.subcategorias;
+    cineSlugsNombres[s.slug] = s.nombre;
   }
 }
 
-// Mundo: slugs publicados (dataPath: "mundo")
-const mundoSlugsJugables = subcategoriasMundo
-  .filter((s) => !s.esMetaCategoria && !!s.nombres && pub.includes(s.slug))
-  .map((s) => s.slug);
+// Mundo: slug → nombre para todos los slugs disponibles
 const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   subcategoriasMundo
     .filter((s) => !s.esMetaCategoria && !!s.nombres)
@@ -70,10 +63,9 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   <!-- Datos para JS (no visibles) -->
   <div id="datos-otras" data-json={JSON.stringify(otrasFloor)} class="hidden"></div>
   <div id="datos-cine" data-json={JSON.stringify(cineBloques)} class="hidden"></div>
-  <div id="datos-cine-slugs" data-json={JSON.stringify(cineSlugsJugables)} class="hidden"></div>
+  <div id="datos-cine-nombres" data-json={JSON.stringify(cineSlugsNombres)} class="hidden"></div>
   <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
   <div id="datos-cine-mezcla" data-json={JSON.stringify(cineSlugsMetaMezcla)} class="hidden"></div>
-  <div id="datos-mundo-slugs" data-json={JSON.stringify(mundoSlugsJugables)} class="hidden"></div>
   <div id="datos-mundo-nombres" data-json={JSON.stringify(mundoSlugsNombres)} class="hidden"></div>
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
@@ -454,6 +446,7 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
     cargarCatalogoCinePeli,
     cargarCatalogoMundo,
     cargarMezclaCine,
+    cargarPublicadas,
   } from "../lib/floor-client.ts";
   import { categoriasFloor as todasCatsOtras } from "../data/categoriasFloor.ts";
 
@@ -484,8 +477,8 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   const otrasFloor: OtrasCat[] = JSON.parse(
     (document.getElementById("datos-otras") as HTMLElement).dataset.json!,
   );
-  const cineSlugsJugables: string[] = JSON.parse(
-    (document.getElementById("datos-cine-slugs") as HTMLElement).dataset.json!,
+  const cineSlugsNombres: Record<string, string> = JSON.parse(
+    (document.getElementById("datos-cine-nombres") as HTMLElement).dataset.json!,
   );
   const cineSlugsDerivados: Record<string, { baseSlug: string }> = JSON.parse(
     (document.getElementById("datos-cine-derivados") as HTMLElement).dataset.json!,
@@ -493,14 +486,25 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   const cineSlugsMetaMezcla: Record<string, string[]> = JSON.parse(
     (document.getElementById("datos-cine-mezcla") as HTMLElement).dataset.json!,
   );
-  const mundoSlugsJugables: string[] = JSON.parse(
-    (document.getElementById("datos-mundo-slugs") as HTMLElement).dataset.json!,
-  );
   const mundoSlugsNombres: Record<string, string> = JSON.parse(
     (document.getElementById("datos-mundo-nombres") as HTMLElement).dataset.json!,
   );
-  // Pool combinado: cine + mundo publicados
-  const todasSlugsJugables: string[] = [...cineSlugsJugables, ...mundoSlugsJugables];
+
+  // Construye el pool jugable filtrando por la lista publicada (cargada en runtime)
+  function construirPool(pub: string[]): string[] {
+    const pool: string[] = [];
+    for (const slug of Object.keys(cineSlugsNombres)) {
+      const d = cineSlugsDerivados[slug];
+      const m = cineSlugsMetaMezcla[slug];
+      if (d) { if (pub.includes(d.baseSlug)) pool.push(slug); }
+      else if (m) { if (m.every((s) => pub.includes(s))) pool.push(slug); }
+      else if (pub.includes(slug)) pool.push(slug);
+    }
+    for (const slug of Object.keys(mundoSlugsNombres)) {
+      if (pub.includes(slug)) pool.push(slug);
+    }
+    return pool;
+  }
 
   const $ = (id: string) => document.getElementById(id)!;
 
@@ -606,28 +610,31 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
       errEl.textContent = "Elige un modo primero."; errEl.classList.remove("hidden"); return;
     }
 
+    // Obtener lista publicada en runtime (caché 5 min) y construir pool
+    const pub = await cargarPublicadas();
+    const pool = construirPool(pub);
+
     if (modo === "tablero") {
       pararVoz();
-      initTablero(nombreA, nombreB);
+      initTablero(nombreA, nombreB, pool.filter((s) => !mundoSlugsNombres[s] || cineSlugsNombres[s]));
       mostrar(pTablero);
       return;
     }
 
-    // Auto-pick random subcategory (cine + mundo pool)
-    const _slug = todasSlugsJugables[Math.floor(Math.random() * todasSlugsJugables.length)];
-    const _esMundo = mundoSlugsJugables.includes(_slug);
+    if (pool.length === 0) {
+      errEl.textContent = "No hay categorías publicadas aún.";
+      errEl.classList.remove("hidden");
+      return;
+    }
+
+    // Auto-pick random subcategory
+    const _slug = pool[Math.floor(Math.random() * pool.length)];
+    const _esMundo = mundoSlugsNombres[_slug] !== undefined && cineSlugsNombres[_slug] === undefined;
     categoriaTipo = "cine";
     categoriaSlug = _slug;
     categoriaDataPath = _esMundo ? "mundo" : "cine";
     categoriaSlugsParaMezcla = cineSlugsMetaMezcla[_slug] ?? null;
-    let _nombre = _esMundo ? (mundoSlugsNombres[_slug] ?? _slug) : _slug;
-    if (!_esMundo) {
-      for (const bloque of cineBloques) {
-        const s = (bloque as any).subcats.find((s: any) => s.slug === _slug);
-        if (s) { _nombre = s.nombre; break; }
-      }
-    }
-    categoriaNombre = _nombre;
+    categoriaNombre = mundoSlugsNombres[_slug] ?? cineSlugsNombres[_slug] ?? _slug;
 
     pararVoz();
     mostrar(pLoader);
@@ -690,14 +697,12 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   });
 
   // ── Tablero ──────────────────────────────────────────────────
-  function initTablero(nombreA: string, nombreB: string) {
-    // Las casillas del tablero usan subcategorías jugables de Cine
+  function initTablero(nombreA: string, nombreB: string, poolCine: string[]) {
     const catsValidas = todasCatsOtras.filter((c) => c.nombres || c.itemsHardcoded);
 
     casillas = Array.from({ length: 25 }, () => {
-      // 70% Cine, 30% Otras — para variedad
-      if (cineSlugsJugables.length > 0 && Math.random() < 0.7) {
-        const slug = cineSlugsJugables[Math.floor(Math.random() * cineSlugsJugables.length)];
+      if (poolCine.length > 0 && Math.random() < 0.7) {
+        const slug = poolCine[Math.floor(Math.random() * poolCine.length)];
         const meta = cineBloques.flatMap((b) => b.subcats).find((s) => s.slug === slug);
         return {
           catSlug: slug,

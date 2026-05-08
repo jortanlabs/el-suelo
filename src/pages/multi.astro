@@ -2,52 +2,36 @@
 import Base from "../layouts/Base.astro";
 import { subcategorias } from "../data/catalogoCine.ts";
 import { subcategoriasMundo } from "../data/catalogoMundo.ts";
-import publicadas from "../../public/data/publicadas.json";
-
-const pub = publicadas as string[];
-const cineSlugsJugables = subcategorias
-  .filter((s) => !s.esMetaCategoria && !s.derivadoDe && !!s.nombres && !s.pendiente && pub.includes(s.slug))
-  .map((s) => s.slug);
+// Todos los slugs disponibles — el filtro por "publicadas" ocurre en runtime
 const cineSlugsNombres: Record<string, string> = Object.fromEntries(
   subcategorias
-    .filter((s) => !s.esMetaCategoria && !s.derivadoDe && !!s.nombres && !s.pendiente && pub.includes(s.slug))
+    .filter((s) => !s.esMetaCategoria && !s.derivadoDe && !!s.nombres && !s.pendiente)
     .map((s) => [s.slug, s.nombre])
 );
 
-// Categorías derivadas activas si su base está publicada
 const cineSlugsDerivados: Record<string, { baseSlug: string }> = {};
 for (const s of subcategorias) {
-  if (s.derivadoDe && s.modoDerivado === "pelicula" && pub.includes(s.derivadoDe)) {
+  if (s.derivadoDe && s.modoDerivado === "pelicula") {
     cineSlugsDerivados[s.slug] = { baseSlug: s.derivadoDe };
-    cineSlugsJugables.push(s.slug);
     cineSlugsNombres[s.slug] = s.nombre;
   }
 }
 
-// Mezcla jugable (ej: superheroes = marvel+dc)
 const cineSlugsMetaMezcla: Record<string, string[]> = {};
 for (const s of subcategorias) {
   if (!s.esMetaCategoria && s.subcategorias?.length && !s.derivadoDe && !s.pendiente) {
-    if (s.subcategorias.every((sub) => pub.includes(sub))) {
-      cineSlugsMetaMezcla[s.slug] = s.subcategorias;
-      cineSlugsJugables.push(s.slug);
-      cineSlugsNombres[s.slug] = s.nombre;
-    }
+    cineSlugsMetaMezcla[s.slug] = s.subcategorias;
+    cineSlugsNombres[s.slug] = s.nombre;
   }
 }
 
-// Mundo: slugs publicados
-const mundoSlugsJugables = subcategoriasMundo
-  .filter((s) => !s.esMetaCategoria && !!s.nombres && pub.includes(s.slug))
-  .map((s) => s.slug);
 const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   subcategoriasMundo
     .filter((s) => !s.esMetaCategoria && !!s.nombres)
     .map((s) => [s.slug, s.nombre])
 );
 
-// Pool combinado
-const todasSlugsJugables = [...cineSlugsJugables, ...mundoSlugsJugables];
+// Mapa combinado slug → nombre (para el JS)
 const todasSlugsNombres: Record<string, string> = { ...cineSlugsNombres, ...mundoSlugsNombres };
 
 const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "d8b48a4d7d6cb146cf1e";
@@ -55,11 +39,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 ---
 
 <Base titulo="El Suelo — 2 jugadores" descripcion="Juega El Suelo contra alguien desde otro móvil.">
-  <div id="datos-cine-slugs" data-json={JSON.stringify(todasSlugsJugables)} class="hidden"></div>
   <div id="datos-cine-nombres" data-json={JSON.stringify(todasSlugsNombres)} class="hidden"></div>
   <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
   <div id="datos-cine-mezcla" data-json={JSON.stringify(cineSlugsMetaMezcla)} class="hidden"></div>
-  <div id="datos-mundo-slugs" data-json={JSON.stringify(mundoSlugsJugables)} class="hidden"></div>
+  <div id="datos-mundo-slugs" data-json={JSON.stringify(Object.keys(mundoSlugsNombres))} class="hidden"></div>
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
       <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">← Volver</button>
@@ -308,16 +291,13 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   import type { Channel } from "pusher-js";
   import {
     generarFloor, generarFloorPredefinida, cargarCatalogoCine, cargarCatalogoCinePeli,
-    cargarCatalogoMundo, cargarMezclaCine,
+    cargarCatalogoMundo, cargarMezclaCine, cargarPublicadas,
     type ItemFloor, crearReconocedor, navegadorSoportaVoz,
     type ReconocedorVoz, aciertoFlexible,
   } from "../lib/floor-client.ts";
 
   const PUSHER_KEY = (window as any).__PK__ ?? "";
   const PUSHER_CLUSTER = (window as any).__PC__ ?? "eu";
-  const cineSlugsJugables: string[] = JSON.parse(
-    (document.getElementById("datos-cine-slugs") as HTMLElement).dataset.json!,
-  );
   const cineSlugsNombres: Record<string, string> = JSON.parse(
     (document.getElementById("datos-cine-nombres") as HTMLElement).dataset.json!,
   );
@@ -327,9 +307,24 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   const cineSlugsMetaMezcla: Record<string, string[]> = JSON.parse(
     (document.getElementById("datos-cine-mezcla") as HTMLElement).dataset.json!,
   );
-  const mundoSlugsJugables: string[] = JSON.parse(
+  const mundoSlugsAll: string[] = JSON.parse(
     (document.getElementById("datos-mundo-slugs") as HTMLElement).dataset.json!,
   );
+
+  function construirPool(pub: string[]): string[] {
+    const pool: string[] = [];
+    for (const slug of Object.keys(cineSlugsNombres)) {
+      const d = cineSlugsDerivados[slug];
+      const m = cineSlugsMetaMezcla[slug];
+      if (d) { if (pub.includes(d.baseSlug)) pool.push(slug); }
+      else if (m) { if (m.every((s) => pub.includes(s))) pool.push(slug); }
+      else if (pub.includes(slug)) pool.push(slug);
+    }
+    for (const slug of mundoSlugsAll) {
+      if (pub.includes(slug)) pool.push(slug);
+    }
+    return pool;
+  }
 
   // ── DOM ────────────────────────────────────────────────────
   const $ = (id: string) => document.getElementById(id)!;
@@ -641,14 +636,18 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       await initTablero();
       return;
     }
-    // Auto-pick random cine subcategory
-    const _slug = cineSlugsJugables[Math.floor(Math.random() * cineSlugsJugables.length)];
+    // Auto-pick random subcategory usando lista publicada en runtime
+    const pub = await cargarPublicadas();
+    const pool = construirPool(pub);
+    if (pool.length === 0) { sync({ fase: "error" }); return; }
+    const _slug = pool[Math.floor(Math.random() * pool.length)];
+    const _esMundo = mundoSlugsAll.includes(_slug) && !cineSlugsNombres[_slug];
     sync({ fase: "cargando", nombreA, nombreB, modo });
     mostrar(pLoader);
     $("loader-cat-name").textContent = cineSlugsNombres[_slug] ?? _slug;
     try {
       let raw: ItemFloor[];
-      if (mundoSlugsJugables.includes(_slug)) {
+      if (_esMundo) {
         raw = await cargarCatalogoMundo(_slug);
       } else if (cineSlugsMetaMezcla[_slug]) {
         raw = await cargarMezclaCine(cineSlugsMetaMezcla[_slug]);
