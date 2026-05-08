@@ -142,16 +142,16 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
             <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
           </div>
 
-          <!-- Categoría: siempre Cine y Series -->
+          <!-- Categoría: aleatoria entre todas las publicadas -->
           <div id="seccion-categoria" class="hidden">
             <div class="floor-card-small px-4 py-3 border-[#ffcc00] text-center">
-              <span class="font-titulo font-bold text-[#ffcc00] text-base">🎬 Cine y Series</span>
-              <p class="text-[#2a5090] text-xs font-titulo mt-0.5">Subcategoría aleatoria en cada partida</p>
+              <span class="font-titulo font-bold text-[#ffcc00] text-base">🎲 Categoría aleatoria</span>
+              <p class="text-[#2a5090] text-xs font-titulo mt-0.5">Cine, series, El Mundo y más</p>
             </div>
           </div>
 
           <div id="nota-tablero" class="hidden floor-card-small px-3 py-2 border-[#ffcc0033]">
-            <p class="text-xs text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría de Cine y Series</p>
+            <p class="text-xs text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría</p>
           </div>
 
           <!-- Botón arrancar -->
@@ -639,7 +639,7 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
     pararVoz();
     mostrar(pLoader);
     $("loader-progreso").textContent = "Cargando…";
-    $("loader-cat-name").textContent = categoriaNombre;
+    $("loader-cat-name").textContent = _esMundo ? `🌍 El Mundo · ${categoriaNombre}` : `🎬 ${categoriaNombre}`;
 
     try {
       let raw: ItemFloor[];
@@ -656,7 +656,7 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
             : await cargarCatalogoCine(categoriaSlug);
         }
         categoriaActual = categoriaNombre;
-        $("juego-cat-label").textContent = categoriaNombre;
+        $("juego-cat-label").textContent = _esMundo ? `🌍 El Mundo · ${categoriaNombre}` : `🎬 ${categoriaNombre}`;
       } else {
         const cat = todasCatsOtras.find((c) => c.slug === categoriaSlug)!;
         categoriaActual = cat.nombre;
