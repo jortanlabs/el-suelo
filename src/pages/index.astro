@@ -142,11 +142,13 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
             <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
           </div>
 
-          <!-- Categoría: aleatoria entre todas las publicadas -->
+          <!-- Selector de categoría -->
           <div id="seccion-categoria" class="hidden">
-            <div class="floor-card-small px-4 py-3 border-[#ffcc00] text-center">
-              <span class="font-titulo font-bold text-[#ffcc00] text-base">🎲 Categoría aleatoria</span>
-              <p class="text-[#2a5090] text-xs font-titulo mt-0.5">Cine, series, El Mundo y más</p>
+            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-1.5 uppercase tracking-widest">Categoría</label>
+            <div class="grid grid-cols-3 gap-2">
+              <button id="cat-cine" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🎬<br>Cine y Series</button>
+              <button id="cat-mundo" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🌍<br>El Mundo</button>
+              <button id="cat-aleatorio" class="floor-btn floor-cat-selected px-2 py-2 text-xs font-titulo leading-tight">🎲<br>Aleatorio</button>
             </div>
           </div>
 
@@ -557,6 +559,27 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
     $("modo-rapida").classList.add("text-[#2a5090]", "border-[#163575]");
   });
 
+  // ── Filtro de categoría (Rápida) ─────────────────────────────
+  let categoriaFiltro: "cine" | "mundo" | "aleatorio" = "aleatorio";
+
+  function seleccionarFiltro(filtro: "cine" | "mundo" | "aleatorio") {
+    categoriaFiltro = filtro;
+    const btns = { cine: $("cat-cine"), mundo: $("cat-mundo"), aleatorio: $("cat-aleatorio") };
+    for (const [k, btn] of Object.entries(btns)) {
+      if (k === filtro) {
+        btn.classList.add("floor-cat-selected");
+        btn.classList.remove("text-[#2a5090]", "border-[#163575]");
+      } else {
+        btn.classList.remove("floor-cat-selected");
+        btn.classList.add("text-[#2a5090]", "border-[#163575]");
+      }
+    }
+  }
+
+  $("cat-cine").addEventListener("click", () => seleccionarFiltro("cine"));
+  $("cat-mundo").addEventListener("click", () => seleccionarFiltro("mundo"));
+  $("cat-aleatorio").addEventListener("click", () => seleccionarFiltro("aleatorio"));
+
   // ── Categoría ───────────────────────────────────────────────
   type CategoriaTipo = "otras" | "cine";
   let categoriaTipo: CategoriaTipo = "cine";
@@ -621,14 +644,24 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
       return;
     }
 
-    if (pool.length === 0) {
-      errEl.textContent = "No hay categorías publicadas aún.";
+    // Filtrar pool según la selección de categoría
+    const esMundoSlug = (s: string) => mundoSlugsNombres[s] !== undefined && cineSlugsNombres[s] === undefined;
+    const poolFiltrado = categoriaFiltro === "cine"
+      ? pool.filter((s) => !esMundoSlug(s))
+      : categoriaFiltro === "mundo"
+      ? pool.filter(esMundoSlug)
+      : pool;
+
+    if (poolFiltrado.length === 0) {
+      errEl.textContent = categoriaFiltro === "mundo"
+        ? "No hay categorías de El Mundo publicadas aún."
+        : "No hay categorías publicadas aún.";
       errEl.classList.remove("hidden");
       return;
     }
 
     // Auto-pick random subcategory
-    const _slug = pool[Math.floor(Math.random() * pool.length)];
+    const _slug = poolFiltrado[Math.floor(Math.random() * poolFiltrado.length)];
     const _esMundo = mundoSlugsNombres[_slug] !== undefined && cineSlugsNombres[_slug] === undefined;
     categoriaTipo = "cine";
     categoriaSlug = _slug;
