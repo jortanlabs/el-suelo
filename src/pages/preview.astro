@@ -26,6 +26,10 @@ const BUILD = Date.now();
     .topbar-spacer { flex: 1; }
     .btn-export-cur { padding: 5px 12px; background: #ffcc00; color: #050c1e; border: none; border-radius: 4px; font-size: 0.75rem; font-weight: bold; cursor: pointer; }
     .btn-export-cur:disabled { opacity: 0.4; cursor: default; }
+    .btn-publish-block { display:flex; align-items:center; gap:4px; width:100%; padding:4px 12px 6px; background:transparent; border:none; color:#163575; font-size:0.62rem; cursor:pointer; text-align:left; }
+    .btn-publish-block:hover { color:#ffcc00; }
+    .pub-bar { background:#0a1628; border-radius:3px; height:4px; margin:2px 12px 6px; overflow:hidden; display:none; }
+    .pub-bar-fill { height:100%; background:#ffcc00; width:0%; transition:width 0.3s; }
 
     .layout { display: flex; flex: 1; overflow: hidden; }
 
@@ -106,6 +110,31 @@ const BUILD = Date.now();
   </div>
 </dialog>
 
+<!-- Dialog token GitHub -->
+<dialog id="dlg-token">
+  <div class="dlg-title">🔑 Token de GitHub</div>
+  <div class="dlg-note">Para publicar directamente al repo. Ejecútalo una vez en la terminal: <code style="color:#ffcc00;background:#050c1e;padding:2px 5px;border-radius:3px">gh auth token</code> y pega el resultado aquí. Se guarda en este navegador.</div>
+  <div class="dlg-label">Token</div>
+  <input id="dlg-token-val" type="password" class="dlg-input" placeholder="gho_..." />
+  <div class="dlg-actions">
+    <button class="btn-cancel-dlg" id="dlg-token-cancel">Cancelar</button>
+    <button class="btn-ok" id="dlg-token-ok">Guardar y publicar</button>
+  </div>
+</dialog>
+
+<!-- Dialog progreso publicación -->
+<dialog id="dlg-pub">
+  <div class="dlg-title">🚀 Publicando...</div>
+  <div id="dlg-pub-msg" style="color:#2a5090;font-size:0.78rem;margin-bottom:10px">Preparando...</div>
+  <div style="background:#050c1e;border-radius:4px;height:6px;overflow:hidden;margin-bottom:12px">
+    <div id="dlg-pub-bar" style="height:100%;background:#ffcc00;width:0%;transition:width 0.3s"></div>
+  </div>
+  <div id="dlg-pub-log" style="font-size:0.65rem;color:#2a5090;max-height:120px;overflow-y:auto;line-height:1.6"></div>
+  <div class="dlg-actions" style="margin-top:12px">
+    <button class="btn-ok" id="dlg-pub-close" style="display:none">✓ Cerrar</button>
+  </div>
+</dialog>
+
 <!-- Dialog añadir -->
 <dialog id="dlg-add">
   <div class="dlg-title">➕ Añadir item</div>
@@ -148,6 +177,11 @@ const BUILD = Date.now();
   let currentSlug = null;
   let dialogCtx = null;
   let addSlug = null;
+  let pendingPublishBloque = null;
+
+  const GH_TOKEN_KEY = 'el-suelo:gh-token';
+  const REPO = 'tanKobra/el-suelo';
+  const BRANCH = 'master';
 
   // ── Sidebar ────────────────────────────────────────────────────
   const sidebar = document.getElementById('sidebar');
@@ -156,7 +190,7 @@ const BUILD = Date.now();
     if (!groups[s.bloque]) groups[s.bloque] = { nombre: s.bloqueNombre, items: [] };
     groups[s.bloque].items.push(s);
   }
-  for (const [, group] of Object.entries(groups)) {
+  for (const [bloqueSlug, group] of Object.entries(groups)) {
     const sec = document.createElement('div');
     const lbl = document.createElement('div');
     lbl.className = 'sidebar-bloque';
@@ -170,6 +204,18 @@ const BUILD = Date.now();
       btn.addEventListener('click', () => selectSlug(s.slug));
       sec.appendChild(btn);
     }
+    // Publish button per block
+    const pubBtn = document.createElement('button');
+    pubBtn.className = 'btn-publish-block';
+    pubBtn.dataset.bloque = bloqueSlug;
+    pubBtn.textContent = `🚀 Publicar ${group.nombre}`;
+    pubBtn.addEventListener('click', () => iniciarPublicar(bloqueSlug));
+    const pubBarWrap = document.createElement('div');
+    pubBarWrap.className = 'pub-bar';
+    pubBarWrap.id = `pubbar-${bloqueSlug}`;
+    pubBarWrap.innerHTML = `<div class="pub-bar-fill" id="pubfill-${bloqueSlug}"></div>`;
+    sec.appendChild(pubBtn);
+    sec.appendChild(pubBarWrap);
     sidebar.appendChild(sec);
   }
 
@@ -419,6 +465,113 @@ const BUILD = Date.now();
     renderMain(addSlug, resolved[addSlug] || null);
   });
   document.getElementById('dlg-add-cancel').addEventListener('click', () => document.getElementById('dlg-add').close());
+
+  // ── GitHub publish ─────────────────────────────────────────────
+  function buildFinalItems(slug) {
+    const subcat = leafSubcats.find(s => s.slug === slug);
+    const resMap = {};
+    for (const it of (resolved[slug] || [])) resMap[it.nombre] = it.imagen;
+    const slugEdits = edits[slug] || {};
+    const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
+    const allEntries = [
+      ...subcat.nombres.map(n => ({ key: n, orig: n })),
+      ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
+    ];
+    const result = [];
+    for (const { key, orig } of allEntries) {
+      const e = slugEdits[key] || {};
+      if (e.deleted) continue;
+      const nombre = e.nombre ?? orig;
+      const imagen = e.imagen !== undefined ? e.imagen : (resMap[orig] ?? null);
+      if (!imagen) continue;
+      result.push({ nombre, imagen });
+    }
+    return result;
+  }
+
+  async function commitFile(slug, items, token) {
+    const path = `public/data/cine/${slug}.json`;
+    const apiBase = `https://api.github.com/repos/${REPO}/contents/${path}`;
+    const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' };
+    // Get current SHA
+    let sha;
+    try {
+      const r = await fetch(`${apiBase}?ref=${BRANCH}`, { headers });
+      if (r.ok) { const d = await r.json(); sha = d.sha; }
+    } catch {}
+    // Encode content
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(items, null, 2))));
+    const body = { message: `admin: update ${slug}.json [skip ci]`, content, branch: BRANCH, ...(sha ? { sha } : {}) };
+    const res = await fetch(apiBase, { method: 'PUT', headers, body: JSON.stringify(body) });
+    if (!res.ok) { const err = await res.json(); throw new Error(err.message || res.status); }
+  }
+
+  function iniciarPublicar(bloqueSlug) {
+    const token = localStorage.getItem(GH_TOKEN_KEY);
+    if (token) {
+      ejecutarPublicar(bloqueSlug, token);
+    } else {
+      pendingPublishBloque = bloqueSlug;
+      document.getElementById('dlg-token-val').value = '';
+      document.getElementById('dlg-token').showModal();
+      setTimeout(() => document.getElementById('dlg-token-val').focus(), 50);
+    }
+  }
+
+  document.getElementById('dlg-token-ok').addEventListener('click', () => {
+    const token = document.getElementById('dlg-token-val').value.trim();
+    if (!token) return;
+    localStorage.setItem(GH_TOKEN_KEY, token);
+    document.getElementById('dlg-token').close();
+    if (pendingPublishBloque) ejecutarPublicar(pendingPublishBloque, token);
+  });
+  document.getElementById('dlg-token-cancel').addEventListener('click', () => document.getElementById('dlg-token').close());
+
+  async function ejecutarPublicar(bloqueSlug, token) {
+    const group = groups[bloqueSlug];
+    const slugs = group.items.map(s => s.slug);
+    const dlg = document.getElementById('dlg-pub');
+    const msg = document.getElementById('dlg-pub-msg');
+    const bar = document.getElementById('dlg-pub-bar');
+    const log = document.getElementById('dlg-pub-log');
+    const closeBtn = document.getElementById('dlg-pub-close');
+    log.innerHTML = ''; closeBtn.style.display = 'none'; bar.style.width = '0%';
+    dlg.showModal();
+
+    // Load any unresolved JSONs first
+    for (const slug of slugs) {
+      if (!resolved[slug]) {
+        msg.textContent = `Cargando ${slug}...`;
+        try { const r = await fetch(`/data/cine/${slug}.json`); resolved[slug] = r.ok ? await r.json() : []; }
+        catch { resolved[slug] = []; }
+      }
+    }
+
+    let done = 0;
+    for (const slug of slugs) {
+      msg.textContent = `Subiendo ${slug}... (${done + 1}/${slugs.length})`;
+      bar.style.width = `${Math.round((done / slugs.length) * 100)}%`;
+      try {
+        const items = buildFinalItems(slug);
+        await commitFile(slug, items, token);
+        log.innerHTML += `<div style="color:#4cff8f">✓ ${slug} (${items.length} items)</div>`;
+      } catch (e) {
+        log.innerHTML += `<div style="color:#ff6b8a">✗ ${slug}: ${e.message}</div>`;
+      }
+      done++;
+      log.scrollTop = log.scrollHeight;
+    }
+
+    bar.style.width = '100%';
+    msg.textContent = `✅ Publicado. Vercel está desplegando (~1 min)...`;
+    msg.style.color = '#4cff8f';
+    closeBtn.style.display = 'block';
+  }
+
+  document.getElementById('dlg-pub-close').addEventListener('click', () => {
+    document.getElementById('dlg-pub').close();
+    document.getElementById('dlg-pub-msg').style.color = '#2a5090';
+  });
 
   // ── Export ─────────────────────────────────────────────────────
   function exportSlug(slug) {
