@@ -112,6 +112,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     <section id="pantalla-loader" class="flex-1 flex items-center justify-center px-4 hidden">
       <div class="text-center">
         <div class="text-6xl mb-4 wiggle inline-block">🔍</div>
+        <p id="loader-cat-name" class="font-titulo text-xl font-bold text-[#ffcc00] mb-1"></p>
         <h2 class="font-titulo text-2xl font-bold text-[#e8e8ff] mb-2">Cargando imágenes...</h2>
         <p id="loader-progreso" class="text-[#2a5090] text-sm font-titulo">Un momento.</p>
       </div>
@@ -592,6 +593,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     const _slug = cineSlugsJugables[Math.floor(Math.random() * cineSlugsJugables.length)];
     sync({ fase: "cargando", nombreA, nombreB, modo });
     mostrar(pLoader);
+    $("loader-cat-name").textContent = cineSlugsNombres[_slug] ?? _slug;
     try {
       let raw: ItemFloor[];
       raw = await cargarCatalogoCine(_slug);
