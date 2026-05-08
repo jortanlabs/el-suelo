@@ -555,18 +555,41 @@ const BUILD = Date.now();
     }
 
     let done = 0;
+    const publishedSlugs = [];
     for (const slug of slugs) {
       msg.textContent = `Subiendo ${slug}... (${done + 1}/${slugs.length})`;
       bar.style.width = `${Math.round((done / slugs.length) * 100)}%`;
       try {
         const items = buildFinalItems(slug);
         await commitFile(slug, items, token);
+        publishedSlugs.push(slug);
         log.innerHTML += `<div style="color:#4cff8f">✓ ${slug} (${items.length} items)</div>`;
       } catch (e) {
         log.innerHTML += `<div style="color:#ff6b8a">✗ ${slug}: ${e.message}</div>`;
       }
       done++;
       log.scrollTop = log.scrollHeight;
+    }
+
+    // Update publicadas.json with newly published slugs
+    if (publishedSlugs.length > 0) {
+      try {
+        msg.textContent = 'Actualizando lista de categorías publicadas...';
+        const pubPath = 'public/data/publicadas.json';
+        const apiBase = `https://api.github.com/repos/${REPO}/contents/${pubPath}`;
+        const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' };
+        let existing = [], sha;
+        try {
+          const r = await fetch(`${apiBase}?ref=${BRANCH}`, { headers });
+          if (r.ok) { const d = await r.json(); sha = d.sha; existing = JSON.parse(atob(d.content.replace(/\n/g,''))); }
+        } catch {}
+        const merged = [...new Set([...existing, ...publishedSlugs])];
+        const content = btoa(unescape(encodeURIComponent(JSON.stringify(merged, null, 2) + '\n')));
+        await fetch(apiBase, { method: 'PUT', headers, body: JSON.stringify({ message: `admin: update publicadas.json`, content, branch: BRANCH, ...(sha ? { sha } : {}) }) });
+        log.innerHTML += `<div style="color:#4cff8f">✓ publicadas.json actualizado (${merged.length} categorías)</div>`;
+      } catch (e) {
+        log.innerHTML += `<div style="color:#ff6b8a">✗ publicadas.json: ${e.message}</div>`;
+      }
     }
 
     bar.style.width = '100%';

@@ -1,13 +1,14 @@
 ---
 import Base from "../layouts/Base.astro";
 import { subcategorias } from "../data/catalogoCine.ts";
+import publicadas from "../../public/data/publicadas.json";
 
 const cineSlugsJugables = subcategorias
-  .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
+  .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente && (publicadas as string[]).includes(s.slug))
   .map((s) => s.slug);
 const cineSlugsNombres: Record<string, string> = Object.fromEntries(
   subcategorias
-    .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
+    .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente && (publicadas as string[]).includes(s.slug))
     .map((s) => [s.slug, s.nombre])
 );
 const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "d8b48a4d7d6cb146cf1e";

@@ -25,9 +25,10 @@ const cineBloques = bloques.map((b) => ({
     })),
 }));
 
-// Todos los slugs de subcategorías jugables de Cine (para partida rápida aleatoria)
+// Solo slugs aprobados/publicados (los que aparecen en publicadas.json)
+import publicadas from "../../public/data/publicadas.json";
 const cineSlugsJugables = subcategorias
-  .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
+  .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente && (publicadas as string[]).includes(s.slug))
   .map((s) => s.slug);
 ---
 
