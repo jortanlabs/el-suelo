@@ -8,6 +8,7 @@ export interface BloqueMundoInfo {
 }
 
 export const bloquesMundo: BloqueMundoInfo[] = [
+  { slug: "espana",    nombre: "España",    emoji: "🇪🇸" },
   { slug: "geografia", nombre: "Geografía", emoji: "🌍" },
   { slug: "animales",  nombre: "Animales",  emoji: "🦁" },
   { slug: "plantas",   nombre: "Plantas",   emoji: "🌱" },
@@ -16,6 +17,92 @@ export const bloquesMundo: BloqueMundoInfo[] = [
 ];
 
 export const subcategoriasMundo: SubcategoriaNombres[] = [
+
+  // ── ESPAÑA ───────────────────────────────────────────────────────
+  {
+    slug: "espana",
+    nombre: "España",
+    emoji: "🇪🇸",
+    bloque: "espana",
+    bloqueNombre: "España",
+    dataPath: "mundo",
+    esMetaCategoria: true,
+    subcategorias: ["es-ciudades", "es-monumentos", "es-comunidades", "es-gastronomia"],
+  },
+  {
+    slug: "es-ciudades",
+    nombre: "Ciudades de España",
+    emoji: "🏙️",
+    bloque: "espana",
+    bloqueNombre: "España",
+    dataPath: "mundo",
+    nombres: [
+      "Madrid", "Barcelona", "Valencia", "Sevilla", "Zaragoza",
+      "Málaga", "Murcia", "Palma de Mallorca", "Las Palmas de Gran Canaria",
+      "Bilbao", "Alicante", "Córdoba", "Valladolid", "Vigo", "Gijón",
+      "Granada", "A Coruña", "Vitoria-Gasteiz", "Elche", "Santa Cruz de Tenerife",
+      "Oviedo", "Badalona", "Cartagena", "Móstoles", "Jerez de la Frontera",
+      "Sabadell", "Pamplona", "Almería", "Fuenlabrada", "Leganés",
+      "Donostia-San Sebastián", "Burgos", "Santander", "Albacete", "Salamanca",
+      "Logroño", "Toledo", "Cádiz", "Huelva", "Marbella",
+    ],
+  },
+  {
+    slug: "es-monumentos",
+    nombre: "Monumentos de España",
+    emoji: "🏰",
+    bloque: "espana",
+    bloqueNombre: "España",
+    dataPath: "mundo",
+    nombres: [
+      "Sagrada Familia", "Alhambra de Granada", "Catedral de Santiago de Compostela",
+      "Palacio Real de Madrid", "Catedral de Sevilla", "Giralda de Sevilla",
+      "Torre del Oro", "Mezquita de Córdoba", "Acueducto de Segovia",
+      "Castillo de Coca", "Castillo de Belmonte", "Murallas de Ávila",
+      "Ciudad de las Artes y las Ciencias", "Museo del Prado", "Museo Guggenheim Bilbao",
+      "El Escorial", "Valle de los Caídos", "Palau de la Música Catalana",
+      "Casa Milà (La Pedrera)", "Casa Batlló", "Parc Güell",
+      "Teatro Romano de Mérida", "Ruinas de Numancia", "Alcázar de Toledo",
+      "Alcázar de Segovia", "Catedral de Burgos", "Catedral de Toledo",
+      "Monasterio de Montserrat", "Teide", "Caminito del Rey",
+      "Puente Nuevo de Ronda", "Peñón de Gibraltar", "Cabo Finisterre",
+    ],
+  },
+  {
+    slug: "es-comunidades",
+    nombre: "Comunidades Autónomas",
+    emoji: "🗺️",
+    bloque: "espana",
+    bloqueNombre: "España",
+    dataPath: "mundo",
+    nombres: [
+      "Andalucía", "Aragón", "Asturias", "Islas Baleares",
+      "Islas Canarias", "Cantabria", "Castilla-La Mancha", "Castilla y León",
+      "Cataluña", "Comunidad de Madrid", "Comunidad Foral de Navarra",
+      "Comunidad Valenciana", "Extremadura", "Galicia",
+      "País Vasco", "La Rioja", "Región de Murcia",
+      "Ceuta", "Melilla",
+    ],
+  },
+  {
+    slug: "es-gastronomia",
+    nombre: "Gastronomía Española",
+    emoji: "🥘",
+    bloque: "espana",
+    bloqueNombre: "España",
+    dataPath: "mundo",
+    nombres: [
+      "Paella valenciana", "Cocido madrileño", "Gazpacho", "Tortilla española",
+      "Jamón ibérico", "Pulpo a la gallega", "Fabada asturiana",
+      "Patatas bravas", "Croquetas", "Pan con tomate",
+      "Churros con chocolate", "Crema catalana", "Tarta de Santiago",
+      "Salmorejo", "Pisto manchego", "Migas", "Ropa vieja canaria",
+      "Bacalao al pil-pil", "Pintxos", "Morcilla de Burgos",
+      "Horchata", "Sobrasada", "Alioli", "Espinacas con garbanzos",
+      "Potaje de vigilia", "Arroz con leche", "Natillas", "Rosquillas",
+      "Ensaladilla rusa", "Boquerones en vinagre",
+    ],
+  },
 
   // ── GEOGRAFÍA ────────────────────────────────────────────────────
   {
@@ -26,7 +113,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
     bloqueNombre: "Geografía",
     dataPath: "mundo",
     esMetaCategoria: true,
-    subcategorias: ["geo-banderas", "geo-monumentos", "geo-ciudades", "geo-paises", "geo-capitales"],
+    subcategorias: ["geo-banderas", "geo-monumentos", "geo-ciudades", "geo-paises", "geo-capitales", "geo-idiomas"],
   },
   {
     slug: "geo-banderas",
@@ -120,6 +207,32 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Ottawa (Canadá)", "Canberra (Australia)", "Pretoria (Sudáfrica)",
       "El Cairo (Egipto)", "Riad (Arabia Saudí)", "Oslo (Noruega)",
       "Estocolmo (Suecia)", "Helsinki (Finlandia)", "Dublín (Irlanda)",
+    ],
+  },
+
+  {
+    slug: "geo-idiomas",
+    nombre: "Idiomas del Mundo",
+    emoji: "🗣️",
+    bloque: "geografia",
+    bloqueNombre: "Geografía",
+    dataPath: "mundo",
+    nombres: [
+      "Español", "Inglés", "Francés", "Alemán", "Portugués", "Italiano",
+      "Chino mandarín", "Japonés", "Árabe", "Ruso", "Hindi", "Coreano",
+      "Neerlandés", "Polaco", "Sueco", "Turco", "Griego", "Checo",
+      "Rumano", "Húngaro", "Ucraniano", "Hebreo", "Persa (Farsi)",
+      "Indonesio", "Malayo", "Bengalí", "Urdu", "Panyabí",
+      "Swahili", "Vietnamita", "Tailandés", "Filipino (Tagalo)",
+      "Catalán", "Euskera", "Gallego", "Finlandés", "Danés",
+      "Noruego", "Serbio", "Croata", "Búlgaro", "Eslovaco",
+      "Esloveno", "Albanés", "Macedonio", "Lituano", "Letón",
+      "Estonio", "Islandés", "Galés", "Irlandés", "Maltés",
+      "Afrikáans", "Amhárico", "Yoruba", "Hausa", "Zulú",
+      "Tamil", "Telugu", "Kannada", "Marathi", "Gujarati",
+      "Birmano", "Jemer (Camboyano)", "Lao", "Mongol",
+      "Tibetano", "Nepalés", "Cingalés", "Armenio", "Georgiano",
+      "Azerbaiyano", "Uzbeko", "Kazajo", "Pashto",
     ],
   },
 
