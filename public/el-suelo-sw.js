@@ -1,4 +1,4 @@
-const CACHE = 'el-suelo-v2';
+const CACHE = 'el-suelo-v3';
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (e) => {
@@ -15,8 +15,21 @@ self.addEventListener('fetch', (e) => {
   const url = e.request.url;
   if (url.includes('wikidata.org') || url.includes('wikipedia.org') || url.includes('itunes.apple.com')) return;
 
-  // Network-first para archivos de datos: siempre pide la versión más reciente
-  // (publicadas.json y catálogos cambian cuando el admin publica)
+  // Network-first para documentos HTML: siempre la versión más reciente del juego
+  if (e.request.mode === 'navigate') {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          const clone = res.clone();
+          caches.open(CACHE).then(c => c.put(e.request, clone));
+          return res;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // Network-first para archivos de datos (publicadas.json y catálogos cambian al publicar)
   if (url.includes('/data/') && url.endsWith('.json')) {
     e.respondWith(
       fetch(e.request)
@@ -30,7 +43,7 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // Cache-first para el resto (HTML, CSS, JS — tienen hash de contenido)
+  // Cache-first para assets con hash de contenido (JS, CSS, imágenes)
   e.respondWith(
     caches.match(e.request).then(cached => cached ?? fetch(e.request).then(res => {
       const clone = res.clone();
