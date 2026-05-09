@@ -1,0 +1,20 @@
+[
+  { "nombre": "Saque", "imagen": "", "palabraClave": "saque" },
+  { "nombre": "Doble falta", "imagen": "", "palabraClave": "falta" },
+  { "nombre": "Ace", "imagen": "", "palabraClave": "ace" },
+  { "nombre": "Tiebreak", "imagen": "", "palabraClave": "tiebreak" },
+  { "nombre": "Break", "imagen": "", "palabraClave": "break" },
+  { "nombre": "Set", "imagen": "", "palabraClave": "set" },
+  { "nombre": "Volea", "imagen": "", "palabraClave": "volea" },
+  { "nombre": "Smash", "imagen": "", "palabraClave": "smash" },
+  { "nombre": "Globo", "imagen": "", "palabraClave": "globo" },
+  { "nombre": "Dejada", "imagen": "", "palabraClave": "dejada" },
+  { "nombre": "Pista de tierra batida", "imagen": "", "palabraClave": "batida" },
+  { "nombre": "Pista de hierba", "imagen": "", "palabraClave": "hierba" },
+  { "nombre": "Pista dura", "imagen": "", "palabraClave": "dura" },
+  { "nombre": "Red", "imagen": "", "palabraClave": "red" },
+  { "nombre": "Raqueta de tenis", "imagen": "", "palabraClave": "raqueta" },
+  { "nombre": "Ventaja", "imagen": "", "palabraClave": "ventaja" },
+  { "nombre": "Deuce", "imagen": "", "palabraClave": "deuce" },
+  { "nombre": "Love", "imagen": "", "palabraClave": "love" }
+]

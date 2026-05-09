@@ -1,0 +1,18 @@
+[
+  { "nombre": "Pelotón", "imagen": "", "palabraClave": "peloton" },
+  { "nombre": "Escapada", "imagen": "", "palabraClave": "escapada" },
+  { "nombre": "Contrarreloj", "imagen": "", "palabraClave": "contrarreloj" },
+  { "nombre": "Maillot amarillo", "imagen": "", "palabraClave": "amarillo" },
+  { "nombre": "Maillot verde", "imagen": "", "palabraClave": "verde" },
+  { "nombre": "Maillot de puntos", "imagen": "", "palabraClave": "puntos" },
+  { "nombre": "Maillot blanco", "imagen": "", "palabraClave": "blanco" },
+  { "nombre": "Gregario", "imagen": "", "palabraClave": "gregario" },
+  { "nombre": "Puerto de montaña", "imagen": "", "palabraClave": "montana" },
+  { "nombre": "Sprint", "imagen": "", "palabraClave": "sprint" },
+  { "nombre": "Etapa", "imagen": "", "palabraClave": "etapa" },
+  { "nombre": "Bicicleta de carretera", "imagen": "", "palabraClave": "carretera" },
+  { "nombre": "Bidón", "imagen": "", "palabraClave": "bidon" },
+  { "nombre": "Domestique", "imagen": "", "palabraClave": "domestique" },
+  { "nombre": "Escalador", "imagen": "", "palabraClave": "escalador" },
+  { "nombre": "Rodador", "imagen": "", "palabraClave": "rodador" }
+]

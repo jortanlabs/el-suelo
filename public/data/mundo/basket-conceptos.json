@@ -1,0 +1,22 @@
+[
+  { "nombre": "Canasta", "imagen": "", "palabraClave": "canasta" },
+  { "nombre": "Triple", "imagen": "", "palabraClave": "triple" },
+  { "nombre": "Mate", "imagen": "", "palabraClave": "mate" },
+  { "nombre": "Tiro libre", "imagen": "", "palabraClave": "libre" },
+  { "nombre": "Falta personal", "imagen": "", "palabraClave": "personal" },
+  { "nombre": "Falta técnica", "imagen": "", "palabraClave": "tecnica" },
+  { "nombre": "Rebote", "imagen": "", "palabraClave": "rebote" },
+  { "nombre": "Tapón", "imagen": "", "palabraClave": "tapon" },
+  { "nombre": "Asistencia", "imagen": "", "palabraClave": "asistencia" },
+  { "nombre": "Base", "imagen": "", "palabraClave": "base" },
+  { "nombre": "Alero", "imagen": "", "palabraClave": "alero" },
+  { "nombre": "Pívot", "imagen": "", "palabraClave": "pivot" },
+  { "nombre": "Zona", "imagen": "", "palabraClave": "zona" },
+  { "nombre": "Pick and roll", "imagen": "", "palabraClave": "roll" },
+  { "nombre": "Fast break", "imagen": "", "palabraClave": "break" },
+  { "nombre": "Tiempo muerto", "imagen": "", "palabraClave": "muerto" },
+  { "nombre": "Cuarto", "imagen": "", "palabraClave": "cuarto" },
+  { "nombre": "Prórroga", "imagen": "", "palabraClave": "prorroga" },
+  { "nombre": "Tablero", "imagen": "", "palabraClave": "tablero" },
+  { "nombre": "Aro", "imagen": "", "palabraClave": "aro" }
+]

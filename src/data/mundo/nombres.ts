@@ -427,7 +427,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
     bloqueNombre: "Baloncesto",
     dataPath: "mundo",
     esMetaCategoria: true,
-    subcategorias: ["basket-nba", "basket-acb", "basket-leyendas"],
+    subcategorias: ["basket-nba", "basket-acb", "basket-leyendas", "basket-conceptos"],
   },
   {
     slug: "basket-nba",
@@ -477,6 +477,20 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Scottie Pippen", "Allen Iverson",
     ],
   },
+  {
+    slug: "basket-conceptos",
+    nombre: "Conceptos del baloncesto",
+    emoji: "📋",
+    bloque: "baloncesto",
+    bloqueNombre: "Baloncesto",
+    dataPath: "mundo",
+    nombres: [
+      "Canasta", "Triple", "Mate", "Tiro libre", "Falta personal",
+      "Falta técnica", "Rebote", "Tapón", "Asistencia", "Base",
+      "Alero", "Pívot", "Zona", "Pick and roll", "Fast break",
+      "Tiempo muerto", "Cuarto", "Prórroga", "Tablero", "Aro",
+    ],
+  },
 
   // ── TENIS ────────────────────────────────────────────────────────
   {
@@ -487,7 +501,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
     bloqueNombre: "Tenis",
     dataPath: "mundo",
     esMetaCategoria: true,
-    subcategorias: ["tenis-jugadores", "tenis-torneos"],
+    subcategorias: ["tenis-jugadores", "tenis-torneos", "tenis-conceptos"],
   },
   {
     slug: "tenis-jugadores",
@@ -518,6 +532,20 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Wimbledon", "Roland Garros", "US Open de tenis", "Abierto de Australia",
       "Copa Davis", "Torneo de Indian Wells", "Másters de Madrid",
       "Torneo de Miami", "ATP Finals", "Copa Billie Jean King",
+    ],
+  },
+  {
+    slug: "tenis-conceptos",
+    nombre: "Conceptos del tenis",
+    emoji: "📋",
+    bloque: "tenis",
+    bloqueNombre: "Tenis",
+    dataPath: "mundo",
+    nombres: [
+      "Saque", "Doble falta", "Ace", "Tiebreak", "Break", "Set",
+      "Volea", "Smash", "Globo", "Dejada",
+      "Pista de tierra batida", "Pista de hierba", "Pista dura",
+      "Red", "Raqueta de tenis", "Ventaja", "Deuce", "Love",
     ],
   },
 
@@ -570,7 +598,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
     bloqueNombre: "Ciclismo",
     dataPath: "mundo",
     esMetaCategoria: true,
-    subcategorias: ["ciclismo-leyendas", "ciclismo-carreras"],
+    subcategorias: ["ciclismo-leyendas", "ciclismo-carreras", "ciclismo-conceptos"],
   },
   {
     slug: "ciclismo-leyendas",
@@ -604,6 +632,20 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Clásica de San Sebastián", "Critérium du Dauphiné", "Tirreno-Adriático",
     ],
   },
+  {
+    slug: "ciclismo-conceptos",
+    nombre: "Conceptos del ciclismo",
+    emoji: "📋",
+    bloque: "ciclismo",
+    bloqueNombre: "Ciclismo",
+    dataPath: "mundo",
+    nombres: [
+      "Pelotón", "Escapada", "Contrarreloj", "Maillot amarillo", "Maillot verde",
+      "Maillot de puntos", "Maillot blanco", "Gregario", "Puerto de montaña",
+      "Sprint", "Etapa", "Bicicleta de carretera", "Bidón",
+      "Domestique", "Escalador", "Rodador",
+    ],
+  },
 
   // ── MOTOR ────────────────────────────────────────────────────────
   {
@@ -614,7 +656,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
     bloqueNombre: "Motor",
     dataPath: "mundo",
     esMetaCategoria: true,
-    subcategorias: ["f1-pilotos", "f1-equipos"],
+    subcategorias: ["f1-pilotos", "f1-equipos", "motor-conceptos"],
   },
   {
     slug: "f1-pilotos",
@@ -646,6 +688,20 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Aston Martin", "Williams", "Alpine", "Haas",
       "Alfa Romeo", "AlphaTauri", "Lotus F1",
       "Tyrrell", "Brabham", "BRM",
+    ],
+  },
+  {
+    slug: "motor-conceptos",
+    nombre: "Conceptos del motor",
+    emoji: "📋",
+    bloque: "motor",
+    bloqueNombre: "Motor",
+    dataPath: "mundo",
+    nombres: [
+      "Pole position", "Vuelta rápida", "Pit stop", "Safety car", "DRS",
+      "Bandera a cuadros", "Bandera roja", "Bandera amarilla", "Chicane",
+      "Monoplaza", "Neumático blando", "Neumático duro", "Parrilla de salida",
+      "Aerodinámica", "Alerón delantero", "Alerón trasero", "Parc fermé", "Box",
     ],
   },
 

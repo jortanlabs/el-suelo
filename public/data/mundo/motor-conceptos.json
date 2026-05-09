@@ -1,0 +1,20 @@
+[
+  { "nombre": "Pole position", "imagen": "", "palabraClave": "position" },
+  { "nombre": "Vuelta rápida", "imagen": "", "palabraClave": "rapida" },
+  { "nombre": "Pit stop", "imagen": "", "palabraClave": "stop" },
+  { "nombre": "Safety car", "imagen": "", "palabraClave": "car" },
+  { "nombre": "DRS", "imagen": "", "palabraClave": "drs" },
+  { "nombre": "Bandera a cuadros", "imagen": "", "palabraClave": "cuadros" },
+  { "nombre": "Bandera roja", "imagen": "", "palabraClave": "roja" },
+  { "nombre": "Bandera amarilla", "imagen": "", "palabraClave": "amarilla" },
+  { "nombre": "Chicane", "imagen": "", "palabraClave": "chicane" },
+  { "nombre": "Monoplaza", "imagen": "", "palabraClave": "monoplaza" },
+  { "nombre": "Neumático blando", "imagen": "", "palabraClave": "blando" },
+  { "nombre": "Neumático duro", "imagen": "", "palabraClave": "duro" },
+  { "nombre": "Parrilla de salida", "imagen": "", "palabraClave": "salida" },
+  { "nombre": "Aerodinámica", "imagen": "", "palabraClave": "aerodinamica" },
+  { "nombre": "Alerón delantero", "imagen": "", "palabraClave": "delantero" },
+  { "nombre": "Alerón trasero", "imagen": "", "palabraClave": "trasero" },
+  { "nombre": "Parc fermé", "imagen": "", "palabraClave": "ferme" },
+  { "nombre": "Box", "imagen": "", "palabraClave": "box" }
+]
