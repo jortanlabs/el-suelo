@@ -1,1 +1,267 @@
-[]
+[
+  {
+    "nombre": "Paella valenciana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/01_Paella_Valenciana_original.jpg/330px-01_Paella_Valenciana_original.jpg",
+    "palabraClave": "valenciana"
+  },
+  {
+    "nombre": "Cocido madrileño",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/CocidoMadrile%C3%B1o.jpg/330px-CocidoMadrile%C3%B1o.jpg",
+    "palabraClave": "madrileno"
+  },
+  {
+    "nombre": "Gazpacho",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Gazpacho_Cazuela_Barro.jpg/330px-Gazpacho_Cazuela_Barro.jpg",
+    "palabraClave": "gazpacho"
+  },
+  {
+    "nombre": "Tortilla española",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Tortilla_de_Patatas_%28Corte_transversal%29.jpg/330px-Tortilla_de_Patatas_%28Corte_transversal%29.jpg",
+    "palabraClave": "espanola"
+  },
+  {
+    "nombre": "Jamón ibérico",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jam%C3%B3n_bellota_Mu%C3%B1ana.jpeg/330px-Jam%C3%B3n_bellota_Mu%C3%B1ana.jpeg",
+    "palabraClave": "iberico"
+  },
+  {
+    "nombre": "Pulpo a la gallega",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Raci%C3%B3nPulpo.jpg/330px-Raci%C3%B3nPulpo.jpg",
+    "palabraClave": "gallega"
+  },
+  {
+    "nombre": "Fabada asturiana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Fabada_en_cazuela_de_barro.jpg/330px-Fabada_en_cazuela_de_barro.jpg",
+    "palabraClave": "asturiana"
+  },
+  {
+    "nombre": "Patatas bravas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Patatas_bravas_madrid.jpg/330px-Patatas_bravas_madrid.jpg",
+    "palabraClave": "bravas"
+  },
+  {
+    "nombre": "Croquetas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Croquetas_Caseras_%287068664101%29.jpg/330px-Croquetas_Caseras_%287068664101%29.jpg",
+    "palabraClave": "croquetas"
+  },
+  {
+    "nombre": "Pan con tomate",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Pan_con_Tumaca.jpg/330px-Pan_con_Tumaca.jpg",
+    "palabraClave": "tomate"
+  },
+  {
+    "nombre": "Churros con chocolate",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Chocolate_con_churros_de_lazo.jpg/330px-Chocolate_con_churros_de_lazo.jpg",
+    "palabraClave": "chocolate"
+  },
+  {
+    "nombre": "Crema catalana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Food_in_Catalonia_06.jpg/330px-Food_in_Catalonia_06.jpg",
+    "palabraClave": "catalana"
+  },
+  {
+    "nombre": "Tarta de Santiago",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Tarta_de_Santiago-2009.jpg/330px-Tarta_de_Santiago-2009.jpg",
+    "palabraClave": "santiago"
+  },
+  {
+    "nombre": "Salmorejo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Salmorejo_cordobes.jpg/330px-Salmorejo_cordobes.jpg",
+    "palabraClave": "salmorejo"
+  },
+  {
+    "nombre": "Pisto manchego",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Pisto.jpg/330px-Pisto.jpg",
+    "palabraClave": "manchego"
+  },
+  {
+    "nombre": "Migas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Migas.PNG/330px-Migas.PNG",
+    "palabraClave": "migas"
+  },
+  {
+    "nombre": "Ropa vieja canaria",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ropa_vieja_Canarian_style_in_Fataga%2C_Gran_Canaria%2C_the_Canary_Islands.JPG/330px-Ropa_vieja_Canarian_style_in_Fataga%2C_Gran_Canaria%2C_the_Canary_Islands.JPG",
+    "palabraClave": "canaria"
+  },
+  {
+    "nombre": "Bacalao al pil-pil",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bacalao_al_Pil_Pil_%28Vizcaya%29.jpg/330px-Bacalao_al_Pil_Pil_%28Vizcaya%29.jpg",
+    "palabraClave": "pilpil"
+  },
+  {
+    "nombre": "Pintxos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Barra_de_pintxos_Donosti_01.JPG/330px-Barra_de_pintxos_Donosti_01.JPG",
+    "palabraClave": "pintxos"
+  },
+  {
+    "nombre": "Morcilla de Burgos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Morcilla_de_Burgos_-_2009.jpg/330px-Morcilla_de_Burgos_-_2009.jpg",
+    "palabraClave": "burgos"
+  },
+  {
+    "nombre": "Horchata",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Quart_de_Poblet_-_Centre_Cultural_El_Casino_05.jpg/330px-Quart_de_Poblet_-_Centre_Cultural_El_Casino_05.jpg",
+    "palabraClave": "horchata"
+  },
+  {
+    "nombre": "Sobrasada",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Sobrassada.jpg/330px-Sobrassada.jpg",
+    "palabraClave": "sobrasada"
+  },
+  {
+    "nombre": "Alioli",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Allioli.jpg/330px-Allioli.jpg",
+    "palabraClave": "alioli"
+  },
+  {
+    "nombre": "Espinacas con garbanzos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Potaje_de_vigilia.jpg/330px-Potaje_de_vigilia.jpg",
+    "palabraClave": "garbanzos"
+  },
+  {
+    "nombre": "Arroz con leche",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Arroz_con_leche.png/330px-Arroz_con_leche.png",
+    "palabraClave": "leche"
+  },
+  {
+    "nombre": "Natillas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Bowl_of_natillas_at_Madrid.jpg/330px-Bowl_of_natillas_at_Madrid.jpg",
+    "palabraClave": "natillas"
+  },
+  {
+    "nombre": "Rosquillas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Rosquillas_listas.JPG/330px-Rosquillas_listas.JPG",
+    "palabraClave": "rosquillas"
+  },
+  {
+    "nombre": "Ensaladilla rusa",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg/330px-%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg",
+    "palabraClave": "rusa"
+  },
+  {
+    "nombre": "Boquerones en vinagre",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Boquerones_en_vinagre-Madrid.jpg/330px-Boquerones_en_vinagre-Madrid.jpg",
+    "palabraClave": "vinagre"
+  },
+  {
+    "nombre": "Fideuà",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Fideua_-_xurde.jpg/330px-Fideua_-_xurde.jpg",
+    "palabraClave": "fideua"
+  },
+  {
+    "nombre": "Cochinillo asado",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cochinillo_asado-Madrid.jpg/330px-Cochinillo_asado-Madrid.jpg",
+    "palabraClave": "asado"
+  },
+  {
+    "nombre": "Lechazo asado",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Plato_de_lechazo%2C_Valladolid.jpg/330px-Plato_de_lechazo%2C_Valladolid.jpg",
+    "palabraClave": "asado"
+  },
+  {
+    "nombre": "Papas arrugadas con mojo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Papasarrugadas.jpg/330px-Papasarrugadas.jpg",
+    "palabraClave": "mojo"
+  },
+  {
+    "nombre": "Caldo gallego",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Caldo_galego%2C_Galiza.jpg/330px-Caldo_galego%2C_Galiza.jpg",
+    "palabraClave": "gallego"
+  },
+  {
+    "nombre": "Empanada gallega",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Empanadas_gallegas-diversia.jpg/330px-Empanadas_gallegas-diversia.jpg",
+    "palabraClave": "gallega"
+  },
+  {
+    "nombre": "Ajoblanco",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Ajo_blanco.jpg/330px-Ajo_blanco.jpg",
+    "palabraClave": "ajoblanco"
+  },
+  {
+    "nombre": "Porra antequerana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Porra_antequerana.jpg/330px-Porra_antequerana.jpg",
+    "palabraClave": "antequerana"
+  },
+  {
+    "nombre": "Percebes",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Pollicipes_pollicipes.jpg/330px-Pollicipes_pollicipes.jpg",
+    "palabraClave": "percebes"
+  },
+  {
+    "nombre": "Navajas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Bandera_de_Navajas.svg/langes-330px-Bandera_de_Navajas.svg.png",
+    "palabraClave": "navajas"
+  },
+  {
+    "nombre": "Calamares a la romana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Calamares_Romana_0984.jpg/330px-Calamares_Romana_0984.jpg",
+    "palabraClave": "romana"
+  },
+  {
+    "nombre": "Pimientos de Padrón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Pementos_de_Padron.jpg/330px-Pementos_de_Padron.jpg",
+    "palabraClave": "padron"
+  },
+  {
+    "nombre": "Montaditos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/100_Montaditos.png/330px-100_Montaditos.png",
+    "palabraClave": "montaditos"
+  },
+  {
+    "nombre": "Leche frita",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Leche_frita.jpg/330px-Leche_frita.jpg",
+    "palabraClave": "frita"
+  },
+  {
+    "nombre": "Torrijas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bandera_de_Torrijas_%28BOA%29.svg/langes-330px-Bandera_de_Torrijas_%28BOA%29.svg.png",
+    "palabraClave": "torrijas"
+  },
+  {
+    "nombre": "Roscón de Reyes",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Roscon_de_Reyes.jpg/330px-Roscon_de_Reyes.jpg",
+    "palabraClave": "reyes"
+  },
+  {
+    "nombre": "Polvorones",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Polvor%C3%B3n_de_Estepa.jpg/330px-Polvor%C3%B3n_de_Estepa.jpg",
+    "palabraClave": "polvorones"
+  },
+  {
+    "nombre": "Turrón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Turr%C3%B3n_de_Alicante_%28Casa_Mira%29.jpg/330px-Turr%C3%B3n_de_Alicante_%28Casa_Mira%29.jpg",
+    "palabraClave": "turron"
+  },
+  {
+    "nombre": "Mazapán",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mazap%C3%A1n-2009.jpg/330px-Mazap%C3%A1n-2009.jpg",
+    "palabraClave": "mazapan"
+  },
+  {
+    "nombre": "Queimada",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Queimada.jpg/330px-Queimada.jpg",
+    "palabraClave": "queimada"
+  },
+  {
+    "nombre": "Licor de hierbas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Licoresdehierbas.jpg/330px-Licoresdehierbas.jpg",
+    "palabraClave": "hierbas"
+  },
+  {
+    "nombre": "Jamón serrano",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/SIM%C3%93N_MART%C3%8DN_GUIJUELO.JPG/330px-SIM%C3%93N_MART%C3%8DN_GUIJUELO.JPG",
+    "palabraClave": "serrano"
+  },
+  {
+    "nombre": "Queso manchego",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Manchego.jpg/330px-Manchego.jpg",
+    "palabraClave": "manchego"
+  },
+  {
+    "nombre": "Berberechos al vapor",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Coque_blanche_%28Cerastoderma_edule%29.jpg/330px-Coque_blanche_%28Cerastoderma_edule%29.jpg",
+    "palabraClave": "vapor"
+  }
+]

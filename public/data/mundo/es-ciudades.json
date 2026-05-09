@@ -158,5 +158,105 @@
   {
     "nombre": "Marbella",
     "imagen": "https://tevienes.com/cities/marbella-2.webp"
+  },
+  {
+    "nombre": "Tarragona",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bandera_de_Tarragona.svg/langes-330px-Bandera_de_Tarragona.svg.png",
+    "palabraClave": "tarragona"
+  },
+  {
+    "nombre": "Girona",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Bandera_de_Girona.svg/langes-330px-Bandera_de_Girona.svg.png",
+    "palabraClave": "girona"
+  },
+  {
+    "nombre": "Lleida",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Flag_of_Lleida.svg/langes-330px-Flag_of_Lleida.svg.png",
+    "palabraClave": "lleida"
+  },
+  {
+    "nombre": "Castellón de la Plana",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bandera_de_Castell%C3%B3_de_la_Plana-2.svg/langes-330px-Bandera_de_Castell%C3%B3_de_la_Plana-2.svg.png",
+    "palabraClave": "plana"
+  },
+  {
+    "nombre": "Badajoz",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bandera_de_Badajoz.svg/langes-330px-Bandera_de_Badajoz.svg.png",
+    "palabraClave": "badajoz"
+  },
+  {
+    "nombre": "Pontevedra",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Bandera_de_Pontevedra.svg/langes-330px-Bandera_de_Pontevedra.svg.png",
+    "palabraClave": "pontevedra"
+  },
+  {
+    "nombre": "Lugo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bandera_de_Lugo.svg/langes-330px-Bandera_de_Lugo.svg.png",
+    "palabraClave": "lugo"
+  },
+  {
+    "nombre": "Ourense",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bandera_de_Orense.svg/langes-330px-Bandera_de_Orense.svg.png",
+    "palabraClave": "ourense"
+  },
+  {
+    "nombre": "Ferrol",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bandera_de_Ferrol.svg/langes-330px-Bandera_de_Ferrol.svg.png",
+    "palabraClave": "ferrol"
+  },
+  {
+    "nombre": "Alcalá de Henares",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bandera_de_Alcal%C3%A1_de_Henares.svg/langes-330px-Bandera_de_Alcal%C3%A1_de_Henares.svg.png",
+    "palabraClave": "henares"
+  },
+  {
+    "nombre": "Getafe",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bandera_de_Getafe.svg/langes-330px-Bandera_de_Getafe.svg.png",
+    "palabraClave": "getafe"
+  },
+  {
+    "nombre": "Alcorcón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Alcorc%C3%B3n.svg/langes-330px-Flag_of_Alcorc%C3%B3n.svg.png",
+    "palabraClave": "alcorcon"
+  },
+  {
+    "nombre": "Ronda",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Bandera_oficiosa_de_Ronda.svg/langes-330px-Bandera_oficiosa_de_Ronda.svg.png",
+    "palabraClave": "ronda"
+  },
+  {
+    "nombre": "Ibiza",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ibiza_ISS035-E-007431.jpg/330px-Ibiza_ISS035-E-007431.jpg",
+    "palabraClave": "ibiza"
+  },
+  {
+    "nombre": "Ceuta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ceuta_desde_el_Monte_Hacho%2C_2008.jpg/330px-Ceuta_desde_el_Monte_Hacho%2C_2008.jpg",
+    "palabraClave": "ceuta"
+  },
+  {
+    "nombre": "Melilla",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Frente_de_la_Marina%2C_Melilla_la_Vieja_%282%29.jpg/330px-Frente_de_la_Marina%2C_Melilla_la_Vieja_%282%29.jpg",
+    "palabraClave": "melilla"
+  },
+  {
+    "nombre": "Arrecife",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Isla_Providencia_Colombia_by_Luis_Barreto.png/330px-Isla_Providencia_Colombia_by_Luis_Barreto.png",
+    "palabraClave": "arrecife"
+  },
+  {
+    "nombre": "Santiago de Compostela",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flag_of_Santiago_de_Compostela.svg/langes-330px-Flag_of_Santiago_de_Compostela.svg.png",
+    "palabraClave": "compostela"
+  },
+  {
+    "nombre": "León",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/330px-002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+    "palabraClave": "leon"
+  },
+  {
+    "nombre": "Teruel",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bandera_de_Teruel.svg/langes-330px-Bandera_de_Teruel.svg.png",
+    "palabraClave": "teruel"
   }
 ]
