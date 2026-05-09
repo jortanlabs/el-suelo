@@ -1,0 +1,19 @@
+[
+  { "nombre": "Birdie", "imagen": "", "palabraClave": "birdie" },
+  { "nombre": "Eagle", "imagen": "", "palabraClave": "eagle" },
+  { "nombre": "Bogey", "imagen": "", "palabraClave": "bogey" },
+  { "nombre": "Par", "imagen": "", "palabraClave": "par" },
+  { "nombre": "Hoyo en uno", "imagen": "", "palabraClave": "uno" },
+  { "nombre": "Albatros", "imagen": "", "palabraClave": "albatros" },
+  { "nombre": "Bunker", "imagen": "", "palabraClave": "bunker" },
+  { "nombre": "Green", "imagen": "", "palabraClave": "green" },
+  { "nombre": "Fairway", "imagen": "", "palabraClave": "fairway" },
+  { "nombre": "Rough", "imagen": "", "palabraClave": "rough" },
+  { "nombre": "Caddie", "imagen": "", "palabraClave": "caddie" },
+  { "nombre": "Driver", "imagen": "", "palabraClave": "driver" },
+  { "nombre": "Putter", "imagen": "", "palabraClave": "putter" },
+  { "nombre": "Handicap", "imagen": "", "palabraClave": "handicap" },
+  { "nombre": "Campo de golf", "imagen": "", "palabraClave": "golf" },
+  { "nombre": "Bandera del hoyo", "imagen": "", "palabraClave": "hoyo" },
+  { "nombre": "Wedge", "imagen": "", "palabraClave": "wedge" }
+]

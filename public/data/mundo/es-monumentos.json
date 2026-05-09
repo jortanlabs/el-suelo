@@ -122,98 +122,79 @@
   },
   {
     "nombre": "Torre de Hércules",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Espa%C3%B1aLoc.svg/langes-330px-Espa%C3%B1aLoc.svg.png",
-    "palabraClave": "hercules"
+    "imagen": ""
   },
   {
     "nombre": "Murallas de Lugo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Muralla.Lugo.Galicia.jpg/330px-Muralla.Lugo.Galicia.jpg",
-    "palabraClave": "lugo"
+    "imagen": ""
   },
   {
     "nombre": "Catedral de Valencia",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Valencia_cathedral_2022_-_north_fa%C3%A7ade_dawn.jpg/330px-Valencia_cathedral_2022_-_north_fa%C3%A7ade_dawn.jpg",
-    "palabraClave": "valencia"
+    "imagen": ""
   },
   {
     "nombre": "Puente Romano de Córdoba",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Puente_Romano_Cordoba.jpg/330px-Puente_Romano_Cordoba.jpg",
-    "palabraClave": "cordoba"
+    "imagen": ""
   },
   {
     "nombre": "Castillo de Peñafiel",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Valladolid-loc.svg/langes-330px-Valladolid-loc.svg.png",
-    "palabraClave": "penafiel"
+    "imagen": ""
   },
   {
     "nombre": "Anfiteatro Romano de Tarragona",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amphith%C3%A9%C3%A2tre_de_Tarragona.jpg/330px-Amphith%C3%A9%C3%A2tre_de_Tarragona.jpg",
-    "palabraClave": "tarragona"
+    "imagen": ""
   },
   {
     "nombre": "Templo de Debod",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Templo_de_Debod_in_Madrid.jpg/330px-Templo_de_Debod_in_Madrid.jpg",
-    "palabraClave": "debod"
+    "imagen": ""
   },
   {
     "nombre": "Palacio Real de Aranjuez",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Palacio_Real_de_Aranjuez_%285%29.jpg/330px-Palacio_Real_de_Aranjuez_%285%29.jpg",
-    "palabraClave": "aranjuez"
+    "imagen": ""
   },
   {
     "nombre": "Catedral de Ávila",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Avila_Cathedral_2023_-_West_fa%C3%A7ade.jpg/330px-Avila_Cathedral_2023_-_West_fa%C3%A7ade.jpg",
-    "palabraClave": "avila"
+    "imagen": ""
   },
   {
     "nombre": "Catedral de Salamanca",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/WLM14ES_-_Catedral_Nueva_de_Salamanca._-_julianrdc_edited.jpg/330px-WLM14ES_-_Catedral_Nueva_de_Salamanca._-_julianrdc_edited.jpg",
-    "palabraClave": "salamanca"
+    "imagen": ""
   },
   {
     "nombre": "Monasterio de Poblet",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Monestir_de_Poblet.JPG/330px-Monestir_de_Poblet.JPG",
-    "palabraClave": "poblet"
+    "imagen": ""
   },
   {
     "nombre": "Castillo de Javier",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Castillo_de_Javier_en_Javier.JPG/330px-Castillo_de_Javier_en_Javier.JPG",
-    "palabraClave": "javier"
+    "imagen": ""
   },
   {
     "nombre": "Basílica del Pilar",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Zaragoza_-_Basilica_de_Nuestra_Se%C3%B1ora_del_Pilar_01.jpg/330px-Zaragoza_-_Basilica_de_Nuestra_Se%C3%B1ora_del_Pilar_01.jpg",
-    "palabraClave": "pilar"
+    "imagen": ""
   },
   {
     "nombre": "Palau Güell",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Palau_G%C3%BCell_Gaud%C3%AD.jpg/330px-Palau_G%C3%BCell_Gaud%C3%AD.jpg",
-    "palabraClave": "guell"
+    "imagen": ""
   },
   {
     "nombre": "Fortaleza de la Mota",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Fortaleza_de_la_Mota_7.jpg/330px-Fortaleza_de_la_Mota_7.jpg",
-    "palabraClave": "mota"
+    "imagen": ""
   },
   {
     "nombre": "Alcazaba de Málaga",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Malaga_Alcazaba_25-9-2007a.JPG/330px-Malaga_Alcazaba_25-9-2007a.JPG",
-    "palabraClave": "malaga"
+    "imagen": ""
   },
   {
     "nombre": "Castillo de Almansa",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Castillo_de_Almansa_sobre_el_cerro_del_Aguila.jpg/330px-Castillo_de_Almansa_sobre_el_cerro_del_Aguila.jpg",
-    "palabraClave": "almansa"
+    "imagen": ""
   },
   {
     "nombre": "Monasterio de Yuste",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Monasterio_de_San_Jer%C3%B3nimo_%28Cuacos_de_Yuste-C%C3%A1ceres%29.jpg/330px-Monasterio_de_San_Jer%C3%B3nimo_%28Cuacos_de_Yuste-C%C3%A1ceres%29.jpg",
-    "palabraClave": "yuste"
+    "imagen": ""
   },
   {
     "nombre": "Castillo de Gormaz",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Gormaz%2C_Fortaleza_califal_p%C3%B1a.jpg/330px-Gormaz%2C_Fortaleza_califal_p%C3%B1a.jpg",
-    "palabraClave": "gormaz"
+    "imagen": ""
   },
   {
     "nombre": "Valle de los Caídos",

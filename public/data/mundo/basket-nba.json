@@ -1,0 +1,22 @@
+[
+  { "nombre": "Chicago Bulls", "imagen": "", "palabraClave": "bulls" },
+  { "nombre": "Los Angeles Lakers", "imagen": "", "palabraClave": "lakers" },
+  { "nombre": "Boston Celtics", "imagen": "", "palabraClave": "celtics" },
+  { "nombre": "Golden State Warriors", "imagen": "", "palabraClave": "warriors" },
+  { "nombre": "Miami Heat", "imagen": "", "palabraClave": "heat" },
+  { "nombre": "San Antonio Spurs", "imagen": "", "palabraClave": "spurs" },
+  { "nombre": "New York Knicks", "imagen": "", "palabraClave": "knicks" },
+  { "nombre": "Dallas Mavericks", "imagen": "", "palabraClave": "mavericks" },
+  { "nombre": "Phoenix Suns", "imagen": "", "palabraClave": "suns" },
+  { "nombre": "Brooklyn Nets", "imagen": "", "palabraClave": "nets" },
+  { "nombre": "Milwaukee Bucks", "imagen": "", "palabraClave": "bucks" },
+  { "nombre": "Philadelphia 76ers", "imagen": "", "palabraClave": "76ers" },
+  { "nombre": "Oklahoma City Thunder", "imagen": "", "palabraClave": "thunder" },
+  { "nombre": "Denver Nuggets", "imagen": "", "palabraClave": "nuggets" },
+  { "nombre": "Houston Rockets", "imagen": "", "palabraClave": "rockets" },
+  { "nombre": "Orlando Magic", "imagen": "", "palabraClave": "magic" },
+  { "nombre": "Los Angeles Clippers", "imagen": "", "palabraClave": "clippers" },
+  { "nombre": "Portland Trail Blazers", "imagen": "", "palabraClave": "blazers" },
+  { "nombre": "Toronto Raptors", "imagen": "", "palabraClave": "raptors" },
+  { "nombre": "Utah Jazz", "imagen": "", "palabraClave": "jazz" }
+]

@@ -1,0 +1,14 @@
+[
+  { "nombre": "Real Madrid Basket", "imagen": "", "palabraClave": "madrid" },
+  { "nombre": "FC Barcelona Basket", "imagen": "", "palabraClave": "barcelona" },
+  { "nombre": "Valencia Basket", "imagen": "", "palabraClave": "valencia" },
+  { "nombre": "Unicaja Málaga", "imagen": "", "palabraClave": "malaga" },
+  { "nombre": "TD Systems Baskonia", "imagen": "", "palabraClave": "baskonia" },
+  { "nombre": "Gran Canaria Claro", "imagen": "", "palabraClave": "canaria" },
+  { "nombre": "Joventut Badalona", "imagen": "", "palabraClave": "badalona" },
+  { "nombre": "UCAM Murcia", "imagen": "", "palabraClave": "murcia" },
+  { "nombre": "Morabanc Andorra", "imagen": "", "palabraClave": "andorra" },
+  { "nombre": "Río Breogán", "imagen": "", "palabraClave": "breoGan" },
+  { "nombre": "Casademont Zaragoza", "imagen": "", "palabraClave": "zaragoza" },
+  { "nombre": "Bilbao Basket", "imagen": "", "palabraClave": "bilbao" }
+]

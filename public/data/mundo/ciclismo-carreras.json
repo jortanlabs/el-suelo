@@ -1,0 +1,14 @@
+[
+  { "nombre": "Tour de Francia", "imagen": "", "palabraClave": "francia" },
+  { "nombre": "Vuelta a España", "imagen": "", "palabraClave": "espana" },
+  { "nombre": "Giro de Italia", "imagen": "", "palabraClave": "italia" },
+  { "nombre": "París-Roubaix", "imagen": "", "palabraClave": "roubaix" },
+  { "nombre": "Lieja-Bastoña-Lieja", "imagen": "", "palabraClave": "lieja" },
+  { "nombre": "La Flèche Wallonne", "imagen": "", "palabraClave": "wallonne" },
+  { "nombre": "Milán-San Remo", "imagen": "", "palabraClave": "remo" },
+  { "nombre": "Tour de Flandes", "imagen": "", "palabraClave": "flandes" },
+  { "nombre": "Il Lombardia", "imagen": "", "palabraClave": "lombardia" },
+  { "nombre": "Clásica de San Sebastián", "imagen": "", "palabraClave": "sebastian" },
+  { "nombre": "Critérium du Dauphiné", "imagen": "", "palabraClave": "dauphine" },
+  { "nombre": "Tirreno-Adriático", "imagen": "", "palabraClave": "adriatico" }
+]

@@ -1,0 +1,23 @@
+[
+  { "nombre": "Michael Jordan", "imagen": "", "palabraClave": "jordan" },
+  { "nombre": "LeBron James", "imagen": "", "palabraClave": "james" },
+  { "nombre": "Kobe Bryant", "imagen": "", "palabraClave": "bryant" },
+  { "nombre": "Shaquille O'Neal", "imagen": "", "palabraClave": "oneal" },
+  { "nombre": "Magic Johnson", "imagen": "", "palabraClave": "johnson" },
+  { "nombre": "Larry Bird", "imagen": "", "palabraClave": "bird" },
+  { "nombre": "Wilt Chamberlain", "imagen": "", "palabraClave": "chamberlain" },
+  { "nombre": "Kareem Abdul-Jabbar", "imagen": "", "palabraClave": "abduljabbar" },
+  { "nombre": "Bill Russell", "imagen": "", "palabraClave": "russell" },
+  { "nombre": "Tim Duncan", "imagen": "", "palabraClave": "duncan" },
+  { "nombre": "Kevin Durant", "imagen": "", "palabraClave": "durant" },
+  { "nombre": "Stephen Curry", "imagen": "", "palabraClave": "curry" },
+  { "nombre": "Dirk Nowitzki", "imagen": "", "palabraClave": "nowitzki" },
+  { "nombre": "Pau Gasol", "imagen": "", "palabraClave": "gasol" },
+  { "nombre": "Tony Parker", "imagen": "", "palabraClave": "parker" },
+  { "nombre": "Manu Ginóbili", "imagen": "", "palabraClave": "ginobili" },
+  { "nombre": "Oscar Robertson", "imagen": "", "palabraClave": "robertson" },
+  { "nombre": "Julius Erving", "imagen": "", "palabraClave": "erving" },
+  { "nombre": "Charles Barkley", "imagen": "", "palabraClave": "barkley" },
+  { "nombre": "Scottie Pippen", "imagen": "", "palabraClave": "pippen" },
+  { "nombre": "Allen Iverson", "imagen": "", "palabraClave": "iverson" }
+]

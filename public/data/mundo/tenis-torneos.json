@@ -1,0 +1,12 @@
+[
+  { "nombre": "Wimbledon", "imagen": "", "palabraClave": "wimbledon" },
+  { "nombre": "Roland Garros", "imagen": "", "palabraClave": "garros" },
+  { "nombre": "US Open de tenis", "imagen": "", "palabraClave": "open" },
+  { "nombre": "Abierto de Australia", "imagen": "", "palabraClave": "australia" },
+  { "nombre": "Copa Davis", "imagen": "", "palabraClave": "davis" },
+  { "nombre": "Torneo de Indian Wells", "imagen": "", "palabraClave": "wells" },
+  { "nombre": "Másters de Madrid", "imagen": "", "palabraClave": "madrid" },
+  { "nombre": "Torneo de Miami", "imagen": "", "palabraClave": "miami" },
+  { "nombre": "ATP Finals", "imagen": "", "palabraClave": "finals" },
+  { "nombre": "Copa Billie Jean King", "imagen": "", "palabraClave": "king" }
+]

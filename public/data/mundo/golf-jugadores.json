@@ -1,0 +1,17 @@
+[
+  { "nombre": "Tiger Woods", "imagen": "", "palabraClave": "woods" },
+  { "nombre": "Rory McIlroy", "imagen": "", "palabraClave": "mcilroy" },
+  { "nombre": "Jon Rahm", "imagen": "", "palabraClave": "rahm" },
+  { "nombre": "Sergio García", "imagen": "", "palabraClave": "garcia" },
+  { "nombre": "Phil Mickelson", "imagen": "", "palabraClave": "mickelson" },
+  { "nombre": "Jack Nicklaus", "imagen": "", "palabraClave": "nicklaus" },
+  { "nombre": "Arnold Palmer", "imagen": "", "palabraClave": "palmer" },
+  { "nombre": "Gary Player", "imagen": "", "palabraClave": "player" },
+  { "nombre": "Seve Ballesteros", "imagen": "", "palabraClave": "ballesteros" },
+  { "nombre": "Lee Trevino", "imagen": "", "palabraClave": "trevino" },
+  { "nombre": "Nick Faldo", "imagen": "", "palabraClave": "faldo" },
+  { "nombre": "Ernie Els", "imagen": "", "palabraClave": "els" },
+  { "nombre": "Justin Rose", "imagen": "", "palabraClave": "rose" },
+  { "nombre": "Scottie Scheffler", "imagen": "", "palabraClave": "scheffler" },
+  { "nombre": "Bryson DeChambeau", "imagen": "", "palabraClave": "dechambeau" }
+]

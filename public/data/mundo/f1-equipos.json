@@ -1,0 +1,16 @@
+[
+  { "nombre": "Ferrari", "imagen": "", "palabraClave": "ferrari" },
+  { "nombre": "Red Bull", "imagen": "", "palabraClave": "bull" },
+  { "nombre": "Mercedes AMG", "imagen": "", "palabraClave": "mercedes" },
+  { "nombre": "McLaren", "imagen": "", "palabraClave": "mclaren" },
+  { "nombre": "Aston Martin", "imagen": "", "palabraClave": "martin" },
+  { "nombre": "Williams", "imagen": "", "palabraClave": "williams" },
+  { "nombre": "Alpine", "imagen": "", "palabraClave": "alpine" },
+  { "nombre": "Haas", "imagen": "", "palabraClave": "haas" },
+  { "nombre": "Alfa Romeo", "imagen": "", "palabraClave": "romeo" },
+  { "nombre": "AlphaTauri", "imagen": "", "palabraClave": "alphatauri" },
+  { "nombre": "Lotus F1", "imagen": "", "palabraClave": "lotus" },
+  { "nombre": "Tyrrell", "imagen": "", "palabraClave": "tyrrell" },
+  { "nombre": "Brabham", "imagen": "", "palabraClave": "brabham" },
+  { "nombre": "BRM", "imagen": "", "palabraClave": "brm" }
+]

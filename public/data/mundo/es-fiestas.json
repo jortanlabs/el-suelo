@@ -1,152 +1,32 @@
 [
-  {
-    "nombre": "Los Sanfermines",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Procesi%C3%B3n_San_Ferm%C3%ADn_2022-1.jpg/330px-Procesi%C3%B3n_San_Ferm%C3%ADn_2022-1.jpg",
-    "palabraClave": "sanfermines"
-  },
-  {
-    "nombre": "Las Fallas de Valencia",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Falla_del_ayuntamiento_2026.jpg/330px-Falla_del_ayuntamiento_2026.jpg",
-    "palabraClave": "valencia"
-  },
-  {
-    "nombre": "La Tomatina",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Tomatina_2006.jpg/330px-Tomatina_2006.jpg",
-    "palabraClave": "tomatina"
-  },
-  {
-    "nombre": "Semana Santa de Sevilla",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/19495374488_797a980243_o_Semana_Santa_Armaos.jpg/330px-19495374488_797a980243_o_Semana_Santa_Armaos.jpg",
-    "palabraClave": "sevilla"
-  },
-  {
-    "nombre": "Feria de Abril de Sevilla",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/19495423168_c324d53029_o_feria_abril_2013.jpg/330px-19495423168_c324d53029_o_feria_abril_2013.jpg",
-    "palabraClave": "sevilla"
-  },
-  {
-    "nombre": "El Rocío",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/El_Roc%C3%ADo_-_View_from_the_southwest_with_horses.jpg/330px-El_Roc%C3%ADo_-_View_from_the_southwest_with_horses.jpg",
-    "palabraClave": "rocio"
-  },
-  {
-    "nombre": "Carnaval de Cádiz",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Telon_COAC.jpg/330px-Telon_COAC.jpg",
-    "palabraClave": "cadiz"
-  },
-  {
-    "nombre": "Carnaval de Tenerife",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Anuncio_luminoso_del_Carnaval_chicharrero_%28de_Santa_Cruz_de_Tenerife%29%2C_Canarias%2C_Espa%C3%B1a.JPG/330px-Anuncio_luminoso_del_Carnaval_chicharrero_%28de_Santa_Cruz_de_Tenerife%29%2C_Canarias%2C_Espa%C3%B1a.JPG",
-    "palabraClave": "tenerife"
-  },
-  {
-    "nombre": "Carnaval de Sitges",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Sitges%2C_Barcelona.svg/langes-330px-Flag_of_Sitges%2C_Barcelona.svg.png",
-    "palabraClave": "sitges"
-  },
-  {
-    "nombre": "Hogueras de San Juan de Alicante",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Foguera_S%C3%A8neca-Autobusos_2015.jpg/330px-Foguera_S%C3%A8neca-Autobusos_2015.jpg",
-    "palabraClave": "alicante"
-  },
-  {
-    "nombre": "Feria de Málaga",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Feria_de_Malaga_Spain.jpg/330px-Feria_de_Malaga_Spain.jpg",
-    "palabraClave": "malaga"
-  },
-  {
-    "nombre": "Fiestas del Pilar de Zaragoza",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Preg%C3%B3n_de_las_Fiestas_del_Pilar_de_Zaragoza.png/330px-Preg%C3%B3n_de_las_Fiestas_del_Pilar_de_Zaragoza.png",
-    "palabraClave": "zaragoza"
-  },
-  {
-    "nombre": "Moros y Cristianos de Alcoy",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Detalle_alardo_tarde_2007.jpg/330px-Detalle_alardo_tarde_2007.jpg",
-    "palabraClave": "alcoy"
-  },
-  {
-    "nombre": "La Tamborrada de San Sebastián",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/San_Sebastian_Tamborrada_Infantil_cropped.jpg/330px-San_Sebastian_Tamborrada_Infantil_cropped.jpg",
-    "palabraClave": "sebastian"
-  },
-  {
-    "nombre": "Batalla del Vino de Haro",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Batalla_del_Vino_-_Haro_-_La_Rioja.jpg/330px-Batalla_del_Vino_-_Haro_-_La_Rioja.jpg",
-    "palabraClave": "haro"
-  },
-  {
-    "nombre": "Las Cruces de Mayo de Córdoba",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Fiesta_de_las_Cruces_2005_-_Plaza_del_padre_cristobal.JPG/330px-Fiesta_de_las_Cruces_2005_-_Plaza_del_padre_cristobal.JPG",
-    "palabraClave": "cordoba"
-  },
-  {
-    "nombre": "Fiesta de los Patios de Córdoba",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Patio_cordob%C3%A9s_%287155649863%29.jpg/330px-Patio_cordob%C3%A9s_%287155649863%29.jpg",
-    "palabraClave": "cordoba"
-  },
-  {
-    "nombre": "Feria de Jerez",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/PaseoPrincipal-FeriaJerez-MIN-DSC04582.JPG/330px-PaseoPrincipal-FeriaJerez-MIN-DSC04582.JPG",
-    "palabraClave": "jerez"
-  },
-  {
-    "nombre": "Semana Grande de Bilbao",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Marijaia.jpg",
-    "palabraClave": "bilbao"
-  },
-  {
-    "nombre": "La Patum de Berga",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Salt_de_Plens.jpg/330px-Salt_de_Plens.jpg",
-    "palabraClave": "berga"
-  },
-  {
-    "nombre": "Fiesta de San Isidro de Madrid",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/La_pradera_de_San_Isidro_de_Goya.jpg/330px-La_pradera_de_San_Isidro_de_Goya.jpg",
-    "palabraClave": "madrid"
-  },
-  {
-    "nombre": "Semana Santa de Cuenca",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Turbas-18x24%28300pp%29-Retocada_rayaduras.jpg/330px-Turbas-18x24%28300pp%29-Retocada_rayaduras.jpg",
-    "palabraClave": "cuenca"
-  },
-  {
-    "nombre": "Semana Santa de Zamora",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Cofrad%C3%ADa_del_Silencio.jpg/330px-Cofrad%C3%ADa_del_Silencio.jpg",
-    "palabraClave": "zamora"
-  },
-  {
-    "nombre": "Semana Santa de Valladolid",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/SemanaSantaPucela.JPG/330px-SemanaSantaPucela.JPG",
-    "palabraClave": "valladolid"
-  },
-  {
-    "nombre": "La Rapa das Bestas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Rapa_das_bestas._Galiza.jpg/330px-Rapa_das_bestas._Galiza.jpg",
-    "palabraClave": "bestas"
-  },
-  {
-    "nombre": "Descenso Internacional del Sella",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mart%C3%ADnez_y_Hernanz._Descenso_del_Sella_2008..jpg/330px-Mart%C3%ADnez_y_Hernanz._Descenso_del_Sella_2008..jpg",
-    "palabraClave": "sella"
-  },
-  {
-    "nombre": "Encierro de Cuéllar",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Suelta_encierro_cuellar.JPG/330px-Suelta_encierro_cuellar.JPG",
-    "palabraClave": "cuellar"
-  },
-  {
-    "nombre": "La Vendimia de La Rioja",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jacob_Philipp_Hackert_003.jpg/330px-Jacob_Philipp_Hackert_003.jpg",
-    "palabraClave": "rioja"
-  },
-  {
-    "nombre": "Fiesta Mayor de Gràcia",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Gracia_2013.jpg/330px-Gracia_2013.jpg",
-    "palabraClave": "gracia"
-  },
-  {
-    "nombre": "Romería de la Virgen de la Cabeza",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/V_cabeza.jpg/330px-V_cabeza.jpg",
-    "palabraClave": "cabeza"
-  }
+  { "nombre": "Los Sanfermines", "imagen": "", "palabraClave": "sanfermines" },
+  { "nombre": "Las Fallas de Valencia", "imagen": "", "palabraClave": "valencia" },
+  { "nombre": "La Tomatina", "imagen": "", "palabraClave": "tomatina" },
+  { "nombre": "Semana Santa de Sevilla", "imagen": "", "palabraClave": "sevilla" },
+  { "nombre": "Feria de Abril de Sevilla", "imagen": "", "palabraClave": "sevilla" },
+  { "nombre": "El Rocío", "imagen": "", "palabraClave": "rocio" },
+  { "nombre": "Carnaval de Cádiz", "imagen": "", "palabraClave": "cadiz" },
+  { "nombre": "Carnaval de Tenerife", "imagen": "", "palabraClave": "tenerife" },
+  { "nombre": "Carnaval de Sitges", "imagen": "", "palabraClave": "sitges" },
+  { "nombre": "Hogueras de San Juan de Alicante", "imagen": "", "palabraClave": "alicante" },
+  { "nombre": "Feria de Málaga", "imagen": "", "palabraClave": "malaga" },
+  { "nombre": "Fiestas del Pilar de Zaragoza", "imagen": "", "palabraClave": "zaragoza" },
+  { "nombre": "Moros y Cristianos de Alcoy", "imagen": "", "palabraClave": "alcoy" },
+  { "nombre": "La Tamborrada de San Sebastián", "imagen": "", "palabraClave": "sebastian" },
+  { "nombre": "Batalla del Vino de Haro", "imagen": "", "palabraClave": "haro" },
+  { "nombre": "Las Cruces de Mayo de Córdoba", "imagen": "", "palabraClave": "cordoba" },
+  { "nombre": "Fiesta de los Patios de Córdoba", "imagen": "", "palabraClave": "cordoba" },
+  { "nombre": "Feria de Jerez", "imagen": "", "palabraClave": "jerez" },
+  { "nombre": "Semana Grande de Bilbao", "imagen": "", "palabraClave": "bilbao" },
+  { "nombre": "La Patum de Berga", "imagen": "", "palabraClave": "berga" },
+  { "nombre": "Fiesta de San Isidro de Madrid", "imagen": "", "palabraClave": "madrid" },
+  { "nombre": "Semana Santa de Cuenca", "imagen": "", "palabraClave": "cuenca" },
+  { "nombre": "Semana Santa de Zamora", "imagen": "", "palabraClave": "zamora" },
+  { "nombre": "Semana Santa de Valladolid", "imagen": "", "palabraClave": "valladolid" },
+  { "nombre": "La Rapa das Bestas", "imagen": "", "palabraClave": "bestas" },
+  { "nombre": "Descenso Internacional del Sella", "imagen": "", "palabraClave": "sella" },
+  { "nombre": "Encierro de Cuéllar", "imagen": "", "palabraClave": "cuellar" },
+  { "nombre": "La Vendimia de La Rioja", "imagen": "", "palabraClave": "rioja" },
+  { "nombre": "Fiesta Mayor de Gràcia", "imagen": "", "palabraClave": "gracia" },
+  { "nombre": "Romería de la Virgen de la Cabeza", "imagen": "", "palabraClave": "cabeza" }
 ]

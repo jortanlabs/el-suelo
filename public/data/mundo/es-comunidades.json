@@ -1,1 +1,21 @@
-[]
+[
+  { "nombre": "Andalucía", "imagen": "", "palabraClave": "andalucia" },
+  { "nombre": "Aragón", "imagen": "", "palabraClave": "aragon" },
+  { "nombre": "Asturias", "imagen": "", "palabraClave": "asturias" },
+  { "nombre": "Islas Baleares", "imagen": "", "palabraClave": "baleares" },
+  { "nombre": "Islas Canarias", "imagen": "", "palabraClave": "canarias" },
+  { "nombre": "Cantabria", "imagen": "", "palabraClave": "cantabria" },
+  { "nombre": "Castilla-La Mancha", "imagen": "", "palabraClave": "mancha" },
+  { "nombre": "Castilla y León", "imagen": "", "palabraClave": "leon" },
+  { "nombre": "Cataluña", "imagen": "", "palabraClave": "cataluna" },
+  { "nombre": "Comunidad de Madrid", "imagen": "", "palabraClave": "madrid" },
+  { "nombre": "Comunidad Foral de Navarra", "imagen": "", "palabraClave": "navarra" },
+  { "nombre": "Comunidad Valenciana", "imagen": "", "palabraClave": "valenciana" },
+  { "nombre": "Extremadura", "imagen": "", "palabraClave": "extremadura" },
+  { "nombre": "Galicia", "imagen": "", "palabraClave": "galicia" },
+  { "nombre": "País Vasco", "imagen": "", "palabraClave": "vasco" },
+  { "nombre": "La Rioja", "imagen": "", "palabraClave": "rioja" },
+  { "nombre": "Región de Murcia", "imagen": "", "palabraClave": "murcia" },
+  { "nombre": "Ceuta", "imagen": "", "palabraClave": "ceuta" },
+  { "nombre": "Melilla", "imagen": "", "palabraClave": "melilla" }
+]
