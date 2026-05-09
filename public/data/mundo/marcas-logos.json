@@ -1,0 +1,127 @@
+[
+  {
+    "nombre": "Nike",
+    "imagen": "",
+    "palabraClave": "nike"
+  },
+  {
+    "nombre": "Apple",
+    "imagen": "",
+    "palabraClave": "apple"
+  },
+  {
+    "nombre": "Coca-Cola",
+    "imagen": "",
+    "palabraClave": "cocacola"
+  },
+  {
+    "nombre": "McDonald's",
+    "imagen": "",
+    "palabraClave": "mcdonalds"
+  },
+  {
+    "nombre": "Mercedes-Benz",
+    "imagen": "",
+    "palabraClave": "mercedesbenz"
+  },
+  {
+    "nombre": "BMW",
+    "imagen": "",
+    "palabraClave": "bmw"
+  },
+  {
+    "nombre": "Adidas",
+    "imagen": "",
+    "palabraClave": "adidas"
+  },
+  {
+    "nombre": "Google",
+    "imagen": "",
+    "palabraClave": "google"
+  },
+  {
+    "nombre": "Amazon",
+    "imagen": "",
+    "palabraClave": "amazon"
+  },
+  {
+    "nombre": "Instagram",
+    "imagen": "",
+    "palabraClave": "instagram"
+  },
+  {
+    "nombre": "YouTube",
+    "imagen": "",
+    "palabraClave": "youtube"
+  },
+  {
+    "nombre": "Netflix",
+    "imagen": "",
+    "palabraClave": "netflix"
+  },
+  {
+    "nombre": "Spotify",
+    "imagen": "",
+    "palabraClave": "spotify"
+  },
+  {
+    "nombre": "Pepsi",
+    "imagen": "",
+    "palabraClave": "pepsi"
+  },
+  {
+    "nombre": "Samsung",
+    "imagen": "",
+    "palabraClave": "samsung"
+  },
+  {
+    "nombre": "Microsoft",
+    "imagen": "",
+    "palabraClave": "microsoft"
+  },
+  {
+    "nombre": "Volkswagen",
+    "imagen": "",
+    "palabraClave": "volkswagen"
+  },
+  {
+    "nombre": "IKEA",
+    "imagen": "",
+    "palabraClave": "ikea"
+  },
+  {
+    "nombre": "LEGO",
+    "imagen": "",
+    "palabraClave": "lego"
+  },
+  {
+    "nombre": "Disney",
+    "imagen": "",
+    "palabraClave": "disney"
+  },
+  {
+    "nombre": "Lacoste",
+    "imagen": "",
+    "palabraClave": "lacoste"
+  },
+  {
+    "nombre": "Puma",
+    "imagen": "",
+    "palabraClave": "puma"
+  },
+  {
+    "nombre": "Reebok",
+    "imagen": "",
+    "palabraClave": "reebok"
+  },
+  {
+    "nombre": "Red Bull",
+    "imagen": "",
+    "palabraClave": "bull"
+  },
+  {
+    "nombre": "Shell",
+    "imagen": "",
+    "palabraClave": "shell"
+  }
+]

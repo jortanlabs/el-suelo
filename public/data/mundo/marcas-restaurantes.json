@@ -1,0 +1,77 @@
+[
+  {
+    "nombre": "McDonald's",
+    "imagen": "",
+    "palabraClave": "mcdonalds"
+  },
+  {
+    "nombre": "Burger King",
+    "imagen": "",
+    "palabraClave": "king"
+  },
+  {
+    "nombre": "KFC",
+    "imagen": "",
+    "palabraClave": "kfc"
+  },
+  {
+    "nombre": "Subway",
+    "imagen": "",
+    "palabraClave": "subway"
+  },
+  {
+    "nombre": "Pizza Hut",
+    "imagen": "",
+    "palabraClave": "hut"
+  },
+  {
+    "nombre": "Domino's Pizza",
+    "imagen": "",
+    "palabraClave": "pizza"
+  },
+  {
+    "nombre": "Telepizza",
+    "imagen": "",
+    "palabraClave": "telepizza"
+  },
+  {
+    "nombre": "Foster's Hollywood",
+    "imagen": "",
+    "palabraClave": "hollywood"
+  },
+  {
+    "nombre": "Five Guys",
+    "imagen": "",
+    "palabraClave": "guys"
+  },
+  {
+    "nombre": "Taco Bell",
+    "imagen": "",
+    "palabraClave": "bell"
+  },
+  {
+    "nombre": "Dunkin' Donuts",
+    "imagen": "",
+    "palabraClave": "donuts"
+  },
+  {
+    "nombre": "Popeyes",
+    "imagen": "",
+    "palabraClave": "popeyes"
+  },
+  {
+    "nombre": "Starbucks",
+    "imagen": "",
+    "palabraClave": "starbucks"
+  },
+  {
+    "nombre": "TGB",
+    "imagen": "",
+    "palabraClave": "tgb"
+  },
+  {
+    "nombre": "Carl's Jr.",
+    "imagen": "",
+    "palabraClave": "jr"
+  }
+]

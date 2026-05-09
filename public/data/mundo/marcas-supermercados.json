@@ -1,0 +1,92 @@
+[
+  {
+    "nombre": "Mercadona",
+    "imagen": "",
+    "palabraClave": "mercadona"
+  },
+  {
+    "nombre": "Carrefour",
+    "imagen": "",
+    "palabraClave": "carrefour"
+  },
+  {
+    "nombre": "Lidl",
+    "imagen": "",
+    "palabraClave": "lidl"
+  },
+  {
+    "nombre": "Aldi",
+    "imagen": "",
+    "palabraClave": "aldi"
+  },
+  {
+    "nombre": "Día",
+    "imagen": "",
+    "palabraClave": "dia"
+  },
+  {
+    "nombre": "El Corte Inglés",
+    "imagen": "",
+    "palabraClave": "ingles"
+  },
+  {
+    "nombre": "Alcampo",
+    "imagen": "",
+    "palabraClave": "alcampo"
+  },
+  {
+    "nombre": "Eroski",
+    "imagen": "",
+    "palabraClave": "eroski"
+  },
+  {
+    "nombre": "Consum",
+    "imagen": "",
+    "palabraClave": "consum"
+  },
+  {
+    "nombre": "Caprabo",
+    "imagen": "",
+    "palabraClave": "caprabo"
+  },
+  {
+    "nombre": "Ahorramas",
+    "imagen": "",
+    "palabraClave": "ahorramas"
+  },
+  {
+    "nombre": "Simply",
+    "imagen": "",
+    "palabraClave": "simply"
+  },
+  {
+    "nombre": "Condis",
+    "imagen": "",
+    "palabraClave": "condis"
+  },
+  {
+    "nombre": "Spar",
+    "imagen": "",
+    "palabraClave": "spar"
+  },
+  {
+    "nombre": "Supersol",
+    "imagen": "",
+    "palabraClave": "supersol"
+  },
+  {
+    "nombre": "Bonpreu",
+    "imagen": "",
+    "palabraClave": "bonpreu"
+  },
+  {
+    "nombre": "Froiz",
+    "imagen": "",
+    "palabraClave": "froiz"
+  },
+  {
+    "nombre": "BM Supermercados",
+    "imagen": "",
+    "palabraClave": "supermercados"
+  }
+]

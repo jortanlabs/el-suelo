@@ -1,0 +1,127 @@
+[
+  {
+    "nombre": "Camiseta",
+    "imagen": "",
+    "palabraClave": "camiseta"
+  },
+  {
+    "nombre": "Pantalón",
+    "imagen": "",
+    "palabraClave": "pantalon"
+  },
+  {
+    "nombre": "Falda",
+    "imagen": "",
+    "palabraClave": "falda"
+  },
+  {
+    "nombre": "Vestido",
+    "imagen": "",
+    "palabraClave": "vestido"
+  },
+  {
+    "nombre": "Abrigo",
+    "imagen": "",
+    "palabraClave": "abrigo"
+  },
+  {
+    "nombre": "Chaqueta",
+    "imagen": "",
+    "palabraClave": "chaqueta"
+  },
+  {
+    "nombre": "Calcetines",
+    "imagen": "",
+    "palabraClave": "calcetines"
+  },
+  {
+    "nombre": "Zapatos de tacón",
+    "imagen": "",
+    "palabraClave": "tacon"
+  },
+  {
+    "nombre": "Zapatillas deportivas",
+    "imagen": "",
+    "palabraClave": "deportivas"
+  },
+  {
+    "nombre": "Botas",
+    "imagen": "",
+    "palabraClave": "botas"
+  },
+  {
+    "nombre": "Cinturón",
+    "imagen": "",
+    "palabraClave": "cinturon"
+  },
+  {
+    "nombre": "Corbata",
+    "imagen": "",
+    "palabraClave": "corbata"
+  },
+  {
+    "nombre": "Jersey",
+    "imagen": "",
+    "palabraClave": "jersey"
+  },
+  {
+    "nombre": "Sudadera",
+    "imagen": "",
+    "palabraClave": "sudadera"
+  },
+  {
+    "nombre": "Vaqueros",
+    "imagen": "",
+    "palabraClave": "vaqueros"
+  },
+  {
+    "nombre": "Camiseta sin mangas",
+    "imagen": "",
+    "palabraClave": "mangas"
+  },
+  {
+    "nombre": "Bikini",
+    "imagen": "",
+    "palabraClave": "bikini"
+  },
+  {
+    "nombre": "Bañador",
+    "imagen": "",
+    "palabraClave": "banador"
+  },
+  {
+    "nombre": "Camisa",
+    "imagen": "",
+    "palabraClave": "camisa"
+  },
+  {
+    "nombre": "Traje de chaqueta",
+    "imagen": "",
+    "palabraClave": "chaqueta"
+  },
+  {
+    "nombre": "Bufanda",
+    "imagen": "",
+    "palabraClave": "bufanda"
+  },
+  {
+    "nombre": "Guantes",
+    "imagen": "",
+    "palabraClave": "guantes"
+  },
+  {
+    "nombre": "Gorro",
+    "imagen": "",
+    "palabraClave": "gorro"
+  },
+  {
+    "nombre": "Blazer",
+    "imagen": "",
+    "palabraClave": "blazer"
+  },
+  {
+    "nombre": "Gabardina",
+    "imagen": "",
+    "palabraClave": "gabardina"
+  }
+]
