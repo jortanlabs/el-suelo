@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Hamlet",
+    "imagen": "",
+    "palabraClave": "hamlet"
+  },
+  {
+    "nombre": "Romeo y Julieta",
+    "imagen": "",
+    "palabraClave": "julieta"
+  },
+  {
+    "nombre": "Macbeth",
+    "imagen": "",
+    "palabraClave": "macbeth"
+  },
+  {
+    "nombre": "El rey Lear",
+    "imagen": "",
+    "palabraClave": "lear"
+  },
+  {
+    "nombre": "Otelo",
+    "imagen": "",
+    "palabraClave": "otelo"
+  },
+  {
+    "nombre": "La tempestad",
+    "imagen": "",
+    "palabraClave": "tempestad"
+  },
+  {
+    "nombre": "Edipo Rey",
+    "imagen": "",
+    "palabraClave": "rey"
+  },
+  {
+    "nombre": "La casa de Bernarda Alba",
+    "imagen": "",
+    "palabraClave": "alba"
+  },
+  {
+    "nombre": "Bodas de sangre",
+    "imagen": "",
+    "palabraClave": "sangre"
+  },
+  {
+    "nombre": "La vida es sueño",
+    "imagen": "",
+    "palabraClave": "sueno"
+  },
+  {
+    "nombre": "Fuenteovejuna",
+    "imagen": "",
+    "palabraClave": "fuenteovejuna"
+  },
+  {
+    "nombre": "Don Juan Tenorio",
+    "imagen": "",
+    "palabraClave": "tenorio"
+  },
+  {
+    "nombre": "Esperando a Godot",
+    "imagen": "",
+    "palabraClave": "godot"
+  },
+  {
+    "nombre": "La gaviota",
+    "imagen": "",
+    "palabraClave": "gaviota"
+  },
+  {
+    "nombre": "El tío Vania",
+    "imagen": "",
+    "palabraClave": "vania"
+  },
+  {
+    "nombre": "Casa de muñecas",
+    "imagen": "",
+    "palabraClave": "munecas"
+  },
+  {
+    "nombre": "Peer Gynt",
+    "imagen": "",
+    "palabraClave": "gynt"
+  },
+  {
+    "nombre": "Las brujas de Salem",
+    "imagen": "",
+    "palabraClave": "salem"
+  },
+  {
+    "nombre": "El zoo de cristal",
+    "imagen": "",
+    "palabraClave": "cristal"
+  },
+  {
+    "nombre": "Tartufo",
+    "imagen": "",
+    "palabraClave": "tartufo"
+  }
+]

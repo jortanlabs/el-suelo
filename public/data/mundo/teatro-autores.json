@@ -1,0 +1,92 @@
+[
+  {
+    "nombre": "William Shakespeare",
+    "imagen": "",
+    "palabraClave": "shakespeare"
+  },
+  {
+    "nombre": "Lope de Vega",
+    "imagen": "",
+    "palabraClave": "vega"
+  },
+  {
+    "nombre": "Molière",
+    "imagen": "",
+    "palabraClave": "moliere"
+  },
+  {
+    "nombre": "Calderón de la Barca",
+    "imagen": "",
+    "palabraClave": "barca"
+  },
+  {
+    "nombre": "Tirso de Molina",
+    "imagen": "",
+    "palabraClave": "molina"
+  },
+  {
+    "nombre": "Sófocles",
+    "imagen": "",
+    "palabraClave": "sofocles"
+  },
+  {
+    "nombre": "Eurípides",
+    "imagen": "",
+    "palabraClave": "euripides"
+  },
+  {
+    "nombre": "Esquilo",
+    "imagen": "",
+    "palabraClave": "esquilo"
+  },
+  {
+    "nombre": "Anton Chéjov",
+    "imagen": "",
+    "palabraClave": "chejov"
+  },
+  {
+    "nombre": "Henrik Ibsen",
+    "imagen": "",
+    "palabraClave": "ibsen"
+  },
+  {
+    "nombre": "Bertolt Brecht",
+    "imagen": "",
+    "palabraClave": "brecht"
+  },
+  {
+    "nombre": "Samuel Beckett",
+    "imagen": "",
+    "palabraClave": "beckett"
+  },
+  {
+    "nombre": "Federico García Lorca",
+    "imagen": "",
+    "palabraClave": "lorca"
+  },
+  {
+    "nombre": "Arthur Miller",
+    "imagen": "",
+    "palabraClave": "miller"
+  },
+  {
+    "nombre": "Tennessee Williams",
+    "imagen": "",
+    "palabraClave": "williams"
+  },
+  {
+    "nombre": "Eugene Ionesco",
+    "imagen": "",
+    "palabraClave": "ionesco"
+  },
+  {
+    "nombre": "Harold Pinter",
+    "imagen": "",
+    "palabraClave": "pinter"
+  },
+  {
+    "nombre": "Jean Racine",
+    "imagen": "",
+    "palabraClave": "racine"
+  }
+]

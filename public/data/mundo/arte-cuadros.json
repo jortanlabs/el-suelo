@@ -1,0 +1,112 @@
+[
+  {
+    "nombre": "La Mona Lisa",
+    "imagen": "",
+    "palabraClave": "lisa"
+  },
+  {
+    "nombre": "La última cena",
+    "imagen": "",
+    "palabraClave": "cena"
+  },
+  {
+    "nombre": "La noche estrellada",
+    "imagen": "",
+    "palabraClave": "estrellada"
+  },
+  {
+    "nombre": "Las Meninas",
+    "imagen": "",
+    "palabraClave": "meninas"
+  },
+  {
+    "nombre": "El jardín de las delicias",
+    "imagen": "",
+    "palabraClave": "delicias"
+  },
+  {
+    "nombre": "El Guernica",
+    "imagen": "",
+    "palabraClave": "guernica"
+  },
+  {
+    "nombre": "Los girasoles",
+    "imagen": "",
+    "palabraClave": "girasoles"
+  },
+  {
+    "nombre": "La joven de la perla",
+    "imagen": "",
+    "palabraClave": "perla"
+  },
+  {
+    "nombre": "El grito",
+    "imagen": "",
+    "palabraClave": "grito"
+  },
+  {
+    "nombre": "La libertad guiando al pueblo",
+    "imagen": "",
+    "palabraClave": "pueblo"
+  },
+  {
+    "nombre": "Saturno devorando a su hijo",
+    "imagen": "",
+    "palabraClave": "hijo"
+  },
+  {
+    "nombre": "La maja desnuda",
+    "imagen": "",
+    "palabraClave": "desnuda"
+  },
+  {
+    "nombre": "El nacimiento de Venus",
+    "imagen": "",
+    "palabraClave": "venus"
+  },
+  {
+    "nombre": "El beso",
+    "imagen": "",
+    "palabraClave": "beso"
+  },
+  {
+    "nombre": "La creación de Adán",
+    "imagen": "",
+    "palabraClave": "adan"
+  },
+  {
+    "nombre": "La escuela de Atenas",
+    "imagen": "",
+    "palabraClave": "atenas"
+  },
+  {
+    "nombre": "Los fusilamientos del 3 de mayo",
+    "imagen": "",
+    "palabraClave": "mayo"
+  },
+  {
+    "nombre": "La persistencia de la memoria",
+    "imagen": "",
+    "palabraClave": "memoria"
+  },
+  {
+    "nombre": "Las señoritas de Aviñón",
+    "imagen": "",
+    "palabraClave": "avinon"
+  },
+  {
+    "nombre": "La balsa de la Medusa",
+    "imagen": "",
+    "palabraClave": "medusa"
+  },
+  {
+    "nombre": "La noche azul",
+    "imagen": "",
+    "palabraClave": "azul"
+  },
+  {
+    "nombre": "El juicio final",
+    "imagen": "",
+    "palabraClave": "final"
+  }
+]

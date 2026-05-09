@@ -1,0 +1,112 @@
+[
+  {
+    "nombre": "Leonardo da Vinci",
+    "imagen": "",
+    "palabraClave": "vinci"
+  },
+  {
+    "nombre": "Miguel Ángel",
+    "imagen": "",
+    "palabraClave": "angel"
+  },
+  {
+    "nombre": "Rafael Sanzio",
+    "imagen": "",
+    "palabraClave": "sanzio"
+  },
+  {
+    "nombre": "Pablo Picasso",
+    "imagen": "",
+    "palabraClave": "picasso"
+  },
+  {
+    "nombre": "Vincent van Gogh",
+    "imagen": "",
+    "palabraClave": "gogh"
+  },
+  {
+    "nombre": "Salvador Dalí",
+    "imagen": "",
+    "palabraClave": "dali"
+  },
+  {
+    "nombre": "Francisco de Goya",
+    "imagen": "",
+    "palabraClave": "goya"
+  },
+  {
+    "nombre": "Diego Velázquez",
+    "imagen": "",
+    "palabraClave": "velazquez"
+  },
+  {
+    "nombre": "El Greco",
+    "imagen": "",
+    "palabraClave": "greco"
+  },
+  {
+    "nombre": "Rembrandt",
+    "imagen": "",
+    "palabraClave": "rembrandt"
+  },
+  {
+    "nombre": "Claude Monet",
+    "imagen": "",
+    "palabraClave": "monet"
+  },
+  {
+    "nombre": "Édouard Manet",
+    "imagen": "",
+    "palabraClave": "manet"
+  },
+  {
+    "nombre": "Paul Cézanne",
+    "imagen": "",
+    "palabraClave": "cezanne"
+  },
+  {
+    "nombre": "Wassily Kandinsky",
+    "imagen": "",
+    "palabraClave": "kandinsky"
+  },
+  {
+    "nombre": "Jackson Pollock",
+    "imagen": "",
+    "palabraClave": "pollock"
+  },
+  {
+    "nombre": "Andy Warhol",
+    "imagen": "",
+    "palabraClave": "warhol"
+  },
+  {
+    "nombre": "Frida Kahlo",
+    "imagen": "",
+    "palabraClave": "kahlo"
+  },
+  {
+    "nombre": "Joan Miró",
+    "imagen": "",
+    "palabraClave": "miro"
+  },
+  {
+    "nombre": "Joaquín Sorolla",
+    "imagen": "",
+    "palabraClave": "sorolla"
+  },
+  {
+    "nombre": "Henri Matisse",
+    "imagen": "",
+    "palabraClave": "matisse"
+  },
+  {
+    "nombre": "Caravaggio",
+    "imagen": "",
+    "palabraClave": "caravaggio"
+  },
+  {
+    "nombre": "Sandro Botticelli",
+    "imagen": "",
+    "palabraClave": "botticelli"
+  }
+]

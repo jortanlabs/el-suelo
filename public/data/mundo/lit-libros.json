@@ -1,0 +1,127 @@
+[
+  {
+    "nombre": "Don Quijote de la Mancha",
+    "imagen": "",
+    "palabraClave": "mancha"
+  },
+  {
+    "nombre": "Hamlet",
+    "imagen": "",
+    "palabraClave": "hamlet"
+  },
+  {
+    "nombre": "1984",
+    "imagen": "",
+    "palabraClave": "1984"
+  },
+  {
+    "nombre": "Un mundo feliz",
+    "imagen": "",
+    "palabraClave": "feliz"
+  },
+  {
+    "nombre": "El señor de los anillos",
+    "imagen": "",
+    "palabraClave": "anillos"
+  },
+  {
+    "nombre": "Harry Potter y la piedra filosofal",
+    "imagen": "",
+    "palabraClave": "filosofal"
+  },
+  {
+    "nombre": "La Odisea",
+    "imagen": "",
+    "palabraClave": "odisea"
+  },
+  {
+    "nombre": "El principito",
+    "imagen": "",
+    "palabraClave": "principito"
+  },
+  {
+    "nombre": "Cien años de soledad",
+    "imagen": "",
+    "palabraClave": "soledad"
+  },
+  {
+    "nombre": "El alquimista",
+    "imagen": "",
+    "palabraClave": "alquimista"
+  },
+  {
+    "nombre": "El código Da Vinci",
+    "imagen": "",
+    "palabraClave": "vinci"
+  },
+  {
+    "nombre": "Orgullo y prejuicio",
+    "imagen": "",
+    "palabraClave": "prejuicio"
+  },
+  {
+    "nombre": "La metamorfosis",
+    "imagen": "",
+    "palabraClave": "metamorfosis"
+  },
+  {
+    "nombre": "Crimen y castigo",
+    "imagen": "",
+    "palabraClave": "castigo"
+  },
+  {
+    "nombre": "La Divina Comedia",
+    "imagen": "",
+    "palabraClave": "comedia"
+  },
+  {
+    "nombre": "El gran Gatsby",
+    "imagen": "",
+    "palabraClave": "gatsby"
+  },
+  {
+    "nombre": "La sombra del viento",
+    "imagen": "",
+    "palabraClave": "viento"
+  },
+  {
+    "nombre": "El nombre de la rosa",
+    "imagen": "",
+    "palabraClave": "rosa"
+  },
+  {
+    "nombre": "El perfume",
+    "imagen": "",
+    "palabraClave": "perfume"
+  },
+  {
+    "nombre": "Matar a un ruiseñor",
+    "imagen": "",
+    "palabraClave": "ruisenor"
+  },
+  {
+    "nombre": "El viejo y el mar",
+    "imagen": "",
+    "palabraClave": "mar"
+  },
+  {
+    "nombre": "Frankenstein",
+    "imagen": "",
+    "palabraClave": "frankenstein"
+  },
+  {
+    "nombre": "Drácula",
+    "imagen": "",
+    "palabraClave": "dracula"
+  },
+  {
+    "nombre": "El retrato de Dorian Gray",
+    "imagen": "",
+    "palabraClave": "gray"
+  },
+  {
+    "nombre": "Guerra y paz",
+    "imagen": "",
+    "palabraClave": "paz"
+  }
+]

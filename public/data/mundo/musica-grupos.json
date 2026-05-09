@@ -1,0 +1,127 @@
+[
+  {
+    "nombre": "The Beatles",
+    "imagen": "",
+    "palabraClave": "beatles"
+  },
+  {
+    "nombre": "The Rolling Stones",
+    "imagen": "",
+    "palabraClave": "stones"
+  },
+  {
+    "nombre": "Led Zeppelin",
+    "imagen": "",
+    "palabraClave": "zeppelin"
+  },
+  {
+    "nombre": "Pink Floyd",
+    "imagen": "",
+    "palabraClave": "floyd"
+  },
+  {
+    "nombre": "Queen",
+    "imagen": "",
+    "palabraClave": "queen"
+  },
+  {
+    "nombre": "AC/DC",
+    "imagen": "",
+    "palabraClave": "acdc"
+  },
+  {
+    "nombre": "Nirvana",
+    "imagen": "",
+    "palabraClave": "nirvana"
+  },
+  {
+    "nombre": "Radiohead",
+    "imagen": "",
+    "palabraClave": "radiohead"
+  },
+  {
+    "nombre": "Oasis",
+    "imagen": "",
+    "palabraClave": "oasis"
+  },
+  {
+    "nombre": "Coldplay",
+    "imagen": "",
+    "palabraClave": "coldplay"
+  },
+  {
+    "nombre": "U2",
+    "imagen": "",
+    "palabraClave": "u2"
+  },
+  {
+    "nombre": "Metallica",
+    "imagen": "",
+    "palabraClave": "metallica"
+  },
+  {
+    "nombre": "Depeche Mode",
+    "imagen": "",
+    "palabraClave": "mode"
+  },
+  {
+    "nombre": "ABBA",
+    "imagen": "",
+    "palabraClave": "abba"
+  },
+  {
+    "nombre": "Bee Gees",
+    "imagen": "",
+    "palabraClave": "gees"
+  },
+  {
+    "nombre": "Dire Straits",
+    "imagen": "",
+    "palabraClave": "straits"
+  },
+  {
+    "nombre": "The Doors",
+    "imagen": "",
+    "palabraClave": "doors"
+  },
+  {
+    "nombre": "Guns N' Roses",
+    "imagen": "",
+    "palabraClave": "roses"
+  },
+  {
+    "nombre": "Red Hot Chili Peppers",
+    "imagen": "",
+    "palabraClave": "peppers"
+  },
+  {
+    "nombre": "Bon Jovi",
+    "imagen": "",
+    "palabraClave": "jovi"
+  },
+  {
+    "nombre": "Mecano",
+    "imagen": "",
+    "palabraClave": "mecano"
+  },
+  {
+    "nombre": "Hombres G",
+    "imagen": "",
+    "palabraClave": "g"
+  },
+  {
+    "nombre": "Heroes del Silencio",
+    "imagen": "",
+    "palabraClave": "silencio"
+  },
+  {
+    "nombre": "La Oreja de Van Gogh",
+    "imagen": "",
+    "palabraClave": "gogh"
+  },
+  {
+    "nombre": "Estopa",
+    "imagen": "",
+    "palabraClave": "estopa"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "nombre": "Pablo Neruda",
+    "imagen": "",
+    "palabraClave": "neruda"
+  },
+  {
+    "nombre": "Federico García Lorca",
+    "imagen": "",
+    "palabraClave": "lorca"
+  },
+  {
+    "nombre": "Antonio Machado",
+    "imagen": "",
+    "palabraClave": "machado"
+  },
+  {
+    "nombre": "Juan Ramón Jiménez",
+    "imagen": "",
+    "palabraClave": "jimenez"
+  },
+  {
+    "nombre": "Gustavo Adolfo Bécquer",
+    "imagen": "",
+    "palabraClave": "becquer"
+  },
+  {
+    "nombre": "Francisco de Quevedo",
+    "imagen": "",
+    "palabraClave": "quevedo"
+  },
+  {
+    "nombre": "Luis de Góngora",
+    "imagen": "",
+    "palabraClave": "gongora"
+  },
+  {
+    "nombre": "Luis Cernuda",
+    "imagen": "",
+    "palabraClave": "cernuda"
+  },
+  {
+    "nombre": "Rafael Alberti",
+    "imagen": "",
+    "palabraClave": "alberti"
+  },
+  {
+    "nombre": "Miguel Hernández",
+    "imagen": "",
+    "palabraClave": "hernandez"
+  },
+  {
+    "nombre": "Pablo Picasso (poesía)",
+    "imagen": "",
+    "palabraClave": "poesia"
+  },
+  {
+    "nombre": "Walt Whitman",
+    "imagen": "",
+    "palabraClave": "whitman"
+  },
+  {
+    "nombre": "Emily Dickinson",
+    "imagen": "",
+    "palabraClave": "dickinson"
+  },
+  {
+    "nombre": "Edgar Allan Poe",
+    "imagen": "",
+    "palabraClave": "poe"
+  },
+  {
+    "nombre": "Charles Baudelaire",
+    "imagen": "",
+    "palabraClave": "baudelaire"
+  },
+  {
+    "nombre": "Arthur Rimbaud",
+    "imagen": "",
+    "palabraClave": "rimbaud"
+  },
+  {
+    "nombre": "Pablo Neruda",
+    "imagen": "",
+    "palabraClave": "neruda"
+  },
+  {
+    "nombre": "Vladimir Mayakovski",
+    "imagen": "",
+    "palabraClave": "mayakovski"
+  },
+  {
+    "nombre": "Rainer Maria Rilke",
+    "imagen": "",
+    "palabraClave": "rilke"
+  }
+]

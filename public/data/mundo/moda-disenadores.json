@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Coco Chanel",
+    "imagen": "",
+    "palabraClave": "chanel"
+  },
+  {
+    "nombre": "Christian Dior",
+    "imagen": "",
+    "palabraClave": "dior"
+  },
+  {
+    "nombre": "Yves Saint Laurent",
+    "imagen": "",
+    "palabraClave": "laurent"
+  },
+  {
+    "nombre": "Giorgio Armani",
+    "imagen": "",
+    "palabraClave": "armani"
+  },
+  {
+    "nombre": "Donatella Versace",
+    "imagen": "",
+    "palabraClave": "versace"
+  },
+  {
+    "nombre": "Ralph Lauren",
+    "imagen": "",
+    "palabraClave": "lauren"
+  },
+  {
+    "nombre": "Calvin Klein",
+    "imagen": "",
+    "palabraClave": "klein"
+  },
+  {
+    "nombre": "Karl Lagerfeld",
+    "imagen": "",
+    "palabraClave": "lagerfeld"
+  },
+  {
+    "nombre": "Valentino Garavani",
+    "imagen": "",
+    "palabraClave": "garavani"
+  },
+  {
+    "nombre": "Cristóbal Balenciaga",
+    "imagen": "",
+    "palabraClave": "balenciaga"
+  },
+  {
+    "nombre": "Alexander McQueen",
+    "imagen": "",
+    "palabraClave": "mcqueen"
+  },
+  {
+    "nombre": "Marc Jacobs",
+    "imagen": "",
+    "palabraClave": "jacobs"
+  },
+  {
+    "nombre": "Stella McCartney",
+    "imagen": "",
+    "palabraClave": "mccartney"
+  },
+  {
+    "nombre": "Vivienne Westwood",
+    "imagen": "",
+    "palabraClave": "westwood"
+  },
+  {
+    "nombre": "Tom Ford",
+    "imagen": "",
+    "palabraClave": "ford"
+  },
+  {
+    "nombre": "Domenico Dolce",
+    "imagen": "",
+    "palabraClave": "dolce"
+  },
+  {
+    "nombre": "John Galliano",
+    "imagen": "",
+    "palabraClave": "galliano"
+  },
+  {
+    "nombre": "Roberto Cavalli",
+    "imagen": "",
+    "palabraClave": "cavalli"
+  },
+  {
+    "nombre": "Jean Paul Gaultier",
+    "imagen": "",
+    "palabraClave": "gaultier"
+  },
+  {
+    "nombre": "Issey Miyake",
+    "imagen": "",
+    "palabraClave": "miyake"
+  }
+]

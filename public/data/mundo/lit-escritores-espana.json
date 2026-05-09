@@ -1,0 +1,112 @@
+[
+  {
+    "nombre": "Miguel de Cervantes",
+    "imagen": "",
+    "palabraClave": "cervantes"
+  },
+  {
+    "nombre": "Lope de Vega",
+    "imagen": "",
+    "palabraClave": "vega"
+  },
+  {
+    "nombre": "Francisco de Quevedo",
+    "imagen": "",
+    "palabraClave": "quevedo"
+  },
+  {
+    "nombre": "Luis de Góngora",
+    "imagen": "",
+    "palabraClave": "gongora"
+  },
+  {
+    "nombre": "Calderón de la Barca",
+    "imagen": "",
+    "palabraClave": "barca"
+  },
+  {
+    "nombre": "Benito Pérez Galdós",
+    "imagen": "",
+    "palabraClave": "galdos"
+  },
+  {
+    "nombre": "Gustavo Adolfo Bécquer",
+    "imagen": "",
+    "palabraClave": "becquer"
+  },
+  {
+    "nombre": "Federico García Lorca",
+    "imagen": "",
+    "palabraClave": "lorca"
+  },
+  {
+    "nombre": "Antonio Machado",
+    "imagen": "",
+    "palabraClave": "machado"
+  },
+  {
+    "nombre": "Juan Ramón Jiménez",
+    "imagen": "",
+    "palabraClave": "jimenez"
+  },
+  {
+    "nombre": "Miguel de Unamuno",
+    "imagen": "",
+    "palabraClave": "unamuno"
+  },
+  {
+    "nombre": "Pío Baroja",
+    "imagen": "",
+    "palabraClave": "baroja"
+  },
+  {
+    "nombre": "Ramón del Valle-Inclán",
+    "imagen": "",
+    "palabraClave": "valleinclan"
+  },
+  {
+    "nombre": "Camilo José Cela",
+    "imagen": "",
+    "palabraClave": "cela"
+  },
+  {
+    "nombre": "Miguel Delibes",
+    "imagen": "",
+    "palabraClave": "delibes"
+  },
+  {
+    "nombre": "Ana María Matute",
+    "imagen": "",
+    "palabraClave": "matute"
+  },
+  {
+    "nombre": "Rosa Montero",
+    "imagen": "",
+    "palabraClave": "montero"
+  },
+  {
+    "nombre": "Arturo Pérez-Reverte",
+    "imagen": "",
+    "palabraClave": "perezreverte"
+  },
+  {
+    "nombre": "Carlos Ruiz Zafón",
+    "imagen": "",
+    "palabraClave": "zafon"
+  },
+  {
+    "nombre": "Javier Marías",
+    "imagen": "",
+    "palabraClave": "marias"
+  },
+  {
+    "nombre": "Almudena Grandes",
+    "imagen": "",
+    "palabraClave": "grandes"
+  },
+  {
+    "nombre": "Emilia Pardo Bazán",
+    "imagen": "",
+    "palabraClave": "bazan"
+  }
+]

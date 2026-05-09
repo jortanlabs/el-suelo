@@ -1,0 +1,112 @@
+[
+  {
+    "nombre": "Don Quijote",
+    "imagen": "",
+    "palabraClave": "quijote"
+  },
+  {
+    "nombre": "Sancho Panza",
+    "imagen": "",
+    "palabraClave": "panza"
+  },
+  {
+    "nombre": "Hamlet",
+    "imagen": "",
+    "palabraClave": "hamlet"
+  },
+  {
+    "nombre": "Romeo",
+    "imagen": "",
+    "palabraClave": "romeo"
+  },
+  {
+    "nombre": "Julieta",
+    "imagen": "",
+    "palabraClave": "julieta"
+  },
+  {
+    "nombre": "Sherlock Holmes",
+    "imagen": "",
+    "palabraClave": "holmes"
+  },
+  {
+    "nombre": "Drácula",
+    "imagen": "",
+    "palabraClave": "dracula"
+  },
+  {
+    "nombre": "Frankenstein",
+    "imagen": "",
+    "palabraClave": "frankenstein"
+  },
+  {
+    "nombre": "Alicia",
+    "imagen": "",
+    "palabraClave": "alicia"
+  },
+  {
+    "nombre": "Tom Sawyer",
+    "imagen": "",
+    "palabraClave": "sawyer"
+  },
+  {
+    "nombre": "Dorian Gray",
+    "imagen": "",
+    "palabraClave": "gray"
+  },
+  {
+    "nombre": "Raskolnikov",
+    "imagen": "",
+    "palabraClave": "raskolnikov"
+  },
+  {
+    "nombre": "Anna Karenina",
+    "imagen": "",
+    "palabraClave": "karenina"
+  },
+  {
+    "nombre": "Madame Bovary",
+    "imagen": "",
+    "palabraClave": "bovary"
+  },
+  {
+    "nombre": "Frodo Bolsón",
+    "imagen": "",
+    "palabraClave": "bolson"
+  },
+  {
+    "nombre": "Gandalf",
+    "imagen": "",
+    "palabraClave": "gandalf"
+  },
+  {
+    "nombre": "Harry Potter",
+    "imagen": "",
+    "palabraClave": "potter"
+  },
+  {
+    "nombre": "Hermione Granger",
+    "imagen": "",
+    "palabraClave": "granger"
+  },
+  {
+    "nombre": "Jean Valjean",
+    "imagen": "",
+    "palabraClave": "valjean"
+  },
+  {
+    "nombre": "Quasimodo",
+    "imagen": "",
+    "palabraClave": "quasimodo"
+  },
+  {
+    "nombre": "Robinson Crusoe",
+    "imagen": "",
+    "palabraClave": "crusoe"
+  },
+  {
+    "nombre": "Peter Pan",
+    "imagen": "",
+    "palabraClave": "pan"
+  }
+]

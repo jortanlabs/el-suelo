@@ -1,0 +1,142 @@
+[
+  {
+    "nombre": "William Shakespeare",
+    "imagen": "",
+    "palabraClave": "shakespeare"
+  },
+  {
+    "nombre": "Charles Dickens",
+    "imagen": "",
+    "palabraClave": "dickens"
+  },
+  {
+    "nombre": "Jane Austen",
+    "imagen": "",
+    "palabraClave": "austen"
+  },
+  {
+    "nombre": "Edgar Allan Poe",
+    "imagen": "",
+    "palabraClave": "poe"
+  },
+  {
+    "nombre": "Mark Twain",
+    "imagen": "",
+    "palabraClave": "twain"
+  },
+  {
+    "nombre": "Ernest Hemingway",
+    "imagen": "",
+    "palabraClave": "hemingway"
+  },
+  {
+    "nombre": "F. Scott Fitzgerald",
+    "imagen": "",
+    "palabraClave": "fitzgerald"
+  },
+  {
+    "nombre": "Oscar Wilde",
+    "imagen": "",
+    "palabraClave": "wilde"
+  },
+  {
+    "nombre": "Lewis Carroll",
+    "imagen": "",
+    "palabraClave": "carroll"
+  },
+  {
+    "nombre": "Agatha Christie",
+    "imagen": "",
+    "palabraClave": "christie"
+  },
+  {
+    "nombre": "Arthur Conan Doyle",
+    "imagen": "",
+    "palabraClave": "doyle"
+  },
+  {
+    "nombre": "Jules Verne",
+    "imagen": "",
+    "palabraClave": "verne"
+  },
+  {
+    "nombre": "Victor Hugo",
+    "imagen": "",
+    "palabraClave": "hugo"
+  },
+  {
+    "nombre": "Marcel Proust",
+    "imagen": "",
+    "palabraClave": "proust"
+  },
+  {
+    "nombre": "Albert Camus",
+    "imagen": "",
+    "palabraClave": "camus"
+  },
+  {
+    "nombre": "Franz Kafka",
+    "imagen": "",
+    "palabraClave": "kafka"
+  },
+  {
+    "nombre": "Fiódor Dostoyevski",
+    "imagen": "",
+    "palabraClave": "dostoyevski"
+  },
+  {
+    "nombre": "León Tolstói",
+    "imagen": "",
+    "palabraClave": "tolstoi"
+  },
+  {
+    "nombre": "Gabriel García Márquez",
+    "imagen": "",
+    "palabraClave": "marquez"
+  },
+  {
+    "nombre": "Jorge Luis Borges",
+    "imagen": "",
+    "palabraClave": "borges"
+  },
+  {
+    "nombre": "Mario Vargas Llosa",
+    "imagen": "",
+    "palabraClave": "llosa"
+  },
+  {
+    "nombre": "Isabel Allende",
+    "imagen": "",
+    "palabraClave": "allende"
+  },
+  {
+    "nombre": "Haruki Murakami",
+    "imagen": "",
+    "palabraClave": "murakami"
+  },
+  {
+    "nombre": "J.K. Rowling",
+    "imagen": "",
+    "palabraClave": "rowling"
+  },
+  {
+    "nombre": "Stephen King",
+    "imagen": "",
+    "palabraClave": "king"
+  },
+  {
+    "nombre": "George Orwell",
+    "imagen": "",
+    "palabraClave": "orwell"
+  },
+  {
+    "nombre": "Pablo Neruda",
+    "imagen": "",
+    "palabraClave": "neruda"
+  },
+  {
+    "nombre": "Émile Zola",
+    "imagen": "",
+    "palabraClave": "zola"
+  }
+]
