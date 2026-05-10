@@ -1,22 +1,106 @@
 [
-  { "nombre": "Chicago Bulls", "imagen": "", "palabraClave": "bulls" },
-  { "nombre": "Los Angeles Lakers", "imagen": "", "palabraClave": "lakers" },
-  { "nombre": "Boston Celtics", "imagen": "", "palabraClave": "celtics" },
-  { "nombre": "Golden State Warriors", "imagen": "", "palabraClave": "warriors" },
-  { "nombre": "Miami Heat", "imagen": "", "palabraClave": "heat" },
-  { "nombre": "San Antonio Spurs", "imagen": "", "palabraClave": "spurs" },
-  { "nombre": "New York Knicks", "imagen": "", "palabraClave": "knicks" },
-  { "nombre": "Dallas Mavericks", "imagen": "", "palabraClave": "mavericks" },
-  { "nombre": "Phoenix Suns", "imagen": "", "palabraClave": "suns" },
-  { "nombre": "Brooklyn Nets", "imagen": "", "palabraClave": "nets" },
-  { "nombre": "Milwaukee Bucks", "imagen": "", "palabraClave": "bucks" },
-  { "nombre": "Philadelphia 76ers", "imagen": "", "palabraClave": "76ers" },
-  { "nombre": "Oklahoma City Thunder", "imagen": "", "palabraClave": "thunder" },
-  { "nombre": "Denver Nuggets", "imagen": "", "palabraClave": "nuggets" },
-  { "nombre": "Houston Rockets", "imagen": "", "palabraClave": "rockets" },
-  { "nombre": "Orlando Magic", "imagen": "", "palabraClave": "magic" },
-  { "nombre": "Los Angeles Clippers", "imagen": "", "palabraClave": "clippers" },
-  { "nombre": "Portland Trail Blazers", "imagen": "", "palabraClave": "blazers" },
-  { "nombre": "Toronto Raptors", "imagen": "", "palabraClave": "raptors" },
-  { "nombre": "Utah Jazz", "imagen": "", "palabraClave": "jazz" }
+  {
+    "nombre": "Chicago Bulls",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCa69d3MAjwVA1tTv-hZUWvechq835PCFpww&s"
+  },
+  {
+    "nombre": "Los Angeles Lakers",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMU6N_CQ86I6uPnQbZA7jKLGJGMHFRTWkeDw&s"
+  },
+  {
+    "nombre": "Boston Celtics",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzoqGO1TJXlYcDBXsmBtdlMrL0P5V6qREtg&s"
+  },
+  {
+    "nombre": "Golden State Warriors",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFp0VJn7EfLC5dvQJW8WresTSh1vb3nDBT-Q&s"
+  },
+  {
+    "nombre": "Miami Heat",
+    "imagen": "https://cdn.nba.com/teams/static/heat/images/global/opengraph/miami-heat.jpg"
+  },
+  {
+    "nombre": "San Antonio Spurs",
+    "imagen": "https://thumbs.dreamstime.com/b/editorial-nba-de-san-antonio-spurs-el-es-un-equipo-baloncesto-profesional-americano-basado-en-tejas-los-est%C3%ADmulos-compiten-la-140340694.jpg"
+  },
+  {
+    "nombre": "New York Knicks",
+    "imagen": "https://logobrands.com/cdn/shop/collections/4a1090a5f2a5fd6a77c2d0ee0164b23c.jpg?v=1646869333"
+  },
+  {
+    "nombre": "Dallas Mavericks",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfA83OG-L097bSS5cpB6_Ld5zYAH_1jgiSw&s"
+  },
+  {
+    "nombre": "Phoenix Suns",
+    "imagen": "https://a.espncdn.com/guid/c6eade89-5971-0e84-8ccb-cd91482b2b50/logos/primary_logo_on_black_color.png"
+  },
+  {
+    "nombre": "Brooklyn Nets",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDfCDEbfR19LDicW-Gy7maGdkx3w1UeyL3g&s"
+  },
+  {
+    "nombre": "Milwaukee Bucks",
+    "imagen": "https://i.pinimg.com/736x/95/bf/3a/95bf3a11492805be145e333982a09e2d.jpg"
+  },
+  {
+    "nombre": "Philadelphia 76ers",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7FDygjUlTv6SQuTR98espF4yxiMUDtNK7eQ&s"
+  },
+  {
+    "nombre": "Oklahoma City Thunder",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReS_pTEaRU-DhPZ3rWltzKmrmcBceCXwFgxw&s"
+  },
+  {
+    "nombre": "Denver Nuggets",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Denver_Nuggets.svg/1280px-Denver_Nuggets.svg.png"
+  },
+  {
+    "nombre": "Houston Rockets",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSATSzA57bGa0XW5KjXp_CJxqI8fCarviD3rQ&s"
+  },
+  {
+    "nombre": "Orlando Magic",
+    "imagen": "https://cdn.nba.com/teams/uploads/sites/1610612753/2025/06/orlando-magic-logo-20250602.jpg"
+  },
+  {
+    "nombre": "Los Angeles Clippers",
+    "imagen": "https://assets.turbologo.com/blog/es/2019/12/19132734/Los-Angeles-Clippers-emblem-958x575.png"
+  },
+  {
+    "nombre": "Portland Trail Blazers",
+    "imagen": "https://logos-world.net/wp-content/uploads/2020/05/Portland-Trail-Blazers-Symbol.png"
+  },
+  {
+    "nombre": "Toronto Raptors",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuu_g4DBYvUcdaOrL7ZnwbjkTOSxLfalMYw&s"
+  },
+  {
+    "nombre": "Utah Jazz",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzzZDamiEka-g_uIuwq0StXNe-bER9PdyVQ&s"
+  },
+  {
+    "nombre": "Cleveland Cavaliers",
+    "imagen": "https://i.pinimg.com/564x/93/d4/86/93d486ae1ee2d4cb2a7cc159e23af191.jpg"
+  },
+  {
+    "nombre": "Detroit Pistons",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4epsXKQ8qfV9q8aYbbudn9YStQykFrtK9PA&s"
+  },
+  {
+    "nombre": "Indiana Pacers",
+    "imagen": "https://logos-world.net/wp-content/uploads/2020/05/Indiana-Pacers-emblem.jpg"
+  },
+  {
+    "nombre": "Atlanta Hawks",
+    "imagen": "https://assets.designhill.com/design-blog/wp-content/uploads/2014/05/nba_e_hawkslogo_300x200.jpg"
+  },
+  {
+    "nombre": "Charlotte Hornets",
+    "imagen": "https://i.pinimg.com/736x/ac/83/f8/ac83f82a02bbc1ab2a7147a5f004c8e7.jpg"
+  },
+  {
+    "nombre": "Washington Wizards",
+    "imagen": "https://thumbs.dreamstime.com/b/editorial-nba-de-washington-wizards-es-un-equipo-baloncesto-profesional-americano-basado-en-d-c-los-magos-compiten-la-asociaci%C3%B3n-140340691.jpg"
+  }
 ]
