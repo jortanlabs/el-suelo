@@ -130,19 +130,19 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
     </section>
 
     <!-- SETUP -->
-    <section id="pantalla-setup" class="flex-1 overflow-hidden px-4 py-3 hidden flex flex-col">
-      <div class="max-w-md w-full mx-auto flex flex-col flex-1 min-h-0">
-        <div class="text-center mb-2 shrink-0">
-          <div class="inline-block relative px-6 py-1.5">
-            <span class="floor-corner floor-corner-tl"></span>
-            <span class="floor-corner floor-corner-tr"></span>
-            <span class="floor-corner floor-corner-bl"></span>
-            <span class="floor-corner floor-corner-br"></span>
-            <h1 class="font-titulo text-2xl font-bold neon-gold uppercase tracking-[0.3em]">El suelo</h1>
-          </div>
+    <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-4 hidden flex flex-col items-center justify-start gap-4">
+      <div class="text-center">
+        <div class="inline-block relative px-8 py-2">
+          <span class="floor-corner floor-corner-tl"></span>
+          <span class="floor-corner floor-corner-tr"></span>
+          <span class="floor-corner floor-corner-bl"></span>
+          <span class="floor-corner floor-corner-br"></span>
+          <h1 class="font-titulo text-4xl font-bold neon-gold uppercase tracking-[0.3em]">El suelo</h1>
         </div>
+      </div>
 
-        <div class="floor-card p-4 space-y-3 flex flex-col flex-1 min-h-0">
+      <div class="max-w-md w-full">
+        <div class="floor-card p-4 space-y-3">
           <!-- Nombres -->
           <div class="grid grid-cols-2 gap-2">
             <div>
@@ -183,7 +183,7 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
           <div class="flex gap-2 shrink-0">
             <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-lg px-4 py-3">¡A jugar! →</button>
           </div>
-          <p id="error-setup" class="hidden text-xs text-[#ff1dce] text-center font-bold shrink-0"></p>
+          <p id="error-setup" class="hidden text-xs text-[#ff1dce] text-center font-bold"></p>
         </div>
       </div>
     </section>
@@ -316,6 +316,35 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
         <button id="reportar-enviar" class="floor-btn floor-btn-a font-titulo font-bold text-sm px-4 py-2 flex-1">Enviar →</button>
       </div>
       <p id="reportar-feedback" class="hidden font-titulo text-xs text-center mt-3 text-[#00ff88]">✓ Reporte enviado, gracias</p>
+    </div>
+  </div>
+
+  <!-- TUTORIAL (overlay first visit) -->
+  <div id="tutorial-overlay" class="hidden fixed inset-0 z-50 flex items-end justify-center px-4 pb-6" style="background:rgba(5,12,30,0.93)">
+    <div class="floor-card max-w-sm w-full p-5 space-y-4">
+      <div class="text-center">
+        <div class="text-4xl mb-1">🎮</div>
+        <h2 class="font-titulo font-bold text-lg text-[#ffcc00] uppercase tracking-wider">¿Cómo se juega?</h2>
+      </div>
+      <div class="space-y-3 text-sm font-titulo text-[#e8e8ff]">
+        <div class="flex gap-3 items-start">
+          <span class="text-xl shrink-0">🖼️</span>
+          <span>Aparece una imagen. <strong class="text-[#ffcc00]">Di el nombre</strong> de lo que ves o pulsa <strong class="text-[#ffcc00]">Siguiente</strong> si no sabes.</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-xl shrink-0">⏱️</span>
+          <span>Cada jugador tiene <strong class="text-[#ffcc00]">45 segundos</strong>. Los aciertes conservan tiempo, los fallos lo reducen.</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-xl shrink-0">🏆</span>
+          <span>Gana quien más tiempo le <strong class="text-[#ffcc00]">quede en el reloj</strong> cuando el otro se quede sin tiempo.</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-xl shrink-0">🏁</span>
+          <span><strong class="text-[#ff1dce]">Tablero</strong>: elegid casillas del tablero y disputad cada una en duelo directo.</span>
+        </div>
+      </div>
+      <button id="tutorial-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-base py-3">¡Entendido! →</button>
     </div>
   </div>
   </main>
@@ -547,7 +576,7 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
     [pBienvenida, pSetup, pLoader, pTablero, pJuego, pFinal].forEach((s) => s.classList.add("hidden"));
     p.classList.remove("hidden");
     // El botón "← Volver" solo es útil en pantallas profundas (no en bienvenida ni setup)
-    const esSuperficial = p === pBienvenida || p === pSetup;
+    const esSuperficial = p === pBienvenida;
     $("boton-volver").classList.toggle("invisible", esSuperficial);
   }
 
@@ -671,20 +700,27 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
     const pub = await cargarPublicadas();
     const pool = construirPool(pub);
 
-    if (modo === "tablero") {
-      pararVoz();
-      initTablero(nombreA, nombreB, pool.filter((s) => !mundoSlugsNombres[s] || cineSlugsNombres[s]));
-      mostrar(pTablero);
-      return;
-    }
-
-    // Filtrar pool según la selección de categoría
+    // Filtrar pool según la selección de categoría (aplica a ambos modos)
     const esMundoSlug = (s: string) => mundoSlugsNombres[s] !== undefined && cineSlugsNombres[s] === undefined;
     const poolFiltrado = categoriaFiltro === "cine"
       ? pool.filter((s) => !esMundoSlug(s))
       : categoriaFiltro === "aleatorio"
       ? pool
       : pool.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
+
+    if (modo === "tablero") {
+      if (poolFiltrado.length === 0) {
+        const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", marcas: "Marcas", personas: "Personas" };
+        errEl.textContent = _nF[categoriaFiltro]
+          ? "No hay categorías de " + _nF[categoriaFiltro] + " publicadas aún."
+          : "No hay categorías publicadas aún.";
+        errEl.classList.remove("hidden"); return;
+      }
+      pararVoz();
+      initTablero(nombreA, nombreB, poolFiltrado);
+      mostrar(pTablero);
+      return;
+    }
 
     if (poolFiltrado.length === 0) {
       const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", marcas: "Marcas", personas: "Personas" };
@@ -829,18 +865,8 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
     return adj;
   }
 
-  function getAttackableIndices(player: "A" | "B"): Set<number> {
-    const mySquares = casillas.map((c, i) => c.dueño === player ? i : -1).filter((i) => i >= 0);
-    if (mySquares.length === 0) {
-      return new Set(casillas.map((_, i) => i).filter((i) => casillas[i].dueño !== player));
-    }
-    const attackable = new Set<number>();
-    for (const myIdx of mySquares) {
-      for (const adjIdx of getAdjacentIndices(myIdx)) {
-        if (casillas[adjIdx].dueño !== player) attackable.add(adjIdx);
-      }
-    }
-    return attackable;
+  function getAttackableIndices(_player: "A" | "B"): Set<number> {
+    return new Set(casillas.map((c, i) => c.dueño === null ? i : -1).filter((i) => i >= 0));
   }
 
   function renderTablero() {
@@ -962,15 +988,12 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
     if (ganadorDuelo && casillaDuelo >= 0) {
       casillas[casillaDuelo].empateCuenta = 0;
       casillas[casillaDuelo].dueño = ganadorDuelo;
-      for (const c of casillas) { if (c.dueño !== null) c.dueño = ganadorDuelo; }
-      tableroAtacante = ganadorDuelo;
-    } else {
-      tableroAtacante = tableroAtacante === "A" ? "B" : "A";
     }
+    tableroAtacante = tableroAtacante === "A" ? "B" : "A";
 
     const countA = casillas.filter((c) => c.dueño === "A").length;
     const countB = casillas.filter((c) => c.dueño === "B").length;
-    if (countA === 25 || countB === 25) { mostrarFinalTablero(); return; }
+    if (countA + countB === 25) { mostrarFinalTablero(); return; }
 
     jug.A.decimas = 450;
     jug.B.decimas = 450;
@@ -1232,5 +1255,16 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
       reco?.resetOffset();
       $("texto-voz").textContent = "🎤 Escuchando...";
     }
+  });
+
+  // ── Tutorial (primera visita) ────────────────────────────────
+  const TUTORIAL_KEY = "el-suelo:tutorial-visto-v1";
+  const tutorialOverlay = document.getElementById("tutorial-overlay")!;
+  if (!localStorage.getItem(TUTORIAL_KEY)) {
+    tutorialOverlay.classList.remove("hidden");
+  }
+  document.getElementById("tutorial-ok")!.addEventListener("click", () => {
+    localStorage.setItem(TUTORIAL_KEY, "1");
+    tutorialOverlay.classList.add("hidden");
   });
 </script>
