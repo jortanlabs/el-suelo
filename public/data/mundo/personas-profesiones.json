@@ -1,27 +1,166 @@
 [
-  {"nombre":"Médico","imagen":"","palabraClave":"medico"},
-  {"nombre":"Abogado","imagen":"","palabraClave":"abogado"},
-  {"nombre":"Maestro","imagen":"","palabraClave":"maestro"},
-  {"nombre":"Enfermero","imagen":"","palabraClave":"enfermero"},
-  {"nombre":"Ingeniero","imagen":"","palabraClave":"ingeniero"},
-  {"nombre":"Arquitecto","imagen":"","palabraClave":"arquitecto"},
-  {"nombre":"Periodista","imagen":"","palabraClave":"periodista"},
-  {"nombre":"Chef","imagen":"","palabraClave":"chef"},
-  {"nombre":"Bombero","imagen":"","palabraClave":"bombero"},
-  {"nombre":"Policía","imagen":"","palabraClave":"policia"},
-  {"nombre":"Fontanero","imagen":"","palabraClave":"fontanero"},
-  {"nombre":"Electricista","imagen":"","palabraClave":"electricista"},
-  {"nombre":"Carpintero","imagen":"","palabraClave":"carpintero"},
-  {"nombre":"Peluquero","imagen":"","palabraClave":"peluquero"},
-  {"nombre":"Dentista","imagen":"","palabraClave":"dentista"},
-  {"nombre":"Farmacéutico","imagen":"","palabraClave":"farmaceutico"},
-  {"nombre":"Psicólogo","imagen":"","palabraClave":"psicologo"},
-  {"nombre":"Veterinario","imagen":"","palabraClave":"veterinario"},
-  {"nombre":"Juez","imagen":"","palabraClave":"juez"},
-  {"nombre":"Piloto","imagen":"","palabraClave":"piloto"},
-  {"nombre":"Taxista","imagen":"","palabraClave":"taxista"},
-  {"nombre":"Albañil","imagen":"","palabraClave":"albanil"},
-  {"nombre":"Escritor","imagen":"","palabraClave":"escritor"},
-  {"nombre":"Fotógrafo","imagen":"","palabraClave":"fotografo"},
-  {"nombre":"Agricultor","imagen":"","palabraClave":"agricultor"}
+  {
+    "nombre": "Médico",
+    "imagen": "https://thumbs.dreamstime.com/b/hombre-del-m%C3%A9dico-89752915.jpg"
+  },
+  {
+    "nombre": "Abogado",
+    "imagen": "https://www.mnprogram.com/wp-content/uploads/2024/02/Tipos-de-abogados-1-1024x576.webp"
+  },
+  {
+    "nombre": "Profesor",
+    "imagen": "https://s7d1.scene7.com/is/image/wbcollab/teacher_in_ghana-283?qlt=90&fmt=webp&resMode=sharp2"
+  },
+  {
+    "nombre": "Enfermero",
+    "imagen": "https://cdn.prod.website-files.com/616f25c254d71f9b98b8ba83/62be2c4428509923eea4e781_hospital.jpg"
+  },
+  {
+    "nombre": "Ingeniero",
+    "imagen": "https://www.inesa-tech.com/wp-content/uploads/2025/03/1667860915831.png"
+  },
+  {
+    "nombre": "Arquitecto",
+    "imagen": "https://www.aprendemas.com/mx/blog/images/2017/03/arquitectura1.jpg"
+  },
+  {
+    "nombre": "Periodista",
+    "imagen": "https://experienciajoven.com/wp-content/uploads/2023/01/que-hace-un-periodista-1-1206x720.jpg"
+  },
+  {
+    "nombre": "Chef, cocinero",
+    "imagen": "https://ksbrecruitment.co.uk/wp-content/uploads/2025/04/agency-chefs.jpg"
+  },
+  {
+    "nombre": "Bombero",
+    "imagen": "https://www.iaff.org/wp-content/uploads/2025/09/Copy-of-IMG_0064-1.jpg"
+  },
+  {
+    "nombre": "Policía",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4PKqcGDqZrnbKK3dGG93uwQJ0LUQrHdGuRw&s"
+  },
+  {
+    "nombre": "Fontanero",
+    "imagen": "https://static.comunicae.com/photos/notas/1219543/1605095138_shutterstock65134090.jpg"
+  },
+  {
+    "nombre": "Electricista",
+    "imagen": "https://titulae.es/wp-content/uploads/2023/11/que-hace-un-electricista.jpg"
+  },
+  {
+    "nombre": "Carpintero",
+    "imagen": "https://www.ebanisteriamadridalarce.com/wp-content/uploads/2025/03/de-la-madera-al-mueble-descubre-nuestro-proceso-carpintero-artesanal-2-750x480.jpeg"
+  },
+  {
+    "nombre": "Peluquero",
+    "imagen": "https://offloadmedia.feverup.com/valenciasecreta.com/wp-content/uploads/2020/01/21091419/shutterstock_380377951-1-1024x597.jpg"
+  },
+  {
+    "nombre": "Dentista",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCKS3K6q5zP1k5_qbfFk13i0sLL-sMF0T7-A&s"
+  },
+  {
+    "nombre": "Farmacéutico",
+    "imagen": "https://www.visitadoramedicos.com/images/Articulos/farmaceutico.jpeg"
+  },
+  {
+    "nombre": "Psicólogo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-dXwWM7TtALqD05v6GjhPPN3owxRcnZvLSw&s"
+  },
+  {
+    "nombre": "Veterinario",
+    "imagen": "https://postgradoveterinaria.com/wp-content/uploads/veterinario-de-urgencias.jpg"
+  },
+  {
+    "nombre": "Juez",
+    "imagen": "https://media.istockphoto.com/id/104821184/es/foto/juez-martillo-en-courtroom-retenci%C3%B3n.jpg?s=612x612&w=0&k=20&c=Irm6JxEaeUBA0vS7lMQoEKqIaqISwv0lzidv8oE7O8M="
+  },
+  {
+    "nombre": "Piloto",
+    "imagen": "https://images.ecestaticos.com/vfYlg0X6E8KgWTKTllgu1EpzlfA=/0x0:1256x835/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F2f8%2F1b8%2F71c%2F2f81b871c579b0962f5e06bc3fa03982.jpg"
+  },
+  {
+    "nombre": "Taxista",
+    "imagen": "https://www.techrock.es/wp-content/uploads/2023/10/shutterstock_2056944956.jpg"
+  },
+  {
+    "nombre": "Albañil",
+    "imagen": "https://agusgarama.com/wp-content/uploads/2022/05/las-herramientas-de-trabajo-habituales-de-un-albanil-en-san-sebastian-scaled.jpeg"
+  },
+  {
+    "nombre": "Escritor",
+    "imagen": "https://thumbs.dreamstime.com/b/escritor-en-el-trabajo-31869272.jpg"
+  },
+  {
+    "nombre": "Fotógrafo",
+    "imagen": "https://bw.ceac.es/sites/default/files/2022-03/BLOGCEAC-fotografo-funciones-0322.jpg.webp"
+  },
+  {
+    "nombre": "Agricultor",
+    "imagen": "https://img.magnific.com/foto-gratis/agricultor-que-usa-pala-cavar-suelo-sus-campos-arroz_1150-17239.jpg?semt=ais_hybrid&w=740&q=80"
+  },
+  {
+    "nombre": "Músico",
+    "imagen": "https://images.squarespace-cdn.com/content/v1/56c240a0d51cd440f4c3f6ca/1462284288956-O1EJ53E02RYAOSFSZJKY/solo-violinist-619154_1280.jpg"
+  },
+  {
+    "nombre": "Mecánico",
+    "imagen": "https://sefhor.com/wp-content/uploads/mecanico-vehiculos.jpg"
+  },
+  {
+    "nombre": "Actor",
+    "imagen": "https://www.shutterstock.com/image-photo/actor-performing-while-second-assistant-600nw-2293014729.jpg"
+  },
+  {
+    "nombre": "Informático",
+    "imagen": "https://www.emagister.com/blog/wp-content/uploads/2015/05/GettyImages-1279133399.jpg"
+  },
+  {
+    "nombre": "Fisioterapeuta",
+    "imagen": "https://www.centrescruznavarro.com/wp-content/uploads/2022/04/cua%CC%81ndo-ir-al-fisioterapeuta-1024x455.png.webp"
+  },
+  {
+    "nombre": "Astronauta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Neil_Armstrong_pose.jpg"
+  },
+  {
+    "nombre": "Modelo",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/paloma-suarez-feb-24-0039-jpg-65cf3fe38f02b.jpg?resize=980:*"
+  },
+  {
+    "nombre": "Azafato de vuelo",
+    "imagen": "https://esaturformacion.com/wp-content/uploads/2021/08/handsome-steward-training-safety-prior-procedures-7WW8ZSC-Personalizado-1024x683.jpg"
+  },
+  {
+    "nombre": "Soldado",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxL3pKIWIc7XQbEod0yftS6Vxr0vq7TxaXw&s"
+  },
+  {
+    "nombre": "Político",
+    "imagen": "https://escuelaelbs.com/wp-content/uploads/se-puede-ser-politico-sin-estudios.jpg"
+  },
+  {
+    "nombre": "Científico",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgTb9ZFiZYcwTLCo69YGH8ByaUA8Sg-1NQhQ&s"
+  },
+  {
+    "nombre": "Cirujano",
+    "imagen": "https://cdn.euroinnova.edu.es/img/subidasEditor/el%20texto%20del%20p%C3%A1rrafo%20(2)%20(1)-1661953828.webp"
+  },
+  {
+    "nombre": "Florista",
+    "imagen": "https://www.campustraining.es/wp-content/uploads/2022/08/BLOGCAMPUS-funciones-florista-0822.jpg"
+  },
+  {
+    "nombre": "Panadero",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ945u9ZikkUkicvrWC-9aWCPqEhtb-ashS9w&s"
+  },
+  {
+    "nombre": "Dependiente",
+    "imagen": "https://static.oficinaempleo.com/blog/wp-content/uploads/2023/10/Empleo-en-Kiabi-Adobe-Stock.jpg"
+  },
+  {
+    "nombre": "Bibliotecario",
+    "imagen": "https://previews.123rf.com/images/lipik/lipik1601/lipik160100056/50650454-Hay-muchos-libros-tomadas-por-el-hombre-bibliotecario-para-darles-a-los-estudiantes-Hombre-que-muest-Foto-de-archivo.jpg"
+  }
 ]
