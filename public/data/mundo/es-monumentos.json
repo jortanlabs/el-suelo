@@ -68,9 +68,8 @@
     "imagen": "https://www.barcelona.de/images/palau-de-la-musica/480300-palau-de-la-musica-konzertsaal-2.jpg"
   },
   {
-    "nombre": "Casa Milà",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Casa_Mil%C3%A0%2C_general_view.jpg/330px-Casa_Mil%C3%A0%2C_general_view.jpg",
-    "palabraClave": "mila"
+    "nombre": "Casa Milà (La Pedrera)",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/de/Casa_Mil%C3%A0%2C_general_view.jpg"
   },
   {
     "nombre": "Casa Batlló",
@@ -122,94 +121,74 @@
   },
   {
     "nombre": "Torre de Hércules",
-    "imagen": ""
+    "imagen": "https://www.hoteleuropaarteixo.com/ZipZap/EuropaArteixo/torre-hercules.jpg"
   },
   {
     "nombre": "Murallas de Lugo",
-    "imagen": ""
+    "imagen": "https://www.paxinasgalegas.es/fiestas/muralla-romana-de-lugo-lugo_img4624n1t0.jpg"
   },
   {
     "nombre": "Catedral de Valencia",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Valencia_cathedral_2022_-_north_fa%C3%A7ade_dawn.jpg/330px-Valencia_cathedral_2022_-_north_fa%C3%A7ade_dawn.jpg"
   },
   {
     "nombre": "Puente Romano de Córdoba",
-    "imagen": ""
+    "imagen": "https://vitium.es/wp-content/uploads/2023/02/conoce-cordoba-en-1-dia-hotel-en-cordoba-vitium-blog-.jpg"
   },
   {
     "nombre": "Castillo de Peñafiel",
-    "imagen": ""
+    "imagen": "https://www.civitatis.com/f/espana/valladolid/guia/penafiel-m.jpg"
   },
   {
     "nombre": "Anfiteatro Romano de Tarragona",
-    "imagen": ""
+    "imagen": "https://www.tarragonaturisme.cat/sites/default/files/styles/slick_main/public/2026-02/tarragona-amfiteatre-roma-anfiteatro-romano-ruta-romana-patrimoni-mundial.jpg.webp?itok=bWP8k5Rq"
   },
   {
     "nombre": "Templo de Debod",
-    "imagen": ""
-  },
-  {
-    "nombre": "Palacio Real de Aranjuez",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Templo_de_Debod_in_Madrid.jpg"
   },
   {
     "nombre": "Catedral de Ávila",
-    "imagen": ""
+    "imagen": "https://st3.idealista.com/news/archivos/styles/open_graph/public/2024-09/images/catedral_de_avila.jpg?VersionId=oqbeYG_3d4NO_pbQtQIE8BqW3DqfbZ6Z&itok=IkWEud56"
   },
   {
     "nombre": "Catedral de Salamanca",
-    "imagen": ""
+    "imagen": "https://www.turismocastillayleon.com/cm/images?locale=es_ES&idMmedia=67769"
   },
   {
     "nombre": "Monasterio de Poblet",
-    "imagen": ""
+    "imagen": "https://www.poblet.cat/media/upload/cache/MONUMENTHISTORIA01_1669218330_a550x367.jpg"
   },
   {
     "nombre": "Castillo de Javier",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/db/Castillo_de_Javier_en_Javier.JPG"
   },
   {
     "nombre": "Basílica del Pilar",
-    "imagen": ""
+    "imagen": "https://www.hitocultural.com/wp-content/uploads/2020/11/Perfil-Pilar-Zaragoza-2.jpg"
   },
   {
     "nombre": "Palau Güell",
-    "imagen": ""
+    "imagen": "https://www.dosde.com/discover/wp-content/uploads/2017/02/azotea-palau-guell-gaudi-barcelona-dosde-publishing.jpg"
   },
   {
     "nombre": "Fortaleza de la Mota",
-    "imagen": ""
+    "imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/3d/4a/69/fortaleza-de-la-mota.jpg?w=900&h=-1&s=1"
   },
   {
     "nombre": "Alcazaba de Málaga",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Alcazaba_de_M%C3%A1laga_overview.jpg/1280px-Alcazaba_de_M%C3%A1laga_overview.jpg"
   },
   {
     "nombre": "Castillo de Almansa",
-    "imagen": ""
+    "imagen": "https://1707almansahistorica.com/wp-content/uploads/2022/12/CastilloAlmansa1.jpg"
   },
   {
     "nombre": "Monasterio de Yuste",
-    "imagen": ""
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_KYoIAHC_SpIlJNdb7f3Xnr5ItHM9ShvJuoookBFaHXjKh0JKMigRryV5qv_PJMDZjKsIZl8_UzHF-n0-ahQDJj6ebDEYA-nOgMFyZEl2Zv-N7nR-19uKpDO-Wh8V1H71JeOtmcpEfMJ7/s1600/Monasterio-de-Yuste-vista-general.jpg"
   },
   {
     "nombre": "Castillo de Gormaz",
-    "imagen": ""
-  },
-  {
-    "nombre": "Valle de los Caídos",
-    "imagen": "https://www.okmadridtours.com/wp-content/uploads/2018/10/El-Escorial-40.jpg"
-  },
-  {
-    "nombre": "Casa Milà (La Pedrera)",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/de/Casa_Mil%C3%A0%2C_general_view.jpg"
-  },
-  {
-    "nombre": "Ruinas de Numancia",
-    "imagen": "https://www.turismocastillayleon.com/cm/images?locale=es_ES&idMmedia=267280"
-  },
-  {
-    "nombre": "Peñón de Gibraltar",
-    "imagen": "https://media.traveler.es/photos/613771e2652b2e41f8dcee81/master/w_1600%2Cc_limit/124788.jpg"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Gormaz%2C_Fortaleza_califal_p%C3%B1a.jpg"
   }
 ]
