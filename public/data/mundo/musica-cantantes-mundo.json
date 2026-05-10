@@ -1,142 +1,154 @@
 [
   {
     "nombre": "Michael Jackson",
-    "imagen": "",
-    "palabraClave": "jackson"
+    "imagen": "https://static.wikia.nocookie.net/michael-jackson-espanol/images/2/28/Michael_Jackson.webp/revision/latest?cb=20220626235224&path-prefix=es"
   },
   {
     "nombre": "Madonna",
-    "imagen": "",
-    "palabraClave": "madonna"
+    "imagen": "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4d04/live/5d1ada50-2f89-11ee-a23a-e5d83f01e7f4.jpg.webp"
   },
   {
     "nombre": "Elvis Presley",
-    "imagen": "",
-    "palabraClave": "presley"
+    "imagen": "https://ahoraeg.com/como/wp-content/uploads/2025/12/Curiosidades-de-Elvis-Presley-que-quizas-no-sabias.webp"
   },
   {
     "nombre": "Frank Sinatra",
-    "imagen": "",
-    "palabraClave": "sinatra"
+    "imagen": "https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fcloudfront-eu-central-1.images.arcpublishing.com%2Fprisa%2FICRQUEELU5DCRCXQWVULDNDNGQ.jpg?auth=3303610b1d0b655f17e900a31287301c822582d6fd45eac94ef33a63f798763b&width=1960&height=1103&smart=true"
   },
   {
     "nombre": "Freddie Mercury",
-    "imagen": "",
-    "palabraClave": "mercury"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7wbMWaKwAFirJt_L4cvw-2Jm86gnel8sNFw&s"
   },
   {
     "nombre": "Whitney Houston",
-    "imagen": "",
-    "palabraClave": "houston"
+    "imagen": "https://www.billboard.com/wp-content/uploads/2025/07/whitney-houston-press-cr-richard-avedon-billboard-1548.jpg?w=1024"
   },
   {
     "nombre": "Beyoncé",
-    "imagen": "",
-    "palabraClave": "beyonce"
+    "imagen": "https://image.europafm.com/clipping/cmsimages02/2025/04/29/33D8ED8A-8154-429C-B62E-D59DC16AB576/beyonce-arranco-cowboy-carter-tour-domingo-28-abril-inglewood_98.jpg?crop=3510,1975,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
     "nombre": "Adele",
-    "imagen": "",
-    "palabraClave": "adele"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GmY7YOms7_vhTPiW3CB2xJf2aK7BScmXmg&s"
   },
   {
     "nombre": "David Bowie",
-    "imagen": "",
-    "palabraClave": "bowie"
+    "imagen": "https://www.experimenta.es/wp-content/uploads/2018/10/David-Bowie-red.jpg"
   },
   {
     "nombre": "Kurt Cobain",
-    "imagen": "",
-    "palabraClave": "cobain"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0TEAAWSGa31MxgSXGrwAiRaDKmMBS6yyA7w&s"
   },
   {
     "nombre": "Mick Jagger",
-    "imagen": "",
-    "palabraClave": "jagger"
+    "imagen": "https://media.admagazine.com/photos/696e82184f26b9c49e460979/16:9/w_2560%2Cc_limit/2203185793"
   },
   {
     "nombre": "Rihanna",
-    "imagen": "",
-    "palabraClave": "rihanna"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/rihanna-arrives-at-the-fashion-awards-2019-held-at-royal-news-photo-1613810540.?crop=0.639xw:1xh;center,top&resize=640:*"
   },
   {
     "nombre": "Taylor Swift",
-    "imagen": "",
-    "palabraClave": "swift"
+    "imagen": "https://forbes.es/wp-content/uploads/2025/08/foto-2025-08-04T105145.404.png"
   },
   {
     "nombre": "Lady Gaga",
-    "imagen": "",
-    "palabraClave": "gaga"
+    "imagen": "https://fotografias.lasexta.com/clipping/cmsimages01/2026/03/28/5AADDA00-72B9-47EE-96DE-6D6B849B9472/aclamada-cantante-lady-gaga_160.jpg?crop=5000,2813,x0,y0&width=544&height=306&optimize=low&format=webply"
   },
   {
     "nombre": "Bruno Mars",
-    "imagen": "",
-    "palabraClave": "mars"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP9pG3WVnj5v0wijS76rBKtJx_zigjHayCBQ&s"
   },
   {
     "nombre": "Ed Sheeran",
-    "imagen": "",
-    "palabraClave": "sheeran"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/ed-sheeran-attends-the-f1-the-movie-european-premiere-at-news-photo-1757689303.pjpeg?crop=1.00xw:0.781xh;0,0.0385xh&resize=640:*"
   },
   {
     "nombre": "Drake",
-    "imagen": "",
-    "palabraClave": "drake"
+    "imagen": "https://images.codigopoker.com/wp-content/uploads/2026/02/18210514/Drake-Scorpion.jpg"
   },
   {
     "nombre": "Eminem",
-    "imagen": "",
-    "palabraClave": "eminem"
+    "imagen": "https://i8.amplience.net/i/naras/eminem.jpg.jpg"
   },
   {
     "nombre": "Bob Dylan",
-    "imagen": "",
-    "palabraClave": "dylan"
+    "imagen": "https://rialta.org/wp-content/uploads/2021/02/Bob-Dylan.jpg"
   },
   {
     "nombre": "Amy Winehouse",
-    "imagen": "",
-    "palabraClave": "winehouse"
+    "imagen": "https://img2.rtve.es/n/2031762"
   },
   {
     "nombre": "Elton John",
-    "imagen": "",
-    "palabraClave": "john"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbXYh_L98SkwqaW3K0f0oADQUVZ3o76ZXVMQ&s"
   },
   {
     "nombre": "Bruce Springsteen",
-    "imagen": "",
-    "palabraClave": "springsteen"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/44/Bruce_Springsteen_2025.jpg"
   },
   {
     "nombre": "Jim Morrison",
-    "imagen": "",
-    "palabraClave": "morrison"
+    "imagen": "https://i0.wp.com/www.wikimetal.com.br/wp-content/uploads/2021/07/jim-morrison.jpg?resize=1170%2C658&ssl=1"
   },
   {
     "nombre": "Shakira",
-    "imagen": "",
-    "palabraClave": "shakira"
+    "imagen": "https://ca-times.brightspotcdn.com/dims4/default/5a69775/2147483647/strip/true/crop/4130x2753+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7b%2F01%2F848732dd45eb899be66b9779527a%2F172b9f7d26d44e13b5f3d87a60cd3fb6.jpg"
   },
   {
     "nombre": "Celine Dion",
-    "imagen": "",
-    "palabraClave": "dion"
+    "imagen": "https://es.rollingstone.com/wp-content/uploads/2023/04/Celine-Dion-esta-de-regreso-con-nueva-musica.jpg"
   },
   {
     "nombre": "Mariah Carey",
-    "imagen": "",
-    "palabraClave": "carey"
+    "imagen": "https://i.scdn.co/image/ab6761610000e5ebd0a27777aaeb1725add6ace8"
   },
   {
     "nombre": "Tina Turner",
-    "imagen": "",
-    "palabraClave": "turner"
+    "imagen": "https://ca-times.brightspotcdn.com/dims4/default/aa071db/2147483647/strip/false/crop/2000x1295+0+0/resize/1486x962!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fcf%2F3a%2Fa6dee0aced0501644e62423fbbd8%2F3645a1b2212344398b168d40ce65d6c7"
   },
   {
     "nombre": "Prince",
-    "imagen": "",
-    "palabraClave": "prince"
+    "imagen": "https://aaregistry.org/wp-content/uploads/2009/09/Prince-Kevin-Winter-300x200.jpg"
+  },
+  {
+    "nombre": "Ariana Grande",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ariana_Grande_promoting_Wicked_%282024%29_3.jpg/250px-Ariana_Grande_promoting_Wicked_%282024%29_3.jpg"
+  },
+  {
+    "nombre": "Bad Bunny",
+    "imagen": "https://e01-phantom-elmundo.uecdn.es/886b9269c5ba66789412e3783c6a2e5b/crop/82x0/1227x765/resize/828/f/jpg/assets/multimedia/imagenes/2020/05/10/15891358002692.jpg"
+  },
+  {
+    "nombre": "The Weeknd",
+    "imagen": "https://industriamusical.com/wp-content/uploads/2023/01/The_Weeknd.jpg"
+  },
+  {
+    "nombre": "Kendrick Lamar",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/kendrick-lamar-at-the-67th-grammy-awards-held-at-the-crypto-news-photo-1738959019.pjpeg?crop=1.00xw:0.667xh;0,0.0715xh&resize=640:*"
+  },
+  {
+    "nombre": "Justin Bieber",
+    "imagen": "https://img2.rtve.es/n/2166797?w=1600"
+  },
+  {
+    "nombre": "Jennifer Lopez",
+    "imagen": "https://media.glamour.mx/photos/696e867dafaacaa0e2080137/16:9/w_2560%2Cc_limit/Jennifer-Lopez-zara.png"
+  },
+  {
+    "nombre": "Paul McCartney",
+    "imagen": "https://media.gq.com/photos/5b96c3e008019b0e120729fb/16:9/w_2560%2Cc_limit/c-GQ100118McCartney_01.png"
+  },
+  {
+    "nombre": "Katy Perry",
+    "imagen": "https://periodismoypunto.com/download/multimedia.normal.8af6668bc6762d4d.SU1HLTIwMjQxMDIwLVdBMDA2M19ub3JtYWwud2VicA==.webp"
+  },
+  {
+    "nombre": "Miley Cyrus",
+    "imagen": "https://static.wixstatic.com/media/fc17f5_e02a655faf3f4e508dd35e1902adb04b~mv2.png/v1/fill/w_568,h_426,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc17f5_e02a655faf3f4e508dd35e1902adb04b~mv2.png"
+  },
+  {
+    "nombre": "Christina Aguilera",
+    "imagen": "https://www.hsbnoticias.com/wp-content/uploads/2025/12/christina-aguilera-1-scaled.jpg"
   }
 ]
