@@ -26,7 +26,7 @@ const cineBloques = bloques.map((b) => ({
 }));
 
 // Todos los slugs disponibles — el filtro por "publicadas" ocurre en runtime (cargarPublicadas)
-import { subcategoriasMundo } from "../data/catalogoMundo.ts";
+import { subcategoriasMundo, bloquesMundo } from "../data/catalogoMundo.ts";
 
 // Cine: slug → nombre para todos los slugs directos + derivados + mezclas
 const cineSlugsNombres: Record<string, string> = Object.fromEntries(
@@ -75,6 +75,15 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
       return [s.slug, grupo];
     })
 );
+
+const bloqueEmojiMap: Record<string, string> = Object.fromEntries(
+  bloquesMundo.map((b) => [b.slug, b.emoji])
+);
+const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
+  subcategoriasMundo
+    .filter((s) => !s.esMetaCategoria && !!s.nombres)
+    .map((s) => [s.slug, bloqueEmojiMap[s.bloque] ?? "🌍"])
+);
 ---
 
 <Base titulo="El Suelo" descripcion="Di qué ves antes de que se acabe tu tiempo.">
@@ -86,6 +95,7 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
   <div id="datos-cine-mezcla" data-json={JSON.stringify(cineSlugsMetaMezcla)} class="hidden"></div>
   <div id="datos-mundo-nombres" data-json={JSON.stringify(mundoSlugsNombres)} class="hidden"></div>
   <div id="datos-mundo-grupo" data-json={JSON.stringify(mundoSlugsGrupo)} class="hidden"></div>
+  <div id="datos-mundo-emoji" data-json={JSON.stringify(mundoSlugsEmoji)} class="hidden"></div>
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
@@ -531,6 +541,9 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
   const mundoSlugsGrupo: Record<string, string> = JSON.parse(
     (document.getElementById("datos-mundo-grupo") as HTMLElement).dataset.json!,
   );
+  const mundoSlugsEmoji: Record<string, string> = JSON.parse(
+    (document.getElementById("datos-mundo-emoji") as HTMLElement).dataset.json!,
+  );
 
   // Construye el pool jugable filtrando por la lista publicada (cargada en runtime)
   function construirPool(pub: string[]): string[] {
@@ -789,11 +802,21 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
   function initTablero(nombreA: string, nombreB: string, poolCine: string[]) {
     casillas = Array.from({ length: 25 }, () => {
       const slug = poolCine[Math.floor(Math.random() * poolCine.length)];
-      const meta = cineBloques.flatMap((b) => b.subcats).find((s) => s.slug === slug);
+      const esMundo = mundoSlugsNombres[slug] !== undefined && cineSlugsNombres[slug] === undefined;
+      let emoji: string;
+      let nombre: string;
+      if (esMundo) {
+        emoji = mundoSlugsEmoji[slug] ?? "🌍";
+        nombre = mundoSlugsNombres[slug] ?? slug;
+      } else {
+        const meta = cineBloques.flatMap((b) => b.subcats).find((s) => s.slug === slug);
+        emoji = meta?.emoji ?? "🎬";
+        nombre = meta?.nombre ?? cineSlugsNombres[slug] ?? slug;
+      }
       return {
         catSlug: slug,
-        catEmoji: meta?.emoji ?? "🎬",
-        catNombre: meta?.nombre ?? slug,
+        catEmoji: emoji,
+        catNombre: nombre,
         catTipo: "cine" as const,
         catNombres: null,
         catHardcoded: null,
@@ -898,20 +921,17 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
     if (casilla.items.length === 0) {
       try {
         let raw: ItemFloor[];
-        if (casilla.catTipo === "cine") {
-          const derivado = cineSlugsDerivados[casilla.catSlug];
-          raw = derivado
-            ? await cargarCatalogoCinePeli(casilla.catSlug, derivado.baseSlug)
-            : await cargarCatalogoCine(casilla.catSlug);
-        } else if (casilla.catHardcoded) {
-          raw = [...casilla.catHardcoded];
+        const slug = casilla.catSlug;
+        const esMundo = mundoSlugsNombres[slug] !== undefined && cineSlugsNombres[slug] === undefined;
+        if (esMundo) {
+          raw = await cargarCatalogoMundo(slug);
+        } else if (cineSlugsMetaMezcla[slug]) {
+          raw = await cargarMezclaCine(cineSlugsMetaMezcla[slug]);
         } else {
-          const catDef = todasCatsOtras.find((c) => c.slug === casilla.catSlug);
-          raw = await generarFloorPredefinida(
-            casilla.catSlug, casilla.catNombres!,
-            catDef?.ocupacionesWikidata, catDef?.instanciasWikidata,
-            catDef?.descripcionWikidata, catDef?.apiEspecializada,
-          );
+          const derivado = cineSlugsDerivados[slug];
+          raw = derivado
+            ? await cargarCatalogoCinePeli(slug, derivado.baseSlug)
+            : await cargarCatalogoCine(slug);
         }
         casilla.items = [...raw].sort(() => Math.random() - 0.5);
         casilla.itemsOffset = 0;
