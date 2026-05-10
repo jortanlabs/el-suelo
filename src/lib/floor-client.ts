@@ -324,14 +324,14 @@ export async function generarFloor(
 
 // ── Catálogos pre-resueltos (Cine, Mundo…) ───────────────────────────────────
 
-const TTL_CINE_MS = 7 * 24 * 60 * 60 * 1000; // 7 días
+const TTL_CINE_MS = 60 * 60 * 1000; // 1 hora — los JSON se editan vía /preview, no podemos cachear demasiado
 
 function claveCine(slug: string): string {
-  return `juegario:cine:v2:${slug}`;
+  return `juegario:cine:v3:${slug}`;
 }
 
 function claveMundo(slug: string): string {
-  return `juegario:mundo:v1:${slug}`;
+  return `juegario:mundo:v2:${slug}`;
 }
 
 /**
@@ -345,7 +345,8 @@ export async function cargarCatalogoCine(slug: string): Promise<ItemFloor[]> {
 
   const res = await fetch(`/data/cine/${slug}.json`);
   if (!res.ok) throw new Error(`Categoría "${slug}" no encontrada`);
-  const items = (await res.json()) as ItemFloor[];
+  const todos = (await res.json()) as ItemFloor[];
+  const items = todos.filter((i) => !!i.imagen);
   if (!items.length) throw new Error(`La categoría "${slug}" está vacía`);
 
   try {
@@ -365,7 +366,8 @@ export async function cargarCatalogoMundo(slug: string): Promise<ItemFloor[]> {
 
   const res = await fetch(`/data/mundo/${slug}.json`);
   if (!res.ok) throw new Error(`Categoría "${slug}" no encontrada`);
-  const items = (await res.json()) as ItemFloor[];
+  const todos = (await res.json()) as ItemFloor[];
+  const items = todos.filter((i) => !!i.imagen);
   if (!items.length) throw new Error(`La categoría "${slug}" está vacía`);
 
   try {
@@ -390,6 +392,7 @@ export async function cargarCatalogoCinePeli(derivedSlug: string, baseSlug: stri
 
   const items: ItemFloor[] = base
     .map((it) => {
+      if (!it.imagen) return null;
       const m = it.nombre.match(/\(([^)]+)\)$/);
       if (!m) return null;
       const peli = m[1].trim();
@@ -425,8 +428,8 @@ export async function cargarMezclaCine(slugs: string[]): Promise<ItemFloor[]> {
   return items;
 }
 
-const PUB_TTL_MS = 5 * 60 * 1000; // 5 minutos
-const PUB_CACHE_KEY = "juegario:publicadas:v1";
+const PUB_TTL_MS = 60 * 1000; // 1 minuto — para que cambios en /preview se vean rápido
+const PUB_CACHE_KEY = "juegario:publicadas:v2";
 
 export async function cargarPublicadas(): Promise<string[]> {
   try {
