@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "nombre": "Macarena",
+    "imagen": "https://i.pinimg.com/originals/2b/04/4f/2b044f5304e06201c86e0e5be0818be5.gif"
+  },
+  {
+    "nombre": "Aserejé",
+    "imagen": "https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyNG5zZWJsZ3kwZ2VmODdjeDk2eTJudzNtNXBvcWtvcDZ5anJuOWU2NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SmRirPjlSUVIQ/200.gif"
+  },
+  {
+    "nombre": "Gangnam Style",
+    "imagen": "https://st1.uvnimg.com/3f/8e/8d6d7f224b7abd4ada54c3c1b5be/animated-gif-downsized-large-1.gif"
+  },
+  {
+    "nombre": "No rompas más",
+    "imagen": "https://media.tenor.com/vvu78Y0zB2oAAAAM/coyote-ugly-music.gif"
+  },
+  {
+    "nombre": "Paquito el chocolatero",
+    "imagen": "https://big.assets.huffingtonpost.com/paquitochoco.gif"
+  },
+  {
+    "nombre": "Saturday night",
+    "imagen": "https://i.makeagif.com/media/11-08-2019/FZgN_M.gif"
+  },
+  {
+    "nombre": "Antes muerta que sencilla",
+    "imagen": "https://i.makeagif.com/media/5-10-2014/_bVOTc.gif"
+  },
+  {
+    "nombre": "Ave María",
+    "imagen": "https://i.makeagif.com/media/9-16-2015/nDrP3M.gif"
+  },
+  {
+    "nombre": "Mi gran noche",
+    "imagen": "https://i.makeagif.com/media/1-26-2017/UdCW6R.gif"
+  },
+  {
+    "nombre": "Sobreviviré",
+    "imagen": "https://i.makeagif.com/media/1-04-2021/rmXK3u.gif"
+  },
+  {
+    "nombre": "Despacito",
+    "imagen": "https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUya2E1eGZvN3Z0cGw4d3Q1MHl6aWQwenN5OWk4d3NqdTdoamQxdDJxdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l1Etct30M1D6VQUjm/200.gif"
+  },
+  {
+    "nombre": "Thriller",
+    "imagen": "https://media1.tenor.com/m/HaO4yeKFGHUAAAAC/thriller-michael-jackson.gif"
+  },
+  {
+    "nombre": "Waka waka",
+    "imagen": "https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyMTV4cXR2a253dHUzZ2ptMGgzcHQwOWg0bWM3ajk0d3I1eXVkdzRsdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xD7JDX7BkHv44/giphy.gif"
+  },
+  {
+    "nombre": "El meneaito",
+    "imagen": "https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3M4OGR3d2JuNTNqNWMyOWg2YWh1Y21saGMxdjlldjdmeXJwOW9xcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xUySTE8BLBIx0QLa7u/200w.gif"
+  },
+  {
+    "nombre": "La conga",
+    "imagen": "https://media.tenor.com/kmDMUqa55voAAAAM/happy-birthday.gif"
+  },
+  {
+    "nombre": "Danza Kuduro",
+    "imagen": "https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyMXdqNHhlY2NiZXdqYm44YTNsZGVvdG0zb3E1d3FpcXNiN3Y2ZGVlayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RhZItc0A84FUdjAIsD/200w.gif"
+  },
+  {
+    "nombre": "Torero",
+    "imagen": "https://2img.net/h/i.imgflip.com/9lj9.gif"
+  },
+  {
+    "nombre": "Sexy and I know it",
+    "imagen": "https://i.makeagif.com/media/1-12-2016/Nczqka.gif"
+  },
+  {
+    "nombre": "Chiki chiki",
+    "imagen": "https://i.makeagif.com/media/5-22-2018/TXr7XG.gif"
+  },
+  {
+    "nombre": "La la la",
+    "imagen": "https://i.makeagif.com/media/5-05-2018/zHBgg0.gif"
+  }
+]
