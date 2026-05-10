@@ -260,7 +260,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
               </div>
             </div>
           </div>
-          <p id="juego-cat-label" class="mt-2 text-xs text-[#ffcc00] font-titulo text-center max-w-xs px-2 font-bold uppercase tracking-widest opacity-60"></p>
+          <p id="juego-cat-label" class="mt-2 text-sm text-[#ffcc00] font-titulo text-center max-w-xs px-2 font-bold uppercase tracking-widest"></p>
           <p id="texto-voz" class="mt-0.5 text-xs text-[#2a5090] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
         </div>
 
@@ -800,8 +800,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   // ── Tablero ──────────────────────────────────────────────────
   function initTablero(nombreA: string, nombreB: string, poolCine: string[]) {
-    casillas = Array.from({ length: 25 }, () => {
-      const slug = poolCine[Math.floor(Math.random() * poolCine.length)];
+    // Selección sin repetición: barajar y tomar 25; si hay menos de 25 slugs, rellenar cíclicamente con la mínima repetición
+    const barajados = [...poolCine].sort(() => Math.random() - 0.5);
+    const slugs25: string[] = [];
+    for (let i = 0; i < 25; i++) slugs25.push(barajados[i % barajados.length]);
+    slugs25.sort(() => Math.random() - 0.5);
+    casillas = slugs25.map((slug) => {
       const esMundo = mundoSlugsNombres[slug] !== undefined && cineSlugsNombres[slug] === undefined;
       let emoji: string;
       let nombre: string;
@@ -945,6 +949,8 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     const off = casilla.itemsOffset;
     items = [...casilla.items.slice(off), ...casilla.items.slice(0, off)];
     categoriaActual = casilla.catNombre;
+    $("juego-cat-label").textContent = `${casilla.catEmoji} ${casilla.catNombre}`;
+    $("juego-cat-label").classList.remove("opacity-60");
     indice = 0;
     turno = tableroAtacante;
     terminado = false;
