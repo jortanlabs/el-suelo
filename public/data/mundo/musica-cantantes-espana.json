@@ -1,152 +1,170 @@
 [
   {
     "nombre": "Julio Iglesias",
-    "imagen": "",
-    "palabraClave": "iglesias"
+    "imagen": "https://www.ecured.cu/images/5/5a/Julio%2Biglesias1.jpg"
   },
   {
     "nombre": "Raphael",
-    "imagen": "",
-    "palabraClave": "raphael"
+    "imagen": "https://image.europafm.com/clipping/cmsimages01/2024/12/13/B79C67F7-E30C-4779-8C5D-4CBDAC1F89B6/raphael-detalle-edad-sus-problemas-higado-que-quiere-decir-disco-uranio_104.jpg?crop=4000,4000,x1325,y0&width=1200&height=1200&optimize=low&format=webply"
   },
   {
     "nombre": "Camilo Sesto",
-    "imagen": "",
-    "palabraClave": "sesto"
+    "imagen": "https://yt3.googleusercontent.com/7N4bYudQJx-MNoH3ugXTaJo3EbnwIrI9Vez3d8erpViU_EHMvlLM1JZAWwhk9nDKel34czQlFw=s900-c-k-c0x00ffffff-no-rj"
   },
   {
     "nombre": "Miguel Bosé",
-    "imagen": "",
-    "palabraClave": "bose"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6xTdBuj7VG1CizmbKKuQI4x8lwSxVzao9g&s"
   },
   {
     "nombre": "Rocío Jurado",
-    "imagen": "",
-    "palabraClave": "jurado"
+    "imagen": "https://images.ecestaticos.com/W7PCM-LCOuQKJ9b0QwzKY67DsQk=/0x0:1200x651/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb8a%2Fe02%2F4b3%2Fb8ae024b3999062e1a35d9274c784fc8.jpg"
   },
   {
     "nombre": "Lola Flores",
-    "imagen": "",
-    "palabraClave": "flores"
+    "imagen": "https://s1.abcstatics.com/media/cultura/2018/09/04/lola-flores-115aniversario-kcs--1248x698@abc.jpg"
   },
   {
     "nombre": "Isabel Pantoja",
-    "imagen": "",
-    "palabraClave": "pantoja"
+    "imagen": "https://s1.abcstatics.com/abc/www/multimedia/gente/2025/12/03/pantoja-gira-RGHsc6XUixxqFIL9VOWROZI-1200x840@diario_abc.jpg"
   },
   {
     "nombre": "Joan Manuel Serrat",
-    "imagen": "",
-    "palabraClave": "serrat"
+    "imagen": "https://politicaprosa.com/wp-content/uploads/2022/08/001310822.jpg"
   },
   {
     "nombre": "Joaquín Sabina",
-    "imagen": "",
-    "palabraClave": "sabina"
+    "imagen": "https://i0.wp.com/elgeneracionalpost.com/wp-content/uploads/2024/02/Joaquin_Sabina_Alicante_105103191.jpeg?fit=640%2C517&ssl=1"
   },
   {
     "nombre": "Alejandro Sanz",
-    "imagen": "",
-    "palabraClave": "sanz"
+    "imagen": "https://www.hola.com/horizon/landscape/94bc72f4e124-alejandro-sanz.jpg"
   },
   {
     "nombre": "Enrique Iglesias",
-    "imagen": "",
-    "palabraClave": "iglesias"
+    "imagen": "https://imagenes.elpais.com/resizer/v2/TLTN5CNR7QLARUGUWSJCIGP5T4.jpg?auth=ea19dbf326efaf1cf39405688a6e8084f8e8d3ad03c27d8904f0a1c440fe5189&width=1200"
   },
   {
     "nombre": "Rosalía",
-    "imagen": "",
-    "palabraClave": "rosalia"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/rosalia-elle-1645610347.jpg?crop=1.00xw:0.668xh;0,0.0509xh&resize=640:*"
   },
   {
     "nombre": "Pablo Alborán",
-    "imagen": "",
-    "palabraClave": "alboran"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/img-4695-preview-1655160553.jpg?crop=1.00xw:0.764xh;0,0.236xh&resize=1200:*"
   },
   {
     "nombre": "Manolo García",
-    "imagen": "",
-    "palabraClave": "garcia"
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1405137308-68fb5c6180661.jpg?crop=0.671xw:1.00xh;0.329xw,0&resize=640:*"
   },
   {
     "nombre": "Melendi",
-    "imagen": "",
-    "palabraClave": "melendi"
+    "imagen": "https://www.lapiramide.es/wp-content/uploads/2024/01/Melendi-La-piramide-360-1024x767.jpg"
   },
   {
     "nombre": "Malú",
-    "imagen": "",
-    "palabraClave": "malu"
+    "imagen": "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2025/07/22/17531764618048.jpg"
   },
   {
     "nombre": "David Bisbal",
-    "imagen": "",
-    "palabraClave": "bisbal"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFN2tYCxaROCro8er3uAf9rDdwtKWC34Hp5Q&s"
   },
   {
     "nombre": "David Bustamante",
-    "imagen": "",
-    "palabraClave": "bustamante"
+    "imagen": "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2026/01/04/17675583411421.jpg"
   },
   {
     "nombre": "Aitana",
-    "imagen": "",
-    "palabraClave": "aitana"
+    "imagen": "https://images.ecestaticos.com/iP8biShh-LUyUOl0x_ZVPMYxY4M=/28x0:738x533/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb5e%2F31a%2F1ef%2Fb5e31a1ef3aa10973ffb33e7408a1d0e.jpg"
   },
   {
     "nombre": "Ana Mena",
-    "imagen": "",
-    "palabraClave": "mena"
+    "imagen": "https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fcloudfront-eu-central-1.images.arcpublishing.com%2Fprisa%2FYFVRZOFF35DWXHBGZKTFXL3XWY.JPG?auth=dd70a49dd17580215000e0103f227fdfbbb5dbde782e2ccbe2e6da180e8edfe4&width=1960&height=1470&smart=true"
   },
   {
     "nombre": "Bunbury",
-    "imagen": "",
-    "palabraClave": "bunbury"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2d12R_I-CZF5dyJOo0PEEBbcsah0dAis4aA&s"
   },
   {
     "nombre": "Rosana",
-    "imagen": "",
-    "palabraClave": "rosana"
+    "imagen": "https://content25.lecturas.com/medio/2019/10/16/rosana_99594273_1200x630.jpg"
   },
   {
     "nombre": "Marta Sánchez",
-    "imagen": "",
-    "palabraClave": "sanchez"
+    "imagen": "https://www.hola.com/horizon/landscape/69bf50467b80-gettyimages-2206151611.jpg"
   },
   {
     "nombre": "Nino Bravo",
-    "imagen": "",
-    "palabraClave": "bravo"
+    "imagen": "https://www.santandersmusic.com/media/magazine/principal-nino-1-lg.webp"
   },
   {
     "nombre": "Pastora Soler",
-    "imagen": "",
-    "palabraClave": "soler"
+    "imagen": "https://fundacionvalorescyl.es/wp-content/uploads/2025/03/Foto-Pastora-Forbes-1024x791.webp"
   },
   {
     "nombre": "Miguel Ríos",
-    "imagen": "",
-    "palabraClave": "rios"
+    "imagen": "https://imagenes.heraldo.es/files/image_640_360/uploads/imagenes/2026/03/26/69c4e5f84c9ff2-70348323.png"
   },
   {
     "nombre": "Loquillo",
-    "imagen": "",
-    "palabraClave": "loquillo"
+    "imagen": "https://fotografias.antena3.com/clipping/cmsimages01/2025/09/25/96D17A22-1182-4215-BEAE-EBC29B5D8BE8/loquillo_103.jpg?crop=1440,1080,x240,y0&width=1200&height=900&optimize=low&format=webply"
   },
   {
     "nombre": "Amaia Montero",
-    "imagen": "",
-    "palabraClave": "montero"
+    "imagen": "https://imagenes.heraldo.es/files/image_640_360/uploads/imagenes/2026/05/10/6a00284ea85c56-50966850.png"
   },
   {
     "nombre": "Dani Martín",
-    "imagen": "",
-    "palabraClave": "martin"
+    "imagen": "https://img2.rtve.es/n/2411402?w=1600"
   },
   {
     "nombre": "El Barrio",
-    "imagen": "",
-    "palabraClave": "barrio"
+    "imagen": "https://imagenes.elpais.com/resizer/v2/OPN5CFYPCZF3JNFSNEQYFASQS4.jpg?auth=1a5e65d71c3d5c818ec2da22a243f4f6e0c088f70a617ae1dcbb22a129e29aa2&width=1960&height=1470&focal=1655%2C1487"
+  },
+  {
+    "nombre": "Quevedo",
+    "imagen": "https://mozoiloirratia.eus/wp-content/uploads/2025/02/quevedo-press-credit-Adrian-Rios-2025-billboard-1548.jpg"
+  },
+  {
+    "nombre": "Lola Índigo",
+    "imagen": "https://s1.abcstatics.com/media/play/2023/04/18/lola-indigo-kuoC--1248x698@abc.PNG"
+  },
+  {
+    "nombre": "Bad Gyal",
+    "imagen": "https://medios.uchceu.es/elrotativo/wp-content/uploads/sites/3/2023/02/Bad-Gyal-01.jpg"
+  },
+  {
+    "nombre": "Leiva",
+    "imagen": "https://static1.ara.cat/clip/6ac37747-c547-4489-a7cf-af32e4275394_16-9-aspect-ratio_default_0_x4539y0.jpg"
+  },
+  {
+    "nombre": "Dani Fernández",
+    "imagen": "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2025/03/10/17416049820413.jpg"
+  },
+  {
+    "nombre": "Álex Ubago",
+    "imagen": "https://www.cultura.gal/sites/default/files/images/evento/maxresdefault_8_1.jpg"
+  },
+  {
+    "nombre": "Rosa López",
+    "imagen": "https://image.europafm.com/clipping/cmsimages02/2022/03/20/494D4743-9CC6-4957-840B-3F1D89116806/98.jpg?crop=1920,1080,x0,y87&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "nombre": "Amaia Romero",
+    "imagen": "https://media.revistavanityfair.es/photos/67655c2ffd75c7e94c9e03f4/3:2/w_3531,h_2354,c_limit/DL_u569267_463.jpg"
+  },
+  {
+    "nombre": "Antonio Orozco",
+    "imagen": "https://www.valdepenas.es/wp-content/uploads/Antonio-Orozco.jpg"
+  },
+  {
+    "nombre": "Rozalén",
+    "imagen": "https://cdn-p.smehost.net/sites/5b3bac59eb36401694af3a241173447f/wp-content/uploads/2018/10/ALTA-ROZALEN659-copia-scaled.jpg"
+  },
+  {
+    "nombre": "Álvaro de Luna",
+    "imagen": "https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2022/11/02/alvaro-de-luna-en-uno-de-sus-videoclips.jpeg"
+  },
+  {
+    "nombre": "Rocío Dúrcal",
+    "imagen": "https://img.rtve.es/n/2082769?w=1600"
   }
 ]
