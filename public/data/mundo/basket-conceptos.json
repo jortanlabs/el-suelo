@@ -1,22 +1,82 @@
 [
-  { "nombre": "Canasta", "imagen": "", "palabraClave": "canasta" },
-  { "nombre": "Triple", "imagen": "", "palabraClave": "triple" },
-  { "nombre": "Mate", "imagen": "", "palabraClave": "mate" },
-  { "nombre": "Tiro libre", "imagen": "", "palabraClave": "libre" },
-  { "nombre": "Falta personal", "imagen": "", "palabraClave": "personal" },
-  { "nombre": "Falta técnica", "imagen": "", "palabraClave": "tecnica" },
-  { "nombre": "Rebote", "imagen": "", "palabraClave": "rebote" },
-  { "nombre": "Tapón", "imagen": "", "palabraClave": "tapon" },
-  { "nombre": "Asistencia", "imagen": "", "palabraClave": "asistencia" },
-  { "nombre": "Base", "imagen": "", "palabraClave": "base" },
-  { "nombre": "Alero", "imagen": "", "palabraClave": "alero" },
-  { "nombre": "Pívot", "imagen": "", "palabraClave": "pivot" },
-  { "nombre": "Zona", "imagen": "", "palabraClave": "zona" },
-  { "nombre": "Pick and roll", "imagen": "", "palabraClave": "roll" },
-  { "nombre": "Fast break", "imagen": "", "palabraClave": "break" },
-  { "nombre": "Tiempo muerto", "imagen": "", "palabraClave": "muerto" },
-  { "nombre": "Cuarto", "imagen": "", "palabraClave": "cuarto" },
-  { "nombre": "Prórroga", "imagen": "", "palabraClave": "prorroga" },
-  { "nombre": "Tablero", "imagen": "", "palabraClave": "tablero" },
-  { "nombre": "Aro", "imagen": "", "palabraClave": "aro" }
+  {
+    "nombre": "Canasta",
+    "imagen": "https://www.dondeporte.com/blog/wp-content/uploads/2018/04/medidas-canastas-baloncesto-1.jpg"
+  },
+  {
+    "nombre": "Triple",
+    "imagen": "https://www.ocioexpres.com/cdn/shop/articles/1_d4bb2ac0-f705-4ff2-9925-094065d32f55.jpg?v=1677843291"
+  },
+  {
+    "nombre": "Mate",
+    "imagen": "https://baloncestobcb.com/wp-content/uploads/2024/02/MATES.jpg"
+  },
+  {
+    "nombre": "Tiro libre",
+    "imagen": "https://s3.sportstatics.com/relevo/www/multimedia/202412/04/media/cortadas/lauri-markkanen-tiro-libre-RMrd4TMZYZ3DDdXSuSLW6SM-1200x648@Relevo.JPG"
+  },
+  {
+    "nombre": "Falta personal",
+    "imagen": "https://img.asmedia.epimg.net/resizer/v2/AUSVIAU4C5KDFJMDRGD7TLREX4.jpg?auth=208348a8e3752a2302c7dcfd50eba0e50bb5e3c59043bf14dd5a057c50c627d0&width=1472&height=828&smart=true"
+  },
+  {
+    "nombre": "Falta técnica",
+    "imagen": "https://www.basketballemotion.com/imagescms/postblogs/22297/grandes/scariolotecnicajpg1.webp"
+  },
+  {
+    "nombre": "Rebote",
+    "imagen": "https://mundoentrenamiento.com/wp-content/uploads/2018/11/espana-rebotes-1.jpg"
+  },
+  {
+    "nombre": "Tapón",
+    "imagen": "https://i0.wp.com/elgurudelbasket.com/wp-content/uploads/2015/06/image-1.jpg?resize=407%2C307"
+  },
+  {
+    "nombre": "Asistencia",
+    "imagen": "https://basquetplus.com/sites/default/files/main/articles/warriors_7.jpg"
+  },
+  {
+    "nombre": "Base",
+    "imagen": "https://www.efdeportes.com/efd165/ejercicios-para-la-formacion-del-base-en-baloncesto-06.jpg"
+  },
+  {
+    "nombre": "Alero",
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9fUSe_WADbqoKF7SZSwWS1WWCLuQdmYxnTyZSNr-zTVUcl8IH-xupWSOlCMbc3Z6sdCvSdvcvNhX_eUpDwgsW6Xt8sC4Qh3hlMXVyB_dq0J7miU4cfK-eUVegKT_U3npuFIOO9XnLNwjG/s1600/tn_Tipos+de+salida+seg%25C3%25BAn+defensa1.jpg"
+  },
+  {
+    "nombre": "Pívot",
+    "imagen": "https://www.efdeportes.com/efd173/analisis-de-las-paradas-y-pivotes-en-baloncesto-03.jpg"
+  },
+  {
+    "nombre": "Zona",
+    "imagen": "https://tiempomuerto3.com/wp-content/uploads/2018/12/zona.jpg"
+  },
+  {
+    "nombre": "Pick and roll",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYhPOOLTxouDWTcwyXWcbgKZnXuGDvoVzcQ&s"
+  },
+  {
+    "nombre": "Fast break",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN02kvN78nCG08UJvPSuJiI95gGZV-wuEtKA&s"
+  },
+  {
+    "nombre": "Tiempo muerto",
+    "imagen": "https://web.lenaesport.com/wp-content/uploads/2012/02/tiempomuerto.jpg"
+  },
+  {
+    "nombre": "Cuarto",
+    "imagen": "https://static-abcblogs.abc.es/wp-content/uploads/sites/76/2020/11/Foto-1-El-reloj-de-partido-y-lanzamiento.jpg"
+  },
+  {
+    "nombre": "Prórroga",
+    "imagen": "https://img.asmedia.epimg.net/resizer/v2/GRQ6MAGSMSXKR62RYSOWKSFIMY.jpg?auth=23904a2422a2ac656799c253028c77e481e1091c13597d0145a6ad74163c8d1f&width=1472&height=1104&smart=true"
+  },
+  {
+    "nombre": "Tablero",
+    "imagen": "https://media.cartabon.com/product/tablero-de-baloncesto-reglamentario-de-aglomerado-de-20-mm-de-grosor-800x800.jpg?width=1200"
+  },
+  {
+    "nombre": "Aro",
+    "imagen": "https://www.stadior.com/1052052-home_default/aro-baloncesto-reforzado.jpg"
+  }
 ]
