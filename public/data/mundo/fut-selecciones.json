@@ -1,28 +1,106 @@
 [
-  { "nombre": "España", "imagen": "", "palabraClave": "espana" },
-  { "nombre": "Brasil", "imagen": "", "palabraClave": "brasil" },
-  { "nombre": "Argentina", "imagen": "", "palabraClave": "argentina" },
-  { "nombre": "Francia", "imagen": "", "palabraClave": "francia" },
-  { "nombre": "Alemania", "imagen": "", "palabraClave": "alemania" },
-  { "nombre": "Italia", "imagen": "", "palabraClave": "italia" },
-  { "nombre": "Portugal", "imagen": "", "palabraClave": "portugal" },
-  { "nombre": "Países Bajos", "imagen": "", "palabraClave": "bajos" },
-  { "nombre": "Inglaterra", "imagen": "", "palabraClave": "inglaterra" },
-  { "nombre": "Bélgica", "imagen": "", "palabraClave": "belgica" },
-  { "nombre": "Uruguay", "imagen": "", "palabraClave": "uruguay" },
-  { "nombre": "Croacia", "imagen": "", "palabraClave": "croacia" },
-  { "nombre": "México", "imagen": "", "palabraClave": "mexico" },
-  { "nombre": "Colombia", "imagen": "", "palabraClave": "colombia" },
-  { "nombre": "Japón", "imagen": "", "palabraClave": "japon" },
-  { "nombre": "Marruecos", "imagen": "", "palabraClave": "marruecos" },
-  { "nombre": "Senegal", "imagen": "", "palabraClave": "senegal" },
-  { "nombre": "Ghana", "imagen": "", "palabraClave": "ghana" },
-  { "nombre": "Corea del Sur", "imagen": "", "palabraClave": "sur" },
-  { "nombre": "Estados Unidos", "imagen": "", "palabraClave": "unidos" },
-  { "nombre": "Dinamarca", "imagen": "", "palabraClave": "dinamarca" },
-  { "nombre": "Polonia", "imagen": "", "palabraClave": "polonia" },
-  { "nombre": "Serbia", "imagen": "", "palabraClave": "serbia" },
-  { "nombre": "Suiza", "imagen": "", "palabraClave": "suiza" },
-  { "nombre": "Austria", "imagen": "", "palabraClave": "austria" },
-  { "nombre": "Escocia", "imagen": "", "palabraClave": "escocia" }
+  {
+    "nombre": "España",
+    "imagen": "https://www.teleadhesivo.com/es/img/mrs39_1-jpg/folder/products-detalle-muestras-grandes/pegatinas-coches-motos-espana---escudo-de-futbol.jpg"
+  },
+  {
+    "nombre": "Brasil",
+    "imagen": "https://brandemia.org/contenido/subidas/2022/12/2-escudo-seleccion-de-brasil_cbf-marca-1024x576.webp"
+  },
+  {
+    "nombre": "Argentina",
+    "imagen": "https://images.footballfanatics.com/argentina-national-team/argentina-crest-light-blue-background-print-unframed-a3_ss5_p-201388366+pv-1+u-dzx04a6zyj8z4df8frbn+v-gbpjjizwmraiwaxjyktb.jpg?_hv=2&w=1018"
+  },
+  {
+    "nombre": "Francia",
+    "imagen": "https://www.shutterstock.com/image-photo/illustration-shows-logo-french-team-260nw-2762052261.jpg"
+  },
+  {
+    "nombre": "Alemania",
+    "imagen": "https://st4.depositphotos.com/7442846/19656/v/950/depositphotos_196564372-stock-illustration-logo-german-national-football-team.jpg"
+  },
+  {
+    "nombre": "Italia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-u4el60F3LR8rQzNAA39fgDklm7zxl8mZQ&s"
+  },
+  {
+    "nombre": "Portugal",
+    "imagen": "https://ninfass.com/wp-content/uploads/2025/11/Jugadores-de-Portugal.png.webp"
+  },
+  {
+    "nombre": "Países Bajos",
+    "imagen": "https://libero.cronosmedia.glr.pe/taxonomy/tag/image/2022/03/30/4f47ghdd36-seleccion-de-holanda.jpg"
+  },
+  {
+    "nombre": "Inglaterra",
+    "imagen": "https://thumbs.dreamstime.com/b/logotipo-del-equipo-de-f%C3%BAtbol-nacional-inglaterra-117115926.jpg"
+  },
+  {
+    "nombre": "Bélgica",
+    "imagen": "https://i.pinimg.com/736x/ea/f8/16/eaf8161a5ecd1bc360c6f8a718751c45.jpg"
+  },
+  {
+    "nombre": "Uruguay",
+    "imagen": "https://ih1.redbubble.net/image.4548761695.8555/st,small,507x507-pad,600x600,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Croacia",
+    "imagen": "https://e00-especiales-marca.uecdn.es/eurocopa/images/escudos/cro.png"
+  },
+  {
+    "nombre": "México",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/P6J7DORIHVGQJLO4L6ALTTALWY.jpg?auth=e0c9af86b11df68918ecb822753de9ddb7a235526449c2ecc38674ae23686c9f&width=1960&height=1470&smart=true"
+  },
+  {
+    "nombre": "Colombia",
+    "imagen": "https://i.deportesrcn.com/old/public/downloaded_images/nuevoescudodelaseleccioncolombia.jpg"
+  },
+  {
+    "nombre": "Japón",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQztJtTVktFnklHt-9OM1lTabxNk4R62DJEqw&s"
+  },
+  {
+    "nombre": "Marruecos",
+    "imagen": "https://thumbs.dreamstime.com/b/logo-de-la-federaci%C3%B3n-f%C3%BAtbol-marruecos-con-bandera-nacional-fifa-mundial-cup-ilustraci%C3%B3n-245999407.jpg"
+  },
+  {
+    "nombre": "Senegal",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmNjlj2BG9COcBOG2Aa0UE2lv0Zz_0syhcUA&s"
+  },
+  {
+    "nombre": "Ghana",
+    "imagen": "https://thumbs.dreamstime.com/b/emblema-de-la-federaci%C3%B3n-f%C3%BAtbol-ghana-con-bandera-ghanesa-ilustraci%C3%B3n-editorial-262378231.jpg"
+  },
+  {
+    "nombre": "Corea del Sur",
+    "imagen": "https://ih1.redbubble.net/image.4548740710.8073/st,small,507x507-pad,600x600,f8f8f8.jpg"
+  },
+  {
+    "nombre": "Estados Unidos",
+    "imagen": "https://thumbs.dreamstime.com/b/logo-de-la-federaci%C3%B3n-f%C3%BAtbol-estados-unidos-con-bandera-nacional-ee-uu-ilustraci%C3%B3n-am%C3%A9rica-fifa-mundial-cup-245973347.jpg"
+  },
+  {
+    "nombre": "Dinamarca",
+    "imagen": "https://e00-especiales-marca.uecdn.es/mundial-rusia-2018/images/selecciones/seo/dinamarca.jpg"
+  },
+  {
+    "nombre": "Polonia",
+    "imagen": "https://thumbs.dreamstime.com/b/emblema-del-logo-de-la-selecci%C3%B3n-nacional-f%C3%BAtbol-polonia-reprezentacja-polski-w-pice-nonej-ha-representado-en-las-262049739.jpg"
+  },
+  {
+    "nombre": "Serbia",
+    "imagen": "https://ih1.redbubble.net/image.4661014261.8128/raf,360x360,075,t,fafafa:ca443f4786.jpg"
+  },
+  {
+    "nombre": "Suiza",
+    "imagen": "https://img.freepik.com/vector-premium/insignia-equipo-angulo-suiza-torneo-futbol_95164-4457.jpg"
+  },
+  {
+    "nombre": "Austria",
+    "imagen": "https://i.pinimg.com/736x/d3/39/af/d339af70725b29a27cdcfeedc40316d8.jpg"
+  },
+  {
+    "nombre": "Escocia",
+    "imagen": "https://www.shutterstock.com/image-illustration/scotland-national-football-team-logo-260nw-2399412729.jpg"
+  }
 ]
