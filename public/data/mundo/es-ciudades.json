@@ -92,10 +92,6 @@
     "imagen": "https://checkinblog.it/wp-content/uploads/2024/03/informaciones-historia-entrada-teatro-romano-cartagena-espana.jpg"
   },
   {
-    "nombre": "Móstoles",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbPnu6gz8wRcoMxM-N2AJ7f0aMggXazHFgmg&s"
-  },
-  {
     "nombre": "Jerez de la Frontera",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqCquJeV0gSzLLHiONZ0DMXGgRBA9sXUfiQ&s"
   },
@@ -110,14 +106,6 @@
   {
     "nombre": "Almería",
     "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2025/06/portada-almeria-1-scaled.jpg"
-  },
-  {
-    "nombre": "Fuenlabrada",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6wNUh1s6TzgaaTqnva1LTu3F9n52twn6ZPQ&s"
-  },
-  {
-    "nombre": "Leganés",
-    "imagen": "https://visitmadrid-files.s3.eu-west-1.amazonaws.com/files/styles/scale_webp_1280x720/public/2025-03/iglesia_san_salvador_1.jpg?itok=lcvXXt6A"
   },
   {
     "nombre": "Donostia-San Sebastián",
@@ -161,82 +149,66 @@
   },
   {
     "nombre": "Tarragona",
-    "imagen": ""
+    "imagen": "https://blog.blablacar.es/wp-content/uploads/2025/03/Tarragona-Anfiteatro-romano.webp"
   },
   {
     "nombre": "Girona",
-    "imagen": ""
+    "imagen": "https://carreteraycanta.com/wp-content/uploads/2025/02/Portada-Blog-2.jpg"
   },
   {
     "nombre": "Lleida",
-    "imagen": ""
+    "imagen": "https://www.naturaki.com/fotografies/m/85922ciutat-de-lleida-lleida-00-ok-online.jpg"
   },
   {
     "nombre": "Castellón de la Plana",
-    "imagen": ""
+    "imagen": "https://images.trvl-media.com/place/5123/5287944b-828c-4446-b5a0-f15f1600533c.jpg"
   },
   {
     "nombre": "Badajoz",
-    "imagen": ""
+    "imagen": "https://ruteandorutas.com/wp-content/uploads/2023/07/Que-ver-en-Badajoz-Ruteando-Rutas.jpg"
   },
   {
     "nombre": "Pontevedra",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3oROBahNjL-Y2hxbPmqMKygJIVRDNNnUorg&s"
   },
   {
     "nombre": "Lugo",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalamtAkCzisUivSqG4soZzuMHe5KKdf2g_g&s"
   },
   {
     "nombre": "Ourense",
-    "imagen": ""
+    "imagen": "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/galicia/ourense-galicia-plaza-mayor-177596441-c-rodrigo-garrido-shutterstock.jpg"
   },
   {
     "nombre": "Ferrol",
-    "imagen": ""
+    "imagen": "https://www.viajandoamimanera.com/wp-content/uploads/2018/04/puerto-ferrol.jpg"
   },
   {
     "nombre": "Alcalá de Henares",
-    "imagen": ""
-  },
-  {
-    "nombre": "Getafe",
-    "imagen": ""
-  },
-  {
-    "nombre": "Alcorcón",
-    "imagen": ""
-  },
-  {
-    "nombre": "Ronda",
-    "imagen": ""
+    "imagen": "https://fotografias.lasexta.com/clipping/cmsimages02/2023/09/30/D35978CA-6C80-4253-B6E2-C7437DB16E1C/alcala-henares_98.jpg?crop=1280,720,x0,y67&width=1900&height=1069&optimize=high&format=webply"
   },
   {
     "nombre": "Ibiza",
-    "imagen": ""
+    "imagen": "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/baleares/es-vedra-ibiza-s2540022863.jpg"
   },
   {
     "nombre": "Ceuta",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Vista_de_Ceuta_desde_el_mirador_de_Isabel_II.jpg"
   },
   {
     "nombre": "Melilla",
-    "imagen": ""
-  },
-  {
-    "nombre": "Arrecife",
-    "imagen": ""
+    "imagen": "https://kikotoferries.com/uploads/news/6867b8cf4ded3.webp"
   },
   {
     "nombre": "Santiago de Compostela",
-    "imagen": ""
+    "imagen": "https://casaomuino.com/wp-content/uploads/CATEDRAL-SANTIAGO-HISTORIA-1080x675-1-1024x640.jpg"
   },
   {
     "nombre": "León",
-    "imagen": ""
+    "imagen": "https://media.istockphoto.com/id/1438301944/es/foto/le%C3%B3n-ciudad-espa%C3%B1a-con-catedral-de-le%C3%B3n-vista-drone-castilla-y-le%C3%B3n.jpg?s=612x612&w=0&k=20&c=xljDw-1n7WuFKaLBdx-oiPxs8SME-3DI2dKAX04Uhm0="
   },
   {
     "nombre": "Teruel",
-    "imagen": ""
+    "imagen": "https://i0.wp.com/unaguiaenmimaleta.com/wp-content/uploads/2024/04/Que-ver-en-Teruel-101.jpg"
   }
 ]
