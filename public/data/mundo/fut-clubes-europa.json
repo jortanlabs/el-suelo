@@ -1,30 +1,114 @@
 [
-  { "nombre": "Manchester United", "imagen": "", "palabraClave": "united" },
-  { "nombre": "Manchester City", "imagen": "", "palabraClave": "city" },
-  { "nombre": "Liverpool FC", "imagen": "", "palabraClave": "liverpool" },
-  { "nombre": "Arsenal FC", "imagen": "", "palabraClave": "arsenal" },
-  { "nombre": "Chelsea FC", "imagen": "", "palabraClave": "chelsea" },
-  { "nombre": "Tottenham Hotspur", "imagen": "", "palabraClave": "hotspur" },
-  { "nombre": "Bayern de Múnich", "imagen": "", "palabraClave": "munich" },
-  { "nombre": "Borussia Dortmund", "imagen": "", "palabraClave": "dortmund" },
-  { "nombre": "Bayer Leverkusen", "imagen": "", "palabraClave": "leverkusen" },
-  { "nombre": "Juventus", "imagen": "", "palabraClave": "juventus" },
-  { "nombre": "AC Milan", "imagen": "", "palabraClave": "milan" },
-  { "nombre": "Inter de Milán", "imagen": "", "palabraClave": "milan" },
-  { "nombre": "Napoli", "imagen": "", "palabraClave": "napoli" },
-  { "nombre": "AS Roma", "imagen": "", "palabraClave": "roma" },
-  { "nombre": "Paris Saint-Germain", "imagen": "", "palabraClave": "saintgermain" },
-  { "nombre": "Olympique de Marsella", "imagen": "", "palabraClave": "marsella" },
-  { "nombre": "Olympique de Lyon", "imagen": "", "palabraClave": "lyon" },
-  { "nombre": "Ajax", "imagen": "", "palabraClave": "ajax" },
-  { "nombre": "Feyenoord", "imagen": "", "palabraClave": "feyenoord" },
-  { "nombre": "Porto", "imagen": "", "palabraClave": "porto" },
-  { "nombre": "Benfica", "imagen": "", "palabraClave": "benfica" },
-  { "nombre": "Sporting CP", "imagen": "", "palabraClave": "sporting" },
-  { "nombre": "Celtic FC", "imagen": "", "palabraClave": "celtic" },
-  { "nombre": "Rangers FC", "imagen": "", "palabraClave": "rangers" },
-  { "nombre": "Galatasaray", "imagen": "", "palabraClave": "galatasaray" },
-  { "nombre": "Fenerbahçe", "imagen": "", "palabraClave": "fenerbahce" },
-  { "nombre": "Anderlecht", "imagen": "", "palabraClave": "anderlecht" },
-  { "nombre": "RB Leipzig", "imagen": "", "palabraClave": "leipzig" }
+  {
+    "nombre": "Manchester United",
+    "imagen": "https://static.toiimg.com/thumb/msid-78791330,width-400,resizemode-4/78791330.jpg"
+  },
+  {
+    "nombre": "Manchester City",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBnd7juEXMICCzCcGL98j-1hsQH5vqxYJpg&s"
+  },
+  {
+    "nombre": "Liverpool FC",
+    "imagen": "https://thumbs.dreamstime.com/b/liverpool-f-c-87584876.jpg"
+  },
+  {
+    "nombre": "Arsenal FC",
+    "imagen": "https://www.futbox.com/img/v1/9fd/fc5/a21/772/323850cf29e3abdaaed0.png"
+  },
+  {
+    "nombre": "Chelsea FC",
+    "imagen": "https://www.marketingregistrado.com/img/noticias/chelsea_(6).jpg"
+  },
+  {
+    "nombre": "Tottenham Hotspur",
+    "imagen": "https://i.pinimg.com/1200x/10/02/c5/1002c546b5a20e736770baa2e0204103.jpg"
+  },
+  {
+    "nombre": "Bayern de Múnich",
+    "imagen": "https://objetos-xlk.estaticos-marca.com/uploads/2024/10/18/671296bc7a831.jpeg"
+  },
+  {
+    "nombre": "Borussia Dortmund",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgdcl-ac95d1RHRLOsrEOqCZ6NmT_8z_NNKA&s"
+  },
+  {
+    "nombre": "Bayer Leverkusen",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapAi8wRru-YikrWZS_5lhVJJzaYruk-qSVg&s"
+  },
+  {
+    "nombre": "Juventus",
+    "imagen": "https://assets.goal.com/images/v3/bltfa530c5d51aa5529/b10aedca4a535e5fa4551decba8474e5f75b2818.jpg?width=1400&upscale=true"
+  },
+  {
+    "nombre": "AC Milan",
+    "imagen": "https://www.crealo.es/1123482-product_zoom/parche-escudo-ac-milan.jpg"
+  },
+  {
+    "nombre": "Inter de Milán",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/bd36fd7d-09fe-4c15-b51e-28f884764585_alta-libre-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Napoli",
+    "imagen": "https://thumbs.dreamstime.com/b/logotipo-de-ssc-napoli-120473763.jpg"
+  },
+  {
+    "nombre": "AS Roma",
+    "imagen": "https://www.teleadhesivo.com/es/img/esci004-jpg/folder/products-listado-merchanthover/vinilos-decorativos-escudo-roma-1927.jpg"
+  },
+  {
+    "nombre": "Paris Saint-Germain",
+    "imagen": "https://www.futbox.com/img/v1/5b1/ecb/e69/e45/09b75491e5ae71f116e9.png"
+  },
+  {
+    "nombre": "Olympique de Marsella",
+    "imagen": "https://imagenes.20minutos.es/files/image_640_auto/uploads/imagenes/2023/05/01/logo-olympique-marseille-1972.jpeg"
+  },
+  {
+    "nombre": "Olympique de Lyon",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKFInivY1YlyefN7X25oWNn2mV-ySG1HevhA&s"
+  },
+  {
+    "nombre": "Ajax",
+    "imagen": "https://www.teleadhesivo.com/es/img/as270-jpg/folder/products-listado-merchanthover/vinilos-decorativos-escudo-ajax-de-amsterdam.jpg"
+  },
+  {
+    "nombre": "Feyenoord",
+    "imagen": "https://static.vecteezy.com/system/resources/thumbnails/030/738/797/small/feyenoord-rotterdam-club-logo-symbol-netherlands-eredivisie-league-football-abstract-design-illustration-with-brown-background-free-vector.jpg"
+  },
+  {
+    "nombre": "Porto",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbTVF-dCverUL6y4rHpIcc1yEK5RjDVquHHQ&s"
+  },
+  {
+    "nombre": "Benfica",
+    "imagen": "https://cdn2.mediotiempo.com/uploads/media/2023/01/15/el-aguila-destaca-en-el.jpg"
+  },
+  {
+    "nombre": "Sporting CP",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqxsMRiUmJripHGo8x7d6M00RPIxXpG2pbLg&s"
+  },
+  {
+    "nombre": "Celtic FC",
+    "imagen": "https://m.media-amazon.com/images/I/71JBgccJyjL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "nombre": "Rangers FC",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTM4VknmARJA9p3yJexNF3o3-hv2HX_Q-4Xg&s"
+  },
+  {
+    "nombre": "Galatasaray",
+    "imagen": "https://www.futbox.com/img/v1/b36/0c9/c62/3c6/f71035accf373d042c3d.png"
+  },
+  {
+    "nombre": "Fenerbahçe",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbCZI3U-8eC_HJnVNohtT3Ln0ZF9lVtbbp-A&s"
+  },
+  {
+    "nombre": "Anderlecht",
+    "imagen": "https://i.pinimg.com/736x/ae/d5/34/aed534f6825681948b85bcb5ef1f0948.jpg"
+  },
+  {
+    "nombre": "RB Leipzig",
+    "imagen": "https://estaticosgn-cdn.deia.eus/clip/099fe710-6f89-43a8-935f-574c708046c5_16-9-aspect-ratio_default_0.jpg"
+  }
 ]
