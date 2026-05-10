@@ -1,30 +1,126 @@
 [
-  { "nombre": "Pelé", "imagen": "", "palabraClave": "pele" },
-  { "nombre": "Diego Maradona", "imagen": "", "palabraClave": "maradona" },
-  { "nombre": "Ronaldo Nazário", "imagen": "", "palabraClave": "nazario" },
-  { "nombre": "Lionel Messi", "imagen": "", "palabraClave": "messi" },
-  { "nombre": "Cristiano Ronaldo", "imagen": "", "palabraClave": "ronaldo" },
-  { "nombre": "Johan Cruyff", "imagen": "", "palabraClave": "cruyff" },
-  { "nombre": "Zinedine Zidane", "imagen": "", "palabraClave": "zidane" },
-  { "nombre": "Ronaldinho", "imagen": "", "palabraClave": "ronaldinho" },
-  { "nombre": "Roberto Carlos", "imagen": "", "palabraClave": "carlos" },
-  { "nombre": "Thierry Henry", "imagen": "", "palabraClave": "henry" },
-  { "nombre": "Raúl González Blanco", "imagen": "", "palabraClave": "blanco" },
-  { "nombre": "Andrés Iniesta", "imagen": "", "palabraClave": "iniesta" },
-  { "nombre": "Xavi Hernández", "imagen": "", "palabraClave": "hernandez" },
-  { "nombre": "David Beckham", "imagen": "", "palabraClave": "beckham" },
-  { "nombre": "Franz Beckenbauer", "imagen": "", "palabraClave": "beckenbauer" },
-  { "nombre": "Michel Platini", "imagen": "", "palabraClave": "platini" },
-  { "nombre": "Lev Yashin", "imagen": "", "palabraClave": "yashin" },
-  { "nombre": "Eusébio", "imagen": "", "palabraClave": "eusebio" },
-  { "nombre": "George Best", "imagen": "", "palabraClave": "best" },
-  { "nombre": "Marco van Basten", "imagen": "", "palabraClave": "basten" },
-  { "nombre": "Romário", "imagen": "", "palabraClave": "romario" },
-  { "nombre": "Alessandro Del Piero", "imagen": "", "palabraClave": "piero" },
-  { "nombre": "Francesco Totti", "imagen": "", "palabraClave": "totti" },
-  { "nombre": "Gianluigi Buffon", "imagen": "", "palabraClave": "buffon" },
-  { "nombre": "Iker Casillas", "imagen": "", "palabraClave": "casillas" },
-  { "nombre": "Carles Puyol", "imagen": "", "palabraClave": "puyol" },
-  { "nombre": "Sergio Ramos", "imagen": "", "palabraClave": "ramos" },
-  { "nombre": "Roberto Baggio", "imagen": "", "palabraClave": "baggio" }
+  {
+    "nombre": "Pelé",
+    "imagen": "https://editorial.uefa.com/resources/027c-16f1c47dd58e-5610838b445c-1000/brazilian_footballer_pele.jpeg"
+  },
+  {
+    "nombre": "Diego Maradona",
+    "imagen": "https://cdn.britannica.com/76/124976-050-E03E50CE/Diego-Maradona-1986.jpg"
+  },
+  {
+    "nombre": "Ronaldo Nazário",
+    "imagen": "https://i.pinimg.com/736x/a1/cf/ac/a1cfac269039394821bdb8b764e379b1.jpg"
+  },
+  {
+    "nombre": "Lionel Messi",
+    "imagen": "https://assets.goal.com/images/v3/bltd58c4d60ecd9275e/GOAL_-_Blank_WEB_-_Facebook_-_2023-06-13T135350.847.png?auto=webp&format=pjpg&width=3840&quality=60"
+  },
+  {
+    "nombre": "Cristiano Ronaldo",
+    "imagen": "https://editorial.uefa.com/resources/027b-16a6f83fcf8f-179708787343-1000/cristiano_ronaldo_of_portugal_celebrates_after_scoring_a.jpeg"
+  },
+  {
+    "nombre": "Johan Cruyff",
+    "imagen": "https://worldofjohancruyff.com/wp-content/uploads/2025/06/johan-cruyff-19.webp"
+  },
+  {
+    "nombre": "Zinedine Zidane",
+    "imagen": "https://assets.realmadrid.com/is/image/realmadrid/1330190795142?$Mobile$&fit=wrap"
+  },
+  {
+    "nombre": "Ronaldinho",
+    "imagen": "https://www.tudn.com/_next/image?url=https%3A%2F%2Fst1.uvnimg.com%2F64%2F50%2F3282eac44afeac38e5c36ea753ab%2Fgettyimages-56034481-1.jpg&w=1280&q=75"
+  },
+  {
+    "nombre": "Roberto Carlos",
+    "imagen": "https://s2.sportstatics.com/relevo/www/multimedia/202501/12/media/cortadas/roberto-carlos-real-madrid-R2zDnM7zYszxVXMbBcLT5sO-1200x648@Relevo.jpg"
+  },
+  {
+    "nombre": "Thierry Henry",
+    "imagen": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/9e7e/live/2b8c17d0-5e2f-11ef-b4b3-0528082730ed.jpg"
+  },
+  {
+    "nombre": "Raúl González Blanco",
+    "imagen": "https://www.pmgranfamiliaubeda.es/wp-content/uploads/2018/11/pecho-1.jpg"
+  },
+  {
+    "nombre": "Andrés Iniesta",
+    "imagen": "https://assets.goal.com/images/v3/blt7f63b7ce117efc32/012c674d983be63d6de2841e4343672415608e3c.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+  },
+  {
+    "nombre": "Xavi Hernández",
+    "imagen": "https://www.fcbarcelona.com/photo-resources/2019/03/12/62f67c7f-28fa-49d4-aa5f-9a0502c46c41/znYiAFfh.jpg?width=1200&height=750"
+  },
+  {
+    "nombre": "David Beckham",
+    "imagen": "https://static.independentespanol.com/2023/10/03/21/DAVID_BECKHAM-DOCUMENTAL_50406.jpg"
+  },
+  {
+    "nombre": "Franz Beckenbauer",
+    "imagen": "https://www.elindependiente.com/wp-content/uploads/2024/01/beckkenn.jpg"
+  },
+  {
+    "nombre": "Michel Platini",
+    "imagen": "https://img.asmedia.epimg.net/resizer/v2/2DSYUJKARNOSNMEK6JEUTAB5VA.jpg?auth=3e44c68ab760eabeb287bb5a05c65c538fbe4d4c8a1affc33b90623a01639f7d&width=1472&height=1104&smart=true"
+  },
+  {
+    "nombre": "Lev Yashin",
+    "imagen": "https://www.redkalinka.com/upload/es/yashin.jpg"
+  },
+  {
+    "nombre": "Fernando Hierro",
+    "imagen": "https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/L6Z75CJSXRJUPEQMB6NUGGNJNU.jpg"
+  },
+  {
+    "nombre": "David Villa",
+    "imagen": "https://www.panenka.org/wp-content/uploads/2020/06/england-v-spain-international-friendly-scaled-e1592901838771.jpg"
+  },
+  {
+    "nombre": "Xabi Alonso",
+    "imagen": "https://rfef.es/sites/default/files/styles/noticias_image_content/public/xabi_1.jpg.webp?itok=Ksd0QmiP"
+  },
+  {
+    "nombre": "Fernando Torres",
+    "imagen": "https://hicuespeakers.com/sites/default/files/styles/cuadrada_737x737/public/2024-08/perfiles/Fernando-Torres.jpg.webp?h=fbf7a813&itok=ReOKJSng"
+  },
+  {
+    "nombre": "José Antonio Camacho",
+    "imagen": "https://grupobcc.com/wp/wp-content/uploads/2015/05/Jose-Antonio-Camacho.jpg"
+  },
+  {
+    "nombre": "Lamine Yamal",
+    "imagen": "https://assets.goal.com/images/v3/blt411f83ea5a5aca9d/06.gif?auto=webp&format=pjpg&width=3840&quality=60"
+  },
+  {
+    "nombre": "Gerard Piqué",
+    "imagen": "https://www.fcbarcelona.com/photo-resources/fcbarcelona/photo/2018/07/04/7c610b7f-1455-4065-94f3-507cb5727d3c/PvZlVyPA.jpg?width=1200&height=750"
+  },
+  {
+    "nombre": "Iker Casillas",
+    "imagen": "https://www.sportlife.es/uploads/s1/75/92/75/1/5f2950220de694336b349852-iker-casillas-se-retira.jpeg"
+  },
+  {
+    "nombre": "Carles Puyol",
+    "imagen": "https://www.fcbarcelona.com/photo-resources/2022/06/15/d54df9a1-c6cb-4561-8b5f-55e4d257f109/MicrosoftTeams-image-17-.png?width=1200&height=750"
+  },
+  {
+    "nombre": "Sergio Ramos",
+    "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2025-12/sergio-ramos-podria-regresar-francia.jpg.webp?h=df3c6bf4&itok=Li2bnxjZ"
+  },
+  {
+    "nombre": "Pep Guardiola",
+    "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2026-01/confirmado-guardiola-no-seguira-manchester-city.jpg.webp?h=df3c6bf4&itok=FWS59DDC"
+  },
+  {
+    "nombre": "Guti",
+    "imagen": "https://images.ecestaticos.com/CGm0zTB-R0LXLgkgR2m7tNebRnA=/125x0:2143x1513/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fd8b%2Fa28%2F470%2Fd8ba2847073d7e0c36c7d6fda1b3d2bd.jpg"
+  },
+  {
+    "nombre": "Pedri",
+    "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2026-02/puede-real-madrid-fichar-pedri.jpg.webp?h=df3c6bf4&itok=jWRhb1Ch"
+  },
+  {
+    "nombre": "Gareth Bale",
+    "imagen": "https://assets.goal.com/images/v3/blt6d875304b8721f1f/f28815e855b25d0a571951f479599443f4d60330.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+  }
 ]
