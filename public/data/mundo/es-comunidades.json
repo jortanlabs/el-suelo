@@ -1,21 +1,78 @@
 [
-  { "nombre": "Andalucía", "imagen": "", "palabraClave": "andalucia" },
-  { "nombre": "Aragón", "imagen": "", "palabraClave": "aragon" },
-  { "nombre": "Asturias", "imagen": "", "palabraClave": "asturias" },
-  { "nombre": "Islas Baleares", "imagen": "", "palabraClave": "baleares" },
-  { "nombre": "Islas Canarias", "imagen": "", "palabraClave": "canarias" },
-  { "nombre": "Cantabria", "imagen": "", "palabraClave": "cantabria" },
-  { "nombre": "Castilla-La Mancha", "imagen": "", "palabraClave": "mancha" },
-  { "nombre": "Castilla y León", "imagen": "", "palabraClave": "leon" },
-  { "nombre": "Cataluña", "imagen": "", "palabraClave": "cataluna" },
-  { "nombre": "Comunidad de Madrid", "imagen": "", "palabraClave": "madrid" },
-  { "nombre": "Comunidad Foral de Navarra", "imagen": "", "palabraClave": "navarra" },
-  { "nombre": "Comunidad Valenciana", "imagen": "", "palabraClave": "valenciana" },
-  { "nombre": "Extremadura", "imagen": "", "palabraClave": "extremadura" },
-  { "nombre": "Galicia", "imagen": "", "palabraClave": "galicia" },
-  { "nombre": "País Vasco", "imagen": "", "palabraClave": "vasco" },
-  { "nombre": "La Rioja", "imagen": "", "palabraClave": "rioja" },
-  { "nombre": "Región de Murcia", "imagen": "", "palabraClave": "murcia" },
-  { "nombre": "Ceuta", "imagen": "", "palabraClave": "ceuta" },
-  { "nombre": "Melilla", "imagen": "", "palabraClave": "melilla" }
+  {
+    "nombre": "Andalucía",
+    "imagen": "https://www.atrapalo.com/houdinis/wp-content/uploads/2019/02/el-encanto-de-los-pueblos-blancos-de-andalucia-02.jpg"
+  },
+  {
+    "nombre": "Aragón",
+    "imagen": "https://content-viajes.nationalgeographic.com.es/medio/2018/02/27/zaragoza-y-el-pilar__1280x720.jpg"
+  },
+  {
+    "nombre": "Asturias",
+    "imagen": "https://nomolesten.com/blog/wp-content/uploads/2017/07/Lugares-imprescindibles-de-Asturias-cudillero-1024x700.jpg"
+  },
+  {
+    "nombre": "Islas Baleares",
+    "imagen": "https://mesto-barcelona.cz/data/uploads/baleary-cala-macarella.jpg"
+  },
+  {
+    "nombre": "Islas Canarias",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUhOWHZEYS5mLxNsKkL1RPBvXa7ZhA7oI5dQ&s"
+  },
+  {
+    "nombre": "Cantabria",
+    "imagen": "https://thesibarist.com/wp-content/uploads/2023/04/San-Vicente-de-la-Barquera-1.jpeg"
+  },
+  {
+    "nombre": "Castilla-La Mancha",
+    "imagen": "https://blog.segurosrga.es/wp-content/uploads/2016/05/molinos-consuegra.jpg"
+  },
+  {
+    "nombre": "Castilla y León",
+    "imagen": "https://www.caixabankresearch.com/sites/default/files/styles/share/public/content/image/2021/10/15/49/cc_castilla_leon.jpg?itok=aBVeE78j"
+  },
+  {
+    "nombre": "Cataluña",
+    "imagen": "https://img2.rtve.es/n/16078988?w=1600"
+  },
+  {
+    "nombre": "Comunidad de Madrid",
+    "imagen": "https://www.madridhappypeople.com/wp-content/uploads/elementor/thumbs/Puerta-del-Sol-6-1-1-jpg-rlo65t5r96ytfujweze6xqgjoakxjumj73j8jbhbgg.webp"
+  },
+  {
+    "nombre": "Comunidad Foral de Navarra",
+    "imagen": "https://exposicion.hispanianostra.org/wp-content/uploads/2012/06/2012_NA_Fortificaciones-Pamplona_1_%C2%A9-Jose-Vicente-Valdenebro.jpg"
+  },
+  {
+    "nombre": "Comunidad Valenciana",
+    "imagen": "https://www.civitatis.com/blog/wp-content/uploads/2020/10/centro-valencia.jpg"
+  },
+  {
+    "nombre": "Extremadura",
+    "imagen": "https://www.saboraextremadura.es/wp-content/uploads/2020/08/que-ver-en-extremadura.jpg"
+  },
+  {
+    "nombre": "Galicia",
+    "imagen": "https://content-viajes.nationalgeographic.com.es/medio/2025/05/22/porto-do-barqueiro_eaeee80c_1173938656_250522151316_1280x658.webp"
+  },
+  {
+    "nombre": "País Vasco",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5QlF8nqz8-WBnoiRjTit9eBhWwbQ5UpO9HA&s"
+  },
+  {
+    "nombre": "La Rioja",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/UQYOPPSMTKLIL3YXDZ6YZEZ7YI.jpg?auth=1d870a94391e28d6fe8014282311feb107a8d07ebe899984142b4245fb9924c8&width=1960&height=1103&smart=true"
+  },
+  {
+    "nombre": "Región de Murcia",
+    "imagen": "https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1524594971060-GEVWDRP9B9MGZ4474BNR/caravacaweb3.jpg?format=1500w"
+  },
+  {
+    "nombre": "Ceuta",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBipXaCJPgjK8gdku4MEnLyn-2Xa-ICCFLw&s"
+  },
+  {
+    "nombre": "Melilla",
+    "imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/44/b9/a0/vista-aerea-de-la-ciudad.jpg?w=1200&h=1200&s=1"
+  }
 ]
