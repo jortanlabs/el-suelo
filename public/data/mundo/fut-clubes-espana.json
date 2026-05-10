@@ -1,30 +1,114 @@
 [
-  { "nombre": "Real Madrid", "imagen": "", "palabraClave": "madrid" },
-  { "nombre": "FC Barcelona", "imagen": "", "palabraClave": "barcelona" },
-  { "nombre": "Atlético de Madrid", "imagen": "", "palabraClave": "madrid" },
-  { "nombre": "Sevilla FC", "imagen": "", "palabraClave": "sevilla" },
-  { "nombre": "Real Betis", "imagen": "", "palabraClave": "betis" },
-  { "nombre": "Valencia CF", "imagen": "", "palabraClave": "valencia" },
-  { "nombre": "Athletic Club", "imagen": "", "palabraClave": "club" },
-  { "nombre": "Real Sociedad", "imagen": "", "palabraClave": "sociedad" },
-  { "nombre": "Villarreal CF", "imagen": "", "palabraClave": "villarreal" },
-  { "nombre": "RC Celta de Vigo", "imagen": "", "palabraClave": "vigo" },
-  { "nombre": "Espanyol", "imagen": "", "palabraClave": "espanyol" },
-  { "nombre": "Getafe CF", "imagen": "", "palabraClave": "getafe" },
-  { "nombre": "Rayo Vallecano", "imagen": "", "palabraClave": "vallecano" },
-  { "nombre": "Osasuna", "imagen": "", "palabraClave": "osasuna" },
-  { "nombre": "Deportivo Alavés", "imagen": "", "palabraClave": "alaves" },
-  { "nombre": "UD Las Palmas", "imagen": "", "palabraClave": "palmas" },
-  { "nombre": "Real Zaragoza", "imagen": "", "palabraClave": "zaragoza" },
-  { "nombre": "Sporting de Gijón", "imagen": "", "palabraClave": "gijon" },
-  { "nombre": "Málaga CF", "imagen": "", "palabraClave": "malaga" },
-  { "nombre": "Granada CF", "imagen": "", "palabraClave": "granada" },
-  { "nombre": "Elche CF", "imagen": "", "palabraClave": "elche" },
-  { "nombre": "Cádiz CF", "imagen": "", "palabraClave": "cadiz" },
-  { "nombre": "Deportivo de La Coruña", "imagen": "", "palabraClave": "coruna" },
-  { "nombre": "Real Valladolid", "imagen": "", "palabraClave": "valladolid" },
-  { "nombre": "SD Eibar", "imagen": "", "palabraClave": "eibar" },
-  { "nombre": "Real Oviedo", "imagen": "", "palabraClave": "oviedo" },
-  { "nombre": "Real Unión Club", "imagen": "", "palabraClave": "union" },
-  { "nombre": "Levante UD", "imagen": "", "palabraClave": "levante" }
+  {
+    "nombre": "Real Madrid",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/c8717efc-31eb-48fb-b01b-bdd1a43dfde1_source-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "FC Barcelona",
+    "imagen": "https://cms-images.acc.indazn.com/di/library/DAZN_News/b8/37/fc-barcelona-la-liga_1jxdxq19a7z4i1mdvawqvnk2js.jpg?t=-2107146871&quality=80&w=750&h=422"
+  },
+  {
+    "nombre": "Atlético de Madrid",
+    "imagen": "https://www.tiendarotulacion.com/wp-content/uploads/2025/05/ATLETICO-MADRID_Vinilo.jpg"
+  },
+  {
+    "nombre": "Sevilla FC",
+    "imagen": "https://mediaverse.sevillafc.hiway.media/image/2025/11/13/6915f2df/escudo_3.jpg"
+  },
+  {
+    "nombre": "Real Betis",
+    "imagen": "https://yt3.googleusercontent.com/7srFAPlEmpNnZR_jnDC_K39vK-ZwX4IqDsbmBSjYmlOKRYw1BRwTL2nDnL9fZcBsMpSOIRhbjDM=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "nombre": "Valencia CF",
+    "imagen": "https://yt3.googleusercontent.com/H3IIMA1rdzydLXswyHeXs-uqP_BvxM4jUytraeyCSt1ksxQdwWgbMHpmtCsQBg_oBzjL9Y3mPMA=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "nombre": "Athletic Club",
+    "imagen": "https://yt3.googleusercontent.com/I_C833FK8AQPxVd_3-6fNuSJ1QoRScO2fX0YO1CC9He86u1aERN8meapSZ0ohtcITw8rZ1BR7Q=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "nombre": "Real Sociedad",
+    "imagen": "https://www.tiendarotulacion.com/wp-content/uploads/2025/05/REAL-SOCIEDAD_Vinilo.jpg"
+  },
+  {
+    "nombre": "Villarreal CF",
+    "imagen": "https://www.impresioncomestible.com/media/catalog/product/cache/1/image/988x988/5aea3856d09175d88d171658e6e10e85/o/b/oblea-escudo-villareal.jpg"
+  },
+  {
+    "nombre": "RC Celta de Vigo",
+    "imagen": "https://parchesybordados.com/545-large_default/escudo-bordado-celta-vigo.jpg"
+  },
+  {
+    "nombre": "Espanyol",
+    "imagen": "https://www.tiendarotulacion.com/wp-content/uploads/2025/05/ESPANYOL_Vinilo.jpg"
+  },
+  {
+    "nombre": "Getafe CF",
+    "imagen": "https://www.vinilosdecoracion.es/wp-content/uploads/2021/06/vdeco-futbol-escudo-getafe-cf-club-3.jpg"
+  },
+  {
+    "nombre": "Rayo Vallecano",
+    "imagen": "https://banderasysoportes.com/wp-content/uploads/RY-MA.png"
+  },
+  {
+    "nombre": "Osasuna",
+    "imagen": "https://www.tiendarotulacion.com/wp-content/uploads/2025/05/OSASUNA_Vinilo.jpg"
+  },
+  {
+    "nombre": "Deportivo Alavés",
+    "imagen": "https://gaztea.eus/content/dam/edukiak/irudiak/2020/07/28/20200728195827_alaves-escudo-centenario_original_imagen.jpg"
+  },
+  {
+    "nombre": "UD Las Palmas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdBbATI1kXO1DHxEavBORy_rp5gWAiz9Tvtg&s"
+  },
+  {
+    "nombre": "Real Zaragoza",
+    "imagen": "https://i.ytimg.com/vi/JJJgR-zdYcA/maxresdefault.jpg"
+  },
+  {
+    "nombre": "Sporting de Gijón",
+    "imagen": "https://killerasturias.com/sites/default/files/2023-10/ESCUDO%20SPORTING.png"
+  },
+  {
+    "nombre": "Málaga CF",
+    "imagen": "https://yt3.googleusercontent.com/m3J5-_EEfg0vJH50DlcUTvBArqgxRkjKiPqJknaBN4zzBZMAIyUQfsbA9pkayluCIyRWh8E8dg=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "nombre": "Granada CF",
+    "imagen": "https://banderasysoportes.com/wp-content/uploads/granada-cf-1.png"
+  },
+  {
+    "nombre": "Elche CF",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4kFftr1psKPzTDR4h7kze_kkPys5FBTvMQw&s"
+  },
+  {
+    "nombre": "Cádiz CF",
+    "imagen": "https://lh4.googleusercontent.com/proxy/uvHHoevV5NiMQ2WaTVtIHCWqyJSO6U6qtIlDZ8p61KxAYZ1HmAGe302DziEQ9WBda5p6SVYP00_utMQL"
+  },
+  {
+    "nombre": "Deportivo de La Coruña",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmUA0Si1b7wfh9cClHoCRdtBYPy_E109UmNg&s"
+  },
+  {
+    "nombre": "Real Valladolid",
+    "imagen": "https://www.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2022/06/21/62b1c8fb784c4.r_d.343-153-0.jpeg"
+  },
+  {
+    "nombre": "SD Eibar",
+    "imagen": "https://i.ytimg.com/vi/DIm9MA4NOT4/maxresdefault.jpg"
+  },
+  {
+    "nombre": "Real Oviedo",
+    "imagen": "https://banderasysoportes.com/wp-content/uploads/OVIEDO-1.png"
+  },
+  {
+    "nombre": "Real Unión Club",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6-3FpX8lA_4jxJAd8h5AOHfxWJzzbYQNuCA&s"
+  },
+  {
+    "nombre": "Levante UD",
+    "imagen": "https://banderasysoportes.com/wp-content/uploads/Sin-t%C3%ADtulo-1-13.png"
+  }
 ]
