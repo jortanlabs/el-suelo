@@ -1,24 +1,90 @@
 [
-  { "nombre": "Portería", "imagen": "", "palabraClave": "porteria" },
-  { "nombre": "Balón de fútbol", "imagen": "", "palabraClave": "futbol" },
-  { "nombre": "Árbitro", "imagen": "", "palabraClave": "arbitro" },
-  { "nombre": "Tarjeta roja", "imagen": "", "palabraClave": "roja" },
-  { "nombre": "Tarjeta amarilla", "imagen": "", "palabraClave": "amarilla" },
-  { "nombre": "Penalti", "imagen": "", "palabraClave": "penalti" },
-  { "nombre": "Fuera de juego", "imagen": "", "palabraClave": "juego" },
-  { "nombre": "Córner", "imagen": "", "palabraClave": "corner" },
-  { "nombre": "Falta", "imagen": "", "palabraClave": "falta" },
-  { "nombre": "Tiro libre", "imagen": "", "palabraClave": "libre" },
-  { "nombre": "Saque de puerta", "imagen": "", "palabraClave": "puerta" },
-  { "nombre": "Saque de banda", "imagen": "", "palabraClave": "banda" },
-  { "nombre": "VAR", "imagen": "", "palabraClave": "var" },
-  { "nombre": "Hat-trick", "imagen": "", "palabraClave": "trick" },
-  { "nombre": "Autogol", "imagen": "", "palabraClave": "autogol" },
-  { "nombre": "Prórroga", "imagen": "", "palabraClave": "prorroga" },
-  { "nombre": "Travesaño", "imagen": "", "palabraClave": "travesano" },
-  { "nombre": "Poste", "imagen": "", "palabraClave": "poste" },
-  { "nombre": "Chilena", "imagen": "", "palabraClave": "chilena" },
-  { "nombre": "Barrera", "imagen": "", "palabraClave": "barrera" },
-  { "nombre": "Banquillo", "imagen": "", "palabraClave": "banquillo" },
-  { "nombre": "Estadio de fútbol", "imagen": "", "palabraClave": "futbol" }
+  {
+    "nombre": "Portería",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQKeWqxl85q_hjsHYx3OVyvx8tJOPfaXDfg&s"
+  },
+  {
+    "nombre": "Balón de fútbol",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/07/%D0%A4%D0%9A_%22%D0%9A%D0%BE%D0%BB%D0%BE%D1%81%22_%28%D0%97%D0%B0%D1%87%D0%B5%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%2C_%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%29_-_%D0%A4%D0%9A_%22%D0%91%D0%B0%D0%BB%D0%BA%D0%B0%D0%BD%D1%8B%22_%28%D0%97%D0%B0%D1%80%D1%8F%2C_%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%29_%2818790931100%29.jpg"
+  },
+  {
+    "nombre": "Árbitro",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5ivTDwTJhot1JdPS5b-nIWou4D0z94sW1A&s"
+  },
+  {
+    "nombre": "Tarjeta roja",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR89R5CchKxfq2ZF-DoGFYegZkRU-AxlWvQrA&s"
+  },
+  {
+    "nombre": "Tarjeta amarilla",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNO5ECKB5EUS3HHZAm_uG6dRK8G7hSvPUymQ&s"
+  },
+  {
+    "nombre": "Penalti",
+    "imagen": "https://iusport.com/upload/images/03_2025/3373_penalti-julian-alvarez.jpg"
+  },
+  {
+    "nombre": "Fuera de juego",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/fuera-de-juego-2-64d37eea29f21.jpg?resize=980:*"
+  },
+  {
+    "nombre": "Córner",
+    "imagen": "https://revistalibero.com/cdn/shop/articles/Captura_de_pantalla_2022-05-04_a_las_9.58.00.png?v=1651651110"
+  },
+  {
+    "nombre": "Falta",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEryCbELsa34B-PQuPp_V7_KcO3Oc_9_cMQ&s"
+  },
+  {
+    "nombre": "Tiro libre",
+    "imagen": "https://i.ytimg.com/vi/YCT8cs2Ezn0/maxresdefault.jpg"
+  },
+  {
+    "nombre": "Saque de puerta",
+    "imagen": "https://imagenes.heraldo.es/files/image_1920_1080/files/fp/uploads/imagenes/2019/06/13/portero-saque-porteria.r_d.383-262.jpeg"
+  },
+  {
+    "nombre": "Saque de banda",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyUxlLTrL-pdTHMEOFbrEeSpXuqluLssoag&s"
+  },
+  {
+    "nombre": "VAR",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/I62JNF56RIUSROWCTCG6TU2E6A.jpg?auth=8681a4f3b9dfa6e8ba336bbbe5016f71eb9eaf4084c6ed383311e9f09f8dddd6&width=1960&height=1470&smart=true"
+  },
+  {
+    "nombre": "Hat-trick",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_MaETRtTLa3RcBHyfTaR8fQitepb_Z9x1A&s"
+  },
+  {
+    "nombre": "Autogol",
+    "imagen": "https://www.futbolred.com/files/article_main/uploads/2018/12/27/5c2557b5c72fc.jpeg"
+  },
+  {
+    "nombre": "Prórroga",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/ab31f611-558a-4392-bf0c-f58ce0e5a740_16-9-discover-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Travesaño",
+    "imagen": "https://cdn.milenio.com/uploads/media/2018/06/30/postal-capturo-mahmoud-khaled-tiro_0_1_700_435.jpg"
+  },
+  {
+    "nombre": "Poste",
+    "imagen": "https://us.123rf.com/450wm/wavebreakmediamicro/wavebreakmediamicro1711/wavebreakmediamicro171104334/89774394-soccer-ball-near-a-goal-post-in-football-stadium.jpg"
+  },
+  {
+    "nombre": "Chilena",
+    "imagen": "https://images.ecestaticos.com/eA_6kXVTPG0ps93dWwEKowqigRM=/0x0:2272x1618/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F1ad%2F76e%2Fdb7%2F1ad76edb72db9ebe91c8bc733379cff1.jpg"
+  },
+  {
+    "nombre": "Barrera",
+    "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/IOKMQPM2QBAOJETURCNTG23N5A.jpg"
+  },
+  {
+    "nombre": "Banquillo",
+    "imagen": "https://www.ranking.es/img/producto/mid/K665.jpg"
+  },
+  {
+    "nombre": "Estadio de fútbol",
+    "imagen": "https://xbotgo.com/cdn/shop/articles/biggest_soccer_stadium_in_the_world.png?v=1755680666&width=800"
+  }
 ]
