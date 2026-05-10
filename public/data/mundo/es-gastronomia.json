@@ -1,243 +1,222 @@
 [
   {
     "nombre": "Paella valenciana",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/01_Paella_Valenciana_original.jpg/330px-01_Paella_Valenciana_original.jpg",
-    "palabraClave": "valenciana"
+    "imagen": "https://www.spainfoodsherpas.com/sfs/wp-content/uploads/2016/11/paella-valenciana-recipe-1.jpg"
   },
   {
     "nombre": "Cocido madrileño",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/CocidoMadrile%C3%B1o.jpg/330px-CocidoMadrile%C3%B1o.jpg",
-    "palabraClave": "madrileno"
+    "imagen": "https://imag.bonviveur.com/cocido-madrileno-autentico.jpg"
   },
   {
     "nombre": "Gazpacho",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Gazpacho_Cazuela_Barro.jpg/330px-Gazpacho_Cazuela_Barro.jpg",
-    "palabraClave": "gazpacho"
+    "imagen": "https://www.pequerecetas.com/wp-content/uploads/2018/06/gazpacho-andaluz-receta-tradicional.jpg"
   },
   {
-    "nombre": "Tortilla española",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Tortilla_de_Patatas_%28Corte_transversal%29.jpg/330px-Tortilla_de_Patatas_%28Corte_transversal%29.jpg",
-    "palabraClave": "espanola"
+    "nombre": "Tortilla de patatas",
+    "imagen": "https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2019/05/tortilla-espa%C3%B1ola.jpg"
   },
   {
     "nombre": "Jamón ibérico",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jam%C3%B3n_bellota_Mu%C3%B1ana.jpeg/330px-Jam%C3%B3n_bellota_Mu%C3%B1ana.jpeg",
-    "palabraClave": "iberico"
+    "imagen": "https://carnicaszurita.es/blog/wp-content/uploads/2024/05/Que-diferencias-existen-entre-el-jamon-serrano-y-el-jamon-iberico.jpg"
   },
   {
     "nombre": "Pulpo a la gallega",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Raci%C3%B3nPulpo.jpg/330px-Raci%C3%B3nPulpo.jpg",
-    "palabraClave": "gallega"
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2024/10/pulpo-a-la-gallega-1024x683.jpg"
   },
   {
     "nombre": "Fabada asturiana",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Fabada_en_cazuela_de_barro.jpg/330px-Fabada_en_cazuela_de_barro.jpg",
-    "palabraClave": "asturiana"
+    "imagen": "https://imag.bonviveur.com/fabada-asturiana.jpg"
   },
   {
     "nombre": "Patatas bravas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Patatas_bravas_madrid.jpg/330px-Patatas_bravas_madrid.jpg",
-    "palabraClave": "bravas"
+    "imagen": "https://imag.bonviveur.com/patas-bravas.jpg"
   },
   {
     "nombre": "Croquetas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Croquetas_Caseras_%287068664101%29.jpg/330px-Croquetas_Caseras_%287068664101%29.jpg",
-    "palabraClave": "croquetas"
+    "imagen": "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/croquetas-de-cordero-1080x671.jpg"
   },
   {
-    "nombre": "Pan con tomate",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Pan_con_Tumaca.jpg/330px-Pan_con_Tumaca.jpg",
-    "palabraClave": "tomate"
+    "nombre": "Pantumaca",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Pan_con_Tumaca.jpg"
   },
   {
     "nombre": "Churros con chocolate",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Chocolate_con_churros_de_lazo.jpg/330px-Chocolate_con_churros_de_lazo.jpg",
-    "palabraClave": "chocolate"
+    "imagen": "https://assets.unileversolutions.com/recipes-v2/240757.jpg"
   },
   {
     "nombre": "Crema catalana",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Food_in_Catalonia_06.jpg/330px-Food_in_Catalonia_06.jpg",
-    "palabraClave": "catalana"
+    "imagen": "https://dietamediterranea.com/wp-content/uploads/2015/10/20151102-Crema-catalana-1024x954.jpg"
   },
   {
     "nombre": "Tarta de Santiago",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Tarta_de_Santiago-2009.jpg/330px-Tarta_de_Santiago-2009.jpg",
-    "palabraClave": "santiago"
+    "imagen": "https://www.196flavors.com/wp-content/uploads/2021/09/Torta-de-santiago-1fp.jpg"
   },
   {
     "nombre": "Salmorejo",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Salmorejo_cordobes.jpg/330px-Salmorejo_cordobes.jpg",
-    "palabraClave": "salmorejo"
+    "imagen": "https://www.aceitesdeolivadeespana.com/wp-content/uploads/2024/04/salmorejo_jamon_iberico.jpeg"
   },
   {
     "nombre": "Pisto manchego",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Pisto.jpg/330px-Pisto.jpg",
-    "palabraClave": "manchego"
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2025/03/pisto-receta.jpg"
   },
   {
     "nombre": "Migas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Migas.PNG/330px-Migas.PNG",
-    "palabraClave": "migas"
+    "imagen": "https://www.palacios.es/palacios/usuariosFtp/conexion/imagenes1563a.jpg"
   },
   {
     "nombre": "Ropa vieja canaria",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ropa_vieja_Canarian_style_in_Fataga%2C_Gran_Canaria%2C_the_Canary_Islands.JPG/330px-Ropa_vieja_Canarian_style_in_Fataga%2C_Gran_Canaria%2C_the_Canary_Islands.JPG",
-    "palabraClave": "canaria"
+    "imagen": "https://www.recetasderechupete.com/wp-content/uploads/2023/03/Ropa-vieja-canaria-1200x828.jpg"
   },
   {
     "nombre": "Bacalao al pil-pil",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bacalao_al_Pil_Pil_%28Vizcaya%29.jpg/330px-Bacalao_al_Pil_Pil_%28Vizcaya%29.jpg",
-    "palabraClave": "pilpil"
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2016/02/receta-bacalao-pil-pil.jpg"
   },
   {
     "nombre": "Pintxos",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Barra_de_pintxos_Donosti_01.JPG/330px-Barra_de_pintxos_Donosti_01.JPG",
-    "palabraClave": "pintxos"
+    "imagen": "https://www.expogourmetmagazine.com/uploads/fotos_noticias/2026/02/w1200px_30642-247273-el-pintxo-donostiarra-quiere-ser-patrimonio-cultural-inmaterial.jpg"
   },
   {
     "nombre": "Morcilla de Burgos",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Morcilla_de_Burgos_-_2009.jpg/330px-Morcilla_de_Burgos_-_2009.jpg",
-    "palabraClave": "burgos"
+    "imagen": "https://www.naturr.es/cdn/shop/files/morcilla-burgos-cortada.webp?v=1735213387&width=1445"
   },
   {
     "nombre": "Horchata",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Quart_de_Poblet_-_Centre_Cultural_El_Casino_05.jpg/330px-Quart_de_Poblet_-_Centre_Cultural_El_Casino_05.jpg",
-    "palabraClave": "horchata"
+    "imagen": "https://pastelerialamallorquina.es/wp-content/uploads/2024/04/que-es-la-horchata-para-que-sirve-y-cual-es-su-historia.jpg"
   },
   {
     "nombre": "Sobrasada",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Sobrassada.jpg/330px-Sobrassada.jpg",
-    "palabraClave": "sobrasada"
+    "imagen": "https://www.gastronomicspain.com/blog/wp-content/uploads/2020/07/sobrasada-de-mallorca-400-grs.jpg"
   },
   {
     "nombre": "Alioli",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Allioli.jpg/330px-Allioli.jpg",
-    "palabraClave": "alioli"
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2024/12/alioli-casero.jpg"
   },
   {
-    "nombre": "Espinacas con garbanzos",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Potaje_de_vigilia.jpg/330px-Potaje_de_vigilia.jpg",
-    "palabraClave": "garbanzos"
+    "nombre": "Chistorra",
+    "imagen": "https://www.gastronomiavasca.net/uploads/image/file/3279/w700_chistorra.jpg"
+  },
+  {
+    "nombre": "Bocadillo de calamares",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfygTKSRyrLCo5wRDLD4hQBWazZxIcQRDw8g&s"
   },
   {
     "nombre": "Arroz con leche",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Arroz_con_leche.png/330px-Arroz_con_leche.png",
-    "palabraClave": "leche"
+    "imagen": "https://www.bekiacocina.com/images/cocina/0000/96-h.jpg"
   },
   {
     "nombre": "Natillas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Bowl_of_natillas_at_Madrid.jpg/330px-Bowl_of_natillas_at_Madrid.jpg",
-    "palabraClave": "natillas"
+    "imagen": "https://imag.bonviveur.com/natillas.jpg"
   },
   {
     "nombre": "Rosquillas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Rosquillas_listas.JPG/330px-Rosquillas_listas.JPG",
-    "palabraClave": "rosquillas"
+    "imagen": "https://imag.bonviveur.com/presentacion-de-las-rosquillas-de-anis.jpg"
   },
   {
     "nombre": "Ensaladilla rusa",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg/330px-%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg",
-    "palabraClave": "rusa"
+    "imagen": "https://www.petitchef.es/imgupl/recipe/466471p742864.jpg"
   },
   {
     "nombre": "Boquerones en vinagre",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Boquerones_en_vinagre-Madrid.jpg/330px-Boquerones_en_vinagre-Madrid.jpg",
-    "palabraClave": "vinagre"
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2024/06/boquerones-en-vinagre-receta.jpg"
+  },
+  {
+    "nombre": "Paella de marisco",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLF5oWHPTpwF7I7SiS0Fa5eDDXRKBprhvZjg&s"
   },
   {
     "nombre": "Fideuà",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/_q1UCKC4ieY/maxresdefault.jpg"
   },
   {
     "nombre": "Cochinillo asado",
-    "imagen": ""
+    "imagen": "https://i1.wp.com/elbernardino.com/wp-content/uploads/2018/03/cochinillo-segovia-restaurante-9.jpg?resize=720%2C498&ssl=1"
   },
   {
     "nombre": "Lechazo asado",
-    "imagen": ""
+    "imagen": "https://descubrecantabria.info/wp-content/uploads/2025/12/recetas-de-cantabria-lechazo-asado_11zon.webp"
   },
   {
     "nombre": "Papas arrugadas con mojo",
-    "imagen": ""
+    "imagen": "https://www.recetasdeescandalo.com/wp-content/uploads/2018/06/Papas-arrugadas-canarias-con-mojo-picon-casero.jpg"
   },
   {
     "nombre": "Caldo gallego",
-    "imagen": ""
+    "imagen": "https://imag.bonviveur.com/plato-de-caldo.jpg"
   },
   {
     "nombre": "Empanada gallega",
-    "imagen": ""
+    "imagen": "https://i.blogs.es/9e550f/empanada-gallega/840_560.jpg"
   },
   {
     "nombre": "Ajoblanco",
-    "imagen": ""
+    "imagen": "https://cdn.vegamecum.com/image/width=840/vegamecum.com%2Fwp-content%2Fuploads%2F2019%2F06%2FAjoblanco_II.l.jpeg"
   },
   {
-    "nombre": "Porra antequerana",
-    "imagen": ""
+    "nombre": "Gazpachuelo",
+    "imagen": "https://i.ytimg.com/vi/g1DzNGJdULM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDI_Ui7-bC8L18sCXnW8O-cxMVaEQ"
   },
   {
     "nombre": "Percebes",
-    "imagen": ""
+    "imagen": "https://imag.bonviveur.com/percebes.jpg"
   },
   {
     "nombre": "Navajas",
-    "imagen": ""
+    "imagen": "https://e00-xlk-cooking-elmundo.uecdn.es/files/image_414_276/uploads/2023/02/28/63fe669ceb33c.jpeg"
   },
   {
     "nombre": "Calamares a la romana",
-    "imagen": ""
+    "imagen": "https://cdn.elcocinerocasero.com/imagen/receta/1000/2022-05-25-21-02-06/calamares-a-la-romana.jpeg"
   },
   {
     "nombre": "Pimientos de Padrón",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWqmidKStza_wEKw-dUxmgZxBSmf1hHmZgA&s"
   },
   {
-    "nombre": "Montaditos",
-    "imagen": ""
+    "nombre": "Campero",
+    "imagen": "https://academiagastronomica.com/wp-content/uploads/2025/05/Campero-Romeo-Mi-Barrio-Best-Sandwich.jpeg"
   },
   {
-    "nombre": "Leche frita",
-    "imagen": ""
+    "nombre": "Pochas a la navarra",
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2024/11/pochas-a-la-navarra.jpg"
   },
   {
     "nombre": "Torrijas",
-    "imagen": ""
+    "imagen": "https://www.annarecetasfaciles.com/files/torrijas-vino-2-scaled.jpg"
   },
   {
     "nombre": "Roscón de Reyes",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgENeahZpfNxtpLDr0CWo-OPjGvVYpqOIllQ&s"
   },
   {
     "nombre": "Polvorones",
-    "imagen": ""
+    "imagen": "https://newluxbrand.com/recetas/wp-content/uploads/2022/12/Diciembre22_V1400_polvorones_03.jpg"
   },
   {
-    "nombre": "Turrón",
-    "imagen": ""
+    "nombre": "Ternasco de Aragón",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDnSbwuHpN2ZmhFS-upL_SU1rgef5G2jLQqg&s"
   },
   {
-    "nombre": "Mazapán",
-    "imagen": ""
+    "nombre": "Raxo gallego",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYqqgzZ7XIEPhwjAOSQPX2w9JVgsRMaB4whg&s"
   },
   {
-    "nombre": "Queimada",
-    "imagen": ""
+    "nombre": "Coquinas",
+    "imagen": "https://www.mariscoscastellar.com/wp-content/uploads/2019/02/Dise%C3%B1o-sin-t%C3%ADtulo-13.png"
   },
   {
-    "nombre": "Licor de hierbas",
-    "imagen": ""
+    "nombre": "Arroz negro",
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2017/08/arroz-negro-receta.jpg"
   },
   {
-    "nombre": "Jamón serrano",
-    "imagen": ""
+    "nombre": "Ajoarriero",
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCBuKHwphvcIzD8FMVZItJJc45U2w3Uz7-GODONY9RQYh03VvvTeU961ELgb07ILf-vCpz5JikRFFnfnn6iKSuF4kBtn95dcbY7cte_y4Bbm8MAPqj2czIUt8wFAi9H1Q6NPGclYXMxTA/s1600/Ajoarriero-Portada.jpg"
   },
   {
-    "nombre": "Queso manchego",
-    "imagen": ""
+    "nombre": "Pimientos del piquillo",
+    "imagen": "https://petramora.com/cdn/shop/files/W-50000061-pimientos-del-piquillo-asados-pelados_1.jpg?crop=center&height=2433&v=1728560064&width=1946https://www.javirecetas.com/wp-content/uploads/2022/11/pimientos-del-piquillo-600x900.jpg"
   },
   {
-    "nombre": "Berberechos al vapor",
-    "imagen": ""
+    "nombre": "Sopa castellana",
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKD0LqNGcPSEHmsXD0TCI2h2wCPlsloaYhJnPaKfJcsO__E91AXspCLgbGg_SELLyyNZzC9CxWoLb-u7bJCeNeLTXs6TKyxdhWyg-gwbnasCiO3L1pOhCvxz0n7CfyiORY5Bic2k7SfEtKzpOgtQY68pUDtpIkOTrIIb6uXK5ixnGeqxWK-8XXpcghsMI/s1920/_DSC8066.webp"
   }
 ]
