@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "nombre": "Rock",
+    "imagen": "https://s3.amazonaws.com/rtvc-assets-senalcolombia.gov.co/s3fs-public/styles/imagen_noticia/public/field/image/dia-mundial-del-rock.jpg?itok=FdguAMMm"
+  },
+  {
+    "nombre": "Pop",
+    "imagen": "https://www.12bitsoul.com/cdn/shop/articles/Vintage_Mic_Under_Stage_Lights_The_Performer_s_Icon_c1de1703-dbaf-46e0-9a53-69d0ed68497f_1100x.webp?v=1761214887"
+  },
+  {
+    "nombre": "Jazz",
+    "imagen": "https://content-historia.nationalgeographic.com.es/medio/2024/12/29/19-jazz-harry-warnecke-gus-schoenbaechler_55afa323_241229144847_1280x946.webp"
+  },
+  {
+    "nombre": "Blues",
+    "imagen": "https://akamai.sscdn.co/gcs/cifra-blog/es/wp-content/uploads/2023/01/c432235-bb-king-blues.webp"
+  },
+  {
+    "nombre": "Reggae",
+    "imagen": "https://jamaicans.com/wp-content/uploads/2025/08/Julian-Marley-One-Drop-The-Global-Influence-of-Reggae.jpg"
+  },
+  {
+    "nombre": "Flamenco",
+    "imagen": "https://www.grangalaflamenco.com/wp-content/uploads/2024/08/barcelonayflamenco-99.jpg"
+  },
+  {
+    "nombre": "Salsa",
+    "imagen": "https://www.superprof.cr/blog/wp-content/uploads/2022/06/salsa_05.jpg"
+  },
+  {
+    "nombre": "Bachata",
+    "imagen": "https://www.billboard.com/wp-content/uploads/media/bachata-evolution-hhm-2018-billboard-1548.jpg"
+  },
+  {
+    "nombre": "Reggaeton",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/bad-bunny-attends-made-in-america-festival-on-september-04-news-photo-1674130845.jpg?crop=0.670xw:1.00xh;0.0571xw,0&resize=1200:*"
+  },
+  {
+    "nombre": "Hip-hop",
+    "imagen": "https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradiolos40/FWVYFGNBAJJYJMYRY6CQHYM5UQ.jpg"
+  },
+  {
+    "nombre": "R&B",
+    "imagen": "https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradiolos40/DDOXFQO64FOJTEDJE5X2JSHJBM.jpg"
+  },
+  {
+    "nombre": "Country",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX31b8rg-53Jn8NCKyhoVo_Sf81sZKtS1C2g&s"
+  },
+  {
+    "nombre": "Folk",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST2N9CUtONM7KjNlgZSPzKyvL-EC--zbMz9g&s"
+  },
+  {
+    "nombre": "Música clásica",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWeU5_E8c0gQiev4RGG8HRY-kbG2wfzubag&s"
+  },
+  {
+    "nombre": "Ópera",
+    "imagen": "https://informauva.com/wp-content/uploads/2025/11/Los-primeros-balbuceos-del-genero-operistico-miraban-a-los-dramas-teatrales-griegos.gif"
+  },
+  {
+    "nombre": "Bossa Nova",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL63b56wbNlQOd7yRyc0Q_QBCxaI5YvK_czA&s"
+  },
+  {
+    "nombre": "Samba",
+    "imagen": "https://trabajadorinmigrante.com/wp-content/uploads/2020/02/sambabrasil1.jpg"
+  },
+  {
+    "nombre": "Tango",
+    "imagen": "https://www.giglon.com/documents/10180/30003/3-28139x1-6ttat.jpg/9deb5b32-1650-4cd9-861c-c5074e57f481"
+  },
+  {
+    "nombre": "Punk",
+    "imagen": "https://lacarnemagazine.com/wp-content/uploads/2020/09/punk-web-1200x675.jpg"
+  },
+  {
+    "nombre": "Metal",
+    "imagen": "https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradiolos40/V6NKADDX4JMZBIOCGMPNKFMNYM.jpg"
+  },
+  {
+    "nombre": "Indie",
+    "imagen": "https://www.wahwahclub.es/wp-content/uploads/2024/07/musica-indie-grupos-1.jpg"
+  },
+  {
+    "nombre": "Electrónica",
+    "imagen": "https://i.ytimg.com/vi/zrWBh6w0ebg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCqanEkDb2CSS3Bz4XthHBPfHT9XA"
+  },
+  {
+    "nombre": "House",
+    "imagen": "https://thebasementxxx.com/webapp/wp-content/uploads/2016/07/13307294_1130651190338222_2720201525460859289_n.jpg"
+  },
+  {
+    "nombre": "Techno",
+    "imagen": "https://www.futuremusic-es.com/wp-content/uploads/2024/05/Techno-siete-hitos-marcaron-historia-Loopcloud-intro-1920x1024px.jpg"
+  },
+  {
+    "nombre": "Soul",
+    "imagen": "https://oinoz.es/wp-content/uploads/2020/10/jazz-1080x675.jpg"
+  }
+]
