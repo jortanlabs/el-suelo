@@ -1,22 +1,90 @@
 [
-  {"nombre":"Medicina","imagen":"","palabraClave":"medicina"},
-  {"nombre":"Derecho","imagen":"","palabraClave":"derecho"},
-  {"nombre":"Ingeniería","imagen":"","palabraClave":"ingenieria"},
-  {"nombre":"Arquitectura","imagen":"","palabraClave":"arquitectura"},
-  {"nombre":"Psicología","imagen":"","palabraClave":"psicologia"},
-  {"nombre":"Periodismo","imagen":"","palabraClave":"periodismo"},
-  {"nombre":"Economía","imagen":"","palabraClave":"economia"},
-  {"nombre":"Biología","imagen":"","palabraClave":"biologia"},
-  {"nombre":"Química","imagen":"","palabraClave":"quimica"},
-  {"nombre":"Física","imagen":"","palabraClave":"fisica"},
-  {"nombre":"Historia","imagen":"","palabraClave":"historia"},
-  {"nombre":"Filosofía","imagen":"","palabraClave":"filosofia"},
-  {"nombre":"Matemáticas","imagen":"","palabraClave":"matematicas"},
-  {"nombre":"Informática","imagen":"","palabraClave":"informatica"},
-  {"nombre":"Enfermería","imagen":"","palabraClave":"enfermeria"},
-  {"nombre":"Farmacia","imagen":"","palabraClave":"farmacia"},
-  {"nombre":"Veterinaria","imagen":"","palabraClave":"veterinaria"},
-  {"nombre":"Bellas Artes","imagen":"","palabraClave":"artes"},
-  {"nombre":"Educación","imagen":"","palabraClave":"educacion"},
-  {"nombre":"Sociología","imagen":"","palabraClave":"sociologia"}
+  {
+    "nombre": "Medicina",
+    "imagen": "https://www.nosequeestudiar.net/site/assets/files/1695520/medicina-medico-estetoscopio.jpg"
+  },
+  {
+    "nombre": "Derecho",
+    "imagen": "https://udlondres.com/wp-content/uploads/2023/09/UDLONDRES-PORTADA-BLOG-derecho-1080x675.webp"
+  },
+  {
+    "nombre": "Ingeniería",
+    "imagen": "https://universidadeuropea.com/resources/media/images/tipos-de-ingenieria-1200x630.original.jpg"
+  },
+  {
+    "nombre": "Arquitectura",
+    "imagen": "https://universidadeuropea.com/resources/media/images/salidas-profesionales-arquitectura-1200x630.original.jpg"
+  },
+  {
+    "nombre": "Psicología",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmUqbtF8fpZZF8C1Y4VeK5su6XymuJ_74eA&s"
+  },
+  {
+    "nombre": "Periodismo",
+    "imagen": "https://uniscopio.com/wp-content/uploads/2023/05/periodismo.jpg"
+  },
+  {
+    "nombre": "Economía",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr4IvpIQ7dFQWnYOWVPOaLayim3v9cX2_oOQ&s"
+  },
+  {
+    "nombre": "Biología",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTRYJmphZ0AsDZjw9P6y35UjbvvSBeLGCx2w&s"
+  },
+  {
+    "nombre": "Química",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSI2y6dcd8hcj8Js86d6rA9at5dllikFXDag&s"
+  },
+  {
+    "nombre": "Física",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8GoQIG0LUV7ax8zgMlFxpRyKH2DHvLZVcQ&s"
+  },
+  {
+    "nombre": "Historia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSiJ7zw6WpmEcfMZN-R8N8ZbTRu3ALMdwUyA&s"
+  },
+  {
+    "nombre": "Filosofía",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4FSWVBFbSmzDhl2Ta-UyLTpQGd1u9HCZsAA&s"
+  },
+  {
+    "nombre": "Matemáticas",
+    "imagen": "https://www.emagister.com/blog/wp-content/uploads/2021/10/matematica.jpg"
+  },
+  {
+    "nombre": "Informática",
+    "imagen": "https://universidadeuropea.com/resources/media/images/que-estudiar-para-ser-informatico-1200x630.original.jpg"
+  },
+  {
+    "nombre": "Enfermería",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgZwi-wfD50GA0VQynLpHYpKfJk7dyerQ2UA&s"
+  },
+  {
+    "nombre": "Farmacia",
+    "imagen": "https://www.unir.net/wp-content/uploads/2022/10/efficient-pharmacy-operations-thanks-to-teamwork-picture-id1036131880.jpg"
+  },
+  {
+    "nombre": "Veterinaria",
+    "imagen": "https://www.emagister.com/blog/wp-content/uploads/2022/02/GettyImages-454409627.jpg"
+  },
+  {
+    "nombre": "Bellas Artes",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQWvN2wZDePCuB6LO5OulNGldotXGP1XQwcQ&s"
+  },
+  {
+    "nombre": "Magisterio",
+    "imagen": "https://cdn.euroinnova.edu.es/img/subidasEditor/oratoria01-1647478382.webp"
+  },
+  {
+    "nombre": "Sociología",
+    "imagen": "https://www.emagister.com/blog/wp-content/uploads/2019/04/black-and-white-elderly-grayscale-1266005.jpg"
+  },
+  {
+    "nombre": "Odontología",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAm8QmiwZE4-8bIWNE-XQ7j6cGsbPOMpdmlQ&s"
+  },
+  {
+    "nombre": "Turismo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKrTMPAfqZW3c21gJWJSeIVY5HoRyfq605CA&s"
+  }
 ]
