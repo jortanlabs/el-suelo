@@ -1,24 +1,146 @@
 [
-  {"nombre":"Corazón","imagen":"","palabraClave":"corazon"},
-  {"nombre":"Cerebro","imagen":"","palabraClave":"cerebro"},
-  {"nombre":"Pulmón","imagen":"","palabraClave":"pulmon"},
-  {"nombre":"Hígado","imagen":"","palabraClave":"higado"},
-  {"nombre":"Riñón","imagen":"","palabraClave":"rinon"},
-  {"nombre":"Estómago","imagen":"","palabraClave":"estomago"},
-  {"nombre":"Rodilla","imagen":"","palabraClave":"rodilla"},
-  {"nombre":"Codo","imagen":"","palabraClave":"codo"},
-  {"nombre":"Tobillo","imagen":"","palabraClave":"tobillo"},
-  {"nombre":"Muñeca","imagen":"","palabraClave":"muneca"},
-  {"nombre":"Hombro","imagen":"","palabraClave":"hombro"},
-  {"nombre":"Cadera","imagen":"","palabraClave":"cadera"},
-  {"nombre":"Columna vertebral","imagen":"","palabraClave":"vertebral"},
-  {"nombre":"Cráneo","imagen":"","palabraClave":"craneo"},
-  {"nombre":"Mandíbula","imagen":"","palabraClave":"mandibula"},
-  {"nombre":"Párpado","imagen":"","palabraClave":"parpado"},
-  {"nombre":"Mejilla","imagen":"","palabraClave":"mejilla"},
-  {"nombre":"Nariz","imagen":"","palabraClave":"nariz"},
-  {"nombre":"Oreja","imagen":"","palabraClave":"oreja"},
-  {"nombre":"Dedo","imagen":"","palabraClave":"dedo"},
-  {"nombre":"Talón","imagen":"","palabraClave":"talon"},
-  {"nombre":"Esternón","imagen":"","palabraClave":"esternon"}
+  {
+    "nombre": "Corazón",
+    "imagen": "https://c.files.bbci.co.uk/FDDC/production/_97788946_gettyimages-505046643.jpg"
+  },
+  {
+    "nombre": "Cerebro",
+    "imagen": "https://www.kenhub.com/thumbor/JQbdMEhzAak-yQVmPFTdqZ7rgSQ=/fit-in/413x413/filters:fill(FFFFFF,true):watermark(/images/watermark_only_413.png,0,0,0):watermark(/logos/logo_url_sm.png,-10,-10,0):format(jpeg)/images/learnable/sulcus-precentralis/U3yyVwQaMmcx6yiqDdJssw_Sulcus_precentralis_01.png"
+  },
+  {
+    "nombre": "Pulmón",
+    "imagen": "https://i.pinimg.com/736x/9c/3d/f9/9c3df931d662394dbc92449e50bf9802.jpg"
+  },
+  {
+    "nombre": "Hígado",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSklTRG8KDaPtT4MKC95KZJhi_LbfAjHTong&s"
+  },
+  {
+    "nombre": "Riñón",
+    "imagen": "https://drupal-cdn-hfaeddcdbng5hfbg.a01.azurefd.net/sites/default/files/2025-02/shutterstock_735344134-scaled.jpg"
+  },
+  {
+    "nombre": "Estómago",
+    "imagen": "https://static.vecteezy.com/system/resources/previews/010/850/307/non_2x/stomach-human-body-part-free-vector.jpg"
+  },
+  {
+    "nombre": "Rodilla",
+    "imagen": "https://fotografias.lasexta.com/clipping/cmsimages02/2016/08/02/D1F7409C-6EF1-451F-8A67-FAB4A105EA98/58.jpg?crop=695,394,x0,y50&width=1000&height=567&optimize=high&format=webply"
+  },
+  {
+    "nombre": "Codo",
+    "imagen": "https://pbs.twimg.com/media/ESxileDX0AEqhrc.jpg"
+  },
+  {
+    "nombre": "Tobillo",
+    "imagen": "https://www.soyvisual.org/sites/default/files/styles/twitter_card/public/images/photos/cue_0022.jpg?itok=4VaAT7H9"
+  },
+  {
+    "nombre": "Muñeca",
+    "imagen": "https://www.soyvisual.org/sites/default/files/styles/twitter_card/public/images/photos/cue_0020.jpg?itok=0MS_Khlz"
+  },
+  {
+    "nombre": "Hombro",
+    "imagen": "https://www.soyvisual.org/sites/default/files/styles/twitter_card/public/images/photos/cue_0023.jpg?itok=p21Lo27A"
+  },
+  {
+    "nombre": "Cadera",
+    "imagen": "https://i0.wp.com/www.drfranklinpena.com/mywp/wp-content/uploads/2016/06/aumento-caderas.jpg?fit=1200%2C600&ssl=1"
+  },
+  {
+    "nombre": "Columna vertebral",
+    "imagen": "https://medlineplus.gov/images/SpineInjuriesandDisorders_share.jpg"
+  },
+  {
+    "nombre": "Cráneo",
+    "imagen": "https://pymstatic.com/32242/conversions/craneo-humano-wide.jpg"
+  },
+  {
+    "nombre": "Mandíbula",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMEbVbkH77xFSbAAGfKMFP0gB0Em-G9hyRDg&s"
+  },
+  {
+    "nombre": "Párpado",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJZhBZJ8ppHKeyqw5_YmjFd_q-ph6b4TgPg&s"
+  },
+  {
+    "nombre": "Mejilla",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNneqQVKY07l-lCb-sdB482dNm8NoFA0BbQ&s"
+  },
+  {
+    "nombre": "Nariz",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSroS78eEb4mqrnj10CHQQpL3_ug4oEPGaIvA&s"
+  },
+  {
+    "nombre": "Oreja",
+    "imagen": "https://www.clinicaplanas.com/jorge-planas/wp-content/oreja-nariz.jpg"
+  },
+  {
+    "nombre": "Dedo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_GimKIkp0R_iY1kdihArafn1aOz7nLplPCQ&s"
+  },
+  {
+    "nombre": "Talón",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7bHQe0ZAt8FKZmPaSgjKuXA5eGC6EZAQfUQ&s"
+  },
+  {
+    "nombre": "Ombligo",
+    "imagen": "https://images.ecestaticos.com/QrHpRfPPxoty8aMkd96TR33CPxw=/0x0:2119x1787/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F64f%2F384%2Fd64%2F64f384d64f7c2f78758d3e6c2452b1d8.jpg"
+  },
+  {
+    "nombre": "Ojo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUBU2kxCU7VbRRTc_f4ufeUjKqg5C-_Fmfg&s"
+  },
+  {
+    "nombre": "Mano",
+    "imagen": "https://drpinal.com/web/wp-content/uploads/2015/06/Mano-Dr.-Pin%CC%83al-.png"
+  },
+  {
+    "nombre": "Pie",
+    "imagen": "https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2022/10/13/63474feb6cefd.jpeg"
+  },
+  {
+    "nombre": "Tripa",
+    "imagen": "https://media.istockphoto.com/id/1254658304/es/foto/mantenerse-saludable-es-parte-del-cuidado-personal.jpg?s=612x612&w=0&k=20&c=B1q9Au0yBmJVLSSejs2ZwMCLgdiZoJ-AlP0t7DIuclo="
+  },
+  {
+    "nombre": "Barriga",
+    "imagen": "https://images.ecestaticos.com/puNBllRSKGmybzIba3XHp1QmHPU=/2x139:2713x1667/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F61a%2F0f7%2Fedb%2F61a0f7edb85dc062335953ee6cc57e75.jpg"
+  },
+  {
+    "nombre": "Cabeza",
+    "imagen": "https://hospitalcapilar.com/wp-content/uploads/2022/01/partes-de-la-cabeza-scaled.jpg"
+  },
+  {
+    "nombre": "Boca",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCheGbhdud7Rv8OY40O3CdSTwV5MOVezdFUg&s"
+  },
+  {
+    "nombre": "Culo",
+    "imagen": "https://cirumed.es/wp-content/uploads/2025/04/culo-perfecto.jpg"
+  },
+  {
+    "nombre": "Piernas",
+    "imagen": "https://josecortes.com/wp-content/uploads/2025/03/Procedimientos-y-liposuccion-de-piernas.png"
+  },
+  {
+    "nombre": "Espalda",
+    "imagen": "https://www.soyvisual.org/sites/default/files/styles/twitter_card/public/images/photos/cue_0019.jpg?itok=53KHoUfd"
+  },
+  {
+    "nombre": "Cuello",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsRFi58D3t8miM2lIdHdAuP1i6QwpF8XXeCA&s"
+  },
+  {
+    "nombre": "Brazo",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Extended_arm.jpg"
+  },
+  {
+    "nombre": "Pecho",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Chest_young_male_yellow.jpg/330px-Chest_young_male_yellow.jpg"
+  },
+  {
+    "nombre": "Muslo",
+    "imagen": "https://doctoraprieto.es/wp-content/uploads/2025/02/Lifting-de-muslos-con-la-doctora-Prieto.jpg"
+  }
 ]
