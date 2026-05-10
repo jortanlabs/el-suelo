@@ -1,23 +1,110 @@
 [
-  { "nombre": "Michael Jordan", "imagen": "", "palabraClave": "jordan" },
-  { "nombre": "LeBron James", "imagen": "", "palabraClave": "james" },
-  { "nombre": "Kobe Bryant", "imagen": "", "palabraClave": "bryant" },
-  { "nombre": "Shaquille O'Neal", "imagen": "", "palabraClave": "oneal" },
-  { "nombre": "Magic Johnson", "imagen": "", "palabraClave": "johnson" },
-  { "nombre": "Larry Bird", "imagen": "", "palabraClave": "bird" },
-  { "nombre": "Wilt Chamberlain", "imagen": "", "palabraClave": "chamberlain" },
-  { "nombre": "Kareem Abdul-Jabbar", "imagen": "", "palabraClave": "abduljabbar" },
-  { "nombre": "Bill Russell", "imagen": "", "palabraClave": "russell" },
-  { "nombre": "Tim Duncan", "imagen": "", "palabraClave": "duncan" },
-  { "nombre": "Kevin Durant", "imagen": "", "palabraClave": "durant" },
-  { "nombre": "Stephen Curry", "imagen": "", "palabraClave": "curry" },
-  { "nombre": "Dirk Nowitzki", "imagen": "", "palabraClave": "nowitzki" },
-  { "nombre": "Pau Gasol", "imagen": "", "palabraClave": "gasol" },
-  { "nombre": "Tony Parker", "imagen": "", "palabraClave": "parker" },
-  { "nombre": "Manu Ginóbili", "imagen": "", "palabraClave": "ginobili" },
-  { "nombre": "Oscar Robertson", "imagen": "", "palabraClave": "robertson" },
-  { "nombre": "Julius Erving", "imagen": "", "palabraClave": "erving" },
-  { "nombre": "Charles Barkley", "imagen": "", "palabraClave": "barkley" },
-  { "nombre": "Scottie Pippen", "imagen": "", "palabraClave": "pippen" },
-  { "nombre": "Allen Iverson", "imagen": "", "palabraClave": "iverson" }
+  {
+    "nombre": "Michael Jordan",
+    "imagen": "https://www.izquierdadiario.es/IMG/logo/yhyu.jpg"
+  },
+  {
+    "nombre": "LeBron James",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg"
+  },
+  {
+    "nombre": "Kobe Bryant",
+    "imagen": "https://ichef.bbci.co.uk/images/ic/512xn/p081k13b.jpg.webp"
+  },
+  {
+    "nombre": "Shaquille O'Neal",
+    "imagen": "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/120AB/production/_95999837_gettyimages-3237280.jpg.webp"
+  },
+  {
+    "nombre": "Magic Johnson",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fcloudfront-eu-central-1.images.arcpublishing.com%2Fprisa%2FYZXCS47QTBG2FMTJUWLII34N64.jpg?auth=fab80225edce4c70cf445e5dbd91a7b77f0f634b66e67b28a4656b0178c16400&width=1200&height=675&smart=true"
+  },
+  {
+    "nombre": "Larry Bird",
+    "imagen": "https://baloncestobcb.com/wp-content/uploads/2022/02/bird_larry.jpg"
+  },
+  {
+    "nombre": "Wilt Chamberlain",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-515025540.jpg?crop=1xw:1.0xh;center,top&resize=640:*"
+  },
+  {
+    "nombre": "Kareem Abdul-Jabbar",
+    "imagen": "https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/abdul-jabbar_14l7numksmhpm1mcyyq9ppb176.jpg?itok=LHllFjit"
+  },
+  {
+    "nombre": "Bill Russell",
+    "imagen": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i.mTCvGEXeoc/v1/-1x-1.webp"
+  },
+  {
+    "nombre": "Tim Duncan",
+    "imagen": "https://tuscamisetasnba.com/wp-content/uploads/curiosidades-tim-duncan.jpg"
+  },
+  {
+    "nombre": "Kevin Durant",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkZ_fvaxcCAcwFId8gZXHnYJuUlKJDb_u3qA&s"
+  },
+  {
+    "nombre": "Stephen Curry",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqqlEVFsYHMlRL15abOPNIZXMAsfnEsNwTVw&s"
+  },
+  {
+    "nombre": "Dirk Nowitzki",
+    "imagen": "https://fotografias.antena3.com/clipping/cmsimages01/2022/07/19/5FC4ABF1-2300-433C-8277-6EF8DB26E970/dirk-nowitzki-partido-dallas-mavericks_98.jpg?crop=3000,1688,x0,y23&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "nombre": "Pau Gasol",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjpr0NnE-pGob5ge5rUfZNbigMmZL3bGu7bQ&s"
+  },
+  {
+    "nombre": "Tony Parker",
+    "imagen": "https://tuscamisetasnba.com/wp-content/uploads/curiosidaes-tony-parker.jpg"
+  },
+  {
+    "nombre": "Manu Ginóbili",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyL7_NQNsPAQ5CvlVbGW1Q1iCZcaeqqmBU3w&s"
+  },
+  {
+    "nombre": "Oscar Robertson",
+    "imagen": "https://cdn.nba.com/manage/2021/08/oscar-robertson-dribble-1920-1568x882.jpg"
+  },
+  {
+    "nombre": "Julius Erving",
+    "imagen": "https://cdn.nba.com/teams/legacy/www.nba.com/sixers/sites/sixers/files/gettyimages-96362519.jpg"
+  },
+  {
+    "nombre": "Charles Barkley",
+    "imagen": "https://baloncestobcb.com/wp-content/uploads/2022/11/c03-barkley-before-13-4_3-620x445-1.jpg"
+  },
+  {
+    "nombre": "Scottie Pippen",
+    "imagen": "https://preview.redd.it/do-you-think-scottie-pippen-would-be-better-worse-or-about-v0-tolus0phjcaf1.jpeg?width=1080&crop=smart&auto=webp&s=c181634096c028f2ed4f68ee5a26accb630788fa"
+  },
+  {
+    "nombre": "Allen Iverson",
+    "imagen": "https://i.ytimg.com/vi/2REkZG-dhHc/maxresdefault.jpg"
+  },
+  {
+    "nombre": "Karl Mahone",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbn2JJgi4Y8T7QdTEzfItdkhA4eZ9w1W2uA&s"
+  },
+  {
+    "nombre": "Moses Malone",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_rtdFl3h3cJlMmCQ1-tXEwmiJYFi4M6JoCw&s"
+  },
+  {
+    "nombre": "Elvin Hayes",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXP5CEP_60yFrsJSX5RuoptsmdTDJLCnYig&s"
+  },
+  {
+    "nombre": "Hakeem Olajuwon",
+    "imagen": "https://cdn.nba.com/manage/2017/08/hakeem-olajuwon-iso-stands.jpg"
+  },
+  {
+    "nombre": "Jerry West",
+    "imagen": "https://www.elprogreso.es/asset/thumbnail,1280,720,center,center/media/elprogreso/images/2024/06/12/2024061216140350833.jpg"
+  },
+  {
+    "nombre": "Ray Allen",
+    "imagen": "https://fotografias.lasexta.com/clipping/cmsimages02/2016/11/01/5309CEEB-BCDB-4E4A-9345-0A7D2C26C33D/default.jpg?crop=16:9&optimize=low&format=webply"
+  }
 ]
