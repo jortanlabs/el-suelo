@@ -321,29 +321,14 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
 
   <!-- TUTORIAL (overlay first visit) -->
   <div id="tutorial-overlay" class="hidden fixed inset-0 z-50 flex items-end justify-center px-4 pb-6" style="background:rgba(5,12,30,0.93)">
-    <div class="floor-card max-w-sm w-full p-5 space-y-4">
+    <div class="floor-card max-w-sm w-full p-6 space-y-5">
       <div class="text-center">
-        <div class="text-4xl mb-1">🎮</div>
-        <h2 class="font-titulo font-bold text-lg text-[#ffcc00] uppercase tracking-wider">¿Cómo se juega?</h2>
+        <div class="text-5xl mb-2">🏆</div>
+        <h2 class="font-titulo font-bold text-2xl text-[#ffcc00] uppercase tracking-wider leading-tight">Gana el jugador que aún tenga tiempo</h2>
       </div>
-      <div class="space-y-3 text-sm font-titulo text-[#e8e8ff]">
-        <div class="flex gap-3 items-start">
-          <span class="text-xl shrink-0">🖼️</span>
-          <span>Aparece una imagen. <strong class="text-[#ffcc00]">Di el nombre</strong> de lo que ves o pulsa <strong class="text-[#ffcc00]">Siguiente</strong> si no sabes.</span>
-        </div>
-        <div class="flex gap-3 items-start">
-          <span class="text-xl shrink-0">⏱️</span>
-          <span>Cada jugador tiene <strong class="text-[#ffcc00]">45 segundos</strong>. Los aciertes conservan tiempo, los fallos lo reducen.</span>
-        </div>
-        <div class="flex gap-3 items-start">
-          <span class="text-xl shrink-0">🏆</span>
-          <span>Gana quien más tiempo le <strong class="text-[#ffcc00]">quede en el reloj</strong> cuando el otro se quede sin tiempo.</span>
-        </div>
-        <div class="flex gap-3 items-start">
-          <span class="text-xl shrink-0">🏁</span>
-          <span><strong class="text-[#ff1dce]">Tablero</strong>: elegid casillas del tablero y disputad cada una en duelo directo.</span>
-        </div>
-      </div>
+      <p class="text-sm font-titulo text-[#e8e8ff] text-center leading-relaxed">
+        Juega <strong class="text-[#ffcc00]">duelos contra otro jugador</strong> respondiendo en voz alta a qué corresponde la imagen, en cada categoría.
+      </p>
       <button id="tutorial-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-base py-3">¡Entendido! →</button>
     </div>
   </div>
@@ -802,39 +787,21 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
 
   // ── Tablero ──────────────────────────────────────────────────
   function initTablero(nombreA: string, nombreB: string, poolCine: string[]) {
-    const catsValidas = todasCatsOtras.filter((c) => c.nombres || c.itemsHardcoded);
-
     casillas = Array.from({ length: 25 }, () => {
-      if (poolCine.length > 0 && Math.random() < 0.7) {
-        const slug = poolCine[Math.floor(Math.random() * poolCine.length)];
-        const meta = cineBloques.flatMap((b) => b.subcats).find((s) => s.slug === slug);
-        return {
-          catSlug: slug,
-          catEmoji: meta?.emoji ?? "🎬",
-          catNombre: meta?.nombre ?? slug,
-          catTipo: "cine" as const,
-          catNombres: null,
-          catHardcoded: null,
-          dueño: null as "A" | "B" | null,
-          items: [] as ItemFloor[],
-          itemsOffset: 0,
-          empateCuenta: 0,
-        };
-      } else {
-        const cat = catsValidas[Math.floor(Math.random() * catsValidas.length)];
-        return {
-          catSlug: cat.slug,
-          catEmoji: cat.emoji,
-          catNombre: cat.nombre,
-          catTipo: "otras" as const,
-          catNombres: cat.nombres ?? null,
-          catHardcoded: cat.itemsHardcoded ?? null,
-          dueño: null as "A" | "B" | null,
-          items: [] as ItemFloor[],
-          itemsOffset: 0,
-          empateCuenta: 0,
-        };
-      }
+      const slug = poolCine[Math.floor(Math.random() * poolCine.length)];
+      const meta = cineBloques.flatMap((b) => b.subcats).find((s) => s.slug === slug);
+      return {
+        catSlug: slug,
+        catEmoji: meta?.emoji ?? "🎬",
+        catNombre: meta?.nombre ?? slug,
+        catTipo: "cine" as const,
+        catNombres: null,
+        catHardcoded: null,
+        dueño: null as "A" | "B" | null,
+        items: [] as ItemFloor[],
+        itemsOffset: 0,
+        empateCuenta: 0,
+      };
     });
 
     casillaDuelo = -1;
