@@ -1,14 +1,70 @@
 [
-  { "nombre": "Real Madrid Basket", "imagen": "", "palabraClave": "madrid" },
-  { "nombre": "FC Barcelona Basket", "imagen": "", "palabraClave": "barcelona" },
-  { "nombre": "Valencia Basket", "imagen": "", "palabraClave": "valencia" },
-  { "nombre": "Unicaja Málaga", "imagen": "", "palabraClave": "malaga" },
-  { "nombre": "TD Systems Baskonia", "imagen": "", "palabraClave": "baskonia" },
-  { "nombre": "Gran Canaria Claro", "imagen": "", "palabraClave": "canaria" },
-  { "nombre": "Joventut Badalona", "imagen": "", "palabraClave": "badalona" },
-  { "nombre": "UCAM Murcia", "imagen": "", "palabraClave": "murcia" },
-  { "nombre": "Morabanc Andorra", "imagen": "", "palabraClave": "andorra" },
-  { "nombre": "Río Breogán", "imagen": "", "palabraClave": "breoGan" },
-  { "nombre": "Casademont Zaragoza", "imagen": "", "palabraClave": "zaragoza" },
-  { "nombre": "Bilbao Basket", "imagen": "", "palabraClave": "bilbao" }
+  {
+    "nombre": "Real Madrid Basket",
+    "imagen": "https://yt3.googleusercontent.com/VDIePKZrXvKjmBDQEPDFbn_blHzZJOO_vtr2RJrh1eURtMvucrp_DhuhXhXP-DF3elynACCY=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "nombre": "FC Barcelona Basket",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_QQmrjaFMGomUpz-QWZEhJm9RtiHBtg8Z0Q&s"
+  },
+  {
+    "nombre": "Valencia Basket",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8jVUgvbYsrfADG6TbC3qBL-ZHp5tWHBDhg&s"
+  },
+  {
+    "nombre": "Unicaja Málaga",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMw_u_99e1Mxv9Bf3LWqX15o-JCMnVZI8Wng&s"
+  },
+  {
+    "nombre": "TD Systems Baskonia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5v7IaxaKx-lH38Svvxld3Y_MaQbA4UTbBg&s"
+  },
+  {
+    "nombre": "Gran Canaria Claro",
+    "imagen": "https://basketpasion.es/wp-content/uploads/2022/05/grancanaria.jpg"
+  },
+  {
+    "nombre": "Joventut Badalona",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtxoVV9s8GvKD0frMZFWJKoAT_zDaKROac4w&s"
+  },
+  {
+    "nombre": "UCAM Murcia",
+    "imagen": "https://pbs.twimg.com/media/Fd0eShOX0AE77Bh.png"
+  },
+  {
+    "nombre": "Morabanc Andorra",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2PIQ5YsbKsP71yowbGoITSswbfjZPeZNNKQ&s"
+  },
+  {
+    "nombre": "Río Breogán",
+    "imagen": "https://www.cbbreogan.com/static/site/img/entries/default.jpg"
+  },
+  {
+    "nombre": "Casademont Zaragoza",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_TDv-GBWbMIzu7IvLJQfMNfwaeSJLQ5ptIA&s"
+  },
+  {
+    "nombre": "Bilbao Basket",
+    "imagen": "https://bilbaobasket.biz/wp-content/uploads/2025/11/escudo-fondo.jpg"
+  },
+  {
+    "nombre": "Força Lleida",
+    "imagen": "https://yt3.googleusercontent.com/g68RhEd6MUUo7opsz0rhGJgAicVDLV1CGn7z1LZHflJELBB95smt6vfJdoy3aYXPWbXwTgwK=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "nombre": "Covirán Granada",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimE5Pgd7tk9tFMKDND3PdTuj0KJ1MOOGrBg&s"
+  },
+  {
+    "nombre": "Club Baloncesto San Pablo Burgos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/an/f/f1/San_Pablo_Burgos.png"
+  },
+  {
+    "nombre": "Basquet Manresa",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gDrapjpeZxomDgYkBftGRjD_nfVaZzfR-w&s"
+  },
+  {
+    "nombre": "Basquet Girona",
+    "imagen": "https://basquetgirona.com/wp-content/uploads/2023/11/mm-01.svg"
+  }
 ]
