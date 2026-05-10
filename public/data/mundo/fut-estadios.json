@@ -1,25 +1,98 @@
 [
-  { "nombre": "Estadio Santiago Bernabéu", "imagen": "", "palabraClave": "bernabeu" },
-  { "nombre": "Camp Nou", "imagen": "", "palabraClave": "nou" },
-  { "nombre": "Wembley Stadium", "imagen": "", "palabraClave": "wembley" },
-  { "nombre": "Allianz Arena", "imagen": "", "palabraClave": "arena" },
-  { "nombre": "San Siro", "imagen": "", "palabraClave": "siro" },
-  { "nombre": "Old Trafford", "imagen": "", "palabraClave": "trafford" },
-  { "nombre": "Anfield", "imagen": "", "palabraClave": "anfield" },
-  { "nombre": "Signal Iduna Park", "imagen": "", "palabraClave": "park" },
-  { "nombre": "Estadio Metropolitano", "imagen": "", "palabraClave": "metropolitano" },
-  { "nombre": "Johan Cruyff Arena", "imagen": "", "palabraClave": "arena" },
-  { "nombre": "Olimpico di Roma", "imagen": "", "palabraClave": "roma" },
-  { "nombre": "Stade de France", "imagen": "", "palabraClave": "france" },
-  { "nombre": "Lusail Stadium", "imagen": "", "palabraClave": "lusail" },
-  { "nombre": "Maracaná", "imagen": "", "palabraClave": "maracana" },
-  { "nombre": "Estadio Azteca", "imagen": "", "palabraClave": "azteca" },
-  { "nombre": "Estadio do Dragão", "imagen": "", "palabraClave": "dragao" },
-  { "nombre": "Estadio Ramón Sánchez-Pizjuán", "imagen": "", "palabraClave": "pizjuan" },
-  { "nombre": "Estadio Benito Villamarín", "imagen": "", "palabraClave": "villamarin" },
-  { "nombre": "Estadio de Mestalla", "imagen": "", "palabraClave": "mestalla" },
-  { "nombre": "San Mamés", "imagen": "", "palabraClave": "mames" },
-  { "nombre": "Stamford Bridge", "imagen": "", "palabraClave": "bridge" },
-  { "nombre": "Etihad Stadium", "imagen": "", "palabraClave": "etihad" },
-  { "nombre": "Emirates Stadium", "imagen": "", "palabraClave": "emirates" }
+  {
+    "nombre": "Estadio Santiago Bernabéu",
+    "imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a2/f4/1c/stadio-santiago-bernabeu.jpg?w=1200&h=-1&s=1"
+  },
+  {
+    "nombre": "Camp Nou",
+    "imagen": "https://i.ytimg.com/vi/k1SIK8T01OU/maxresdefault.jpg"
+  },
+  {
+    "nombre": "Wembley Stadium",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WZwv5y4Qx1NwGK0TGEc9t4QPeJDTfUl6Ww&s"
+  },
+  {
+    "nombre": "Allianz Arena",
+    "imagen": "https://img.fcbayern.com/image/upload/f_auto/q_auto/t_cms-4x3-seo/v1740220407/cms/public/images/allianz-arena/Sonderbeleuchtung/allianz-arena-125-jahre-fcbayern-rot-duc.jpg"
+  },
+  {
+    "nombre": "San Siro",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/44/San_Siro_%2815817752319%29.jpg"
+  },
+  {
+    "nombre": "Old Trafford",
+    "imagen": "https://img2.rtve.es/n/16485779?w=1600"
+  },
+  {
+    "nombre": "Anfield",
+    "imagen": "https://assets.goal.com/images/v3/bltc84ad804bcf47a05/GettyImages-1220067059.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+  },
+  {
+    "nombre": "Signal Iduna Park",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/13/Signal_iduna_park_stadium_dortmund_4.jpg"
+  },
+  {
+    "nombre": "Estadio Metropolitano",
+    "imagen": "https://images.adsttc.com/media/images/5cb4/fa35/284d/d109/bb00/0053/large_jpg/Estadio-futbol-Wanda-Metropolitano-Madrid-Espan%CC%83a-Europa_Disen%CC%83o-exterior_Cruz-y-Ortiz_FCC_04-X.jpg?1555364396"
+  },
+  {
+    "nombre": "Johan Cruyff Arena",
+    "imagen": "https://johancruyffinstitute.com/wp-content/uploads/2021/04/header-Johan-Cruijff-ArenA-com-3.jpg"
+  },
+  {
+    "nombre": "Olimpico di Roma",
+    "imagen": "https://cdn.eventtrips.com/sites/5/2021/11/05101433/stadio-olimpico.png"
+  },
+  {
+    "nombre": "Stade de France",
+    "imagen": "https://assets.goal.com/images/v3/bltf31231f01520a0b3/620c3154753b63ac1a6297e6e598c65f06fc5edf.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+  },
+  {
+    "nombre": "Lusail Stadium",
+    "imagen": "https://visitqatar.com/adobe/dynamicmedia/deliver/dm-aid--d4d51bf2-62fa-4c38-b801-f8025a1d43c4/lusail-stadium-81.jpg?preferwebp=true&quality=75"
+  },
+  {
+    "nombre": "Maracaná",
+    "imagen": "https://dynamic-media.tacdn.com/media/photo-o/2f/ab/11/ee/caption.jpg?w=700&h=500&s=1"
+  },
+  {
+    "nombre": "Estadio Azteca",
+    "imagen": "https://images.adsttc.com/media/images/62bb/c742/3e4b/3151/d100/0005/large_jpg/ConjuntoEstadioAzteca6.jpg?1656473405"
+  },
+  {
+    "nombre": "Estadio do Dragão",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Est%C3%A1dio_do_Drag%C3%A3o_Aerial.jpg"
+  },
+  {
+    "nombre": "Estadio Ramón Sánchez-Pizjuán",
+    "imagen": "https://visitasevilla.es/wp-content/uploads/2025/06/IMG20210125_036.jpg"
+  },
+  {
+    "nombre": "Estadio Benito Villamarín",
+    "imagen": "https://content.arquitecturaydiseno.es/medio/2025/12/05/prototipo-del-futuro-estadio-benito-villamarin-del-real-betis_477eb6b8_251205130542_1280x794.webp"
+  },
+  {
+    "nombre": "Estadio de Mestalla",
+    "imagen": "https://offloadmedia.feverup.com/valenciasecreta.com/wp-content/uploads/2024/02/26125733/Camp-de-Mestalla-1.jpg"
+  },
+  {
+    "nombre": "San Mamés",
+    "imagen": "https://www.bizkaiatalent.eus/wp-content/uploads/2015/11/san-mames-estadioa-scaled.jpg"
+  },
+  {
+    "nombre": "Stamford Bridge",
+    "imagen": "https://arquitecturaviva.com/assets/uploads/obras/40780/av_imagen.webp"
+  },
+  {
+    "nombre": "Etihad Stadium",
+    "imagen": "https://www.mancity.com/meta/media/aurfb3k5/stadium-aerial-wide-angle-nw.png?width=976"
+  },
+  {
+    "nombre": "Emirates Stadium",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf0K8vCxFMXQr2szt1cqC4G7OuU5sujaXZcw&s"
+  },
+  {
+    "nombre": "Sadar",
+    "imagen": "https://www.aranguren.es/wp-content/uploads/2025/01/Visita_Sadar-1010x541.jpg"
+  }
 ]
