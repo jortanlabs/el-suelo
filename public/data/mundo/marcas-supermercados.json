@@ -1,92 +1,106 @@
 [
   {
     "nombre": "Mercadona",
-    "imagen": "",
-    "palabraClave": "mercadona"
+    "imagen": "https://play-lh.googleusercontent.com/niGPxp6ack-x5AlE68SDSrCqxHVwikIaSb2oe5eIXjPK4pqd3TL8PgD3voV81paH16x6ZlOUci6YjPdhJLh7xg=w240-h480-rw"
   },
   {
     "nombre": "Carrefour",
-    "imagen": "",
-    "palabraClave": "carrefour"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSecm6fEeZlDR8-cObxxNDkzFpPzjjeNfvmOQ&s"
   },
   {
     "nombre": "Lidl",
-    "imagen": "",
-    "palabraClave": "lidl"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lidl-Logo.svg/1280px-Lidl-Logo.svg.png"
   },
   {
     "nombre": "Aldi",
-    "imagen": "",
-    "palabraClave": "aldi"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/ALDI_Nord_Logo_2015.png/1280px-ALDI_Nord_Logo_2015.png"
   },
   {
     "nombre": "Día",
-    "imagen": "",
-    "palabraClave": "dia"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2z1Gra_Bqvs_5bu1JLjB5ZE0ncjbGlskc5A&s"
   },
   {
     "nombre": "El Corte Inglés",
-    "imagen": "",
-    "palabraClave": "ingles"
+    "imagen": "https://www.liderlogo.es/wp-content/uploads/2022/12/pasted-image-0-10.jpg"
   },
   {
     "nombre": "Alcampo",
-    "imagen": "",
-    "palabraClave": "alcampo"
+    "imagen": "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/80ed889b-243b-430a-91b5-911ab9eaff7a/500x500.jpg"
   },
   {
     "nombre": "Eroski",
-    "imagen": "",
-    "palabraClave": "eroski"
+    "imagen": "https://cdn.worldvectorlogo.com/logos/eroski-1.svg"
   },
   {
     "nombre": "Consum",
-    "imagen": "",
-    "palabraClave": "consum"
+    "imagen": "https://pbs.twimg.com/profile_images/2014608126708723712/RWx3Wdaq_400x400.png"
   },
   {
     "nombre": "Caprabo",
-    "imagen": "",
-    "palabraClave": "caprabo"
+    "imagen": "https://live.staticflickr.com/2644/3684694452_099133d07e_b.jpg"
   },
   {
     "nombre": "Ahorramas",
-    "imagen": "",
-    "palabraClave": "ahorramas"
+    "imagen": "https://yt3.googleusercontent.com/WpbepTmRACuykU98NALBgg0xmRIFQifmIi9hs34iZ9Ntw9QLlNjt6cDiosyBMhW02LQ-KWXpgQ=s900-c-k-c0x00ffffff-no-rj"
   },
   {
     "nombre": "Simply",
-    "imagen": "",
-    "palabraClave": "simply"
+    "imagen": "https://idia.es/wp-content/uploads/2017/02/Simply.png"
   },
   {
     "nombre": "Condis",
-    "imagen": "",
-    "palabraClave": "condis"
+    "imagen": "https://www.condis.es/images/logo_condis.png"
   },
   {
     "nombre": "Spar",
-    "imagen": "",
-    "palabraClave": "spar"
+    "imagen": "https://substackcdn.com/image/fetch/$s_!lAhw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbf5fe949-6afc-470b-a2b5-75240b1e6352_1100x1100.jpeg"
   },
   {
     "nombre": "Supersol",
-    "imagen": "",
-    "palabraClave": "supersol"
+    "imagen": "https://cdn.worldvectorlogo.com/logos/supersol.svg"
   },
   {
     "nombre": "Bonpreu",
-    "imagen": "",
-    "palabraClave": "bonpreu"
+    "imagen": "https://www.obradorsorribas.com/obradorsorribas.com/assets/img/uploads/encuentranos/bon-preu.jpg"
   },
   {
     "nombre": "Froiz",
-    "imagen": "",
-    "palabraClave": "froiz"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReGiO6R8hB7Ev7CfAwkH-1gZ5_q1dGEHRLFQ&s"
   },
   {
     "nombre": "BM Supermercados",
-    "imagen": "",
-    "palabraClave": "supermercados"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY52JCJI9CadMxK5pz9zPxZgedOsnMlFnLZw&s"
+  },
+  {
+    "nombre": "El Árbol",
+    "imagen": "https://jamonestioemilio.wordpress.com/wp-content/uploads/2011/11/logo_elarbol.gif"
+  },
+  {
+    "nombre": "La Sirena",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi2seqcEtnL_OyqkMf6-CJajg2Ju6zEQfMhQ&s"
+  },
+  {
+    "nombre": "Coviran",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiG3ZUMaqUcUmgPV8Nr4AjNbxQav6nAIdKAg&s"
+  },
+  {
+    "nombre": "Gadis",
+    "imagen": "https://www.paxinasgalegas.es/imagenes/gadis_img34862t7m3w200h200.jpg?r=80"
+  },
+  {
+    "nombre": "BonArea",
+    "imagen": "https://cwp.cat/wp-content/uploads/2024/02/Bonarea.jpg"
+  },
+  {
+    "nombre": "Hiper Dino",
+    "imagen": "https://play-lh.googleusercontent.com/KbcgBL8dxFa6696Ocp0BbozgLQHuCsppzZrec5EYMwrzmdjsgatOD1k9Lgw02eqJl00"
+  },
+  {
+    "nombre": "Makro",
+    "imagen": "https://www.euromadi.es/wp-content/uploads/2020/07/makro-logo.jpg"
+  },
+  {
+    "nombre": "Costco",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTytkPEt_ujIdzpu0agXEzEeROaE3QzgJ2YRg&s"
   }
 ]
