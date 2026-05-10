@@ -1,77 +1,74 @@
 [
   {
     "nombre": "McDonald's",
-    "imagen": "",
-    "palabraClave": "mcdonalds"
+    "imagen": "https://ams3.digitaloceanspaces.com/graffica/2023/01/mc6.jpeg"
   },
   {
     "nombre": "Burger King",
-    "imagen": "",
-    "palabraClave": "king"
+    "imagen": "https://brandemia.org/contenido/subidas/2021/12/bk_rebrand_stills_vi_1_logo-1024x576.jpg"
   },
   {
     "nombre": "KFC",
-    "imagen": "",
-    "palabraClave": "kfc"
+    "imagen": "https://brandemia.org/sites/default/files/sites/default/files/kfc-logo-coronel.jpg"
   },
   {
     "nombre": "Subway",
-    "imagen": "",
-    "palabraClave": "subway"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lriHrEEC0BaqyMKydsf_74pioR01O5tvEw&s"
   },
   {
     "nombre": "Pizza Hut",
-    "imagen": "",
-    "palabraClave": "hut"
+    "imagen": "https://1000logos.net/wp-content/uploads/2017/05/Pizza-Hut-Logo-1999.jpg"
   },
   {
     "nombre": "Domino's Pizza",
-    "imagen": "",
-    "palabraClave": "pizza"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2H536w2TJldRjSrfxa4cvPMvG4fJu27iZng&s"
   },
   {
     "nombre": "Telepizza",
-    "imagen": "",
-    "palabraClave": "telepizza"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGsaEYedZwGHObd_G5CmjKSJo-sDiZ4XCaqQ&s"
   },
   {
     "nombre": "Foster's Hollywood",
-    "imagen": "",
-    "palabraClave": "hollywood"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvlgpja0en2fNHc53vE5MuNb7Wa0LrjIu4Pg&s"
   },
   {
     "nombre": "Five Guys",
-    "imagen": "",
-    "palabraClave": "guys"
+    "imagen": "https://play-lh.googleusercontent.com/Jq75dJNMtPEGxl-PHUW7H6LfYrvVJthQV0A_L7N33WaEA1nntDknsK5inWd-JmoaSOti"
   },
   {
     "nombre": "Taco Bell",
-    "imagen": "",
-    "palabraClave": "bell"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiaBIHIAD7bZ8y8qGw8EpUCE6osJP55XxEVw&s"
   },
   {
     "nombre": "Dunkin' Donuts",
-    "imagen": "",
-    "palabraClave": "donuts"
+    "imagen": "https://i.pinimg.com/474x/fc/39/fc/fc39fcad149b7149317c4ae616673eda.jpg"
   },
   {
     "nombre": "Popeyes",
-    "imagen": "",
-    "palabraClave": "popeyes"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmsrbKfMR4M8BBS-t5ClCEOqGNXvd5n-sNAw&s"
   },
   {
     "nombre": "Starbucks",
-    "imagen": "",
-    "palabraClave": "starbucks"
+    "imagen": "https://media.revistagq.com/photos/5d5d383031110c000879872d/1:1/w_1080,h_1080,c_limit/logo-starbucks.jpg"
   },
   {
     "nombre": "TGB",
-    "imagen": "",
-    "palabraClave": "tgb"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c0/The_Good_Burger_%28TGB%29.jpg"
   },
   {
     "nombre": "Carl's Jr.",
-    "imagen": "",
-    "palabraClave": "jr"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCUn7MjId7gdf1o50nqWixPuttYqq65-Cevw&s"
+  },
+  {
+    "nombre": "Pans & Company",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/01/Logo_pans_%26_company.png"
+  },
+  {
+    "nombre": "Rodilla",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc8cbVpF6ns3OrKX06hRXnfQaTqoZZ6wJR_A&s"
+  },
+  {
+    "nombre": "La Tagliatella",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-G1F9_wEiwazFk3pLng2ex1jpSMeJY0q2BQ&s"
   }
 ]
