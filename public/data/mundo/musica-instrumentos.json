@@ -1,1 +1,142 @@
-[]
+[
+  {
+    "nombre": "Piano",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapzRfOj8MHt9cjHzsDtBYY21lNJ3GALcIRg&s"
+  },
+  {
+    "nombre": "Guitarra eléctrica",
+    "imagen": "https://www.malaga8.com/modules/dbblog/views/img/post/Mejores%20guitarras%20el%C3%A9ctricas%20para%20empezar%20a%20tocar%20-%20%20Malaga8.jpg"
+  },
+  {
+    "nombre": "Guitarra acústica",
+    "imagen": "https://www.musicanarias.com/blog/wp-content/uploads/2023/05/portada1-1024x542.png"
+  },
+  {
+    "nombre": "Batería",
+    "imagen": "https://www.txirula.com/modules/dbblog/views/img/post/cuales-son-las-mejores-marcas-de-baterias-acusticas-portada.jpg"
+  },
+  {
+    "nombre": "Bajo eléctrico",
+    "imagen": "https://www.guitarrasfuentes.com/wp-content/uploads/2018/08/entrada1.jpg"
+  },
+  {
+    "nombre": "Violín",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nbm-_kQTC-viD2HUCJtvWn09WzdMvr7J4w&s"
+  },
+  {
+    "nombre": "Violonchelo",
+    "imagen": "https://escuelademusicaemarbarcelona.b-cdn.net/wp-content/uploads/2024/06/escuela-de-musica-emar-barcelona-clases-violonchelo-encabezado-03.jpg"
+  },
+  {
+    "nombre": "Trompeta",
+    "imagen": "https://www.instrumentosonesdepasion.es/blog/wp-content/uploads/2020/12/Las-mejores-trompetas-para-principiantes2.png"
+  },
+  {
+    "nombre": "Saxofón",
+    "imagen": "https://www.feriamusica.org/wp-content/uploads/2023/05/evolucion-del-saxofon.jpg"
+  },
+  {
+    "nombre": "Flauta",
+    "imagen": "https://www.musicanarias.com/blog/wp-content/uploads/2017/04/bigstock-Professional-Flute-Player-Perf-138587060-1200x801.jpg"
+  },
+  {
+    "nombre": "Clarinete",
+    "imagen": "https://www.shutterstock.com/image-photo/male-musician-hat-plays-clarinet-600nw-2687975807.jpg"
+  },
+  {
+    "nombre": "Oboe",
+    "imagen": "https://image.pbs.org/poster_images/assets/Obo_Thumbnail.png"
+  },
+  {
+    "nombre": "Arpa",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Lavinia_Meijer_playing_the_harp%2C_2011.jpg/960px-Lavinia_Meijer_playing_the_harp%2C_2011.jpg?utm_source=ca.wiktionary.org&utm_campaign=index&utm_content=thumbnail"
+  },
+  {
+    "nombre": "Acordeón",
+    "imagen": "https://www.musicaltommy.com/85366-home_default/hohner-bravo-iii-96-rojo-a16732-silentkey.jpg"
+  },
+  {
+    "nombre": "Contrabajo",
+    "imagen": "https://images.squarespace-cdn.com/content/v1/61fb3ee9c604ea2234bb9674/8e8349ca-7a2a-422b-b085-7ebd45b2c967/unsplash-image-5IPUZvNeSBo.jpg"
+  },
+  {
+    "nombre": "Trombón",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/11/Posaune.gif"
+  },
+  {
+    "nombre": "Tuba",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gvO9YySfSxFqWXddL82V-uqKga9uDhTijg&s"
+  },
+  {
+    "nombre": "Tambor",
+    "imagen": "https://pablocarpintero.es/wp-content/uploads/2021/10/Tambor-sanabres-Pablo-Carpintero-1-1030x686.jpg"
+  },
+  {
+    "nombre": "Xilófono",
+    "imagen": "https://www.musikarte.net/sites/default/files/styles/producto_colorbox/public/content_images/product/xilofono-alto-sonor-c1-a2-16-bars-27-212642.jpg?itok=rWYff_eG"
+  },
+  {
+    "nombre": "Sitar",
+    "imagen": "https://images.stockcake.com/public/a/e/2/ae2f2c05-8229-404a-80c8-553d425f65dc_large/traditional-indian-sitar-stockcake.jpg"
+  },
+  {
+    "nombre": "Ukelele",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDDjMsb3iVth9KorRn9TVGmLOVHERoVG3t5A&s"
+  },
+  {
+    "nombre": "Mandolina",
+    "imagen": "https://r2.gear4music.com/media/49/493852/600/preview_1.jpg"
+  },
+  {
+    "nombre": "Banjo",
+    "imagen": "https://as2.ftcdn.net/v2/jpg/01/67/57/85/1000_F_167578508_o6hRko5YHcXH1FoQzM6F7P599jlQyXtc.jpg"
+  },
+  {
+    "nombre": "Castañuelas",
+    "imagen": "https://elrincondemigitana.com/wp-content/uploads/2024/10/CASTANUELAS.jpg"
+  },
+  {
+    "nombre": "Gaita",
+    "imagen": "https://oneira.es/wp-content/uploads/2025/03/gaiterin.jpg"
+  },
+  {
+    "nombre": "Maracas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/de/Sambaballen.JPG"
+  },
+  {
+    "nombre": "Kalimba",
+    "imagen": "https://m.media-amazon.com/images/I/51A82KJzUxL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "nombre": "Timbal",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP25pWD9p47IBZmncXiVQYkaNWQLxGpFQvsw&s"
+  },
+  {
+    "nombre": "Bombo",
+    "imagen": "https://pablocarpintero.es/wp-content/uploads/2021/11/Bombo-Pablo-carpintero-6.jpg"
+  },
+  {
+    "nombre": "Platillos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Zildjiancrash.jpg"
+  },
+  {
+    "nombre": "Gong",
+    "imagen": "https://m.media-amazon.com/images/I/61NmsoyWyfL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "nombre": "Triángulo",
+    "imagen": "https://www.alupe.es/wp-content/uploads/triangle-instrument.jpg"
+  },
+  {
+    "nombre": "Cajón",
+    "imagen": "https://musicalfuste.com/wp-content/uploads/2024/01/historia-cajon-flamenco.jpg"
+  },
+  {
+    "nombre": "Teremín",
+    "imagen": "https://woodandfirestudio.com/wp-content/uploads/2022/11/moog-etherwave-theremin_1_SYN0008187-000.jpg.jpg"
+  },
+  {
+    "nombre": "Fagot",
+    "imagen": "https://thumbs.static-thomann.de/thumb//thumb1000x/pics/cms/image/guide/es/fagots/fagott_orch.jpg"
+  }
+]
