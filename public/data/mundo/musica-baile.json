@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "nombre": "Flamenco",
+    "imagen": "https://www.chassedance.es/wp-content/uploads/2025/05/flamenco-para-principiantes.jpg"
+  },
+  {
+    "nombre": "Tango",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSEzlsDnXu0G_6EmRjCF2Rkj9Zko5N-Ca-Qw&s"
+  },
+  {
+    "nombre": "Salsa",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ0zepbtR56En3aNVzVPoh_pECUtMN-HsEAA&s"
+  },
+  {
+    "nombre": "Bachata",
+    "imagen": "https://www.udance.es/bailar/bachata-sensual/dyd/"
+  },
+  {
+    "nombre": "Merengue",
+    "imagen": "https://nereavaloygomez.wordpress.com/wp-content/uploads/2012/03/merengue.jpg"
+  },
+  {
+    "nombre": "Swing",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY1aV9kvdJhypvXIgClrH-lp3fFn3Tstt08g&s"
+  },
+  {
+    "nombre": "Vals",
+    "imagen": "https://thumbs.dreamstime.com/z/parejas-bailando-vals-en-sal%C3%B3n-de-baile-retrato-larga-duraci%C3%B3n-tres-un-espacio-cl%C3%A1sico-palaciego-300599100.jpg"
+  },
+  {
+    "nombre": "Mambo",
+    "imagen": "https://ritmoytumbao-ds.es/wp-content/uploads/2023/01/mambo.webp"
+  },
+  {
+    "nombre": "Cha-cha-chá",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6WYDd_T_kgvOVIvMNvPQlduJAu4mAtDDWJg&s"
+  },
+  {
+    "nombre": "Bolero",
+    "imagen": "https://www.operaworld.es/wp-content/uploads/2019/01/Soujung-Youn-y-Juan-Berlanga-bailan-%E2%80%9CBolero-1830%E2%80%9D-en-la-Gala-Danza-Espa%C3%B1ola-ADE.-Foto-David-Mudarra.jpg"
+  },
+  {
+    "nombre": "Sevillanas",
+    "imagen": "https://centrosocialvirtualoviedo.es/wp-content/uploads/2021/03/Las-Sevillanas-este-baile-unico-son-como-un-vuelo-post.jpg"
+  },
+  {
+    "nombre": "Pasodoble",
+    "imagen": "https://www.laguiago.com/asset/zoomcrop,1280,720,center,center/media/laguiago/images/2021/09/15/20210915090609828526.jpg"
+  },
+  {
+    "nombre": "Jota",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-3vuZdXGIPygPZscLVo9hZcTh8hXFxipwQ&s"
+  },
+  {
+    "nombre": "Samba",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHa6TkRteiGnm2n86ss2fjgcn-c-pQlnohow&s"
+  },
+  {
+    "nombre": "Breakdance",
+    "imagen": "https://www.santandersmusic.com/media/magazine/miniatura-breakdance.png"
+  },
+  {
+    "nombre": "Ballet clásico",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCc5aj3H9XguUNrNMibuhcqsUQ3HqZy1M8Q&s"
+  },
+  {
+    "nombre": "Hip-hop",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbgCNwXlkbUlu_9B7aXuWX6UT5WvbGaOxQWg&s"
+  },
+  {
+    "nombre": "Cumbia",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCBUFyCVmEbZXcLo5PZjcsgqHcJfiOn9j2uQ&s"
+  },
+  {
+    "nombre": "Lambada",
+    "imagen": "https://image.europafm.com//clipping/cmsimages01//2015/09/17/9B445DB3-9F6C-4321-92E1-20C54EB6655F/30.jpg"
+  },
+  {
+    "nombre": "Danza contemporánea",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh7YfINR0faQR9V-C47WEigWG5yAKeCjAE4Q&s"
+  },
+  {
+    "nombre": "Baile moderno",
+    "imagen": "https://img77.uenicdn.com/image/upload/v1611869148/business/bde0dd69-afd6-42ab-af93-00c93e0320f3.jpg"
+  }
+]
