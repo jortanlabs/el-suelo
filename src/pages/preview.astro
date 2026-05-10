@@ -3,13 +3,23 @@ export const prerender = true;
 import { subcategorias } from "../data/catalogoCine.ts";
 import { subcategoriasMundo, bloquesMundo } from "../data/catalogoMundo.ts";
 
+const DEPORTES_B = new Set(["futbol", "baloncesto", "tenis", "golf", "ciclismo", "motor", "multideporte"]);
+const ARTE_B = new Set(["musica", "arte", "literatura", "teatro", "moda"]);
+const MARCAS_B = new Set(["marcas"]);
+
 const leafSubcats = [
   ...subcategorias
     .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
     .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres!, dataPath: "cine", grupo: "cine" })),
   ...subcategoriasMundo
     .filter((s) => !s.esMetaCategoria && !!s.nombres)
-    .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres!, dataPath: "mundo", grupo: "mundo" })),
+    .map((s) => {
+      let grupo = "mundo";
+      if (DEPORTES_B.has(s.bloque)) grupo = "deportes";
+      else if (ARTE_B.has(s.bloque)) grupo = "arte";
+      else if (MARCAS_B.has(s.bloque)) grupo = "marcas";
+      return { slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres!, dataPath: "mundo", grupo };
+    }),
 ];
 
 const BUILD = Date.now();
@@ -252,8 +262,14 @@ const BUILD = Date.now();
 
   const cineSubcats = leafSubcats.filter(s => s.grupo === 'cine');
   const mundoSubcats = leafSubcats.filter(s => s.grupo === 'mundo');
+  const deportesSubcats = leafSubcats.filter(s => s.grupo === 'deportes');
+  const arteSubcats = leafSubcats.filter(s => s.grupo === 'arte');
+  const marcasSubcats = leafSubcats.filter(s => s.grupo === 'marcas');
   buildSidebarGroup('cine', 'Cine y Series', '🎬', cineSubcats);
   buildSidebarGroup('mundo', 'El Mundo', '🌍', mundoSubcats);
+  buildSidebarGroup('deportes', 'Deportes', '⚽', deportesSubcats);
+  buildSidebarGroup('arte', 'Arte', '🎨', arteSubcats);
+  buildSidebarGroup('marcas', 'Marcas', '🏷️', marcasSubcats);
 
   // ── Select ─────────────────────────────────────────────────────
   async function selectSlug(slug) {
