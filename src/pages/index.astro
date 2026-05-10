@@ -57,6 +57,22 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
     .filter((s) => !s.esMetaCategoria && !!s.nombres)
     .map((s) => [s.slug, s.nombre])
 );
+
+// Mundo: slug → grupo macro (mundo | deportes | arte | marcas)
+const DEPORTES_BLOQUES = new Set(["futbol", "baloncesto", "tenis", "golf", "ciclismo", "motor", "multideporte"]);
+const ARTE_BLOQUES = new Set(["musica", "arte", "literatura", "teatro", "moda"]);
+const MARCAS_BLOQUES = new Set(["marcas"]);
+const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
+  subcategoriasMundo
+    .filter((s) => !s.esMetaCategoria && !!s.nombres)
+    .map((s) => {
+      let grupo = "mundo";
+      if (DEPORTES_BLOQUES.has(s.bloque)) grupo = "deportes";
+      else if (ARTE_BLOQUES.has(s.bloque)) grupo = "arte";
+      else if (MARCAS_BLOQUES.has(s.bloque)) grupo = "marcas";
+      return [s.slug, grupo];
+    })
+);
 ---
 
 <Base titulo="El Suelo" descripcion="Di qué ves antes de que se acabe tu tiempo.">
@@ -67,6 +83,7 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
   <div id="datos-cine-mezcla" data-json={JSON.stringify(cineSlugsMetaMezcla)} class="hidden"></div>
   <div id="datos-mundo-nombres" data-json={JSON.stringify(mundoSlugsNombres)} class="hidden"></div>
+  <div id="datos-mundo-grupo" data-json={JSON.stringify(mundoSlugsGrupo)} class="hidden"></div>
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
@@ -148,6 +165,9 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
             <div class="grid grid-cols-3 gap-2">
               <button id="cat-cine" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🎬<br>Cine y Series</button>
               <button id="cat-mundo" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🌍<br>El Mundo</button>
+              <button id="cat-deportes" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">⚽<br>Deportes</button>
+              <button id="cat-arte" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🎨<br>Arte</button>
+              <button id="cat-marcas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🏷️<br>Marcas</button>
               <button id="cat-aleatorio" class="floor-btn floor-cat-selected px-2 py-2 text-xs font-titulo leading-tight">🎲<br>Aleatorio</button>
             </div>
           </div>
@@ -491,6 +511,9 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   const mundoSlugsNombres: Record<string, string> = JSON.parse(
     (document.getElementById("datos-mundo-nombres") as HTMLElement).dataset.json!,
   );
+  const mundoSlugsGrupo: Record<string, string> = JSON.parse(
+    (document.getElementById("datos-mundo-grupo") as HTMLElement).dataset.json!,
+  );
 
   // Construye el pool jugable filtrando por la lista publicada (cargada en runtime)
   function construirPool(pub: string[]): string[] {
@@ -560,11 +583,14 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
   });
 
   // ── Filtro de categoría (Rápida) ─────────────────────────────
-  let categoriaFiltro: "cine" | "mundo" | "aleatorio" = "aleatorio";
+  let categoriaFiltro: "cine" | "mundo" | "deportes" | "arte" | "marcas" | "aleatorio" = "aleatorio";
 
-  function seleccionarFiltro(filtro: "cine" | "mundo" | "aleatorio") {
+  function seleccionarFiltro(filtro: "cine" | "mundo" | "deportes" | "arte" | "marcas" | "aleatorio") {
     categoriaFiltro = filtro;
-    const btns = { cine: $("cat-cine"), mundo: $("cat-mundo"), aleatorio: $("cat-aleatorio") };
+    const btns = {
+      cine: $("cat-cine"), mundo: $("cat-mundo"), deportes: $("cat-deportes"),
+      arte: $("cat-arte"), marcas: $("cat-marcas"), aleatorio: $("cat-aleatorio"),
+    };
     for (const [k, btn] of Object.entries(btns)) {
       if (k === filtro) {
         btn.classList.add("floor-cat-selected");
@@ -578,6 +604,9 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
 
   $("cat-cine").addEventListener("click", () => seleccionarFiltro("cine"));
   $("cat-mundo").addEventListener("click", () => seleccionarFiltro("mundo"));
+  $("cat-deportes").addEventListener("click", () => seleccionarFiltro("deportes"));
+  $("cat-arte").addEventListener("click", () => seleccionarFiltro("arte"));
+  $("cat-marcas").addEventListener("click", () => seleccionarFiltro("marcas"));
   $("cat-aleatorio").addEventListener("click", () => seleccionarFiltro("aleatorio"));
 
   // ── Categoría ───────────────────────────────────────────────
@@ -648,13 +677,14 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
     const esMundoSlug = (s: string) => mundoSlugsNombres[s] !== undefined && cineSlugsNombres[s] === undefined;
     const poolFiltrado = categoriaFiltro === "cine"
       ? pool.filter((s) => !esMundoSlug(s))
-      : categoriaFiltro === "mundo"
-      ? pool.filter(esMundoSlug)
-      : pool;
+      : categoriaFiltro === "aleatorio"
+      ? pool
+      : pool.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
 
     if (poolFiltrado.length === 0) {
-      errEl.textContent = categoriaFiltro === "mundo"
-        ? "No hay categorías de El Mundo publicadas aún."
+      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", marcas: "Marcas" };
+      errEl.textContent = _nF[categoriaFiltro]
+        ? "No hay categorías de " + _nF[categoriaFiltro] + " publicadas aún."
         : "No hay categorías publicadas aún.";
       errEl.classList.remove("hidden");
       return;
