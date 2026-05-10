@@ -58,10 +58,11 @@ const mundoSlugsNombres: Record<string, string> = Object.fromEntries(
     .map((s) => [s.slug, s.nombre])
 );
 
-// Mundo: slug → grupo macro (mundo | deportes | arte | marcas)
+// Mundo: slug → grupo macro (mundo | deportes | arte | marcas | personas)
 const DEPORTES_BLOQUES = new Set(["futbol", "baloncesto", "tenis", "golf", "ciclismo", "motor", "multideporte"]);
 const ARTE_BLOQUES = new Set(["musica", "arte", "literatura", "teatro", "moda"]);
 const MARCAS_BLOQUES = new Set(["marcas"]);
+const PERSONAS_BLOQUES = new Set(["personas"]);
 const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
   subcategoriasMundo
     .filter((s) => !s.esMetaCategoria && !!s.nombres)
@@ -70,6 +71,7 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
       if (DEPORTES_BLOQUES.has(s.bloque)) grupo = "deportes";
       else if (ARTE_BLOQUES.has(s.bloque)) grupo = "arte";
       else if (MARCAS_BLOQUES.has(s.bloque)) grupo = "marcas";
+      else if (PERSONAS_BLOQUES.has(s.bloque)) grupo = "personas";
       return [s.slug, grupo];
     })
 );
@@ -168,7 +170,8 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
               <button id="cat-deportes" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">⚽<br>Deportes</button>
               <button id="cat-arte" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🎨<br>Arte</button>
               <button id="cat-marcas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🏷️<br>Marcas</button>
-              <button id="cat-aleatorio" class="floor-btn floor-cat-selected px-2 py-2 text-xs font-titulo leading-tight">🎲<br>Aleatorio</button>
+              <button id="cat-personas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🧑<br>Personas</button>
+              <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2 text-xs font-titulo leading-tight">🎲 Aleatorio</button>
             </div>
           </div>
 
@@ -583,13 +586,14 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
   });
 
   // ── Filtro de categoría (Rápida) ─────────────────────────────
-  let categoriaFiltro: "cine" | "mundo" | "deportes" | "arte" | "marcas" | "aleatorio" = "aleatorio";
+  let categoriaFiltro: "cine" | "mundo" | "deportes" | "arte" | "marcas" | "personas" | "aleatorio" = "aleatorio";
 
-  function seleccionarFiltro(filtro: "cine" | "mundo" | "deportes" | "arte" | "marcas" | "aleatorio") {
+  function seleccionarFiltro(filtro: "cine" | "mundo" | "deportes" | "arte" | "marcas" | "personas" | "aleatorio") {
     categoriaFiltro = filtro;
     const btns = {
       cine: $("cat-cine"), mundo: $("cat-mundo"), deportes: $("cat-deportes"),
-      arte: $("cat-arte"), marcas: $("cat-marcas"), aleatorio: $("cat-aleatorio"),
+      arte: $("cat-arte"), marcas: $("cat-marcas"), personas: $("cat-personas"),
+      aleatorio: $("cat-aleatorio"),
     };
     for (const [k, btn] of Object.entries(btns)) {
       if (k === filtro) {
@@ -607,6 +611,7 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
   $("cat-deportes").addEventListener("click", () => seleccionarFiltro("deportes"));
   $("cat-arte").addEventListener("click", () => seleccionarFiltro("arte"));
   $("cat-marcas").addEventListener("click", () => seleccionarFiltro("marcas"));
+  $("cat-personas").addEventListener("click", () => seleccionarFiltro("personas"));
   $("cat-aleatorio").addEventListener("click", () => seleccionarFiltro("aleatorio"));
 
   // ── Categoría ───────────────────────────────────────────────
@@ -682,7 +687,7 @@ const mundoSlugsGrupo: Record<string, string> = Object.fromEntries(
       : pool.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
 
     if (poolFiltrado.length === 0) {
-      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", marcas: "Marcas" };
+      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", marcas: "Marcas", personas: "Personas" };
       errEl.textContent = _nF[categoriaFiltro]
         ? "No hay categorías de " + _nF[categoriaFiltro] + " publicadas aún."
         : "No hay categorías publicadas aún.";

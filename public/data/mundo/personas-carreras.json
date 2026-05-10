@@ -1,0 +1,22 @@
+[
+  {"nombre":"Medicina","imagen":"","palabraClave":"medicina"},
+  {"nombre":"Derecho","imagen":"","palabraClave":"derecho"},
+  {"nombre":"Ingeniería","imagen":"","palabraClave":"ingenieria"},
+  {"nombre":"Arquitectura","imagen":"","palabraClave":"arquitectura"},
+  {"nombre":"Psicología","imagen":"","palabraClave":"psicologia"},
+  {"nombre":"Periodismo","imagen":"","palabraClave":"periodismo"},
+  {"nombre":"Economía","imagen":"","palabraClave":"economia"},
+  {"nombre":"Biología","imagen":"","palabraClave":"biologia"},
+  {"nombre":"Química","imagen":"","palabraClave":"quimica"},
+  {"nombre":"Física","imagen":"","palabraClave":"fisica"},
+  {"nombre":"Historia","imagen":"","palabraClave":"historia"},
+  {"nombre":"Filosofía","imagen":"","palabraClave":"filosofia"},
+  {"nombre":"Matemáticas","imagen":"","palabraClave":"matematicas"},
+  {"nombre":"Informática","imagen":"","palabraClave":"informatica"},
+  {"nombre":"Enfermería","imagen":"","palabraClave":"enfermeria"},
+  {"nombre":"Farmacia","imagen":"","palabraClave":"farmacia"},
+  {"nombre":"Veterinaria","imagen":"","palabraClave":"veterinaria"},
+  {"nombre":"Bellas Artes","imagen":"","palabraClave":"artes"},
+  {"nombre":"Educación","imagen":"","palabraClave":"educacion"},
+  {"nombre":"Sociología","imagen":"","palabraClave":"sociologia"}
+]

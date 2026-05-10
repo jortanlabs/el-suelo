@@ -27,6 +27,7 @@ export const bloquesMundo: BloqueMundoInfo[] = [
   { slug: "plantas",      nombre: "Plantas",      emoji: "🌱" },
   { slug: "ciencia",      nombre: "Ciencia",      emoji: "🔬" },
   { slug: "historia",     nombre: "Historia",     emoji: "🏛️" },
+  { slug: "personas",     nombre: "Personas",     emoji: "🧑" },
 ];
 
 export const subcategoriasMundo: SubcategoriaNombres[] = [
@@ -1463,6 +1464,76 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Guerra de Corea", "Guerra de Vietnam", "Guerra Fría",
       "Guerra del Golfo", "Guerra de los Balcanes",
       "Guerra de Independencia de Argelia", "Conflicto Árabe-Israelí",
+    ],
+  },
+
+  // ── PERSONAS ──────────────────────────────────────────────────────
+  {
+    slug: "personas",
+    nombre: "Personas",
+    emoji: "🧑",
+    bloque: "personas",
+    bloqueNombre: "Personas",
+    dataPath: "mundo",
+    esMetaCategoria: true,
+    subcategorias: ["personas-profesiones", "personas-cuerpo", "personas-pelo", "personas-carreras"],
+  },
+  {
+    slug: "personas-profesiones",
+    nombre: "Profesiones",
+    emoji: "💼",
+    bloque: "personas",
+    bloqueNombre: "Personas",
+    dataPath: "mundo",
+    nombres: [
+      "Médico", "Abogado", "Maestro", "Enfermero", "Ingeniero",
+      "Arquitecto", "Periodista", "Chef", "Bombero", "Policía",
+      "Fontanero", "Electricista", "Carpintero", "Peluquero", "Dentista",
+      "Farmacéutico", "Psicólogo", "Veterinario", "Juez", "Piloto",
+      "Taxista", "Albañil", "Escritor", "Fotógrafo", "Agricultor",
+    ],
+  },
+  {
+    slug: "personas-cuerpo",
+    nombre: "Partes del cuerpo",
+    emoji: "🫀",
+    bloque: "personas",
+    bloqueNombre: "Personas",
+    dataPath: "mundo",
+    nombres: [
+      "Corazón", "Cerebro", "Pulmón", "Hígado", "Riñón",
+      "Estómago", "Rodilla", "Codo", "Tobillo", "Muñeca",
+      "Hombro", "Cadera", "Columna vertebral", "Cráneo", "Mandíbula",
+      "Párpado", "Mejilla", "Nariz", "Oreja", "Dedo",
+      "Talón", "Esternón",
+    ],
+  },
+  {
+    slug: "personas-pelo",
+    nombre: "Tipos de pelo",
+    emoji: "💇",
+    bloque: "personas",
+    bloqueNombre: "Personas",
+    dataPath: "mundo",
+    nombres: [
+      "Moño", "Coleta", "Trenzas", "Flequillo", "Afro",
+      "Rastas", "Ondulado", "Liso", "Rizado", "Recogido",
+      "Bob", "Pixie", "Undercut", "Melena", "Calvo",
+      "Rapado", "Mechas", "Degradado", "Permanente", "Moicano",
+    ],
+  },
+  {
+    slug: "personas-carreras",
+    nombre: "Carreras universitarias",
+    emoji: "🎓",
+    bloque: "personas",
+    bloqueNombre: "Personas",
+    dataPath: "mundo",
+    nombres: [
+      "Medicina", "Derecho", "Ingeniería", "Arquitectura", "Psicología",
+      "Periodismo", "Economía", "Biología", "Química", "Física",
+      "Historia", "Filosofía", "Matemáticas", "Informática", "Enfermería",
+      "Farmacia", "Veterinaria", "Bellas Artes", "Educación", "Sociología",
     ],
   },
 ];
