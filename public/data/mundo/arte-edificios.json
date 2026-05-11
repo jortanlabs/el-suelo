@@ -1,1 +1,166 @@
-[]
+[
+  {
+    "nombre": "Torre Eiffel",
+    "imagen": "https://cdn-imgix.headout.com/media/images/c90f7eb7a5825e6f5e57a5a62d05399c-25058-BestofParis-EiffelTower-Cruise-Louvre-002.jpg?auto=compress%2Cformat&q=90&crop=faces&fit=crop"
+  },
+  {
+    "nombre": "Sagrada Família",
+    "imagen": "https://pro.static.holabarcelonablog.tmb.cat/s3fs-public/2020-12/SF.jpg"
+  },
+  {
+    "nombre": "Coliseo Romano",
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2017/05/15/5fa3c5d7ef234.jpeg"
+  },
+  {
+    "nombre": "Burj Khalifa",
+    "imagen": "https://www.egypttoursplus.com/wp-content/uploads/2025/07/Burj-Khalifa-in-Dubai.jpg"
+  },
+  {
+    "nombre": "Taj Mahal",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIMq0Utl9O-TUtLMs4xn6n1q0jyqAYN0YB3w&s"
+  },
+  {
+    "nombre": "Gran Muralla China",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/william-olivieri-hwy9r6-yzgm-unsplash-1646657593.jpg?crop=0.669xw:1.00xh;0.0358xw,0&resize=1200:*"
+  },
+  {
+    "nombre": "Kremlin",
+    "imagen": "https://thumbs.dreamstime.com/b/kremlin-y-museo-hist%C3%B3rico-plaza-roja-mosc%C3%BA-8242477.jpg"
+  },
+  {
+    "nombre": "Palacio de Westminster",
+    "imagen": "https://images.adsttc.com/media/images/596d/fb87/b22e/3861/5c00/0360/large_jpg/palace-of-westminster_main.jpg?1500380036"
+  },
+  {
+    "nombre": "Empire State Building",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKc-fuLIfy4VMszXgcRpSVLA6sz00ZPYabcA&s"
+  },
+  {
+    "nombre": "Ópera de Sídney",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Sydney_Australia._%2821339175489%29.jpg"
+  },
+  {
+    "nombre": "Museo del Louvre",
+    "imagen": "https://somosparis.com/wp-content/uploads/2024/09/Piramide-del-Museo-del-Louvre-1024x683.jpg"
+  },
+  {
+    "nombre": "Palacio de Versalles",
+    "imagen": "https://ingeoexpert.com/wp-content/uploads/2025/10/Palacio-de-Versalles.jpg"
+  },
+  {
+    "nombre": "Partenón",
+    "imagen": "https://mymodernmet.com/wp/wp-content/uploads/2019/09/parthenon-facts-thumbnail.jpg"
+  },
+  {
+    "nombre": "Catedral de Notre Dame",
+    "imagen": "https://media.admagazine.com/photos/618a6b4651755659575567d1/16:9/w_2992,h_1683,c_limit/60267.jpg"
+  },
+  {
+    "nombre": "Basílica de San Pedro",
+    "imagen": "https://cdn-imgix.headout.com/microbrands-content-image/image/1c6797c269c9e214698fc63a4264caaa-St.%20Peter's%20Basilica.jpg"
+  },
+  {
+    "nombre": "Casa Batlló",
+    "imagen": "https://www.dosde.com/discover/wp-content/uploads/2017/02/fachada-casa-batllo-gaudi-barcelona-dosde-publishing.jpg"
+  },
+  {
+    "nombre": "Guggenheim Bilbao",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg"
+  },
+  {
+    "nombre": "Alhambra de Granada",
+    "imagen": "https://alandalustours.es/wp-content/uploads/2025/05/Alhambra-de-noche_1-1024x683.jpg"
+  },
+  {
+    "nombre": "Mezquita de Córdoba",
+    "imagen": "https://prd-webrepository.firabarcelona.com/wp-content/uploads/sites/69/2023/09/26150519/mezquita_cordoba_-istock-467787426.jpeg"
+  },
+  {
+    "nombre": "Torre de Pisa",
+    "imagen": "https://etcetera.com.mx/wp-content/uploads/2022/08/descarga-1.jpg"
+  },
+  {
+    "nombre": "Stonehenge",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Stonehenge2007_07_30.jpg"
+  },
+  {
+    "nombre": "Big Ben",
+    "imagen": "https://as2.ftcdn.net/v2/jpg/01/35/61/33/1000_F_135613354_mBHFo7PIVm6hu7iMHy8IoE0WuCRcoe1Q.jpg"
+  },
+  {
+    "nombre": "Casa Danzante",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiD_v2SuSiDT2Ey4HuJfhRVxToe3jFuZDPg&s"
+  },
+  {
+    "nombre": "Santa Sofía",
+    "imagen": "https://www.mozaweb.com/es/mozaik3D/VIZ/kozepkor/hagia_sophia/960.jpg"
+  },
+  {
+    "nombre": "Panteón de Agripa",
+    "imagen": "https://www.101viajes.com/sites/default/files/panteon-roma-exterior.jpg"
+  },
+  {
+    "nombre": "Cúpula de la Roca",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hqrv1LZCidVDBwppNr6es1WeCgneaJ9dJg&s"
+  },
+  {
+    "nombre": "Palacio de Cibeles",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpxn_-1KgJ6bzzwDITQC06wFhXYKfOMEF80w&s"
+  },
+  {
+    "nombre": "Edificio Chrysler",
+    "imagen": "https://okdiario.com/coolthelifestyle/img/2025/06/15/chrysler-building-van-alen-diedrica-blog-01_easy-resize.com_.jpg"
+  },
+  {
+    "nombre": "Torre de Shanghái",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAObDtCsiofv6kFjr2yJFCc8A3RMcBiPbBmA&s"
+  },
+  {
+    "nombre": "Atomium",
+    "imagen": "https://atomium.be/flexpage/galleryimage?path=/Content/Images/User/ATOMIUM-TodayOut-0621%20-%20Version%202_ltsmall.jpg"
+  },
+  {
+    "nombre": "Edificio Metrópolis",
+    "imagen": "https://media.timeout.com/images/105797806/image.jpg"
+  },
+  {
+    "nombre": "Gran Pirámide de Guiza",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShasE877OO-82CPdhDi8TUh19QmrNCtYjLlg&s"
+  },
+  {
+    "nombre": "Torres Petronas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d2/KLCC_twin_towers2.JPG"
+  },
+  {
+    "nombre": "Taipei 101",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOnq8n_3fHOPKSrugWCLmxHhMFyNe8cADLBQ&s"
+  },
+  {
+    "nombre": "One World Trade Center",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/New_York_and_Jersey_City_Skyline_Panorama_Crop_-_One_World_Trade_Center.jpg/250px-New_York_and_Jersey_City_Skyline_Panorama_Crop_-_One_World_Trade_Center.jpg"
+  },
+  {
+    "nombre": "Casa de la Cascada",
+    "imagen": "https://i.blogs.es/a58f59/2/1366_2000.png"
+  },
+  {
+    "nombre": "Chand Baori",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chand_Baori_perspective_panorama_%28July_2022%29.jpg/330px-Chand_Baori_perspective_panorama_%28July_2022%29.jpg"
+  },
+  {
+    "nombre": "Casa de Piedra",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Casa_da_Pedra_em_Fafe_12.jpg"
+  },
+  {
+    "nombre": "Edificio espiral - Hundertwasserhaus",
+    "imagen": "https://www.whitemad.pl/wp-content/uploads/2024/08/2048px-Waldspirale_50786302761.jpg"
+  },
+  {
+    "nombre": "La Casa Cesta",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYvXzRgqu0PfIvjbanLVT78gOTvR3dA5pqTA&s"
+  },
+  {
+    "nombre": "Torre de Belem",
+    "imagen": "https://cdn-imgix.headout.com/microbrands-content-image/image/f94caf06c3d6d7779a089fea20611e99-AdobeStock_314194172.jpeg"
+  }
+]
