@@ -1,0 +1,98 @@
+[
+  {
+    "nombre": "Madre",
+    "imagen": ""
+  },
+  {
+    "nombre": "Padre",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hijo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hija",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hermano",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hermana",
+    "imagen": ""
+  },
+  {
+    "nombre": "Abuelo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Abuela",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nieto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nieta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tío",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Primo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Prima",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sobrino",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sobrina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cuñado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cuñada",
+    "imagen": ""
+  },
+  {
+    "nombre": "Suegro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Suegra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Yerno",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nuera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Padrastro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Madrastra",
+    "imagen": ""
+  }
+]

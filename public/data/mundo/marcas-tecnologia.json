@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Apple",
+    "imagen": ""
+  },
+  {
+    "nombre": "Microsoft",
+    "imagen": ""
+  },
+  {
+    "nombre": "Google",
+    "imagen": ""
+  },
+  {
+    "nombre": "Samsung",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sony",
+    "imagen": ""
+  },
+  {
+    "nombre": "Meta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Amazon",
+    "imagen": ""
+  },
+  {
+    "nombre": "Netflix",
+    "imagen": ""
+  },
+  {
+    "nombre": "Spotify",
+    "imagen": ""
+  },
+  {
+    "nombre": "Intel",
+    "imagen": ""
+  },
+  {
+    "nombre": "AMD",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nvidia",
+    "imagen": ""
+  },
+  {
+    "nombre": "IBM",
+    "imagen": ""
+  },
+  {
+    "nombre": "Oracle",
+    "imagen": ""
+  },
+  {
+    "nombre": "Adobe",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dell",
+    "imagen": ""
+  },
+  {
+    "nombre": "HP",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lenovo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Asus",
+    "imagen": ""
+  },
+  {
+    "nombre": "Huawei",
+    "imagen": ""
+  },
+  {
+    "nombre": "Xiaomi",
+    "imagen": ""
+  },
+  {
+    "nombre": "LG",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bose",
+    "imagen": ""
+  },
+  {
+    "nombre": "Philips",
+    "imagen": ""
+  },
+  {
+    "nombre": "Logitech",
+    "imagen": ""
+  }
+]
