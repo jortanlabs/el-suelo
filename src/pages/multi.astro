@@ -189,7 +189,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <span class="inline-block w-4 h-4 rounded-sm bg-[#ffe100]" style="box-shadow:0 0 10px #ffe100"></span>
       </div>
       <div class="flex-1 flex flex-col items-center justify-center px-4 py-4 min-h-0">
-        <div id="tablero-grid" class="grid grid-cols-5 gap-1.5 w-full max-w-sm"></div>
+        <div id="tablero-grid" class="grid grid-cols-3 gap-3 w-full max-w-sm"></div>
       </div>
       <div class="px-4 py-3 text-center shrink-0">
         <p id="tablero-instruccion" class="font-titulo text-sm font-bold text-[#2a5090] uppercase tracking-wider"></p>
@@ -205,16 +205,14 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
     <!-- JUEGO -->
     <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0">
-      <div class="px-4 pt-1 text-center shrink-0">
-        <p id="juego-categoria-label" class="font-titulo text-[10px] text-[#2a5090] uppercase tracking-widest"></p>
-      </div>
-      <div class="flex-1 flex items-stretch min-h-0 px-2 pt-1 pb-1 gap-2">
+      <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
         <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all">
           <span id="turno-ind-a" class="font-titulo text-[10px] font-bold tracking-widest uppercase opacity-0 transition-opacity">▶ TURNO</span>
           <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer transition-all"></span>
           <span id="nombre-a-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
         <div class="flex-1 flex flex-col items-center justify-center min-w-0 min-h-0">
+          <p id="juego-categoria-label" class="mb-2 text-xl text-[#ffcc00] font-titulo text-center max-w-xs px-2 font-bold uppercase tracking-wider leading-tight"></p>
           <div class="w-full max-w-xs">
             <div class="floor-image-box">
               <img id="imagen-item" src="" alt="" class="absolute inset-0 w-full h-full object-contain hidden" />
@@ -267,6 +265,23 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         </div>
       </div>
     </section>
+
+    <!-- CHAT FLOATING -->
+    <button id="chat-flot" class="hidden fixed bottom-4 right-4 z-30 w-12 h-12 rounded-full flex items-center justify-center text-2xl floor-btn floor-btn-gold">
+      💬
+      <span id="chat-badge" class="hidden absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-[#ff1dce] text-[10px] font-bold text-white flex items-center justify-center" style="box-shadow:0 0 8px #ff1dce">0</span>
+    </button>
+    <div id="chat-overlay" class="hidden fixed inset-x-0 bottom-0 z-40 flex flex-col floor-card border-t-2 border-x-0 border-b-0" style="background:#091728;max-height:75vh">
+      <div class="flex items-center px-4 py-2 border-b border-[#163575]">
+        <h3 class="font-titulo font-bold text-[#ffcc00] text-base flex-1">💬 Chat</h3>
+        <button id="chat-cerrar" class="font-titulo text-sm text-[#2a5090] hover:text-[#e8e8ff]">✕ Cerrar</button>
+      </div>
+      <div id="chat-mensajes" class="flex-1 overflow-y-auto p-3 flex flex-col gap-2" style="min-height:30vh"></div>
+      <form id="chat-form" class="flex gap-2 p-2 border-t border-[#163575]" style="padding-bottom:max(8px,env(safe-area-inset-bottom))">
+        <input id="chat-input" type="text" placeholder="Escribe un mensaje..." class="floor-input flex-1" maxlength="200" autocomplete="off" />
+        <button type="submit" class="floor-btn floor-btn-gold font-titulo font-bold px-4 text-lg">→</button>
+      </form>
+    </div>
   </main>
 </Base>
 
@@ -377,11 +392,92 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   const pJuego = $("pantalla-juego");
   const pFinal = $("pantalla-final");
   const PANTALLAS = [pEntrada, pSala, pSetup, pSetupGuest, pLoader, pTablero, pJuego, pFinal];
+  // Pantallas en las que se muestra el botón de chat (todas menos entrada y final)
+  const _PANTALLAS_CHAT = [pSala, pSetup, pSetupGuest, pLoader, pTablero, pJuego];
 
   function mostrar(p: HTMLElement) {
     PANTALLAS.forEach((s) => s.classList.add("hidden"));
     p.classList.remove("hidden");
+    actualizarBotonChat();
   }
+
+  // ── Chat ───────────────────────────────────────────────────
+  const PANTALLAS_CON_CHAT = new Set<HTMLElement>(_PANTALLAS_CHAT);
+  let chatAbierto = false;
+  let chatNoLeidos = 0;
+
+  function actualizarBotonChat() {
+    if (!canal) { $("chat-flot").classList.add("hidden"); return; }
+    const pActual = PANTALLAS.find((s) => !s.classList.contains("hidden"));
+    const visible = !!(pActual && PANTALLAS_CON_CHAT.has(pActual));
+    $("chat-flot").classList.toggle("hidden", !visible || chatAbierto);
+  }
+
+  function actualizarBadgeChat() {
+    const badge = $("chat-badge");
+    if (chatNoLeidos > 0) {
+      badge.textContent = String(Math.min(chatNoLeidos, 99));
+      badge.classList.remove("hidden");
+    } else {
+      badge.classList.add("hidden");
+    }
+  }
+
+  function escapeHTML(s: string): string {
+    return s.replace(/[<>&"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" }[c]!));
+  }
+
+  function addChatMsg(autor: "A" | "B", texto: string, tipo: "texto" | "voz") {
+    const lista = $("chat-mensajes");
+    const div = document.createElement("div");
+    const esMio = autor === rolPropio;
+    const bg = autor === "A" ? "rgba(255,29,206,0.18)" : "rgba(255,225,0,0.18)";
+    const border = autor === "A" ? "#ff1dce" : "#ffe100";
+    const nombreAutor = autor === "A" ? nombreA : nombreB;
+    div.className = `flex flex-col max-w-[85%] ${esMio ? "self-end items-end" : "self-start items-start"}`;
+    div.innerHTML = `
+      <div class="text-[10px] font-titulo text-[#2a5090] mb-0.5 px-1">${escapeHTML(nombreAutor || autor)}${tipo === "voz" ? " 🎤" : ""}</div>
+      <div class="px-3 py-1.5 text-sm font-titulo rounded-lg" style="background:${bg};border:1px solid ${border};color:#e8e8ff">${escapeHTML(texto)}</div>
+    `;
+    lista.appendChild(div);
+    lista.scrollTop = lista.scrollHeight;
+    if (!chatAbierto && autor !== rolPropio) {
+      chatNoLeidos++;
+      actualizarBadgeChat();
+    }
+  }
+
+  function enviarChat(texto: string, tipo: "texto" | "voz" = "texto") {
+    if (!canal || !texto.trim()) return;
+    const t = texto.trim().slice(0, 200);
+    const msg = { autor: rolPropio, texto: t, tipo };
+    try { canal.trigger("client-chat", msg); } catch {}
+    addChatMsg(msg.autor, msg.texto, msg.tipo);
+  }
+
+  function abrirChat() {
+    chatAbierto = true;
+    chatNoLeidos = 0;
+    actualizarBadgeChat();
+    $("chat-overlay").classList.remove("hidden");
+    $("chat-flot").classList.add("hidden");
+    setTimeout(() => { const m = $("chat-mensajes"); m.scrollTop = m.scrollHeight; }, 50);
+  }
+
+  function cerrarChat() {
+    chatAbierto = false;
+    $("chat-overlay").classList.add("hidden");
+    actualizarBotonChat();
+  }
+
+  $("chat-flot").addEventListener("click", abrirChat);
+  $("chat-cerrar").addEventListener("click", cerrarChat);
+  $("chat-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const input = $("chat-input") as HTMLInputElement;
+    enviarChat(input.value, "texto");
+    input.value = "";
+  });
 
   // ── Estado global ──────────────────────────────────────────
   let canal: Channel | null = null;
@@ -534,11 +630,19 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     canal.bind("pusher:subscription_succeeded", onOk);
     canal.bind("pusher:subscription_error", (data: { status?: number; error?: string }) => {
       const status = data?.status ?? "?";
-      mostrarError($("error-entrada"), `Error de conexión (${status}). Revisa las variables de entorno en Vercel.`);
       console.error("Pusher subscription_error:", data);
-      mostrar(pEntrada);
+      // Solo redirigir al inicio si todavía no hemos entrado a la sala — si ya
+      // estamos en otra pantalla, Pusher reintentará por su cuenta y no queremos
+      // sacar al usuario de la partida por un error transitorio (background tab, etc.)
+      if (!pEntrada.classList.contains("hidden")) {
+        mostrarError($("error-entrada"), `Error de conexión (${status}). Inténtalo de nuevo.`);
+      }
     });
     canal.bind("client-estado", (d: SyncEstado) => { if (rol === "guest") applyEstado(d); });
+    canal.bind("client-chat", (d: { autor: "A" | "B"; texto: string; tipo: "texto" | "voz" }) => {
+      if (!d || !d.texto) return;
+      addChatMsg(d.autor, d.texto, d.tipo);
+    });
     canal.bind("client-unirse", (d: { nombre: string }) => {
       if (rol !== "host") return;
       nombreB = d.nombre;
@@ -547,6 +651,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       ($("sala-dot-b") as HTMLElement).style.cssText = "background:#ffe100;box-shadow:0 0 8px #ffe100";
       $("sala-info").textContent = `${nombreB} se ha unido 🎉`;
       $("boton-sala-jugar").classList.remove("hidden");
+      // Sincronizar nombres al guest para que pueda usar el chat con etiqueta correcta
+      sync({ fase: "sala", nombreA, nombreB, modo });
     });
     canal.bind("client-solicitar-estado", () => {
       if (rol !== "host") return;
@@ -778,13 +884,17 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     }
   }
 
+  let pendingAction: ReturnType<typeof setTimeout> | null = null;
+  function clearPending() { if (pendingAction) { clearTimeout(pendingAction); pendingAction = null; } }
+
   function handleTimeout() {
     if (bloqueado || terminado) return;
     bloqueado = true;
     pararVoz();
     if (turno === "A") decimasA = 0; else decimasB = 0;
     $("texto-voz").textContent = `⏱️ ¡Tiempo agotado!`;
-    setTimeout(() => terminar(), 1000);
+    clearPending();
+    pendingAction = setTimeout(() => terminar(), 1000);
   }
 
   function registrarAcierto() {
@@ -826,7 +936,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     setTimeout(() => {
       $("overlay-pase").classList.add("hidden");
       if ((j === "A" ? decimasA : decimasB) <= 0) { terminar(); return; }
-      cambiarTurno();
+      // Mismo turno: solo continúa con el siguiente item
+      timestampTurno = Date.now();
+      iniciarTurno();
     }, 1200);
   }
 
@@ -877,6 +989,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   });
 
   // ── Voice ──────────────────────────────────────────────────
+  let ultimoVozTextoEnviado = "";
+  let ultimoVozTimestamp = 0;
+
   function iniciarReconocedor() {
     pararVoz();
     if (!navegadorSoportaVoz()) return;
@@ -886,6 +1001,13 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         const item = items[indice];
         if (!item) return;
         $("texto-voz").textContent = `"${texto}"`;
+        // Enviar la voz al chat para que el rival la lea (con throttle 800ms)
+        const ahora = Date.now();
+        if (texto && texto !== ultimoVozTextoEnviado && ahora - ultimoVozTimestamp > 800) {
+          ultimoVozTextoEnviado = texto;
+          ultimoVozTimestamp = ahora;
+          enviarChat(texto, "voz");
+        }
         if (aciertoFlexible(texto, item.nombre, categoriaActual)) {
           if (rol === "host") registrarAcierto();
           else accion("acierto");
@@ -972,10 +1094,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       : poolAll.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
     if (poolT.length === 0) { mostrar(pSetup); return; }
     const barajados = [...poolT].sort(() => Math.random() - 0.5);
-    const slugs25: string[] = [];
-    for (let i = 0; i < 25; i++) slugs25.push(barajados[i % barajados.length]);
-    slugs25.sort(() => Math.random() - 0.5);
-    casillasHost = slugs25.map((slug) => {
+    const slugsN: string[] = [];
+    for (let i = 0; i < 9; i++) slugsN.push(barajados[i % barajados.length]);
+    slugsN.sort(() => Math.random() - 0.5);
+    casillasHost = slugsN.map((slug) => {
       const emoji = _esM(slug) ? (mundoSlugsEmoji[slug] ?? "🌍") : "🎬";
       const nombre = cineSlugsNombres[slug] ?? slug;
       return { catSlug: slug, catEmoji: emoji, catNombre: nombre, catNombres: null, catHardcoded: null, dueño: null, items: [], itemsOffset: 0, empateCuenta: 0 };
@@ -1067,6 +1189,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     categoriaActual = c.catNombre;
     indice = 0; turno = tableroAtacante;
     terminado = false; bloqueado = false;
+    clearPending();
+    if (gameTimeout) { clearTimeout(gameTimeout); gameTimeout = null; }
     decimasA = 450; decimasB = 450;
     $("nombre-a-display").textContent = nombreA;
     $("nombre-b-display").textContent = nombreB;
@@ -1095,7 +1219,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     casillasSync = casillasHost.map(({ catSlug, catEmoji, catNombre, dueño }) => ({ catSlug, catEmoji, catNombre, dueño }));
     const countA = casillasHost.filter((c) => c.dueño === "A").length;
     const countB = casillasHost.filter((c) => c.dueño === "B").length;
-    if (countA + countB === 25) { terminarTablero(countA, countB); return; }
+    if (countA + countB === 9) { terminarTablero(countA, countB); return; }
     stopRenderLoop(); decimasA = 450; decimasB = 450;
     sync({ fase: "tablero", nombreA, nombreB, modo, casillas: casillasSync, casillaDuelo, tableroAtacante });
     renderTableroSync();
@@ -1118,11 +1242,17 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   $("boton-volver").addEventListener("click", () => {
     pararVoz(); stopRenderLoop();
     if (gameTimeout) clearTimeout(gameTimeout);
-    if (!pEntrada.classList.contains("hidden") || !pSala.classList.contains("hidden")) {
+    if (!pEntrada.classList.contains("hidden")) {
       window.location.href = "/";
-    } else {
-      mostrar(pSala);
+      return;
     }
+    if (!pSala.classList.contains("hidden")) {
+      if (!confirm("¿Salir de la sala? Perderás el código y la conexión con el otro jugador.")) return;
+      window.location.href = "/";
+      return;
+    }
+    // Desde cualquier otra pantalla, volvemos al lobby manteniendo la conexión
+    mostrar(pSala);
   });
 
   $("boton-revancha").addEventListener("click", () => {

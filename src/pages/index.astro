@@ -221,7 +221,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       </div>
 
       <div class="flex-1 flex flex-col items-center justify-center px-4 py-4 min-h-0">
-        <div id="tablero-grid" class="grid grid-cols-5 gap-1.5 w-full max-w-sm"></div>
+        <div id="tablero-grid" class="grid grid-cols-3 gap-3 w-full max-w-sm"></div>
       </div>
 
       <div class="px-4 py-3 text-center shrink-0">
@@ -246,6 +246,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         </div>
 
         <div class="flex-1 flex flex-col items-center justify-center min-w-0 min-h-0">
+          <p id="juego-cat-label" class="mb-2 text-xl text-[#ffcc00] font-titulo text-center max-w-xs px-2 font-bold uppercase tracking-wider leading-tight"></p>
           <div class="w-full max-w-xs">
             <div class="floor-image-box">
               <img id="imagen-item" src="" alt="" class="absolute inset-0 w-full h-full object-contain hidden" />
@@ -260,8 +261,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
               </div>
             </div>
           </div>
-          <p id="juego-cat-label" class="mt-2 text-sm text-[#ffcc00] font-titulo text-center max-w-xs px-2 font-bold uppercase tracking-widest"></p>
-          <p id="texto-voz" class="mt-0.5 text-xs text-[#2a5090] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
+          <p id="texto-voz" class="mt-1 text-xs text-[#2a5090] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
         </div>
 
         <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
@@ -800,12 +800,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   // ── Tablero ──────────────────────────────────────────────────
   function initTablero(nombreA: string, nombreB: string, poolCine: string[]) {
-    // Selección sin repetición: barajar y tomar 25; si hay menos de 25 slugs, rellenar cíclicamente con la mínima repetición
+    // Selección sin repetición: barajar y tomar 9; si hay menos de 9 slugs, rellenar cíclicamente con la mínima repetición
     const barajados = [...poolCine].sort(() => Math.random() - 0.5);
-    const slugs25: string[] = [];
-    for (let i = 0; i < 25; i++) slugs25.push(barajados[i % barajados.length]);
-    slugs25.sort(() => Math.random() - 0.5);
-    casillas = slugs25.map((slug) => {
+    const slugsN: string[] = [];
+    for (let i = 0; i < 9; i++) slugsN.push(barajados[i % barajados.length]);
+    slugsN.sort(() => Math.random() - 0.5);
+    casillas = slugsN.map((slug) => {
       const esMundo = mundoSlugsNombres[slug] !== undefined && cineSlugsNombres[slug] === undefined;
       let emoji: string;
       let nombre: string;
@@ -846,17 +846,6 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     $("nombre-b-display").textContent = nombreB;
 
     renderTablero();
-  }
-
-  function getAdjacentIndices(idx: number): number[] {
-    const row = Math.floor(idx / 5);
-    const col = idx % 5;
-    const adj: number[] = [];
-    if (row > 0) adj.push((row - 1) * 5 + col);
-    if (row < 4) adj.push((row + 1) * 5 + col);
-    if (col > 0) adj.push(row * 5 + (col - 1));
-    if (col < 4) adj.push(row * 5 + (col + 1));
-    return adj;
   }
 
   function getAttackableIndices(_player: "A" | "B"): Set<number> {
@@ -954,6 +943,9 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     indice = 0;
     turno = tableroAtacante;
     terminado = false;
+    bloqueado = false;
+    clearPending();
+    pararTimer();
     jug.A.decimas = 450;
     jug.B.decimas = 450;
     $("nombre-a-display").textContent = jug.A.nombre;
@@ -986,7 +978,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
     const countA = casillas.filter((c) => c.dueño === "A").length;
     const countB = casillas.filter((c) => c.dueño === "B").length;
-    if (countA + countB === 25) { mostrarFinalTablero(); return; }
+    if (countA + countB === 9) { mostrarFinalTablero(); return; }
 
     jug.A.decimas = 450;
     jug.B.decimas = 450;
@@ -1044,8 +1036,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   }
 
   // ── Turno ────────────────────────────────────────────────────
+  let pendingAction: ReturnType<typeof setTimeout> | null = null;
+  function clearPending() { if (pendingAction) { clearTimeout(pendingAction); pendingAction = null; } }
+
   function iniciarTurno() {
     bloqueado = false;
+    clearPending();
     if (items.length === 0) { terminar(); return; }
     if (indice >= items.length) { items = [...items].sort(() => Math.random() - 0.5); indice = 0; }
     renderTurno();
@@ -1062,7 +1058,8 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         pararTimer();
         pararVoz();
         $("texto-voz").textContent = `⏱️ ¡Se acabó el tiempo de ${j.nombre}!`;
-        setTimeout(terminar, 1200);
+        clearPending();
+        pendingAction = setTimeout(terminar, 1200);
       }
     }, 100);
     iniciarReconocedor();
@@ -1116,7 +1113,8 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     $("texto-voz").textContent = `✓ ¡${nombre}!`;
     indice++;
     renderTimers();
-    setTimeout(cambiarTurno, 1200);
+    clearPending();
+    pendingAction = setTimeout(cambiarTurno, 1200);
   }
 
   function registrarPase() {
@@ -1130,11 +1128,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     renderTimers();
     $("overlay-pase-nombre").textContent = nombre;
     $("overlay-pase").classList.remove("hidden");
-    setTimeout(() => {
+    clearPending();
+    pendingAction = setTimeout(() => {
       $("overlay-pase").classList.add("hidden");
       if (j.decimas <= 0) {
         $("texto-voz").textContent = `⏱️ ¡Se acabó el tiempo de ${j.nombre}!`;
-        setTimeout(terminar, 800);
+        pendingAction = setTimeout(terminar, 800);
       } else {
         iniciarTurno();
       }
