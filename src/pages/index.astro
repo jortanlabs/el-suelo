@@ -714,6 +714,11 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
           : "No hay categorías publicadas aún.";
         errEl.classList.remove("hidden"); return;
       }
+      if (poolFiltrado.length < 9) {
+        const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
+        const filtroNombre = _nF[categoriaFiltro] ?? "este filtro";
+        if (!confirm(`Solo hay ${poolFiltrado.length} categorías publicadas en ${filtroNombre}. Algunas se repetirán en el tablero. ¿Continuar?`)) return;
+      }
       pararVoz();
       initTablero(nombreA, nombreB, poolFiltrado);
       mostrar(pTablero);
@@ -885,9 +890,10 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     });
 
     const nombreAtacante = jug ? (tableroAtacante === "A" ? jug.A.nombre : jug.B.nombre) : tableroAtacante;
-    if (attackable.size === 0 && (countA > 0 || countB > 0)) {
-      tableroAtacante = tableroAtacante === "A" ? "B" : "A";
-      renderTablero();
+    // Si no hay casillas atacables pero quedan casillas libres (no debería pasar en 3x3
+    // porque getAttackableIndices ya devuelve todas las libres), salimos sin recursión.
+    if (attackable.size === 0 && countA + countB < 9) {
+      $("tablero-instruccion").textContent = `Esperando…`;
       return;
     }
     $("tablero-instruccion").textContent = `${nombreAtacante}: toca una casilla para retarla`;
@@ -1041,6 +1047,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   function iniciarTurno() {
     bloqueado = false;
+    ($("boton-pasar") as HTMLButtonElement).disabled = false;
     clearPending();
     if (items.length === 0) { terminar(); return; }
     if (indice >= items.length) { items = [...items].sort(() => Math.random() - 0.5); indice = 0; }
@@ -1106,6 +1113,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   function registrarAcierto() {
     if (bloqueado) return;
     bloqueado = true;
+    ($("boton-pasar") as HTMLButtonElement).disabled = true;
     pararTimer();
     const nombre = items[indice].nombre;
     $("overlay-nombre").textContent = nombre;
@@ -1120,6 +1128,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   function registrarPase() {
     if (bloqueado) return;
     bloqueado = true;
+    ($("boton-pasar") as HTMLButtonElement).disabled = true;
     pararTimer();
     const nombre = items[indice].nombre;
     const j = jug[turno];
@@ -1151,6 +1160,10 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     terminado = true;
     pararTimer();
     pararVoz();
+    clearPending();
+    // Limpiar overlays para no dejarlos visibles al cambiar de pantalla
+    $("overlay-acierto").classList.add("hidden");
+    $("overlay-pase").classList.add("hidden");
 
     if (modo === "tablero") {
       if (casillaDuelo >= 0 && casillaDuelo < casillas.length) {

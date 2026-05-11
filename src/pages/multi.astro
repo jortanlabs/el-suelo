@@ -962,7 +962,11 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     if (terminado) return;
     terminado = true;
     if (gameTimeout) clearTimeout(gameTimeout);
+    clearPending();
     pararVoz();
+    // Limpiar overlays para no dejarlos visibles al cambiar a tablero/final
+    $("overlay-acierto").classList.add("hidden");
+    $("overlay-pase").classList.add("hidden");
     if (modo === "tablero") { terminarDuelo(); return; }
     const sA = Math.max(0, Math.ceil(decimasA / 10));
     const sB = Math.max(0, Math.ceil(decimasB / 10));
@@ -1101,7 +1105,25 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       : categoriaFiltro === "aleatorio"
       ? poolAll
       : poolAll.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
-    if (poolT.length === 0) { mostrar(pSetup); return; }
+    if (poolT.length === 0) {
+      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
+      const filtroNombre = _nF[categoriaFiltro] ?? "este filtro";
+      const errEl = $("error-setup");
+      errEl.textContent = `No hay categorías de ${filtroNombre} publicadas.`;
+      errEl.classList.remove("hidden");
+      mostrar(pSetup);
+      sync({ fase: "setup-espera", nombreA, nombreB, modo });
+      return;
+    }
+    if (poolT.length < 9) {
+      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
+      const filtroNombre = _nF[categoriaFiltro] ?? "este filtro";
+      if (!confirm(`Solo hay ${poolT.length} categorías publicadas en ${filtroNombre}. Algunas se repetirán. ¿Continuar?`)) {
+        mostrar(pSetup);
+        sync({ fase: "setup-espera", nombreA, nombreB, modo });
+        return;
+      }
+    }
     const barajados = [...poolT].sort(() => Math.random() - 0.5);
     const slugsN: string[] = [];
     for (let i = 0; i < 9; i++) slugsN.push(barajados[i % barajados.length]);

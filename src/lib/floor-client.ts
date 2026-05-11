@@ -25,9 +25,12 @@ function leerCache(k: string): ItemFloor[] | null {
     const raw = localStorage.getItem(k);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as { data: ItemFloor[]; expira: number };
-    if (parsed.expira > Date.now()) return parsed.data;
+    if (parsed.expira > Date.now() && Array.isArray(parsed.data)) return parsed.data;
     localStorage.removeItem(k);
-  } catch {}
+  } catch {
+    // JSON corrupto en localStorage — limpiar
+    try { localStorage.removeItem(k); } catch {}
+  }
   return null;
 }
 
@@ -435,13 +438,16 @@ export async function cargarPublicadas(): Promise<string[]> {
   try {
     const raw = localStorage.getItem(PUB_CACHE_KEY);
     if (raw) {
-      const { data, expira } = JSON.parse(raw);
-      if (Date.now() < expira) return data;
+      try {
+        const { data, expira } = JSON.parse(raw);
+        if (Date.now() < expira && Array.isArray(data)) return data;
+      } catch { try { localStorage.removeItem(PUB_CACHE_KEY); } catch {} }
     }
     const res = await fetch("/data/publicadas.json");
     if (!res.ok) return [];
     const data: string[] = await res.json();
-    localStorage.setItem(PUB_CACHE_KEY, JSON.stringify({ data, expira: Date.now() + PUB_TTL_MS }));
+    if (!Array.isArray(data)) return [];
+    try { localStorage.setItem(PUB_CACHE_KEY, JSON.stringify({ data, expira: Date.now() + PUB_TTL_MS })); } catch {}
     return data;
   } catch { return []; }
 }
