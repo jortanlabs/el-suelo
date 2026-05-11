@@ -1,112 +1,106 @@
 [
   {
     "nombre": "Leonardo da Vinci",
-    "imagen": "",
-    "palabraClave": "vinci"
+    "imagen": "https://static.wixstatic.com/media/21c73d_7000e53f95994fdf8548d974b43ca4e9~mv2.jpg/v1/fill/w_534,h_636,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/21c73d_7000e53f95994fdf8548d974b43ca4e9~mv2.jpg"
   },
   {
     "nombre": "Miguel Ángel",
-    "imagen": "",
-    "palabraClave": "angel"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg/250px-Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg"
   },
   {
     "nombre": "Rafael Sanzio",
-    "imagen": "",
-    "palabraClave": "sanzio"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/960px-Raffaello_Sanzio.jpg"
   },
   {
     "nombre": "Pablo Picasso",
-    "imagen": "",
-    "palabraClave": "picasso"
+    "imagen": "https://static-assets.artlogic.net/w_1200,c_limit,f_auto,fl_lossy,q_auto/ws-benbrownfinearts/usr/images/artists/group_images_override/items/5f/5fdd529d889f4bb6b53f15259fd029c5/pablo-picasso-photo-herbert-list-magnum-photos-copy.jpg"
   },
   {
     "nombre": "Vincent van Gogh",
-    "imagen": "",
-    "palabraClave": "gogh"
+    "imagen": "https://static.wixstatic.com/media/21c73d_57a5299a3e274374be424c6e80cc4edf~mv2.jpg/v1/fill/w_534,h_576,al_c,lg_1,q_80,enc_avif,quality_auto/21c73d_57a5299a3e274374be424c6e80cc4edf~mv2.jpg"
   },
   {
     "nombre": "Salvador Dalí",
-    "imagen": "",
-    "palabraClave": "dali"
+    "imagen": "https://www.galeries-bartoux.com/wp-content/uploads/2016/06/DALI-2.jpg"
   },
   {
     "nombre": "Francisco de Goya",
-    "imagen": "",
-    "palabraClave": "goya"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlvvuxZX1IxAdd95_r19UcjICEhtJ4g8j-w&s"
   },
   {
     "nombre": "Diego Velázquez",
-    "imagen": "",
-    "palabraClave": "velazquez"
+    "imagen": "https://www.todocuadros.es/cdn/shop/files/diego-velazquez-autorretrato_1.jpg?v=1684853554"
   },
   {
     "nombre": "El Greco",
-    "imagen": "",
-    "palabraClave": "greco"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/El_caballero_de_la_mano_en_el_pecho%2C_by_El_Greco%2C_from_Prado_in_Google_Earth.jpg/250px-El_caballero_de_la_mano_en_el_pecho%2C_by_El_Greco%2C_from_Prado_in_Google_Earth.jpg"
   },
   {
     "nombre": "Rembrandt",
-    "imagen": "",
-    "palabraClave": "rembrandt"
+    "imagen": "https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydGlzdFwvaW1hZ2VGaWxlXC9yZW1icmFuZHRfc2VsZl9wb3J0cmFpdF93aXRoX3R3b19jaXJjbGVzLmpwZyIsInJlc2l6ZSw2MDAsNjAwIl19.i1pN498QYigNbHCl0yJtoc1_ldUD25LlbCp7cl/lKOIw.jpg"
   },
   {
     "nombre": "Claude Monet",
-    "imagen": "",
-    "palabraClave": "monet"
+    "imagen": "https://cdn.britannica.com/57/250457-050-342611AD/Claude-Monet-French-Impressionist-painter.jpg"
   },
   {
     "nombre": "Édouard Manet",
-    "imagen": "",
-    "palabraClave": "manet"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/68/Carolus-Duran_-_Portrait_of_Edouard_Manet.jpg?utm_source=es.wikiquote.org&utm_campaign=index&utm_content=original"
   },
   {
     "nombre": "Paul Cézanne",
-    "imagen": "",
-    "palabraClave": "cezanne"
+    "imagen": "https://www.todocuadros.es/cdn/shop/files/foto-paul-cezanne-l_1.jpg"
   },
   {
     "nombre": "Wassily Kandinsky",
-    "imagen": "",
-    "palabraClave": "kandinsky"
+    "imagen": "https://www.wassily-kandinsky.org/assets/img/wassily-kandinsky.jpg"
   },
   {
     "nombre": "Jackson Pollock",
-    "imagen": "",
-    "palabraClave": "pollock"
+    "imagen": "https://totenart.com/noticias/wp-content/uploads/2019/01/totenart-jackson-pollock.jpg"
   },
   {
     "nombre": "Andy Warhol",
-    "imagen": "",
-    "palabraClave": "warhol"
+    "imagen": "https://cms.guggenheim-bilbao.eus/uploads/2012/05/warhol_96226.jpg"
   },
   {
     "nombre": "Frida Kahlo",
-    "imagen": "",
-    "palabraClave": "kahlo"
+    "imagen": "https://www.acescritores.com/wp-content/uploads/Frida-Kahlo-2.jpg"
   },
   {
     "nombre": "Joan Miró",
-    "imagen": "",
-    "palabraClave": "miro"
+    "imagen": "https://galerialarcada.com/wp-content/uploads/2024/07/MIRO-3.png"
   },
   {
     "nombre": "Joaquín Sorolla",
-    "imagen": "",
-    "palabraClave": "sorolla"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0eQEYGw5OxVjspfD48RyPNU9l1MVgVb8IqA&s"
   },
   {
     "nombre": "Henri Matisse",
-    "imagen": "",
-    "palabraClave": "matisse"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Portrait_of_Henri_Matisse_1933_May_20.jpg"
   },
   {
     "nombre": "Caravaggio",
-    "imagen": "",
-    "palabraClave": "caravaggio"
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bild-Ottavio_Leoni%2C_Caravaggio.jpg/960px-Bild-Ottavio_Leoni%2C_Caravaggio.jpg"
   },
   {
     "nombre": "Sandro Botticelli",
-    "imagen": "",
-    "palabraClave": "botticelli"
+    "imagen": "https://cdn.shopify.com/s/files/1/0306/0295/2748/files/sandro-botticelli-artlia-600x600_480x480.jpg?v=1699874970"
+  },
+  {
+    "nombre": "Donatello",
+    "imagen": "https://www.biografiasyvidas.com/biografia/d/fotos/donatello.jpg"
+  },
+  {
+    "nombre": "Fernando Botero",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2vxmejDK-EJ4eFRRKQErR24TN1qfFhdZaQw&s"
+  },
+  {
+    "nombre": "Alexander Calder",
+    "imagen": "https://media.revistavanityfair.es/photos/60e83fbda8905e02065d9cf1/master/w_3940%2Cc_limit/171766.jpg"
+  },
+  {
+    "nombre": "Peter Paul Rubens",
+    "imagen": "https://uploads0.wikiart.org/images/peter-paul-rubens.jpg!Portrait.jpg"
   }
 ]
