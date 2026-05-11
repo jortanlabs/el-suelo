@@ -56,6 +56,10 @@
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLM8n_y95YVxiacNn3nTQjepFN-VYpgqoL5w&s"
   },
   {
+    "nombre": "Moais",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwNLi0E28Paz6kYWvuQi-ddIPpCsRo-wTEg&s"
+  },
+  {
     "nombre": "Los burgueses de Calais",
     "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQDxV99_Scj90aJeU6hE_NhkdRIKUfa8RyIA-m1zwCr4MmvpqhdqeabnrSIDzRMU5sJruwbU3gV8Xb7wn6wNZAN1AqRao9YrP3Qh2wNaZUHtG_rXb4GETt27jeXZ_yylCJVOxElOhA/s1600/los+burgueses+de+calais.jpg"
   },
@@ -90,5 +94,33 @@
   {
     "nombre": "Loba capitolina",
     "imagen": "https://fotografias-2.larazon.es/clipping/cmsimages01/2023/02/03/93CD4FCD-6288-4584-BD74-FB39815E320C/escultura-bronce-conocida-como-loba-capitolina-museos-capitolinos-roma_98.jpg?crop=5736,3227,x0,y349&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "nombre": "Maman",
+    "imagen": "https://www.singulart.com/blog/wp-content/uploads/2024/03/Maman-1-scaled.jpg"
+  },
+  {
+    "nombre": "Mannenken pis",
+    "imagen": "https://www.maravillas-del-mundo.com/Manneken-Pis/images/Photos/Manneken-Pis-2.jpg"
+  },
+  {
+    "nombre": "El oso y el madroño",
+    "imagen": "https://www.espanafascinante.com/media/espanafascinante/images/2023/12/04/20231204165926430290.jpg"
+  },
+  {
+    "nombre": "Gran Buda de Kamakura",
+    "imagen": "https://www.airenomada.com/wp-content/uploads/2017/06/20141016_113250.jpg"
+  },
+  {
+    "nombre": "Monte Rushmore",
+    "imagen": "https://th-thumbnailer.cdn-si-edu.com/S5tXEB7tKSPD9tGIIfYVPSS_2T4=/1280x960/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/Mount-Rushmore-South-Dakota-631.jpg"
+  },
+  {
+    "nombre": "La Mano del Desierto",
+    "imagen": "https://wp-content.miviaje.com/2019/11/mano-desierto-chile.jpg"
+  },
+  {
+    "nombre": "Psique reanimada por el beso del amor",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQ71oHOd1pNSMpPn0XxsSl-6kR0u_MwIu3w&s"
   }
 ]
