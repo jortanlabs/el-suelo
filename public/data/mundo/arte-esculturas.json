@@ -1,92 +1,94 @@
 [
   {
     "nombre": "La Venus de Milo",
-    "imagen": "",
-    "palabraClave": "milo"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Je18yJgpjBIbDQoJqYN5r4rKETKRaXtHzQ&s"
   },
   {
     "nombre": "El pensador",
-    "imagen": "",
-    "palabraClave": "pensador"
+    "imagen": "https://cdn-ilefnkl.nitrocdn.com/uvhrkkZPuvGFDfTNLQmdpcmEMVNEsmHB/assets/images/optimized/rev-7585600/fppchile.org/wp-content/uploads/2025/03/Fotos-para-noticias-2025-03-05T114013.590.png"
   },
   {
     "nombre": "El David",
-    "imagen": "",
-    "palabraClave": "david"
+    "imagen": "https://pablobedrossian.com/wp-content/uploads/2020/07/david-miguel-c381ngel-01.jpg?w=1024"
   },
   {
-    "nombre": "La Pietà",
-    "imagen": "",
-    "palabraClave": "pieta"
+    "nombre": "La Piedad",
+    "imagen": "https://cdn.culturagenial.com/es/imagenes/michelangelo-s-pieta-5450-cut-out-black-cke.jpg?class=article"
   },
   {
     "nombre": "El discóbolo",
-    "imagen": "",
-    "palabraClave": "discobolo"
+    "imagen": "https://i.ytimg.com/vi/1n7euia14NM/sddefault.jpg"
   },
   {
     "nombre": "Nike de Samotracia",
-    "imagen": "",
-    "palabraClave": "samotracia"
+    "imagen": "https://uploads0.wikiart.org/00309/images/ancient-greek-painting/winged-victory-of-samothrace.jpg!Large.jpg"
   },
   {
     "nombre": "El beso",
-    "imagen": "",
-    "palabraClave": "beso"
+    "imagen": "https://elojodelarte.com/media/k2/items/cache/cc7d5309aa94aa0d0b6c12a9b8c6f0e5_XL.webp?t=20230917_232444"
   },
   {
     "nombre": "Laocoonte",
-    "imagen": "",
-    "palabraClave": "laocoonte"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3baWpcDnpaxWSFp1Yu3MrFO9JQd5yMyF6XA&s"
   },
   {
     "nombre": "La Libertad",
-    "imagen": "",
-    "palabraClave": "libertad"
+    "imagen": "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2025/06/18/17502376850866.jpg"
   },
   {
     "nombre": "Busto de Nefertiti",
-    "imagen": "",
-    "palabraClave": "nefertiti"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJiQgusLaUCeo4W9Isq0_somQFxiXVLn7IKA&s"
   },
   {
     "nombre": "La sirenita",
-    "imagen": "",
-    "palabraClave": "sirenita"
+    "imagen": "https://fotografias.lasexta.com/clipping/cmsimages01/2020/10/23/1E166438-6465-426E-8AA9-7156171F1398/98.jpg?crop=1200,675,x0,y63&width=1900&height=1069&optimize=high&format=webply"
   },
   {
     "nombre": "El Ángel Caído",
-    "imagen": "",
-    "palabraClave": "caido"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4c2AE3ghvtQKxtEiIsSEzuSpJF5yU_TjaKQ&s"
   },
   {
     "nombre": "El Cristo Redentor",
-    "imagen": "",
-    "palabraClave": "redentor"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvZQv0GlUpFyX0Ewv8QLKimCU61PBM0qzKA&s"
   },
   {
     "nombre": "El toro de Wall Street",
-    "imagen": "",
-    "palabraClave": "street"
-  },
-  {
-    "nombre": "La fuente",
-    "imagen": "",
-    "palabraClave": "fuente"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLM8n_y95YVxiacNn3nTQjepFN-VYpgqoL5w&s"
   },
   {
     "nombre": "Los burgueses de Calais",
-    "imagen": "",
-    "palabraClave": "calais"
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQDxV99_Scj90aJeU6hE_NhkdRIKUfa8RyIA-m1zwCr4MmvpqhdqeabnrSIDzRMU5sJruwbU3gV8Xb7wn6wNZAN1AqRao9YrP3Qh2wNaZUHtG_rXb4GETt27jeXZ_yylCJVOxElOhA/s1600/los+burgueses+de+calais.jpg"
   },
   {
     "nombre": "El beso (Brancusi)",
-    "imagen": "",
-    "palabraClave": "brancusi"
+    "imagen": "https://cms.guggenheim-bilbao.eus/uploads/old/guias_educadores/img/gr/THE_KISS_Museo_Guggenheim_Bilbao_arte_1.jpg"
   },
   {
     "nombre": "Monumento al trabajo",
-    "imagen": "",
-    "palabraClave": "trabajo"
+    "imagen": "https://elojodelarte.com/media/k2/items/cache/f3b735e3300faff0e348331a5413d4d3_XL.webp?t=20230509_132911"
+  },
+  {
+    "nombre": "El ejército de terracota",
+    "imagen": "https://content-historia.nationalgeographic.com.es/medio/2023/08/03/guerreros-para-el-mas-alla_5c484ea0_230803111733_1280x850.jpg"
+  },
+  {
+    "nombre": "Cloud gate",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c1/Cloud_Gate_%28The_Bean%29_from_east%27.jpg"
+  },
+  {
+    "nombre": "Éxtasis de Santa Teresa",
+    "imagen": "https://content-historia.nationalgeographic.com.es/medio/2025/05/16/placer-espiritual-o-fisico_15e404b1_250516142254_2000x1227.webp"
+  },
+  {
+    "nombre": "La pequeña bailarina de catorce años",
+    "imagen": "https://www.meisterdrucke.es/kunstwerke/1260px/Edgar_Degas_-_Little_Dancer_of_Fourteen_Years_1879-81_cast_1921_-_%28MeisterDrucke-828636%29.jpg"
+  },
+  {
+    "nombre": "Gran Esfinge de Giza",
+    "imagen": "https://pic-2.vpackage.net/files/3789/f3dc7_gran-esfinge-de-guiza.jpg"
+  },
+  {
+    "nombre": "Loba capitolina",
+    "imagen": "https://fotografias-2.larazon.es/clipping/cmsimages01/2023/02/03/93CD4FCD-6288-4584-BD74-FB39815E320C/escultura-bronce-conocida-como-loba-capitolina-museos-capitolinos-roma_98.jpg?crop=5736,3227,x0,y349&width=1900&height=1069&optimize=low&format=webply"
   }
 ]
