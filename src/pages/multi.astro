@@ -652,6 +652,14 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       if (!d || !d.texto) return;
       addChatMsg(d.autor, d.texto, d.tipo);
     });
+    canal.bind("client-voz", (d: { texto: string }) => {
+      // Voz del jugador con turno → mostrarla bajo la imagen del rival
+      if (!d || !d.texto) return;
+      if (turno === rolPropio) return; // ignoro mi propia voz
+      const el = $("texto-voz");
+      if (!el || pJuego.classList.contains("hidden")) return;
+      el.textContent = `🎤 "${d.texto}"`;
+    });
     canal.bind("client-unirse", (d: { nombre: string }) => {
       if (rol !== "host") return;
       nombreB = d.nombre;
@@ -1014,12 +1022,12 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         const item = items[indice];
         if (!item) return;
         $("texto-voz").textContent = `"${texto}"`;
-        // Enviar la voz al chat para que el rival la lea (con throttle 800ms)
+        // Enviar la voz al rival para que aparezca bajo su imagen (no en chat)
         const ahora = Date.now();
-        if (texto && texto !== ultimoVozTextoEnviado && ahora - ultimoVozTimestamp > 800) {
+        if (canal && texto && texto !== ultimoVozTextoEnviado && ahora - ultimoVozTimestamp > 400) {
           ultimoVozTextoEnviado = texto;
           ultimoVozTimestamp = ahora;
-          enviarChat(texto, "voz");
+          try { canal.trigger("client-voz", { texto }); } catch {}
         }
         if (aciertoFlexible(texto, item.nombre, categoriaActual)) {
           if (rol === "host") registrarAcierto();
