@@ -271,7 +271,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       </div>
 
       <div class="px-6 pt-2 pb-[max(16px,env(safe-area-inset-bottom))] flex items-center justify-center shrink-0">
-        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar −3s</button>
+        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar (−3 s)</button>
       </div>
     </section>
 
@@ -331,14 +331,17 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   <!-- TUTORIAL (overlay first visit) -->
   <div id="tutorial-overlay" class="hidden fixed inset-0 z-50 flex items-end justify-center px-4 pb-6" style="background:rgba(5,12,30,0.93)">
-    <div class="floor-card max-w-sm w-full p-6 space-y-5">
+    <div class="floor-card max-w-sm w-full p-6 space-y-4">
       <div class="text-center">
         <div class="text-5xl mb-2">🏆</div>
         <h2 class="font-titulo font-bold text-2xl text-[#ffcc00] uppercase tracking-wider leading-tight">Gana el jugador que aún tenga tiempo</h2>
       </div>
       <p class="text-sm font-titulo text-[#e8e8ff] text-center leading-relaxed">
-        Juega <strong class="text-[#ffcc00]">duelos contra otro jugador</strong> respondiendo en voz alta a qué corresponde la imagen, en cada categoría.
+        Por turnos, di en voz alta qué representa la imagen. Acertar conserva tiempo, pasar resta 3 segundos.
       </p>
+      <div class="text-xs font-titulo text-[#2a5090] text-center leading-relaxed border-t border-[#163575] pt-3">
+        <strong class="text-[#ff1dce]">Tablero</strong>: dos jugadores se disputan 9 casillas. Gana quien conquiste más.
+      </div>
       <button id="tutorial-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-base py-3">¡Entendido! →</button>
     </div>
   </div>
@@ -885,7 +888,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
       btn.className = [
         bgClass,
-        "aspect-square rounded flex items-center justify-center text-xl transition-transform",
+        "aspect-square rounded flex items-center justify-center text-4xl transition-transform",
         esAtacable ? "floor-square-attackable hover:scale-105 cursor-pointer" : "cursor-default",
         esDestacado ? "scale-105" : "",
       ].filter(Boolean).join(" ");
@@ -903,7 +906,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       $("tablero-instruccion").textContent = `Esperando…`;
       return;
     }
-    $("tablero-instruccion").textContent = `${nombreAtacante}: toca una casilla para retarla`;
+    $("tablero-instruccion").textContent = `${nombreAtacante}, elige una casilla`;
   }
 
   function mostrarPreDuelo(idx: number) {
@@ -1270,7 +1273,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   });
 
   // ── Tutorial (primera visita) ────────────────────────────────
-  const TUTORIAL_KEY = "el-suelo:tutorial-visto-v1";
+  const TUTORIAL_KEY = "el-suelo:tutorial-visto-v2";
   const tutorialOverlay = document.getElementById("tutorial-overlay")!;
   if (!localStorage.getItem(TUTORIAL_KEY)) {
     tutorialOverlay.classList.remove("hidden");

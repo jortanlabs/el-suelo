@@ -199,7 +199,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <div id="preduel-emoji" class="text-6xl my-2"></div>
         <p id="preduel-nombre-cat" class="font-titulo font-bold text-2xl text-[#e8e8ff] text-center mb-8"></p>
         <button id="preduel-empezar" class="floor-btn floor-btn-a font-titulo font-bold text-xl px-8 py-4 hidden">¡A jugar! →</button>
-        <p id="preduel-espera" class="text-[#2a5090] font-titulo text-sm hidden">Esperando al atacante...</p>
+        <p id="preduel-espera" class="text-[#2a5090] font-titulo text-sm hidden">Esperando al otro jugador...</p>
       </div>
     </section>
 
@@ -236,7 +236,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         </div>
       </div>
       <div class="px-6 pt-2 pb-[max(16px,env(safe-area-inset-bottom))] flex items-center justify-center shrink-0">
-        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar −3s</button>
+        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar (−3 s)</button>
       </div>
     </section>
 
@@ -1173,7 +1173,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       const btn = document.createElement("button");
       const bgClass = c.dueño === "A" ? "floor-square-a" : c.dueño === "B" ? "floor-square-b" : "floor-square-neutral";
       const esAtacable = attackable.has(idx) && atacante === rolPropio;
-      btn.className = [bgClass, "aspect-square rounded flex items-center justify-center text-xl transition-transform", esAtacable ? "floor-square-attackable hover:scale-105 cursor-pointer" : "cursor-default"].join(" ");
+      btn.className = [bgClass, "aspect-square rounded flex items-center justify-center text-4xl transition-transform", esAtacable ? "floor-square-attackable hover:scale-105 cursor-pointer" : "cursor-default"].join(" ");
       btn.textContent = c.catEmoji; btn.title = c.catNombre;
       if (esAtacable) btn.addEventListener("click", () => {
         if (rol === "host") mostrarPreDuelo(idx);
@@ -1183,7 +1183,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     });
     const nombreAtacante = atacante === "A" ? nombreA : nombreB;
     $("tablero-instruccion").textContent = atacante === rolPropio
-      ? "Toca una casilla para retarla"
+      ? "Elige una casilla"
       : `Turno de ${nombreAtacante}`;
   }
 
