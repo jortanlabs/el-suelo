@@ -574,9 +574,18 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   }
 
   $("boton-crear").addEventListener("click", () => {
-    const nombre = ($("nombre-propio") as HTMLInputElement).value.trim() || "Jugador A";
+    const nombreInput = $("nombre-propio") as HTMLInputElement;
+    const nombre = nombreInput.value.trim();
     const errEl = $("error-entrada");
     errEl.classList.add("hidden");
+    if (!nombre) {
+      nombreInput.focus();
+      nombreInput.style.borderColor = "#ff1dce";
+      nombreInput.style.boxShadow = "0 0 12px #ff1dce88";
+      mostrarError(errEl, "Primero escribe tu nombre ↑");
+      setTimeout(() => { nombreInput.style.borderColor = ""; nombreInput.style.boxShadow = ""; }, 2000);
+      return;
+    }
     if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
     rol = "host"; rolPropio = "A";
     nombreA = nombre; nombreB = "";
