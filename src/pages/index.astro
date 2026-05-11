@@ -707,20 +707,16 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       : pool.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
 
     if (modo === "tablero") {
-      if (poolFiltrado.length === 0) {
-        const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
-        errEl.textContent = _nF[categoriaFiltro]
-          ? "No hay categorías de " + _nF[categoriaFiltro] + " publicadas aún."
-          : "No hay categorías publicadas aún.";
+      // Tablero ignora el filtro de categoría — usa todas las publicadas en aleatorio
+      if (pool.length === 0) {
+        errEl.textContent = "No hay categorías publicadas aún.";
         errEl.classList.remove("hidden"); return;
       }
-      if (poolFiltrado.length < 9) {
-        const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
-        const filtroNombre = _nF[categoriaFiltro] ?? "este filtro";
-        if (!confirm(`Solo hay ${poolFiltrado.length} categorías publicadas en ${filtroNombre}. Algunas se repetirán en el tablero. ¿Continuar?`)) return;
+      if (pool.length < 9) {
+        if (!confirm(`Solo hay ${pool.length} categorías publicadas. Algunas se repetirán en el tablero. ¿Continuar?`)) return;
       }
       pararVoz();
-      initTablero(nombreA, nombreB, poolFiltrado);
+      initTablero(nombreA, nombreB, pool);
       mostrar(pTablero);
       return;
     }

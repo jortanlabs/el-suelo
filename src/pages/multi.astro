@@ -803,8 +803,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
   $("modo-tablero").addEventListener("click", () => {
     modo = "tablero"; modoElegido = true;
-    $("seccion-categoria").classList.remove("hidden");
-    $("nota-tablero").classList.add("hidden");
+    // En tablero las categorías son aleatorias — no se elige filtro
+    $("seccion-categoria").classList.add("hidden");
+    $("nota-tablero").classList.remove("hidden");
     $("modo-tablero").classList.remove("text-[#2a5090]", "border-[#163575]");
     $("modo-tablero").classList.add("floor-btn-a");
     $("modo-rapida").classList.remove("floor-btn-a");
@@ -1106,27 +1107,18 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   // ── Tablero (host) ─────────────────────────────────────────
   async function initTablero() {
     const pub = await cargarPublicadas();
-    const poolAll = construirPool(pub);
+    const poolT = construirPool(pub);
     const _esM = (s: string) => mundoSlugsAll.includes(s);
-    const poolT = categoriaFiltro === "cine"
-      ? poolAll.filter((s) => !_esM(s))
-      : categoriaFiltro === "aleatorio"
-      ? poolAll
-      : poolAll.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
     if (poolT.length === 0) {
-      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
-      const filtroNombre = _nF[categoriaFiltro] ?? "este filtro";
       const errEl = $("error-setup");
-      errEl.textContent = `No hay categorías de ${filtroNombre} publicadas.`;
+      errEl.textContent = "No hay categorías publicadas aún.";
       errEl.classList.remove("hidden");
       mostrar(pSetup);
       sync({ fase: "setup-espera", nombreA, nombreB, modo });
       return;
     }
     if (poolT.length < 9) {
-      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
-      const filtroNombre = _nF[categoriaFiltro] ?? "este filtro";
-      if (!confirm(`Solo hay ${poolT.length} categorías publicadas en ${filtroNombre}. Algunas se repetirán. ¿Continuar?`)) {
+      if (!confirm(`Solo hay ${poolT.length} categorías publicadas. Algunas se repetirán en el tablero. ¿Continuar?`)) {
         mostrar(pSetup);
         sync({ fase: "setup-espera", nombreA, nombreB, modo });
         return;
