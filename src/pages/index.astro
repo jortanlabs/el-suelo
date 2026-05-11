@@ -86,7 +86,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 );
 ---
 
-<Base titulo="El Suelo" descripcion="Di qué ves antes de que se acabe tu tiempo.">
+<Base titulo="El Suelo" descripcion="Adivina más rápido que el rival. Gana al reloj.">
   <!-- Datos para JS (no visibles) -->
   <div id="datos-otras" data-json={JSON.stringify(otrasFloor)} class="hidden"></div>
   <div id="datos-cine" data-json={JSON.stringify(cineBloques)} class="hidden"></div>
@@ -116,7 +116,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
           <span class="floor-corner floor-corner-br"></span>
           <h1 class="font-titulo text-5xl font-bold neon-gold uppercase tracking-[0.3em]">El suelo</h1>
         </div>
-        <p class="text-[#2a5090] font-titulo text-base mt-2">Di qué ves antes de que se acabe tu tiempo.</p>
+        <p class="text-[#2a5090] font-titulo text-base mt-2">Adivina más rápido que el rival. Gana al reloj.</p>
       </div>
 
       <div class="flex-1"></div>
@@ -128,11 +128,6 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
         <a href="/multi" class="floor-btn w-full font-titulo font-bold text-lg py-3 tracking-widest uppercase text-center" style="color:#7b9ef5;border-color:#163575;">
           📱 2 Móviles
-        </a>
-
-        <a href="#" id="kofi-link" class="flex items-center gap-2 text-[#163575] hover:text-[#2a5090] transition text-sm font-titulo opacity-60 hover:opacity-100">
-          <span>☕</span>
-          <span>Apoya el juego</span>
         </a>
       </div>
 
@@ -242,7 +237,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
         <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
           <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
-          <span id="nombre-a-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
+          <span id="nombre-a-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
 
         <div class="flex-1 flex flex-col items-center justify-center min-w-0 min-h-0">
@@ -266,7 +261,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
         <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
           <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
-          <span id="nombre-b-display" class="font-titulo text-xs font-bold mt-1 text-center truncate w-full px-1"></span>
+          <span id="nombre-b-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
       </div>
 
@@ -303,29 +298,44 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     </section>
 
   <!-- MODAL REPORTAR ERROR -->
-  <div id="modal-reportar" class="hidden fixed inset-0 z-50 flex items-center justify-center px-6" style="background:rgba(5,12,30,0.96)">
-    <div class="max-w-sm w-full floor-card p-6">
-      <h2 class="font-titulo font-bold text-lg text-[#e8e8ff] uppercase tracking-wide mb-1">Reportar categoría</h2>
-      <p id="reportar-cat-label" class="font-titulo text-sm text-[#2a5090] mb-5"></p>
-      <div class="flex flex-col gap-4 mb-6">
+  <div id="modal-reportar" class="hidden fixed inset-0 z-50 flex items-start justify-center px-4 py-6 overflow-y-auto" style="background:rgba(5,12,30,0.96)">
+    <div class="max-w-sm w-full floor-card p-5 my-auto">
+      <h2 class="font-titulo font-bold text-lg text-[#e8e8ff] uppercase tracking-wide mb-1">Reportar o sugerir</h2>
+      <p id="reportar-cat-label" class="font-titulo text-xs text-[#2a5090] mb-4"></p>
+      <div class="flex flex-col gap-2.5 mb-4">
         <label class="flex items-start gap-3 cursor-pointer">
-          <input type="radio" name="tipo-error" value="Imágenes que no corresponden a la categoría" class="mt-1 accent-[#ff1dce]">
+          <input type="checkbox" name="tipo-error" value="Imágenes que no corresponden a la categoría" class="mt-1 accent-[#ff1dce]">
           <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Imágenes que no corresponden a la categoría</span>
         </label>
         <label class="flex items-start gap-3 cursor-pointer">
-          <input type="radio" name="tipo-error" value="Imágenes que no tienen sentido con la respuesta" class="mt-1 accent-[#ff1dce]">
-          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Imágenes que no tienen sentido con la respuesta</span>
+          <input type="checkbox" name="tipo-error" value="Imágenes repetidas" class="mt-1 accent-[#ff1dce]">
+          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Imágenes repetidas</span>
         </label>
         <label class="flex items-start gap-3 cursor-pointer">
-          <input type="radio" name="tipo-error" value="Excesivamente rebuscado" class="mt-1 accent-[#ff1dce]">
-          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Excesivamente rebuscado</span>
+          <input type="checkbox" name="tipo-error" value="Imágenes que no tienen sentido" class="mt-1 accent-[#ff1dce]">
+          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Imágenes que no tienen sentido</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" name="tipo-error" value="Categoría rebuscada o muy difícil" class="mt-1 accent-[#ff1dce]">
+          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Categoría rebuscada o muy difícil</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" name="tipo-error" value="No reconoce mi voz correctamente" class="mt-1 accent-[#ff1dce]">
+          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">No reconoce mi voz correctamente</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" name="tipo-error" value="Otro" class="mt-1 accent-[#ff1dce]">
+          <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Otro</span>
         </label>
       </div>
+      <label class="font-titulo text-xs text-[#2a5090] uppercase tracking-wider block mb-1">Sugerencia o detalle (opcional)</label>
+      <textarea id="reportar-sugerencia" maxlength="500" rows="3" placeholder="Cuéntanos qué ha pasado o qué echas en falta..." class="floor-input w-full resize-none text-sm mb-4" style="line-height:1.4"></textarea>
       <div class="flex gap-3">
         <button id="reportar-cancelar" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-sm px-4 py-2 flex-1">Cancelar</button>
         <button id="reportar-enviar" class="floor-btn floor-btn-a font-titulo font-bold text-sm px-4 py-2 flex-1">Enviar →</button>
       </div>
       <p id="reportar-feedback" class="hidden font-titulo text-xs text-center mt-3 text-[#00ff88]">✓ Reporte enviado, gracias</p>
+      <p id="reportar-falta" class="hidden font-titulo text-xs text-center mt-3 text-[#ff3b3b]">Marca al menos una opción o escribe algo.</p>
     </div>
   </div>
 
@@ -334,15 +344,46 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     <div class="floor-card max-w-sm w-full p-6 space-y-4">
       <div class="text-center">
         <div class="text-5xl mb-2">🏆</div>
-        <h2 class="font-titulo font-bold text-2xl text-[#ffcc00] uppercase tracking-wider leading-tight">Gana el jugador que aún tenga tiempo</h2>
+        <h2 class="font-titulo font-bold text-2xl text-[#ffcc00] uppercase tracking-wider leading-tight">Gana al rival, gana al reloj</h2>
       </div>
       <p class="text-sm font-titulo text-[#e8e8ff] text-center leading-relaxed">
-        Por turnos, di en voz alta qué representa la imagen. Acertar conserva tiempo, pasar resta 3 segundos.
+        Por turnos, di en voz alta qué representa la imagen. <strong class="text-[#00ff88]">Aciertas</strong> y conservas tiempo. ¿No sabes?
+        Pulsa <strong class="text-[#ffcc00]">Pasar (−3 s)</strong> y a la siguiente.
       </p>
-      <div class="text-xs font-titulo text-[#2a5090] text-center leading-relaxed border-t border-[#163575] pt-3">
-        <strong class="text-[#ff1dce]">Tablero</strong>: dos jugadores se disputan 9 casillas. Gana quien conquiste más.
+      <div class="space-y-2 text-xs font-titulo text-[#e8e8ff] border-t border-[#163575] pt-3">
+        <div class="flex gap-2 items-start"><span class="text-base">⚡</span><span><strong class="text-[#ff1dce]">Partida rápida</strong>: misma categoría hasta que uno se queda sin segundos.</span></div>
+        <div class="flex gap-2 items-start"><span class="text-base">🏁</span><span><strong class="text-[#ff1dce]">Tablero</strong>: 9 casillas con categoría sorpresa. Gana quien conquiste más.</span></div>
       </div>
-      <button id="tutorial-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-base py-3">¡Entendido! →</button>
+      <button id="tutorial-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-base py-3">¡A jugar! →</button>
+    </div>
+  </div>
+
+  <!-- TUTORIAL DUELO (overlay primera vez que se entra a una partida) -->
+  <div id="tutorial-duelo" class="hidden fixed inset-0 z-50 flex items-end justify-center px-4 pb-6" style="background:rgba(5,12,30,0.93)">
+    <div class="floor-card max-w-sm w-full p-5 space-y-3">
+      <div class="text-center">
+        <div class="text-4xl mb-1">🎬</div>
+        <h2 class="font-titulo font-bold text-xl text-[#ffcc00] uppercase tracking-wider leading-tight">El duelo empieza ya</h2>
+      </div>
+      <div class="space-y-2.5 text-sm font-titulo text-[#e8e8ff]">
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl shrink-0">⏱️</span>
+          <span>A los lados, vuestros segundos. El que está en grande es <strong class="text-[#ffcc00]">de quien tiene el turno</strong>.</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl shrink-0">🖼️</span>
+          <span>Mira la imagen y <strong class="text-[#00ff88]">di en voz alta</strong> qué es. Si aciertas, le toca al rival.</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl shrink-0">⏭️</span>
+          <span>¿No la sabes? Pulsa <strong class="text-[#ffcc00]">Pasar (−3 s)</strong>. Te restan 3 segundos pero <strong>sigues tú</strong>.</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl shrink-0">🚨</span>
+          <span>Cuando tu reloj baja de <strong class="text-[#ff3b3b]">10 s</strong>, todo se pone rojo. Cuidado.</span>
+        </div>
+      </div>
+      <button id="tutorial-duelo-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-base py-3">¡Empezar! →</button>
     </div>
   </div>
   </main>
@@ -467,6 +508,9 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   }
   .floor-zona-inactive { color: #2a2a44; border: 2px solid transparent; }
   .floor-timer { text-shadow: 0 0 20px currentColor; }
+  .floor-timer-urgent { color: #ff3b3b !important; text-shadow: 0 0 24px #ff3b3b; }
+  .floor-btn-urgent { color: #ff3b3b !important; border-color: #ff3b3b !important; box-shadow: 0 0 14px color-mix(in srgb, #ff3b3b 55%, transparent); }
+  .floor-btn-urgent:hover { background: color-mix(in srgb, #ff3b3b 15%, transparent); }
   .floor-cat-selected {
     color: var(--gold) !important;
     border-color: var(--gold) !important;
@@ -1006,7 +1050,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   function mostrarFinalTablero() {
     const countA = casillas.filter((c) => c.dueño === "A").length;
     const countB = casillas.filter((c) => c.dueño === "B").length;
-    const ganador = countA > countB ? `🥇 Gana ${jug.A.nombre}` : countB > countA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
+    const marcador = countA > countB ? `${countA}-${countB}` : `${countB}-${countA}`;
+    const ganador = countA > countB
+      ? `🥇 Gana ${jug.A.nombre} (${marcador})`
+      : countB > countA
+      ? `🥇 Gana ${jug.B.nombre} (${marcador})`
+      : `¡Empate! ${countA}-${countB} 🤝`;
     $("texto-ganador").textContent = ganador;
     $("final-tiempo-a").textContent = String(countA);
     $("final-tiempo-b").textContent = String(countB);
@@ -1024,6 +1073,11 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     $("timer-b").textContent = String(sb);
     $("timer-a").classList.toggle("animate-pulse", turno === "A" && sa <= 10);
     $("timer-b").classList.toggle("animate-pulse", turno === "B" && sb <= 10);
+    $("timer-a").classList.toggle("floor-timer-urgent", turno === "A" && sa <= 10);
+    $("timer-b").classList.toggle("floor-timer-urgent", turno === "B" && sb <= 10);
+    // Botón pasar en rojo cuando poco tiempo (avisa de "menos riesgo cuanto antes")
+    const sActual = turno === "A" ? sa : sb;
+    $("boton-pasar").classList.toggle("floor-btn-urgent", sActual <= 10);
   }
 
   const ZONA_BASE = "shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all";
@@ -1056,6 +1110,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   function clearPending() { if (pendingAction) { clearTimeout(pendingAction); pendingAction = null; } }
 
   function iniciarTurno() {
+    // Si es la primera vez que entra a un duelo, mostrar tutorial corto y pausar
+    const tutorialDuelEl = document.getElementById("tutorial-duelo")!;
+    if (!localStorage.getItem("el-suelo:tutorial-duelo-v1") && tutorialDuelEl.classList.contains("hidden")) {
+      tutorialDuelEl.classList.remove("hidden");
+      return;
+    }
     bloqueado = false;
     ($("boton-pasar") as HTMLButtonElement).disabled = false;
     clearPending();
@@ -1239,9 +1299,11 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   function abrirModalReportar() {
     const modal = document.getElementById("modal-reportar");
-    document.getElementById("reportar-cat-label").textContent = categoriaActual || "Categoría desconocida";
+    document.getElementById("reportar-cat-label").textContent = "Categoría: " + (categoriaActual || "Categoría desconocida");
     document.querySelectorAll('input[name="tipo-error"]').forEach(r => (r).checked = false);
+    document.getElementById("reportar-sugerencia").value = "";
     document.getElementById("reportar-feedback").classList.add("hidden");
+    document.getElementById("reportar-falta").classList.add("hidden");
     modal.classList.remove("hidden");
   }
   window.abrirModalReportar = abrirModalReportar;
@@ -1251,13 +1313,21 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   });
 
   document.getElementById("reportar-enviar").addEventListener("click", async () => {
-    const sel = document.querySelector('input[name="tipo-error"]:checked');
-    if (!sel) return;
+    const sels = Array.from(document.querySelectorAll('input[name="tipo-error"]:checked')).map((r) => r.value);
+    const sugerencia = (document.getElementById("reportar-sugerencia").value || "").trim();
+    if (sels.length === 0 && !sugerencia) {
+      document.getElementById("reportar-falta").classList.remove("hidden");
+      return;
+    }
+    document.getElementById("reportar-falta").classList.add("hidden");
     const btn = document.getElementById("reportar-enviar");
     btn.textContent = "Enviando..."; btn.disabled = true;
     try {
       await fetch(WEBHOOK_REPORTAR, { method: "POST", body: JSON.stringify({
-        categoria: categoriaActual || "desconocida", elemento: "", tipoError: sel.value
+        categoria: categoriaActual || "desconocida",
+        elemento: "",
+        tipoError: sels.join(" | "),
+        sugerencia,
       })});
     } catch {}
     btn.textContent = "Enviar →"; btn.disabled = false;
@@ -1281,5 +1351,15 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   document.getElementById("tutorial-ok")!.addEventListener("click", () => {
     localStorage.setItem(TUTORIAL_KEY, "1");
     tutorialOverlay.classList.add("hidden");
+  });
+
+  // ── Tutorial del duelo (primera vez que se entra a la pantalla de juego) ──
+  const TUTORIAL_DUELO_KEY = "el-suelo:tutorial-duelo-v1";
+  const tutorialDuelo = document.getElementById("tutorial-duelo")!;
+  document.getElementById("tutorial-duelo-ok")!.addEventListener("click", () => {
+    localStorage.setItem(TUTORIAL_DUELO_KEY, "1");
+    tutorialDuelo.classList.add("hidden");
+    // Reanudar el inicio del turno que quedó pausado
+    iniciarTurno();
   });
 </script>
