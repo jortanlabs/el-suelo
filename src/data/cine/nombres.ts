@@ -4,6 +4,8 @@ export interface SubcategoriaNombres {
   emoji: string;
   bloque: string;
   bloqueNombre: string;
+  seccion?: string; // sección dentro del bloque (3er nivel: bloque > sección > tema)
+  seccionNombre?: string;
   esMetaCategoria?: boolean;
   subcategorias?: string[]; // slugs que agrupa (para mezclas)
   nombres?: string[];

@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Móvil",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tablet",
+    "imagen": ""
+  },
+  {
+    "nombre": "Portátil",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ordenador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Televisión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Smartwatch",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pulsera de actividad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Auriculares",
+    "imagen": ""
+  },
+  {
+    "nombre": "Altavoz",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cámara de fotos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Videocámara",
+    "imagen": ""
+  },
+  {
+    "nombre": "E-book",
+    "imagen": ""
+  },
+  {
+    "nombre": "Consola",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mando",
+    "imagen": ""
+  },
+  {
+    "nombre": "Teclado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ratón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pantalla",
+    "imagen": ""
+  },
+  {
+    "nombre": "Impresora",
+    "imagen": ""
+  },
+  {
+    "nombre": "Router",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cargador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Disco duro",
+    "imagen": ""
+  },
+  {
+    "nombre": "USB",
+    "imagen": ""
+  },
+  {
+    "nombre": "Robot aspirador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Drone",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gafas de realidad virtual",
+    "imagen": ""
+  }
+]

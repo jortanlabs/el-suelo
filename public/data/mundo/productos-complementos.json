@@ -1,102 +1,102 @@
 [
   {
-    "nombre": "Apple",
+    "nombre": "Bolso",
     "imagen": ""
   },
   {
-    "nombre": "Microsoft",
+    "nombre": "Mochila",
     "imagen": ""
   },
   {
-    "nombre": "Google",
+    "nombre": "Cartera",
     "imagen": ""
   },
   {
-    "nombre": "Samsung",
+    "nombre": "Monedero",
     "imagen": ""
   },
   {
-    "nombre": "Sony",
+    "nombre": "Maleta",
     "imagen": ""
   },
   {
-    "nombre": "Meta",
+    "nombre": "Sombrero",
     "imagen": ""
   },
   {
-    "nombre": "Amazon",
+    "nombre": "Gorra",
     "imagen": ""
   },
   {
-    "nombre": "Netflix",
+    "nombre": "Bufanda",
     "imagen": ""
   },
   {
-    "nombre": "Spotify",
+    "nombre": "Guantes",
     "imagen": ""
   },
   {
-    "nombre": "Intel",
+    "nombre": "Cinturón",
     "imagen": ""
   },
   {
-    "nombre": "AMD",
+    "nombre": "Corbata",
     "imagen": ""
   },
   {
-    "nombre": "Nvidia",
+    "nombre": "Pajarita",
     "imagen": ""
   },
   {
-    "nombre": "IBM",
+    "nombre": "Collar",
     "imagen": ""
   },
   {
-    "nombre": "Oracle",
+    "nombre": "Pendientes",
     "imagen": ""
   },
   {
-    "nombre": "Adobe",
+    "nombre": "Anillo",
     "imagen": ""
   },
   {
-    "nombre": "Dell",
+    "nombre": "Pulsera",
     "imagen": ""
   },
   {
-    "nombre": "HP",
+    "nombre": "Reloj",
     "imagen": ""
   },
   {
-    "nombre": "Lenovo",
+    "nombre": "Gafas de sol",
     "imagen": ""
   },
   {
-    "nombre": "Asus",
+    "nombre": "Gafas graduadas",
     "imagen": ""
   },
   {
-    "nombre": "Huawei",
+    "nombre": "Paraguas",
     "imagen": ""
   },
   {
-    "nombre": "Xiaomi",
+    "nombre": "Pañuelo",
     "imagen": ""
   },
   {
-    "nombre": "LG",
+    "nombre": "Diadema",
     "imagen": ""
   },
   {
-    "nombre": "Bose",
+    "nombre": "Coletero",
     "imagen": ""
   },
   {
-    "nombre": "Philips",
+    "nombre": "Riñonera",
     "imagen": ""
   },
   {
-    "nombre": "Logitech",
+    "nombre": "Llavero",
     "imagen": ""
   }
 ]

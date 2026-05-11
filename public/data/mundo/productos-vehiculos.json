@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Coche",
+    "imagen": ""
+  },
+  {
+    "nombre": "Moto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bicicleta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Patinete",
+    "imagen": ""
+  },
+  {
+    "nombre": "Patinete eléctrico",
+    "imagen": ""
+  },
+  {
+    "nombre": "Camión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Furgoneta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Autobús",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tren",
+    "imagen": ""
+  },
+  {
+    "nombre": "Metro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tranvía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Avión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Helicóptero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Barco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Yate",
+    "imagen": ""
+  },
+  {
+    "nombre": "Velero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Submarino",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cohete",
+    "imagen": ""
+  },
+  {
+    "nombre": "Globo aerostático",
+    "imagen": ""
+  },
+  {
+    "nombre": "Trineo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Quad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Karting",
+    "imagen": ""
+  },
+  {
+    "nombre": "Caravana",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ambulancia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Coche de policía",
+    "imagen": ""
+  }
+]

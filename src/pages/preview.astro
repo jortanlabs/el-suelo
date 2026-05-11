@@ -5,22 +5,22 @@ import { subcategoriasMundo, bloquesMundo } from "../data/catalogoMundo.ts";
 
 const DEPORTES_B = new Set(["futbol", "baloncesto", "tenis", "golf", "ciclismo", "motor", "multideporte"]);
 const ARTE_B = new Set(["musica", "arte", "literatura", "teatro", "moda"]);
-const MARCAS_B = new Set(["marcas"]);
+const MARCAS_B = new Set(["compras"]);
 const PERSONAS_B = new Set(["personas"]);
 
 const leafSubcats = [
   ...subcategorias
     .filter((s) => !s.esMetaCategoria && !!s.nombres && !s.pendiente)
-    .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres!, dataPath: "cine", grupo: "cine" })),
+    .map((s) => ({ slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, seccion: s.seccion ?? null, seccionNombre: s.seccionNombre ?? null, nombres: s.nombres!, dataPath: "cine", grupo: "cine" })),
   ...subcategoriasMundo
     .filter((s) => !s.esMetaCategoria && !!s.nombres)
     .map((s) => {
       let grupo = "mundo";
       if (DEPORTES_B.has(s.bloque)) grupo = "deportes";
       else if (ARTE_B.has(s.bloque)) grupo = "arte";
-      else if (MARCAS_B.has(s.bloque)) grupo = "marcas";
+      else if (MARCAS_B.has(s.bloque)) grupo = "compras";
       else if (PERSONAS_B.has(s.bloque)) grupo = "personas";
-      return { slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, nombres: s.nombres!, dataPath: "mundo", grupo };
+      return { slug: s.slug, nombre: s.nombre, emoji: s.emoji, bloque: s.bloque, bloqueNombre: s.bloqueNombre, seccion: s.seccion ?? null, seccionNombre: s.seccionNombre ?? null, nombres: s.nombres!, dataPath: "mundo", grupo };
     }),
 ];
 
@@ -54,6 +54,7 @@ const BUILD = Date.now();
     /* Sidebar */
     .sidebar { width: 200px; flex-shrink: 0; border-right: 1px solid #163575; overflow-y: auto; }
     .sidebar-bloque { padding: 8px 12px 3px; font-size: 0.6rem; font-weight: bold; color: #2a5090; text-transform: uppercase; letter-spacing: 0.08em; }
+    .sidebar-seccion { padding: 6px 12px 2px 16px; font-size: 0.58rem; font-weight: bold; color: #4a6fa5; text-transform: uppercase; letter-spacing: 0.06em; }
     .sidebar-btn { display: flex; align-items: center; gap: 6px; width: 100%; padding: 6px 12px; background: transparent; border: none; color: #2a5090; font-size: 0.75rem; text-align: left; cursor: pointer; border-left: 2px solid transparent; }
     .sidebar-btn:hover { color: #e8e8ff; background: #0a1628; }
     .sidebar-btn.active { color: #ffcc00; border-left-color: #ffcc00; background: #0d1e3a; }
@@ -232,19 +233,53 @@ const BUILD = Date.now();
       groups[s.bloque].items.push(s);
     }
     Object.assign(allGroups, groups);
+    const numBloques = Object.keys(groups).length;
     for (const [bloqueSlug, group] of Object.entries(groups)) {
       const sec = document.createElement('div');
-      const lbl = document.createElement('div');
-      lbl.className = 'sidebar-bloque';
-      lbl.textContent = group.nombre;
-      sec.appendChild(lbl);
-      for (const s of group.items) {
-        const btn = document.createElement('button');
-        btn.className = 'sidebar-btn';
-        btn.dataset.slug = s.slug;
-        btn.innerHTML = `<span>${s.emoji} ${s.nombre}</span><span class="sstat" id="ss-${s.slug}" style="color:#163575"></span>`;
-        btn.addEventListener('click', () => selectSlug(s.slug));
-        sec.appendChild(btn);
+      // Si solo hay un bloque en el grupo (caso compras/personas) y todos los items tienen seccion,
+      // omitimos el label del bloque (sería redundante con el grupoLabel).
+      const conSeccion = group.items.some(s => s.seccion);
+      if (!(numBloques === 1 && conSeccion)) {
+        const lbl = document.createElement('div');
+        lbl.className = 'sidebar-bloque';
+        lbl.textContent = group.nombre;
+        sec.appendChild(lbl);
+      }
+      if (conSeccion) {
+        // Agrupar items por sección, mantener orden de aparición
+        const porSeccion = {};
+        const ordenSecciones = [];
+        for (const s of group.items) {
+          const k = s.seccion ?? '_';
+          if (!porSeccion[k]) { porSeccion[k] = { nombre: s.seccionNombre ?? '', items: [] }; ordenSecciones.push(k); }
+          porSeccion[k].items.push(s);
+        }
+        for (const k of ordenSecciones) {
+          const sg = porSeccion[k];
+          if (sg.nombre) {
+            const secLbl = document.createElement('div');
+            secLbl.className = 'sidebar-seccion';
+            secLbl.textContent = sg.nombre;
+            sec.appendChild(secLbl);
+          }
+          for (const s of sg.items) {
+            const btn = document.createElement('button');
+            btn.className = 'sidebar-btn';
+            btn.dataset.slug = s.slug;
+            btn.innerHTML = `<span>${s.emoji} ${s.nombre}</span><span class="sstat" id="ss-${s.slug}" style="color:#163575"></span>`;
+            btn.addEventListener('click', () => selectSlug(s.slug));
+            sec.appendChild(btn);
+          }
+        }
+      } else {
+        for (const s of group.items) {
+          const btn = document.createElement('button');
+          btn.className = 'sidebar-btn';
+          btn.dataset.slug = s.slug;
+          btn.innerHTML = `<span>${s.emoji} ${s.nombre}</span><span class="sstat" id="ss-${s.slug}" style="color:#163575"></span>`;
+          btn.addEventListener('click', () => selectSlug(s.slug));
+          sec.appendChild(btn);
+        }
       }
       const pubBtn = document.createElement('button');
       pubBtn.className = 'btn-publish-block';
@@ -266,13 +301,13 @@ const BUILD = Date.now();
   const mundoSubcats = leafSubcats.filter(s => s.grupo === 'mundo');
   const deportesSubcats = leafSubcats.filter(s => s.grupo === 'deportes');
   const arteSubcats = leafSubcats.filter(s => s.grupo === 'arte');
-  const marcasSubcats = leafSubcats.filter(s => s.grupo === 'marcas');
+  const comprasSubcats = leafSubcats.filter(s => s.grupo === 'compras');
   const personasSubcats = leafSubcats.filter(s => s.grupo === 'personas');
   buildSidebarGroup('cine', 'Cine y Series', '🎬', cineSubcats);
   buildSidebarGroup('mundo', 'El Mundo', '🌍', mundoSubcats);
   buildSidebarGroup('deportes', 'Deportes', '⚽', deportesSubcats);
   buildSidebarGroup('arte', 'Arte', '🎨', arteSubcats);
-  buildSidebarGroup('marcas', 'Marcas', '🏷️', marcasSubcats);
+  buildSidebarGroup('compras', 'Compras', '🛒', comprasSubcats);
   buildSidebarGroup('personas', 'Personas', '🧑', personasSubcats);
 
   // ── Select ─────────────────────────────────────────────────────
