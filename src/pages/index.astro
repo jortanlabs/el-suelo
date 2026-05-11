@@ -683,10 +683,21 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   let casillaDuelo = -1;
   let tableroAtacante: "A" | "B" = "A";
 
+  // ── Recordar nombres entre sesiones ────────────────────────
+  const NOMBRES_KEY = "el-suelo:nombres";
+  try {
+    const saved = JSON.parse(localStorage.getItem(NOMBRES_KEY) ?? "null");
+    if (saved && typeof saved === "object") {
+      if (saved.a) ($("nombre-a") as HTMLInputElement).value = saved.a;
+      if (saved.b) ($("nombre-b") as HTMLInputElement).value = saved.b;
+    }
+  } catch {}
+
   // ── Empezar ─────────────────────────────────────────────────
   $("boton-empezar").addEventListener("click", async () => {
     const nombreA = (($("nombre-a") as HTMLInputElement).value.trim()) || "Jugador A";
     const nombreB = (($("nombre-b") as HTMLInputElement).value.trim()) || "Jugador B";
+    try { localStorage.setItem(NOMBRES_KEY, JSON.stringify({ a: nombreA, b: nombreB })); } catch {}
     const errEl = $("error-setup");
     errEl.classList.add("hidden");
 
@@ -1100,7 +1111,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   }
 
   function iniciarVoz() {
-    if (!reco) { $("texto-voz").textContent = "⚠️ Sin voz — di la respuesta en voz alta"; return; }
+    if (!reco) { $("texto-voz").textContent = "⚠️ Tu navegador no reconoce voz — pulsa Pasar para saltar"; return; }
     reco.resetOffset();
     $("texto-voz").textContent = "🎤 Escuchando...";
   }

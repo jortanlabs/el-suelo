@@ -367,6 +367,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   );
 
   function construirPool(pub: string[]): string[] {
+    // Nota: en multi, cineSlugsNombres contiene cine + mundo (todasSlugsNombres),
+    // así que el único bucle ya cubre ambos. No iterar mundoSlugsAll otra vez.
     const pool: string[] = [];
     for (const slug of Object.keys(cineSlugsNombres)) {
       const d = cineSlugsDerivados[slug];
@@ -374,9 +376,6 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       if (d) { if (pub.includes(d.baseSlug)) pool.push(slug); }
       else if (m) { if (m.every((s) => pub.includes(s))) pool.push(slug); }
       else if (pub.includes(slug)) pool.push(slug);
-    }
-    for (const slug of mundoSlugsAll) {
-      if (pub.includes(slug)) pool.push(slug);
     }
     return pool;
   }
@@ -461,7 +460,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     actualizarBadgeChat();
     $("chat-overlay").classList.remove("hidden");
     $("chat-flot").classList.add("hidden");
-    setTimeout(() => { const m = $("chat-mensajes"); m.scrollTop = m.scrollHeight; }, 50);
+    const input = $("chat-input") as HTMLInputElement;
+    setTimeout(() => { const m = $("chat-mensajes"); m.scrollTop = m.scrollHeight; input.focus(); }, 50);
   }
 
   function cerrarChat() {
@@ -477,6 +477,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     const input = $("chat-input") as HTMLInputElement;
     enviarChat(input.value, "texto");
     input.value = "";
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && chatAbierto) { cerrarChat(); }
   });
 
   // ── Estado global ──────────────────────────────────────────
@@ -573,6 +576,16 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     el.classList.remove("hidden");
   }
 
+  // Recordar nombre del jugador entre sesiones
+  const NOMBRE_KEY = "el-suelo:multi-nombre";
+  try {
+    const saved = localStorage.getItem(NOMBRE_KEY);
+    if (saved) ($("nombre-propio") as HTMLInputElement).value = saved;
+  } catch {}
+  function recordarNombre(n: string) {
+    try { localStorage.setItem(NOMBRE_KEY, n); } catch {}
+  }
+
   $("boton-crear").addEventListener("click", () => {
     const nombreInput = $("nombre-propio") as HTMLInputElement;
     const nombre = nombreInput.value.trim();
@@ -587,6 +600,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       return;
     }
     if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
+    recordarNombre(nombre);
     rol = "host"; rolPropio = "A";
     nombreA = nombre; nombreB = "";
     codigo = generarCodigo();
@@ -618,6 +632,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     }
     if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
     if (cod.length !== 4) { mostrarError(errEl, "Introduce un código de 4 letras."); return; }
+    recordarNombre(nombre);
     rol = "guest"; rolPropio = "B";
     nombreB = nombre;
     codigo = cod;
@@ -1051,7 +1066,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   }
 
   function iniciarVoz() {
-    if (!reco) { $("texto-voz").textContent = "⚠️ Sin voz — di la respuesta en voz alta"; return; }
+    if (!reco) { $("texto-voz").textContent = "⚠️ Tu navegador no reconoce voz — pulsa Pasar para saltar"; return; }
     reco.resetOffset();
     $("texto-voz").textContent = "🎤 Escuchando...";
   }
