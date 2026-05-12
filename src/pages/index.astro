@@ -141,51 +141,47 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         </div>
       </div>
 
-      <div class="max-w-md w-full">
-        <div class="floor-card p-5 space-y-4">
-          <!-- Nombres -->
-          <div class="grid grid-cols-2 gap-3">
-            <div>
-              <label class="font-titulo font-bold text-[#ff1dce] text-sm block mb-1 uppercase tracking-widest">Jugador 1</label>
-              <input id="nombre-a" type="text" placeholder="Jugador A" maxlength="20" class="floor-input floor-input-a py-2 text-base" />
-            </div>
-            <div>
-              <label class="font-titulo font-bold text-[#ffe100] text-sm block mb-1 uppercase tracking-widest">Jugador 2</label>
-              <input id="nombre-b" type="text" placeholder="Jugador B" maxlength="20" class="floor-input floor-input-b py-2 text-base" />
-            </div>
+      <div class="w-full max-w-sm flex flex-col items-center gap-6">
+        <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight">¿Quién juega?</h2>
+        <div class="w-full space-y-4">
+          <div>
+            <label class="font-titulo font-bold text-[#ff1dce] text-sm block mb-1 uppercase tracking-widest">Jugador 1</label>
+            <input id="nombre-a" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input floor-input-a py-3 text-lg" />
           </div>
-
-          <!-- Modo -->
-          <div class="flex gap-2">
-            <button id="modo-rapida" class="floor-btn flex-1 px-3 py-3 text-base font-titulo text-[#a8c5ff]" style="border-color:#a8c5ff">⚡ Rápida</button>
-            <button id="modo-tablero" class="floor-btn flex-1 px-3 py-3 text-base font-titulo text-[#a8c5ff]" style="border-color:#a8c5ff">🏁 Tablero</button>
+          <div>
+            <label class="font-titulo font-bold text-[#ffe100] text-sm block mb-1 uppercase tracking-widest">Jugador 2</label>
+            <input id="nombre-b" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input floor-input-b py-3 text-lg" />
           </div>
-
-          <!-- Selector de categoría -->
-          <div id="seccion-categoria" class="hidden">
-            <label class="font-titulo font-bold text-[#a8c5ff] text-sm block mb-2 uppercase tracking-widest">Categoría</label>
-            <div class="grid grid-cols-3 gap-2">
-              <button id="cat-cine" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🎬<br>Cine y Series</button>
-              <button id="cat-mundo" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🌍<br>El Mundo</button>
-              <button id="cat-deportes" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">⚽<br>Deportes</button>
-              <button id="cat-arte" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🎨<br>Arte</button>
-              <button id="cat-compras" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🛒<br>Compras</button>
-              <button id="cat-personas" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🧑<br>Personas</button>
-              <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2.5 text-base font-titulo leading-tight">🎲 Aleatorio</button>
-            </div>
-          </div>
-
-          <div id="nota-tablero" class="hidden floor-card-small px-4 py-3 border-[#ffcc0033]">
-            <p class="text-sm text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría</p>
-          </div>
-
-          <!-- Botón arrancar -->
-          <div class="flex gap-2 shrink-0">
-            <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-4 py-4">¡A jugar! →</button>
-          </div>
-          <p id="error-setup" class="hidden text-sm text-[#ff1dce] text-center font-bold"></p>
         </div>
+        <button id="boton-nombres-siguiente" class="floor-btn floor-btn-a w-full font-titulo font-bold text-xl px-4 py-4">Continuar →</button>
+        <p id="error-setup" class="hidden text-sm text-[#ff1dce] text-center font-bold"></p>
       </div>
+    </section>
+
+    <!-- ELEGIR MODO (entre bienvenida y nombres) -->
+    <section id="pantalla-modo" class="flex-1 flex flex-col items-center justify-center px-6 py-6 hidden gap-8">
+      <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight">¿Cómo jugáis?</h2>
+      <div class="w-full max-w-xs flex flex-col gap-4">
+        <button id="modo-rapida-elegir" class="floor-btn floor-btn-a w-full font-titulo font-bold text-2xl py-6 uppercase">⚡ Partida rápida</button>
+        <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">Un tema. Dura hasta que se acaba el tiempo de uno.</p>
+        <button id="modo-tablero-elegir" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-2xl py-6 uppercase">🏁 Tablero</button>
+        <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">9 casillas con temas sorpresa. Gana quien más conquiste.</p>
+      </div>
+    </section>
+
+    <!-- ELEGIR CATEGORÍA (solo para modo rápida) -->
+    <section id="pantalla-categoria" class="flex-1 flex flex-col items-center justify-center px-6 py-6 hidden gap-6">
+      <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight">Elige tema</h2>
+      <div class="w-full max-w-sm grid grid-cols-2 gap-3">
+        <button data-filtro="cine" class="floor-btn px-3 py-5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🎬<br>Cine y Series</button>
+        <button data-filtro="mundo" class="floor-btn px-3 py-5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🌍<br>El Mundo</button>
+        <button data-filtro="deportes" class="floor-btn px-3 py-5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">⚽<br>Deportes</button>
+        <button data-filtro="arte" class="floor-btn px-3 py-5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🎨<br>Arte</button>
+        <button data-filtro="compras" class="floor-btn px-3 py-5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🛒<br>Compras</button>
+        <button data-filtro="personas" class="floor-btn px-3 py-5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🧑<br>Personas</button>
+        <button data-filtro="aleatorio" class="floor-btn floor-btn-gold col-span-2 px-3 py-5 text-xl font-titulo font-bold">🎲 Aleatorio</button>
+      </div>
+      <p id="error-categoria" class="hidden text-sm text-[#ff1dce] text-center font-bold"></p>
     </section>
 
     <!-- LOADER -->
@@ -619,16 +615,18 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   const $ = (id: string) => document.getElementById(id)!;
 
   const pBienvenida = $("pantalla-bienvenida");
+  const pModo = $("pantalla-modo");
   const pSetup = $("pantalla-setup");
+  const pCategoria = $("pantalla-categoria");
   const pLoader = $("pantalla-loader");
   const pTablero = $("pantalla-tablero");
   const pJuego = $("pantalla-juego");
   const pFinal = $("pantalla-final");
 
   function mostrar(p: HTMLElement) {
-    [pBienvenida, pSetup, pLoader, pTablero, pJuego, pFinal].forEach((s) => s.classList.add("hidden"));
+    [pBienvenida, pModo, pSetup, pCategoria, pLoader, pTablero, pJuego, pFinal].forEach((s) => s.classList.add("hidden"));
     p.classList.remove("hidden");
-    // El botón "← Volver" solo es útil en pantallas profundas (no en bienvenida ni setup)
+    // El botón "← Volver" solo es útil cuando estás dentro del flujo
     const esSuperficial = p === pBienvenida;
     $("boton-volver").classList.toggle("invisible", esSuperficial);
   }
@@ -636,55 +634,40 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   // Ocultar el botón de volver en la pantalla inicial
   $("boton-volver").classList.add("invisible");
 
-  $("boton-jugar").addEventListener("click", () => mostrar(pSetup));
+  // Flujo: bienvenida → modo → nombres → (categoría si rápida) → juego
+  $("boton-jugar").addEventListener("click", () => mostrar(pModo));
   $("boton-menu").addEventListener("click", () => mostrar(pBienvenida));
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/el-suelo-sw.js").catch(() => {});
   }
 
-  // ── Modo de juego ────────────────────────────────────────────
+  // ── Modo de juego (paso 2: elegir Rápida o Tablero) ────────
   let modo: "rapida" | "tablero" = "rapida";
   let modoElegido = false;
 
-  $("modo-rapida").addEventListener("click", () => {
+  $("modo-rapida-elegir").addEventListener("click", () => {
     modo = "rapida"; modoElegido = true;
-    $("seccion-categoria").classList.remove("hidden");
-    $("nota-tablero").classList.add("hidden");
-    $("modo-rapida").classList.add("floor-btn-a");
-    $("modo-tablero").classList.remove("floor-btn-a");
+    mostrar(pSetup);
   });
-
-  $("modo-tablero").addEventListener("click", () => {
+  $("modo-tablero-elegir").addEventListener("click", () => {
     modo = "tablero"; modoElegido = true;
-    $("seccion-categoria").classList.add("hidden");
-    $("nota-tablero").classList.remove("hidden");
-    $("modo-tablero").classList.add("floor-btn-a");
-    $("modo-rapida").classList.remove("floor-btn-a");
+    mostrar(pSetup);
   });
 
-  // ── Filtro de categoría (Rápida) ─────────────────────────────
+  // ── Filtro de categoría (paso 4 para Rápida) ──────────────
   let categoriaFiltro: "cine" | "mundo" | "deportes" | "arte" | "compras" | "personas" | "aleatorio" = "aleatorio";
 
-  function seleccionarFiltro(filtro: "cine" | "mundo" | "deportes" | "arte" | "compras" | "personas" | "aleatorio") {
+  function arrancarConCategoria(filtro: typeof categoriaFiltro) {
     categoriaFiltro = filtro;
-    const btns = {
-      cine: $("cat-cine"), mundo: $("cat-mundo"), deportes: $("cat-deportes"),
-      arte: $("cat-arte"), compras: $("cat-compras"), personas: $("cat-personas"),
-      aleatorio: $("cat-aleatorio"),
-    };
-    for (const [k, btn] of Object.entries(btns)) {
-      btn.classList.toggle("floor-cat-selected", k === filtro);
-    }
+    iniciarPartidaRapida();
   }
 
-  $("cat-cine").addEventListener("click", () => seleccionarFiltro("cine"));
-  $("cat-mundo").addEventListener("click", () => seleccionarFiltro("mundo"));
-  $("cat-deportes").addEventListener("click", () => seleccionarFiltro("deportes"));
-  $("cat-arte").addEventListener("click", () => seleccionarFiltro("arte"));
-  $("cat-compras").addEventListener("click", () => seleccionarFiltro("compras"));
-  $("cat-personas").addEventListener("click", () => seleccionarFiltro("personas"));
-  $("cat-aleatorio").addEventListener("click", () => seleccionarFiltro("aleatorio"));
+  // Cada botón de categoría arranca directamente la partida
+  for (const btn of document.querySelectorAll<HTMLElement>('#pantalla-categoria [data-filtro]')) {
+    const filtro = btn.dataset.filtro as typeof categoriaFiltro;
+    btn.addEventListener("click", () => arrancarConCategoria(filtro));
+  }
 
   // ── Categoría ───────────────────────────────────────────────
   type CategoriaTipo = "otras" | "cine";
@@ -739,43 +722,57 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   } catch {}
 
   // ── Empezar ─────────────────────────────────────────────────
-  $("boton-empezar").addEventListener("click", async () => {
-    const nombreA = (($("nombre-a") as HTMLInputElement).value.trim()) || "Jugador A";
-    const nombreB = (($("nombre-b") as HTMLInputElement).value.trim()) || "Jugador B";
-    try { localStorage.setItem(NOMBRES_KEY, JSON.stringify({ a: nombreA, b: nombreB })); } catch {}
+  // Nombres guardados al pulsar "Continuar →"
+  let nombreAGuardado = "Jugador A";
+  let nombreBGuardado = "Jugador B";
+
+  function leerYValidarNombres(): boolean {
     const errEl = $("error-setup");
     errEl.classList.add("hidden");
+    nombreAGuardado = (($("nombre-a") as HTMLInputElement).value.trim()) || "Jugador A";
+    nombreBGuardado = (($("nombre-b") as HTMLInputElement).value.trim()) || "Jugador B";
+    try { localStorage.setItem(NOMBRES_KEY, JSON.stringify({ a: nombreAGuardado, b: nombreBGuardado })); } catch {}
+    return true;
+  }
 
-    if (!modoElegido) {
-      errEl.textContent = "Elige un modo primero."; errEl.classList.remove("hidden"); return;
+  // Paso 3: tras escribir los nombres, se avanza según el modo
+  $("boton-nombres-siguiente").addEventListener("click", async () => {
+    if (!leerYValidarNombres()) return;
+    if (modo === "tablero") {
+      await iniciarPartidaTablero();
+    } else {
+      mostrar(pCategoria);
     }
+  });
 
-    // Obtener lista publicada en runtime (caché 5 min) y construir pool
+  async function iniciarPartidaTablero() {
+    const errEl = $("error-setup");
+    errEl.classList.add("hidden");
     const pub = await cargarPublicadas();
     const pool = construirPool(pub);
+    if (pool.length === 0) {
+      errEl.textContent = "No hay categorías publicadas aún.";
+      errEl.classList.remove("hidden"); return;
+    }
+    if (pool.length < 9) {
+      if (!confirm(`Solo hay ${pool.length} categorías publicadas. Algunas se repetirán en el tablero. ¿Continuar?`)) return;
+    }
+    pararVoz();
+    initTablero(nombreAGuardado, nombreBGuardado, pool);
+    mostrar(pTablero);
+  }
 
-    // Filtrar pool según la selección de categoría (aplica a ambos modos)
+  async function iniciarPartidaRapida() {
+    const errEl = $("error-categoria");
+    errEl.classList.add("hidden");
+    const pub = await cargarPublicadas();
+    const pool = construirPool(pub);
     const esMundoSlug = (s: string) => mundoSlugsNombres[s] !== undefined && cineSlugsNombres[s] === undefined;
     const poolFiltrado = categoriaFiltro === "cine"
       ? pool.filter((s) => !esMundoSlug(s))
       : categoriaFiltro === "aleatorio"
       ? pool
       : pool.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
-
-    if (modo === "tablero") {
-      // Tablero ignora el filtro de categoría — usa todas las publicadas en aleatorio
-      if (pool.length === 0) {
-        errEl.textContent = "No hay categorías publicadas aún.";
-        errEl.classList.remove("hidden"); return;
-      }
-      if (pool.length < 9) {
-        if (!confirm(`Solo hay ${pool.length} categorías publicadas. Algunas se repetirán en el tablero. ¿Continuar?`)) return;
-      }
-      pararVoz();
-      initTablero(nombreA, nombreB, pool);
-      mostrar(pTablero);
-      return;
-    }
 
     if (poolFiltrado.length === 0) {
       const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
@@ -786,7 +783,6 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       return;
     }
 
-    // Auto-pick random subcategory
     const _slug = poolFiltrado[Math.floor(Math.random() * poolFiltrado.length)];
     const _esMundo = mundoSlugsNombres[_slug] !== undefined && cineSlugsNombres[_slug] === undefined;
     categoriaTipo = "cine";
@@ -802,48 +798,31 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
     try {
       let raw: ItemFloor[];
-
-      if (categoriaTipo === "cine") {
-        if (categoriaSlugsParaMezcla) {
-          raw = await cargarMezclaCine(categoriaSlugsParaMezcla);
-        } else if (categoriaDataPath === "mundo") {
-          raw = await cargarCatalogoMundo(categoriaSlug);
-        } else {
-          const derivado = cineSlugsDerivados[categoriaSlug];
-          raw = derivado
-            ? await cargarCatalogoCinePeli(categoriaSlug, derivado.baseSlug)
-            : await cargarCatalogoCine(categoriaSlug);
-        }
-        categoriaActual = categoriaNombre;
-        $("juego-cat-label").textContent = _esMundo ? `🌍 El Mundo · ${categoriaNombre}` : `🎬 ${categoriaNombre}`;
+      if (categoriaSlugsParaMezcla) {
+        raw = await cargarMezclaCine(categoriaSlugsParaMezcla);
+      } else if (categoriaDataPath === "mundo") {
+        raw = await cargarCatalogoMundo(categoriaSlug);
       } else {
-        const cat = todasCatsOtras.find((c) => c.slug === categoriaSlug)!;
-        categoriaActual = cat.nombre;
-        if (cat.itemsHardcoded) {
-          raw = [...cat.itemsHardcoded];
-        } else {
-          raw = await generarFloorPredefinida(
-            cat.slug, cat.nombres!, cat.ocupacionesWikidata,
-            cat.instanciasWikidata, cat.descripcionWikidata, cat.apiEspecializada,
-          );
-        }
+        const derivado = cineSlugsDerivados[categoriaSlug];
+        raw = derivado
+          ? await cargarCatalogoCinePeli(categoriaSlug, derivado.baseSlug)
+          : await cargarCatalogoCine(categoriaSlug);
       }
+      categoriaActual = categoriaNombre;
+      $("juego-cat-label").textContent = _esMundo ? `🌍 El Mundo · ${categoriaNombre}` : `🎬 ${categoriaNombre}`;
 
       items = [...raw].sort(() => Math.random() - 0.5);
-
       jug = {
-        A: { nombre: nombreA, decimas: 450 },
-        B: { nombre: nombreB, decimas: 450 },
+        A: { nombre: nombreAGuardado, decimas: 450 },
+        B: { nombre: nombreBGuardado, decimas: 450 },
       };
       indice = 0;
       turno = "A";
       terminado = false;
-
-      $("nombre-a-display").textContent = nombreA;
-      $("nombre-b-display").textContent = nombreB;
-      $("final-nombre-a").textContent = nombreA;
-      $("final-nombre-b").textContent = nombreB;
-
+      $("nombre-a-display").textContent = nombreAGuardado;
+      $("nombre-b-display").textContent = nombreBGuardado;
+      $("final-nombre-a").textContent = nombreAGuardado;
+      $("final-nombre-b").textContent = nombreBGuardado;
       mostrar(pJuego);
       iniciarTurno();
     } catch (e) {
@@ -851,9 +830,9 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       const msg = e instanceof Error ? e.message : "Error";
       errEl.textContent = `No se pudo cargar: ${msg}`;
       errEl.classList.remove("hidden");
-      mostrar(pSetup);
+      mostrar(pCategoria);
     }
-  });
+  }
 
   // ── Tablero ──────────────────────────────────────────────────
   function initTablero(nombreA: string, nombreB: string, poolCine: string[]) {
@@ -1273,27 +1252,25 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   $("boton-pasar").addEventListener("click", registrarPase);
 
-  $("boton-revancha").addEventListener("click", () => {
+  $("boton-revancha").addEventListener("click", async () => {
+    pararVoz();
     if (modo === "tablero") {
-      pararVoz();
-      initTablero(jug.A.nombre, jug.B.nombre);
-      mostrar(pTablero);
+      await iniciarPartidaTablero();
     } else {
-      pararVoz();
-      mostrar(pSetup);
+      await iniciarPartidaRapida();
     }
   });
 
   $("boton-volver").addEventListener("click", () => {
-    if (!pBienvenida.classList.contains("hidden")) {
-      // ya en bienvenida
-    } else if (!pSetup.classList.contains("hidden")) {
-      mostrar(pBienvenida);
-    } else {
-      pararVoz();
-      pararTimer();
-      mostrar(pSetup);
-    }
+    // Navegación hacia atrás respetando el orden del flujo
+    if (!pBienvenida.classList.contains("hidden")) return;
+    if (!pModo.classList.contains("hidden")) { mostrar(pBienvenida); return; }
+    if (!pSetup.classList.contains("hidden")) { mostrar(pModo); return; }
+    if (!pCategoria.classList.contains("hidden")) { mostrar(pSetup); return; }
+    // Desde loader/tablero/juego/final → volver al menú
+    pararVoz();
+    pararTimer();
+    mostrar(pBienvenida);
   });
 
   function lanzarConfeti() {
