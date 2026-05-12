@@ -266,6 +266,19 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       </div>
     </section>
 
+    <!-- MODAL CONFIRMAR SALIDA -->
+    <div id="modal-salir" class="hidden fixed inset-0 z-50 flex items-center justify-center px-6" style="background:rgba(5,12,30,0.94)">
+      <div class="floor-card max-w-xs w-full p-5 text-center">
+        <div class="text-4xl mb-2">⚠️</div>
+        <h3 class="font-titulo font-bold text-lg text-[#ffcc00] uppercase tracking-wide mb-2">¿Salir de la sala?</h3>
+        <p class="font-titulo text-sm text-[#e8e8ff] mb-4 leading-relaxed">Perderás el código y se desconectará al otro jugador.</p>
+        <div class="flex gap-2">
+          <button id="salir-cancelar" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-sm px-4 py-2 flex-1">No, seguir</button>
+          <button id="salir-confirmar" class="floor-btn floor-btn-a font-titulo font-bold text-sm px-4 py-2 flex-1">Sí, salir</button>
+        </div>
+      </div>
+    </div>
+
     <!-- CHAT FLOATING -->
     <button id="chat-flot" class="hidden fixed bottom-4 right-4 z-30 w-12 h-12 rounded-full flex items-center justify-center text-2xl floor-btn floor-btn-gold">
       💬
@@ -727,6 +740,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       mostrar(pLoader);
     } else if (e.fase === "juego") {
       bloqueado = false; terminado = false;
+      $("preduel-overlay").classList.add("hidden");
       $("nombre-a-display").textContent = nombreA;
       $("nombre-b-display").textContent = nombreB;
       $("juego-categoria-label").textContent = categoriaActual;
@@ -761,6 +775,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     } else if (e.fase === "tablero") {
       pararVoz();
       stopRenderLoop();
+      $("preduel-overlay").classList.add("hidden");
+      $("overlay-acierto").classList.add("hidden");
+      $("overlay-pase").classList.add("hidden");
       renderTableroSync();
       mostrar(pTablero);
     } else if (e.fase === "preduel") {
@@ -773,6 +790,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       mostrar(pTablero);
     } else if (e.fase === "final") {
       pararVoz(); stopRenderLoop();
+      $("preduel-overlay").classList.add("hidden");
+      $("overlay-acierto").classList.add("hidden");
+      $("overlay-pase").classList.add("hidden");
       $("texto-ganador").textContent = e.ganadorTexto ?? "";
       $("final-nombre-a").textContent = nombreA;
       $("final-nombre-b").textContent = nombreB;
@@ -1275,6 +1295,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     if (countA + countB === 9) { terminarTablero(countA, countB); return; }
     stopRenderLoop(); decimasA = 450; decimasB = 450;
     sync({ fase: "tablero", nombreA, nombreB, modo, casillas: casillasSync, casillaDuelo, tableroAtacante });
+    // Asegurar que ningún overlay queda colgado al volver al tablero
+    $("preduel-overlay").classList.add("hidden");
+    $("overlay-acierto").classList.add("hidden");
+    $("overlay-pase").classList.add("hidden");
     renderTableroSync();
     mostrar(pTablero);
   }
@@ -1297,20 +1321,61 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   }
 
   // ── Navegación ─────────────────────────────────────────────
-  $("boton-volver").addEventListener("click", () => {
+  function pedirConfirmacionSalir(titulo: string, mensaje: string, textoOk: string): Promise<boolean> {
+    return new Promise((resolve) => {
+      const modal = $("modal-salir");
+      modal.querySelector("h3")!.textContent = titulo;
+      modal.querySelector("p")!.textContent = mensaje;
+      $("salir-confirmar").textContent = textoOk;
+      modal.classList.remove("hidden");
+      const ok = () => { cleanup(); resolve(true); };
+      const no = () => { cleanup(); resolve(false); };
+      const cleanup = () => {
+        modal.classList.add("hidden");
+        $("salir-confirmar").removeEventListener("click", ok);
+        $("salir-cancelar").removeEventListener("click", no);
+      };
+      $("salir-confirmar").addEventListener("click", ok);
+      $("salir-cancelar").addEventListener("click", no);
+    });
+  }
+
+  $("boton-volver").addEventListener("click", async () => {
+    // Desde la pantalla de entrada (sin conexión activa), salimos directos
+    if (!pEntrada.classList.contains("hidden")) {
+      pararVoz(); stopRenderLoop();
+      if (gameTimeout) clearTimeout(gameTimeout);
+      window.location.href = "/";
+      return;
+    }
+    // Durante una partida activa (tablero o juego), volver al lobby con confirmación
+    if (!pTablero.classList.contains("hidden") || !pJuego.classList.contains("hidden")) {
+      const ok = await pedirConfirmacionSalir(
+        "¿Volver al lobby?",
+        "La partida actual se cancelará. Podréis empezar otra desde el lobby.",
+        "Sí, al lobby",
+      );
+      if (!ok) return;
+      pararVoz(); stopRenderLoop();
+      if (gameTimeout) clearTimeout(gameTimeout);
+      $("preduel-overlay").classList.add("hidden");
+      $("overlay-acierto").classList.add("hidden");
+      $("overlay-pase").classList.add("hidden");
+      // El host avisa al guest de que vuelven al lobby
+      if (rol === "host") sync({ fase: "sala", nombreA, nombreB, modo });
+      mostrar(pSala);
+      return;
+    }
+    // Desde sala/setup/loader/final: salir de la sala por completo
+    const ok = await pedirConfirmacionSalir(
+      "¿Salir de la sala?",
+      "Perderás el código y se desconectará al otro jugador.",
+      "Sí, salir",
+    );
+    if (!ok) return;
     pararVoz(); stopRenderLoop();
     if (gameTimeout) clearTimeout(gameTimeout);
-    if (!pEntrada.classList.contains("hidden")) {
-      window.location.href = "/";
-      return;
-    }
-    if (!pSala.classList.contains("hidden")) {
-      if (!confirm("¿Salir de la sala? Perderás el código y la conexión con el otro jugador.")) return;
-      window.location.href = "/";
-      return;
-    }
-    // Desde cualquier otra pantalla, volvemos al lobby manteniendo la conexión
-    mostrar(pSala);
+    window.location.href = "/";
   });
 
   $("boton-revancha").addEventListener("click", () => {
