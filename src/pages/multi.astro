@@ -72,8 +72,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   <div id="datos-mundo-grupo" data-json={JSON.stringify(mundoSlugsGrupo)} class="hidden"></div>
   <div id="datos-mundo-emoji" data-json={JSON.stringify(mundoSlugsEmoji)} class="hidden"></div>
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
-    <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
-      <button id="boton-volver" class="font-titulo text-base font-bold text-[#7b9ef5] hover:text-[#e8e8ff] transition">← Volver</button>
+    <nav class="px-4 pb-3 flex items-center border-b-2 border-[#2a5090] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
+      <button id="boton-volver" class="font-titulo text-lg font-bold text-[#a8c5ff] hover:text-[#e8e8ff] transition py-1 px-2">← Volver</button>
     </nav>
 
     <!-- ENTRADA -->
@@ -98,10 +98,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           <span class="text-[#a8c5ff] font-titulo text-xs uppercase tracking-widest">o únete</span>
           <div class="flex-1 h-px bg-[#163575]"></div>
         </div>
-        <div class="flex gap-2">
+        <div class="flex gap-2 items-stretch">
           <input id="codigo-sala" type="text" placeholder="Código" maxlength="4"
-            class="floor-input text-center text-xl uppercase tracking-widest font-bold w-32" autocomplete="off" />
-          <button id="boton-unirse" class="floor-btn floor-btn-gold flex-1 font-titulo font-bold text-lg py-3">Unirse</button>
+            class="floor-input text-center text-xl uppercase tracking-widest font-bold flex-1" autocomplete="off" />
+          <button id="boton-unirse" class="floor-btn floor-btn-gold font-titulo font-bold text-base px-5">Unirse</button>
         </div>
         <p id="error-entrada" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
       </div>
@@ -128,7 +128,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     </section>
 
     <!-- SETUP (host) -->
-    <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-5 hidden">
+    <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-5 hidden flex flex-col items-center justify-center">
       <div class="max-w-md w-full mx-auto">
         <div class="floor-card p-5 space-y-5">
           <div>
@@ -310,7 +310,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 <style>
   #floor-root {
     --a: #ff1dce; --b: #ffe100; --gold: #f5c518; --bg: #050c1e;
-    --card: #091728; --border: #163575; --text: #e8f0ff; --dim: #2a5090;
+    --card: #091728; --border: #2a5090; --text: #e8f0ff; --dim: #7b9ef5;
     --ok: #00ff88; --font-titulo: 'Barlow Condensed', sans-serif;
     background: var(--bg);
     background-image: linear-gradient(rgba(30,80,200,.15) 1px,transparent 1px),linear-gradient(90deg,rgba(30,80,200,.15) 1px,transparent 1px);
@@ -322,9 +322,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   .neon-b { color: var(--b); text-shadow: 0 0 20px var(--b); }
   .neon-gold { color: var(--gold); text-shadow: 0 0 15px var(--gold); }
   .floor-btn { background:transparent;border:2px solid currentColor;border-radius:4px;font-weight:700;transition:all .15s;letter-spacing:.08em;text-transform:uppercase; }
-  .floor-btn-a { color:var(--a);box-shadow:0 0 12px color-mix(in srgb,var(--a) 50%,transparent); }
+  .floor-btn-a { color:var(--a)!important;border-color:var(--a)!important;box-shadow:0 0 12px color-mix(in srgb,var(--a) 50%,transparent); }
   .floor-btn-a:hover { background:color-mix(in srgb,var(--a) 15%,transparent); }
-  .floor-btn-gold { color:var(--gold);box-shadow:0 0 12px color-mix(in srgb,var(--gold) 50%,transparent); }
+  .floor-btn-gold { color:var(--gold)!important;border-color:var(--gold)!important;box-shadow:0 0 12px color-mix(in srgb,var(--gold) 50%,transparent); }
   .floor-btn-gold:hover { background:color-mix(in srgb,var(--gold) 15%,transparent); }
   .floor-input { background:#050e20;border:2px solid var(--border);border-radius:4px;color:var(--text);padding:8px 16px;width:100%;outline:none;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.04em;transition:border-color .2s; }
   .floor-input::placeholder { color:var(--dim); }
@@ -651,6 +651,17 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     try { localStorage.setItem(NOMBRE_KEY, n); } catch {}
   }
 
+  // Si el link viene con ?codigo=XXXX (compartido por whatsapp), precargar el código
+  try {
+    const params = new URLSearchParams(location.search);
+    const codigoUrl = (params.get("codigo") || "").trim().toUpperCase().slice(0, 4);
+    if (codigoUrl && /^[A-Z0-9]{4}$/.test(codigoUrl)) {
+      ($("codigo-sala") as HTMLInputElement).value = codigoUrl;
+      // Foco automático en el campo nombre para que solo tenga que escribir su nombre
+      setTimeout(() => ($("nombre-propio") as HTMLInputElement).focus(), 100);
+    }
+  } catch {}
+
   $("boton-crear").addEventListener("click", () => {
     const nombreInput = $("nombre-propio") as HTMLInputElement;
     const nombre = nombreInput.value.trim();
@@ -860,13 +871,13 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
   // ── Setup (host) ───────────────────────────────────────────
   $("boton-compartir").addEventListener("click", async () => {
-    const texto = `¡Únete a mi sala en El Suelo! Código: ${codigo}`;
-    const url = location.origin + "/multi";
+    const url = `${location.origin}/multi?codigo=${codigo}`;
+    const texto = `¡Únete a mi sala en El Suelo! Pincha y entras directo.`;
     try {
       if (navigator.share) {
         await navigator.share({ title: "El Suelo — 2 Móviles", text: texto, url });
       } else {
-        await navigator.clipboard.writeText(`${texto}\n${url}`);
+        await navigator.clipboard.writeText(`${texto} ${url}`);
         $("sala-info").textContent = "¡Enlace copiado! ✓";
       }
     } catch {}
@@ -1413,12 +1424,12 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       window.location.href = "/";
       return;
     }
-    // Durante una partida activa (tablero o juego), volver al lobby con confirmación
+    // Durante una partida activa (tablero o juego), volver al menú con confirmación
     if (!pTablero.classList.contains("hidden") || !pJuego.classList.contains("hidden")) {
       const ok = await pedirConfirmacionSalir(
-        "¿Volver al lobby?",
-        "La partida actual se cancelará. Podréis empezar otra desde el lobby.",
-        "Sí, al lobby",
+        "¿Volver al menú?",
+        "La partida actual se cancelará. Podréis empezar otra desde el menú.",
+        "Sí, al menú",
       );
       if (!ok) return;
       pararVoz(); stopRenderLoop();
@@ -1426,7 +1437,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       $("preduel-overlay").classList.add("hidden");
       $("overlay-acierto").classList.add("hidden");
       $("overlay-pase").classList.add("hidden");
-      // El host avisa al guest de que vuelven al lobby
+      // El host avisa al guest de que vuelven al menú
       if (rol === "host") sync({ fase: "sala", nombreA, nombreB, modo });
       mostrar(pSala);
       return;

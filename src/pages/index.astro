@@ -98,17 +98,15 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   <div id="datos-mundo-emoji" data-json={JSON.stringify(mundoSlugsEmoji)} class="hidden"></div>
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
-    <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
-      <button id="boton-volver" class="font-titulo text-base font-bold text-[#7b9ef5] hover:text-[#e8e8ff] transition">
+    <nav class="px-4 pb-3 flex items-center border-b-2 border-[#2a5090]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
+      <button id="boton-volver" class="font-titulo text-lg font-bold text-[#a8c5ff] hover:text-[#e8e8ff] transition py-1 px-2">
         ← Volver
       </button>
-      <button id="boton-ajustes" class="ml-auto font-titulo text-2xl text-[#7b9ef5] hover:text-[#ffcc00] transition" title="Ajustes">⚙️</button>
+      <button id="boton-ajustes" class="ml-auto font-titulo text-3xl text-[#a8c5ff] hover:text-[#ffcc00] transition py-1 px-2" title="Ajustes">⚙️</button>
     </nav>
 
     <!-- BIENVENIDA -->
-    <section id="pantalla-bienvenida" class="flex-1 flex flex-col items-center justify-between px-6 py-10 overflow-y-auto">
-      <div class="flex-1"></div>
-
+    <section id="pantalla-bienvenida" class="flex-1 flex flex-col items-center justify-center px-6 py-6 overflow-y-auto gap-8">
       <div class="text-center">
         <div class="inline-block relative px-12 py-4 mb-4">
           <span class="floor-corner floor-corner-tl"></span>
@@ -120,8 +118,6 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         <p class="text-[#a8c5ff] font-titulo text-lg mt-2">Adivina más rápido que el rival. Gana al reloj.</p>
       </div>
 
-      <div class="flex-1"></div>
-
       <div class="w-full max-w-xs flex flex-col items-center gap-4">
         <button id="boton-jugar" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-3xl py-6 tracking-widest uppercase">
           ¡Jugar!
@@ -131,8 +127,6 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
           📱 2 Móviles
         </a>
       </div>
-
-      <div class="pb-4"></div>
     </section>
 
     <!-- SETUP -->
@@ -408,9 +402,9 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     --gold: #f5c518;
     --bg: #050c1e;
     --card: #091728;
-    --border: #163575;
+    --border: #2a5090;
     --text: #e8f0ff;
-    --dim: #2a5090;
+    --dim: #7b9ef5;
     --ok: #00ff88;
     --font-titulo: 'Barlow Condensed', sans-serif;
     background: var(--bg);
@@ -459,11 +453,11 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
-  .floor-btn-a { color: var(--a); box-shadow: 0 0 12px color-mix(in srgb, var(--a) 50%, transparent); }
+  .floor-btn-a { color: var(--a) !important; border-color: var(--a) !important; box-shadow: 0 0 12px color-mix(in srgb, var(--a) 50%, transparent); }
   .floor-btn-a:hover { background: color-mix(in srgb, var(--a) 15%, transparent); box-shadow: 0 0 24px var(--a); }
   .floor-btn-b { color: var(--b); box-shadow: 0 0 12px color-mix(in srgb, var(--b) 50%, transparent); }
   .floor-btn-b:hover { background: color-mix(in srgb, var(--b) 15%, transparent); box-shadow: 0 0 24px var(--b); }
-  .floor-btn-gold { color: var(--gold); box-shadow: 0 0 12px color-mix(in srgb, var(--gold) 50%, transparent); }
+  .floor-btn-gold { color: var(--gold) !important; border-color: var(--gold) !important; box-shadow: 0 0 12px color-mix(in srgb, var(--gold) 50%, transparent); }
   .floor-btn-gold:hover { background: color-mix(in srgb, var(--gold) 15%, transparent); }
   .floor-btn-ok { color: var(--ok); box-shadow: 0 0 12px color-mix(in srgb, var(--ok) 50%, transparent); }
   .floor-btn-ok:hover { background: color-mix(in srgb, var(--ok) 15%, transparent); }
@@ -1122,7 +1116,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   function iniciarTurno() {
     // Si es la primera vez que entra a un duelo, mostrar tutorial corto y pausar
     const tutorialDuelEl = document.getElementById("tutorial-duelo")!;
-    if (!localStorage.getItem("el-suelo:tutorial-duelo-v1") && tutorialDuelEl.classList.contains("hidden")) {
+    if (!localStorage.getItem("el-suelo:tutorial-duelo-v2") && tutorialDuelEl.classList.contains("hidden")) {
       tutorialDuelEl.classList.remove("hidden");
       return;
     }
@@ -1411,14 +1405,14 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   document.getElementById("ajustes-tutorial")!.addEventListener("click", () => {
     try {
       localStorage.removeItem("el-suelo:tutorial-visto-v3");
-      localStorage.removeItem("el-suelo:tutorial-duelo-v1");
+      localStorage.removeItem("el-suelo:tutorial-duelo-v2");
     } catch {}
     document.getElementById("modal-ajustes")!.classList.add("hidden");
     document.getElementById("tutorial-overlay")!.classList.remove("hidden");
   });
 
   // ── Tutorial del duelo (primera vez que se entra a la pantalla de juego) ──
-  const TUTORIAL_DUELO_KEY = "el-suelo:tutorial-duelo-v1";
+  const TUTORIAL_DUELO_KEY = "el-suelo:tutorial-duelo-v2";
   const tutorialDuelo = document.getElementById("tutorial-duelo")!;
   document.getElementById("tutorial-duelo-ok")!.addEventListener("click", () => {
     localStorage.setItem(TUTORIAL_DUELO_KEY, "1");
