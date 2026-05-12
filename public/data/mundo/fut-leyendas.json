@@ -122,5 +122,153 @@
   {
     "nombre": "Gareth Bale",
     "imagen": "https://assets.goal.com/images/v3/blt6d875304b8721f1f/f28815e855b25d0a571951f479599443f4d60330.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+  },
+  {
+    "nombre": "Diego Armando Maradona",
+    "imagen": ""
+  },
+  {
+    "nombre": "Romário",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rivaldo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cafú",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gerd Müller",
+    "imagen": ""
+  },
+  {
+    "nombre": "Eusébio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marco van Basten",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ruud Gullit",
+    "imagen": ""
+  },
+  {
+    "nombre": "Franco Baresi",
+    "imagen": ""
+  },
+  {
+    "nombre": "Paolo Maldini",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alessandro Del Piero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gianluigi Buffon",
+    "imagen": ""
+  },
+  {
+    "nombre": "Fabio Cannavaro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Andrea Pirlo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Francesco Totti",
+    "imagen": ""
+  },
+  {
+    "nombre": "Filippo Inzaghi",
+    "imagen": ""
+  },
+  {
+    "nombre": "Roberto Baggio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Raúl González",
+    "imagen": ""
+  },
+  {
+    "nombre": "Luis Aragonés",
+    "imagen": ""
+  },
+  {
+    "nombre": "Luis Suárez",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edinson Cavani",
+    "imagen": ""
+  },
+  {
+    "nombre": "Diego Forlán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Eric Cantona",
+    "imagen": ""
+  },
+  {
+    "nombre": "Steven Gerrard",
+    "imagen": ""
+  },
+  {
+    "nombre": "Frank Lampard",
+    "imagen": ""
+  },
+  {
+    "nombre": "Paul Scholes",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ryan Giggs",
+    "imagen": ""
+  },
+  {
+    "nombre": "Michael Owen",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alan Shearer",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dennis Bergkamp",
+    "imagen": ""
+  },
+  {
+    "nombre": "Patrick Vieira",
+    "imagen": ""
+  },
+  {
+    "nombre": "Robert Pirès",
+    "imagen": ""
+  },
+  {
+    "nombre": "Didier Drogba",
+    "imagen": ""
+  },
+  {
+    "nombre": "Samuel Eto'o",
+    "imagen": ""
+  },
+  {
+    "nombre": "George Weah",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bobby Charlton",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hugo Sánchez",
+    "imagen": ""
   }
 ]

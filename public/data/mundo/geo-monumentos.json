@@ -118,5 +118,141 @@
   {
     "nombre": "Templo de Karnak",
     "imagen": "https://www.guiassinia.com/wp-content/uploads/2024/10/templo-de-karnak-guias-sin-ia.jpg"
+  },
+  {
+    "nombre": "Coliseo de Roma",
+    "imagen": ""
+  },
+  {
+    "nombre": "Acrópolis",
+    "imagen": ""
+  },
+  {
+    "nombre": "Partenón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Templo Angkor Wat",
+    "imagen": ""
+  },
+  {
+    "nombre": "Acueducto de Segovia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alhambra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mezquita de Córdoba",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sacré Coeur",
+    "imagen": ""
+  },
+  {
+    "nombre": "Arco del Triunfo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Catedral de Colonia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mont Saint-Michel",
+    "imagen": ""
+  },
+  {
+    "nombre": "Atomium",
+    "imagen": ""
+  },
+  {
+    "nombre": "Manneken Pis",
+    "imagen": ""
+  },
+  {
+    "nombre": "Puerta de Brandeburgo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Catedral de San Basilio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kremlin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ciudad Prohibida",
+    "imagen": ""
+  },
+  {
+    "nombre": "Burj Khalifa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mezquita Azul",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hagia Sofia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Empire State Building",
+    "imagen": ""
+  },
+  {
+    "nombre": "Chrysler Building",
+    "imagen": ""
+  },
+  {
+    "nombre": "Golden Gate",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cataratas del Niágara",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mount Rushmore",
+    "imagen": ""
+  },
+  {
+    "nombre": "Times Square",
+    "imagen": ""
+  },
+  {
+    "nombre": "Brooklyn Bridge",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tower Bridge",
+    "imagen": ""
+  },
+  {
+    "nombre": "Castillo de Edimburgo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Castillo de Praga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Puente Carlos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Westminster",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casa Blanca",
+    "imagen": ""
+  },
+  {
+    "nombre": "Capitolio de Washington",
+    "imagen": ""
   }
 ]

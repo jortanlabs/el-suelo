@@ -78,5 +78,141 @@
   {
     "nombre": "Aro",
     "imagen": "https://www.stadior.com/1052052-home_default/aro-baloncesto-reforzado.jpg"
+  },
+  {
+    "nombre": "Robo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Falta antideportiva",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bandeja",
+    "imagen": ""
+  },
+  {
+    "nombre": "Suspensión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pivote",
+    "imagen": ""
+  },
+  {
+    "nombre": "Escolta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ala-pívot",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bloqueo directo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Isolación",
+    "imagen": ""
+  },
+  {
+    "nombre": "Doble equipo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Defensa zonal",
+    "imagen": ""
+  },
+  {
+    "nombre": "Defensa individual",
+    "imagen": ""
+  },
+  {
+    "nombre": "Contraataque",
+    "imagen": ""
+  },
+  {
+    "nombre": "Posesión",
+    "imagen": ""
+  },
+  {
+    "nombre": "24 segundos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pasos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dobles",
+    "imagen": ""
+  },
+  {
+    "nombre": "Campo atrás",
+    "imagen": ""
+  },
+  {
+    "nombre": "3 segundos",
+    "imagen": ""
+  },
+  {
+    "nombre": "5 segundos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sustitución",
+    "imagen": ""
+  },
+  {
+    "nombre": "NBA",
+    "imagen": ""
+  },
+  {
+    "nombre": "ACB",
+    "imagen": ""
+  },
+  {
+    "nombre": "Euroliga",
+    "imagen": ""
+  },
+  {
+    "nombre": "FIBA",
+    "imagen": ""
+  },
+  {
+    "nombre": "Olimpiadas",
+    "imagen": ""
+  },
+  {
+    "nombre": "MVP",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rookie",
+    "imagen": ""
+  },
+  {
+    "nombre": "Finales",
+    "imagen": ""
+  },
+  {
+    "nombre": "Playoffs",
+    "imagen": ""
+  },
+  {
+    "nombre": "Draft",
+    "imagen": ""
+  },
+  {
+    "nombre": "All-Star",
+    "imagen": ""
+  },
+  {
+    "nombre": "Concurso de Mates",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cesta",
+    "imagen": ""
   }
 ]

@@ -110,5 +110,157 @@
   {
     "nombre": "RB Leipzig",
     "imagen": "https://estaticosgn-cdn.deia.eus/clip/099fe710-6f89-43a8-935f-574c708046c5_16-9-aspect-ratio_default_0.jpg"
+  },
+  {
+    "nombre": "Newcastle United",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aston Villa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Everton FC",
+    "imagen": ""
+  },
+  {
+    "nombre": "West Ham United",
+    "imagen": ""
+  },
+  {
+    "nombre": "Leicester City",
+    "imagen": ""
+  },
+  {
+    "nombre": "Eintracht Frankfurt",
+    "imagen": ""
+  },
+  {
+    "nombre": "VfL Wolfsburg",
+    "imagen": ""
+  },
+  {
+    "nombre": "Schalke 04",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hertha Berlin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Werder Bremen",
+    "imagen": ""
+  },
+  {
+    "nombre": "Borussia Mönchengladbach",
+    "imagen": ""
+  },
+  {
+    "nombre": "VfB Stuttgart",
+    "imagen": ""
+  },
+  {
+    "nombre": "Union Berlin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lazio",
+    "imagen": ""
+  },
+  {
+    "nombre": "SSC Napoli",
+    "imagen": ""
+  },
+  {
+    "nombre": "Fiorentina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Atalanta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Torino",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bolonia",
+    "imagen": ""
+  },
+  {
+    "nombre": "AS Monaco",
+    "imagen": ""
+  },
+  {
+    "nombre": "LOSC Lille",
+    "imagen": ""
+  },
+  {
+    "nombre": "OGC Niza",
+    "imagen": ""
+  },
+  {
+    "nombre": "Stade Rennais",
+    "imagen": ""
+  },
+  {
+    "nombre": "PSV Eindhoven",
+    "imagen": ""
+  },
+  {
+    "nombre": "FC Porto",
+    "imagen": ""
+  },
+  {
+    "nombre": "SL Benfica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Beşiktaş",
+    "imagen": ""
+  },
+  {
+    "nombre": "Olympiacos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Panathinaikos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Club Brujas",
+    "imagen": ""
+  },
+  {
+    "nombre": "FC Basilea",
+    "imagen": ""
+  },
+  {
+    "nombre": "Salzburgo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sparta Praga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Slavia Praga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Estrella Roja",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dinamo Zagreb",
+    "imagen": ""
+  },
+  {
+    "nombre": "Shakhtar Donetsk",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dinamo de Kiev",
+    "imagen": ""
   }
 ]

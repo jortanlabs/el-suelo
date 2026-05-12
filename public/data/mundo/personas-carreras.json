@@ -86,5 +86,165 @@
   {
     "nombre": "Turismo",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKrTMPAfqZW3c21gJWJSeIVY5HoRyfq605CA&s"
+  },
+  {
+    "nombre": "Ingeniería Industrial",
+    "imagen": ""
+  },
+  {
+    "nombre": "Educación",
+    "imagen": ""
+  },
+  {
+    "nombre": "Antropología",
+    "imagen": ""
+  },
+  {
+    "nombre": "Arqueología",
+    "imagen": ""
+  },
+  {
+    "nombre": "Geografía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Geología",
+    "imagen": ""
+  },
+  {
+    "nombre": "Biotecnología",
+    "imagen": ""
+  },
+  {
+    "nombre": "ADE",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marketing",
+    "imagen": ""
+  },
+  {
+    "nombre": "Publicidad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Relaciones Públicas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Comunicación Audiovisual",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cine",
+    "imagen": ""
+  },
+  {
+    "nombre": "Diseño Gráfico",
+    "imagen": ""
+  },
+  {
+    "nombre": "Diseño de Interiores",
+    "imagen": ""
+  },
+  {
+    "nombre": "Música",
+    "imagen": ""
+  },
+  {
+    "nombre": "Danza",
+    "imagen": ""
+  },
+  {
+    "nombre": "Logopedia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Fisioterapia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nutrición y Dietética",
+    "imagen": ""
+  },
+  {
+    "nombre": "Podología",
+    "imagen": ""
+  },
+  {
+    "nombre": "Óptica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Trabajo Social",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pedagogía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Educación Infantil",
+    "imagen": ""
+  },
+  {
+    "nombre": "Educación Primaria",
+    "imagen": ""
+  },
+  {
+    "nombre": "Filología Hispánica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Filología Inglesa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Traducción e Interpretación",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería Informática",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería Mecánica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería Civil",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería Aeronáutica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería Naval",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería Eléctrica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería de Telecomunicaciones",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería Química",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ingeniería Biomédica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Estadística",
+    "imagen": ""
+  },
+  {
+    "nombre": "Criminología",
+    "imagen": ""
   }
 ]

@@ -102,5 +102,129 @@
   {
     "nombre": "Escocia",
     "imagen": "https://www.shutterstock.com/image-illustration/scotland-national-football-team-logo-260nw-2399412729.jpg"
+  },
+  {
+    "nombre": "Suecia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Noruega",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hungría",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rumanía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Grecia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Turquía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rusia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ucrania",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gales",
+    "imagen": ""
+  },
+  {
+    "nombre": "Irlanda",
+    "imagen": ""
+  },
+  {
+    "nombre": "Chile",
+    "imagen": ""
+  },
+  {
+    "nombre": "Perú",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ecuador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Paraguay",
+    "imagen": ""
+  },
+  {
+    "nombre": "Venezuela",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bolivia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Canadá",
+    "imagen": ""
+  },
+  {
+    "nombre": "Costa Rica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Honduras",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jamaica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Australia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Arabia Saudí",
+    "imagen": ""
+  },
+  {
+    "nombre": "Irán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Catar",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nigeria",
+    "imagen": ""
+  },
+  {
+    "nombre": "Camerún",
+    "imagen": ""
+  },
+  {
+    "nombre": "Costa de Marfil",
+    "imagen": ""
+  },
+  {
+    "nombre": "Egipto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sudáfrica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Túnez",
+    "imagen": ""
+  },
+  {
+    "nombre": "Argelia",
+    "imagen": ""
   }
 ]

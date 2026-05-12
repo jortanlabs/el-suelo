@@ -70,5 +70,141 @@
   {
     "nombre": "La Tagliatella",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-G1F9_wEiwazFk3pLng2ex1jpSMeJY0q2BQ&s"
+  },
+  {
+    "nombre": "Goiko",
+    "imagen": ""
+  },
+  {
+    "nombre": "VIPS",
+    "imagen": ""
+  },
+  {
+    "nombre": "100 Montaditos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lizarrán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tony Roma's",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sagardi",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ginos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Honest Greens",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pollos Asados Pepe",
+    "imagen": ""
+  },
+  {
+    "nombre": "La Mafia se sienta a la mesa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pasta City",
+    "imagen": ""
+  },
+  {
+    "nombre": "Muerde la Pasta",
+    "imagen": ""
+  },
+  {
+    "nombre": "La Sureña",
+    "imagen": ""
+  },
+  {
+    "nombre": "Krispy Kreme",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tim Hortons",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cinnabon",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pinkberry",
+    "imagen": ""
+  },
+  {
+    "nombre": "Llaollao",
+    "imagen": ""
+  },
+  {
+    "nombre": "Wendy's",
+    "imagen": ""
+  },
+  {
+    "nombre": "In-N-Out Burger",
+    "imagen": ""
+  },
+  {
+    "nombre": "Shake Shack",
+    "imagen": ""
+  },
+  {
+    "nombre": "Panera Bread",
+    "imagen": ""
+  },
+  {
+    "nombre": "Olive Garden",
+    "imagen": ""
+  },
+  {
+    "nombre": "Outback Steakhouse",
+    "imagen": ""
+  },
+  {
+    "nombre": "IHOP",
+    "imagen": ""
+  },
+  {
+    "nombre": "Denny's",
+    "imagen": ""
+  },
+  {
+    "nombre": "Applebee's",
+    "imagen": ""
+  },
+  {
+    "nombre": "Red Lobster",
+    "imagen": ""
+  },
+  {
+    "nombre": "Chipotle",
+    "imagen": ""
+  },
+  {
+    "nombre": "Wagamama",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pret a Manger",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hard Rock Cafe",
+    "imagen": ""
+  },
+  {
+    "nombre": "Costa Coffee",
+    "imagen": ""
+  },
+  {
+    "nombre": "Caffè Nero",
+    "imagen": ""
   }
 ]

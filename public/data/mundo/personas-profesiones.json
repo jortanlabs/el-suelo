@@ -162,5 +162,145 @@
   {
     "nombre": "Bibliotecario",
     "imagen": "https://previews.123rf.com/images/lipik/lipik1601/lipik160100056/50650454-Hay-muchos-libros-tomadas-por-el-hombre-bibliotecario-para-darles-a-los-estudiantes-Hombre-que-muest-Foto-de-archivo.jpg"
+  },
+  {
+    "nombre": "Maestro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Chef",
+    "imagen": ""
+  },
+  {
+    "nombre": "Notario",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ganadero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Conductor",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cocinero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cerrajero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Soldador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Anestesista",
+    "imagen": ""
+  },
+  {
+    "nombre": "Carnicero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pescadero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Camarero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Frutero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Repostero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jardinero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sastre",
+    "imagen": ""
+  },
+  {
+    "nombre": "Joyero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cartero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Influencer",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cantante",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mago",
+    "imagen": ""
+  },
+  {
+    "nombre": "Payaso",
+    "imagen": ""
+  },
+  {
+    "nombre": "DJ",
+    "imagen": ""
+  },
+  {
+    "nombre": "Programador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Diseñador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cajero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Comercial",
+    "imagen": ""
+  },
+  {
+    "nombre": "Camarera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Estanquero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marinero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Buzo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Azafata",
+    "imagen": ""
+  },
+  {
+    "nombre": "Guía turístico",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pescador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Apicultor",
+    "imagen": ""
   }
 ]

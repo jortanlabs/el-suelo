@@ -110,5 +110,85 @@
   {
     "nombre": "Levante UD",
     "imagen": "https://banderasysoportes.com/wp-content/uploads/Sin-t%C3%ADtulo-1-13.png"
+  },
+  {
+    "nombre": "Celta de Vigo",
+    "imagen": ""
+  },
+  {
+    "nombre": "RCD Mallorca",
+    "imagen": ""
+  },
+  {
+    "nombre": "CA Osasuna",
+    "imagen": ""
+  },
+  {
+    "nombre": "RCD Espanyol",
+    "imagen": ""
+  },
+  {
+    "nombre": "CD Leganés",
+    "imagen": ""
+  },
+  {
+    "nombre": "Girona FC",
+    "imagen": ""
+  },
+  {
+    "nombre": "UD Almería",
+    "imagen": ""
+  },
+  {
+    "nombre": "CD Eldense",
+    "imagen": ""
+  },
+  {
+    "nombre": "CD Mirandés",
+    "imagen": ""
+  },
+  {
+    "nombre": "Albacete BP",
+    "imagen": ""
+  },
+  {
+    "nombre": "Burgos CF",
+    "imagen": ""
+  },
+  {
+    "nombre": "FC Cartagena",
+    "imagen": ""
+  },
+  {
+    "nombre": "CD Castellón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Racing de Ferrol",
+    "imagen": ""
+  },
+  {
+    "nombre": "Racing de Santander",
+    "imagen": ""
+  },
+  {
+    "nombre": "CD Tenerife",
+    "imagen": ""
+  },
+  {
+    "nombre": "FC Andorra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Córdoba CF",
+    "imagen": ""
+  },
+  {
+    "nombre": "SD Huesca",
+    "imagen": ""
+  },
+  {
+    "nombre": "Real Madrid Castilla",
+    "imagen": ""
   }
 ]

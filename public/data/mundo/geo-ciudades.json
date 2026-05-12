@@ -174,5 +174,173 @@
   {
     "nombre": "Vancouver",
     "imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt157c0563be6b05d2/6842f851d2161d1ba4d3c408/iStock-1966003836-HEADER_MOBILE.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart"
+  },
+  {
+    "nombre": "Copenhague",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edimburgo",
+    "imagen": ""
+  },
+  {
+    "nombre": "San Petersburgo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kiev",
+    "imagen": ""
+  },
+  {
+    "nombre": "Belgrado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bucarest",
+    "imagen": ""
+  },
+  {
+    "nombre": "Zagreb",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sofía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Reikiavik",
+    "imagen": ""
+  },
+  {
+    "nombre": "Riga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tallin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vilnius",
+    "imagen": ""
+  },
+  {
+    "nombre": "San Francisco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Boston",
+    "imagen": ""
+  },
+  {
+    "nombre": "Washington",
+    "imagen": ""
+  },
+  {
+    "nombre": "Las Vegas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Montreal",
+    "imagen": ""
+  },
+  {
+    "nombre": "La Habana",
+    "imagen": ""
+  },
+  {
+    "nombre": "Río de Janeiro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Caracas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Quito",
+    "imagen": ""
+  },
+  {
+    "nombre": "Montevideo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kioto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Osaka",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hiroshima",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hong Kong",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nueva Delhi",
+    "imagen": ""
+  },
+  {
+    "nombre": "Doha",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casablanca",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marrakech",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ciudad del Cabo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sídney",
+    "imagen": ""
+  },
+  {
+    "nombre": "Melbourne",
+    "imagen": ""
+  },
+  {
+    "nombre": "Auckland",
+    "imagen": ""
+  },
+  {
+    "nombre": "Florencia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Venecia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Milán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nápoles",
+    "imagen": ""
+  },
+  {
+    "nombre": "Múnich",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sevilla",
+    "imagen": ""
+  },
+  {
+    "nombre": "Valencia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bilbao",
+    "imagen": ""
   }
 ]

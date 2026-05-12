@@ -134,5 +134,305 @@
   {
     "nombre": "Dublín (Irlanda)",
     "imagen": "https://www.pasaportealatierra.com/wp-content/uploads/2018/12/South-Anne-Street-cerca-de-Grafton-St.jpg"
+  },
+  {
+    "nombre": "Madrid",
+    "imagen": ""
+  },
+  {
+    "nombre": "París",
+    "imagen": ""
+  },
+  {
+    "nombre": "Londres",
+    "imagen": ""
+  },
+  {
+    "nombre": "Roma",
+    "imagen": ""
+  },
+  {
+    "nombre": "Berlín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lisboa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bruselas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ámsterdam",
+    "imagen": ""
+  },
+  {
+    "nombre": "Berna",
+    "imagen": ""
+  },
+  {
+    "nombre": "Viena",
+    "imagen": ""
+  },
+  {
+    "nombre": "Estocolmo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Oslo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Copenhague",
+    "imagen": ""
+  },
+  {
+    "nombre": "Helsinki",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dublín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Atenas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Varsovia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Praga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Budapest",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bucarest",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sofía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Belgrado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Zagreb",
+    "imagen": ""
+  },
+  {
+    "nombre": "Liubliana",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sarajevo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tirana",
+    "imagen": ""
+  },
+  {
+    "nombre": "Skopie",
+    "imagen": ""
+  },
+  {
+    "nombre": "Reikiavik",
+    "imagen": ""
+  },
+  {
+    "nombre": "Riga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tallin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vilnius",
+    "imagen": ""
+  },
+  {
+    "nombre": "Minsk",
+    "imagen": ""
+  },
+  {
+    "nombre": "Moscú",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kiev",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ankara",
+    "imagen": ""
+  },
+  {
+    "nombre": "Washington D.C.",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ottawa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ciudad de México",
+    "imagen": ""
+  },
+  {
+    "nombre": "La Habana",
+    "imagen": ""
+  },
+  {
+    "nombre": "Buenos Aires",
+    "imagen": ""
+  },
+  {
+    "nombre": "Brasilia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Santiago de Chile",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lima",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bogotá",
+    "imagen": ""
+  },
+  {
+    "nombre": "Caracas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Quito",
+    "imagen": ""
+  },
+  {
+    "nombre": "La Paz",
+    "imagen": ""
+  },
+  {
+    "nombre": "Asunción",
+    "imagen": ""
+  },
+  {
+    "nombre": "Montevideo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tokio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pekín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Seúl",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hanói",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bangkok",
+    "imagen": ""
+  },
+  {
+    "nombre": "Yakarta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Manila",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kuala Lumpur",
+    "imagen": ""
+  },
+  {
+    "nombre": "Singapur",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nueva Delhi",
+    "imagen": ""
+  },
+  {
+    "nombre": "Islamabad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Daca",
+    "imagen": ""
+  },
+  {
+    "nombre": "Teherán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Riad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Doha",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jerusalén",
+    "imagen": ""
+  },
+  {
+    "nombre": "El Cairo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rabat",
+    "imagen": ""
+  },
+  {
+    "nombre": "Argel",
+    "imagen": ""
+  },
+  {
+    "nombre": "Túnez",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pretoria",
+    "imagen": ""
+  },
+  {
+    "nombre": "Nairobi",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lagos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Adís Abeba",
+    "imagen": ""
+  },
+  {
+    "nombre": "Canberra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Wellington",
+    "imagen": ""
   }
 ]

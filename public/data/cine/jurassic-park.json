@@ -102,5 +102,65 @@
   {
     "nombre": "Diplodocus",
     "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/3/3d/DiploPaul_64_Hours.png/revision/latest/scale-to-width-down/250?cb=20180718143321&path-prefix=es"
+  },
+  {
+    "nombre": "T-Rex",
+    "imagen": ""
+  },
+  {
+    "nombre": "Compsognathus",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dennis Nedry",
+    "imagen": ""
+  },
+  {
+    "nombre": "Robert Muldoon",
+    "imagen": ""
+  },
+  {
+    "nombre": "Owen Grady",
+    "imagen": ""
+  },
+  {
+    "nombre": "Claire Dearing",
+    "imagen": ""
+  },
+  {
+    "nombre": "Maisie Lockwood",
+    "imagen": ""
+  },
+  {
+    "nombre": "Henry Wu",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sarah Harding",
+    "imagen": ""
+  },
+  {
+    "nombre": "Roland Tembo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Charlie",
+    "imagen": ""
+  },
+  {
+    "nombre": "Blue",
+    "imagen": ""
+  },
+  {
+    "nombre": "Delta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Echo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Giganotosaurus",
+    "imagen": ""
   }
 ]

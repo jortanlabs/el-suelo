@@ -150,5 +150,125 @@
   {
     "nombre": "Gaston (La Bella y la Bestia)",
     "imagen": "https://www.ecartelera.com/images/noticias/82700/82727-h3.jpg"
+  },
+  {
+    "nombre": "Cruella de Vil",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hades",
+    "imagen": ""
+  },
+  {
+    "nombre": "Yzma",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gastón",
+    "imagen": ""
+  },
+  {
+    "nombre": "El Sombrerero Loco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lady Tremaine",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dr. Facilier",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sid Phillips",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lotso",
+    "imagen": ""
+  },
+  {
+    "nombre": "Randall Boggs",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hopper",
+    "imagen": ""
+  },
+  {
+    "nombre": "Stinky Pete",
+    "imagen": ""
+  },
+  {
+    "nombre": "Davy Jones",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kaa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tai Lung",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lord Farquaad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lobo Feroz",
+    "imagen": ""
+  },
+  {
+    "nombre": "Madame Mim",
+    "imagen": ""
+  },
+  {
+    "nombre": "John Silver",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ratigan",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edgar Balthazar",
+    "imagen": ""
+  },
+  {
+    "nombre": "Shere Khan",
+    "imagen": ""
+  },
+  {
+    "nombre": "Te Ka",
+    "imagen": ""
+  },
+  {
+    "nombre": "Charles Muntz",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bowler Hat Guy",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dawn Bellwether",
+    "imagen": ""
+  },
+  {
+    "nombre": "Yokai",
+    "imagen": ""
+  },
+  {
+    "nombre": "Príncipe Hans",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tamatoa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Frollo",
+    "imagen": ""
   }
 ]

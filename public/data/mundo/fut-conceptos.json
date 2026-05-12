@@ -86,5 +86,165 @@
   {
     "nombre": "Estadio de fútbol",
     "imagen": "https://xbotgo.com/cdn/shop/articles/biggest_soccer_stadium_in_the_world.png?v=1755680666&width=800"
+  },
+  {
+    "nombre": "Gol",
+    "imagen": ""
+  },
+  {
+    "nombre": "Centro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pase",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cabezazo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vaselina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sombrero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Túnel",
+    "imagen": ""
+  },
+  {
+    "nombre": "Caño",
+    "imagen": ""
+  },
+  {
+    "nombre": "Regate",
+    "imagen": ""
+  },
+  {
+    "nombre": "Asistencia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mano",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pichichi",
+    "imagen": ""
+  },
+  {
+    "nombre": "Zamora",
+    "imagen": ""
+  },
+  {
+    "nombre": "Liga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Copa del Rey",
+    "imagen": ""
+  },
+  {
+    "nombre": "Supercopa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Champions League",
+    "imagen": ""
+  },
+  {
+    "nombre": "Europa League",
+    "imagen": ""
+  },
+  {
+    "nombre": "Conference League",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mundial",
+    "imagen": ""
+  },
+  {
+    "nombre": "Eurocopa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Copa América",
+    "imagen": ""
+  },
+  {
+    "nombre": "FIFA",
+    "imagen": ""
+  },
+  {
+    "nombre": "UEFA",
+    "imagen": ""
+  },
+  {
+    "nombre": "Asistente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cuarto árbitro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Convocatoria",
+    "imagen": ""
+  },
+  {
+    "nombre": "Once titular",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sistema 4-3-3",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pretemporada",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mercado de fichajes",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cláusula",
+    "imagen": ""
+  },
+  {
+    "nombre": "Traspaso",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cesión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sustitución",
+    "imagen": ""
+  },
+  {
+    "nombre": "Larguero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Palo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Red",
+    "imagen": ""
+  },
+  {
+    "nombre": "Saque inicial",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tiempo añadido",
+    "imagen": ""
   }
 ]

@@ -102,5 +102,21 @@
   {
     "nombre": "Washington Wizards",
     "imagen": "https://thumbs.dreamstime.com/b/editorial-nba-de-washington-wizards-es-un-equipo-baloncesto-profesional-americano-basado-en-d-c-los-magos-compiten-la-asociaci%C3%B3n-140340691.jpg"
+  },
+  {
+    "nombre": "Minnesota Timberwolves",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sacramento Kings",
+    "imagen": ""
+  },
+  {
+    "nombre": "Memphis Grizzlies",
+    "imagen": ""
+  },
+  {
+    "nombre": "New Orleans Pelicans",
+    "imagen": ""
   }
 ]

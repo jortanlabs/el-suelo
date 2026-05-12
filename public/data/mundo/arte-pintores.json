@@ -102,5 +102,113 @@
   {
     "nombre": "Peter Paul Rubens",
     "imagen": "https://uploads0.wikiart.org/images/peter-paul-rubens.jpg!Portrait.jpg"
+  },
+  {
+    "nombre": "Bartolomé Esteban Murillo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Francisco de Zurbarán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tiziano",
+    "imagen": ""
+  },
+  {
+    "nombre": "Johannes Vermeer",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pierre-Auguste Renoir",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edgar Degas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Paul Gauguin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edvard Munch",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gustav Klimt",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marc Chagall",
+    "imagen": ""
+  },
+  {
+    "nombre": "Roy Lichtenstein",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mark Rothko",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edward Hopper",
+    "imagen": ""
+  },
+  {
+    "nombre": "Diego Rivera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Banksy",
+    "imagen": ""
+  },
+  {
+    "nombre": "Katsushika Hokusai",
+    "imagen": ""
+  },
+  {
+    "nombre": "Auguste Rodin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Constantin Brâncuși",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alberto Giacometti",
+    "imagen": ""
+  },
+  {
+    "nombre": "Henry Moore",
+    "imagen": ""
+  },
+  {
+    "nombre": "Louise Bourgeois",
+    "imagen": ""
+  },
+  {
+    "nombre": "Eduardo Chillida",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jaume Plensa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Manolo Valdés",
+    "imagen": ""
+  },
+  {
+    "nombre": "Damien Hirst",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jeff Koons",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jean-Michel Basquiat",
+    "imagen": ""
   }
 ]

@@ -102,5 +102,137 @@
   {
     "nombre": "Costco",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTytkPEt_ujIdzpu0agXEzEeROaE3QzgJ2YRg&s"
+  },
+  {
+    "nombre": "Hipercor",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sánchez Romero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Veritas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casa Ametller",
+    "imagen": ""
+  },
+  {
+    "nombre": "Maxi Día",
+    "imagen": ""
+  },
+  {
+    "nombre": "Suma",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alimerka",
+    "imagen": ""
+  },
+  {
+    "nombre": "Charter",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vegalsa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Walmart",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tesco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sainsbury's",
+    "imagen": ""
+  },
+  {
+    "nombre": "Asda",
+    "imagen": ""
+  },
+  {
+    "nombre": "Morrisons",
+    "imagen": ""
+  },
+  {
+    "nombre": "Whole Foods",
+    "imagen": ""
+  },
+  {
+    "nombre": "Trader Joe's",
+    "imagen": ""
+  },
+  {
+    "nombre": "Migros",
+    "imagen": ""
+  },
+  {
+    "nombre": "Coop",
+    "imagen": ""
+  },
+  {
+    "nombre": "Auchan",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casino",
+    "imagen": ""
+  },
+  {
+    "nombre": "Monoprix",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marks & Spencer",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edeka",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rewe",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kaufland",
+    "imagen": ""
+  },
+  {
+    "nombre": "Penny Market",
+    "imagen": ""
+  },
+  {
+    "nombre": "Albert Heijn",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jumbo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pingo Doce",
+    "imagen": ""
+  },
+  {
+    "nombre": "Continente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Intermarché",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aldi Süd",
+    "imagen": ""
+  },
+  {
+    "nombre": "Familia",
+    "imagen": ""
   }
 ]
