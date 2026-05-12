@@ -104,119 +104,219 @@
     "imagen": "https://pbs.twimg.com/media/GPCZFWWXUAA7ukT.jpg"
   },
   {
+    "nombre": "Phil DeVille (Rugrats)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DB-nR_UKXDCNpCKwnFa_TQr4J0oZhFbvqw&s"
+  },
+  {
     "nombre": "Dil Pickles (Rugrats)",
     "imagen": "https://m.media-amazon.com/images/M/MV5BMTgxMjg3MTA1M15BMl5BanBnXkFtZTgwNTEwNDY2MjE@._V1_FMjpg_UX1000_.jpg"
   },
   {
-    "nombre": "Patricio Estrella (Bob Esponja)",
-    "imagen": ""
+    "nombre": "Bob Esponja (Bob Esponja)",
+    "imagen": "https://static.wikia.nocookie.net/cartoons/images/e/ed/Profile_-_SpongeBob_SquarePants.png/revision/latest?cb=20240420115914"
   },
   {
-    "nombre": "Calamardo (Bob Esponja)",
-    "imagen": ""
+    "nombre": "Patricio (Bob Esponja)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:bd09be5c-2d6a-4b82-ba32-fd8aabac45ec?quality=0.7&gen=ntrn&format=jpg&width=1200&height=630&crop=true"
   },
   {
-    "nombre": "Don Cangrejo (Bob Esponja)",
-    "imagen": ""
+    "nombre": "Calamardo Tentáculos (Bob Esponja)",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Squidward-Tentacles.SpongeBob-SquarePants.webp"
+  },
+  {
+    "nombre": "Arenita Mejillas (Bob Esponja)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:9a69c9f1-8a8b-46e5-a02c-b0f1087d6543?quality=0.7&gen=ntrn&format=webp&crop=true&width=660"
+  },
+  {
+    "nombre": "Señor Cangrejo (Bob Esponja)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:1d8c4c5e-269e-4e74-bea3-a24b60b99633?quality=0.7&gen=ntrn&format=webp&crop=true&width=660"
+  },
+  {
+    "nombre": "Gary el caracol (Bob Esponja)",
+    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Gary-the-Snail.SpongeBob-SquarePants.webp"
+  },
+  {
+    "nombre": "Plankton (Bob Esponja)",
+    "imagen": "https://assets.nick.com/uri/mgid:arc:imageassetref:ws.kids.com:7a8685b3-527c-4078-b89f-aef0bf6d0801?quality=0.7&gen=ntrn&format=jpg&width=1200&height=630&crop=true"
+  },
+  {
+    "nombre": "Tommy Pickles (Rugrats)",
+    "imagen": "https://whatisxwearing.com/wp-content/uploads/2025/02/tommy-pickles-feature-image-768x549.png"
+  },
+  {
+    "nombre": "Chuckie Finster (Rugrats)",
+    "imagen": "https://static.wikia.nocookie.net/rugrats/images/b/b6/Chuckie.jpg/revision/latest/scale-to-width-down/480?cb=20190531192013&path-prefix=es"
+  },
+  {
+    "nombre": "Angelica Pickles (Rugrats)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8MUp1S89GnBP_LofaeKqqIa5U0GMTavH9A&s"
+  },
+  {
+    "nombre": "Phil DeVille (Rugrats)",
+    "imagen": "https://i.pinimg.com/474x/2a/74/d5/2a74d5fa83792775c8f1b0c76daa1765.jpg"
+  },
+  {
+    "nombre": "Helga Pataki (Hey Arnold!)",
+    "imagen": "https://img.buzzfeed.com/buzzfeed-static/static/2017-11/27/15/asset/buzzfeed-prod-fastlane-01/sub-buzz-23690-1511815529-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto"
+  },
+  {
+    "nombre": "Timmy Turner (Los padrinos mágicos)",
+    "imagen": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/05/timmy-turner-tfop.jpg"
+  },
+  {
+    "nombre": "Cosmo (Los padrinos mágicos)",
+    "imagen": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2018/10/9.jpg?q=50&fit=crop&w=825&dpr=1.5"
+  },
+  {
+    "nombre": "Wanda (Los padrinos mágicos)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSAcUaY9LUfxhMXUbLfmdvBXmz0PX45QY1Ow&s"
+  },
+  {
+    "nombre": "Aang (Avatar Wiki)",
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/f/fa/Aang_en_el_Drag%C3%B3n_del_Jazm%C3%ADn.png/revision/latest/scale-to-width/360?cb=20150414231706&path-prefix=es"
+  },
+  {
+    "nombre": "Katara (Avatar Wiki)",
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/f/fb/Katara.png/revision/latest/scale-to-width/360?cb=20150731013219&path-prefix=es"
+  },
+  {
+    "nombre": "Sokka (Avatar Wiki)",
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/c/cc/Sokka.png/revision/latest/scale-to-width/360?cb=20150323230403&path-prefix=es"
+  },
+  {
+    "nombre": "Toph Beifong (Avatar Wiki)",
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/4/46/Toph_Beifong.png/revision/latest/scale-to-width/360?cb=20161127194510&path-prefix=es"
+  },
+  {
+    "nombre": "Jimmy Neutron (Jimmy Neutron)",
+    "imagen": "https://cineyeducacion.com/wp-content/uploads/Jimmy-Neutron-el-ni%C3%B1o-inventor.jpg"
+  },
+  {
+    "nombre": "Sheen Estevez (Jimmy Neutron)",
+    "imagen": "https://static.wikia.nocookie.net/doblaje-fanon/images/3/3a/Character_large_332x363_sheen.jpg/revision/latest/scale-to-width/360?cb=20180619025826&path-prefix=es"
+  },
+  {
+    "nombre": "Carl Wheezer (Jimmy Neutron)",
+    "imagen": "https://preview.redd.it/who-thinks-carl-wheezer-boy-genius-showed-carl-at-his-worst-v0-nbjb9y05nhtf1.jpeg?width=1080&crop=smart&auto=webp&s=3500afd0d84699cc38d46e193160ecc5397ab635"
+  },
+  {
+    "nombre": "Eliza Thornberry (Los Thornberrys)",
+    "imagen": "https://static.wikia.nocookie.net/characters/images/f/f5/Eliza_Thornberry.jpg/revision/latest?cb=20220523202906"
+  },
+  {
+    "nombre": "Debbie Thornberry (Los Thornberrys)",
+    "imagen": "https://pbs.twimg.com/media/GPCZFWWXUAA7ukT.jpg"
+  },
+  {
+    "nombre": "Dil Pickles (Rugrats)",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMTgxMjg3MTA1M15BMl5BanBnXkFtZTgwNTEwNDY2MjE@._V1_FMjpg_UX1000_.jpg"
   },
   {
     "nombre": "Dora la Exploradora (Dora)",
-    "imagen": ""
+    "imagen": "https://m.media-amazon.com/images/S/pv-target-images/00549f7e0dd30a284832cecd6f52f5b042597a4c854e48e54353855f26e47107._SX1080_FMjpg_.jpg"
   },
   {
     "nombre": "Botas (Dora la Exploradora)",
-    "imagen": ""
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMTA1MTUzOTQ2NzdeQTJeQWpwZ15BbWU4MDMxODgzNjIx._V1_FMjpg_UX1000_.jpg"
   },
   {
     "nombre": "Diego (Go, Diego, Go!)",
-    "imagen": ""
+    "imagen": "https://m.media-amazon.com/images/S/pv-target-images/ac74214991f786ac7321c5129a023f84a029f0315c95edd52dccd828c85ca6e5.jpg"
   },
   {
     "nombre": "Caillou (Caillou)",
-    "imagen": ""
+    "imagen": "https://m.media-amazon.com/images/S/pv-target-images/794ae47d1869a4787e2895ff409e58376e356702c79c38e9dbdf30cfb0dd6d8a._SX1080_FMjpg_.jpg"
   },
   {
     "nombre": "Leonardo (Tortugas Ninja)",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/474x/f6/3a/46/f63a4665f4b386d38c3c0c237dab57ae.jpg"
   },
   {
     "nombre": "Donatello (Tortugas Ninja)",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/474x/61/74/ea/6174ea7cf419b135847471a84ca3c271.jpg"
   },
   {
     "nombre": "Rafael (Tortugas Ninja)",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3dFXe7y8YHGZhBTYuF6lwYgFG9LJmILxig&s"
   },
   {
     "nombre": "Michelangelo (Tortugas Ninja)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/tortugasninja/images/7/72/Mikey-TMNT1987.png/revision/latest?cb=20181015035729&path-prefix=es"
   },
   {
     "nombre": "Carly Shay (iCarly)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/icarly/images/7/71/Normal_053.jpg/revision/latest/scale-to-width/360?cb=20121126053411"
   },
   {
     "nombre": "Sam Puckett (iCarly)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/icarly/images/2/28/Ibust_14HR.jpg/revision/latest/scale-to-width-down/1200?cb=20121109231706"
   },
   {
     "nombre": "Freddie Benson (iCarly)",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWKH_grcMVh-4jyeYa4pOmUqi9fylcEkKaDA&s"
   },
   {
     "nombre": "Spencer Shay (iCarly)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/andrewandheidi/images/4/4c/Spence.jpeg/revision/latest/thumbnail/width/360/height/450?cb=20150711044212"
   },
   {
     "nombre": "Drake Parker (Drake y Josh)",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/474x/29/97/d5/2997d5b858dc385bc6ecfd20f4dfc439.jpg"
   },
   {
     "nombre": "Josh Nichols (Drake y Josh)",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb1TwCJ3fOyxccpn2sHM_oWOG8a_n8RvRZJw&s"
   },
   {
     "nombre": "Megan Parker (Drake y Josh)",
-    "imagen": ""
+    "imagen": "https://www.televisa.com/_next/image?url=https%3A%2F%2Fst1.uvnimg.com%2F3b%2F39%2F5ce774c0ec6e55b230d2797d4f3c%2Fmiranda-cosgrove-meme.jpg&w=1280&q=75"
   },
   {
     "nombre": "Zoey Brooks (Zoey 101)",
-    "imagen": ""
+    "imagen": "https://i.insider.com/5ea9aa9ca34b3c19bc509dc6?width=600&format=jpeg&auto=webp"
   },
   {
     "nombre": "JoJo Siwa",
-    "imagen": ""
+    "imagen": "https://yt3.googleusercontent.com/KqS1kkSOulUoyx4851yPG6JTp_BOpBv3XiMmqa4rtKlbmvfFcJ_sEGGToSv2K7Am2nHp8sKwEGo=s900-c-k-c0x00ffffff-no-rj"
   },
   {
     "nombre": "Kenan Rockmore (Kenan y Kel)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/thekenanandkel/images/1/1d/Kenan_Rockmore.jpg/revision/latest?cb=20120430120246"
   },
   {
     "nombre": "Kel Kimble (Kenan y Kel)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/thekenanandkel/images/d/dd/Kel_Kimble.jpg/revision/latest?cb=20120430121134"
   },
   {
     "nombre": "Cindy Vortex (Jimmy Neutrón)",
-    "imagen": ""
-  },
-  {
-    "nombre": "Toph (Avatar: la leyenda de Aang)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/doblaje/images/5/53/Character_large_332x363_cindy.jpg/revision/latest?cb=20131028174202&path-prefix=es"
   },
   {
     "nombre": "Zuko (Avatar: la leyenda de Aang)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/a/af/Zuko_pilot.png/revision/latest?cb=20121002183541&path-prefix=es"
   },
   {
     "nombre": "Korra (La leyenda de Korra)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/avatar/images/c/ca/Korra.png/revision/latest?cb=20150407234059&path-prefix=es"
   },
   {
     "nombre": "Henry Hart (Henry Danger)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/powerrangersfanon/images/c/c9/Henryhart.jpg/revision/latest?cb=20180911163913"
   },
   {
     "nombre": "Captain Man (Henry Danger)",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/henrydanger/images/b/b1/Capit%C3%A1n_Man_Ray.jpg/revision/latest?cb=20150423171304&path-prefix=es"
+  },
+  {
+    "nombre": "Rikki Chadwick (H2O)",
+    "imagen": "https://static.wikia.nocookie.net/h2o-universe/images/1/16/Rikki_Chadwick.jpg/revision/latest/thumbnail/width/360/height/450?cb=20160521104709"
+  },
+  {
+    "nombre": "Emma Gilbert (H2O)",
+    "imagen": "https://static.wikia.nocookie.net/h2o/images/1/1c/Emma_gilbert.png/revision/latest/scale-to-width-down/1200?cb=20250807202016&path-prefix=es"
+  },
+  {
+    "nombre": "Cleo Sertori (H2O)",
+    "imagen": "https://static.wikia.nocookie.net/h2o-universe/images/3/31/Cleo_Sertori.jpg/revision/latest/thumbnail/width/360/height/450?cb=20160519191510"
   }
 ]
