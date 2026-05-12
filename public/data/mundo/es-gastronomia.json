@@ -49,7 +49,7 @@
   },
   {
     "nombre": "Tarta de Santiago",
-    "imagen": "https://www.196flavors.com/wp-content/uploads/2021/09/Torta-de-santiago-1fp.jpg"
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2025/03/tarta-de-santiago-1024x683.jpg"
   },
   {
     "nombre": "Salmorejo",
@@ -101,7 +101,7 @@
   },
   {
     "nombre": "Arroz con leche",
-    "imagen": "https://www.bekiacocina.com/images/cocina/0000/96-h.jpg"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUYacY9wRWbtcv-WMAphCV0KGgw7kV_fJ8A&s"
   },
   {
     "nombre": "Natillas",
@@ -113,7 +113,7 @@
   },
   {
     "nombre": "Ensaladilla rusa",
-    "imagen": "https://www.petitchef.es/imgupl/recipe/466471p742864.jpg"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTr1JuvjgkzIiVr5bGyoqqQBBBSejg5m4uYA&s"
   },
   {
     "nombre": "Boquerones en vinagre",
@@ -220,199 +220,211 @@
     "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKD0LqNGcPSEHmsXD0TCI2h2wCPlsloaYhJnPaKfJcsO__E91AXspCLgbGg_SELLyyNZzC9CxWoLb-u7bJCeNeLTXs6TKyxdhWyg-gwbnasCiO3L1pOhCvxz0n7CfyiORY5Bic2k7SfEtKzpOgtQY68pUDtpIkOTrIIb6uXK5ixnGeqxWK-8XXpcghsMI/s1920/_DSC8066.webp"
   },
   {
+    "nombre": "Tortilla de patatas",
+    "imagen": "https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2019/05/tortilla-espa%C3%B1ola.jpg"
+  },
+  {
+    "nombre": "Pantumaca",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Pan_con_Tumaca.jpg"
+  },
+  {
+    "nombre": "Chistorra",
+    "imagen": "https://www.gastronomiavasca.net/uploads/image/file/3279/w700_chistorra.jpg"
+  },
+  {
+    "nombre": "Bocadillo de calamares",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfygTKSRyrLCo5wRDLD4hQBWazZxIcQRDw8g&s"
+  },
+  {
+    "nombre": "Gazpachuelo",
+    "imagen": "https://i.ytimg.com/vi/g1DzNGJdULM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDI_Ui7-bC8L18sCXnW8O-cxMVaEQ"
+  },
+  {
+    "nombre": "Campero",
+    "imagen": "https://academiagastronomica.com/wp-content/uploads/2025/05/Campero-Romeo-Mi-Barrio-Best-Sandwich.jpeg"
+  },
+  {
+    "nombre": "Pochas a la navarra",
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2024/11/pochas-a-la-navarra.jpg"
+  },
+  {
+    "nombre": "Ternasco de Aragón",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDnSbwuHpN2ZmhFS-upL_SU1rgef5G2jLQqg&s"
+  },
+  {
+    "nombre": "Raxo gallego",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYqqgzZ7XIEPhwjAOSQPX2w9JVgsRMaB4whg&s"
+  },
+  {
+    "nombre": "Coquinas",
+    "imagen": "https://www.mariscoscastellar.com/wp-content/uploads/2019/02/Dise%C3%B1o-sin-t%C3%ADtulo-13.png"
+  },
+  {
+    "nombre": "Arroz negro",
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2017/08/arroz-negro-receta.jpg"
+  },
+  {
+    "nombre": "Ajoarriero",
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCBuKHwphvcIzD8FMVZItJJc45U2w3Uz7-GODONY9RQYh03VvvTeU961ELgb07ILf-vCpz5JikRFFnfnn6iKSuF4kBtn95dcbY7cte_y4Bbm8MAPqj2czIUt8wFAi9H1Q6NPGclYXMxTA/s1600/Ajoarriero-Portada.jpg"
+  },
+  {
+    "nombre": "Pimientos del piquillo",
+    "imagen": "https://petramora.com/cdn/shop/files/W-50000061-pimientos-del-piquillo-asados-pelados_1.jpg?crop=center&height=2433&v=1728560064&width=1946https://www.javirecetas.com/wp-content/uploads/2022/11/pimientos-del-piquillo-600x900.jpg"
+  },
+  {
+    "nombre": "Sopa castellana",
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKD0LqNGcPSEHmsXD0TCI2h2wCPlsloaYhJnPaKfJcsO__E91AXspCLgbGg_SELLyyNZzC9CxWoLb-u7bJCeNeLTXs6TKyxdhWyg-gwbnasCiO3L1pOhCvxz0n7CfyiORY5Bic2k7SfEtKzpOgtQY68pUDtpIkOTrIIb6uXK5ixnGeqxWK-8XXpcghsMI/s1920/_DSC8066.webp"
+  },
+  {
     "nombre": "Calçots",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdh2wXfuFhSe0DkUj_QxPslZ6wGxuXwWvqKA&s"
   },
   {
     "nombre": "Esqueixada",
-    "imagen": ""
+    "imagen": "https://imag.bonviveur.com/esqueixada-de-bacalao-lista-para-comer.jpg"
   },
   {
     "nombre": "Escudella",
-    "imagen": ""
+    "imagen": "https://i0.wp.com/koketo.es/wp-content/uploads/2019/11/Escudella_chefkoketo_51.jpg?resize=790%2C593&ssl=1"
   },
   {
-    "nombre": "Pa amb tomàquet",
-    "imagen": ""
-  },
-  {
-    "nombre": "Suquet de peix",
-    "imagen": ""
+    "nombre": "Alcachofas con jamon",
+    "imagen": "https://tiendaconsorcio.com/cdn/shop/articles/alcachofas_52cb1e9c-4374-44f2-b21f-bcadd760058c_800x.webp?v=1774526200"
   },
   {
     "nombre": "Romesco",
-    "imagen": ""
-  },
-  {
-    "nombre": "Arroz a banda",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAcwICtCHp5Zcmvmp5RYzud2ZKGSFl9qN4TQ&s"
   },
   {
     "nombre": "Caracoles a la madrileña",
-    "imagen": ""
+    "imagen": "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/1419c093-0cf6-4300-93f6-67008ea4a782/Derivates/c449ab5098a097e70d904031fc1c9652f4d160e0.jpg"
   },
   {
     "nombre": "Pescaíto frito",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw6EpAZjrZQlHuS35al_jm75SOHO__Eqykvw&s"
   },
   {
     "nombre": "Tortillitas de camarones",
-    "imagen": ""
+    "imagen": "https://imag.bonviveur.com/presentacion-principal-de-la-tortillitas-de-camarones.jpg"
   },
   {
     "nombre": "Rabo de toro",
-    "imagen": ""
+    "imagen": "https://cooperativalucena.es/wp-content/uploads/2023/05/rabo-de-toro-estilo-cordobes.jpg"
   },
   {
     "nombre": "Flamenquín",
-    "imagen": ""
+    "imagen": "https://www.annarecetasfaciles.com/files/flamenquines-cordobeses-1-scaled.jpg"
   },
   {
     "nombre": "Cordero asado",
-    "imagen": ""
-  },
-  {
-    "nombre": "Lechazo",
-    "imagen": ""
+    "imagen": "https://www.recetasderechupete.com/wp-content/uploads/2023/04/Receta-cordero-asado-horno-1200x796.jpg"
   },
   {
     "nombre": "Mejillones a la marinera",
-    "imagen": ""
+    "imagen": "https://imag.bonviveur.com/mejillones-en-salsa-marinera.jpg"
   },
   {
     "nombre": "Almejas a la marinera",
-    "imagen": ""
+    "imagen": "https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2023/12/almejas-a-la-marinera.jpg"
   },
   {
     "nombre": "Berberechos",
-    "imagen": ""
+    "imagen": "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/E45C41A6-E358-4E81-848F-EE5723E817A0/Derivates/BC79A329-3BE4-41ED-9E45-524514891724.jpg"
   },
   {
     "nombre": "Lacón con grelos",
-    "imagen": ""
-  },
-  {
-    "nombre": "Pote gallego",
-    "imagen": ""
-  },
-  {
-    "nombre": "Empanada de bonito",
-    "imagen": ""
-  },
-  {
-    "nombre": "Migas extremeñas",
-    "imagen": ""
+    "imagen": "https://www.aceitesdeolivadeespana.com/wp-content/uploads/2024/03/Receta-de-lacon-con-grelos.jpg"
   },
   {
     "nombre": "Caldereta extremeña",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/fLyB7ESH33A/sddefault.jpg"
   },
   {
     "nombre": "Olla podrida",
-    "imagen": ""
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2025/03/olla-podrida.jpg"
   },
   {
     "nombre": "Marmitako",
-    "imagen": ""
+    "imagen": "https://i.blogs.es/34fb2d/marmitako/450_1000.jpg"
   },
   {
     "nombre": "Bacalao a la vizcaína",
-    "imagen": ""
+    "imagen": "https://www.pequerecetas.com/wp-content/uploads/2011/06/bacalao-a-la-vizcaina-receta-tradicional-vasca.jpg"
   },
   {
     "nombre": "Txuleta",
-    "imagen": ""
-  },
-  {
-    "nombre": "Cochinillo segoviano",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDSdY0V3cZLw1OCoIs4Xi29_a3AII6g5vKQ&s"
   },
   {
     "nombre": "Yemas de Santa Teresa",
-    "imagen": ""
-  },
-  {
-    "nombre": "Mantecados",
-    "imagen": ""
-  },
-  {
-    "nombre": "Leche frita",
-    "imagen": ""
+    "imagen": "https://imag.bonviveur.com/interior-de-las-yemas-de-santa-teresa.jpg"
   },
   {
     "nombre": "Filloas",
-    "imagen": ""
+    "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2021/02/filloas.jpg"
   },
   {
     "nombre": "Pestiños",
-    "imagen": ""
+    "imagen": "https://www.aceitesdeolivadeespana.com/sites/default/files/_espanol/recetas/receta-de-pestinos-2.png"
   },
   {
     "nombre": "Sangría",
-    "imagen": ""
+    "imagen": "https://imag.bonviveur.com/sangria.jpg"
   },
   {
     "nombre": "Tinto de verano",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn50xQN7A7F1_YnevqJrajmAygQ8pFsc6Jbg&s"
   },
   {
     "nombre": "Vermut",
-    "imagen": ""
+    "imagen": "https://media.scoolinary.app/blog/images/2022/09/scoolinary-vermut3.jpg"
   },
   {
     "nombre": "Sidra",
-    "imagen": ""
+    "imagen": "https://cdn.metro-online.com/-/media/Project/MCW/ES_Makro/Info-y-servicios/productos/bebidas/bebidas-alcoholicas/sidra/sidra-espanola-asturiana.jpg?rev=40608791f2c64923818aefb7e5eef4a5&sc_lang=es-ES"
   },
   {
     "nombre": "Cava",
-    "imagen": ""
-  },
-  {
-    "nombre": "Jerez",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe8mf9QdpRtYEQbUn479JiNkU0Ib5GXLU-1w&s"
   },
   {
     "nombre": "Mojama",
-    "imagen": ""
+    "imagen": "https://lh4.googleusercontent.com/fvNw2FvE9SJs3Fced8NhOq26rtJYRJwE9-RtnsCYdpNlJMYuOhhx8ZCK6AY4AREYX0MEbowFVH2306R0WEZphspy_iMs9J-I1WrTrKwAeeeeQlBISf_L88PuAufricbT6BHiA2WMu55YByhVbMtcVHE"
   },
   {
     "nombre": "Cecina",
-    "imagen": ""
+    "imagen": "https://www.jamonarium.com/img/cms/cecina.png"
   },
   {
     "nombre": "Morcón",
-    "imagen": ""
+    "imagen": "https://www.ibericosamh.es/data/6195/contenidos/thumb_501329_contenidos_optimized.jpg"
   },
   {
     "nombre": "Lomo embuchado",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/nrxgzA8snNc/maxresdefault.jpg"
   },
   {
     "nombre": "Butifarra",
-    "imagen": ""
-  },
-  {
-    "nombre": "Queso manchego",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzv9hkEHlhRYcr2_qceEXafekOAP0DNGkFZA&s"
   },
   {
     "nombre": "Queso de Cabrales",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Cabrales_blue_Cheese.jpg"
   },
   {
     "nombre": "Queso de Mahón",
-    "imagen": ""
+    "imagen": "https://vivalapepamenorca.es/wp-content/uploads/tipos-de-queso-mahon.jpg"
   },
   {
     "nombre": "Aceitunas",
-    "imagen": ""
+    "imagen": "https://agrosevilla.com/wp-content/uploads/2023/11/MG_8285-1024x683.jpg"
   },
   {
     "nombre": "Boquerones fritos",
-    "imagen": ""
+    "imagen": "https://imag.bonviveur.com/boquerones-fritos-rebozados-al-limon.jpg"
   },
   {
     "nombre": "Espetos",
-    "imagen": ""
+    "imagen": "https://www.tapasmagazine.es/wp-content/uploads/2023/06/espetos-malaga-foto.jpg"
   }
 ]
