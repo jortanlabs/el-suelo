@@ -99,9 +99,10 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
-      <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">
+      <button id="boton-volver" class="font-titulo text-base font-bold text-[#7b9ef5] hover:text-[#e8e8ff] transition">
         ← Volver
       </button>
+      <button id="boton-ajustes" class="ml-auto font-titulo text-2xl text-[#7b9ef5] hover:text-[#ffcc00] transition" title="Ajustes">⚙️</button>
     </nav>
 
     <!-- BIENVENIDA -->
@@ -116,7 +117,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
           <span class="floor-corner floor-corner-br"></span>
           <h1 class="font-titulo text-5xl font-bold neon-gold uppercase tracking-[0.3em]">El suelo</h1>
         </div>
-        <p class="text-[#2a5090] font-titulo text-base mt-2">Adivina más rápido que el rival. Gana al reloj.</p>
+        <p class="text-[#7b9ef5] font-titulo text-base mt-2">Adivina más rápido que el rival. Gana al reloj.</p>
       </div>
 
       <div class="flex-1"></div>
@@ -135,7 +136,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     </section>
 
     <!-- SETUP -->
-    <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-4 hidden flex flex-col items-center justify-start gap-4">
+    <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-4 hidden flex flex-col items-center justify-center gap-4">
       <div class="text-center">
         <div class="inline-block relative px-8 py-2">
           <span class="floor-corner floor-corner-tl"></span>
@@ -162,20 +163,20 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
           <!-- Modo -->
           <div class="flex gap-2">
-            <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">⚡ Rápida</button>
-            <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
+            <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#7b9ef5] border-[#163575]">⚡ Rápida</button>
+            <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#7b9ef5] border-[#163575]">🏁 Tablero</button>
           </div>
 
           <!-- Selector de categoría -->
           <div id="seccion-categoria" class="hidden">
-            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-1.5 uppercase tracking-widest">Categoría</label>
+            <label class="font-titulo font-bold text-[#7b9ef5] text-xs block mb-1.5 uppercase tracking-widest">Categoría</label>
             <div class="grid grid-cols-3 gap-2">
-              <button id="cat-cine" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🎬<br>Cine y Series</button>
-              <button id="cat-mundo" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🌍<br>El Mundo</button>
-              <button id="cat-deportes" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">⚽<br>Deportes</button>
-              <button id="cat-arte" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🎨<br>Arte</button>
-              <button id="cat-compras" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🛒<br>Compras</button>
-              <button id="cat-personas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🧑<br>Personas</button>
+              <button id="cat-cine" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🎬<br>Cine y Series</button>
+              <button id="cat-mundo" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🌍<br>El Mundo</button>
+              <button id="cat-deportes" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">⚽<br>Deportes</button>
+              <button id="cat-arte" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🎨<br>Arte</button>
+              <button id="cat-compras" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🛒<br>Compras</button>
+              <button id="cat-personas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🧑<br>Personas</button>
               <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2 text-xs font-titulo leading-tight">🎲 Aleatorio</button>
             </div>
           </div>
@@ -199,7 +200,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         <div class="text-6xl mb-4 wiggle inline-block">🔍</div>
         <p id="loader-cat-name" class="font-titulo text-xl font-bold text-[#ffcc00] mb-1"></p>
         <h2 class="font-titulo text-2xl font-bold text-[#e8e8ff] mb-2">Cargando imágenes...</h2>
-        <p id="loader-progreso" class="text-[#2a5090] text-sm font-titulo">Un momento.</p>
+        <p id="loader-progreso" class="text-[#7b9ef5] text-sm font-titulo">Un momento.</p>
       </div>
     </section>
 
@@ -209,7 +210,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         <span class="inline-block w-4 h-4 rounded-sm bg-[#ff1dce]" style="box-shadow:0 0 10px #ff1dce"></span>
         <span id="tablero-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
         <span id="tablero-count-a" class="font-titulo font-bold text-xl tabular-nums neon-a"></span>
-        <span class="font-titulo text-[#2a5090] text-sm px-2 font-bold">VS</span>
+        <span class="font-titulo text-[#7b9ef5] text-sm px-2 font-bold">VS</span>
         <span id="tablero-count-b" class="font-titulo font-bold text-xl tabular-nums neon-b"></span>
         <span id="tablero-nombre-b" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
         <span class="inline-block w-4 h-4 rounded-sm bg-[#ffe100]" style="box-shadow:0 0 10px #ffe100"></span>
@@ -220,12 +221,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       </div>
 
       <div class="px-4 py-3 text-center shrink-0">
-        <p id="tablero-instruccion" class="font-titulo text-sm font-bold text-[#2a5090] uppercase tracking-wider"></p>
-        <button id="boton-reportar-tablero" onclick="abrirModalReportar()" class="hidden mt-2 font-titulo text-xs text-[#2a5090] hover:text-[#ff4444] transition-colors underline">🚩 Reportar categoría anterior</button>
+        <p id="tablero-instruccion" class="font-titulo text-sm font-bold text-[#7b9ef5] uppercase tracking-wider"></p>
+        <button id="boton-reportar-tablero" onclick="abrirModalReportar()" class="hidden mt-2 font-titulo text-xs text-[#7b9ef5] hover:text-[#ff4444] transition-colors underline">🚩 Reportar categoría anterior</button>
       </div>
 
       <div id="preduel-overlay" class="hidden absolute inset-0 flex flex-col items-center justify-center z-20 px-8" style="background:#07070fee">
-        <p class="text-xs text-[#2a5090] font-titulo uppercase tracking-widest mb-2">Categoría del duelo</p>
+        <p class="text-xs text-[#7b9ef5] font-titulo uppercase tracking-widest mb-2">Categoría del duelo</p>
         <div id="preduel-emoji" class="text-6xl my-2"></div>
         <p id="preduel-nombre-cat" class="font-titulo font-bold text-2xl text-[#e8e8ff] text-center mb-8"></p>
         <button id="preduel-empezar" class="floor-btn floor-btn-a font-titulo font-bold text-xl px-8 py-4">¡A jugar! →</button>
@@ -233,7 +234,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     </section>
 
     <!-- JUEGO -->
-    <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0">
+    <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0 overflow-hidden" style="touch-action:manipulation">
       <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
         <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
           <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
@@ -256,7 +257,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
               </div>
             </div>
           </div>
-          <p id="texto-voz" class="mt-1 text-xs text-[#2a5090] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
+          <p id="texto-voz" class="mt-1 text-xs text-[#7b9ef5] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
         </div>
 
         <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
@@ -281,27 +282,48 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
           <div class="floor-card-small p-4" style="border-color:#ff1dce44">
             <p id="final-nombre-a" class="font-titulo font-bold text-[#ff1dce] text-sm mb-1 uppercase tracking-wide"></p>
             <p id="final-tiempo-a" class="font-titulo font-bold text-4xl text-[#e8e8ff] floor-timer" style="color:#ff1dce">0s</p>
-            <p id="final-label-a" class="text-xs text-[#2a5090] font-titulo">tiempo restante</p>
+            <p id="final-label-a" class="text-xs text-[#7b9ef5] font-titulo">tiempo restante</p>
           </div>
           <div class="floor-card-small p-4" style="border-color:#ffe10044">
             <p id="final-nombre-b" class="font-titulo font-bold text-[#ffe100] text-sm mb-1 uppercase tracking-wide"></p>
             <p id="final-tiempo-b" class="font-titulo font-bold text-4xl text-[#e8e8ff] floor-timer" style="color:#ffe100">0s</p>
-            <p id="final-label-b" class="text-xs text-[#2a5090] font-titulo">tiempo restante</p>
+            <p id="final-label-b" class="text-xs text-[#7b9ef5] font-titulo">tiempo restante</p>
           </div>
         </div>
         <div class="flex flex-col gap-3">
           <button id="boton-revancha" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">Revancha →</button>
-          <button id="boton-menu" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
-          <button onclick="abrirModalReportar()" class="font-titulo text-xs text-[#2a5090] hover:text-[#ff4444] transition-colors underline mt-1">🚩 Reportar categoría</button>
+          <button id="boton-menu" class="floor-btn floor-card-small text-[#7b9ef5] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
+          <button onclick="abrirModalReportar()" class="font-titulo text-xs text-[#7b9ef5] hover:text-[#ff4444] transition-colors underline mt-1">🚩 Reportar categoría</button>
         </div>
       </div>
     </section>
+
+  <!-- MODAL AJUSTES -->
+  <div id="modal-ajustes" class="hidden fixed inset-0 z-50 flex items-center justify-center px-6" style="background:rgba(5,12,30,0.95)">
+    <div class="floor-card max-w-xs w-full p-6">
+      <div class="flex items-center mb-5">
+        <h2 class="font-titulo font-bold text-xl text-[#ffcc00] uppercase tracking-wide flex-1">⚙️ Ajustes</h2>
+        <button id="ajustes-cerrar" class="font-titulo text-sm text-[#a8c5ff] hover:text-[#e8e8ff]">✕</button>
+      </div>
+      <label class="flex items-center gap-3 cursor-pointer py-2">
+        <span class="text-2xl">🔊</span>
+        <span class="font-titulo text-[#e8e8ff] text-base flex-1">Sonido</span>
+        <input type="checkbox" id="ajuste-sonido" class="w-5 h-5 accent-[#ffcc00]" checked>
+      </label>
+      <label class="flex items-center gap-3 cursor-pointer py-2">
+        <span class="text-2xl">📳</span>
+        <span class="font-titulo text-[#e8e8ff] text-base flex-1">Vibración</span>
+        <input type="checkbox" id="ajuste-vibracion" class="w-5 h-5 accent-[#ffcc00]" checked>
+      </label>
+      <button id="ajustes-tutorial" class="mt-4 w-full floor-btn floor-card-small text-[#a8c5ff] font-titulo font-bold text-sm py-2">Volver a ver el tutorial</button>
+    </div>
+  </div>
 
   <!-- MODAL REPORTAR ERROR -->
   <div id="modal-reportar" class="hidden fixed inset-0 z-50 flex items-start justify-center px-4 py-6 overflow-y-auto" style="background:rgba(5,12,30,0.96)">
     <div class="max-w-sm w-full floor-card p-5 my-auto">
       <h2 class="font-titulo font-bold text-lg text-[#e8e8ff] uppercase tracking-wide mb-1">Reportar o sugerir</h2>
-      <p id="reportar-cat-label" class="font-titulo text-xs text-[#2a5090] mb-4"></p>
+      <p id="reportar-cat-label" class="font-titulo text-xs text-[#7b9ef5] mb-4"></p>
       <div class="flex flex-col gap-2.5 mb-4">
         <label class="flex items-start gap-3 cursor-pointer">
           <input type="checkbox" name="tipo-error" value="Imágenes que no corresponden a la categoría" class="mt-1 accent-[#ff1dce]">
@@ -328,10 +350,10 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
           <span class="font-titulo text-[#e8e8ff] text-sm leading-tight">Otro</span>
         </label>
       </div>
-      <label class="font-titulo text-xs text-[#2a5090] uppercase tracking-wider block mb-1">Sugerencia o detalle (opcional)</label>
+      <label class="font-titulo text-xs text-[#7b9ef5] uppercase tracking-wider block mb-1">Sugerencia o detalle (opcional)</label>
       <textarea id="reportar-sugerencia" maxlength="500" rows="3" placeholder="Cuéntanos qué ha pasado o qué echas en falta..." class="floor-input w-full resize-none text-sm mb-4" style="line-height:1.4"></textarea>
       <div class="flex gap-3">
-        <button id="reportar-cancelar" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-sm px-4 py-2 flex-1">Cancelar</button>
+        <button id="reportar-cancelar" class="floor-btn floor-card-small text-[#7b9ef5] font-titulo font-bold text-sm px-4 py-2 flex-1">Cancelar</button>
         <button id="reportar-enviar" class="floor-btn floor-btn-a font-titulo font-bold text-sm px-4 py-2 flex-1">Enviar →</button>
       </div>
       <p id="reportar-feedback" class="hidden font-titulo text-xs text-center mt-3 text-[#00ff88]">✓ Reporte enviado, gracias</p>
@@ -340,50 +362,43 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   </div>
 
   <!-- TUTORIAL (overlay first visit) -->
-  <div id="tutorial-overlay" class="hidden fixed inset-0 z-50 flex items-end justify-center px-4 pb-6" style="background:rgba(5,12,30,0.93)">
-    <div class="floor-card max-w-sm w-full p-6 space-y-4">
+  <div id="tutorial-overlay" class="hidden fixed inset-0 z-50 flex items-center justify-center px-4" style="background:rgba(5,12,30,0.95)">
+    <div class="floor-card max-w-sm w-full p-6 space-y-5">
       <div class="text-center">
         <div class="text-5xl mb-2">🏆</div>
-        <h2 class="font-titulo font-bold text-2xl text-[#ffcc00] uppercase tracking-wider leading-tight">Gana al rival, gana al reloj</h2>
+        <h2 class="font-titulo font-bold text-2xl text-[#ffcc00] uppercase tracking-wider leading-tight">Gana al rival,<br>gana al reloj</h2>
       </div>
-      <p class="text-sm font-titulo text-[#e8e8ff] text-center leading-relaxed">
-        Por turnos, di en voz alta qué representa la imagen. <strong class="text-[#00ff88]">Aciertas</strong> y conservas tiempo. ¿No sabes?
-        Pulsa <strong class="text-[#ffcc00]">Pasar (−3 s)</strong> y a la siguiente.
+      <p class="text-base font-titulo text-[#e8e8ff] text-center leading-snug">
+        Di lo que veas <strong class="text-[#00ff88]">en voz alta</strong>.<br>
+        Si no sabes, <strong class="text-[#ffcc00]">Pasar (−3 s)</strong>.
       </p>
-      <div class="space-y-2 text-xs font-titulo text-[#e8e8ff] border-t border-[#163575] pt-3">
-        <div class="flex gap-2 items-start"><span class="text-base">⚡</span><span><strong class="text-[#ff1dce]">Partida rápida</strong>: misma categoría hasta que uno se queda sin segundos.</span></div>
-        <div class="flex gap-2 items-start"><span class="text-base">🏁</span><span><strong class="text-[#ff1dce]">Tablero</strong>: 9 casillas con categoría sorpresa. Gana quien conquiste más.</span></div>
-      </div>
-      <button id="tutorial-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-base py-3">¡A jugar! →</button>
+      <button id="tutorial-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-lg py-3">¡A jugar!</button>
     </div>
   </div>
 
   <!-- TUTORIAL DUELO (overlay primera vez que se entra a una partida) -->
-  <div id="tutorial-duelo" class="hidden fixed inset-0 z-50 flex items-end justify-center px-4 pb-6" style="background:rgba(5,12,30,0.93)">
-    <div class="floor-card max-w-sm w-full p-5 space-y-3">
-      <div class="text-center">
-        <div class="text-4xl mb-1">🎬</div>
-        <h2 class="font-titulo font-bold text-xl text-[#ffcc00] uppercase tracking-wider leading-tight">El duelo empieza ya</h2>
-      </div>
-      <div class="space-y-2.5 text-sm font-titulo text-[#e8e8ff]">
-        <div class="flex gap-3 items-start">
-          <span class="text-2xl shrink-0">⏱️</span>
-          <span>A los lados, vuestros segundos. El que está en grande es <strong class="text-[#ffcc00]">de quien tiene el turno</strong>.</span>
+  <div id="tutorial-duelo" class="hidden fixed inset-0 z-50 flex items-center justify-center px-4" style="background:rgba(5,12,30,0.95)">
+    <div class="floor-card max-w-xs w-full p-5 space-y-4">
+      <h2 class="font-titulo font-bold text-xl text-[#ffcc00] uppercase tracking-wider text-center leading-tight">¡A jugar!</h2>
+      <div class="space-y-3 text-base font-titulo text-[#e8e8ff]">
+        <div class="flex gap-3 items-center">
+          <span class="text-3xl shrink-0">⏱️</span>
+          <span>Tu reloj en grande = <strong class="text-[#ffcc00]">tu turno</strong></span>
         </div>
-        <div class="flex gap-3 items-start">
-          <span class="text-2xl shrink-0">🖼️</span>
-          <span>Mira la imagen y <strong class="text-[#00ff88]">di en voz alta</strong> qué es. Si aciertas, le toca al rival.</span>
+        <div class="flex gap-3 items-center">
+          <span class="text-3xl shrink-0">🎤</span>
+          <span>Di la respuesta <strong class="text-[#00ff88]">en voz alta</strong></span>
         </div>
-        <div class="flex gap-3 items-start">
-          <span class="text-2xl shrink-0">⏭️</span>
-          <span>¿No la sabes? Pulsa <strong class="text-[#ffcc00]">Pasar (−3 s)</strong>. Te restan 3 segundos pero <strong>sigues tú</strong>.</span>
+        <div class="flex gap-3 items-center">
+          <span class="text-3xl shrink-0">⏭️</span>
+          <span><strong class="text-[#ffcc00]">Pasar (−3 s)</strong> y sigues tú</span>
         </div>
-        <div class="flex gap-3 items-start">
-          <span class="text-2xl shrink-0">🚨</span>
-          <span>Cuando tu reloj baja de <strong class="text-[#ff3b3b]">10 s</strong>, todo se pone rojo. Cuidado.</span>
+        <div class="flex gap-3 items-center">
+          <span class="text-3xl shrink-0">🚨</span>
+          <span>Bajo <strong class="text-[#ff3b3b]">10 s</strong>: ¡cuidado!</span>
         </div>
       </div>
-      <button id="tutorial-duelo-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-base py-3">¡Empezar! →</button>
+      <button id="tutorial-duelo-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-lg py-3">¡Empezar!</button>
     </div>
   </div>
   </main>
@@ -643,20 +658,20 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     modo = "rapida"; modoElegido = true;
     $("seccion-categoria").classList.remove("hidden");
     $("nota-tablero").classList.add("hidden");
-    $("modo-rapida").classList.remove("text-[#2a5090]", "border-[#163575]");
+    $("modo-rapida").classList.remove("text-[#7b9ef5]", "border-[#163575]");
     $("modo-rapida").classList.add("floor-btn-a");
     $("modo-tablero").classList.remove("floor-btn-a");
-    $("modo-tablero").classList.add("text-[#2a5090]", "border-[#163575]");
+    $("modo-tablero").classList.add("text-[#7b9ef5]", "border-[#163575]");
   });
 
   $("modo-tablero").addEventListener("click", () => {
     modo = "tablero"; modoElegido = true;
     $("seccion-categoria").classList.add("hidden");
     $("nota-tablero").classList.remove("hidden");
-    $("modo-tablero").classList.remove("text-[#2a5090]", "border-[#163575]");
+    $("modo-tablero").classList.remove("text-[#7b9ef5]", "border-[#163575]");
     $("modo-tablero").classList.add("floor-btn-a");
     $("modo-rapida").classList.remove("floor-btn-a");
-    $("modo-rapida").classList.add("text-[#2a5090]", "border-[#163575]");
+    $("modo-rapida").classList.add("text-[#7b9ef5]", "border-[#163575]");
   });
 
   // ── Filtro de categoría (Rápida) ─────────────────────────────
@@ -672,10 +687,10 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     for (const [k, btn] of Object.entries(btns)) {
       if (k === filtro) {
         btn.classList.add("floor-cat-selected");
-        btn.classList.remove("text-[#2a5090]", "border-[#163575]");
+        btn.classList.remove("text-[#7b9ef5]", "border-[#163575]");
       } else {
         btn.classList.remove("floor-cat-selected");
-        btn.classList.add("text-[#2a5090]", "border-[#163575]");
+        btn.classList.add("text-[#7b9ef5]", "border-[#163575]");
       }
     }
   }
@@ -1343,7 +1358,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   });
 
   // ── Tutorial (primera visita) ────────────────────────────────
-  const TUTORIAL_KEY = "el-suelo:tutorial-visto-v2";
+  const TUTORIAL_KEY = "el-suelo:tutorial-visto-v3";
   const tutorialOverlay = document.getElementById("tutorial-overlay")!;
   if (!localStorage.getItem(TUTORIAL_KEY)) {
     tutorialOverlay.classList.remove("hidden");
@@ -1351,6 +1366,41 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   document.getElementById("tutorial-ok")!.addEventListener("click", () => {
     localStorage.setItem(TUTORIAL_KEY, "1");
     tutorialOverlay.classList.add("hidden");
+  });
+
+  // ── Ajustes ──────────────────────────────────────────────────
+  const AJUSTES_KEY = "el-suelo:ajustes-v1";
+  const ajustes = (() => {
+    try {
+      const raw = localStorage.getItem(AJUSTES_KEY);
+      if (raw) return { sonido: true, vibracion: true, ...JSON.parse(raw) };
+    } catch {}
+    return { sonido: true, vibracion: true };
+  })();
+  function guardarAjustes() { try { localStorage.setItem(AJUSTES_KEY, JSON.stringify(ajustes)); } catch {} }
+  (document.getElementById("ajuste-sonido") as HTMLInputElement).checked = ajustes.sonido;
+  (document.getElementById("ajuste-vibracion") as HTMLInputElement).checked = ajustes.vibracion;
+  document.getElementById("boton-ajustes")!.addEventListener("click", () => {
+    document.getElementById("modal-ajustes")!.classList.remove("hidden");
+  });
+  document.getElementById("ajustes-cerrar")!.addEventListener("click", () => {
+    document.getElementById("modal-ajustes")!.classList.add("hidden");
+  });
+  document.getElementById("ajuste-sonido")!.addEventListener("change", (e) => {
+    ajustes.sonido = (e.target as HTMLInputElement).checked;
+    guardarAjustes();
+  });
+  document.getElementById("ajuste-vibracion")!.addEventListener("change", (e) => {
+    ajustes.vibracion = (e.target as HTMLInputElement).checked;
+    guardarAjustes();
+  });
+  document.getElementById("ajustes-tutorial")!.addEventListener("click", () => {
+    try {
+      localStorage.removeItem("el-suelo:tutorial-visto-v3");
+      localStorage.removeItem("el-suelo:tutorial-duelo-v1");
+    } catch {}
+    document.getElementById("modal-ajustes")!.classList.add("hidden");
+    document.getElementById("tutorial-overlay")!.classList.remove("hidden");
   });
 
   // ── Tutorial del duelo (primera vez que se entra a la pantalla de juego) ──

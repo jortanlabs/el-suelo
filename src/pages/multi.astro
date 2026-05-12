@@ -73,27 +73,29 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   <div id="datos-mundo-emoji" data-json={JSON.stringify(mundoSlugsEmoji)} class="hidden"></div>
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#163575] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
-      <button id="boton-volver" class="font-titulo text-base font-bold text-[#2a5090] hover:text-[#e8e8ff] transition">← Volver</button>
+      <button id="boton-volver" class="font-titulo text-base font-bold text-[#7b9ef5] hover:text-[#e8e8ff] transition">← Volver</button>
     </nav>
 
     <!-- ENTRADA -->
-    <section id="pantalla-entrada" class="flex-1 flex flex-col items-center justify-center px-6 gap-6 overflow-y-auto">
+    <section id="pantalla-entrada" class="flex-1 flex flex-col items-center justify-center px-6 gap-5 overflow-y-auto">
       <div class="text-center">
         <div class="inline-block relative px-10 py-3 mb-2">
           <span class="floor-corner floor-corner-tl"></span><span class="floor-corner floor-corner-tr"></span>
           <span class="floor-corner floor-corner-bl"></span><span class="floor-corner floor-corner-br"></span>
           <h1 class="font-titulo text-4xl font-bold neon-gold uppercase tracking-[0.25em]">El suelo</h1>
         </div>
-        <p class="text-[#2a5090] font-titulo text-sm">Modo 2 móviles</p>
+        <p class="text-[#a8c5ff] font-titulo text-sm">📱 Modo 2 móviles</p>
       </div>
-      <div class="w-full max-w-xs flex flex-col gap-3">
-        <label class="font-titulo text-xs text-[#2a5090] uppercase tracking-widest text-center">① Tu nombre</label>
-        <input id="nombre-propio" type="text" placeholder="Escribe tu nombre aquí" maxlength="20"
-          class="floor-input text-center text-lg" autocomplete="off" />
+      <div class="w-full max-w-xs flex flex-col gap-4">
+        <div>
+          <label class="font-titulo text-base font-bold text-[#e8e8ff] block mb-2 text-center">¿Cómo te llamas?</label>
+          <input id="nombre-propio" type="text" placeholder="Tu nombre" maxlength="20"
+            class="floor-input text-center text-lg" autocomplete="off" />
+        </div>
         <button id="boton-crear" class="floor-btn floor-btn-a w-full font-titulo font-bold text-xl py-4">Crear sala</button>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 my-1">
           <div class="flex-1 h-px bg-[#163575]"></div>
-          <span class="text-[#2a5090] font-titulo text-xs">o</span>
+          <span class="text-[#a8c5ff] font-titulo text-xs uppercase tracking-widest">o únete</span>
           <div class="flex-1 h-px bg-[#163575]"></div>
         </div>
         <div class="flex gap-2">
@@ -108,21 +110,21 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     <!-- SALA (lobby) -->
     <section id="pantalla-sala" class="flex-1 flex flex-col items-center justify-center px-6 gap-5 hidden">
       <div class="floor-card p-6 w-full max-w-xs text-center">
-        <p class="text-[#2a5090] font-titulo text-xs uppercase tracking-widest mb-2">Código de sala</p>
+        <p class="text-[#a8c5ff] font-titulo text-sm uppercase tracking-widest mb-2">Código de sala</p>
         <p id="sala-codigo" class="font-titulo text-6xl font-bold neon-gold tracking-[0.3em] mb-5"></p>
         <div class="flex items-center gap-2 mb-2">
           <span class="w-2 h-2 rounded-full bg-[#ff1dce] shrink-0" style="box-shadow:0 0 8px #ff1dce"></span>
-          <span id="sala-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
-          <span class="text-[#2a5090] font-titulo text-xs ml-auto">anfitrión</span>
+          <span id="sala-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-base"></span>
+          <span class="text-[#a8c5ff] font-titulo text-xs ml-auto">anfitrión</span>
         </div>
         <div class="flex items-center gap-2">
           <span id="sala-dot-b" class="w-2 h-2 rounded-full bg-[#2a5090] shrink-0"></span>
-          <span id="sala-nombre-b" class="font-titulo text-[#2a5090] text-sm italic">Esperando a tu rival...</span>
+          <span id="sala-nombre-b" class="font-titulo text-[#a8c5ff] text-base italic">Esperando a tu rival...</span>
         </div>
       </div>
       <button id="boton-sala-jugar" class="floor-btn floor-btn-gold w-full max-w-xs font-titulo font-bold text-xl py-4 hidden">Elegir modo →</button>
-      <button id="boton-compartir" class="floor-btn w-full max-w-xs font-titulo font-bold text-sm py-2" style="color:#7b9ef5;border-color:#163575;">📤 Compartir código</button>
-      <p id="sala-info" class="text-[#2a5090] font-titulo text-xs text-center leading-relaxed">Comparte el código.<br>Tu rival entra por este mismo enlace.</p>
+      <button id="boton-compartir" class="floor-btn w-full max-w-xs font-titulo font-bold text-base py-3" style="color:#a8c5ff;border-color:#2a5090;">📤 Compartir código</button>
+      <p id="sala-info" class="text-[#a8c5ff] font-titulo text-sm text-center leading-relaxed">Comparte el código.<br>Tu rival entra por este mismo enlace.</p>
     </section>
 
     <!-- SETUP (host) -->
@@ -130,21 +132,21 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       <div class="max-w-md w-full mx-auto">
         <div class="floor-card p-5 space-y-4">
           <div>
-            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-2 uppercase tracking-widest">Modo</label>
+            <label class="font-titulo font-bold text-[#7b9ef5] text-xs block mb-2 uppercase tracking-widest">Modo</label>
             <div class="flex gap-2">
-              <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">⚡ Partida rápida</button>
-              <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#2a5090] border-[#163575]">🏁 Tablero</button>
+              <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#7b9ef5] border-[#163575]">⚡ Partida rápida</button>
+              <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#7b9ef5] border-[#163575]">🏁 Tablero</button>
             </div>
           </div>
           <div id="seccion-categoria" class="hidden">
-            <label class="font-titulo font-bold text-[#2a5090] text-xs block mb-1.5 uppercase tracking-widest">Categoría</label>
+            <label class="font-titulo font-bold text-[#7b9ef5] text-xs block mb-1.5 uppercase tracking-widest">Categoría</label>
             <div class="grid grid-cols-3 gap-2">
-              <button id="cat-cine" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🎬<br>Cine y Series</button>
-              <button id="cat-mundo" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🌍<br>El Mundo</button>
-              <button id="cat-deportes" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">⚽<br>Deportes</button>
-              <button id="cat-arte" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🎨<br>Arte</button>
-              <button id="cat-compras" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🛒<br>Compras</button>
-              <button id="cat-personas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#2a5090] border-[#163575] leading-tight">🧑<br>Personas</button>
+              <button id="cat-cine" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🎬<br>Cine y Series</button>
+              <button id="cat-mundo" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🌍<br>El Mundo</button>
+              <button id="cat-deportes" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">⚽<br>Deportes</button>
+              <button id="cat-arte" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🎨<br>Arte</button>
+              <button id="cat-compras" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🛒<br>Compras</button>
+              <button id="cat-personas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🧑<br>Personas</button>
               <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2 text-xs font-titulo leading-tight">🎲 Aleatorio</button>
             </div>
           </div>
@@ -164,7 +166,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     <section id="pantalla-setup-guest" class="flex-1 flex flex-col items-center justify-center px-4 gap-3 hidden">
       <div class="text-5xl wiggle">⏳</div>
       <p class="font-titulo text-xl font-bold text-[#e8e8ff]">El anfitrión está eligiendo...</p>
-      <p id="setup-guest-nombres" class="text-[#2a5090] font-titulo text-sm"></p>
+      <p id="setup-guest-nombres" class="text-[#7b9ef5] font-titulo text-sm"></p>
     </section>
 
     <!-- LOADER -->
@@ -173,7 +175,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <div class="text-6xl mb-4 wiggle inline-block">🔍</div>
         <p id="loader-cat-name" class="font-titulo text-xl font-bold text-[#ffcc00] mb-1"></p>
         <h2 class="font-titulo text-2xl font-bold text-[#e8e8ff] mb-2">Cargando imágenes...</h2>
-        <p id="loader-progreso" class="text-[#2a5090] text-sm font-titulo">Un momento.</p>
+        <p id="loader-progreso" class="text-[#7b9ef5] text-sm font-titulo">Un momento.</p>
       </div>
     </section>
 
@@ -183,7 +185,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <span class="inline-block w-4 h-4 rounded-sm bg-[#ff1dce]" style="box-shadow:0 0 10px #ff1dce"></span>
         <span id="tablero-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
         <span id="tablero-count-a" class="font-titulo font-bold text-xl tabular-nums neon-a"></span>
-        <span class="font-titulo text-[#2a5090] text-sm px-2 font-bold">VS</span>
+        <span class="font-titulo text-[#7b9ef5] text-sm px-2 font-bold">VS</span>
         <span id="tablero-count-b" class="font-titulo font-bold text-xl tabular-nums neon-b"></span>
         <span id="tablero-nombre-b" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
         <span class="inline-block w-4 h-4 rounded-sm bg-[#ffe100]" style="box-shadow:0 0 10px #ffe100"></span>
@@ -192,19 +194,19 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <div id="tablero-grid" class="grid grid-cols-3 gap-3 w-full max-w-sm"></div>
       </div>
       <div class="px-4 py-3 text-center shrink-0">
-        <p id="tablero-instruccion" class="font-titulo text-sm font-bold text-[#2a5090] uppercase tracking-wider"></p>
+        <p id="tablero-instruccion" class="font-titulo text-sm font-bold text-[#7b9ef5] uppercase tracking-wider"></p>
       </div>
       <div id="preduel-overlay" class="hidden absolute inset-0 flex flex-col items-center justify-center z-20 px-8" style="background:#07070fee">
-        <p class="text-xs text-[#2a5090] font-titulo uppercase tracking-widest mb-2">Categoría del duelo</p>
+        <p class="text-xs text-[#7b9ef5] font-titulo uppercase tracking-widest mb-2">Categoría del duelo</p>
         <div id="preduel-emoji" class="text-6xl my-2"></div>
         <p id="preduel-nombre-cat" class="font-titulo font-bold text-2xl text-[#e8e8ff] text-center mb-8"></p>
         <button id="preduel-empezar" class="floor-btn floor-btn-a font-titulo font-bold text-xl px-8 py-4 hidden">¡A jugar! →</button>
-        <p id="preduel-espera" class="text-[#2a5090] font-titulo text-sm hidden">Esperando al otro jugador...</p>
+        <p id="preduel-espera" class="text-[#7b9ef5] font-titulo text-sm hidden">Esperando al otro jugador...</p>
       </div>
     </section>
 
     <!-- JUEGO -->
-    <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0">
+    <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0 overflow-hidden" style="touch-action:manipulation">
       <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
         <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all">
           <span id="turno-ind-a" class="font-titulo text-[10px] font-bold tracking-widest uppercase opacity-0 transition-opacity">▶ TURNO</span>
@@ -227,7 +229,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
               </div>
             </div>
           </div>
-          <p id="texto-voz" class="mt-1.5 text-xs text-[#2a5090] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
+          <p id="texto-voz" class="mt-1.5 text-xs text-[#7b9ef5] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
         </div>
         <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all">
           <span id="turno-ind-b" class="font-titulo text-[10px] font-bold tracking-widest uppercase opacity-0 transition-opacity">▶ TURNO</span>
@@ -235,9 +237,13 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           <span id="nombre-b-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
       </div>
-      <div class="px-6 pt-2 pb-[max(16px,env(safe-area-inset-bottom))] flex items-center justify-center shrink-0">
+      <div class="px-6 pt-2 pb-2 flex items-center justify-center shrink-0">
         <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar (−3 s)</button>
       </div>
+      <form id="chat-juego-bar-inline" class="hidden flex gap-2 px-3 py-2 border-t border-[#163575] shrink-0" style="background:rgba(9,23,40,0.92);padding-bottom:max(8px,env(safe-area-inset-bottom))">
+        <input id="chat-juego-input" type="text" placeholder="💬 Mensaje al rival..." class="floor-input flex-1 text-sm py-2" maxlength="200" autocomplete="off" />
+        <button type="submit" class="floor-btn floor-btn-gold font-titulo font-bold px-3 text-base shrink-0">→</button>
+      </form>
     </section>
 
     <!-- FINAL -->
@@ -251,17 +257,17 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           <div class="floor-card-small p-4" style="border-color:#ff1dce44">
             <p id="final-nombre-a" class="font-titulo font-bold text-[#ff1dce] text-sm mb-1 uppercase tracking-wide"></p>
             <p id="final-valor-a" class="font-titulo font-bold text-4xl floor-timer" style="color:#ff1dce">0s</p>
-            <p id="final-label-a" class="text-xs text-[#2a5090] font-titulo">tiempo restante</p>
+            <p id="final-label-a" class="text-xs text-[#7b9ef5] font-titulo">tiempo restante</p>
           </div>
           <div class="floor-card-small p-4" style="border-color:#ffe10044">
             <p id="final-nombre-b" class="font-titulo font-bold text-[#ffe100] text-sm mb-1 uppercase tracking-wide"></p>
             <p id="final-valor-b" class="font-titulo font-bold text-4xl floor-timer" style="color:#ffe100">0s</p>
-            <p id="final-label-b" class="text-xs text-[#2a5090] font-titulo">tiempo restante</p>
+            <p id="final-label-b" class="text-xs text-[#7b9ef5] font-titulo">tiempo restante</p>
           </div>
         </div>
         <div class="flex flex-col gap-3">
           <button id="boton-revancha" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">Revancha →</button>
-          <button id="boton-menu-final" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
+          <button id="boton-menu-final" class="floor-btn floor-card-small text-[#7b9ef5] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
         </div>
       </div>
     </section>
@@ -273,21 +279,26 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <h3 class="font-titulo font-bold text-lg text-[#ffcc00] uppercase tracking-wide mb-2">¿Salir de la sala?</h3>
         <p class="font-titulo text-sm text-[#e8e8ff] mb-4 leading-relaxed">Perderás el código y se desconectará al otro jugador.</p>
         <div class="flex gap-2">
-          <button id="salir-cancelar" class="floor-btn floor-card-small text-[#2a5090] font-titulo font-bold text-sm px-4 py-2 flex-1">No, seguir</button>
+          <button id="salir-cancelar" class="floor-btn floor-card-small text-[#7b9ef5] font-titulo font-bold text-sm px-4 py-2 flex-1">No, seguir</button>
           <button id="salir-confirmar" class="floor-btn floor-btn-a font-titulo font-bold text-sm px-4 py-2 flex-1">Sí, salir</button>
         </div>
       </div>
     </div>
 
-    <!-- CHAT FLOATING -->
+    <!-- CHAT FLOATING (botón fuera de pJuego) -->
     <button id="chat-flot" class="hidden fixed bottom-4 right-4 z-30 w-12 h-12 rounded-full flex items-center justify-center text-2xl floor-btn floor-btn-gold">
       💬
       <span id="chat-badge" class="hidden absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-[#ff1dce] text-[10px] font-bold text-white flex items-center justify-center" style="box-shadow:0 0 8px #ff1dce">0</span>
     </button>
+
+    <!-- Toasts del chat (durante duelo, encima del juego) -->
+    <div id="chat-toasts" class="hidden fixed inset-x-0 z-30 px-3 flex flex-col gap-1.5 items-stretch pointer-events-none" style="bottom: calc(110px + env(safe-area-inset-bottom, 0px))"></div>
+
+    <!-- CHAT OVERLAY completo (sala, tablero, etc.) -->
     <div id="chat-overlay" class="hidden fixed inset-x-0 bottom-0 z-40 flex flex-col floor-card border-t-2 border-x-0 border-b-0" style="background:#091728;max-height:75vh">
       <div class="flex items-center px-4 py-2 border-b border-[#163575]">
         <h3 class="font-titulo font-bold text-[#ffcc00] text-base flex-1">💬 Chat</h3>
-        <button id="chat-cerrar" class="font-titulo text-sm text-[#2a5090] hover:text-[#e8e8ff]">✕ Cerrar</button>
+        <button id="chat-cerrar" class="font-titulo text-sm text-[#7b9ef5] hover:text-[#e8e8ff]">✕ Cerrar</button>
       </div>
       <div id="chat-mensajes" class="flex-1 overflow-y-auto p-3 flex flex-col gap-2" style="min-height:30vh"></div>
       <form id="chat-form" class="flex gap-2 p-2 border-t border-[#163575]" style="padding-bottom:max(8px,env(safe-area-inset-bottom))">
@@ -422,10 +433,47 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   let chatNoLeidos = 0;
 
   function actualizarBotonChat() {
-    if (!canal) { $("chat-flot").classList.add("hidden"); return; }
+    if (!canal) {
+      $("chat-flot").classList.add("hidden");
+      const bar = $("chat-juego-bar-inline"); bar.classList.add("hidden"); bar.classList.remove("flex");
+      $("chat-toasts").classList.add("hidden");
+      return;
+    }
     const pActual = PANTALLAS.find((s) => !s.classList.contains("hidden"));
-    const visible = !!(pActual && PANTALLAS_CON_CHAT.has(pActual));
-    $("chat-flot").classList.toggle("hidden", !visible || chatAbierto);
+    const enChat = !!(pActual && PANTALLAS_CON_CHAT.has(pActual));
+    const enJuego = pActual === pJuego;
+    // En juego: barra inline abajo + toasts. En otras pantallas con chat: botón flotante
+    $("chat-flot").classList.toggle("hidden", !enChat || chatAbierto || enJuego);
+    const bar = $("chat-juego-bar-inline");
+    bar.classList.toggle("hidden", !enJuego);
+    bar.classList.toggle("flex", enJuego);
+    $("chat-toasts").classList.toggle("hidden", !enJuego);
+    if (!enJuego) limpiarToasts();
+  }
+
+  function limpiarToasts() {
+    $("chat-toasts").innerHTML = "";
+  }
+
+  function lanzarToastChat(autor: "A" | "B", texto: string) {
+    if (autor === rolPropio) return; // no mostrar toasts de tus propios mensajes
+    const cont = $("chat-toasts");
+    const bg = autor === "A" ? "rgba(255,29,206,0.92)" : "rgba(255,225,0,0.92)";
+    const border = autor === "A" ? "#ff1dce" : "#ffe100";
+    const nombreAutor = autor === "A" ? nombreA : nombreB;
+    const div = document.createElement("div");
+    div.className = "self-start max-w-[90%] px-3 py-2 rounded-lg text-sm font-titulo font-bold pointer-events-none";
+    div.style.cssText = `background:${bg};border:1px solid ${border};color:#07070f;box-shadow:0 0 14px ${border}aa;transition:opacity .4s,transform .4s;transform:translateY(0);opacity:1`;
+    div.innerHTML = `<span style="opacity:.7;font-size:.75em">${escapeHTML(nombreAutor || autor)}:</span> ${escapeHTML(texto)}`;
+    cont.appendChild(div);
+    // Mantener máximo 3 toasts a la vez
+    while (cont.children.length > 3) cont.firstChild!.remove();
+    // Desvanecer después de 5 s
+    setTimeout(() => {
+      div.style.opacity = "0";
+      div.style.transform = "translateY(-8px)";
+      setTimeout(() => div.remove(), 400);
+    }, 5000);
   }
 
   function actualizarBadgeChat() {
@@ -451,7 +499,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     const nombreAutor = autor === "A" ? nombreA : nombreB;
     div.className = `flex flex-col max-w-[85%] ${esMio ? "self-end items-end" : "self-start items-start"}`;
     div.innerHTML = `
-      <div class="text-[10px] font-titulo text-[#2a5090] mb-0.5 px-1">${escapeHTML(nombreAutor || autor)}${tipo === "voz" ? " 🎤" : ""}</div>
+      <div class="text-[10px] font-titulo text-[#7b9ef5] mb-0.5 px-1">${escapeHTML(nombreAutor || autor)}${tipo === "voz" ? " 🎤" : ""}</div>
       <div class="px-3 py-1.5 text-sm font-titulo rounded-lg" style="background:${bg};border:1px solid ${border};color:#e8e8ff">${escapeHTML(texto)}</div>
     `;
     lista.appendChild(div);
@@ -460,6 +508,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       chatNoLeidos++;
       actualizarBadgeChat();
     }
+    // Si estamos en pJuego, mostrar el mensaje como toast efímero
+    if (!pJuego.classList.contains("hidden")) lanzarToastChat(autor, texto);
   }
 
   function enviarChat(texto: string, tipo: "texto" | "voz" = "texto") {
@@ -491,6 +541,12 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   $("chat-form").addEventListener("submit", (e) => {
     e.preventDefault();
     const input = $("chat-input") as HTMLInputElement;
+    enviarChat(input.value, "texto");
+    input.value = "";
+  });
+  $("chat-juego-bar-inline").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const input = $("chat-juego-input") as HTMLInputElement;
     enviarChat(input.value, "texto");
     input.value = "";
   });
@@ -542,10 +598,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     for (const [k, btn] of Object.entries(btns)) {
       if (k === filtro) {
         btn.classList.add("floor-cat-selected");
-        btn.classList.remove("text-[#2a5090]", "border-[#163575]");
+        btn.classList.remove("text-[#7b9ef5]", "border-[#163575]");
       } else {
         btn.classList.remove("floor-cat-selected");
-        btn.classList.add("text-[#2a5090]", "border-[#163575]");
+        btn.classList.add("text-[#7b9ef5]", "border-[#163575]");
       }
     }
   }
@@ -625,7 +681,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       $("sala-nombre-a").textContent = nombreA;
       ($("sala-dot-b") as HTMLElement).style.backgroundColor = "#2a5090";
       $("sala-nombre-b").textContent = "Esperando a tu rival...";
-      ($("sala-nombre-b") as HTMLElement).className = "font-titulo text-[#2a5090] text-sm italic";
+      ($("sala-nombre-b") as HTMLElement).className = "font-titulo text-[#7b9ef5] text-sm italic";
       $("boton-sala-jugar").classList.add("hidden");
       $("sala-info").innerHTML = "Comparte el código.<br>Tu rival entra por este mismo enlace.";
       mostrar(pSala);
@@ -833,10 +889,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     modo = "rapida"; modoElegido = true;
     $("seccion-categoria").classList.remove("hidden");
     $("nota-tablero").classList.add("hidden");
-    $("modo-rapida").classList.remove("text-[#2a5090]", "border-[#163575]");
+    $("modo-rapida").classList.remove("text-[#7b9ef5]", "border-[#163575]");
     $("modo-rapida").classList.add("floor-btn-a");
     $("modo-tablero").classList.remove("floor-btn-a");
-    $("modo-tablero").classList.add("text-[#2a5090]", "border-[#163575]");
+    $("modo-tablero").classList.add("text-[#7b9ef5]", "border-[#163575]");
   });
 
   $("modo-tablero").addEventListener("click", () => {
@@ -844,10 +900,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     // En tablero las categorías son aleatorias — no se elige filtro
     $("seccion-categoria").classList.add("hidden");
     $("nota-tablero").classList.remove("hidden");
-    $("modo-tablero").classList.remove("text-[#2a5090]", "border-[#163575]");
+    $("modo-tablero").classList.remove("text-[#7b9ef5]", "border-[#163575]");
     $("modo-tablero").classList.add("floor-btn-a");
     $("modo-rapida").classList.remove("floor-btn-a");
-    $("modo-rapida").classList.add("text-[#2a5090]", "border-[#163575]");
+    $("modo-rapida").classList.add("text-[#7b9ef5]", "border-[#163575]");
   });
 
   let modoElegido = false;
