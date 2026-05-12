@@ -104,63 +104,87 @@
     "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/3/3d/DiploPaul_64_Hours.png/revision/latest/scale-to-width-down/250?cb=20180718143321&path-prefix=es"
   },
   {
+    "nombre": "Ellie Sattler",
+    "imagen": "https://people.com/thmb/nuw-_EGc1gfl1Fd1nLCNGlIQxb4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(739x398:741x400)/laura-dern-1-fc353203450844fcb42564871210985f.jpg"
+  },
+  {
+    "nombre": "Alan Grant",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/18/Alan_Grant_%28Sam_Neill%29.jpg"
+  },
+  {
+    "nombre": "John Hammond",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b5/John_Hammond.webp"
+  },
+  {
+    "nombre": "Ian Malcolm",
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/b/b3/Ian_Malcolm_%28JP%29.jpg/revision/latest/scale-to-width-down/250?cb=20171007230816&path-prefix=es"
+  },
+  {
+    "nombre": "Lex Murphy",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXIP13OV5A5J-auP0LzaqzsYI39bRtwWH0tA&s"
+  },
+  {
+    "nombre": "Tim Murphy",
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/8/81/2844104-tim_1.png/revision/latest/scale-to-width-down/250?cb=20130724083945&path-prefix=es"
+  },
+  {
     "nombre": "T-Rex",
-    "imagen": ""
+    "imagen": "https://www.looper.com/img/gallery/this-jurassic-park-movie-made-the-most-money-in-theaters/intro-1641570280.jpg"
   },
   {
     "nombre": "Compsognathus",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/736x/f7/89/72/f7897274af53cf2a221932f6e744df55.jpg"
   },
   {
     "nombre": "Dennis Nedry",
-    "imagen": ""
+    "imagen": "https://preview.redd.it/do-you-think-jurassic-park-would-have-been-successful-had-v0-o25dt5evhyse1.jpeg?width=640&crop=smart&auto=webp&s=2e8dd174b5911c9489401d7e9cb4e2c085d1d7c6"
   },
   {
     "nombre": "Robert Muldoon",
-    "imagen": ""
+    "imagen": "https://i.redd.it/twbca8czevke1.jpeg"
   },
   {
     "nombre": "Owen Grady",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/9/9a/Owen_Grady-Dominion-Screenshot_2025-01-13_001853.png/revision/latest?cb=20250113042154&path-prefix=es"
   },
   {
     "nombre": "Claire Dearing",
-    "imagen": ""
+    "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBQG9YbSmaqPBhM4kam6ZNekoo7JGA0V2GqeSQK6XfgM00r2H6RrT2TXHT9K2N3UXIV7GDlxrblkXcN1q3DOMEPB92URiDfRKegqiXYyPY1HJ2oDjWvNOi0LD8llbLjSFHXspHnQNpNGvi/s1600/Jurassic-World--Claire_article_story_large.jpg"
   },
   {
     "nombre": "Maisie Lockwood",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/7/7f/Maisie_Lockwood_%28Isabella_Semon%29.jpg"
   },
   {
     "nombre": "Henry Wu",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/jurassicpark/images/a/a7/250px-JP-HenryWu1.jpg/revision/latest?cb=20140923052750&path-prefix=es"
   },
   {
     "nombre": "Sarah Harding",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/PVsFeyQDnRw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAS-OyHclT3rSN758Vr6pQlkhmWRw"
   },
   {
     "nombre": "Roland Tembo",
-    "imagen": ""
+    "imagen": "https://i.redd.it/mebxfcnaefoe1.jpeg"
   },
   {
     "nombre": "Charlie",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Ea3gCdhh5BQ8k2iiYAObXizq3KApQ-O6rA&s"
   },
   {
     "nombre": "Blue",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKOUsqDdqRrjeb6PTnGgOPQfAQa6jeaxcEA&s"
   },
   {
     "nombre": "Delta",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqHBzcTlkfsw1xQ7Hyr7dGu6tLhmzfES_18w&s"
   },
   {
     "nombre": "Echo",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXZflwKyislO0Skg8ejfmCrMP_iGBNhCtpUg&s"
   },
   {
     "nombre": "Giganotosaurus",
-    "imagen": ""
+    "imagen": "https://i.redd.it/qzi3nq8vqb4a1.jpg"
   }
 ]
