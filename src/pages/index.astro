@@ -117,17 +117,17 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
           <span class="floor-corner floor-corner-br"></span>
           <h1 class="font-titulo text-5xl font-bold neon-gold uppercase tracking-[0.3em]">El suelo</h1>
         </div>
-        <p class="text-[#7b9ef5] font-titulo text-base mt-2">Adivina más rápido que el rival. Gana al reloj.</p>
+        <p class="text-[#a8c5ff] font-titulo text-lg mt-2">Adivina más rápido que el rival. Gana al reloj.</p>
       </div>
 
       <div class="flex-1"></div>
 
       <div class="w-full max-w-xs flex flex-col items-center gap-4">
-        <button id="boton-jugar" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-2xl py-5 tracking-widest uppercase">
+        <button id="boton-jugar" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-3xl py-6 tracking-widest uppercase">
           ¡Jugar!
         </button>
 
-        <a href="/multi" class="floor-btn w-full font-titulo font-bold text-lg py-3 tracking-widest uppercase text-center" style="color:#7b9ef5;border-color:#163575;">
+        <a id="link-multi" href="/multi" data-astro-prefetch="viewport" class="floor-btn w-full font-titulo font-bold text-xl py-4 tracking-widest uppercase text-center" style="color:#a8c5ff;border-color:#a8c5ff;">
           📱 2 Móviles
         </a>
       </div>
@@ -148,48 +148,48 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       </div>
 
       <div class="max-w-md w-full">
-        <div class="floor-card p-4 space-y-3">
+        <div class="floor-card p-5 space-y-4">
           <!-- Nombres -->
-          <div class="grid grid-cols-2 gap-2">
+          <div class="grid grid-cols-2 gap-3">
             <div>
-              <label class="font-titulo font-bold text-[#ff1dce] text-xs block mb-0.5 uppercase tracking-widest">Jugador 1</label>
-              <input id="nombre-a" type="text" placeholder="Jugador A" maxlength="20" class="floor-input floor-input-a py-1.5 text-sm" />
+              <label class="font-titulo font-bold text-[#ff1dce] text-sm block mb-1 uppercase tracking-widest">Jugador 1</label>
+              <input id="nombre-a" type="text" placeholder="Jugador A" maxlength="20" class="floor-input floor-input-a py-2 text-base" />
             </div>
             <div>
-              <label class="font-titulo font-bold text-[#ffe100] text-xs block mb-0.5 uppercase tracking-widest">Jugador 2</label>
-              <input id="nombre-b" type="text" placeholder="Jugador B" maxlength="20" class="floor-input floor-input-b py-1.5 text-sm" />
+              <label class="font-titulo font-bold text-[#ffe100] text-sm block mb-1 uppercase tracking-widest">Jugador 2</label>
+              <input id="nombre-b" type="text" placeholder="Jugador B" maxlength="20" class="floor-input floor-input-b py-2 text-base" />
             </div>
           </div>
 
           <!-- Modo -->
           <div class="flex gap-2">
-            <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#7b9ef5] border-[#163575]">⚡ Rápida</button>
-            <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#7b9ef5] border-[#163575]">🏁 Tablero</button>
+            <button id="modo-rapida" class="floor-btn flex-1 px-3 py-3 text-base font-titulo text-[#a8c5ff]" style="border-color:#a8c5ff">⚡ Rápida</button>
+            <button id="modo-tablero" class="floor-btn flex-1 px-3 py-3 text-base font-titulo text-[#a8c5ff]" style="border-color:#a8c5ff">🏁 Tablero</button>
           </div>
 
           <!-- Selector de categoría -->
           <div id="seccion-categoria" class="hidden">
-            <label class="font-titulo font-bold text-[#7b9ef5] text-xs block mb-1.5 uppercase tracking-widest">Categoría</label>
+            <label class="font-titulo font-bold text-[#a8c5ff] text-sm block mb-2 uppercase tracking-widest">Categoría</label>
             <div class="grid grid-cols-3 gap-2">
-              <button id="cat-cine" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🎬<br>Cine y Series</button>
-              <button id="cat-mundo" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🌍<br>El Mundo</button>
-              <button id="cat-deportes" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">⚽<br>Deportes</button>
-              <button id="cat-arte" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🎨<br>Arte</button>
-              <button id="cat-compras" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🛒<br>Compras</button>
-              <button id="cat-personas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🧑<br>Personas</button>
-              <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2 text-xs font-titulo leading-tight">🎲 Aleatorio</button>
+              <button id="cat-cine" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🎬<br>Cine y Series</button>
+              <button id="cat-mundo" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🌍<br>El Mundo</button>
+              <button id="cat-deportes" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">⚽<br>Deportes</button>
+              <button id="cat-arte" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🎨<br>Arte</button>
+              <button id="cat-compras" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🛒<br>Compras</button>
+              <button id="cat-personas" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🧑<br>Personas</button>
+              <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2.5 text-base font-titulo leading-tight">🎲 Aleatorio</button>
             </div>
           </div>
 
-          <div id="nota-tablero" class="hidden floor-card-small px-3 py-2 border-[#ffcc0033]">
-            <p class="text-xs text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría</p>
+          <div id="nota-tablero" class="hidden floor-card-small px-4 py-3 border-[#ffcc0033]">
+            <p class="text-sm text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría</p>
           </div>
 
           <!-- Botón arrancar -->
           <div class="flex gap-2 shrink-0">
-            <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-lg px-4 py-3">¡A jugar! →</button>
+            <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-4 py-4">¡A jugar! →</button>
           </div>
-          <p id="error-setup" class="hidden text-xs text-[#ff1dce] text-center font-bold"></p>
+          <p id="error-setup" class="hidden text-sm text-[#ff1dce] text-center font-bold"></p>
         </div>
       </div>
     </section>
@@ -257,17 +257,14 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
               </div>
             </div>
           </div>
-          <p id="texto-voz" class="mt-1 text-xs text-[#7b9ef5] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
+          <p id="texto-voz" class="mt-2 text-sm text-[#a8c5ff] font-titulo text-center max-w-xs px-2 min-h-[24px]"></p>
+          <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs mt-2">Pasar (−3 s)</button>
         </div>
 
         <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
           <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
           <span id="nombre-b-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
-      </div>
-
-      <div class="px-6 pt-2 pb-[max(16px,env(safe-area-inset-bottom))] flex items-center justify-center shrink-0">
-        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar (−3 s)</button>
       </div>
     </section>
 
@@ -658,20 +655,16 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     modo = "rapida"; modoElegido = true;
     $("seccion-categoria").classList.remove("hidden");
     $("nota-tablero").classList.add("hidden");
-    $("modo-rapida").classList.remove("text-[#7b9ef5]", "border-[#163575]");
     $("modo-rapida").classList.add("floor-btn-a");
     $("modo-tablero").classList.remove("floor-btn-a");
-    $("modo-tablero").classList.add("text-[#7b9ef5]", "border-[#163575]");
   });
 
   $("modo-tablero").addEventListener("click", () => {
     modo = "tablero"; modoElegido = true;
     $("seccion-categoria").classList.add("hidden");
     $("nota-tablero").classList.remove("hidden");
-    $("modo-tablero").classList.remove("text-[#7b9ef5]", "border-[#163575]");
     $("modo-tablero").classList.add("floor-btn-a");
     $("modo-rapida").classList.remove("floor-btn-a");
-    $("modo-rapida").classList.add("text-[#7b9ef5]", "border-[#163575]");
   });
 
   // ── Filtro de categoría (Rápida) ─────────────────────────────
@@ -685,13 +678,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       aleatorio: $("cat-aleatorio"),
     };
     for (const [k, btn] of Object.entries(btns)) {
-      if (k === filtro) {
-        btn.classList.add("floor-cat-selected");
-        btn.classList.remove("text-[#7b9ef5]", "border-[#163575]");
-      } else {
-        btn.classList.remove("floor-cat-selected");
-        btn.classList.add("text-[#7b9ef5]", "border-[#163575]");
-      }
+      btn.classList.toggle("floor-cat-selected", k === filtro);
     }
   }
 
@@ -1120,6 +1107,14 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     $("texto-voz").textContent = "🎤 Escuchando...";
   }
 
+  // ── Vibración (respeta ajuste) ───────────────────────────────
+  function vibrar(pattern: number | number[]) {
+    try {
+      if (!ajustes.vibracion) return;
+      if (navigator.vibrate) navigator.vibrate(pattern);
+    } catch {}
+  }
+
   // ── Turno ────────────────────────────────────────────────────
   let pendingAction: ReturnType<typeof setTimeout> | null = null;
   function clearPending() { if (pendingAction) { clearTimeout(pendingAction); pendingAction = null; } }
@@ -1170,6 +1165,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         const item = items[indice];
         if (!item) return;
         $("texto-voz").textContent = `"${texto}"`;
+        // Comando de voz: si dice EXACTAMENTE "paso" o "pasar", registra pase
+        const palabra = texto.toLowerCase().trim().replace(/[.,!¡?¿]/g, "");
+        if (palabra === "paso" || palabra === "pasar" || palabra === "pasa" || palabra === "pasando") {
+          registrarPase();
+          return;
+        }
         if (aciertoFlexible(texto, item.nombre, categoriaActual)) registrarAcierto();
       },
       onError: (err) => {
@@ -1198,6 +1199,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   function registrarAcierto() {
     if (bloqueado) return;
     bloqueado = true;
+    vibrar(60);
     ($("boton-pasar") as HTMLButtonElement).disabled = true;
     pararTimer();
     const nombre = items[indice].nombre;
@@ -1213,6 +1215,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   function registrarPase() {
     if (bloqueado) return;
     bloqueado = true;
+    vibrar([40, 40, 40]);
     ($("boton-pasar") as HTMLButtonElement).disabled = true;
     pararTimer();
     const nombre = items[indice].nombre;
@@ -1243,6 +1246,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   function terminar() {
     if (terminado) return;
     terminado = true;
+    vibrar([150, 100, 150]);
     pararTimer();
     pararVoz();
     clearPending();
@@ -1356,6 +1360,16 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       $("texto-voz").textContent = "🎤 Escuchando...";
     }
   });
+
+  // ── Link a /multi con feedback de carga ───────────────────────
+  const linkMulti = document.getElementById("link-multi");
+  if (linkMulti) {
+    linkMulti.addEventListener("click", () => {
+      linkMulti.textContent = "Cargando…";
+      linkMulti.style.opacity = "0.6";
+      (linkMulti as HTMLAnchorElement).style.pointerEvents = "none";
+    });
+  }
 
   // ── Tutorial (primera visita) ────────────────────────────────
   const TUTORIAL_KEY = "el-suelo:tutorial-visto-v3";

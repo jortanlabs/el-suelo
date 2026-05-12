@@ -130,28 +130,28 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     <!-- SETUP (host) -->
     <section id="pantalla-setup" class="flex-1 overflow-y-auto px-4 py-5 hidden">
       <div class="max-w-md w-full mx-auto">
-        <div class="floor-card p-5 space-y-4">
+        <div class="floor-card p-5 space-y-5">
           <div>
-            <label class="font-titulo font-bold text-[#7b9ef5] text-xs block mb-2 uppercase tracking-widest">Modo</label>
+            <label class="font-titulo font-bold text-[#a8c5ff] text-sm block mb-2 uppercase tracking-widest">Modo</label>
             <div class="flex gap-2">
-              <button id="modo-rapida" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#7b9ef5] border-[#163575]">⚡ Partida rápida</button>
-              <button id="modo-tablero" class="floor-btn flex-1 px-3 py-2 text-sm font-titulo text-[#7b9ef5] border-[#163575]">🏁 Tablero</button>
+              <button id="modo-rapida" class="floor-btn flex-1 px-3 py-3 text-base font-titulo text-[#a8c5ff]" style="border-color:#a8c5ff">⚡ Rápida</button>
+              <button id="modo-tablero" class="floor-btn flex-1 px-3 py-3 text-base font-titulo text-[#a8c5ff]" style="border-color:#a8c5ff">🏁 Tablero</button>
             </div>
           </div>
           <div id="seccion-categoria" class="hidden">
-            <label class="font-titulo font-bold text-[#7b9ef5] text-xs block mb-1.5 uppercase tracking-widest">Categoría</label>
+            <label class="font-titulo font-bold text-[#a8c5ff] text-sm block mb-2 uppercase tracking-widest">Categoría</label>
             <div class="grid grid-cols-3 gap-2">
-              <button id="cat-cine" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🎬<br>Cine y Series</button>
-              <button id="cat-mundo" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🌍<br>El Mundo</button>
-              <button id="cat-deportes" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">⚽<br>Deportes</button>
-              <button id="cat-arte" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🎨<br>Arte</button>
-              <button id="cat-compras" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🛒<br>Compras</button>
-              <button id="cat-personas" class="floor-btn px-2 py-2 text-xs font-titulo text-[#7b9ef5] border-[#163575] leading-tight">🧑<br>Personas</button>
-              <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2 text-xs font-titulo leading-tight">🎲 Aleatorio</button>
+              <button id="cat-cine" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🎬<br>Cine y Series</button>
+              <button id="cat-mundo" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🌍<br>El Mundo</button>
+              <button id="cat-deportes" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">⚽<br>Deportes</button>
+              <button id="cat-arte" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🎨<br>Arte</button>
+              <button id="cat-compras" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🛒<br>Compras</button>
+              <button id="cat-personas" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🧑<br>Personas</button>
+              <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2.5 text-base font-titulo leading-tight">🎲 Aleatorio</button>
             </div>
           </div>
           <div id="nota-tablero" class="hidden floor-card-small px-4 py-3 border-[#ffcc0033]">
-            <p class="text-sm text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría aleatoria</p>
+            <p class="text-base text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría aleatoria</p>
           </div>
           <div class="flex gap-2">
             <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-6 py-4">¡A jugar! →</button>
@@ -229,16 +229,14 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
               </div>
             </div>
           </div>
-          <p id="texto-voz" class="mt-1.5 text-xs text-[#7b9ef5] font-titulo text-center max-w-xs px-2 min-h-[16px]"></p>
+          <p id="texto-voz" class="mt-2 text-sm text-[#a8c5ff] font-titulo text-center max-w-xs px-2 min-h-[24px]"></p>
+          <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs mt-2">Pasar (−3 s)</button>
         </div>
         <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all">
           <span id="turno-ind-b" class="font-titulo text-[10px] font-bold tracking-widest uppercase opacity-0 transition-opacity">▶ TURNO</span>
           <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer transition-all"></span>
           <span id="nombre-b-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
-      </div>
-      <div class="px-6 pt-2 pb-2 flex items-center justify-center shrink-0">
-        <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar (−3 s)</button>
       </div>
       <form id="chat-juego-bar-inline" class="hidden flex gap-2 px-3 py-2 border-t border-[#163575] shrink-0" style="background:rgba(9,23,40,0.92);padding-bottom:max(8px,env(safe-area-inset-bottom))">
         <input id="chat-juego-input" type="text" placeholder="💬 Mensaje al rival..." class="floor-input flex-1 text-sm py-2" maxlength="200" autocomplete="off" />
@@ -456,24 +454,25 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   }
 
   function lanzarToastChat(autor: "A" | "B", texto: string) {
-    if (autor === rolPropio) return; // no mostrar toasts de tus propios mensajes
     const cont = $("chat-toasts");
+    const esMio = autor === rolPropio;
     const bg = autor === "A" ? "rgba(255,29,206,0.92)" : "rgba(255,225,0,0.92)";
     const border = autor === "A" ? "#ff1dce" : "#ffe100";
     const nombreAutor = autor === "A" ? nombreA : nombreB;
     const div = document.createElement("div");
-    div.className = "self-start max-w-[90%] px-3 py-2 rounded-lg text-sm font-titulo font-bold pointer-events-none";
+    // Mis mensajes a la derecha, los del rival a la izquierda
+    div.className = `${esMio ? "self-end" : "self-start"} max-w-[90%] px-3 py-2 rounded-lg text-sm font-titulo font-bold pointer-events-none`;
     div.style.cssText = `background:${bg};border:1px solid ${border};color:#07070f;box-shadow:0 0 14px ${border}aa;transition:opacity .4s,transform .4s;transform:translateY(0);opacity:1`;
     div.innerHTML = `<span style="opacity:.7;font-size:.75em">${escapeHTML(nombreAutor || autor)}:</span> ${escapeHTML(texto)}`;
     cont.appendChild(div);
     // Mantener máximo 3 toasts a la vez
     while (cont.children.length > 3) cont.firstChild!.remove();
-    // Desvanecer después de 5 s
+    // Desvanecer después de 7 s
     setTimeout(() => {
       div.style.opacity = "0";
       div.style.transform = "translateY(-8px)";
       setTimeout(() => div.remove(), 400);
-    }, 5000);
+    }, 7000);
   }
 
   function actualizarBadgeChat() {
@@ -596,13 +595,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       arte: $("cat-arte"), compras: $("cat-compras"), personas: $("cat-personas"), aleatorio: $("cat-aleatorio"),
     };
     for (const [k, btn] of Object.entries(btns)) {
-      if (k === filtro) {
-        btn.classList.add("floor-cat-selected");
-        btn.classList.remove("text-[#7b9ef5]", "border-[#163575]");
-      } else {
-        btn.classList.remove("floor-cat-selected");
-        btn.classList.add("text-[#7b9ef5]", "border-[#163575]");
-      }
+      btn.classList.toggle("floor-cat-selected", k === filtro);
     }
   }
 
@@ -889,10 +882,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     modo = "rapida"; modoElegido = true;
     $("seccion-categoria").classList.remove("hidden");
     $("nota-tablero").classList.add("hidden");
-    $("modo-rapida").classList.remove("text-[#7b9ef5]", "border-[#163575]");
     $("modo-rapida").classList.add("floor-btn-a");
     $("modo-tablero").classList.remove("floor-btn-a");
-    $("modo-tablero").classList.add("text-[#7b9ef5]", "border-[#163575]");
   });
 
   $("modo-tablero").addEventListener("click", () => {
@@ -900,10 +891,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     // En tablero las categorías son aleatorias — no se elige filtro
     $("seccion-categoria").classList.add("hidden");
     $("nota-tablero").classList.remove("hidden");
-    $("modo-tablero").classList.remove("text-[#7b9ef5]", "border-[#163575]");
     $("modo-tablero").classList.add("floor-btn-a");
     $("modo-rapida").classList.remove("floor-btn-a");
-    $("modo-rapida").classList.add("text-[#7b9ef5]", "border-[#163575]");
   });
 
   let modoElegido = false;
@@ -999,6 +988,16 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   let pendingAction: ReturnType<typeof setTimeout> | null = null;
   function clearPending() { if (pendingAction) { clearTimeout(pendingAction); pendingAction = null; } }
 
+  // Vibración (respeta ajuste guardado en localStorage por la pantalla principal)
+  function vibrar(pattern: number | number[]) {
+    try {
+      const raw = localStorage.getItem("el-suelo:ajustes-v1");
+      const ajustes = raw ? JSON.parse(raw) : { vibracion: true };
+      if (ajustes.vibracion === false) return;
+      if (navigator.vibrate) navigator.vibrate(pattern);
+    } catch {}
+  }
+
   function handleTimeout() {
     if (bloqueado || terminado) return;
     bloqueado = true;
@@ -1012,6 +1011,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   function registrarAcierto() {
     if (bloqueado || terminado) return;
     bloqueado = true;
+    vibrar(60);
     if (gameTimeout) clearTimeout(gameTimeout);
     pararVoz();
     const elapsed = (Date.now() - timestampTurno) / 100;
@@ -1033,6 +1033,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   function registrarPase() {
     if (bloqueado || terminado) return;
     bloqueado = true;
+    vibrar([40, 40, 40]);
     if (gameTimeout) clearTimeout(gameTimeout);
     pararVoz();
     const elapsed = (Date.now() - timestampTurno) / 100;
@@ -1064,6 +1065,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   function terminar() {
     if (terminado) return;
     terminado = true;
+    vibrar([150, 100, 150]);
     if (gameTimeout) clearTimeout(gameTimeout);
     clearPending();
     pararVoz();
@@ -1123,6 +1125,13 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           ultimoVozTextoEnviado = texto;
           ultimoVozTimestamp = ahora;
           try { canal.trigger("client-voz", { texto }); } catch {}
+        }
+        // Comando de voz: "paso" / "pasar" → registrar pase
+        const palabra = texto.toLowerCase().trim().replace(/[.,!¡?¿]/g, "");
+        if (palabra === "paso" || palabra === "pasar" || palabra === "pasa" || palabra === "pasando") {
+          if (rol === "host") registrarPase();
+          else accion("pase");
+          return;
         }
         if (aciertoFlexible(texto, item.nombre, categoriaActual)) {
           if (rol === "host") registrarAcierto();
