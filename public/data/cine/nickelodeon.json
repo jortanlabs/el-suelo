@@ -104,119 +104,83 @@
     "imagen": "https://pbs.twimg.com/media/GPCZFWWXUAA7ukT.jpg"
   },
   {
-    "nombre": "Phil DeVille (Rugrats)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DB-nR_UKXDCNpCKwnFa_TQr4J0oZhFbvqw&s"
-  },
-  {
     "nombre": "Dil Pickles (Rugrats)",
     "imagen": "https://m.media-amazon.com/images/M/MV5BMTgxMjg3MTA1M15BMl5BanBnXkFtZTgwNTEwNDY2MjE@._V1_FMjpg_UX1000_.jpg"
   },
   {
-    "nombre": "Bob Esponja",
+    "nombre": "Patricio Estrella (Bob Esponja)",
     "imagen": ""
   },
   {
-    "nombre": "Patricio Estrella",
+    "nombre": "Calamardo (Bob Esponja)",
     "imagen": ""
   },
   {
-    "nombre": "Calamardo",
+    "nombre": "Don Cangrejo (Bob Esponja)",
     "imagen": ""
   },
   {
-    "nombre": "Don Cangrejo",
+    "nombre": "Dora la Exploradora (Dora)",
     "imagen": ""
   },
   {
-    "nombre": "Plankton",
+    "nombre": "Botas (Dora la Exploradora)",
     "imagen": ""
   },
   {
-    "nombre": "Arenita Mejillas",
+    "nombre": "Diego (Go, Diego, Go!)",
     "imagen": ""
   },
   {
-    "nombre": "Arnold",
+    "nombre": "Caillou (Caillou)",
     "imagen": ""
   },
   {
-    "nombre": "Helga Pataki",
+    "nombre": "Leonardo (Tortugas Ninja)",
     "imagen": ""
   },
   {
-    "nombre": "Tommy Pickles",
+    "nombre": "Donatello (Tortugas Ninja)",
     "imagen": ""
   },
   {
-    "nombre": "Angélica Pickles",
+    "nombre": "Rafael (Tortugas Ninja)",
     "imagen": ""
   },
   {
-    "nombre": "Chuckie Finster",
+    "nombre": "Michelangelo (Tortugas Ninja)",
     "imagen": ""
   },
   {
-    "nombre": "Dora la Exploradora",
+    "nombre": "Carly Shay (iCarly)",
     "imagen": ""
   },
   {
-    "nombre": "Botas",
+    "nombre": "Sam Puckett (iCarly)",
     "imagen": ""
   },
   {
-    "nombre": "Diego",
+    "nombre": "Freddie Benson (iCarly)",
     "imagen": ""
   },
   {
-    "nombre": "Caillou",
+    "nombre": "Spencer Shay (iCarly)",
     "imagen": ""
   },
   {
-    "nombre": "Leonardo Tortuga Ninja",
+    "nombre": "Drake Parker (Drake y Josh)",
     "imagen": ""
   },
   {
-    "nombre": "Donatello Tortuga Ninja",
+    "nombre": "Josh Nichols (Drake y Josh)",
     "imagen": ""
   },
   {
-    "nombre": "Rafael Tortuga Ninja",
+    "nombre": "Megan Parker (Drake y Josh)",
     "imagen": ""
   },
   {
-    "nombre": "Michelangelo Tortuga Ninja",
-    "imagen": ""
-  },
-  {
-    "nombre": "iCarly",
-    "imagen": ""
-  },
-  {
-    "nombre": "Sam Puckett",
-    "imagen": ""
-  },
-  {
-    "nombre": "Freddie Benson",
-    "imagen": ""
-  },
-  {
-    "nombre": "Spencer Shay",
-    "imagen": ""
-  },
-  {
-    "nombre": "Drake Parker",
-    "imagen": ""
-  },
-  {
-    "nombre": "Josh Nichols",
-    "imagen": ""
-  },
-  {
-    "nombre": "Megan Parker",
-    "imagen": ""
-  },
-  {
-    "nombre": "Zoey Brooks",
+    "nombre": "Zoey Brooks (Zoey 101)",
     "imagen": ""
   },
   {
@@ -224,59 +188,35 @@
     "imagen": ""
   },
   {
-    "nombre": "Kenan Thompson",
+    "nombre": "Kenan Rockmore (Kenan y Kel)",
     "imagen": ""
   },
   {
-    "nombre": "Kel Mitchell",
+    "nombre": "Kel Kimble (Kenan y Kel)",
     "imagen": ""
   },
   {
-    "nombre": "Jimmy Neutrón",
+    "nombre": "Cindy Vortex (Jimmy Neutrón)",
     "imagen": ""
   },
   {
-    "nombre": "Sheen Estevez",
+    "nombre": "Toph (Avatar: la leyenda de Aang)",
     "imagen": ""
   },
   {
-    "nombre": "Carl Wheezer",
+    "nombre": "Zuko (Avatar: la leyenda de Aang)",
     "imagen": ""
   },
   {
-    "nombre": "Cindy Vortex",
+    "nombre": "Korra (La leyenda de Korra)",
     "imagen": ""
   },
   {
-    "nombre": "Aang",
+    "nombre": "Henry Hart (Henry Danger)",
     "imagen": ""
   },
   {
-    "nombre": "Katara",
-    "imagen": ""
-  },
-  {
-    "nombre": "Sokka",
-    "imagen": ""
-  },
-  {
-    "nombre": "Toph",
-    "imagen": ""
-  },
-  {
-    "nombre": "Zuko",
-    "imagen": ""
-  },
-  {
-    "nombre": "Korra",
-    "imagen": ""
-  },
-  {
-    "nombre": "Henry Hart",
-    "imagen": ""
-  },
-  {
-    "nombre": "Captain Man",
+    "nombre": "Captain Man (Henry Danger)",
     "imagen": ""
   }
 ]

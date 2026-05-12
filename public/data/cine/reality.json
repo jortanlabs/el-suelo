@@ -105,11 +105,6 @@
     "palabraClave": "island"
   },
   {
-    "nombre": "MasterChef",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Rhodes%2C_Gary_%28crop%29.jpg/330px-Rhodes%2C_Gary_%28crop%29.jpg",
-    "palabraClave": "masterchef"
-  },
-  {
     "nombre": "Top Chef",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Top-chef.jpg/330px-Top-chef.jpg",
     "palabraClave": "chef"
