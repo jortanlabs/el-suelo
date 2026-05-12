@@ -334,8 +334,15 @@ const BUILD = Date.now();
     if (items) for (const it of items) resMap[it.nombre] = it.imagen;
 
     const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
+    // Nombres que están en el JSON publicado pero NO en subcat.nombres (sumados al JSON
+    // sin actualizar nombres.ts). Aparecen igual aquí para poderles subir imagen.
+    const subcatNombresSet = new Set(subcat.nombres);
+    const extraFromJson = items
+      ? items.map((it) => it.nombre).filter((n) => n && !subcatNombresSet.has(n))
+      : [];
     const allEntries = [
       ...subcat.nombres.map(n => ({ key: n, orig: n })),
+      ...extraFromJson.map(n => ({ key: n, orig: n })),
       ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
     ];
 
@@ -469,12 +476,18 @@ const BUILD = Date.now();
     for (const it of (resolved[slug] || [])) resMap[it.nombre] = it.imagen;
     const slugEdits = edits[slug] || {};
     const subcat = leafSubcats.find(s => s.slug === slug);
+    // Lista completa: nombres de subcat + extras que vienen del JSON
+    const subcatNombresSet = new Set(subcat.nombres);
+    const extraFromJson = (resolved[slug] || [])
+      .map((it) => it.nombre)
+      .filter((nn) => nn && !subcatNombresSet.has(nn));
+    const todos = [...subcat.nombres, ...extraFromJson];
     let n = 0;
-    for (const nombre of subcat.nombres) {
+    for (const nombre of todos) {
       const ee = slugEdits[nombre] || {};
       if (!ee.deleted && (ee.imagen !== undefined ? ee.imagen : resMap[nombre])) n++;
     }
-    const total = subcat.nombres.length;
+    const total = todos.length;
     el.textContent = ` ${n}/${total}`;
     el.style.color = n >= total ? '#4cff8f' : n > 0 ? '#ffcc00' : '#ff1dce88';
   }
@@ -565,8 +578,13 @@ const BUILD = Date.now();
     for (const it of (resolved[slug] || [])) resMap[it.nombre] = it.imagen;
     const slugEdits = edits[slug] || {};
     const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
+    const subcatNombresSet = new Set(subcat.nombres);
+    const extraFromJson = (resolved[slug] || [])
+      .map((it) => it.nombre)
+      .filter((n) => n && !subcatNombresSet.has(n));
     const allEntries = [
       ...subcat.nombres.map(n => ({ key: n, orig: n })),
+      ...extraFromJson.map(n => ({ key: n, orig: n })),
       ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
     ];
     const result = [];
@@ -702,8 +720,13 @@ const BUILD = Date.now();
     for (const it of (resolved[slug] || [])) resMap[it.nombre] = it.imagen;
     const slugEdits = edits[slug] || {};
     const addedKeys = Object.keys(slugEdits).filter(k => k.startsWith('__new__'));
+    const subcatNombresSet = new Set(subcat.nombres);
+    const extraFromJson = (resolved[slug] || [])
+      .map((it) => it.nombre)
+      .filter((n) => n && !subcatNombresSet.has(n));
     const allEntries = [
       ...subcat.nombres.map(n => ({ key: n, orig: n })),
+      ...extraFromJson.map(n => ({ key: n, orig: n })),
       ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
     ];
     const result = [];
