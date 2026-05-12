@@ -1,4 +1,4 @@
-const CACHE = 'el-suelo-v3';
+const CACHE = 'el-suelo-v4';
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (e) => {
