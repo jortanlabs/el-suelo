@@ -174,5 +174,13 @@
   {
     "nombre": "Robot Guerrero (El Castillo en el Cielo)",
     "imagen": "https://pbs.twimg.com/media/DlPir0vVsAAz_T9.jpg"
+  },
+  {
+    "nombre": "Ponyo (Ponyo)",
+    "imagen": "https://www.academymuseum.org/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fm3qyzuwrf176%2F6plUQr1pA7QLEYldcsF2or%2F094ccbca05ed08bdb3bcc6d0a18449eb%2FHayao-Miyazaki-PONYO-Thumbnail.jpg&w=1920&q=70"
+  },
+  {
+    "nombre": "Porco Rosso (Porco Rosso)",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJHU5sSkctn8C621UN87pbtqtGdvmjic1b-w&s"
   }
 ]
