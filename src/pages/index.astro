@@ -199,7 +199,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     </section>
 
     <!-- TABLERO -->
-    <section id="pantalla-tablero" class="flex-1 flex flex-col overflow-hidden hidden relative">
+    <section id="pantalla-tablero" class="flex-1 flex flex-col overflow-hidden hidden relative" style="touch-action:none;overscroll-behavior:none">
       <div class="px-4 py-3 flex items-center justify-center gap-3 border-b-2 border-[#163575] shrink-0">
         <span class="inline-block w-4 h-4 rounded-sm bg-[#ff1dce]" style="box-shadow:0 0 10px #ff1dce"></span>
         <span id="tablero-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
@@ -228,14 +228,14 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     </section>
 
     <!-- JUEGO -->
-    <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0 overflow-hidden" style="touch-action:manipulation">
-      <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
-        <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
+    <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0 overflow-hidden" style="touch-action:none;overscroll-behavior:none">
+      <div class="flex-1 flex items-start min-h-0 px-2 pt-3 pb-1 gap-2">
+        <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-start pt-6 rounded transition-all">
           <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
           <span id="nombre-a-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
 
-        <div class="flex-1 flex flex-col items-center justify-center min-w-0 min-h-0">
+        <div class="flex-1 flex flex-col items-center justify-start min-w-0 min-h-0">
           <p id="juego-cat-label" class="mb-2 text-xl text-[#ffcc00] font-titulo text-center max-w-xs px-2 font-bold uppercase tracking-wider leading-tight"></p>
           <div class="w-full max-w-xs">
             <div class="floor-image-box">
@@ -255,7 +255,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
           <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs mt-2">Pasar (−3 s)</button>
         </div>
 
-        <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
+        <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-start pt-6 rounded transition-all">
           <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
           <span id="nombre-b-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
         </div>
