@@ -94,5 +94,133 @@
   {
     "nombre": "Madrastra",
     "imagen": ""
+  },
+  {
+    "nombre": "Bisabuelo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bisabuela",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bisnieto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bisnieta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hermanastro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hermanastra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hijastro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hijastra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mellizos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gemelos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Trillizos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Padrino",
+    "imagen": ""
+  },
+  {
+    "nombre": "Madrina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ahijado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ahijada",
+    "imagen": ""
+  },
+  {
+    "nombre": "Novio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Novia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Esposo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Esposa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marido",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mujer",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pareja",
+    "imagen": ""
+  },
+  {
+    "nombre": "Soltero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Divorciado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Viudo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Separado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pariente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Familia adoptiva",
+    "imagen": ""
+  },
+  {
+    "nombre": "Familia política",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tatarabuelo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tatarabuela",
+    "imagen": ""
   }
 ]

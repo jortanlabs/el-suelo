@@ -88,5 +88,145 @@
     "nombre": "Jean Racine",
     "imagen": "",
     "palabraClave": "racine"
+  },
+  {
+    "nombre": "Antonio Buero Vallejo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alejandro Casona",
+    "imagen": ""
+  },
+  {
+    "nombre": "Miguel Mihura",
+    "imagen": ""
+  },
+  {
+    "nombre": "Enrique Jardiel Poncela",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jacinto Benavente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Valle-Inclán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Antonio Gala",
+    "imagen": ""
+  },
+  {
+    "nombre": "Juan Mayorga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sergi Belbel",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lluïsa Cunillé",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pau Miró",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ernesto Caballero",
+    "imagen": ""
+  },
+  {
+    "nombre": "José Sanchis Sinisterra",
+    "imagen": ""
+  },
+  {
+    "nombre": "August Strindberg",
+    "imagen": ""
+  },
+  {
+    "nombre": "Eugene O'Neill",
+    "imagen": ""
+  },
+  {
+    "nombre": "David Mamet",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sam Shepard",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tom Stoppard",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edward Albee",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jean Genet",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jean-Paul Sartre",
+    "imagen": ""
+  },
+  {
+    "nombre": "Albert Camus",
+    "imagen": ""
+  },
+  {
+    "nombre": "Luigi Pirandello",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dario Fo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Yasmina Reza",
+    "imagen": ""
+  },
+  {
+    "nombre": "Florian Zeller",
+    "imagen": ""
+  },
+  {
+    "nombre": "Carlo Goldoni",
+    "imagen": ""
+  },
+  {
+    "nombre": "August Wilson",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lillian Hellman",
+    "imagen": ""
+  },
+  {
+    "nombre": "George Bernard Shaw",
+    "imagen": ""
+  },
+  {
+    "nombre": "Oscar Wilde",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bernard-Marie Koltès",
+    "imagen": ""
+  },
+  {
+    "nombre": "Heiner Müller",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jean Anouilh",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alfonso Sastre",
+    "imagen": ""
   }
 ]

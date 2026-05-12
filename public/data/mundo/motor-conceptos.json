@@ -1,20 +1,288 @@
 [
-  { "nombre": "Pole position", "imagen": "", "palabraClave": "position" },
-  { "nombre": "Vuelta rápida", "imagen": "", "palabraClave": "rapida" },
-  { "nombre": "Pit stop", "imagen": "", "palabraClave": "stop" },
-  { "nombre": "Safety car", "imagen": "", "palabraClave": "car" },
-  { "nombre": "DRS", "imagen": "", "palabraClave": "drs" },
-  { "nombre": "Bandera a cuadros", "imagen": "", "palabraClave": "cuadros" },
-  { "nombre": "Bandera roja", "imagen": "", "palabraClave": "roja" },
-  { "nombre": "Bandera amarilla", "imagen": "", "palabraClave": "amarilla" },
-  { "nombre": "Chicane", "imagen": "", "palabraClave": "chicane" },
-  { "nombre": "Monoplaza", "imagen": "", "palabraClave": "monoplaza" },
-  { "nombre": "Neumático blando", "imagen": "", "palabraClave": "blando" },
-  { "nombre": "Neumático duro", "imagen": "", "palabraClave": "duro" },
-  { "nombre": "Parrilla de salida", "imagen": "", "palabraClave": "salida" },
-  { "nombre": "Aerodinámica", "imagen": "", "palabraClave": "aerodinamica" },
-  { "nombre": "Alerón delantero", "imagen": "", "palabraClave": "delantero" },
-  { "nombre": "Alerón trasero", "imagen": "", "palabraClave": "trasero" },
-  { "nombre": "Parc fermé", "imagen": "", "palabraClave": "ferme" },
-  { "nombre": "Box", "imagen": "", "palabraClave": "box" }
+  {
+    "nombre": "Pole position",
+    "imagen": "",
+    "palabraClave": "position"
+  },
+  {
+    "nombre": "Vuelta rápida",
+    "imagen": "",
+    "palabraClave": "rapida"
+  },
+  {
+    "nombre": "Pit stop",
+    "imagen": "",
+    "palabraClave": "stop"
+  },
+  {
+    "nombre": "Safety car",
+    "imagen": "",
+    "palabraClave": "car"
+  },
+  {
+    "nombre": "DRS",
+    "imagen": "",
+    "palabraClave": "drs"
+  },
+  {
+    "nombre": "Bandera a cuadros",
+    "imagen": "",
+    "palabraClave": "cuadros"
+  },
+  {
+    "nombre": "Bandera roja",
+    "imagen": "",
+    "palabraClave": "roja"
+  },
+  {
+    "nombre": "Bandera amarilla",
+    "imagen": "",
+    "palabraClave": "amarilla"
+  },
+  {
+    "nombre": "Chicane",
+    "imagen": "",
+    "palabraClave": "chicane"
+  },
+  {
+    "nombre": "Monoplaza",
+    "imagen": "",
+    "palabraClave": "monoplaza"
+  },
+  {
+    "nombre": "Neumático blando",
+    "imagen": "",
+    "palabraClave": "blando"
+  },
+  {
+    "nombre": "Neumático duro",
+    "imagen": "",
+    "palabraClave": "duro"
+  },
+  {
+    "nombre": "Parrilla de salida",
+    "imagen": "",
+    "palabraClave": "salida"
+  },
+  {
+    "nombre": "Aerodinámica",
+    "imagen": "",
+    "palabraClave": "aerodinamica"
+  },
+  {
+    "nombre": "Alerón delantero",
+    "imagen": "",
+    "palabraClave": "delantero"
+  },
+  {
+    "nombre": "Alerón trasero",
+    "imagen": "",
+    "palabraClave": "trasero"
+  },
+  {
+    "nombre": "Parc fermé",
+    "imagen": "",
+    "palabraClave": "ferme"
+  },
+  {
+    "nombre": "Box",
+    "imagen": "",
+    "palabraClave": "box"
+  },
+  {
+    "nombre": "Fórmula 1",
+    "imagen": ""
+  },
+  {
+    "nombre": "MotoGP",
+    "imagen": ""
+  },
+  {
+    "nombre": "Moto2",
+    "imagen": ""
+  },
+  {
+    "nombre": "Moto3",
+    "imagen": ""
+  },
+  {
+    "nombre": "MotoE",
+    "imagen": ""
+  },
+  {
+    "nombre": "NASCAR",
+    "imagen": ""
+  },
+  {
+    "nombre": "IndyCar",
+    "imagen": ""
+  },
+  {
+    "nombre": "WEC",
+    "imagen": ""
+  },
+  {
+    "nombre": "WRC",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dakar",
+    "imagen": ""
+  },
+  {
+    "nombre": "Le Mans 24h",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gran Premio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Podio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bandera azul",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bandera verde",
+    "imagen": ""
+  },
+  {
+    "nombre": "Virtual Safety Car",
+    "imagen": ""
+  },
+  {
+    "nombre": "Falsa salida",
+    "imagen": ""
+  },
+  {
+    "nombre": "Stop & Go",
+    "imagen": ""
+  },
+  {
+    "nombre": "Drive-through",
+    "imagen": ""
+  },
+  {
+    "nombre": "Penalty",
+    "imagen": ""
+  },
+  {
+    "nombre": "Curva en herradura",
+    "imagen": ""
+  },
+  {
+    "nombre": "Recta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Curva",
+    "imagen": ""
+  },
+  {
+    "nombre": "Apex",
+    "imagen": ""
+  },
+  {
+    "nombre": "Línea de carrera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Slipstream",
+    "imagen": ""
+  },
+  {
+    "nombre": "Halo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alerón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Difusor",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bargeboard",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mono",
+    "imagen": ""
+  },
+  {
+    "nombre": "HANS",
+    "imagen": ""
+  },
+  {
+    "nombre": "FIA",
+    "imagen": ""
+  },
+  {
+    "nombre": "Fórmula E",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rally",
+    "imagen": ""
+  },
+  {
+    "nombre": "Karting",
+    "imagen": ""
+  },
+  {
+    "nombre": "Stock car",
+    "imagen": ""
+  },
+  {
+    "nombre": "Drift",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hot lap",
+    "imagen": ""
+  },
+  {
+    "nombre": "Race start",
+    "imagen": ""
+  },
+  {
+    "nombre": "Race control",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pole",
+    "imagen": ""
+  },
+  {
+    "nombre": "Stewards",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sprint",
+    "imagen": ""
+  },
+  {
+    "nombre": "Race weekend",
+    "imagen": ""
+  },
+  {
+    "nombre": "Free Practice",
+    "imagen": ""
+  },
+  {
+    "nombre": "Qualifying",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sprint Shootout",
+    "imagen": ""
+  }
 ]

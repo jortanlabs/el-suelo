@@ -98,5 +98,121 @@
   {
     "nombre": "Llavero",
     "imagen": ""
+  },
+  {
+    "nombre": "Pinzas pelo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Horquillas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cinta de pelo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lazo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tirantes",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hebilla",
+    "imagen": ""
+  },
+  {
+    "nombre": "Broche",
+    "imagen": ""
+  },
+  {
+    "nombre": "Anillo de boda",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sello",
+    "imagen": ""
+  },
+  {
+    "nombre": "Medalla",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cadena",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pulsera amuleto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Reloj de pulsera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Reloj de bolsillo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Reloj inteligente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sombrero de paja",
+    "imagen": ""
+  },
+  {
+    "nombre": "Boina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pamela",
+    "imagen": ""
+  },
+  {
+    "nombre": "Capucha",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casco de moto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casco de bici",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gorro de baño",
+    "imagen": ""
+  },
+  {
+    "nombre": "Velo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bandana",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pasamontañas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bolso de mano",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bandolera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tote bag",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bolso de viaje",
+    "imagen": ""
   }
 ]

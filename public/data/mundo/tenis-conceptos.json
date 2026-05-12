@@ -1,20 +1,264 @@
 [
-  { "nombre": "Saque", "imagen": "", "palabraClave": "saque" },
-  { "nombre": "Doble falta", "imagen": "", "palabraClave": "falta" },
-  { "nombre": "Ace", "imagen": "", "palabraClave": "ace" },
-  { "nombre": "Tiebreak", "imagen": "", "palabraClave": "tiebreak" },
-  { "nombre": "Break", "imagen": "", "palabraClave": "break" },
-  { "nombre": "Set", "imagen": "", "palabraClave": "set" },
-  { "nombre": "Volea", "imagen": "", "palabraClave": "volea" },
-  { "nombre": "Smash", "imagen": "", "palabraClave": "smash" },
-  { "nombre": "Globo", "imagen": "", "palabraClave": "globo" },
-  { "nombre": "Dejada", "imagen": "", "palabraClave": "dejada" },
-  { "nombre": "Pista de tierra batida", "imagen": "", "palabraClave": "batida" },
-  { "nombre": "Pista de hierba", "imagen": "", "palabraClave": "hierba" },
-  { "nombre": "Pista dura", "imagen": "", "palabraClave": "dura" },
-  { "nombre": "Red", "imagen": "", "palabraClave": "red" },
-  { "nombre": "Raqueta de tenis", "imagen": "", "palabraClave": "raqueta" },
-  { "nombre": "Ventaja", "imagen": "", "palabraClave": "ventaja" },
-  { "nombre": "Deuce", "imagen": "", "palabraClave": "deuce" },
-  { "nombre": "Love", "imagen": "", "palabraClave": "love" }
+  {
+    "nombre": "Saque",
+    "imagen": "",
+    "palabraClave": "saque"
+  },
+  {
+    "nombre": "Doble falta",
+    "imagen": "",
+    "palabraClave": "falta"
+  },
+  {
+    "nombre": "Ace",
+    "imagen": "",
+    "palabraClave": "ace"
+  },
+  {
+    "nombre": "Tiebreak",
+    "imagen": "",
+    "palabraClave": "tiebreak"
+  },
+  {
+    "nombre": "Break",
+    "imagen": "",
+    "palabraClave": "break"
+  },
+  {
+    "nombre": "Set",
+    "imagen": "",
+    "palabraClave": "set"
+  },
+  {
+    "nombre": "Volea",
+    "imagen": "",
+    "palabraClave": "volea"
+  },
+  {
+    "nombre": "Smash",
+    "imagen": "",
+    "palabraClave": "smash"
+  },
+  {
+    "nombre": "Globo",
+    "imagen": "",
+    "palabraClave": "globo"
+  },
+  {
+    "nombre": "Dejada",
+    "imagen": "",
+    "palabraClave": "dejada"
+  },
+  {
+    "nombre": "Pista de tierra batida",
+    "imagen": "",
+    "palabraClave": "batida"
+  },
+  {
+    "nombre": "Pista de hierba",
+    "imagen": "",
+    "palabraClave": "hierba"
+  },
+  {
+    "nombre": "Pista dura",
+    "imagen": "",
+    "palabraClave": "dura"
+  },
+  {
+    "nombre": "Red",
+    "imagen": "",
+    "palabraClave": "red"
+  },
+  {
+    "nombre": "Raqueta de tenis",
+    "imagen": "",
+    "palabraClave": "raqueta"
+  },
+  {
+    "nombre": "Ventaja",
+    "imagen": "",
+    "palabraClave": "ventaja"
+  },
+  {
+    "nombre": "Deuce",
+    "imagen": "",
+    "palabraClave": "deuce"
+  },
+  {
+    "nombre": "Love",
+    "imagen": "",
+    "palabraClave": "love"
+  },
+  {
+    "nombre": "Resto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Drive",
+    "imagen": ""
+  },
+  {
+    "nombre": "Revés",
+    "imagen": ""
+  },
+  {
+    "nombre": "Passing shot",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bola de break",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bola de partido",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bola de set",
+    "imagen": ""
+  },
+  {
+    "nombre": "Juego",
+    "imagen": ""
+  },
+  {
+    "nombre": "Punto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Game",
+    "imagen": ""
+  },
+  {
+    "nombre": "Iguales",
+    "imagen": ""
+  },
+  {
+    "nombre": "Foot fault",
+    "imagen": ""
+  },
+  {
+    "nombre": "Net cord",
+    "imagen": ""
+  },
+  {
+    "nombre": "Línea",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pista",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cancha",
+    "imagen": ""
+  },
+  {
+    "nombre": "Banda",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pista de tierra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hierba",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pista cubierta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Indoor",
+    "imagen": ""
+  },
+  {
+    "nombre": "Outdoor",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hawk-Eye",
+    "imagen": ""
+  },
+  {
+    "nombre": "Challenge",
+    "imagen": ""
+  },
+  {
+    "nombre": "Match point",
+    "imagen": ""
+  },
+  {
+    "nombre": "Triple bagel",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bagel",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mini-break",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tweener",
+    "imagen": ""
+  },
+  {
+    "nombre": "ATP",
+    "imagen": ""
+  },
+  {
+    "nombre": "WTA",
+    "imagen": ""
+  },
+  {
+    "nombre": "ITF",
+    "imagen": ""
+  },
+  {
+    "nombre": "Grand Slam",
+    "imagen": ""
+  },
+  {
+    "nombre": "Masters 1000",
+    "imagen": ""
+  },
+  {
+    "nombre": "ATP 500",
+    "imagen": ""
+  },
+  {
+    "nombre": "ATP 250",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ranking",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cabeza de serie",
+    "imagen": ""
+  },
+  {
+    "nombre": "Wildcard",
+    "imagen": ""
+  },
+  {
+    "nombre": "Qualy",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bye",
+    "imagen": ""
+  },
+  {
+    "nombre": "Top 10",
+    "imagen": ""
+  },
+  {
+    "nombre": "Top 100",
+    "imagen": ""
+  }
 ]

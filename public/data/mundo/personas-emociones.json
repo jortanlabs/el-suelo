@@ -78,5 +78,149 @@
   {
     "nombre": "Envidia",
     "imagen": ""
+  },
+  {
+    "nombre": "Felicidad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Euforia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Diversión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Risa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Llanto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ira",
+    "imagen": ""
+  },
+  {
+    "nombre": "Furia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rabia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Odio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Compasión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Empatía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lástima",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pena",
+    "imagen": ""
+  },
+  {
+    "nombre": "Soledad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Melancolía",
+    "imagen": ""
+  },
+  {
+    "nombre": "Inseguridad",
+    "imagen": ""
+  },
+  {
+    "nombre": "Timidez",
+    "imagen": ""
+  },
+  {
+    "nombre": "Asombro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Admiración",
+    "imagen": ""
+  },
+  {
+    "nombre": "Desprecio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Indiferencia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cansancio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Estrés",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tensión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Excitación",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alivio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Satisfacción",
+    "imagen": ""
+  },
+  {
+    "nombre": "Decepción",
+    "imagen": ""
+  },
+  {
+    "nombre": "Optimismo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pesimismo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cariño",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ternura",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pasión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pánico",
+    "imagen": ""
+  },
+  {
+    "nombre": "Agradecimiento",
+    "imagen": ""
+  },
+  {
+    "nombre": "Resentimiento",
+    "imagen": ""
   }
 ]

@@ -108,5 +108,141 @@
     "nombre": "Emilia Pardo Bazán",
     "imagen": "",
     "palabraClave": "bazan"
+  },
+  {
+    "nombre": "Quevedo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Góngora",
+    "imagen": ""
+  },
+  {
+    "nombre": "Garcilaso de la Vega",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tirso de Molina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mariano José de Larra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Espronceda",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bécquer",
+    "imagen": ""
+  },
+  {
+    "nombre": "Galdós",
+    "imagen": ""
+  },
+  {
+    "nombre": "Clarín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Unamuno",
+    "imagen": ""
+  },
+  {
+    "nombre": "Azorín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Valle-Inclán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Manuel Machado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Miguel Hernández",
+    "imagen": ""
+  },
+  {
+    "nombre": "Rafael Alberti",
+    "imagen": ""
+  },
+  {
+    "nombre": "Carmen Laforet",
+    "imagen": ""
+  },
+  {
+    "nombre": "Carmen Martín Gaite",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gonzalo Torrente Ballester",
+    "imagen": ""
+  },
+  {
+    "nombre": "Francisco Ayala",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jorge Semprún",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ramón J. Sender",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vázquez Montalbán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Juan Marsé",
+    "imagen": ""
+  },
+  {
+    "nombre": "Eduardo Mendoza",
+    "imagen": ""
+  },
+  {
+    "nombre": "Antonio Muñoz Molina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ildefonso Falcones",
+    "imagen": ""
+  },
+  {
+    "nombre": "Julia Navarro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dolores Redondo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Elvira Lindo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Manuel Vicent",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vicente Aleixandre",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pedro Salinas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jorge Guillén",
+    "imagen": ""
+  },
+  {
+    "nombre": "Luis Cernuda",
+    "imagen": ""
   }
 ]

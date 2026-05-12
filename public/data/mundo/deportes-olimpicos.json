@@ -1,29 +1,293 @@
 [
-  { "nombre": "Atletismo", "imagen": "", "palabraClave": "atletismo" },
-  { "nombre": "Natación", "imagen": "", "palabraClave": "natacion" },
-  { "nombre": "Gimnasia artística", "imagen": "", "palabraClave": "artistica" },
-  { "nombre": "Halterofilia", "imagen": "", "palabraClave": "halterofilia" },
-  { "nombre": "Lucha libre", "imagen": "", "palabraClave": "libre" },
-  { "nombre": "Boxeo", "imagen": "", "palabraClave": "boxeo" },
-  { "nombre": "Judo", "imagen": "", "palabraClave": "judo" },
-  { "nombre": "Taekwondo", "imagen": "", "palabraClave": "taekwondo" },
-  { "nombre": "Esgrima", "imagen": "", "palabraClave": "esgrima" },
-  { "nombre": "Tiro con arco", "imagen": "", "palabraClave": "arco" },
-  { "nombre": "Ciclismo en pista", "imagen": "", "palabraClave": "pista" },
-  { "nombre": "Vela", "imagen": "", "palabraClave": "vela" },
-  { "nombre": "Remo", "imagen": "", "palabraClave": "remo" },
-  { "nombre": "Piragüismo", "imagen": "", "palabraClave": "piraguismo" },
-  { "nombre": "Triatlón", "imagen": "", "palabraClave": "triatlon" },
-  { "nombre": "Salto de trampolín", "imagen": "", "palabraClave": "trampolin" },
-  { "nombre": "Waterpolo", "imagen": "", "palabraClave": "waterpolo" },
-  { "nombre": "Balonmano", "imagen": "", "palabraClave": "balonmano" },
-  { "nombre": "Voleibol", "imagen": "", "palabraClave": "voleibol" },
-  { "nombre": "Hockey sobre hierba", "imagen": "", "palabraClave": "hierba" },
-  { "nombre": "Rugby 7", "imagen": "", "palabraClave": "rugby" },
-  { "nombre": "Escalada deportiva", "imagen": "", "palabraClave": "escalada" },
-  { "nombre": "Surf", "imagen": "", "palabraClave": "surf" },
-  { "nombre": "Skateboard", "imagen": "", "palabraClave": "skateboard" },
-  { "nombre": "Tenis de mesa", "imagen": "", "palabraClave": "mesa" },
-  { "nombre": "Bádminton", "imagen": "", "palabraClave": "badminton" },
-  { "nombre": "Golf", "imagen": "", "palabraClave": "golf" }
+  {
+    "nombre": "Atletismo",
+    "imagen": "",
+    "palabraClave": "atletismo"
+  },
+  {
+    "nombre": "Natación",
+    "imagen": "",
+    "palabraClave": "natacion"
+  },
+  {
+    "nombre": "Gimnasia artística",
+    "imagen": "",
+    "palabraClave": "artistica"
+  },
+  {
+    "nombre": "Halterofilia",
+    "imagen": "",
+    "palabraClave": "halterofilia"
+  },
+  {
+    "nombre": "Lucha libre",
+    "imagen": "",
+    "palabraClave": "libre"
+  },
+  {
+    "nombre": "Boxeo",
+    "imagen": "",
+    "palabraClave": "boxeo"
+  },
+  {
+    "nombre": "Judo",
+    "imagen": "",
+    "palabraClave": "judo"
+  },
+  {
+    "nombre": "Taekwondo",
+    "imagen": "",
+    "palabraClave": "taekwondo"
+  },
+  {
+    "nombre": "Esgrima",
+    "imagen": "",
+    "palabraClave": "esgrima"
+  },
+  {
+    "nombre": "Tiro con arco",
+    "imagen": "",
+    "palabraClave": "arco"
+  },
+  {
+    "nombre": "Ciclismo en pista",
+    "imagen": "",
+    "palabraClave": "pista"
+  },
+  {
+    "nombre": "Vela",
+    "imagen": "",
+    "palabraClave": "vela"
+  },
+  {
+    "nombre": "Remo",
+    "imagen": "",
+    "palabraClave": "remo"
+  },
+  {
+    "nombre": "Piragüismo",
+    "imagen": "",
+    "palabraClave": "piraguismo"
+  },
+  {
+    "nombre": "Triatlón",
+    "imagen": "",
+    "palabraClave": "triatlon"
+  },
+  {
+    "nombre": "Salto de trampolín",
+    "imagen": "",
+    "palabraClave": "trampolin"
+  },
+  {
+    "nombre": "Waterpolo",
+    "imagen": "",
+    "palabraClave": "waterpolo"
+  },
+  {
+    "nombre": "Balonmano",
+    "imagen": "",
+    "palabraClave": "balonmano"
+  },
+  {
+    "nombre": "Voleibol",
+    "imagen": "",
+    "palabraClave": "voleibol"
+  },
+  {
+    "nombre": "Hockey sobre hierba",
+    "imagen": "",
+    "palabraClave": "hierba"
+  },
+  {
+    "nombre": "Rugby 7",
+    "imagen": "",
+    "palabraClave": "rugby"
+  },
+  {
+    "nombre": "Escalada deportiva",
+    "imagen": "",
+    "palabraClave": "escalada"
+  },
+  {
+    "nombre": "Surf",
+    "imagen": "",
+    "palabraClave": "surf"
+  },
+  {
+    "nombre": "Skateboard",
+    "imagen": "",
+    "palabraClave": "skateboard"
+  },
+  {
+    "nombre": "Tenis de mesa",
+    "imagen": "",
+    "palabraClave": "mesa"
+  },
+  {
+    "nombre": "Bádminton",
+    "imagen": "",
+    "palabraClave": "badminton"
+  },
+  {
+    "nombre": "Golf",
+    "imagen": "",
+    "palabraClave": "golf"
+  },
+  {
+    "nombre": "100 metros lisos",
+    "imagen": ""
+  },
+  {
+    "nombre": "200 metros",
+    "imagen": ""
+  },
+  {
+    "nombre": "400 metros",
+    "imagen": ""
+  },
+  {
+    "nombre": "800 metros",
+    "imagen": ""
+  },
+  {
+    "nombre": "1500 metros",
+    "imagen": ""
+  },
+  {
+    "nombre": "5000 metros",
+    "imagen": ""
+  },
+  {
+    "nombre": "10000 metros",
+    "imagen": ""
+  },
+  {
+    "nombre": "Maratón",
+    "imagen": ""
+  },
+  {
+    "nombre": "100 metros vallas",
+    "imagen": ""
+  },
+  {
+    "nombre": "110 metros vallas",
+    "imagen": ""
+  },
+  {
+    "nombre": "400 metros vallas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Salto de altura",
+    "imagen": ""
+  },
+  {
+    "nombre": "Salto con pértiga",
+    "imagen": ""
+  },
+  {
+    "nombre": "Salto de longitud",
+    "imagen": ""
+  },
+  {
+    "nombre": "Triple salto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lanzamiento de peso",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lanzamiento de disco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lanzamiento de martillo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lanzamiento de jabalina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Decatlón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Heptatlón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marcha",
+    "imagen": ""
+  },
+  {
+    "nombre": "100 metros libres",
+    "imagen": ""
+  },
+  {
+    "nombre": "Saltos de trampolín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Saltos de plataforma",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sincronizada",
+    "imagen": ""
+  },
+  {
+    "nombre": "Escalada",
+    "imagen": ""
+  },
+  {
+    "nombre": "BMX",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ciclismo en ruta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mountain Bike",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gimnasia rítmica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Trampolín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lucha",
+    "imagen": ""
+  },
+  {
+    "nombre": "Karate",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tiro deportivo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tenis",
+    "imagen": ""
+  },
+  {
+    "nombre": "Voley playa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hockey hierba",
+    "imagen": ""
+  },
+  {
+    "nombre": "Fútbol",
+    "imagen": ""
+  }
 ]

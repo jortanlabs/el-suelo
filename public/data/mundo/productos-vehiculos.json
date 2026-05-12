@@ -98,5 +98,141 @@
   {
     "nombre": "Coche de policía",
     "imagen": ""
+  },
+  {
+    "nombre": "Motocicleta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Scooter",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vespa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bicicleta de montaña",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bicicleta de carretera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bicicleta eléctrica",
+    "imagen": ""
+  },
+  {
+    "nombre": "Monociclo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Triciclo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tabla de skate",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tabla de surf",
+    "imagen": ""
+  },
+  {
+    "nombre": "Esquí",
+    "imagen": ""
+  },
+  {
+    "nombre": "Snowboard",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tabla de paddle",
+    "imagen": ""
+  },
+  {
+    "nombre": "Catamarán",
+    "imagen": ""
+  },
+  {
+    "nombre": "Zódiac",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lancha motora",
+    "imagen": ""
+  },
+  {
+    "nombre": "Crucero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ferry",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bote",
+    "imagen": ""
+  },
+  {
+    "nombre": "Piragua",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kayak",
+    "imagen": ""
+  },
+  {
+    "nombre": "Canoa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hidroavión",
+    "imagen": ""
+  },
+  {
+    "nombre": "Avioneta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Planeador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Parapente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Globo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Zepelín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Carruaje",
+    "imagen": ""
+  },
+  {
+    "nombre": "Diligencia",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tractor",
+    "imagen": ""
+  },
+  {
+    "nombre": "Excavadora",
+    "imagen": ""
+  },
+  {
+    "nombre": "Grúa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cisterna",
+    "imagen": ""
   }
 ]

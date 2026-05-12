@@ -138,5 +138,213 @@
     "nombre": "Émile Zola",
     "imagen": "",
     "palabraClave": "zola"
+  },
+  {
+    "nombre": "James Joyce",
+    "imagen": ""
+  },
+  {
+    "nombre": "Virginia Woolf",
+    "imagen": ""
+  },
+  {
+    "nombre": "J.R.R. Tolkien",
+    "imagen": ""
+  },
+  {
+    "nombre": "C.S. Lewis",
+    "imagen": ""
+  },
+  {
+    "nombre": "Roald Dahl",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bram Stoker",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mary Shelley",
+    "imagen": ""
+  },
+  {
+    "nombre": "Daniel Defoe",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jonathan Swift",
+    "imagen": ""
+  },
+  {
+    "nombre": "Robert Louis Stevenson",
+    "imagen": ""
+  },
+  {
+    "nombre": "Walt Whitman",
+    "imagen": ""
+  },
+  {
+    "nombre": "Emily Dickinson",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vladimir Nabokov",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aldous Huxley",
+    "imagen": ""
+  },
+  {
+    "nombre": "J.D. Salinger",
+    "imagen": ""
+  },
+  {
+    "nombre": "Harper Lee",
+    "imagen": ""
+  },
+  {
+    "nombre": "Toni Morrison",
+    "imagen": ""
+  },
+  {
+    "nombre": "John Steinbeck",
+    "imagen": ""
+  },
+  {
+    "nombre": "William Faulkner",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cormac McCarthy",
+    "imagen": ""
+  },
+  {
+    "nombre": "Margaret Atwood",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kurt Vonnegut",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ray Bradbury",
+    "imagen": ""
+  },
+  {
+    "nombre": "Isaac Asimov",
+    "imagen": ""
+  },
+  {
+    "nombre": "Arthur C. Clarke",
+    "imagen": ""
+  },
+  {
+    "nombre": "Philip K. Dick",
+    "imagen": ""
+  },
+  {
+    "nombre": "Frank Herbert",
+    "imagen": ""
+  },
+  {
+    "nombre": "George R.R. Martin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Brandon Sanderson",
+    "imagen": ""
+  },
+  {
+    "nombre": "Neil Gaiman",
+    "imagen": ""
+  },
+  {
+    "nombre": "Terry Pratchett",
+    "imagen": ""
+  },
+  {
+    "nombre": "Douglas Adams",
+    "imagen": ""
+  },
+  {
+    "nombre": "Italo Calvino",
+    "imagen": ""
+  },
+  {
+    "nombre": "Umberto Eco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Elena Ferrante",
+    "imagen": ""
+  },
+  {
+    "nombre": "Julio Cortázar",
+    "imagen": ""
+  },
+  {
+    "nombre": "Octavio Paz",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mario Benedetti",
+    "imagen": ""
+  },
+  {
+    "nombre": "Roberto Bolaño",
+    "imagen": ""
+  },
+  {
+    "nombre": "Luis Sepúlveda",
+    "imagen": ""
+  },
+  {
+    "nombre": "Paulo Coelho",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jose Saramago",
+    "imagen": ""
+  },
+  {
+    "nombre": "Fernando Pessoa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Fyodor Dostoyevsky",
+    "imagen": ""
+  },
+  {
+    "nombre": "Leo Tolstoy",
+    "imagen": ""
+  },
+  {
+    "nombre": "Anton Chéjov",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alexander Pushkin",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mikhail Bulgakov",
+    "imagen": ""
+  },
+  {
+    "nombre": "Kazuo Ishiguro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Yukio Mishima",
+    "imagen": ""
+  },
+  {
+    "nombre": "Orhan Pamuk",
+    "imagen": ""
+  },
+  {
+    "nombre": "Khaled Hosseini",
+    "imagen": ""
   }
 ]

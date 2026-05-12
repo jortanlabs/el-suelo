@@ -1,19 +1,283 @@
 [
-  { "nombre": "Birdie", "imagen": "", "palabraClave": "birdie" },
-  { "nombre": "Eagle", "imagen": "", "palabraClave": "eagle" },
-  { "nombre": "Bogey", "imagen": "", "palabraClave": "bogey" },
-  { "nombre": "Par", "imagen": "", "palabraClave": "par" },
-  { "nombre": "Hoyo en uno", "imagen": "", "palabraClave": "uno" },
-  { "nombre": "Albatros", "imagen": "", "palabraClave": "albatros" },
-  { "nombre": "Bunker", "imagen": "", "palabraClave": "bunker" },
-  { "nombre": "Green", "imagen": "", "palabraClave": "green" },
-  { "nombre": "Fairway", "imagen": "", "palabraClave": "fairway" },
-  { "nombre": "Rough", "imagen": "", "palabraClave": "rough" },
-  { "nombre": "Caddie", "imagen": "", "palabraClave": "caddie" },
-  { "nombre": "Driver", "imagen": "", "palabraClave": "driver" },
-  { "nombre": "Putter", "imagen": "", "palabraClave": "putter" },
-  { "nombre": "Handicap", "imagen": "", "palabraClave": "handicap" },
-  { "nombre": "Campo de golf", "imagen": "", "palabraClave": "golf" },
-  { "nombre": "Bandera del hoyo", "imagen": "", "palabraClave": "hoyo" },
-  { "nombre": "Wedge", "imagen": "", "palabraClave": "wedge" }
+  {
+    "nombre": "Birdie",
+    "imagen": "",
+    "palabraClave": "birdie"
+  },
+  {
+    "nombre": "Eagle",
+    "imagen": "",
+    "palabraClave": "eagle"
+  },
+  {
+    "nombre": "Bogey",
+    "imagen": "",
+    "palabraClave": "bogey"
+  },
+  {
+    "nombre": "Par",
+    "imagen": "",
+    "palabraClave": "par"
+  },
+  {
+    "nombre": "Hoyo en uno",
+    "imagen": "",
+    "palabraClave": "uno"
+  },
+  {
+    "nombre": "Albatros",
+    "imagen": "",
+    "palabraClave": "albatros"
+  },
+  {
+    "nombre": "Bunker",
+    "imagen": "",
+    "palabraClave": "bunker"
+  },
+  {
+    "nombre": "Green",
+    "imagen": "",
+    "palabraClave": "green"
+  },
+  {
+    "nombre": "Fairway",
+    "imagen": "",
+    "palabraClave": "fairway"
+  },
+  {
+    "nombre": "Rough",
+    "imagen": "",
+    "palabraClave": "rough"
+  },
+  {
+    "nombre": "Caddie",
+    "imagen": "",
+    "palabraClave": "caddie"
+  },
+  {
+    "nombre": "Driver",
+    "imagen": "",
+    "palabraClave": "driver"
+  },
+  {
+    "nombre": "Putter",
+    "imagen": "",
+    "palabraClave": "putter"
+  },
+  {
+    "nombre": "Handicap",
+    "imagen": "",
+    "palabraClave": "handicap"
+  },
+  {
+    "nombre": "Campo de golf",
+    "imagen": "",
+    "palabraClave": "golf"
+  },
+  {
+    "nombre": "Bandera del hoyo",
+    "imagen": "",
+    "palabraClave": "hoyo"
+  },
+  {
+    "nombre": "Wedge",
+    "imagen": "",
+    "palabraClave": "wedge"
+  },
+  {
+    "nombre": "Hoyo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tee",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bandera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bola",
+    "imagen": ""
+  },
+  {
+    "nombre": "Palo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hierro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Madera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Swing",
+    "imagen": ""
+  },
+  {
+    "nombre": "Putt",
+    "imagen": ""
+  },
+  {
+    "nombre": "Approach",
+    "imagen": ""
+  },
+  {
+    "nombre": "Chip",
+    "imagen": ""
+  },
+  {
+    "nombre": "Drive",
+    "imagen": ""
+  },
+  {
+    "nombre": "Doble bogey",
+    "imagen": ""
+  },
+  {
+    "nombre": "Triple bogey",
+    "imagen": ""
+  },
+  {
+    "nombre": "Slice",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hook",
+    "imagen": ""
+  },
+  {
+    "nombre": "Draw",
+    "imagen": ""
+  },
+  {
+    "nombre": "Fade",
+    "imagen": ""
+  },
+  {
+    "nombre": "Push",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pull",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vuelta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Stroke play",
+    "imagen": ""
+  },
+  {
+    "nombre": "Match play",
+    "imagen": ""
+  },
+  {
+    "nombre": "Foursome",
+    "imagen": ""
+  },
+  {
+    "nombre": "PGA Tour",
+    "imagen": ""
+  },
+  {
+    "nombre": "European Tour",
+    "imagen": ""
+  },
+  {
+    "nombre": "LPGA",
+    "imagen": ""
+  },
+  {
+    "nombre": "Masters de Augusta",
+    "imagen": ""
+  },
+  {
+    "nombre": "US Open",
+    "imagen": ""
+  },
+  {
+    "nombre": "British Open",
+    "imagen": ""
+  },
+  {
+    "nombre": "PGA Championship",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ryder Cup",
+    "imagen": ""
+  },
+  {
+    "nombre": "Solheim Cup",
+    "imagen": ""
+  },
+  {
+    "nombre": "Presidents Cup",
+    "imagen": ""
+  },
+  {
+    "nombre": "Augusta National",
+    "imagen": ""
+  },
+  {
+    "nombre": "St Andrews",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pebble Beach",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pinehurst",
+    "imagen": ""
+  },
+  {
+    "nombre": "Carnoustie",
+    "imagen": ""
+  },
+  {
+    "nombre": "Royal Birkdale",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bethpage",
+    "imagen": ""
+  },
+  {
+    "nombre": "Whistling Straits",
+    "imagen": ""
+  },
+  {
+    "nombre": "Quail Hollow",
+    "imagen": ""
+  },
+  {
+    "nombre": "Doral",
+    "imagen": ""
+  },
+  {
+    "nombre": "TPC Sawgrass",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bay Hill",
+    "imagen": ""
+  },
+  {
+    "nombre": "Memorial",
+    "imagen": ""
+  },
+  {
+    "nombre": "Greenkeeper",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marker",
+    "imagen": ""
+  }
 ]

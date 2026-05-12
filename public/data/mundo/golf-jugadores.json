@@ -1,17 +1,221 @@
 [
-  { "nombre": "Tiger Woods", "imagen": "", "palabraClave": "woods" },
-  { "nombre": "Rory McIlroy", "imagen": "", "palabraClave": "mcilroy" },
-  { "nombre": "Jon Rahm", "imagen": "", "palabraClave": "rahm" },
-  { "nombre": "Sergio García", "imagen": "", "palabraClave": "garcia" },
-  { "nombre": "Phil Mickelson", "imagen": "", "palabraClave": "mickelson" },
-  { "nombre": "Jack Nicklaus", "imagen": "", "palabraClave": "nicklaus" },
-  { "nombre": "Arnold Palmer", "imagen": "", "palabraClave": "palmer" },
-  { "nombre": "Gary Player", "imagen": "", "palabraClave": "player" },
-  { "nombre": "Seve Ballesteros", "imagen": "", "palabraClave": "ballesteros" },
-  { "nombre": "Lee Trevino", "imagen": "", "palabraClave": "trevino" },
-  { "nombre": "Nick Faldo", "imagen": "", "palabraClave": "faldo" },
-  { "nombre": "Ernie Els", "imagen": "", "palabraClave": "els" },
-  { "nombre": "Justin Rose", "imagen": "", "palabraClave": "rose" },
-  { "nombre": "Scottie Scheffler", "imagen": "", "palabraClave": "scheffler" },
-  { "nombre": "Bryson DeChambeau", "imagen": "", "palabraClave": "dechambeau" }
+  {
+    "nombre": "Tiger Woods",
+    "imagen": "",
+    "palabraClave": "woods"
+  },
+  {
+    "nombre": "Rory McIlroy",
+    "imagen": "",
+    "palabraClave": "mcilroy"
+  },
+  {
+    "nombre": "Jon Rahm",
+    "imagen": "",
+    "palabraClave": "rahm"
+  },
+  {
+    "nombre": "Sergio García",
+    "imagen": "",
+    "palabraClave": "garcia"
+  },
+  {
+    "nombre": "Phil Mickelson",
+    "imagen": "",
+    "palabraClave": "mickelson"
+  },
+  {
+    "nombre": "Jack Nicklaus",
+    "imagen": "",
+    "palabraClave": "nicklaus"
+  },
+  {
+    "nombre": "Arnold Palmer",
+    "imagen": "",
+    "palabraClave": "palmer"
+  },
+  {
+    "nombre": "Gary Player",
+    "imagen": "",
+    "palabraClave": "player"
+  },
+  {
+    "nombre": "Seve Ballesteros",
+    "imagen": "",
+    "palabraClave": "ballesteros"
+  },
+  {
+    "nombre": "Lee Trevino",
+    "imagen": "",
+    "palabraClave": "trevino"
+  },
+  {
+    "nombre": "Nick Faldo",
+    "imagen": "",
+    "palabraClave": "faldo"
+  },
+  {
+    "nombre": "Ernie Els",
+    "imagen": "",
+    "palabraClave": "els"
+  },
+  {
+    "nombre": "Justin Rose",
+    "imagen": "",
+    "palabraClave": "rose"
+  },
+  {
+    "nombre": "Scottie Scheffler",
+    "imagen": "",
+    "palabraClave": "scheffler"
+  },
+  {
+    "nombre": "Bryson DeChambeau",
+    "imagen": "",
+    "palabraClave": "dechambeau"
+  },
+  {
+    "nombre": "Tom Watson",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ben Hogan",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sam Snead",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bobby Jones",
+    "imagen": ""
+  },
+  {
+    "nombre": "Walter Hagen",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jordan Spieth",
+    "imagen": ""
+  },
+  {
+    "nombre": "Justin Thomas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Brooks Koepka",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dustin Johnson",
+    "imagen": ""
+  },
+  {
+    "nombre": "Patrick Cantlay",
+    "imagen": ""
+  },
+  {
+    "nombre": "Xander Schauffele",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hideki Matsuyama",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cameron Smith",
+    "imagen": ""
+  },
+  {
+    "nombre": "Severiano Ballesteros",
+    "imagen": ""
+  },
+  {
+    "nombre": "José María Olazábal",
+    "imagen": ""
+  },
+  {
+    "nombre": "Miguel Ángel Jiménez",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pablo Larrazábal",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jorge Campillo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Adri Arnaus",
+    "imagen": ""
+  },
+  {
+    "nombre": "Henrik Stenson",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tommy Fleetwood",
+    "imagen": ""
+  },
+  {
+    "nombre": "Padraig Harrington",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lee Westwood",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ian Poulter",
+    "imagen": ""
+  },
+  {
+    "nombre": "Luke Donald",
+    "imagen": ""
+  },
+  {
+    "nombre": "Colin Montgomerie",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sandy Lyle",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vijay Singh",
+    "imagen": ""
+  },
+  {
+    "nombre": "Adam Scott",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jason Day",
+    "imagen": ""
+  },
+  {
+    "nombre": "Annika Sörenstam",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lorena Ochoa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Inbee Park",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lydia Ko",
+    "imagen": ""
+  },
+  {
+    "nombre": "Carlota Ciganda",
+    "imagen": ""
+  },
+  {
+    "nombre": "Azahara Muñoz",
+    "imagen": ""
+  }
 ]

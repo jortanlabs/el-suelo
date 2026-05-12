@@ -108,5 +108,145 @@
     "nombre": "Peter Pan",
     "imagen": "",
     "palabraClave": "pan"
+  },
+  {
+    "nombre": "Dulcinea",
+    "imagen": ""
+  },
+  {
+    "nombre": "La Celestina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lazarillo de Tormes",
+    "imagen": ""
+  },
+  {
+    "nombre": "Don Juan",
+    "imagen": ""
+  },
+  {
+    "nombre": "El Buscón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Huckleberry Finn",
+    "imagen": ""
+  },
+  {
+    "nombre": "Oliver Twist",
+    "imagen": ""
+  },
+  {
+    "nombre": "David Copperfield",
+    "imagen": ""
+  },
+  {
+    "nombre": "Doctor Watson",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hércules Poirot",
+    "imagen": ""
+  },
+  {
+    "nombre": "Miss Marple",
+    "imagen": ""
+  },
+  {
+    "nombre": "Robin Hood",
+    "imagen": ""
+  },
+  {
+    "nombre": "Capitán Garfio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Edmond Dantès",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cosette",
+    "imagen": ""
+  },
+  {
+    "nombre": "Mr. Darcy",
+    "imagen": ""
+  },
+  {
+    "nombre": "Elizabeth Bennet",
+    "imagen": ""
+  },
+  {
+    "nombre": "Heathcliff",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jane Eyre",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hester Prynne",
+    "imagen": ""
+  },
+  {
+    "nombre": "Holden Caulfield",
+    "imagen": ""
+  },
+  {
+    "nombre": "Atticus Finch",
+    "imagen": ""
+  },
+  {
+    "nombre": "Scout Finch",
+    "imagen": ""
+  },
+  {
+    "nombre": "Frodo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sam",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aragorn",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gollum",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ron Weasley",
+    "imagen": ""
+  },
+  {
+    "nombre": "Voldemort",
+    "imagen": ""
+  },
+  {
+    "nombre": "Albus Dumbledore",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bilbo Bolsón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aslan",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lucy Pevensie",
+    "imagen": ""
+  },
+  {
+    "nombre": "Werther",
+    "imagen": ""
+  },
+  {
+    "nombre": "El Principito",
+    "imagen": ""
   }
 ]

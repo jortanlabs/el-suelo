@@ -98,5 +98,105 @@
   {
     "nombre": "Gafas de realidad virtual",
     "imagen": ""
+  },
+  {
+    "nombre": "Casco VR",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cámara web",
+    "imagen": ""
+  },
+  {
+    "nombre": "Micrófono",
+    "imagen": ""
+  },
+  {
+    "nombre": "Smart Speaker",
+    "imagen": ""
+  },
+  {
+    "nombre": "Asistente virtual",
+    "imagen": ""
+  },
+  {
+    "nombre": "Termostato inteligente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cerradura inteligente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bombilla inteligente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Robot de cocina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Thermomix",
+    "imagen": ""
+  },
+  {
+    "nombre": "Olla programable",
+    "imagen": ""
+  },
+  {
+    "nombre": "Air fryer",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aspiradora robot",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cafetera de cápsulas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Báscula inteligente",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tensiómetro digital",
+    "imagen": ""
+  },
+  {
+    "nombre": "Glucómetro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sensor de movimiento",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cámara IP",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alarma",
+    "imagen": ""
+  },
+  {
+    "nombre": "Power bank",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cable USB-C",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cable HDMI",
+    "imagen": ""
+  },
+  {
+    "nombre": "Adaptador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Hub USB",
+    "imagen": ""
   }
 ]

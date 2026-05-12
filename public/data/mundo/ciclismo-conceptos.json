@@ -1,18 +1,302 @@
 [
-  { "nombre": "Pelotón", "imagen": "", "palabraClave": "peloton" },
-  { "nombre": "Escapada", "imagen": "", "palabraClave": "escapada" },
-  { "nombre": "Contrarreloj", "imagen": "", "palabraClave": "contrarreloj" },
-  { "nombre": "Maillot amarillo", "imagen": "", "palabraClave": "amarillo" },
-  { "nombre": "Maillot verde", "imagen": "", "palabraClave": "verde" },
-  { "nombre": "Maillot de puntos", "imagen": "", "palabraClave": "puntos" },
-  { "nombre": "Maillot blanco", "imagen": "", "palabraClave": "blanco" },
-  { "nombre": "Gregario", "imagen": "", "palabraClave": "gregario" },
-  { "nombre": "Puerto de montaña", "imagen": "", "palabraClave": "montana" },
-  { "nombre": "Sprint", "imagen": "", "palabraClave": "sprint" },
-  { "nombre": "Etapa", "imagen": "", "palabraClave": "etapa" },
-  { "nombre": "Bicicleta de carretera", "imagen": "", "palabraClave": "carretera" },
-  { "nombre": "Bidón", "imagen": "", "palabraClave": "bidon" },
-  { "nombre": "Domestique", "imagen": "", "palabraClave": "domestique" },
-  { "nombre": "Escalador", "imagen": "", "palabraClave": "escalador" },
-  { "nombre": "Rodador", "imagen": "", "palabraClave": "rodador" }
+  {
+    "nombre": "Pelotón",
+    "imagen": "",
+    "palabraClave": "peloton"
+  },
+  {
+    "nombre": "Escapada",
+    "imagen": "",
+    "palabraClave": "escapada"
+  },
+  {
+    "nombre": "Contrarreloj",
+    "imagen": "",
+    "palabraClave": "contrarreloj"
+  },
+  {
+    "nombre": "Maillot amarillo",
+    "imagen": "",
+    "palabraClave": "amarillo"
+  },
+  {
+    "nombre": "Maillot verde",
+    "imagen": "",
+    "palabraClave": "verde"
+  },
+  {
+    "nombre": "Maillot de puntos",
+    "imagen": "",
+    "palabraClave": "puntos"
+  },
+  {
+    "nombre": "Maillot blanco",
+    "imagen": "",
+    "palabraClave": "blanco"
+  },
+  {
+    "nombre": "Gregario",
+    "imagen": "",
+    "palabraClave": "gregario"
+  },
+  {
+    "nombre": "Puerto de montaña",
+    "imagen": "",
+    "palabraClave": "montana"
+  },
+  {
+    "nombre": "Sprint",
+    "imagen": "",
+    "palabraClave": "sprint"
+  },
+  {
+    "nombre": "Etapa",
+    "imagen": "",
+    "palabraClave": "etapa"
+  },
+  {
+    "nombre": "Bicicleta de carretera",
+    "imagen": "",
+    "palabraClave": "carretera"
+  },
+  {
+    "nombre": "Bidón",
+    "imagen": "",
+    "palabraClave": "bidon"
+  },
+  {
+    "nombre": "Domestique",
+    "imagen": "",
+    "palabraClave": "domestique"
+  },
+  {
+    "nombre": "Escalador",
+    "imagen": "",
+    "palabraClave": "escalador"
+  },
+  {
+    "nombre": "Rodador",
+    "imagen": "",
+    "palabraClave": "rodador"
+  },
+  {
+    "nombre": "Tour",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vuelta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Maillot rojo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Maillot de lunares",
+    "imagen": ""
+  },
+  {
+    "nombre": "Maillot rosa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Esprint",
+    "imagen": ""
+  },
+  {
+    "nombre": "Embalaje",
+    "imagen": ""
+  },
+  {
+    "nombre": "Crono individual",
+    "imagen": ""
+  },
+  {
+    "nombre": "Crono por equipos",
+    "imagen": ""
+  },
+  {
+    "nombre": "Equipo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Director deportivo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Líder",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bonificación",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bonificación de meta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Línea de meta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Línea de salida",
+    "imagen": ""
+  },
+  {
+    "nombre": "Dorsal",
+    "imagen": ""
+  },
+  {
+    "nombre": "Casco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Manillar",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cambio",
+    "imagen": ""
+  },
+  {
+    "nombre": "Plato",
+    "imagen": ""
+  },
+  {
+    "nombre": "Piñón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cadena",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pedal",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sillín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Llanta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cubierta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tubular",
+    "imagen": ""
+  },
+  {
+    "nombre": "Maillot",
+    "imagen": ""
+  },
+  {
+    "nombre": "Culotte",
+    "imagen": ""
+  },
+  {
+    "nombre": "Guantes",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gafas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Calas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cuentakilómetros",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pulsómetro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Potenciómetro",
+    "imagen": ""
+  },
+  {
+    "nombre": "GPS",
+    "imagen": ""
+  },
+  {
+    "nombre": "Avituallamiento",
+    "imagen": ""
+  },
+  {
+    "nombre": "Coche de equipo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Moto neutra",
+    "imagen": ""
+  },
+  {
+    "nombre": "UCI",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cofidis",
+    "imagen": ""
+  },
+  {
+    "nombre": "Movistar Team",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jumbo-Visma",
+    "imagen": ""
+  },
+  {
+    "nombre": "Soudal-Quick-Step",
+    "imagen": ""
+  },
+  {
+    "nombre": "INEOS Grenadiers",
+    "imagen": ""
+  },
+  {
+    "nombre": "UAE Team Emirates",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bora-Hansgrohe",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lidl-Trek",
+    "imagen": ""
+  },
+  {
+    "nombre": "Decathlon AG2R",
+    "imagen": ""
+  },
+  {
+    "nombre": "Etapa de montaña",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alta montaña",
+    "imagen": ""
+  },
+  {
+    "nombre": "Puerto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bajada",
+    "imagen": ""
+  },
+  {
+    "nombre": "Vivac",
+    "imagen": ""
+  }
 ]
