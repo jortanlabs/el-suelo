@@ -76,8 +76,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       <button id="boton-volver" class="font-titulo text-lg font-bold text-[#a8c5ff] hover:text-[#e8e8ff] transition py-1 px-2">← Volver</button>
     </nav>
 
-    <!-- ENTRADA -->
-    <section id="pantalla-entrada" class="flex-1 flex flex-col items-center justify-center px-6 gap-5 overflow-y-auto">
+    <!-- ENTRADA: elegir acción -->
+    <section id="pantalla-entrada" class="flex-1 flex flex-col items-center justify-center px-6 gap-8 overflow-y-auto">
       <div class="text-center">
         <div class="inline-block relative px-10 py-3 mb-2">
           <span class="floor-corner floor-corner-tl"></span><span class="floor-corner floor-corner-tr"></span>
@@ -87,23 +87,40 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <p class="text-[#a8c5ff] font-titulo text-sm">📱 Modo 2 móviles</p>
       </div>
       <div class="w-full max-w-xs flex flex-col gap-4">
+        <button id="boton-ir-crear" class="floor-btn floor-btn-a w-full font-titulo font-bold text-2xl py-6 uppercase">➕ Crear sala</button>
+        <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">Invitas tú. El otro entra con un código.</p>
+        <button id="boton-ir-unirse" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-2xl py-6 uppercase">🚪 Unirme</button>
+        <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">Te han pasado un código de sala.</p>
+      </div>
+    </section>
+
+    <!-- CREAR SALA: nombre -->
+    <section id="pantalla-crear" class="flex-1 flex flex-col items-center justify-center px-6 gap-6 hidden">
+      <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center">Crear sala</h2>
+      <div class="w-full max-w-xs flex flex-col gap-4">
         <div>
           <label class="font-titulo text-base font-bold text-[#e8e8ff] block mb-2 text-center">¿Cómo te llamas?</label>
-          <input id="nombre-propio" type="text" placeholder="Tu nombre" maxlength="20"
-            class="floor-input text-center text-lg" autocomplete="off" />
+          <input id="nombre-crear" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input text-center text-lg py-3" autocomplete="off" />
         </div>
-        <button id="boton-crear" class="floor-btn floor-btn-a w-full font-titulo font-bold text-xl py-4">Crear sala</button>
-        <div class="flex items-center gap-2 my-1">
-          <div class="flex-1 h-px bg-[#163575]"></div>
-          <span class="text-[#a8c5ff] font-titulo text-xs uppercase tracking-widest">o únete</span>
-          <div class="flex-1 h-px bg-[#163575]"></div>
+        <button id="boton-crear" class="floor-btn floor-btn-a w-full font-titulo font-bold text-xl py-4">Crear sala →</button>
+        <p id="error-crear" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
+      </div>
+    </section>
+
+    <!-- UNIRSE: nombre + código -->
+    <section id="pantalla-unirse" class="flex-1 flex flex-col items-center justify-center px-6 gap-6 hidden">
+      <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center">Unirte a sala</h2>
+      <div class="w-full max-w-xs flex flex-col gap-4">
+        <div>
+          <label class="font-titulo text-base font-bold text-[#e8e8ff] block mb-2 text-center">¿Cómo te llamas?</label>
+          <input id="nombre-unirse" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input text-center text-lg py-3" autocomplete="off" />
         </div>
-        <div class="flex gap-2 items-stretch">
-          <input id="codigo-sala" type="text" placeholder="Código" maxlength="4"
-            class="floor-input text-center text-xl uppercase tracking-widest font-bold flex-1" autocomplete="off" />
-          <button id="boton-unirse" class="floor-btn floor-btn-gold font-titulo font-bold text-base px-5">Unirse</button>
+        <div>
+          <label class="font-titulo text-base font-bold text-[#e8e8ff] block mb-2 text-center">Código de sala</label>
+          <input id="codigo-sala" type="text" placeholder="ABCD" maxlength="4" class="floor-input text-center text-2xl uppercase tracking-widest font-bold py-3" autocomplete="off" />
         </div>
-        <p id="error-entrada" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
+        <button id="boton-unirse" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-xl py-4">Unirme →</button>
+        <p id="error-unirse" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
       </div>
     </section>
 
@@ -410,6 +427,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   // ── DOM ────────────────────────────────────────────────────
   const $ = (id: string) => document.getElementById(id)!;
   const pEntrada = $("pantalla-entrada");
+  const pCrear = $("pantalla-crear");
+  const pUnirse = $("pantalla-unirse");
   const pSala = $("pantalla-sala");
   const pSetup = $("pantalla-setup");
   const pSetupGuest = $("pantalla-setup-guest");
@@ -417,7 +436,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   const pTablero = $("pantalla-tablero");
   const pJuego = $("pantalla-juego");
   const pFinal = $("pantalla-final");
-  const PANTALLAS = [pEntrada, pSala, pSetup, pSetupGuest, pLoader, pTablero, pJuego, pFinal];
+  const PANTALLAS = [pEntrada, pCrear, pUnirse, pSala, pSetup, pSetupGuest, pLoader, pTablero, pJuego, pFinal];
   // Pantallas en las que se muestra el botón de chat (todas menos entrada y final)
   const _PANTALLAS_CHAT = [pSala, pSetup, pSetupGuest, pLoader, pTablero, pJuego];
 
@@ -645,36 +664,45 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
   // Recordar nombre del jugador entre sesiones
   const NOMBRE_KEY = "el-suelo:multi-nombre";
-  try {
-    const saved = localStorage.getItem(NOMBRE_KEY);
-    if (saved) ($("nombre-propio") as HTMLInputElement).value = saved;
-  } catch {}
+  const nombreGuardado = (() => { try { return localStorage.getItem(NOMBRE_KEY) || ""; } catch { return ""; } })();
+  if (nombreGuardado) {
+    ($("nombre-crear") as HTMLInputElement).value = nombreGuardado;
+    ($("nombre-unirse") as HTMLInputElement).value = nombreGuardado;
+  }
   function recordarNombre(n: string) {
     try { localStorage.setItem(NOMBRE_KEY, n); } catch {}
   }
 
-  // Si el link viene con ?codigo=XXXX (compartido por whatsapp), precargar el código
+  // Si el link viene con ?codigo=XXXX (compartido por whatsapp), saltar directamente a "Unirse"
   try {
     const params = new URLSearchParams(location.search);
     const codigoUrl = (params.get("codigo") || "").trim().toUpperCase().slice(0, 4);
     if (codigoUrl && /^[A-Z0-9]{4}$/.test(codigoUrl)) {
       ($("codigo-sala") as HTMLInputElement).value = codigoUrl;
-      // Foco automático en el campo nombre para que solo tenga que escribir su nombre
-      setTimeout(() => ($("nombre-propio") as HTMLInputElement).focus(), 100);
+      mostrar(pUnirse);
+      setTimeout(() => ($("nombre-unirse") as HTMLInputElement).focus(), 100);
     }
   } catch {}
 
+  // Navegación: en pantalla-entrada, los dos botones grandes
+  $("boton-ir-crear").addEventListener("click", () => mostrar(pCrear));
+  $("boton-ir-unirse").addEventListener("click", () => mostrar(pUnirse));
+
+  function flagInputError(input: HTMLInputElement) {
+    input.focus();
+    input.style.borderColor = "#ff1dce";
+    input.style.boxShadow = "0 0 12px #ff1dce88";
+    setTimeout(() => { input.style.borderColor = ""; input.style.boxShadow = ""; }, 2000);
+  }
+
   $("boton-crear").addEventListener("click", () => {
-    const nombreInput = $("nombre-propio") as HTMLInputElement;
+    const nombreInput = $("nombre-crear") as HTMLInputElement;
     const nombre = nombreInput.value.trim();
-    const errEl = $("error-entrada");
+    const errEl = $("error-crear");
     errEl.classList.add("hidden");
     if (!nombre) {
-      nombreInput.focus();
-      nombreInput.style.borderColor = "#ff1dce";
-      nombreInput.style.boxShadow = "0 0 12px #ff1dce88";
+      flagInputError(nombreInput);
       mostrarError(errEl, "Primero escribe tu nombre ↑");
-      setTimeout(() => { nombreInput.style.borderColor = ""; nombreInput.style.boxShadow = ""; }, 2000);
       return;
     }
     if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
@@ -695,21 +723,23 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   });
 
   $("boton-unirse").addEventListener("click", () => {
-    const nombreInput = $("nombre-propio") as HTMLInputElement;
+    const nombreInput = $("nombre-unirse") as HTMLInputElement;
+    const codigoInput = $("codigo-sala") as HTMLInputElement;
     const nombre = nombreInput.value.trim();
-    const cod = ($("codigo-sala") as HTMLInputElement).value.trim().toUpperCase();
-    const errEl = $("error-entrada");
+    const cod = codigoInput.value.trim().toUpperCase();
+    const errEl = $("error-unirse");
     errEl.classList.add("hidden");
     if (!nombre) {
-      nombreInput.focus();
-      nombreInput.style.borderColor = "#ff1dce";
-      nombreInput.style.boxShadow = "0 0 12px #ff1dce88";
+      flagInputError(nombreInput);
       mostrarError(errEl, "Primero escribe tu nombre ↑");
-      setTimeout(() => { nombreInput.style.borderColor = ""; nombreInput.style.boxShadow = ""; }, 2000);
+      return;
+    }
+    if (cod.length !== 4) {
+      flagInputError(codigoInput);
+      mostrarError(errEl, "Introduce un código de 4 letras.");
       return;
     }
     if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
-    if (cod.length !== 4) { mostrarError(errEl, "Introduce un código de 4 letras."); return; }
     recordarNombre(nombre);
     rol = "guest"; rolPropio = "B";
     nombreB = nombre;
@@ -733,12 +763,11 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     canal.bind("pusher:subscription_error", (data: { status?: number; error?: string }) => {
       const status = data?.status ?? "?";
       console.error("Pusher subscription_error:", data);
-      // Solo redirigir al inicio si todavía no hemos entrado a la sala — si ya
-      // estamos en otra pantalla, Pusher reintentará por su cuenta y no queremos
-      // sacar al usuario de la partida por un error transitorio (background tab, etc.)
-      if (!pEntrada.classList.contains("hidden")) {
-        mostrarError($("error-entrada"), `Error de conexión (${status}). Inténtalo de nuevo.`);
-      }
+      // Solo mostramos error si todavía estamos en las pantallas de crear/unirse
+      const errEl = !pCrear.classList.contains("hidden") ? $("error-crear")
+                  : !pUnirse.classList.contains("hidden") ? $("error-unirse")
+                  : null;
+      if (errEl) mostrarError(errEl, `Error de conexión (${status}). Inténtalo de nuevo.`);
     });
     canal.bind("client-estado", (d: SyncEstado) => { if (rol === "guest") applyEstado(d); });
     canal.bind("client-chat", (d: { autor: "A" | "B"; texto: string; tipo: "texto" | "voz" }) => {
@@ -1419,11 +1448,16 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   }
 
   $("boton-volver").addEventListener("click", async () => {
-    // Desde la pantalla de entrada (sin conexión activa), salimos directos
+    // Desde la pantalla de entrada (sin conexión activa), salimos a la home
     if (!pEntrada.classList.contains("hidden")) {
       pararVoz(); stopRenderLoop();
       if (gameTimeout) clearTimeout(gameTimeout);
       window.location.href = "/";
+      return;
+    }
+    // Desde Crear/Unirse (todavía sin sala montada), volver a la pantalla de entrada
+    if (!pCrear.classList.contains("hidden") || !pUnirse.classList.contains("hidden")) {
+      mostrar(pEntrada);
       return;
     }
     // Durante una partida activa (tablero o juego), volver al menú con confirmación
@@ -1464,7 +1498,14 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
   $("boton-menu-final").addEventListener("click", () => {
     pararVoz(); stopRenderLoop();
-    window.location.href = "/";
+    // Volver al menú de elegir modo (manteniendo la sala). Si es host, sincroniza
+    // al guest a la pantalla de espera; el guest vuelve a esperar al host.
+    if (rol === "host") {
+      sync({ fase: "setup-espera", nombreA, nombreB, modo });
+      mostrar(pSetup);
+    } else {
+      mostrar(pSetupGuest);
+    }
   });
 
   // ── Confeti ────────────────────────────────────────────────

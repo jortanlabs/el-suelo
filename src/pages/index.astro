@@ -636,7 +636,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   // Flujo: bienvenida → modo → nombres → (categoría si rápida) → juego
   $("boton-jugar").addEventListener("click", () => mostrar(pModo));
-  $("boton-menu").addEventListener("click", () => mostrar(pBienvenida));
+  $("boton-menu").addEventListener("click", () => mostrar(pModo));
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/el-suelo-sw.js").catch(() => {});
@@ -1257,7 +1257,8 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     if (modo === "tablero") {
       await iniciarPartidaTablero();
     } else {
-      await iniciarPartidaRapida();
+      // En rápida, llevar a elegir categoría de nuevo
+      mostrar(pCategoria);
     }
   });
 
