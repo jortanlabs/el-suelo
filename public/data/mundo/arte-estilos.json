@@ -98,5 +98,41 @@
   {
     "nombre": "Lowbrow",
     "imagen": "https://imborrable.com/wp-content/uploads/2022/10/nicoletta-ceccoli.jpg"
+  },
+  {
+    "nombre": "Hiperrealismo",
+    "imagen": "https://arteyalgomas.com/wp-content/uploads/2023/08/portada-hiperrealismo.jpg"
+  },
+  {
+    "nombre": "Art Nouveau",
+    "imagen": "https://masdearte.com/media/mov_artnouveau.jpg"
+  },
+  {
+    "nombre": "Rococó",
+    "imagen": "https://cdn-ilbljnn.nitrocdn.com/TTAKoHBkGToXeiyBZSVOoWexbXGMYdgC/assets/images/optimized/rev-d417b12/htdeco.fr/wp-content/uploads/img/cms/Style-Rococo-Architecture.jpeg"
+  },
+  {
+    "nombre": "Bauhaus",
+    "imagen": "https://imgproxy.domestika.org/unsafe/w:1200/rs:fill/plain/src://blog-post-open-graph-covers/000/014/222/14222-original.jpg?1759788528"
+  },
+  {
+    "nombre": "Art déco",
+    "imagen": "https://www.anticcolonial.com/wp-content/uploads/2025/07/caracteristicas-art-deco.jpg"
+  },
+  {
+    "nombre": "Instalación",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/9a/SuperNaturalBreakdancer.jpg"
+  },
+  {
+    "nombre": "cinético",
+    "imagen": "https://img.freepik.com/foto-gratis/representacion-3d-ilusion-optica_23-2150854143.jpg?semt=ais_hybrid&w=740&q=80"
+  },
+  {
+    "nombre": "Fotorrealismo",
+    "imagen": "https://www.roc21.com/wp-content/uploads/2010/05/Pintura-fotorrealista.webp"
+  },
+  {
+    "nombre": "Lowbrow",
+    "imagen": "https://imborrable.com/wp-content/uploads/2022/10/nicoletta-ceccoli.jpg"
   }
 ]
