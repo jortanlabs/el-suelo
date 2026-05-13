@@ -340,11 +340,19 @@ const BUILD = Date.now();
     const extraFromJson = items
       ? items.map((it) => it.nombre).filter((n) => n && !subcatNombresSet.has(n))
       : [];
+    // Dedup por key: si un nombre aparece dos veces (en subcat.nombres o por duplicado en
+    // el JSON), se renderiza un solo card. Antes compartían key y al editar uno se
+    // afectaba el otro.
+    const seenKeys = new Set();
     const allEntries = [
       ...subcat.nombres.map(n => ({ key: n, orig: n })),
       ...extraFromJson.map(n => ({ key: n, orig: n })),
       ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
-    ];
+    ].filter(({ key }) => {
+      if (seenKeys.has(key)) return false;
+      seenKeys.add(key);
+      return true;
+    });
 
     let nImg = 0;
 
@@ -481,7 +489,7 @@ const BUILD = Date.now();
     const extraFromJson = (resolved[slug] || [])
       .map((it) => it.nombre)
       .filter((nn) => nn && !subcatNombresSet.has(nn));
-    const todos = [...subcat.nombres, ...extraFromJson];
+    const todos = [...new Set([...subcat.nombres, ...extraFromJson])];
     let n = 0;
     for (const nombre of todos) {
       const ee = slugEdits[nombre] || {};
@@ -582,11 +590,16 @@ const BUILD = Date.now();
     const extraFromJson = (resolved[slug] || [])
       .map((it) => it.nombre)
       .filter((n) => n && !subcatNombresSet.has(n));
+    const seenKeys = new Set();
     const allEntries = [
       ...subcat.nombres.map(n => ({ key: n, orig: n })),
       ...extraFromJson.map(n => ({ key: n, orig: n })),
       ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
-    ];
+    ].filter(({ key }) => {
+      if (seenKeys.has(key)) return false;
+      seenKeys.add(key);
+      return true;
+    });
     const result = [];
     for (const { key, orig } of allEntries) {
       const e = slugEdits[key] || {};
@@ -740,11 +753,16 @@ const BUILD = Date.now();
     const extraFromJson = (resolved[slug] || [])
       .map((it) => it.nombre)
       .filter((n) => n && !subcatNombresSet.has(n));
+    const seenKeys = new Set();
     const allEntries = [
       ...subcat.nombres.map(n => ({ key: n, orig: n })),
       ...extraFromJson.map(n => ({ key: n, orig: n })),
       ...addedKeys.map(k => ({ key: k, orig: slugEdits[k].nombre ?? k })),
-    ];
+    ].filter(({ key }) => {
+      if (seenKeys.has(key)) return false;
+      seenKeys.add(key);
+      return true;
+    });
     const result = [];
     for (const { key, orig } of allEntries) {
       const e = slugEdits[key] || {};
