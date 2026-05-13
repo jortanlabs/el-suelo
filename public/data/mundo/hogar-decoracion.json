@@ -8,6 +8,98 @@
     "imagen": ""
   },
   {
+    "nombre": "Vela",
+    "imagen": ""
+  },
+  {
+    "nombre": "Candelabro",
+    "imagen": ""
+  },
+  {
+    "nombre": "Espejo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Jarrón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Florero",
+    "imagen": ""
+  },
+  {
+    "nombre": "Maceta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Alfombra",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cortina",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cojín",
+    "imagen": ""
+  },
+  {
+    "nombre": "Manta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tapiz",
+    "imagen": ""
+  },
+  {
+    "nombre": "Reloj de pared",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cesto",
+    "imagen": ""
+  },
+  {
+    "nombre": "Bandeja decorativa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Centro de mesa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Velas aromáticas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Difusor",
+    "imagen": ""
+  },
+  {
+    "nombre": "Móvil decorativo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Estatua",
+    "imagen": ""
+  },
+  {
+    "nombre": "Figura decorativa",
+    "imagen": ""
+  },
+  {
+    "nombre": "Marco",
+    "imagen": ""
+  },
+  {
+    "nombre": "Póster",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lámina",
+    "imagen": ""
+  },
+  {
     "nombre": "Lámpara de pie",
     "imagen": ""
   },
@@ -28,39 +120,7 @@
     "imagen": ""
   },
   {
-    "nombre": "Vela",
-    "imagen": ""
-  },
-  {
-    "nombre": "Candelabro",
-    "imagen": ""
-  },
-  {
     "nombre": "Velón",
-    "imagen": ""
-  },
-  {
-    "nombre": "Espejo",
-    "imagen": ""
-  },
-  {
-    "nombre": "Marco",
-    "imagen": ""
-  },
-  {
-    "nombre": "Estatua",
-    "imagen": ""
-  },
-  {
-    "nombre": "Figura decorativa",
-    "imagen": ""
-  },
-  {
-    "nombre": "Jarrón",
-    "imagen": ""
-  },
-  {
-    "nombre": "Florero",
     "imagen": ""
   },
   {
@@ -72,19 +132,7 @@
     "imagen": ""
   },
   {
-    "nombre": "Maceta",
-    "imagen": ""
-  },
-  {
     "nombre": "Tiesto",
-    "imagen": ""
-  },
-  {
-    "nombre": "Alfombra",
-    "imagen": ""
-  },
-  {
-    "nombre": "Cortina",
     "imagen": ""
   },
   {
@@ -100,18 +148,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Cojín",
-    "imagen": ""
-  },
-  {
-    "nombre": "Manta",
-    "imagen": ""
-  },
-  {
-    "nombre": "Tapiz",
-    "imagen": ""
-  },
-  {
     "nombre": "Mural",
     "imagen": ""
   },
@@ -120,23 +156,11 @@
     "imagen": ""
   },
   {
-    "nombre": "Reloj de pared",
-    "imagen": ""
-  },
-  {
     "nombre": "Reloj de mesa",
     "imagen": ""
   },
   {
     "nombre": "Caja decorativa",
-    "imagen": ""
-  },
-  {
-    "nombre": "Bandeja decorativa",
-    "imagen": ""
-  },
-  {
-    "nombre": "Cesto",
     "imagen": ""
   },
   {
@@ -153,14 +177,6 @@
   },
   {
     "nombre": "Cuadro paisaje",
-    "imagen": ""
-  },
-  {
-    "nombre": "Póster",
-    "imagen": ""
-  },
-  {
-    "nombre": "Lámina",
     "imagen": ""
   },
   {
@@ -184,23 +200,7 @@
     "imagen": ""
   },
   {
-    "nombre": "Velas aromáticas",
-    "imagen": ""
-  },
-  {
-    "nombre": "Difusor",
-    "imagen": ""
-  },
-  {
-    "nombre": "Centro de mesa",
-    "imagen": ""
-  },
-  {
     "nombre": "Atrapasueños",
-    "imagen": ""
-  },
-  {
-    "nombre": "Móvil decorativo",
     "imagen": ""
   },
   {
