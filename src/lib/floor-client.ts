@@ -521,6 +521,15 @@ export function aciertoFlexible(
   nombre: string,
   categoria?: string,
 ): boolean {
+  // Check inicial: nombre y transcripción sin espacios. Cubre casos como
+  // "Ajo blanco" (transcripción) vs "ajoblanco" (nombre) — y a la inversa.
+  // Quitamos paréntesis del nombre antes de unir, para no incluir la peli/contexto.
+  const nLimpio = nombre.replace(/\s*\([^)]+\)\s*$/, "").trim();
+  const nSinEsp = normalizar(nLimpio).replace(/\s+/g, "");
+  const tSinEsp = normalizar(transcripcion).replace(/\s+/g, "");
+  if (nSinEsp.length >= 4 && tSinEsp.includes(nSinEsp)) return true;
+  if (tSinEsp.length >= 4 && nSinEsp.includes(tSinEsp)) return true;
+
   const t = ` ${normalizar(transcripcion)} `;
   const palabras = normalizar(nombre)
     .split(/\s+/)
