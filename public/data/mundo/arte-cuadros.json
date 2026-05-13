@@ -1,198 +1,90 @@
 [
   {
-    "nombre": "La Mona Lisa",
+    "nombre": "La Mona Lisa (Leonardo da Vinci)",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/73/Leonardo_da_Vinci_-_Mona_Lisa_%28Louvre%2C_Paris%29.jpg"
   },
   {
-    "nombre": "La última cena",
+    "nombre": "La última cena (Leonardo da Vinci)",
     "imagen": "https://wp.es.aleteia.org/wp-content/uploads/sites/7/2018/03/web3-the-last-supper-public-domain.jpg"
   },
   {
-    "nombre": "La noche estrellada",
+    "nombre": "La noche estrellada (Van Gogh)",
     "imagen": "https://m.media-amazon.com/images/I/910j2-AGEiL._AC_UF894,1000_QL80_.jpg"
   },
   {
-    "nombre": "Las Meninas",
+    "nombre": "Las Meninas (Velázquez)",
     "imagen": "https://www.ifema.es/img/xl/descubre-cuadro-meninas-museo-del-prado/cuadro-las-meninas-museo-prado.jpeg"
   },
   {
-    "nombre": "El jardín de las delicias",
+    "nombre": "El jardín de las delicias (El Bosco)",
     "imagen": "https://quattrocento.wordpress.com/files/2008/05/jardin-delicias-bosco-img.jpg"
   },
   {
-    "nombre": "El Guernica",
+    "nombre": "El Guernica (Picasso)",
     "imagen": "https://m.media-amazon.com/images/I/71ubXq88AAS._AC_UF894,1000_QL80_.jpg"
   },
   {
-    "nombre": "Los girasoles",
+    "nombre": "Los girasoles (Van Gogh)",
     "imagen": "https://content-historia.nationalgeographic.com.es/medio/2024/10/04/tres-copias-exactas_90736d4b_241004151230_2000x2525.webp"
   },
   {
-    "nombre": "La joven de la perla",
+    "nombre": "La joven de la perla (Vermeer)",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/1280px-Meisje_met_de_parel.jpg"
   },
   {
-    "nombre": "El grito",
+    "nombre": "El grito (Munch)",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Scream.jpg/250px-The_Scream.jpg"
   },
   {
-    "nombre": "La libertad guiando al pueblo",
+    "nombre": "La libertad guiando al pueblo (Delacroix)",
     "imagen": "https://cdn.culturagenial.com/es/imagenes/cuadro-la-libertad-guiando-al-pueblo-og.jpg"
   },
   {
-    "nombre": "Saturno devorando a su hijo",
+    "nombre": "Saturno devorando a su hijo (Goya)",
     "imagen": "https://img.rtve.es/v/1895267/"
   },
   {
-    "nombre": "La maja desnuda",
+    "nombre": "La maja desnuda (Goya)",
     "imagen": "https://apintoresyescultores.es/wp-content/uploads/2021/04/3f8e3c00-1307-4569-b987-f1b1b7c314b4.jpg"
   },
   {
-    "nombre": "El nacimiento de Venus",
+    "nombre": "El nacimiento de Venus (Botticelli)",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1280px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
   },
   {
-    "nombre": "El beso",
+    "nombre": "El beso (Klimt)",
     "imagen": "https://el-volume-ndeunasom-bra.com/wp-content/uploads/2024/12/000-21.jpg"
   },
   {
-    "nombre": "La creación de Adán",
+    "nombre": "La creación de Adán (Miguel Ángel)",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU4-3ReAWtYCs5vcEuZoS9XcrlxycLIA5h5A&s"
   },
   {
-    "nombre": "La escuela de Atenas",
+    "nombre": "La escuela de Atenas (Rafael)",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2FeLwcZYmQsZdwlIlV7lge0xOFRWLmY_Cg&s"
   },
   {
-    "nombre": "Los fusilamientos del 3 de mayo",
+    "nombre": "Los fusilamientos del 3 de mayo (Goya)",
     "imagen": "https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvMy1kZS1tYXlvLWdveWEuanBnIiwicmVzaXplLDgwMCJdfQ.V_ogDCZFN0JK16Axd9JXCq5Di23y48LAKZgvuNSn1yY.jpg"
   },
   {
-    "nombre": "La persistencia de la memoria",
+    "nombre": "La persistencia de la memoria (Dalí)",
     "imagen": "https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvbnljLTItMjY4LmpwZyIsInJlc2l6ZSw4MDAiXX0.oHuiNXMeCqBT1fa5I9ddteiMiKkLQ_e1lyF6l8uUsWo.jpg"
   },
   {
-    "nombre": "Las señoritas de Aviñón",
+    "nombre": "Las señoritas de Aviñón (Picasso)",
     "imagen": "https://s1.ppllstatics.com/laverdad/www/multimedia/2023/05/03/179948337--1200x840.jpg"
   },
   {
-    "nombre": "La balsa de la Medusa",
+    "nombre": "La balsa de la Medusa (Géricault)",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGKKFIrdufrg1gF7WvCz03BfOTrDXmImY6Ew&s"
   },
   {
-    "nombre": "La noche azul",
-    "imagen": "https://m.media-amazon.com/images/I/61m-r6MwRkL._AC_UF894,1000_QL80_.jpg"
-  },
-  {
-    "nombre": "El juicio final",
+    "nombre": "El juicio final (Miguel Ángel)",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzK4rDqY1dxWJb6PDLzoajp2Z7P1NzAmVMA&s"
   },
   {
-    "nombre": "Terraza de café por la noche",
-    "imagen": "https://artwork.art-cdn.com/954073/escuchapintar-ramirez-pintura-paisaje-terraza-de-cafe-por-la-noche.jpg"
-  },
-  {
-    "nombre": "Las dos Fridas",
+    "nombre": "Las dos Fridas (Frida Kahlo)",
     "imagen": "https://www.artisangallery.es/5268/comprar-cuadro-las-dos-fridas-1939-frida-kahlo.jpg"
-  },
-  {
-    "nombre": "El hijo del hombre",
-    "imagen": "https://www.singulart.com/blog/wp-content/uploads/2024/03/The-Son-of-Man.jpg"
-  },
-  {
-    "nombre": "Paseo a orillas del mar",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6kh7bTLC1GjMYBGAudis3rc6fjk4VanerFA&s"
-  },
-  {
-    "nombre": "Lirios",
-    "imagen": "https://m.media-amazon.com/images/I/A1wNSoRKkOL.jpg"
-  },
-  {
-    "nombre": "El retorno del hijo pródigo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueraPL1NCcVT--UOBn45ZNdMsLFV0MgDrNg&s"
-  },
-  {
-    "nombre": "La dama del armiño",
-    "imagen": "https://media.posterlounge.com/img/products/530000/528778/528778_poster.jpg"
-  },
-  {
-    "nombre": "Autorretrato",
-    "imagen": "https://www.reprodart.com/kunst/vincent_van_gogh/Autoportrait.jpg"
-  },
-  {
-    "nombre": "Latas de sopa Campbell",
-    "imagen": "https://subastareal.es/fotos/tandy-warhol-tomato-29525000-4669-1.jpeg"
-  },
-  {
-    "nombre": "Díptico de Marilyn",
-    "imagen": "https://www.1st-art-gallery.com/media/wysiwyg/Marilyn_Monroe.jpg"
-  },
-  {
-    "nombre": "Judit y Holofernes",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Judith_Beheading_Holofernes_-_Caravaggio.jpg/1280px-Judith_Beheading_Holofernes_-_Caravaggio.jpg"
-  },
-  {
-    "nombre": "Bóveda Capilla Sixtina",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXvVv89l0qouPeoHg9Uxe2kXKcvZQa7vLIsA&s"
-  },
-  {
-    "nombre": "Mona Lisa a los 12 años",
-    "imagen": "https://www.singulart.com/blog/wp-content/uploads/2024/02/Mona-Lisa-Age-Twelve-1-scaled.jpg"
-  },
-  {
-    "nombre": "Terraza de café por la noche",
-    "imagen": "https://artwork.art-cdn.com/954073/escuchapintar-ramirez-pintura-paisaje-terraza-de-cafe-por-la-noche.jpg"
-  },
-  {
-    "nombre": "Las dos Fridas",
-    "imagen": "https://www.artisangallery.es/5268/comprar-cuadro-las-dos-fridas-1939-frida-kahlo.jpg"
-  },
-  {
-    "nombre": "El hijo del hombre",
-    "imagen": "https://www.singulart.com/blog/wp-content/uploads/2024/03/The-Son-of-Man.jpg"
-  },
-  {
-    "nombre": "Paseo a orillas del mar",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6kh7bTLC1GjMYBGAudis3rc6fjk4VanerFA&s"
-  },
-  {
-    "nombre": "Lirios",
-    "imagen": "https://m.media-amazon.com/images/I/A1wNSoRKkOL.jpg"
-  },
-  {
-    "nombre": "El retorno del hijo pródigo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueraPL1NCcVT--UOBn45ZNdMsLFV0MgDrNg&s"
-  },
-  {
-    "nombre": "La dama del armiño",
-    "imagen": "https://media.posterlounge.com/img/products/530000/528778/528778_poster.jpg"
-  },
-  {
-    "nombre": "Autorretrato",
-    "imagen": "https://www.reprodart.com/kunst/vincent_van_gogh/Autoportrait.jpg"
-  },
-  {
-    "nombre": "Latas de sopa Campbell",
-    "imagen": "https://subastareal.es/fotos/tandy-warhol-tomato-29525000-4669-1.jpeg"
-  },
-  {
-    "nombre": "Díptico de Marilyn",
-    "imagen": "https://www.1st-art-gallery.com/media/wysiwyg/Marilyn_Monroe.jpg"
-  },
-  {
-    "nombre": "Judit y Holofernes",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Judith_Beheading_Holofernes_-_Caravaggio.jpg/1280px-Judith_Beheading_Holofernes_-_Caravaggio.jpg"
-  },
-  {
-    "nombre": "El nacimiento de Venus",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1280px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
-  },
-  {
-    "nombre": "Bóveda Capilla Sixtina",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXvVv89l0qouPeoHg9Uxe2kXKcvZQa7vLIsA&s"
-  },
-  {
-    "nombre": "Mona Lisa a los 12 años",
-    "imagen": "https://www.singulart.com/blog/wp-content/uploads/2024/02/Mona-Lisa-Age-Twelve-1-scaled.jpg"
   }
 ]
