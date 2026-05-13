@@ -507,13 +507,15 @@ function levenshtein(a: string, b: string, max = 1): number {
 // - wars → uars, kit → cit
 // - hamburger → amburguer (h muda)
 // - phone → fone
+// - sully → suly, anna → ana, ross → ros (consonantes dobles colapsadas)
 function fonetizar(p: string): string {
   return p
     .replace(/^s([bcdfghjklmnpqrstvwxyz])/, "es$1")
     .replace(/w/g, "u")
     .replace(/k/g, "c")
     .replace(/^h/, "")
-    .replace(/ph/g, "f");
+    .replace(/ph/g, "f")
+    .replace(/(.)\1/g, "$1");
 }
 
 /**
