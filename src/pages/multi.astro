@@ -911,12 +911,12 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   // ── Setup (host) ───────────────────────────────────────────
   $("boton-compartir").addEventListener("click", async () => {
     const url = `${location.origin}/multi?codigo=${codigo}`;
-    const texto = `¡Únete a mi sala en El Suelo! Pincha y entras directo.`;
+    const texto = `¡Únete a mi sala en El Suelo!\nCódigo: ${codigo}`;
     try {
       if (navigator.share) {
         await navigator.share({ title: "El Suelo — 2 Móviles", text: texto, url });
       } else {
-        await navigator.clipboard.writeText(`${texto} ${url}`);
+        await navigator.clipboard.writeText(`${texto}\n${url}`);
         $("sala-info").textContent = "¡Enlace copiado! ✓";
       }
     } catch {}
