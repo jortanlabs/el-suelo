@@ -605,17 +605,31 @@ const BUILD = Date.now();
     const path = `public/data/${dataPath}/${slug}.json`;
     const apiBase = `https://api.github.com/repos/${REPO}/contents/${path}`;
     const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' };
-    // Get current SHA
-    let sha;
-    try {
-      const r = await fetch(`${apiBase}?ref=${BRANCH}`, { headers });
-      if (r.ok) { const d = await r.json(); sha = d.sha; }
-    } catch {}
-    // Encode content
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(items, null, 2))));
-    const body = { message: `admin: update ${slug}.json [skip ci]`, content, branch: BRANCH, ...(sha ? { sha } : {}) };
-    const res = await fetch(apiBase, { method: 'PUT', headers, body: JSON.stringify(body) });
-    if (!res.ok) { const err = await res.json(); throw new Error(err.message || res.status); }
+
+    // Intentar hasta 3 veces: si GitHub devuelve un SHA "stale", re-fetcheamos y
+    // reintentamos. Cada try añade un cache-buster para forzar GitHub a no servir caché.
+    let lastError = null;
+    for (let intento = 0; intento < 3; intento++) {
+      let sha;
+      try {
+        const r = await fetch(`${apiBase}?ref=${BRANCH}&_=${Date.now()}`, { headers, cache: 'no-store' });
+        if (r.ok) { const d = await r.json(); sha = d.sha; }
+      } catch {}
+      const body = { message: `admin: update ${slug}.json [skip ci]`, content, branch: BRANCH, ...(sha ? { sha } : {}) };
+      const res = await fetch(apiBase, { method: 'PUT', headers, body: JSON.stringify(body) });
+      if (res.ok) return;
+      const err = await res.json().catch(() => ({}));
+      const msg = err.message || String(res.status);
+      lastError = new Error(msg);
+      // Si es conflicto de SHA, esperamos 600 ms y reintentamos
+      if (/does not match|sha/i.test(msg) && intento < 2) {
+        await new Promise((r) => setTimeout(r, 600));
+        continue;
+      }
+      throw lastError;
+    }
+    throw lastError ?? new Error('No se pudo publicar tras varios intentos');
   }
 
   function iniciarPublicar(bloqueSlug) {
