@@ -108,6 +108,34 @@
     "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2025-12/sergio-ramos-podria-regresar-francia.jpg.webp?h=df3c6bf4&itok=Li2bnxjZ"
   },
   {
+    "nombre": "Fernando Hierro",
+    "imagen": "https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/L6Z75CJSXRJUPEQMB6NUGGNJNU.jpg"
+  },
+  {
+    "nombre": "David Villa",
+    "imagen": "https://www.panenka.org/wp-content/uploads/2020/06/england-v-spain-international-friendly-scaled-e1592901838771.jpg"
+  },
+  {
+    "nombre": "Xabi Alonso",
+    "imagen": "https://rfef.es/sites/default/files/styles/noticias_image_content/public/xabi_1.jpg.webp?itok=Ksd0QmiP"
+  },
+  {
+    "nombre": "Fernando Torres",
+    "imagen": "https://hicuespeakers.com/sites/default/files/styles/cuadrada_737x737/public/2024-08/perfiles/Fernando-Torres.jpg.webp?h=fbf7a813&itok=ReOKJSng"
+  },
+  {
+    "nombre": "José Antonio Camacho",
+    "imagen": "https://grupobcc.com/wp/wp-content/uploads/2015/05/Jose-Antonio-Camacho.jpg"
+  },
+  {
+    "nombre": "Lamine Yamal",
+    "imagen": "https://assets.goal.com/images/v3/blt411f83ea5a5aca9d/06.gif?auto=webp&format=pjpg&width=3840&quality=60"
+  },
+  {
+    "nombre": "Gerard Piqué",
+    "imagen": "https://www.fcbarcelona.com/photo-resources/fcbarcelona/photo/2018/07/04/7c610b7f-1455-4065-94f3-507cb5727d3c/PvZlVyPA.jpg?width=1200&height=750"
+  },
+  {
     "nombre": "Pep Guardiola",
     "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2026-01/confirmado-guardiola-no-seguira-manchester-city.jpg.webp?h=df3c6bf4&itok=FWS59DDC"
   },
@@ -128,10 +156,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Romário",
-    "imagen": ""
-  },
-  {
     "nombre": "Rivaldo",
     "imagen": ""
   },
@@ -141,14 +165,6 @@
   },
   {
     "nombre": "Gerd Müller",
-    "imagen": ""
-  },
-  {
-    "nombre": "Eusébio",
-    "imagen": ""
-  },
-  {
-    "nombre": "Marco van Basten",
     "imagen": ""
   },
   {
@@ -164,14 +180,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Alessandro Del Piero",
-    "imagen": ""
-  },
-  {
-    "nombre": "Gianluigi Buffon",
-    "imagen": ""
-  },
-  {
     "nombre": "Fabio Cannavaro",
     "imagen": ""
   },
@@ -180,15 +188,7 @@
     "imagen": ""
   },
   {
-    "nombre": "Francesco Totti",
-    "imagen": ""
-  },
-  {
     "nombre": "Filippo Inzaghi",
-    "imagen": ""
-  },
-  {
-    "nombre": "Roberto Baggio",
     "imagen": ""
   },
   {
@@ -270,5 +270,21 @@
   {
     "nombre": "Hugo Sánchez",
     "imagen": ""
+  },
+  {
+    "nombre": "Pep Guardiola",
+    "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2026-01/confirmado-guardiola-no-seguira-manchester-city.jpg.webp?h=df3c6bf4&itok=FWS59DDC"
+  },
+  {
+    "nombre": "Guti",
+    "imagen": "https://images.ecestaticos.com/CGm0zTB-R0LXLgkgR2m7tNebRnA=/125x0:2143x1513/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fd8b%2Fa28%2F470%2Fd8ba2847073d7e0c36c7d6fda1b3d2bd.jpg"
+  },
+  {
+    "nombre": "Pedri",
+    "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2026-02/puede-real-madrid-fichar-pedri.jpg.webp?h=df3c6bf4&itok=jWRhb1Ch"
+  },
+  {
+    "nombre": "Gareth Bale",
+    "imagen": "https://assets.goal.com/images/v3/blt6d875304b8721f1f/f28815e855b25d0a571951f479599443f4d60330.jpg?auto=webp&format=pjpg&width=3840&quality=60"
   }
 ]
