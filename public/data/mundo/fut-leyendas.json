@@ -136,6 +136,34 @@
     "imagen": "https://www.fcbarcelona.com/photo-resources/fcbarcelona/photo/2018/07/04/7c610b7f-1455-4065-94f3-507cb5727d3c/PvZlVyPA.jpg?width=1200&height=750"
   },
   {
+    "nombre": "Fernando Hierro",
+    "imagen": "https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/L6Z75CJSXRJUPEQMB6NUGGNJNU.jpg"
+  },
+  {
+    "nombre": "David Villa",
+    "imagen": "https://www.panenka.org/wp-content/uploads/2020/06/england-v-spain-international-friendly-scaled-e1592901838771.jpg"
+  },
+  {
+    "nombre": "Xabi Alonso",
+    "imagen": "https://rfef.es/sites/default/files/styles/noticias_image_content/public/xabi_1.jpg.webp?itok=Ksd0QmiP"
+  },
+  {
+    "nombre": "Fernando Torres",
+    "imagen": "https://hicuespeakers.com/sites/default/files/styles/cuadrada_737x737/public/2024-08/perfiles/Fernando-Torres.jpg.webp?h=fbf7a813&itok=ReOKJSng"
+  },
+  {
+    "nombre": "José Antonio Camacho",
+    "imagen": "https://grupobcc.com/wp/wp-content/uploads/2015/05/Jose-Antonio-Camacho.jpg"
+  },
+  {
+    "nombre": "Lamine Yamal",
+    "imagen": "https://assets.goal.com/images/v3/blt411f83ea5a5aca9d/06.gif?auto=webp&format=pjpg&width=3840&quality=60"
+  },
+  {
+    "nombre": "Gerard Piqué",
+    "imagen": "https://www.fcbarcelona.com/photo-resources/fcbarcelona/photo/2018/07/04/7c610b7f-1455-4065-94f3-507cb5727d3c/PvZlVyPA.jpg?width=1200&height=750"
+  },
+  {
     "nombre": "Pep Guardiola",
     "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2026-01/confirmado-guardiola-no-seguira-manchester-city.jpg.webp?h=df3c6bf4&itok=FWS59DDC"
   },
@@ -152,124 +180,136 @@
     "imagen": "https://assets.goal.com/images/v3/blt6d875304b8721f1f/f28815e855b25d0a571951f479599443f4d60330.jpg?auto=webp&format=pjpg&width=3840&quality=60"
   },
   {
-    "nombre": "Diego Armando Maradona",
-    "imagen": ""
-  },
-  {
     "nombre": "Rivaldo",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Rivaldo_bunyodkor_2010.jpg"
   },
   {
     "nombre": "Cafú",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp8U74qzaGUca-LQhulLmrVg51GHKvOBoA2Q&s"
   },
   {
     "nombre": "Gerd Müller",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZhlR4FxHQiyXF1fCGtaJEuhUlUQ-wKjSONg&s"
   },
   {
     "nombre": "Ruud Gullit",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafPo5gghvp3xEvBU-qAvFlOz1Q0R258_9ew&s"
   },
   {
     "nombre": "Franco Baresi",
-    "imagen": ""
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMmM3YTExYzAtMDhlNC00MWYzLTgxOTYtMmQ2YmE2YTFkMTI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   },
   {
     "nombre": "Paolo Maldini",
-    "imagen": ""
+    "imagen": "https://www.tudn.com/_next/image?url=https%3A%2F%2Fst1.uvnimg.com%2Fe4%2Fc4%2F82f4cbe04dab8540ad404f08f6f4%2Fgettyimages-86882133.jpg&w=1280&q=75"
   },
   {
     "nombre": "Fabio Cannavaro",
-    "imagen": ""
+    "imagen": "https://m.media-amazon.com/images/M/MV5BYTMxZjQ4ZWMtNTAzNy00YjhkLWEwYmItZWExN2RjYjUyNjg5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   },
   {
     "nombre": "Andrea Pirlo",
-    "imagen": ""
+    "imagen": "https://e2.365dm.com/13/01/800x600/Andrea-Pirlo-Juventus-Champions-League_2890951.jpg?20130622135601"
   },
   {
     "nombre": "Filippo Inzaghi",
-    "imagen": ""
+    "imagen": "https://editorial.uefa.com/resources/0253-0f880a9661a2-5c3edc6f6d45-1000/filippo_inzaghi_made_300_appearances_for_milan_as_a_player.jpeg"
   },
   {
     "nombre": "Raúl González",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa3jTSBg_3yoh2ZBZdBdXREd7eTaYaHVaovA&s"
   },
   {
     "nombre": "Luis Aragonés",
-    "imagen": ""
+    "imagen": "https://www.planetarealmadrid.com/uploads/s1/76/86/9/67a4c2b6b60133c4a8bea2ee1bd4604f3721d8cf.jpeg"
   },
   {
     "nombre": "Luis Suárez",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkcMLvkZOCHsnzfMS6TitTkRqJ2Xp-yOR-DQ&s"
   },
   {
     "nombre": "Edinson Cavani",
-    "imagen": ""
+    "imagen": "https://image-service.onefootball.com/transform?w=280&h=210&dpr=2&image=https%3A%2F%2Flanumero12.com.ar%2Fwp-content%2Fuploads%2F2026%2F05%2FEdinson-Cavani-Boca-8526.jpg"
   },
   {
     "nombre": "Diego Forlán",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIil-CGX5Oj1KItEAez-_F0GZXbjYulYdbrg&s"
   },
   {
     "nombre": "Eric Cantona",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2v4b_f75BGCvI2i9-4pQbSYpFW7Sa77ZlgQ&s"
   },
   {
     "nombre": "Steven Gerrard",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpWCSvIwZmWTWIPVaqd9Fm_BXu34lOqAk1gw&s"
   },
   {
     "nombre": "Frank Lampard",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSox9-C0ikLfArTZUjpb1FIMlQZ0xcJTXrg&s"
   },
   {
     "nombre": "Paul Scholes",
-    "imagen": ""
+    "imagen": "https://www.kodromagazine.com/wp-content/uploads/2022/03/NINTCHDBPICT000354309376-e1582404567885.jpg"
   },
   {
     "nombre": "Ryan Giggs",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwuWDmZ1_IseZYtvJXZijv_EksVfHaFo4Ow&s"
   },
   {
     "nombre": "Michael Owen",
-    "imagen": ""
+    "imagen": "https://images.mlssoccer.com/image/private/t_editorial_landscape_8_desktop_mobile/prd-league/pjyakuhg3xt9mgetxbyo.jpg"
   },
   {
     "nombre": "Alan Shearer",
-    "imagen": ""
+    "imagen": "https://i2-prod.mirror.co.uk/article35534703.ece/ALTERNATES/s1200f/1_GettyImages-1388926983.jpg"
   },
   {
     "nombre": "Dennis Bergkamp",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtxp5D7hTO1ophqGc5QlEMXBi7qSVzpVThGg&s"
   },
   {
     "nombre": "Patrick Vieira",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3n3Htm8K2iz-JwOdUbxlWXkjWERae6Me8OA&s"
   },
   {
     "nombre": "Robert Pirès",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLhMwMPW-7ZBZFXxp3N5V4bXdgx3b6Ie56w&s"
   },
   {
     "nombre": "Didier Drogba",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3mfqsEBxODKD-WDlOBdX1Xospiejr9t7xkw&s"
   },
   {
     "nombre": "Samuel Eto'o",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9WhInO3I2PCApyCdqU3fuX_AfPQw8LjoddA&s"
   },
   {
     "nombre": "George Weah",
-    "imagen": ""
+    "imagen": "https://assets.laliga.com/assets/201407/855x481_11121913george-weah-milan.jpg"
   },
   {
     "nombre": "Bobby Charlton",
-    "imagen": ""
+    "imagen": "https://revistasupporter.com/wp-content/uploads/2023/11/Sir-Bobby-Charlton-Manchester-United-e1700757715959.jpg"
   },
   {
     "nombre": "Hugo Sánchez",
-    "imagen": ""
+    "imagen": "https://static.wikia.nocookie.net/deportes/images/7/71/Hugo_S%C3%A1nchez.jpg/revision/latest?cb=20201027023843&path-prefix=es"
+  },
+  {
+    "nombre": "Pep Guardiola",
+    "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2026-01/confirmado-guardiola-no-seguira-manchester-city.jpg.webp?h=df3c6bf4&itok=FWS59DDC"
+  },
+  {
+    "nombre": "Guti",
+    "imagen": "https://images.ecestaticos.com/CGm0zTB-R0LXLgkgR2m7tNebRnA=/125x0:2143x1513/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fd8b%2Fa28%2F470%2Fd8ba2847073d7e0c36c7d6fda1b3d2bd.jpg"
+  },
+  {
+    "nombre": "Pedri",
+    "imagen": "https://www.fichajes.net/sites/default/files/styles/epsa_detail_thumbail/public/2026-02/puede-real-madrid-fichar-pedri.jpg.webp?h=df3c6bf4&itok=jWRhb1Ch"
+  },
+  {
+    "nombre": "Gareth Bale",
+    "imagen": "https://assets.goal.com/images/v3/blt6d875304b8721f1f/f28815e855b25d0a571951f479599443f4d60330.jpg?auto=webp&format=pjpg&width=3840&quality=60"
   },
   {
     "nombre": "Pep Guardiola",
