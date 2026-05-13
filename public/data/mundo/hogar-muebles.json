@@ -28,18 +28,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Cama nido",
-    "imagen": ""
-  },
-  {
-    "nombre": "Litera",
-    "imagen": ""
-  },
-  {
-    "nombre": "Cuna",
-    "imagen": ""
-  },
-  {
     "nombre": "Armario",
     "imagen": ""
   },
@@ -60,10 +48,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Aparador",
-    "imagen": ""
-  },
-  {
     "nombre": "Vitrina",
     "imagen": ""
   },
@@ -72,23 +56,11 @@
     "imagen": ""
   },
   {
-    "nombre": "Silla giratoria",
-    "imagen": ""
-  },
-  {
     "nombre": "Taburete",
     "imagen": ""
   },
   {
     "nombre": "Banco",
-    "imagen": ""
-  },
-  {
-    "nombre": "Banqueta",
-    "imagen": ""
-  },
-  {
-    "nombre": "Otomana",
     "imagen": ""
   },
   {
@@ -116,10 +88,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Espejo de pie",
-    "imagen": ""
-  },
-  {
     "nombre": "Perchero",
     "imagen": ""
   },
@@ -129,6 +97,38 @@
   },
   {
     "nombre": "Mueble TV",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cama nido",
+    "imagen": ""
+  },
+  {
+    "nombre": "Litera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cuna",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aparador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Silla giratoria",
+    "imagen": ""
+  },
+  {
+    "nombre": "Banqueta",
+    "imagen": ""
+  },
+  {
+    "nombre": "Otomana",
+    "imagen": ""
+  },
+  {
+    "nombre": "Espejo de pie",
     "imagen": ""
   },
   {
