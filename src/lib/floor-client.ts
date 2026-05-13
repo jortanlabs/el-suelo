@@ -485,8 +485,8 @@ export function aciertoContiene(
 
 const STOP = new Set(["de", "del", "la", "el", "los", "las", "y", "i", "of", "the", "a", "an", "le", "les", "en", "con", "sin"]);
 
-function levenshtein(a: string, b: string): number {
-  if (Math.abs(a.length - b.length) > 1) return 999;
+function levenshtein(a: string, b: string, max = 1): number {
+  if (Math.abs(a.length - b.length) > max) return 999;
   const m = a.length, n = b.length;
   const prev = Array.from({ length: n + 1 }, (_, i) => i);
   for (let i = 1; i <= m; i++) {
@@ -499,6 +499,21 @@ function levenshtein(a: string, b: string): number {
     prev.splice(0, prev.length, ...curr);
   }
   return prev[n];
+}
+
+// Aproximación fonética castellana de una palabra inglesa.
+// Cubre patrones típicos cuando el reconocedor (en español) transcribe inglés:
+// - star → estar, spider → espider (prefijo "s+consonante" suena "es-")
+// - wars → uars, kit → cit
+// - hamburger → amburguer (h muda)
+// - phone → fone
+function fonetizar(p: string): string {
+  return p
+    .replace(/^s([bcdfghjklmnpqrstvwxyz])/, "es$1")
+    .replace(/w/g, "u")
+    .replace(/k/g, "c")
+    .replace(/^h/, "")
+    .replace(/ph/g, "f");
 }
 
 /**
@@ -536,10 +551,26 @@ export function aciertoFlexible(
     .filter((p) => p.length > 2 && !STOP.has(p));
   if (palabras.length === 0) return false;
 
-  const tWords = normalizar(transcripcion).split(/\s+/).filter((w) => w.length >= 4);
+  const tWords = normalizar(transcripcion).split(/\s+/).filter((w) => w.length >= 3);
+  // Versiones fonéticas (castellanas) de las palabras de la transcripción,
+  // para emparejar con nombres ingleses pronunciados regular.
+  const tWordsFon = tWords.map((w) => fonetizar(w));
   const coincide = (p: string): boolean => {
+    // Match directo de palabra completa
     if (t.includes(` ${p} `)) return true;
-    return p.length >= 5 && tWords.some((w) => levenshtein(p, w) <= 1);
+    // Levenshtein progresivo: tolerancia 1 (5-6 chars), 2 (7+ chars)
+    const lim = p.length >= 7 ? 2 : p.length >= 5 ? 1 : 0;
+    if (lim > 0 && tWords.some((w) => levenshtein(p, w, lim) <= lim)) return true;
+    // Fonética: comparar la forma fonetizada del nombre con la transcripción
+    // (cubre "star wars" pronunciado "estar uars", "manchester" como "mánchester", etc.)
+    const pFon = fonetizar(p);
+    if (pFon !== p && pFon.length >= 3) {
+      if (t.includes(` ${pFon} `)) return true;
+      if (lim > 0 && tWords.some((w) => levenshtein(pFon, w, lim) <= lim)) return true;
+    }
+    // Y a la inversa: fonetizar la transcripción
+    if (lim > 0 && tWordsFon.some((w) => w !== p && levenshtein(p, w, lim) <= lim)) return true;
+    return false;
   };
 
   if (palabras.length === 1) return coincide(palabras[0]);
