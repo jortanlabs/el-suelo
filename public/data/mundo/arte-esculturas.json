@@ -21,18 +21,18 @@
   },
   {
     "nombre": "Nike de Samotracia",
-    "imagen": "https://uploads0.wikiart.org/00309/images/ancient-greek-painting/winged-victory-of-samothrace.jpg!Large.jpg"
+    "imagen": "https://content-historia.nationalgeographic.com.es/medio/2023/09/05/victoria_d8e2eadf_230873352_230905095913_800x800.jpg"
   },
   {
-    "nombre": "El beso (Brancusi)",
-    "imagen": "https://cms.guggenheim-bilbao.eus/uploads/old/guias_educadores/img/gr/THE_KISS_Museo_Guggenheim_Bilbao_arte_1.jpg"
+    "nombre": "El beso",
+    "imagen": "https://elojodelarte.com/media/k2/items/cache/cc7d5309aa94aa0d0b6c12a9b8c6f0e5_XL.webp?t=20230917_232444"
   },
   {
     "nombre": "Laocoonte",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3baWpcDnpaxWSFp1Yu3MrFO9JQd5yMyF6XA&s"
   },
   {
-    "nombre": "La Libertad",
+    "nombre": "Estatua de la Libertad",
     "imagen": "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2025/06/18/17502376850866.jpg"
   },
   {
@@ -64,8 +64,20 @@
     "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQDxV99_Scj90aJeU6hE_NhkdRIKUfa8RyIA-m1zwCr4MmvpqhdqeabnrSIDzRMU5sJruwbU3gV8Xb7wn6wNZAN1AqRao9YrP3Qh2wNaZUHtG_rXb4GETt27jeXZ_yylCJVOxElOhA/s1600/los+burgueses+de+calais.jpg"
   },
   {
+    "nombre": "El beso (Brancusi)",
+    "imagen": "https://cms.guggenheim-bilbao.eus/uploads/old/guias_educadores/img/gr/THE_KISS_Museo_Guggenheim_Bilbao_arte_1.jpg"
+  },
+  {
     "nombre": "Monumento al trabajo",
     "imagen": "https://elojodelarte.com/media/k2/items/cache/f3b735e3300faff0e348331a5413d4d3_XL.webp?t=20230509_132911"
+  },
+  {
+    "nombre": "La Piedad",
+    "imagen": "https://cdn.culturagenial.com/es/imagenes/michelangelo-s-pieta-5450-cut-out-black-cke.jpg?class=article"
+  },
+  {
+    "nombre": "Moais",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwNLi0E28Paz6kYWvuQi-ddIPpCsRo-wTEg&s"
   },
   {
     "nombre": "El ejército de terracota",
@@ -113,142 +125,102 @@
   },
   {
     "nombre": "La Mano del Desierto",
-    "imagen": "https://wp-content.miviaje.com/2019/11/mano-desierto-chile.jpg"
+    "imagen": "https://media.cnn.com/api/v1/images/stellar/prod/cnne-588219-monumento-o-espejismo-la-mano-del-desierto-de-atacama.jpg?c=16x9&q=w_1280,c_fill"
   },
   {
     "nombre": "Psique reanimada por el beso del amor",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQ71oHOd1pNSMpPn0XxsSl-6kR0u_MwIu3w&s"
   },
   {
-    "nombre": "David (Miguel Ángel)",
-    "imagen": ""
-  },
-  {
     "nombre": "Moisés de Miguel Ángel",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BIG6HYfW0_SkD8ToX4_l9b-vg9GTZG3U2A&s"
   },
   {
     "nombre": "Venus de Milo",
-    "imagen": ""
-  },
-  {
-    "nombre": "Discóbolo",
-    "imagen": ""
-  },
-  {
-    "nombre": "El Beso de Rodin",
-    "imagen": ""
-  },
-  {
-    "nombre": "Estatua de la Libertad",
-    "imagen": ""
-  },
-  {
-    "nombre": "Cristo Redentor",
-    "imagen": ""
-  },
-  {
-    "nombre": "Esfinge de Guiza",
-    "imagen": ""
+    "imagen": "https://marmasa.net/wp-content/uploads/venus-de-milo.jpg"
   },
   {
     "nombre": "Coloso de Rodas",
-    "imagen": ""
+    "imagen": "https://imagenes.elpais.com/resizer/v2/XEVWWDWQPRFU3D4IOEHUIN2OAU.jpg?auth=fd9e79b34984e865757a3a266a186c50c9e330b358cce5258fbced2ccb2ffb4b&width=980&height=980&focal=613%2C292"
   },
   {
     "nombre": "Apolo de Belvedere",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32VQsfKrxkNleM201eQpB9clUwaD1jT4UBA&s"
   },
   {
     "nombre": "Diana Cazadora",
-    "imagen": ""
+    "imagen": "https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2022/02/14192411/modelo-diana-cazadora.jpg"
   },
   {
     "nombre": "Augusto de Prima Porta",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6l6gudqDJe-8p5zMJNHedmZm5FEwUWQQfkg&s"
   },
   {
     "nombre": "Perseo con la cabeza de Medusa",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/H2_67.110.1.jpg/250px-H2_67.110.1.jpg"
   },
   {
     "nombre": "Toro Farnesio",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRib1qQApQiaGFzNSZWFhotLhFLMWhSllQA&s"
   },
   {
     "nombre": "Apolo y Dafne",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC90wHetvIwSHgbsHoz0KmzVp10WsuaXM0Yg&s"
   },
   {
-    "nombre": "Manneken Pis",
-    "imagen": ""
-  },
-  {
-    "nombre": "Sirenita de Copenhague",
-    "imagen": ""
-  },
-  {
-    "nombre": "Mount Rushmore",
-    "imagen": ""
-  },
-  {
-    "nombre": "Moais de la Isla de Pascua",
-    "imagen": ""
+    "nombre": "Monte Rushmore",
+    "imagen": "https://static01.nyt.com/images/2020/06/27/multimedia/27xp-mount-rushmore-pix/27xp-mount-rushmore-pix-mediumSquareAt3X.jpg"
   },
   {
     "nombre": "Buda de Leshan",
-    "imagen": ""
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2023/09/01/64f1af9b74d34.r_d.1060-707-5658.jpeg"
   },
   {
     "nombre": "Madre Patria Llama",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZhBSExW85djbP4PLCjhKo-fi76TlJalHhTw&s"
   },
   {
     "nombre": "Estatua de la Unidad",
-    "imagen": ""
+    "imagen": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/09/c1/f3/35.jpg"
   },
   {
     "nombre": "Cristo del Otero",
-    "imagen": ""
+    "imagen": "https://www.eurovelospain.com/wp-content/uploads/2023/07/EV1-E12-P-CRISTO-OTERO-01-1230px.webp"
   },
   {
     "nombre": "Toro de Wall Street",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLM8n_y95YVxiacNn3nTQjepFN-VYpgqoL5w&s"
   },
   {
     "nombre": "El David de Donatello",
-    "imagen": ""
+    "imagen": "https://www.visittuscany.com/shared/visittuscany/immagini/david-donatello-bargello.jpg"
   },
   {
     "nombre": "Atlante de Tlaloc",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Guerrero_o_atlante_tolteca.jpg/960px-Guerrero_o_atlante_tolteca.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
   },
   {
     "nombre": "Atlante de Farnesio",
-    "imagen": ""
+    "imagen": "https://cdn.finestresullarte.info/rivista/immagini/2024/fn/atlante-farnese-p.jpg"
   },
   {
-    "nombre": "Pieta Rondanini",
-    "imagen": ""
+    "nombre": "Piedad Rondanini",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX-v2LweLhNCV3xxu0cZVxh2aLHZe1ox-anQ&s"
   },
   {
     "nombre": "Galo Moribundo",
-    "imagen": ""
-  },
-  {
-    "nombre": "Discóbolo de Mirón",
-    "imagen": ""
+    "imagen": "https://www.museicapitolini.org/sites/default/files/storage/images/musei/musei_capitolini/collezioni/percorsi_per_sale/palazzo_nuovo/sala_del_gladiatore/statua_del_galata_capitolino/10507-18-ita-IT/statua_del_galata_capitolino.jpg"
   },
   {
     "nombre": "Diosa Atenea",
-    "imagen": ""
+    "imagen": "https://cdn.shopify.com/s/files/1/0582/2326/3895/files/statue-de-la-deesse-athena_480x480.jpg?v=1705921069"
   },
   {
     "nombre": "Hermes y Dionisos",
-    "imagen": ""
+    "imagen": "https://www.meisterdrucke.es/kunstwerke/1000px/Praxiteles_Praxiteles_-_Greek_Art_Hermes_and_Dionysus_child_-_Marble_sculpture_of_Praxitele_(4th_century_-_(MeisterDrucke-971012).jpg"
   },
   {
     "nombre": "Doríforo",
-    "imagen": ""
+    "imagen": "https://www.academiacolecciones.com/vaciados/server/files/V-761.jpg"
   }
 ]
