@@ -1,202 +1,202 @@
 [
   {
     "nombre": "Louis Vuitton",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJ7hLjDuj1YZPF7-bZEDIip0pZir0AW4Vow&s"
   },
   {
     "nombre": "Gucci",
-    "imagen": ""
+    "imagen": "https://static.vecteezy.com/ti/vettori-gratis/p1/23869479-gucci-marca-logo-simbolo-abiti-design-moda-vettore-illustrazione-gratuito-vettoriale.jpg"
   },
   {
     "nombre": "Chanel",
-    "imagen": ""
+    "imagen": "https://cdn.shopify.com/s/files/1/0775/7363/files/chanel-iconic-cc-logo_480x480.jpg?v=1627421098"
   },
   {
     "nombre": "Hermès",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUfInfsKlaQuD6KQWsRpATjRw3nWt0xG7NNw&s"
   },
   {
     "nombre": "Prada",
-    "imagen": ""
+    "imagen": "https://decostickerstore.b-cdn.net/wp-content/uploads/2024/08/prada.svg?width=300"
   },
   {
     "nombre": "Dior",
-    "imagen": ""
+    "imagen": "https://static.vecteezy.com/system/resources/previews/023/599/267/non_2x/dior-brand-luxury-clothes-logo-symbol-white-design-fashion-illustration-with-black-background-free-vector.jpg"
   },
   {
     "nombre": "Versace",
-    "imagen": ""
+    "imagen": "https://decostickerstore.b-cdn.net/wp-content/uploads/2023/01/Sticker-autocollant-Logo-Versace-Minerve-actuel-seule-Deco-Sticker-Store-905.jpg?width=752"
   },
   {
     "nombre": "Cartier",
-    "imagen": ""
+    "imagen": "https://cdn.worldvectorlogo.com/logos/cartier-1.svg"
   },
   {
     "nombre": "Rolex",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0VC0HN84GJg2k4QfmiNiHKZcDMUYOGiuig&s"
   },
   {
     "nombre": "Tiffany & Co.",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/474x/5d/99/bc/5d99bcb60912c96dbdccd1f53b401aea.jpg"
   },
   {
     "nombre": "Bvlgari",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAqaTcQUa0xELh2TXwH5gv2ACnqF7vtj5R_Q&s"
   },
   {
     "nombre": "Burberry",
-    "imagen": ""
+    "imagen": "https://brandemia.org/contenido/subidas/2023/02/burberry-1200x670.png"
   },
   {
     "nombre": "Fendi",
-    "imagen": ""
+    "imagen": "https://thumbs.dreamstime.com/b/logotipo-del-fendi-120007060.jpg"
   },
   {
     "nombre": "Armani",
-    "imagen": ""
+    "imagen": "https://www.pixartprinting.it/blog/wp-content/uploads/2021/03/Logo-Emporio-Armani.jpg"
   },
   {
     "nombre": "Yves Saint Laurent",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFKa-JneoTI7Oxx1yLYkNWn2a_9SKBImbaA&s"
   },
   {
     "nombre": "Dolce & Gabbana",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58ZS1hoTP2As2M0xN_aHvGjpv1CWCWfktPQ&s"
   },
   {
     "nombre": "Valentino",
-    "imagen": ""
+    "imagen": "https://static.vecteezy.com/system/resources/previews/024/131/280/non_2x/valentino-brand-logo-symbol-clothes-design-icon-abstract-illustration-free-vector.jpg"
   },
   {
     "nombre": "Balenciaga",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/564x/36/d8/ef/36d8ef2a9bf4ab306d8c12f0b393834a.jpg"
   },
   {
     "nombre": "Givenchy",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnmDaOIREKqxJt2fWbFL4TqdpSZ-t6EO0v7A&s"
   },
   {
     "nombre": "Carolina Herrera",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/474x/54/d4/ae/54d4ae7ce4106820e9f12ea53baeddbe.jpg"
   },
   {
     "nombre": "Tom Ford",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6RUJ5zgNohe4mhItExIfG6EBopZPAhqRZQ&s"
   },
   {
     "nombre": "Ralph Lauren",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9spkCid8NhfhtV_Y-0xMs5N1V5xB_NQHe9w&s"
   },
   {
     "nombre": "Calvin Klein",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSEro8cREFxuSrU2sSnTkCTkCWmhW1oO_2hw&s"
   },
   {
     "nombre": "Hugo Boss",
-    "imagen": ""
+    "imagen": "https://imgcdn.stablediffusionweb.com/2024/10/11/73108129-2dfa-46ce-ac14-f8f5f6ddcb21.jpg"
   },
   {
     "nombre": "Salvatore Ferragamo",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/1200x/53/0e/55/530e55f4845b1c3291f7e99331683c19.jpg"
   },
   {
     "nombre": "Loewe",
-    "imagen": ""
+    "imagen": "https://brandemia.org/sites/default/files/sites/default/files/loewe_simbolo_0.jpg"
   },
   {
     "nombre": "Bottega Veneta",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjK-WRiED1NUXBPRjTjH91cHe54pX0UHXQoQ&s"
   },
   {
     "nombre": "Loro Piana",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/736x/e7/4c/dd/e74cdd440a2800ac733fb6ef5cb7b731.jpg"
   },
   {
     "nombre": "Brunello Cucinelli",
-    "imagen": ""
+    "imagen": "https://s3-symbol-logo.tradingview.com/brunello-cucinelli--600.png"
   },
   {
     "nombre": "Off-White",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHfVzwDjE8yWyznufjr6sByKW3WtNTDKj9BQ&s"
   },
   {
     "nombre": "Stone Island",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSduUEkjEHD4GDXlUTRQkFFlF4hl_RTijf1UA&s"
   },
   {
     "nombre": "Moncler",
-    "imagen": ""
+    "imagen": "https://embroideres.com/files/1316/2639/1430/Moncler_classic_logo_embroidery_design.jpg"
   },
   {
     "nombre": "Canada Goose",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgbM5zeZR6YvY5lBtedlDhB-zkqbsMKX-KQ&s"
   },
   {
     "nombre": "Ermenegildo Zegna",
-    "imagen": ""
+    "imagen": "https://brandemia.org/contenido/subidas/2022/01/zegna-new-logo.jpg"
   },
   {
     "nombre": "Patek Philippe",
-    "imagen": ""
+    "imagen": "https://cdn.brandfetch.io/patek.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed"
   },
   {
     "nombre": "Audemars Piguet",
-    "imagen": ""
+    "imagen": "https://i.pinimg.com/564x/05/80/01/0580016128a27b33c46abb60d6f8fc21.jpg"
   },
   {
     "nombre": "Vacheron Constantin",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUN_g7IrwI7AKwHz_XncXS4Vt6p7GhXOy2Rg&s"
   },
   {
     "nombre": "Omega",
-    "imagen": ""
+    "imagen": "https://www.shutterstock.com/image-vector/omega-greek-alphabet-logo-icon-260nw-2322780875.jpg"
   },
   {
     "nombre": "Tag Heuer",
-    "imagen": ""
+    "imagen": "https://recambioscooterpasion.com/27320-large_default/pegatina-tag-heuer-75x80mm.jpg"
   },
   {
     "nombre": "Breitling",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyQzDYkNZEH9fCnaxAR3xxIEjTLepDKV6cBw&s"
   },
   {
     "nombre": "IWC",
-    "imagen": ""
+    "imagen": "https://content.presspage.com/clients/o_1859.jpg"
   },
   {
     "nombre": "Hublot",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIGXJlGOCVO3B6Djum93dp7ql3WrZUDzLcOw&s"
   },
   {
     "nombre": "Jaeger-LeCoutre",
-    "imagen": ""
+    "imagen": "https://logos-world.net/wp-content/uploads/2025/07/Jaeger-LeCoultre-Symbol.png"
   },
   {
     "nombre": "Panerai",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2KTzOsbjaMS_nNlz-KVifLrjs7Bb_7clqw&s"
   },
   {
     "nombre": "Longines",
-    "imagen": ""
+    "imagen": "https://cdn.worldvectorlogo.com/logos/longines.svg"
   },
   {
     "nombre": "Tudor",
-    "imagen": ""
+    "imagen": "https://media.printables.com/media/prints/696694/images/5473162_814acb32-b473-4392-8363-1b68a86200df_9779f33f-e3c0-451d-908c-53c5dbd09e26/thumbs/inside/1280x960/jpg/tudor_logo.webp"
   },
   {
     "nombre": "Richard Mille",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1YtlgC_EOv9WGZ9WV3cfY_efY_jBP-TeLrA&s"
   },
   {
     "nombre": "Lange & Söhne",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk9KkSJFrSps5z6AmBgHXjWdSIY8rYAY1vIg&s"
   },
   {
     "nombre": "Piaget",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Logo-piaget.jpg"
   },
   {
     "nombre": "Chopard",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1aa4uvY7ovCYJqo8tKaRVq5hz5ggqfqb9g&s"
   }
 ]
