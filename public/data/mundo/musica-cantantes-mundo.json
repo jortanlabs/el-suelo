@@ -150,5 +150,45 @@
   {
     "nombre": "Christina Aguilera",
     "imagen": "https://www.hsbnoticias.com/wp-content/uploads/2025/12/christina-aguilera-1-scaled.jpg"
+  },
+  {
+    "nombre": "Ariana Grande",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ariana_Grande_promoting_Wicked_%282024%29_3.jpg/250px-Ariana_Grande_promoting_Wicked_%282024%29_3.jpg"
+  },
+  {
+    "nombre": "Bad Bunny",
+    "imagen": "https://e01-phantom-elmundo.uecdn.es/886b9269c5ba66789412e3783c6a2e5b/crop/82x0/1227x765/resize/828/f/jpg/assets/multimedia/imagenes/2020/05/10/15891358002692.jpg"
+  },
+  {
+    "nombre": "The Weeknd",
+    "imagen": "https://industriamusical.com/wp-content/uploads/2023/01/The_Weeknd.jpg"
+  },
+  {
+    "nombre": "Kendrick Lamar",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/kendrick-lamar-at-the-67th-grammy-awards-held-at-the-crypto-news-photo-1738959019.pjpeg?crop=1.00xw:0.667xh;0,0.0715xh&resize=640:*"
+  },
+  {
+    "nombre": "Justin Bieber",
+    "imagen": "https://img2.rtve.es/n/2166797?w=1600"
+  },
+  {
+    "nombre": "Jennifer Lopez",
+    "imagen": "https://media.glamour.mx/photos/696e867dafaacaa0e2080137/16:9/w_2560%2Cc_limit/Jennifer-Lopez-zara.png"
+  },
+  {
+    "nombre": "Paul McCartney",
+    "imagen": "https://media.gq.com/photos/5b96c3e008019b0e120729fb/16:9/w_2560%2Cc_limit/c-GQ100118McCartney_01.png"
+  },
+  {
+    "nombre": "Katy Perry",
+    "imagen": "https://periodismoypunto.com/download/multimedia.normal.8af6668bc6762d4d.SU1HLTIwMjQxMDIwLVdBMDA2M19ub3JtYWwud2VicA==.webp"
+  },
+  {
+    "nombre": "Miley Cyrus",
+    "imagen": "https://static.wixstatic.com/media/fc17f5_e02a655faf3f4e508dd35e1902adb04b~mv2.png/v1/fill/w_568,h_426,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc17f5_e02a655faf3f4e508dd35e1902adb04b~mv2.png"
+  },
+  {
+    "nombre": "Christina Aguilera",
+    "imagen": "https://www.hsbnoticias.com/wp-content/uploads/2025/12/christina-aguilera-1-scaled.jpg"
   }
 ]
