@@ -17,6 +17,7 @@
     "@anthropic-ai/sdk": "^0.92.0",
     "@astrojs/vercel": "^10.0.6",
     "@tailwindcss/vite": "^4.2.4",
+    "@vercel/analytics": "^2.0.1",
     "astro": "^6.1.9",
     "pusher": "^5.3.3",
     "pusher-js": "^8.5.0",

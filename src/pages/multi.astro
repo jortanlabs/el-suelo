@@ -60,7 +60,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 // Mapa combinado slug → nombre (para el JS)
 const todasSlugsNombres: Record<string, string> = { ...cineSlugsNombres, ...mundoSlugsNombres };
 
-const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "d8b48a4d7d6cb146cf1e";
+const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "";
 const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 ---
 
@@ -73,7 +73,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   <div id="datos-mundo-emoji" data-json={JSON.stringify(mundoSlugsEmoji)} class="hidden"></div>
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#2a5090] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
-      <button id="boton-volver" class="font-titulo text-lg font-bold text-[#a8c5ff] hover:text-[#e8e8ff] transition py-1 px-2">← Volver</button>
+      <button id="boton-volver" class="font-titulo text-lg font-bold text-[#a8c5ff] hover:text-[#e8e8ff] transition py-1 px-2" aria-label="Volver atrás">← Volver</button>
     </nav>
 
     <!-- ENTRADA: elegir acción -->
@@ -117,7 +117,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         </div>
         <div>
           <label class="font-titulo text-base font-bold text-[#e8e8ff] block mb-2 text-center">Código de sala</label>
-          <input id="codigo-sala" type="text" placeholder="ABCD" maxlength="4" class="floor-input text-center text-2xl uppercase tracking-widest font-bold py-3" autocomplete="off" />
+          <input id="codigo-sala" type="text" placeholder="ABCDEF" maxlength="6" class="floor-input text-center text-2xl uppercase tracking-widest font-bold py-3" autocomplete="off" />
         </div>
         <button id="boton-unirse" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-xl py-4">Unirme →</button>
         <p id="error-unirse" class="hidden text-sm text-[#ff1dce] text-center font-bold font-titulo"></p>
@@ -128,7 +128,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     <section id="pantalla-sala" class="flex-1 flex flex-col items-center justify-center px-6 gap-5 hidden">
       <div class="floor-card p-6 w-full max-w-xs text-center">
         <p class="text-[#a8c5ff] font-titulo text-sm uppercase tracking-widest mb-2">Código de sala</p>
-        <p id="sala-codigo" class="font-titulo text-6xl font-bold neon-gold tracking-[0.3em] mb-5"></p>
+        <p id="sala-codigo" class="font-titulo text-5xl font-bold neon-gold tracking-[0.2em] mb-5"></p>
         <div class="flex items-center gap-2 mb-2">
           <span class="w-2 h-2 rounded-full bg-[#ff1dce] shrink-0" style="box-shadow:0 0 8px #ff1dce"></span>
           <span id="sala-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-base"></span>
@@ -303,7 +303,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     </div>
 
     <!-- CHAT FLOATING (botón fuera de pJuego) -->
-    <button id="chat-flot" class="hidden fixed bottom-4 right-4 z-30 w-12 h-12 rounded-full flex items-center justify-center text-2xl floor-btn floor-btn-gold">
+    <button id="chat-flot" class="hidden fixed bottom-4 right-4 z-30 w-12 h-12 rounded-full flex items-center justify-center text-2xl floor-btn floor-btn-gold" aria-label="Abrir chat">
       💬
       <span id="chat-badge" class="hidden absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-[#ff1dce] text-[10px] font-bold text-white flex items-center justify-center" style="box-shadow:0 0 8px #ff1dce">0</span>
     </button>
@@ -653,7 +653,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   // ── Generador de código ────────────────────────────────────
   function generarCodigo(): string {
     const chars = "ABCDEFGHJKMNPQRSTUVWXYZ23456789";
-    return Array.from({ length: 4 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
+    return Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
   }
 
   // ── Pantalla entrada ───────────────────────────────────────
@@ -676,8 +676,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   // Si el link viene con ?codigo=XXXX (compartido por whatsapp), saltar directamente a "Unirse"
   try {
     const params = new URLSearchParams(location.search);
-    const codigoUrl = (params.get("codigo") || "").trim().toUpperCase().slice(0, 4);
-    if (codigoUrl && /^[A-Z0-9]{4}$/.test(codigoUrl)) {
+    const codigoUrl = (params.get("codigo") || "").trim().toUpperCase().slice(0, 6);
+    if (codigoUrl && /^[A-Z0-9]{4,6}$/.test(codigoUrl)) {
       ($("codigo-sala") as HTMLInputElement).value = codigoUrl;
       mostrar(pUnirse);
       setTimeout(() => ($("nombre-unirse") as HTMLInputElement).focus(), 100);
@@ -734,9 +734,9 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       mostrarError(errEl, "Primero escribe tu nombre ↑");
       return;
     }
-    if (cod.length !== 4) {
+    if (cod.length < 4 || cod.length > 6) {
       flagInputError(codigoInput);
-      mostrarError(errEl, "Introduce un código de 4 letras.");
+      mostrarError(errEl, "Introduce el código que te han pasado.");
       return;
     }
     if (!PUSHER_KEY) { mostrarError(errEl, "Error de configuración del servidor."); return; }
@@ -781,6 +781,12 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       const el = $("texto-voz");
       if (!el || pJuego.classList.contains("hidden")) return;
       el.textContent = `🎤 "${d.texto}"`;
+    });
+    // Avisos de evento del rival (acierto/pase) para que vibre el otro móvil
+    canal.bind("client-aviso", (d: { tipo: "acierto" | "pase" }) => {
+      if (!d) return;
+      if (d.tipo === "acierto") vibrar([30, 50, 30]);
+      else if (d.tipo === "pase") vibrar(20);
     });
     canal.bind("client-unirse", (d: { nombre: string }) => {
       if (rol !== "host") return;
@@ -1030,15 +1036,47 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   let pendingAction: ReturnType<typeof setTimeout> | null = null;
   function clearPending() { if (pendingAction) { clearTimeout(pendingAction); pendingAction = null; } }
 
-  // Vibración (respeta ajuste guardado en localStorage por la pantalla principal)
-  function vibrar(pattern: number | number[]) {
+  // Lee los ajustes (sonido/vibracion) que guarda la pantalla principal
+  function leerAjustes(): { sonido: boolean; vibracion: boolean } {
     try {
       const raw = localStorage.getItem("el-suelo:ajustes-v1");
-      const ajustes = raw ? JSON.parse(raw) : { vibracion: true };
-      if (ajustes.vibracion === false) return;
+      if (raw) return { sonido: true, vibracion: true, ...JSON.parse(raw) };
+    } catch {}
+    return { sonido: true, vibracion: true };
+  }
+
+  function vibrar(pattern: number | number[]) {
+    try {
+      if (!leerAjustes().vibracion) return;
       if (navigator.vibrate) navigator.vibrate(pattern);
     } catch {}
   }
+
+  // Sonidos WebAudio (sin assets externos)
+  let audioCtx: AudioContext | null = null;
+  function getAudioCtx(): AudioContext | null {
+    if (!leerAjustes().sonido) return null;
+    try {
+      if (!audioCtx) audioCtx = new ((window as any).AudioContext || (window as any).webkitAudioContext)();
+      return audioCtx;
+    } catch { return null; }
+  }
+  function tono(freq: number, dur = 0.08, tipo: OscillatorType = "sine", vol = 0.15) {
+    const ctx = getAudioCtx();
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const g = ctx.createGain();
+    osc.type = tipo;
+    osc.frequency.setValueAtTime(freq, ctx.currentTime);
+    g.gain.setValueAtTime(vol, ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
+    osc.connect(g).connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + dur);
+  }
+  function sonidoAcierto() { tono(880, 0.08); setTimeout(() => tono(1320, 0.12), 90); }
+  function sonidoPase() { tono(440, 0.07, "triangle"); setTimeout(() => tono(330, 0.1, "triangle"), 70); }
+  function sonidoFin() { tono(660, 0.15, "sawtooth", 0.12); setTimeout(() => tono(330, 0.25, "sawtooth", 0.12), 160); }
 
   function handleTimeout() {
     if (bloqueado || terminado) return;
@@ -1054,6 +1092,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     if (bloqueado || terminado) return;
     bloqueado = true;
     vibrar(60);
+    sonidoAcierto();
+    try { canal?.trigger("client-aviso", { tipo: "acierto" }); } catch {}
     if (gameTimeout) clearTimeout(gameTimeout);
     pararVoz();
     const elapsed = (Date.now() - timestampTurno) / 100;
@@ -1076,6 +1116,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     if (bloqueado || terminado) return;
     bloqueado = true;
     vibrar([40, 40, 40]);
+    sonidoPase();
+    try { canal?.trigger("client-aviso", { tipo: "pase" }); } catch {}
     if (gameTimeout) clearTimeout(gameTimeout);
     pararVoz();
     const elapsed = (Date.now() - timestampTurno) / 100;
@@ -1108,6 +1150,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     if (terminado) return;
     terminado = true;
     vibrar([150, 100, 150]);
+    sonidoFin();
     if (gameTimeout) clearTimeout(gameTimeout);
     clearPending();
     pararVoz();

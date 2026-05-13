@@ -78,7 +78,35 @@ async function generarNombres(
   return input.items;
 }
 
-export const POST: APIRoute = async ({ request, locals }) => {
+// Rate-limit in-memory (10 req / IP / hora). Para deployments con cold-starts
+// frecuentes el contador se resetea, pero suficiente para frenar abuso casual.
+const RATE_WINDOW_MS = 60 * 60 * 1000;
+const RATE_MAX = 10;
+const rateMap = new Map<string, number[]>();
+function rateLimited(ip: string): boolean {
+  const now = Date.now();
+  const arr = (rateMap.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
+  if (arr.length >= RATE_MAX) { rateMap.set(ip, arr); return true; }
+  arr.push(now); rateMap.set(ip, arr);
+  // GC: si el mapa crece mucho, limpiar
+  if (rateMap.size > 1000) {
+    for (const [k, v] of rateMap) {
+      if (!v.some((t) => now - t < RATE_WINDOW_MS)) rateMap.delete(k);
+    }
+  }
+  return false;
+}
+
+export const POST: APIRoute = async ({ request, locals, clientAddress }) => {
+  // Rate limit: 10 peticiones por IP por hora
+  const ip = clientAddress || request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  if (rateLimited(ip)) {
+    return new Response(
+      JSON.stringify({ error: "Demasiadas peticiones. Espera un poco e inténtalo de nuevo." }),
+      { status: 429, headers: { "content-type": "application/json", "Retry-After": "3600" } },
+    );
+  }
+
   const apiKey =
     process.env.ANTHROPIC_API_KEY ??
     (locals as unknown as { runtime?: { env?: Record<string, string> } })?.runtime?.env?.ANTHROPIC_API_KEY;
@@ -90,6 +118,12 @@ export const POST: APIRoute = async ({ request, locals }) => {
     return new Response(JSON.stringify({ error: "Body inválido" }), {
       status: 400,
       headers: { "content-type": "application/json" },
+    });
+  }
+  // Validar tamaño del campo libre para evitar abuso de tokens en Anthropic
+  if (body.libre && body.libre.length > 200) {
+    return new Response(JSON.stringify({ error: "Categoría demasiado larga" }), {
+      status: 400, headers: { "content-type": "application/json" },
     });
   }
 

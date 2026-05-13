@@ -99,10 +99,10 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#2a5090]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
-      <button id="boton-volver" class="font-titulo text-lg font-bold text-[#a8c5ff] hover:text-[#e8e8ff] transition py-1 px-2">
+      <button id="boton-volver" class="font-titulo text-lg font-bold text-[#a8c5ff] hover:text-[#e8e8ff] transition py-1 px-2" aria-label="Volver atrás">
         ← Volver
       </button>
-      <button id="boton-ajustes" class="ml-auto font-titulo text-3xl text-[#a8c5ff] hover:text-[#ffcc00] transition py-1 px-2" title="Ajustes">⚙️</button>
+      <button id="boton-ajustes" class="ml-auto font-titulo text-3xl text-[#a8c5ff] hover:text-[#ffcc00] transition py-1 px-2" title="Ajustes" aria-label="Ajustes">⚙️</button>
     </nav>
 
     <!-- BIENVENIDA -->
@@ -281,8 +281,9 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         </div>
         <div class="flex flex-col gap-3">
           <button id="boton-revancha" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">Revancha →</button>
-          <button id="boton-menu" class="floor-btn floor-card-small text-[#7b9ef5] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
-          <button onclick="abrirModalReportar()" class="font-titulo text-xs text-[#7b9ef5] hover:text-[#ff4444] transition-colors underline mt-1">🚩 Reportar categoría</button>
+          <button id="boton-compartir-resultado" class="floor-btn font-titulo font-bold text-base px-8 py-2.5" style="color:#a8c5ff;border-color:#a8c5ff" aria-label="Compartir resultado">📤 Compartir resultado</button>
+          <button id="boton-menu" class="floor-btn floor-card-small text-[#a8c5ff] font-titulo font-bold text-base px-8 py-3 w-full">Volver al menú</button>
+          <button onclick="abrirModalReportar()" class="font-titulo text-xs text-[#a8c5ff] hover:text-[#ff4444] transition-colors underline mt-1">🚩 Reportar categoría</button>
         </div>
       </div>
     </section>
@@ -1038,8 +1039,33 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     $("final-tiempo-b").textContent = String(countB);
     $("final-label-a").textContent = "casillas";
     $("final-label-b").textContent = "casillas";
+    contarPartida("tablero", `${jug.A.nombre} ${countA}-${countB} ${jug.B.nombre}`);
     mostrar(pFinal);
     lanzarConfeti();
+  }
+
+  // ── Estadísticas locales ────────────────────────────────────
+  interface Stats {
+    partidas: number;
+    rapidas: number;
+    tableros: number;
+    ultimas: string[]; // últimas 10 partidas, texto resumen
+  }
+  function leerStats(): Stats {
+    try {
+      const raw = localStorage.getItem("el-suelo:stats-v1");
+      if (raw) return { partidas: 0, rapidas: 0, tableros: 0, ultimas: [], ...JSON.parse(raw) };
+    } catch {}
+    return { partidas: 0, rapidas: 0, tableros: 0, ultimas: [] };
+  }
+  function contarPartida(tipo: "rapida" | "tablero", resumen: string) {
+    const s = leerStats();
+    s.partidas++;
+    if (tipo === "rapida") s.rapidas++;
+    else s.tableros++;
+    const fecha = new Date().toISOString().slice(0, 10);
+    s.ultimas = [`${fecha} · ${resumen}`, ...s.ultimas].slice(0, 10);
+    try { localStorage.setItem("el-suelo:stats-v1", JSON.stringify(s)); } catch {}
   }
 
   // ── Render ───────────────────────────────────────────────────
@@ -1083,6 +1109,41 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   }
 
   // ── Vibración (respeta ajuste) ───────────────────────────────
+  // Sonidos cortos generados con WebAudio API (sin archivos externos).
+  let audioCtx: AudioContext | null = null;
+  function getAudioCtx(): AudioContext | null {
+    if (!ajustes.sonido) return null;
+    try {
+      if (!audioCtx) audioCtx = new ((window as any).AudioContext || (window as any).webkitAudioContext)();
+      return audioCtx;
+    } catch { return null; }
+  }
+  function tono(freq: number, duracion = 0.08, tipo: OscillatorType = "sine", volumen = 0.15) {
+    const ctx = getAudioCtx();
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = tipo;
+    osc.frequency.setValueAtTime(freq, ctx.currentTime);
+    gain.gain.setValueAtTime(volumen, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duracion);
+    osc.connect(gain).connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + duracion);
+  }
+  function sonidoAcierto() {
+    tono(880, 0.08, "sine");
+    setTimeout(() => tono(1320, 0.12, "sine"), 90);
+  }
+  function sonidoPase() {
+    tono(440, 0.07, "triangle");
+    setTimeout(() => tono(330, 0.1, "triangle"), 70);
+  }
+  function sonidoFin() {
+    tono(660, 0.15, "sawtooth", 0.12);
+    setTimeout(() => tono(330, 0.25, "sawtooth", 0.12), 160);
+  }
+
   function vibrar(pattern: number | number[]) {
     try {
       if (!ajustes.vibracion) return;
@@ -1110,12 +1171,19 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     renderTimers();
     mostrarImagen();
     pararTimer();
+    // Timer basado en Date.now() para evitar drift cuando el móvil bloquea
+    // pantalla o el navegador ralentiza setInterval en background.
+    const decimasInicio = jug[turno].decimas;
+    const startMs = Date.now();
+    const j = jug[turno];
     tick = setInterval(() => {
-      const j = jug[turno];
-      j.decimas -= 1;
-      renderTimers();
-      if (j.decimas <= 0) {
-        j.decimas = 0;
+      const transcurridoDecimas = Math.floor((Date.now() - startMs) / 100);
+      const restantes = Math.max(0, decimasInicio - transcurridoDecimas);
+      if (restantes !== j.decimas) {
+        j.decimas = restantes;
+        renderTimers();
+      }
+      if (restantes <= 0) {
         bloqueado = true;
         pararTimer();
         pararVoz();
@@ -1180,6 +1248,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     if (bloqueado) return;
     bloqueado = true;
     vibrar(60);
+    sonidoAcierto();
     ($("boton-pasar") as HTMLButtonElement).disabled = true;
     pararTimer();
     const nombre = items[indice].nombre;
@@ -1196,6 +1265,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     if (bloqueado) return;
     bloqueado = true;
     vibrar([40, 40, 40]);
+    sonidoPase();
     ($("boton-pasar") as HTMLButtonElement).disabled = true;
     pararTimer();
     const nombre = items[indice].nombre;
@@ -1227,6 +1297,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     if (terminado) return;
     terminado = true;
     vibrar([150, 100, 150]);
+    sonidoFin();
     pararTimer();
     pararVoz();
     clearPending();
@@ -1251,11 +1322,28 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     $("final-label-b").textContent = "tiempo restante";
     const ganador = sA > sB ? `🥇 Gana ${jug.A.nombre}` : sB > sA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
     $("texto-ganador").textContent = ganador;
+    contarPartida("rapida", `${categoriaActual}: ${jug.A.nombre} ${sA}s vs ${jug.B.nombre} ${sB}s`);
     mostrar(pFinal);
     lanzarConfeti();
   }
 
   $("boton-pasar").addEventListener("click", registrarPase);
+
+  // Compartir resultado al final
+  $("boton-compartir-resultado").addEventListener("click", async () => {
+    const ganador = $("texto-ganador").textContent || "";
+    const cat = modo === "rapida" ? categoriaActual : "Tablero 3x3";
+    const texto = `🎮 El Suelo · ${cat}\n${ganador}\nJuega en ${location.origin}`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "El Suelo", text: texto });
+      } else if (navigator.clipboard) {
+        await navigator.clipboard.writeText(texto);
+        ($("boton-compartir-resultado") as HTMLElement).textContent = "✓ Copiado al portapapeles";
+        setTimeout(() => { ($("boton-compartir-resultado") as HTMLElement).textContent = "📤 Compartir resultado"; }, 2000);
+      }
+    } catch {}
+  });
 
   $("boton-revancha").addEventListener("click", async () => {
     pararVoz();
