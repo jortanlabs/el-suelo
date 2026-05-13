@@ -69,18 +69,38 @@
   },
   {
     "nombre": "Lenovo Tenerife",
-    "imagen": ""
+    "imagen": "https://static.vocento.com/sportsdata/latest/assets/equipos/g/9155.png"
   },
   {
     "nombre": "Estudiantes",
-    "imagen": ""
+    "imagen": "https://pbs.twimg.com/media/G3a0yKQWsAAxLt7.jpg"
   },
   {
     "nombre": "Real Betis Baloncesto",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTorGsoE79hWuqen_5Top04a-wAjCqWI6gsYw&s"
   },
   {
     "nombre": "Obradoiro",
-    "imagen": ""
+    "imagen": "https://r2.thesportsdb.com/images/media/team/badge/06qdqv1677768007.png"
+  },
+  {
+    "nombre": "Força Lleida",
+    "imagen": "https://yt3.googleusercontent.com/g68RhEd6MUUo7opsz0rhGJgAicVDLV1CGn7z1LZHflJELBB95smt6vfJdoy3aYXPWbXwTgwK=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "nombre": "Covirán Granada",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimE5Pgd7tk9tFMKDND3PdTuj0KJ1MOOGrBg&s"
+  },
+  {
+    "nombre": "Club Baloncesto San Pablo Burgos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/an/f/f1/San_Pablo_Burgos.png"
+  },
+  {
+    "nombre": "Basquet Manresa",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gDrapjpeZxomDgYkBftGRjD_nfVaZzfR-w&s"
+  },
+  {
+    "nombre": "Basquet Girona",
+    "imagen": "https://basquetgirona.com/wp-content/uploads/2023/11/mm-01.svg"
   }
 ]
