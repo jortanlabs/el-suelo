@@ -24,14 +24,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Inducción",
-    "imagen": ""
-  },
-  {
-    "nombre": "Placa de gas",
-    "imagen": ""
-  },
-  {
     "nombre": "Horno",
     "imagen": ""
   },
@@ -48,14 +40,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Cafetera de cápsulas",
-    "imagen": ""
-  },
-  {
-    "nombre": "Cafetera espresso",
-    "imagen": ""
-  },
-  {
     "nombre": "Hervidor",
     "imagen": ""
   },
@@ -64,19 +48,7 @@
     "imagen": ""
   },
   {
-    "nombre": "Sandwichera",
-    "imagen": ""
-  },
-  {
-    "nombre": "Gofrera",
-    "imagen": ""
-  },
-  {
     "nombre": "Plancha",
-    "imagen": ""
-  },
-  {
-    "nombre": "Centro de planchado",
     "imagen": ""
   },
   {
@@ -88,15 +60,75 @@
     "imagen": ""
   },
   {
-    "nombre": "Aspiradora escoba",
-    "imagen": ""
-  },
-  {
     "nombre": "Robot de cocina",
     "imagen": ""
   },
   {
     "nombre": "Thermomix",
+    "imagen": ""
+  },
+  {
+    "nombre": "Air fryer",
+    "imagen": ""
+  },
+  {
+    "nombre": "Olla express",
+    "imagen": ""
+  },
+  {
+    "nombre": "Batidora",
+    "imagen": ""
+  },
+  {
+    "nombre": "Exprimidor",
+    "imagen": ""
+  },
+  {
+    "nombre": "Plancha de pelo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Secador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aire acondicionado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Ventilador",
+    "imagen": ""
+  },
+  {
+    "nombre": "Inducción",
+    "imagen": ""
+  },
+  {
+    "nombre": "Placa de gas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cafetera de cápsulas",
+    "imagen": ""
+  },
+  {
+    "nombre": "Cafetera espresso",
+    "imagen": ""
+  },
+  {
+    "nombre": "Sandwichera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Gofrera",
+    "imagen": ""
+  },
+  {
+    "nombre": "Centro de planchado",
+    "imagen": ""
+  },
+  {
+    "nombre": "Aspiradora escoba",
     "imagen": ""
   },
   {
@@ -109,14 +141,6 @@
   },
   {
     "nombre": "Freidora de aire",
-    "imagen": ""
-  },
-  {
-    "nombre": "Air fryer",
-    "imagen": ""
-  },
-  {
-    "nombre": "Olla express",
     "imagen": ""
   },
   {
@@ -136,10 +160,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Batidora",
-    "imagen": ""
-  },
-  {
     "nombre": "Batidora de vaso",
     "imagen": ""
   },
@@ -148,23 +168,11 @@
     "imagen": ""
   },
   {
-    "nombre": "Exprimidor",
-    "imagen": ""
-  },
-  {
     "nombre": "Licuadora",
     "imagen": ""
   },
   {
     "nombre": "Extractor de zumo",
-    "imagen": ""
-  },
-  {
-    "nombre": "Plancha de pelo",
-    "imagen": ""
-  },
-  {
-    "nombre": "Secador",
     "imagen": ""
   },
   {
@@ -184,10 +192,6 @@
     "imagen": ""
   },
   {
-    "nombre": "Aire acondicionado",
-    "imagen": ""
-  },
-  {
     "nombre": "Calefactor",
     "imagen": ""
   },
@@ -201,10 +205,6 @@
   },
   {
     "nombre": "Purificador de aire",
-    "imagen": ""
-  },
-  {
-    "nombre": "Ventilador",
     "imagen": ""
   },
   {
