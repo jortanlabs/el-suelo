@@ -60,7 +60,9 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 // Mapa combinado slug → nombre (para el JS)
 const todasSlugsNombres: Record<string, string> = { ...cineSlugsNombres, ...mundoSlugsNombres };
 
-const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "";
+// La key de Pusher es pública por diseño (acaba en el JS del cliente). El
+// secret real es PUSHER_SECRET, server-side en /api/pusher-auth.
+const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "d8b48a4d7d6cb146cf1e";
 const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 ---
 
