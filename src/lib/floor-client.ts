@@ -508,6 +508,7 @@ function levenshtein(a: string, b: string, max = 1): number {
 // - hamburger → amburguer (h muda)
 // - phone → fone
 // - sully → suly, anna → ana, ross → ros (consonantes dobles colapsadas)
+// - dory → dori, harry → hari (y final pronunciada como i en castellano)
 function fonetizar(p: string): string {
   return p
     .replace(/^s([bcdfghjklmnpqrstvwxyz])/, "es$1")
@@ -515,7 +516,8 @@ function fonetizar(p: string): string {
     .replace(/k/g, "c")
     .replace(/^h/, "")
     .replace(/ph/g, "f")
-    .replace(/(.)\1/g, "$1");
+    .replace(/(.)\1/g, "$1")
+    .replace(/y$/, "i");
 }
 
 /**
