@@ -270,6 +270,22 @@ const BUILD = Date.now();
             btn.addEventListener('click', () => selectSlug(s.slug));
             sec.appendChild(btn);
           }
+          // Botón de publicar por sección (p.ej. "Publicar Marcas" dentro del bloque Compras)
+          if (sg.nombre) {
+            const seccionId = `${bloqueSlug}__${k}`;
+            allGroups[seccionId] = { nombre: sg.nombre, items: sg.items, dataPath: group.dataPath };
+            const pubSecBtn = document.createElement('button');
+            pubSecBtn.className = 'btn-publish-block';
+            pubSecBtn.dataset.bloque = seccionId;
+            pubSecBtn.textContent = `🚀 Publicar ${sg.nombre}`;
+            pubSecBtn.addEventListener('click', () => iniciarPublicar(seccionId));
+            const pubSecBar = document.createElement('div');
+            pubSecBar.className = 'pub-bar';
+            pubSecBar.id = `pubbar-${seccionId}`;
+            pubSecBar.innerHTML = `<div class="pub-bar-fill" id="pubfill-${seccionId}"></div>`;
+            sec.appendChild(pubSecBtn);
+            sec.appendChild(pubSecBar);
+          }
         }
       } else {
         for (const s of group.items) {
