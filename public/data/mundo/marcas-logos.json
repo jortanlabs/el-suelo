@@ -262,5 +262,169 @@
   {
     "nombre": "Iberdrola",
     "imagen": "https://www.iberdrola.com/documents/20125/4419331/Recurso_marca_esta%CC%81tico_Marca.png"
+  },
+  {
+    "nombre": "Starbucks",
+    "imagen": "https://media.revistagq.com/photos/5d5d383031110c000879872d/1:1/w_1080,h_1080,c_limit/logo-starbucks.jpg"
+  },
+  {
+    "nombre": "Ferrari",
+    "imagen": "https://t3.ftcdn.net/jpg/07/51/13/76/360_F_751137693_2VO23dD6dfXKnrp7KInWA8r4NjDcM9Qh.jpg"
+  },
+  {
+    "nombre": "Toyota",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9Ofn2XiA0g0ffoFi0H5hF91tCy6aJJDj8w&s"
+  },
+  {
+    "nombre": "Twitter",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XgxyCkDKtu8hCsohSB22-GEyar6FuqRYoQ&s"
+  },
+  {
+    "nombre": "Meta",
+    "imagen": "https://cdn.vectorstock.com/i/1000v/41/67/meta-icon-logo-social-media-technology-company-vector-49864167.jpg"
+  },
+  {
+    "nombre": "Gucci",
+    "imagen": "https://static.vecteezy.com/system/resources/previews/020/665/018/non_2x/gucci-logo-gucci-icon-on-black-background-free-vector.jpg"
+  },
+  {
+    "nombre": "Chupa Chups",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmCK7xhs33Avu97SX_Bkk4xF7ShglZta620Q&s"
+  },
+  {
+    "nombre": "Michelin",
+    "imagen": "https://cdn.worldvectorlogo.com/logos/michelin-2.svg"
+  },
+  {
+    "nombre": "Playstation",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/91/PlayStation_App_Icon.jpg"
+  },
+  {
+    "nombre": "Airbnb",
+    "imagen": "https://img.freepik.com/vector-premium/airbnb-logo-airbnb-icon-airbnb-logo-vector-illustration_999008-2202.jpg"
+  },
+  {
+    "nombre": "Dove",
+    "imagen": "https://i.pinimg.com/736x/1a/f0/e3/1af0e3d1267ed6114dafcfbf1f5e4957.jpg"
+  },
+  {
+    "nombre": "Audi",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSSyKFxAt7NXVeWuzA2D8k1Vak5YWXh5FGOw&s"
+  },
+  {
+    "nombre": "Danone",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nyplv6NWAvfjvu9LK3garuzfZAbLdvuqoQ&s"
+  },
+  {
+    "nombre": "Kellogg's",
+    "imagen": "https://cdn.prod.website-files.com/65fb46186d1d506d69123dfd/66658b51029d64b5385fac1e_wlrPgR9WYrOz9lxa-oSefeiQpBMdm0G2_3xBPn6m4kk.webp"
+  },
+  {
+    "nombre": "Pringles",
+    "imagen": "https://www.reasonwhy.es/media/library/pringles_nueva_imagen.jpg"
+  },
+  {
+    "nombre": "WhatsApp",
+    "imagen": "https://png.pngtree.com/element_our/png_detail/20181011/whatsapp-social-media-icon-design-template-vector-png_127011.png"
+  },
+  {
+    "nombre": "TikTok",
+    "imagen": "https://img.magnific.com/fotos-premium/logotipo-redondo-tiktok-aislado-fondo-blanco_469489-1045.jpg?semt=ais_hybrid&w=740&q=80"
+  },
+  {
+    "nombre": "Huawei",
+    "imagen": "https://cdn.iconscout.com/icon/free/png-256/free-huawei-logo-icon-svg-download-png-3030116.png"
+  },
+  {
+    "nombre": "Xiaomi",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Xiaomi_logo.svg/960px-Xiaomi_logo.svg.png"
+  },
+  {
+    "nombre": "Seat",
+    "imagen": "https://www.pegatinasyvinilos.com/wp-content/uploads/2024/05/SEAT_Logo_ORIGINAL.jpg"
+  },
+  {
+    "nombre": "Porsche",
+    "imagen": "https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/teaser_720x406x2/dam/ES-PIB-local/2022/historia/escudo-porsche/galeria/b-HDI-64478.jpg/jcr:content/b-HDI-64478.jpg"
+  },
+  {
+    "nombre": "Stradivarius",
+    "imagen": "https://i.pinimg.com/736x/53/92/f9/5392f99e9544a26efdb08b2846ba5f3d.jpg"
+  },
+  {
+    "nombre": "El Ganso",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/46/El_ganso.jpg"
+  },
+  {
+    "nombre": "76. Domino's Pizza",
+    "imagen": "https://s3-symbol-logo.tradingview.com/dominos-pizza--600.png"
+  },
+  {
+    "nombre": "Subway",
+    "imagen": "https://www.freelogovectors.net/wp-content/uploads/2023/05/subway_logo-freelogovectors.net_.png"
+  },
+  {
+    "nombre": "Telepizza",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzPYcV2CMNaZyeELJbFwxVDoe-y7KtFzh4iA&s"
+  },
+  {
+    "nombre": "Santander",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2mM4mOcVKmmV6TKAYvvo6_fikW64JYBoOg&s"
+  },
+  {
+    "nombre": "CaixaBank",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM9eKUWit-_xtUy3usTfI4hxSjZRCv-kg70w&s"
+  },
+  {
+    "nombre": "Bankinter",
+    "imagen": "https://marca.bankinter.com/file_source/Marca/images/Entender/Basicos/Logotipo/img_secundario_02.jpg"
+  },
+  {
+    "nombre": "Repsol",
+    "imagen": "https://www.reasonwhy.es/media/library/repsol-logotipo-2012.jpeg"
+  },
+  {
+    "nombre": "Movistar",
+    "imagen": "https://logosenvector.com/logo/img/movistar-37448.png"
+  },
+  {
+    "nombre": "Vodafone",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMnHUXPOqJ98qBzWln1pEKihP4lUCHaMtow&s"
+  },
+  {
+    "nombre": "Decathlon",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnopGA7llqi-q65-9uHHhLLo0Uu0FehGUeIQ&s"
+  },
+  {
+    "nombre": "MediaMarkt",
+    "imagen": "https://play-lh.googleusercontent.com/6LqztbHE3dvI0aH6LCP2Zvwdv7DXIUofOCoZ2oIyQ1sx2uMk_pLfp784xyf7YkfMbJY"
+  },
+  {
+    "nombre": "Flying Tiger",
+    "imagen": "https://storage.googleapis.com/images.alltrippers.com/2018111223855_flying-tiger-copenhagen-logo.jpg"
+  },
+  {
+    "nombre": "Mahou",
+    "imagen": "https://sustainawards.com/6017-medium_default/mahou-referente-2024.jpg"
+  },
+  {
+    "nombre": "Ralph Lauren",
+    "imagen": "https://i.pinimg.com/736x/a0/b5/f7/a0b5f7bab840f1c5c4a554df6ec7fdb0.jpg"
+  },
+  {
+    "nombre": "Louis Vuitton",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJ7hLjDuj1YZPF7-bZEDIip0pZir0AW4Vow&s"
+  },
+  {
+    "nombre": "Rolex",
+    "imagen": "https://images.cults3d.com/omQlI-dlWJ6LVb0iVy5eMKNL2d4=/516x516/filters:no_upscale()/https://fbi.cults3d.com/uploaders/32482429/illustration-file/db6d756a-b408-445c-a83e-bcdc0884d0b5/R.png"
+  },
+  {
+    "nombre": "PayPal",
+    "imagen": "https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_1280.png"
+  },
+  {
+    "nombre": "Iberdrola",
+    "imagen": "https://www.iberdrola.com/documents/20125/4419331/Recurso_marca_esta%CC%81tico_Marca.png"
   }
 ]
