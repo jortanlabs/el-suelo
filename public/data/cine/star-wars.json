@@ -258,13 +258,5 @@
   {
     "nombre": "Endor (Star Wars)",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzOHa2nNNv-TknPqH5rqg--xfGJIhitiUpmQ&s"
-  },
-  {
-    "nombre": "Rey",
-    "imagen": "https://www.denofgeek.com/wp-content/uploads/2020/05/star-wars-rey.jpg?resize=768%2C432"
-  },
-  {
-    "nombre": "Finn",
-    "imagen": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Finn.Star-Wars.webp"
   }
 ]
