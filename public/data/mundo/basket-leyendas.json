@@ -84,6 +84,86 @@
     "imagen": "https://i.ytimg.com/vi/2REkZG-dhHc/maxresdefault.jpg"
   },
   {
+    "nombre": "Sergio Llull",
+    "imagen": "https://www.proballers.com/media/cache/torso_player/https---www.proballers.com/ul/player/sergio-llull2-1ef4c554-0e1a-64c4-b0b3-072937fdd842.png"
+  },
+  {
+    "nombre": "Walter Tavares",
+    "imagen": "https://objetos-xlk.estaticos-marca.com/uploads/2026/05/11/6a01c3da6ddf3.jpeg"
+  },
+  {
+    "nombre": "Mario Hezonja",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOYffjrnj2bswebLPX3OREt1W02wfzPCmFKQ&s"
+  },
+  {
+    "nombre": "Facundo Campazzo",
+    "imagen": "https://www.proballers.com/media/cache/torso_player/https---www.proballers.com/ul/player/facundo-campazzo-1ee67ba8-b6e7-61a0-852c-b3ad2ffbbc04.jpg"
+  },
+  {
+    "nombre": "Tomáš Satoranský",
+    "imagen": "https://www.proballers.com/media/cache/torso_player/https---www.proballers.com/ul/player/tomas-satoransky-1ee68664-bd16-66f4-bfe0-ed7b06c447a6.jpg"
+  },
+  {
+    "nombre": "Nikola Mirotic",
+    "imagen": "https://www.proballers.com/media/cache/torso_player/https---www.proballers.com/ul/player/nikola-mirotic-1ee68467-56c6-6f7e-9498-3bfcc9f59837.jpg"
+  },
+  {
+    "nombre": "Álex Abrines",
+    "imagen": "https://www.feb.es/Imagenes/Modulos/Noticias/258112_1.jpg?rdm=0.5943970666266978"
+  },
+  {
+    "nombre": "Vincent Poirier",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQ6xjld2DLHz5N_EQ0tLjMOK2aIDy1IjScQ&s"
+  },
+  {
+    "nombre": "Nicolás Laprovittola",
+    "imagen": "https://www.penya.com/images/plantilla/2018-2019/nicolas_laprovittola.jpg"
+  },
+  {
+    "nombre": "Jan Veselý",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/88d9b265-7d98-46d1-adae-4bd9f717b20c_alta-libre-aspect-ratio_default_0_x600y225.jpg"
+  },
+  {
+    "nombre": "Alberto Abalde",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZQjJdK_ns84hZxwj3bnGoO3DJBnJV5uMew&s"
+  },
+  {
+    "nombre": "Carlos Alocén",
+    "imagen": "https://www.casademontzaragoza.es/sites/default/files/basketzaragoza/Temporada_2018-2019/LigaEndesa/BKZ-CJB_%20Alocen.jpg"
+  },
+  {
+    "nombre": "Usman Garuba",
+    "imagen": "https://images.daznservices.com/di/library/DAZN_News/57/f0/usman-garuba-07292021_1sac7u59p8evp1wibcjkgvrphs.jpg?t=-131466966"
+  },
+  {
+    "nombre": "Yannick Nzosa",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphCe-tNOIXFJCvlJRRWlMlponNXimf7SCzg&s"
+  },
+  {
+    "nombre": "Santi Yusta",
+    "imagen": "https://www.proballers.com/media/cache/torso_player/https---www.proballers.com/ul/player/santi-yusta-1efa5ebd-8aae-649c-816f-9f845b26fe37.png"
+  },
+  {
+    "nombre": "Jaime Fernández",
+    "imagen": "https://www.proballers.com/media/cache/torso_player/https---www.proballers.com/ul/player/jaime-fernandez-1efa5eb6-50ae-6654-abf5-b713aea6037d.png"
+  },
+  {
+    "nombre": "Jaime Pradilla",
+    "imagen": "https://www.proballers.com/media/cache/torso_player/https---www.proballers.com/ul/player/2-1ed29709-f624-66c0-8530-2bf3266d7680.jpg"
+  },
+  {
+    "nombre": "Lorenzo Brown",
+    "imagen": "https://img.asmedia.epimg.net/resizer/v2/7JXNFNB5CRA45O6F3LWMNVAKPA.jpg?auth=b2b6adb13b782627bd94ab35d10d7f9fdd96e05acd93eddd8b65f596df72cddc&width=1200&height=1200&focal=625%2C227"
+  },
+  {
+    "nombre": "Edy Tavares",
+    "imagen": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2019/06/19/15609215528542.jpg"
+  },
+  {
+    "nombre": "Olek Balcerowski",
+    "imagen": "https://static.grupojoly.com/clip/dbb51f04-97a9-4f69-8c13-f059456bf843_source-aspect-ratio_1600w_0.jpg"
+  },
+  {
     "nombre": "Karl Mahone",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbn2JJgi4Y8T7QdTEzfItdkhA4eZ9w1W2uA&s"
   },
@@ -109,210 +189,130 @@
   },
   {
     "nombre": "Karl Malone",
-    "imagen": ""
+    "imagen": "https://elgurudelbasket.com/wp-content/uploads/2022/12/Karl-Malone.jpg"
   },
   {
     "nombre": "John Stockton",
-    "imagen": ""
+    "imagen": "https://platform.slcdunk.com/wp-content/uploads/sites/145/chorus/uploads/chorus_asset/file/15987854/1500510.jpg.jpg?quality=90&strip=all&crop=0,4.1508916323731,100,65.953360768176"
   },
   {
     "nombre": "Isiah Thomas",
-    "imagen": ""
+    "imagen": "https://i.namu.wiki/i/WR8nXgwLHxXIN5ht3Yh72Q5g7xXkiTi9W2tQ9ImWg67YO7uuke9jo00EdaFNa33ConU2QIiBvunqy4KrvAKTSQ.webp"
   },
   {
     "nombre": "Patrick Ewing",
-    "imagen": ""
+    "imagen": "https://i.redd.it/7olm6u6kndde1.jpeg"
   },
   {
     "nombre": "David Robinson",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6itCdgxEEN4C22ft2O1TCcUduoFX-hqoOpw&s"
   },
   {
     "nombre": "Kevin Garnett",
-    "imagen": ""
+    "imagen": "https://static01.nyt.com/images/2021/05/14/sports/14nba-garnett-print1/merlin_171257145_7ba5f3f0-be52-4c91-aa52-e0e921c4a162-superJumbo.jpg"
   },
   {
     "nombre": "Steve Nash",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5gxinVPm01BbZt6vQLbqkwy_9U7rgb1DwjA&s"
   },
   {
     "nombre": "Marc Gasol",
-    "imagen": ""
+    "imagen": "https://img.olympics.com/images/image/private/t_1-1_300/f_auto/primary/jexpxpfukhtzak7yxsnx"
   },
   {
     "nombre": "Ricky Rubio",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmsrwFN2TYlzAr7zBehFp1xb6eLR9VlCKwHQ&s"
   },
   {
     "nombre": "Juan Carlos Navarro",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-hpXViZMw3EPiIunp2GUKraGlYpikBlT6A&s"
   },
   {
     "nombre": "Felipe Reyes",
-    "imagen": ""
+    "imagen": "https://img2.rtve.es/n/2109360?w=1600"
   },
   {
     "nombre": "Rudy Fernández",
-    "imagen": ""
-  },
-  {
-    "nombre": "Sergio Llull",
-    "imagen": ""
+    "imagen": "https://s3.sportstatics.com/relevo/www/multimedia/202407/27/media/cortadas/rudy-vi-RV8bQbgLJaHcLkvuXPIvxbO-1200x648@Relevo.jpg"
   },
   {
     "nombre": "Drazen Petrovic",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU3hmY5kw2lLxxPQ4v2WnU6Uk35gOId5eakg&s"
   },
   {
     "nombre": "Toni Kukoč",
-    "imagen": ""
+    "imagen": "https://piratasdelbasket.net/public/storage/2025/08/UQF0iZogPOzdAqc4fkLBIbrKL2VS9M9gDtWjRfVl.jpg"
   },
   {
     "nombre": "Arvydas Sabonis",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_x0MaK3HUHM0wptic6fF78UYu9AyX1BRWg&s"
   },
   {
     "nombre": "Vlade Divac",
-    "imagen": ""
+    "imagen": "https://cdn.nba.com/teams/legacy/www.nba.com/kings/sites/kings/files/vladedivac.jpg"
   },
   {
     "nombre": "Yao Ming",
-    "imagen": ""
+    "imagen": "https://tuscamisetasnba.com/wp-content/uploads/curiosidades-yao-ming.jpg"
   },
   {
     "nombre": "Dikembe Mutombo",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PcscrBXt4Xd9-sZTqJW5SPeA959fQ8l-Lg&s"
   },
   {
     "nombre": "Reggie Miller",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKdkVUY4NShqVZcl46mdybaWFC0c9ldLh1w&s"
   },
   {
     "nombre": "Tracy McGrady",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/M2t0mD7oXDo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCsG90LARtiMop-s3sdY76spwwsWw"
   },
   {
     "nombre": "Vince Carter",
-    "imagen": ""
+    "imagen": "https://platform.sbnation.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/10104527/usa_today_10561216.jpg?quality=90&strip=all&crop=0%2C0.47619047619047%2C100%2C99.047619047619&w=2400"
   },
   {
     "nombre": "Carmelo Anthony",
-    "imagen": ""
+    "imagen": "https://s1.sportstatics.com/relevo/www/multimedia/202406/22/media/cortadas/hi-res-160209480_crop_north-RrpKv7ejI9gyLttYpmx3Z0H-1200x648@Relevo.jpg"
   },
   {
     "nombre": "Dwyane Wade",
-    "imagen": ""
+    "imagen": "https://cdn.britannica.com/16/242516-050-A1C02D79/Dwyane-Wade-Miami-Heat-2015.jpg?w=400&h=225&c=crop"
   },
   {
     "nombre": "Chris Paul",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDcMakcCW-obtWu4QDexjGsgZ6ckEsE37nA&s"
   },
   {
     "nombre": "Penny Hardaway",
-    "imagen": ""
+    "imagen": "https://i.namu.wiki/i/3VwV-mSRB2kZguQB-kGWe1vD14hBeI46SutXguKRgurMB9-5RuAHgjJVokNQXOAPeCkblB-rWpljEnzPB7jdTg.webp"
   },
   {
     "nombre": "Grant Hill",
-    "imagen": ""
+    "imagen": "https://www.thekeyexecutives.com/wp-content/uploads/2021/05/Grant-Hill.jpg"
   },
   {
     "nombre": "Jason Kidd",
-    "imagen": ""
+    "imagen": "https://tuscamisetasnba.com/wp-content/uploads/curiosidades-jason-kidd.jpg"
   },
   {
     "nombre": "Giannis Antetokounmpo",
-    "imagen": ""
+    "imagen": "https://platform.sbnation.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269947643.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C99.99126256007&w=2400"
   },
   {
     "nombre": "Nikola Jokić",
-    "imagen": ""
+    "imagen": "https://cms-images.acc.indazn.com/di/library/DAZN_News/83/a6/nikola-jokic-denver-nuggets-23012025_yvi2tderasin1cf8xwhig9dnk.jpg?t=-86455244&quality=80&w=750&h=422"
   },
   {
     "nombre": "Luka Dončić",
-    "imagen": ""
+    "imagen": "https://objetos-xlk.estaticos-marca.com/uploads/2026/04/16/69e1065807e6d.jpeg"
   },
   {
     "nombre": "Joel Embiid",
-    "imagen": ""
+    "imagen": "https://www.usab.com/imgproxy/fuKxIGk7A_zZng1mb6XpYugVpmNqtF8JvmIjMblvqqU/rs:fit:1200:630:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvYmIzYjkxZDktMzgzNy00YzZjLWJlYmEtNmRjODUyNjAwNjQwLmpwZw.png"
   },
   {
     "nombre": "Jayson Tatum",
-    "imagen": ""
-  },
-  {
-    "nombre": "Walter Tavares",
-    "imagen": ""
-  },
-  {
-    "nombre": "Mario Hezonja",
-    "imagen": ""
-  },
-  {
-    "nombre": "Facundo Campazzo",
-    "imagen": ""
-  },
-  {
-    "nombre": "Tomáš Satoranský",
-    "imagen": ""
-  },
-  {
-    "nombre": "Nikola Mirotic",
-    "imagen": ""
-  },
-  {
-    "nombre": "Álex Abrines",
-    "imagen": ""
-  },
-  {
-    "nombre": "Vincent Poirier",
-    "imagen": ""
-  },
-  {
-    "nombre": "Nicolás Laprovittola",
-    "imagen": ""
-  },
-  {
-    "nombre": "Jan Veselý",
-    "imagen": ""
-  },
-  {
-    "nombre": "Alberto Abalde",
-    "imagen": ""
-  },
-  {
-    "nombre": "Carlos Alocén",
-    "imagen": ""
-  },
-  {
-    "nombre": "Usman Garuba",
-    "imagen": ""
-  },
-  {
-    "nombre": "Yannick Nzosa",
-    "imagen": ""
-  },
-  {
-    "nombre": "Santi Yusta",
-    "imagen": ""
-  },
-  {
-    "nombre": "Jaime Fernández",
-    "imagen": ""
-  },
-  {
-    "nombre": "Jaime Pradilla",
-    "imagen": ""
-  },
-  {
-    "nombre": "Lorenzo Brown",
-    "imagen": ""
-  },
-  {
-    "nombre": "Edy Tavares",
-    "imagen": ""
-  },
-  {
-    "nombre": "Olek Balcerowski",
-    "imagen": ""
+    "imagen": "https://www.bostonherald.com/wp-content/uploads/2026/04/AP26095255381333.jpg?w=525"
   }
 ]
