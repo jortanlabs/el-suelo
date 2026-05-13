@@ -162,5 +162,81 @@
   {
     "nombre": "Torre de Belem",
     "imagen": "https://cdn-imgix.headout.com/microbrands-content-image/image/f94caf06c3d6d7779a089fea20611e99-AdobeStock_314194172.jpeg"
+  },
+  {
+    "nombre": "Casa Danzante",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiD_v2SuSiDT2Ey4HuJfhRVxToe3jFuZDPg&s"
+  },
+  {
+    "nombre": "Santa Sofía",
+    "imagen": "https://www.mozaweb.com/es/mozaik3D/VIZ/kozepkor/hagia_sophia/960.jpg"
+  },
+  {
+    "nombre": "Panteón de Agripa",
+    "imagen": "https://www.101viajes.com/sites/default/files/panteon-roma-exterior.jpg"
+  },
+  {
+    "nombre": "Cúpula de la Roca",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hqrv1LZCidVDBwppNr6es1WeCgneaJ9dJg&s"
+  },
+  {
+    "nombre": "Palacio de Cibeles",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpxn_-1KgJ6bzzwDITQC06wFhXYKfOMEF80w&s"
+  },
+  {
+    "nombre": "Edificio Chrysler",
+    "imagen": "https://okdiario.com/coolthelifestyle/img/2025/06/15/chrysler-building-van-alen-diedrica-blog-01_easy-resize.com_.jpg"
+  },
+  {
+    "nombre": "Torre de Shanghái",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAObDtCsiofv6kFjr2yJFCc8A3RMcBiPbBmA&s"
+  },
+  {
+    "nombre": "Atomium",
+    "imagen": "https://atomium.be/flexpage/galleryimage?path=/Content/Images/User/ATOMIUM-TodayOut-0621%20-%20Version%202_ltsmall.jpg"
+  },
+  {
+    "nombre": "Edificio Metrópolis",
+    "imagen": "https://media.timeout.com/images/105797806/image.jpg"
+  },
+  {
+    "nombre": "Gran Pirámide de Guiza",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShasE877OO-82CPdhDi8TUh19QmrNCtYjLlg&s"
+  },
+  {
+    "nombre": "Torres Petronas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d2/KLCC_twin_towers2.JPG"
+  },
+  {
+    "nombre": "Taipei 101",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOnq8n_3fHOPKSrugWCLmxHhMFyNe8cADLBQ&s"
+  },
+  {
+    "nombre": "One World Trade Center",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/New_York_and_Jersey_City_Skyline_Panorama_Crop_-_One_World_Trade_Center.jpg/250px-New_York_and_Jersey_City_Skyline_Panorama_Crop_-_One_World_Trade_Center.jpg"
+  },
+  {
+    "nombre": "Casa de la Cascada",
+    "imagen": "https://i.blogs.es/a58f59/2/1366_2000.png"
+  },
+  {
+    "nombre": "Chand Baori",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chand_Baori_perspective_panorama_%28July_2022%29.jpg/330px-Chand_Baori_perspective_panorama_%28July_2022%29.jpg"
+  },
+  {
+    "nombre": "Casa de Piedra",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Casa_da_Pedra_em_Fafe_12.jpg"
+  },
+  {
+    "nombre": "Edificio espiral - Hundertwasserhaus",
+    "imagen": "https://www.whitemad.pl/wp-content/uploads/2024/08/2048px-Waldspirale_50786302761.jpg"
+  },
+  {
+    "nombre": "La Casa Cesta",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYvXzRgqu0PfIvjbanLVT78gOTvR3dA5pqTA&s"
+  },
+  {
+    "nombre": "Torre de Belem",
+    "imagen": "https://cdn-imgix.headout.com/microbrands-content-image/image/f94caf06c3d6d7779a089fea20611e99-AdobeStock_314194172.jpeg"
   }
 ]
