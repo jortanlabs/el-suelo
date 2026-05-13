@@ -138,5 +138,45 @@
   {
     "nombre": "Fagot",
     "imagen": "https://thumbs.static-thomann.de/thumb//thumb1000x/pics/cms/image/guide/es/fagots/fagott_orch.jpg"
+  },
+  {
+    "nombre": "Maracas",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/de/Sambaballen.JPG"
+  },
+  {
+    "nombre": "Kalimba",
+    "imagen": "https://m.media-amazon.com/images/I/51A82KJzUxL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "nombre": "Timbal",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP25pWD9p47IBZmncXiVQYkaNWQLxGpFQvsw&s"
+  },
+  {
+    "nombre": "Bombo",
+    "imagen": "https://pablocarpintero.es/wp-content/uploads/2021/11/Bombo-Pablo-carpintero-6.jpg"
+  },
+  {
+    "nombre": "Platillos",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Zildjiancrash.jpg"
+  },
+  {
+    "nombre": "Gong",
+    "imagen": "https://m.media-amazon.com/images/I/61NmsoyWyfL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "nombre": "Triángulo",
+    "imagen": "https://www.alupe.es/wp-content/uploads/triangle-instrument.jpg"
+  },
+  {
+    "nombre": "Cajón",
+    "imagen": "https://musicalfuste.com/wp-content/uploads/2024/01/historia-cajon-flamenco.jpg"
+  },
+  {
+    "nombre": "Teremín",
+    "imagen": "https://woodandfirestudio.com/wp-content/uploads/2022/11/moog-etherwave-theremin_1_SYN0008187-000.jpg.jpg"
+  },
+  {
+    "nombre": "Fagot",
+    "imagen": "https://thumbs.static-thomann.de/thumb//thumb1000x/pics/cms/image/guide/es/fagots/fagott_orch.jpg"
   }
 ]
