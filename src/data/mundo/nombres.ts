@@ -1283,8 +1283,10 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Camiseta","Pantalón","Falda","Vestido","Abrigo",
       "Chaqueta","Calcetines","Zapatos de tacón","Zapatillas deportivas","Botas",
       "Cinturón","Corbata","Jersey","Sudadera","Vaqueros",
-      "Camiseta sin mangas","Bikini","Bañador","Camisa","Traje de chaqueta",
-      "Bufanda","Guantes","Gorro","Blazer","Gabardina",
+      "Bikini","Bañador","Camisa","Traje de chaqueta",
+      "Bufanda","Guantes","Gorro",
+      "Pijama","Chándal","Polo","Chaleco","Bermudas",
+      "Chubasquero","Pajarita","Esmoquin","Vestido de novia","Mono",
     ],
   },
   {
