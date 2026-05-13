@@ -1,10 +1,10 @@
 [
   {
-    "nombre": "Real Madrid Basket",
+    "nombre": "Real Madrid Baloncesto",
     "imagen": "https://yt3.googleusercontent.com/VDIePKZrXvKjmBDQEPDFbn_blHzZJOO_vtr2RJrh1eURtMvucrp_DhuhXhXP-DF3elynACCY=s900-c-k-c0x00ffffff-no-rj"
   },
   {
-    "nombre": "FC Barcelona Basket",
+    "nombre": "FC Barcelona Baloncesto",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_QQmrjaFMGomUpz-QWZEhJm9RtiHBtg8Z0Q&s"
   },
   {
@@ -16,11 +16,11 @@
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMw_u_99e1Mxv9Bf3LWqX15o-JCMnVZI8Wng&s"
   },
   {
-    "nombre": "TD Systems Baskonia",
+    "nombre": "Baskonia",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5v7IaxaKx-lH38Svvxld3Y_MaQbA4UTbBg&s"
   },
   {
-    "nombre": "Gran Canaria Claro",
+    "nombre": "Gran Canaria",
     "imagen": "https://basketpasion.es/wp-content/uploads/2022/05/grancanaria.jpg"
   },
   {
@@ -56,51 +56,19 @@
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimE5Pgd7tk9tFMKDND3PdTuj0KJ1MOOGrBg&s"
   },
   {
-    "nombre": "Club Baloncesto San Pablo Burgos",
+    "nombre": "San Pablo Burgos",
     "imagen": "https://upload.wikimedia.org/wikipedia/an/f/f1/San_Pablo_Burgos.png"
   },
   {
-    "nombre": "Basquet Manresa",
+    "nombre": "BAXI Manresa",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gDrapjpeZxomDgYkBftGRjD_nfVaZzfR-w&s"
   },
   {
-    "nombre": "Basquet Girona",
+    "nombre": "Bàsquet Girona",
     "imagen": "https://basquetgirona.com/wp-content/uploads/2023/11/mm-01.svg"
   },
   {
-    "nombre": "Real Madrid Baloncesto",
-    "imagen": ""
-  },
-  {
-    "nombre": "FC Barcelona Baloncesto",
-    "imagen": ""
-  },
-  {
-    "nombre": "Baskonia",
-    "imagen": ""
-  },
-  {
-    "nombre": "San Pablo Burgos",
-    "imagen": ""
-  },
-  {
     "nombre": "Lenovo Tenerife",
-    "imagen": ""
-  },
-  {
-    "nombre": "BAXI Manresa",
-    "imagen": ""
-  },
-  {
-    "nombre": "Surne Bilbao Basket",
-    "imagen": ""
-  },
-  {
-    "nombre": "Gran Canaria",
-    "imagen": ""
-  },
-  {
-    "nombre": "Carplus Fuenlabrada",
     "imagen": ""
   },
   {
@@ -112,119 +80,7 @@
     "imagen": ""
   },
   {
-    "nombre": "CB Granada",
-    "imagen": ""
-  },
-  {
     "nombre": "Obradoiro",
-    "imagen": ""
-  },
-  {
-    "nombre": "Joventut",
-    "imagen": ""
-  },
-  {
-    "nombre": "Hereda San Pablo Burgos",
-    "imagen": ""
-  },
-  {
-    "nombre": "ICL Manresa",
-    "imagen": ""
-  },
-  {
-    "nombre": "Hierros Díaz Miranda",
-    "imagen": ""
-  },
-  {
-    "nombre": "Movistar Estudiantes",
-    "imagen": ""
-  },
-  {
-    "nombre": "Spar Citylift Girona",
-    "imagen": ""
-  },
-  {
-    "nombre": "Murcia UCAM",
-    "imagen": ""
-  },
-  {
-    "nombre": "Sergio Llull",
-    "imagen": ""
-  },
-  {
-    "nombre": "Walter Tavares",
-    "imagen": ""
-  },
-  {
-    "nombre": "Mario Hezonja",
-    "imagen": ""
-  },
-  {
-    "nombre": "Facundo Campazzo",
-    "imagen": ""
-  },
-  {
-    "nombre": "Tomáš Satoranský",
-    "imagen": ""
-  },
-  {
-    "nombre": "Nikola Mirotic",
-    "imagen": ""
-  },
-  {
-    "nombre": "Álex Abrines",
-    "imagen": ""
-  },
-  {
-    "nombre": "Vincent Poirier",
-    "imagen": ""
-  },
-  {
-    "nombre": "Nicolás Laprovittola",
-    "imagen": ""
-  },
-  {
-    "nombre": "Jan Veselý",
-    "imagen": ""
-  },
-  {
-    "nombre": "Alberto Abalde",
-    "imagen": ""
-  },
-  {
-    "nombre": "Carlos Alocén",
-    "imagen": ""
-  },
-  {
-    "nombre": "Usman Garuba",
-    "imagen": ""
-  },
-  {
-    "nombre": "Yannick Nzosa",
-    "imagen": ""
-  },
-  {
-    "nombre": "Santi Yusta",
-    "imagen": ""
-  },
-  {
-    "nombre": "Jaime Fernández",
-    "imagen": ""
-  },
-  {
-    "nombre": "Jaime Pradilla",
-    "imagen": ""
-  },
-  {
-    "nombre": "Lorenzo Brown",
-    "imagen": ""
-  },
-  {
-    "nombre": "Edy Tavares",
-    "imagen": ""
-  },
-  {
-    "nombre": "Olek Balcerowski",
     "imagen": ""
   }
 ]

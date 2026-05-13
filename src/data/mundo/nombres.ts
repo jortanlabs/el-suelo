@@ -461,10 +461,13 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
     bloqueNombre: "Baloncesto",
     dataPath: "mundo",
     nombres: [
-      "Real Madrid Basket", "FC Barcelona Basket", "Valencia Basket",
-      "Unicaja Málaga", "TD Systems Baskonia", "Gran Canaria Claro",
+      "Real Madrid Baloncesto", "FC Barcelona Baloncesto", "Valencia Basket",
+      "Unicaja Málaga", "Baskonia", "Gran Canaria",
       "Joventut Badalona", "UCAM Murcia", "Morabanc Andorra",
       "Río Breogán", "Casademont Zaragoza", "Bilbao Basket",
+      "Força Lleida", "Covirán Granada", "San Pablo Burgos",
+      "BAXI Manresa", "Bàsquet Girona", "Lenovo Tenerife",
+      "Estudiantes", "Real Betis Baloncesto", "Obradoiro",
     ],
   },
   {
@@ -482,6 +485,12 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Pau Gasol", "Tony Parker", "Manu Ginóbili",
       "Oscar Robertson", "Julius Erving", "Charles Barkley",
       "Scottie Pippen", "Allen Iverson",
+      // ACB recientes / actuales
+      "Sergio Llull", "Walter Tavares", "Mario Hezonja", "Facundo Campazzo",
+      "Tomáš Satoranský", "Nikola Mirotic", "Álex Abrines", "Vincent Poirier",
+      "Nicolás Laprovittola", "Jan Veselý", "Alberto Abalde", "Carlos Alocén",
+      "Usman Garuba", "Yannick Nzosa", "Santi Yusta", "Jaime Fernández",
+      "Jaime Pradilla", "Lorenzo Brown", "Edy Tavares", "Olek Balcerowski",
     ],
   },
   {
