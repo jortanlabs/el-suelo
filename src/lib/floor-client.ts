@@ -535,11 +535,24 @@ function formasCategoria(w: string): string[] {
   return f;
 }
 
+// Subcategorías donde el contenido del paréntesis es una RESPUESTA ALTERNATIVA
+// válida (autor de la obra), no un mero desambiguador. P.ej. en "Las Meninas
+// (Velázquez)" el jugador puede acertar diciendo "Las Meninas" o "Velázquez".
+// En el resto de categorías, el paréntesis sigue siendo contexto excluyente.
+export const SLUGS_PARENTESIS_VALIDO: ReadonlySet<string> = new Set([
+  "arte-cuadros",
+  "arte-esculturas",
+]);
+
 export function aciertoFlexible(
   transcripcion: string,
   nombre: string,
   categoria?: string,
+  slugCategoria?: string,
 ): boolean {
+  const parentesisValido = slugCategoria
+    ? SLUGS_PARENTESIS_VALIDO.has(slugCategoria)
+    : false;
   // Check inicial: nombre y transcripción sin espacios. Cubre casos como
   // "Ajo blanco" (transcripción) vs "ajoblanco" (nombre) — y a la inversa.
   // Quitamos paréntesis del nombre antes de unir, para no incluir la peli/contexto.
@@ -591,13 +604,17 @@ export function aciertoFlexible(
       .forEach((w) => genericos.add(w));
   }
   // Añadir palabras dentro de paréntesis como genéricas (película/universo, no el personaje)
-  const parentesisMatch = nombre.match(/\(([^)]+)\)/g);
-  if (parentesisMatch) {
-    for (const m of parentesisMatch) {
-      normalizar(m.replace(/[()]/g, ""))
-        .split(/\s+/)
-        .filter((w) => w.length > 2 && !STOP.has(w))
-        .forEach((w) => genericos.add(w));
+  // SALVO en subcategorías donde el paréntesis es el autor (cuadros, esculturas), que
+  // sí es respuesta válida.
+  if (!parentesisValido) {
+    const parentesisMatch = nombre.match(/\(([^)]+)\)/g);
+    if (parentesisMatch) {
+      for (const m of parentesisMatch) {
+        normalizar(m.replace(/[()]/g, ""))
+          .split(/\s+/)
+          .filter((w) => w.length > 2 && !STOP.has(w))
+          .forEach((w) => genericos.add(w));
+      }
     }
   }
 

@@ -1214,7 +1214,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           try { canal.trigger("client-voz", { texto }); } catch {}
         }
         // Prioridad 1: si lo dicho contiene la respuesta correcta, acierto
-        if (aciertoFlexible(texto, item.nombre, categoriaActual)) {
+        if (aciertoFlexible(texto, item.nombre, categoriaActual, categoriaSlug)) {
           if (rol === "host") registrarAcierto();
           else accion("acierto");
           return;

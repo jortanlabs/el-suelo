@@ -1209,7 +1209,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         if (!item) return;
         $("texto-voz").textContent = `"${texto}"`;
         // Prioridad 1: si lo dicho contiene la respuesta correcta, acierto
-        if (aciertoFlexible(texto, item.nombre, categoriaActual)) {
+        if (aciertoFlexible(texto, item.nombre, categoriaActual, categoriaSlug)) {
           registrarAcierto();
           return;
         }
