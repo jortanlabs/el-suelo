@@ -89,162 +89,158 @@
   },
   {
     "nombre": "Gol",
-    "imagen": ""
+    "imagen": "https://static01.nyt.com/images/2018/07/04/opinion/04Caparros-ES-1/merlin_140567472_943e1e51-dd3c-4938-b16c-b49065a5e07c-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
   },
   {
     "nombre": "Centro",
-    "imagen": ""
+    "imagen": "https://thumbs.dreamstime.com/b/centro-del-campo-de-f%C3%BAtbol-y-fondo-de-la-opini%C3%B3n-superior-de-la-bola-30665252.jpg"
   },
   {
     "nombre": "Pase",
-    "imagen": ""
+    "imagen": "https://www.escuelaedafutbol.es/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-21-at-15.21.01.jpeg"
   },
   {
     "nombre": "Cabezazo",
-    "imagen": ""
+    "imagen": "https://static.nationalgeographicla.com/files/styles/image_3200/public/68386.jpg?w=1900&h=1368"
   },
   {
     "nombre": "Vaselina",
-    "imagen": ""
+    "imagen": "https://ak.uecdn.es/p/110/thumbnail/entry_id/0_2o0glhlp/width/660/cache_st/20170222160921/type/2/bgcolor/000000/0_2o0glhlp.jpg"
   },
   {
     "nombre": "Sombrero",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/jlt6utPYo2s/sddefault.jpg"
   },
   {
     "nombre": "Túnel",
-    "imagen": ""
+    "imagen": "https://palabrasdefutbol.com/wp-content/uploads/2021/07/cano-tunel-master1305.jpg"
   },
   {
     "nombre": "Caño",
-    "imagen": ""
+    "imagen": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/04/23/15244846684179.jpg"
   },
   {
     "nombre": "Regate",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdHhkvJ3sQkMIKXzQZchkVQKW8udY6MDzkZA&s"
   },
   {
     "nombre": "Asistencia",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/WmtVTTnbcnE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDkGV66mCgqRsPl2zIXljamj9mQMw"
   },
   {
     "nombre": "Mano",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/GBAOJfxkWKM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBbrLrBdxRahVjo6VnBq_r88osBcw"
   },
   {
     "nombre": "Pichichi",
-    "imagen": ""
+    "imagen": "https://assets.goal.com/images/v3/bltb0fd8b10a5e87fc1/goal---image-w-crest--c3f84565-84c5-4e8a-b361-8084d18a75fc.png?auto=webp&format=pjpg&width=3840&quality=60"
   },
   {
-    "nombre": "Zamora",
-    "imagen": ""
+    "nombre": "Trofeo Zamora",
+    "imagen": "https://m.media-amazon.com/images/I/81-8mI2yEEL.jpg"
   },
   {
     "nombre": "Liga",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUYZUuw3OYKIpz4KuHEkm97wTeA7OSmME7Ng&s"
   },
   {
     "nombre": "Copa del Rey",
-    "imagen": ""
+    "imagen": "https://objetos-xlk.estaticos-marca.com/uploads/2025/04/24/680a69d93affa.jpeg"
   },
   {
     "nombre": "Supercopa",
-    "imagen": ""
+    "imagen": "https://rfef.es/sites/default/files/styles/noticias_image_content/public/_f3a8959.jpg.webp?itok=g0IpyVw8"
   },
   {
     "nombre": "Champions League",
-    "imagen": ""
+    "imagen": "https://images.daznservices.com/di/library/DAZN_News/28/27/pallone-della-uefa-champions-league_19hq0r1nf61351lqa0xx6pjji3.jpg?t=-193951088"
   },
   {
     "nombre": "Europa League",
-    "imagen": ""
+    "imagen": "https://images.daznservices.com/di/library/DAZN_News/2/c9/europa-league-20232024_lqajvj4qur261ftfxfkeqc4je.png?t=1516544527"
   },
   {
     "nombre": "Conference League",
-    "imagen": ""
+    "imagen": "https://uefa.cdn.usestoryteller.com/assets/studio-templates/04be4dda-0ec2-8ada-902a-3a1c06f7a2f3/886ba713-9d86-4f40-9204-5b60c2c94fa7/996770b6-4ff5-0407-2fed-3a1c074c58d9/IconRenderOutput.jpeg"
   },
   {
     "nombre": "Mundial",
-    "imagen": ""
+    "imagen": "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2022/12/07/16704111377160.jpg"
   },
   {
     "nombre": "Eurocopa",
-    "imagen": ""
+    "imagen": "https://imagenes.elpais.com/resizer/v2/J7NCKJUQ2FD53EBSXFHUFLNWSU.jpg?auth=36a94fc405e5bf6993535cd92a6ef6e13b6eb846dc42567be16cbd5ea6a74756&width=414"
   },
   {
     "nombre": "Copa América",
-    "imagen": ""
+    "imagen": "https://phantom-marca-mx.unidadeditorial.es/5f6ece2e673232575fe59a5e99956a05/resize/828/f/jpg/mx/assets/multimedia/imagenes/2024/06/20/17188615731665.jpg"
   },
   {
     "nombre": "FIFA",
-    "imagen": ""
+    "imagen": "https://i.ytimg.com/vi/vldL-BySTWE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD0u_q7tZWHlQgFYsLnOCYT6bA1HA"
   },
   {
     "nombre": "UEFA",
-    "imagen": ""
-  },
-  {
-    "nombre": "Asistente",
-    "imagen": ""
+    "imagen": "https://img.uefa.com/imgml/uefaorg/new/logo.png"
   },
   {
     "nombre": "Cuarto árbitro",
-    "imagen": ""
+    "imagen": "https://e01-phantom-marca-us.uecdn.es/ea8036b2a5a3f45830199f6502bb89c7/f/webp/assets/multimedia/imagenes/2022/03/25/16482311155676.jpg"
   },
   {
     "nombre": "Convocatoria",
-    "imagen": ""
+    "imagen": "https://www.ffrm.es/pnfg/pimg/GestorContenidos/00100_0001059896_1_CONVOCATORIA_F_TBOL_PLAYA_12centenario.jpg"
   },
   {
     "nombre": "Once titular",
-    "imagen": ""
+    "imagen": "https://rfef.es/sites/default/files/styles/noticias_image_content/public/n/once-frente-a-eslovaquia-2306.jpg.webp?itok=49-FJLtI"
   },
   {
     "nombre": "Sistema 4-3-3",
-    "imagen": ""
+    "imagen": "https://media.urgente24.com/p/4dc94d1ead8d22e9d9c79b751c36cc79/adjuntos/319/imagenes/002/976/0002976018/1200x675/smart/formation-4-3-3webp.webp"
   },
   {
     "nombre": "Pretemporada",
-    "imagen": ""
+    "imagen": "https://bcoach.app/wp-content/uploads/2022/10/ejercicios-futbol-pretemporada.jpg"
   },
   {
     "nombre": "Mercado de fichajes",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkpMcJTJX2O-fZvHWllTsWoisyzMFRURtH7Q&s"
   },
   {
     "nombre": "Cláusula",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ0HuaB44L8hussImStALAo0gYB46WSz299g&s"
   },
   {
     "nombre": "Traspaso",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_ux9KYdb9H-MkvRsF6b2LphwJjoIEfgtqw&s"
   },
   {
     "nombre": "Cesión",
-    "imagen": ""
+    "imagen": "https://cdn.resfu.com/media/img_news/afp_en_0bfdf6c327aee971a384779402a7be2223758f56.jpg"
   },
   {
     "nombre": "Sustitución",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFSmmLXrlKb9yS5gr1hyasDrYDRH5r6tZRXg&s"
   },
   {
     "nombre": "Larguero",
-    "imagen": ""
+    "imagen": "https://preview.redd.it/question-rant-when-i-kick-try-to-score-a-goal-a-football-v0-84twb5dz0h221.jpg?width=640&crop=smart&auto=webp&s=4a2429db5cc4881ba610031d96ba0f48ab1b6be4"
   },
   {
     "nombre": "Palo",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQ3rrNFckaY4X2-NfQdMPHksfUgsvvQeiiQ&s"
   },
   {
     "nombre": "Red",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvJkjo0OrhjpOFpZ64jt_49aP9Iw93TTlNow&s"
   },
   {
     "nombre": "Saque inicial",
-    "imagen": ""
+    "imagen": "https://images.ecestaticos.com/eDnQ8_3JxxB-UE5ZMBQqSeu5k3E=/3x85:1216x725/600x315/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F68a%2F289%2F4ee%2F68a2894ee3de44a45442365e324cb4fc.jpg"
   },
   {
     "nombre": "Tiempo añadido",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0Dcr5XajHahlYPLYMAF2Xp7i_YA-kTmIBA&s"
   }
 ]
