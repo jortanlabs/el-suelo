@@ -246,5 +246,17 @@
   {
     "nombre": "7-Eleven",
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/7-eleven_logo.svg/1280px-7-eleven_logo.svg.png"
+  },
+  {
+    "nombre": "La Plaza",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpONlKVnTASoZPNwd5LWzBkKA6iJJqqKWnRQ&s"
+  },
+  {
+    "nombre": "Pepco",
+    "imagen": "https://cdn.theorg.com/9281486b-5e2b-49ba-9cca-d59dd96a6896_thumb.jpg"
+  },
+  {
+    "nombre": "7-Eleven",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/7-eleven_logo.svg/1280px-7-eleven_logo.svg.png"
   }
 ]
