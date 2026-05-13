@@ -593,8 +593,10 @@ const BUILD = Date.now();
       if (e.deleted) continue;
       const nombre = e.nombre ?? orig;
       const imagen = e.imagen !== undefined ? e.imagen : (resMap[orig] ?? null);
-      if (!imagen) continue;
-      result.push({ nombre, imagen });
+      // Antes filtrábamos items sin imagen (continue) y se perdían al publicar.
+      // Ahora los guardamos con imagen vacía para conservar el slot — el juego
+      // ya filtra los items sin imagen al cargarlos.
+      result.push({ nombre, imagen: imagen || "" });
     }
     return result;
   }
