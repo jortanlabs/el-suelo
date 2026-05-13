@@ -221,6 +221,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         <p id="preduel-nombre-cat" class="font-titulo font-bold text-2xl text-[#e8e8ff] text-center mb-8"></p>
         <button id="preduel-empezar" class="floor-btn floor-btn-a font-titulo font-bold text-xl px-8 py-4 hidden">¡A jugar! →</button>
         <p id="preduel-espera" class="text-[#7b9ef5] font-titulo text-sm hidden">Esperando al otro jugador...</p>
+        <button id="preduel-volver" class="mt-4 font-titulo text-sm text-[#7b9ef5] hover:text-[#e8e8ff] transition-colors underline hidden">← Volver al tablero</button>
       </div>
     </section>
 
@@ -885,6 +886,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       const esAtacante = e.preduelEsAtacante ?? false;
       $("preduel-empezar").classList.toggle("hidden", !esAtacante);
       $("preduel-espera").classList.toggle("hidden", esAtacante);
+      $("preduel-volver").classList.toggle("hidden", !esAtacante);
       $("preduel-overlay").classList.remove("hidden");
       mostrar(pTablero);
     } else if (e.fase === "final") {
@@ -1185,6 +1187,10 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     } else if (d.tipo === "iniciar-duelo") {
       $("preduel-overlay").classList.add("hidden");
       atacarCasilla(casillaDuelo);
+    } else if (d.tipo === "cancelar-preduel") {
+      $("preduel-overlay").classList.add("hidden");
+      casillaDuelo = -1;
+      sync({ fase: "tablero", nombreA, nombreB, modo, casillas: casillasSync, casillaDuelo: -1, tableroAtacante });
     }
   }
 
@@ -1379,6 +1385,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     $("preduel-nombre-cat").textContent = c.catNombre;
     $("preduel-empezar").classList.remove("hidden");
     $("preduel-espera").classList.add("hidden");
+    $("preduel-volver").classList.remove("hidden");
     $("preduel-overlay").classList.remove("hidden");
     sync({ fase: "preduel", nombreA, nombreB, modo, casillaDuelo: idx, casillas: casillasSync, tableroAtacante, preduelEmoji: c.catEmoji, preduelNombreCat: c.catNombre, preduelEsAtacante: tableroAtacante !== rolPropio });
   }
@@ -1387,6 +1394,15 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     $("preduel-overlay").classList.add("hidden");
     if (rol === "host") atacarCasilla(casillaDuelo);
     else accion("iniciar-duelo");
+  });
+  $("preduel-volver").addEventListener("click", () => {
+    $("preduel-overlay").classList.add("hidden");
+    if (rol === "host") {
+      casillaDuelo = -1;
+      sync({ fase: "tablero", nombreA, nombreB, modo, casillas: casillasSync, casillaDuelo: -1, tableroAtacante });
+    } else {
+      accion("cancelar-preduel");
+    }
   });
 
   async function atacarCasilla(idx: number) {

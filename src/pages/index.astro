@@ -220,6 +220,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         <div id="preduel-emoji" class="text-6xl my-2"></div>
         <p id="preduel-nombre-cat" class="font-titulo font-bold text-2xl text-[#e8e8ff] text-center mb-8"></p>
         <button id="preduel-empezar" class="floor-btn floor-btn-a font-titulo font-bold text-xl px-8 py-4">¡A jugar! →</button>
+        <button id="preduel-volver" class="mt-4 font-titulo text-sm text-[#7b9ef5] hover:text-[#e8e8ff] transition-colors underline">← Volver al tablero</button>
       </div>
     </section>
 
@@ -942,6 +943,10 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   $("preduel-empezar").addEventListener("click", () => {
     $("preduel-overlay").classList.add("hidden");
     atacarCasilla(casillaDuelo);
+  });
+  $("preduel-volver").addEventListener("click", () => {
+    $("preduel-overlay").classList.add("hidden");
+    casillaDuelo = -1;
   });
 
   async function atacarCasilla(idx: number) {
