@@ -1462,7 +1462,8 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       mostrar(pEntrada);
       return;
     }
-    // Durante una partida activa (tablero o juego), volver al menú con confirmación
+    // Durante una partida activa (tablero o juego), volver a la pantalla anterior
+    // (donde el host elige modo + categoría), con confirmación
     if (!pTablero.classList.contains("hidden") || !pJuego.classList.contains("hidden")) {
       const ok = await pedirConfirmacionSalir(
         "¿Volver al menú?",
@@ -1475,9 +1476,13 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       $("preduel-overlay").classList.add("hidden");
       $("overlay-acierto").classList.add("hidden");
       $("overlay-pase").classList.add("hidden");
-      // El host avisa al guest de que vuelven al menú
-      if (rol === "host") sync({ fase: "sala", nombreA, nombreB, modo });
-      mostrar(pSala);
+      // Host vuelve al setup (elegir modo/categoría); guest pasa a "esperando"
+      if (rol === "host") {
+        sync({ fase: "setup-espera", nombreA, nombreB, modo });
+        mostrar(pSetup);
+      } else {
+        mostrar(pSetupGuest);
+      }
       return;
     }
     // Desde sala/setup/loader/final: salir de la sala por completo

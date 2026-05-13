@@ -1273,10 +1273,13 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     if (!pModo.classList.contains("hidden")) { mostrar(pBienvenida); return; }
     if (!pSetup.classList.contains("hidden")) { mostrar(pModo); return; }
     if (!pCategoria.classList.contains("hidden")) { mostrar(pSetup); return; }
-    // Desde loader/tablero/juego/final → volver al menú
+    // Desde loader/tablero/juego/final → volver a la pantalla anterior al duelo:
+    // - Rápida: a la pantalla de elegir tema (categoría)
+    // - Tablero: a elegir modo (no hay paso de categoría)
     pararVoz();
     pararTimer();
-    mostrar(pBienvenida);
+    if (modo === "rapida") mostrar(pCategoria);
+    else mostrar(pModo);
   });
 
   function lanzarConfeti() {
