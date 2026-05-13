@@ -432,8 +432,11 @@ export async function cargarMezclaCine(slugs: string[]): Promise<ItemFloor[]> {
 }
 
 const PUB_TTL_MS = 60 * 1000; // 1 minuto — para que cambios en /preview se vean rápido
-const PUB_CACHE_KEY = "juegario:publicadas:v2";
+const PUB_CACHE_KEY = "juegario:publicadas:v3";
 
+// Lee listas.json (generado por scripts/generar-listas.mjs en build), que
+// solo contiene las subcategorías con ≥8 items con imagen. Fallback a
+// publicadas.json si no existe (deploys antiguos).
 export async function cargarPublicadas(): Promise<string[]> {
   try {
     const raw = localStorage.getItem(PUB_CACHE_KEY);
@@ -443,7 +446,8 @@ export async function cargarPublicadas(): Promise<string[]> {
         if (Date.now() < expira && Array.isArray(data)) return data;
       } catch { try { localStorage.removeItem(PUB_CACHE_KEY); } catch {} }
     }
-    const res = await fetch("/data/publicadas.json");
+    let res = await fetch("/data/listas.json");
+    if (!res.ok) res = await fetch("/data/publicadas.json");
     if (!res.ok) return [];
     const data: string[] = await res.json();
     if (!Array.isArray(data)) return [];
