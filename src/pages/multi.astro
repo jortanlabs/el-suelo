@@ -1168,16 +1168,18 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           ultimoVozTimestamp = ahora;
           try { canal.trigger("client-voz", { texto }); } catch {}
         }
-        // Comando de voz: "paso" / "pasar" → registrar pase
-        const palabra = texto.toLowerCase().trim().replace(/[.,!¡?¿]/g, "");
-        if (palabra === "paso" || palabra === "pasar" || palabra === "pasa" || palabra === "pasando") {
-          if (rol === "host") registrarPase();
-          else accion("pase");
-          return;
-        }
+        // Prioridad 1: si lo dicho contiene la respuesta correcta, acierto
         if (aciertoFlexible(texto, item.nombre, categoriaActual)) {
           if (rol === "host") registrarAcierto();
           else accion("acierto");
+          return;
+        }
+        // Prioridad 2: comando de voz "paso/pasar" como última palabra de la frase
+        const palabras = texto.toLowerCase().trim().replace(/[.,!¡?¿;:]/g, "").split(/\s+/).filter(Boolean);
+        const ultima = palabras[palabras.length - 1] || "";
+        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "pasando" || ultima === "siguiente") {
+          if (rol === "host") registrarPase();
+          else accion("pase");
         }
       },
       onError: (err) => {

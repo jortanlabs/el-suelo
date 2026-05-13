@@ -1140,13 +1140,18 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         const item = items[indice];
         if (!item) return;
         $("texto-voz").textContent = `"${texto}"`;
-        // Comando de voz: si dice EXACTAMENTE "paso" o "pasar", registra pase
-        const palabra = texto.toLowerCase().trim().replace(/[.,!¡?¿]/g, "");
-        if (palabra === "paso" || palabra === "pasar" || palabra === "pasa" || palabra === "pasando") {
-          registrarPase();
+        // Prioridad 1: si lo dicho contiene la respuesta correcta, acierto
+        if (aciertoFlexible(texto, item.nombre, categoriaActual)) {
+          registrarAcierto();
           return;
         }
-        if (aciertoFlexible(texto, item.nombre, categoriaActual)) registrarAcierto();
+        // Prioridad 2: comando de voz "paso/pasar" como última palabra de la frase
+        // (p.ej. "no lo sé paso", "guepardo paso", "eh... paso")
+        const palabras = texto.toLowerCase().trim().replace(/[.,!¡?¿;:]/g, "").split(/\s+/).filter(Boolean);
+        const ultima = palabras[palabras.length - 1] || "";
+        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "pasando" || ultima === "siguiente") {
+          registrarPase();
+        }
       },
       onError: (err) => {
         if (bloqueado || terminado) return;
