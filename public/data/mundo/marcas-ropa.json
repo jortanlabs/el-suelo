@@ -60,6 +60,10 @@
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg"
   },
   {
+    "nombre": "Camiseta de tirantes",
+    "imagen": "https://deportesmoya.es/234170-large_plus_default/camiseta-sin-mangas-joma-trail-helium-azul-turquesa-hombre.jpg"
+  },
+  {
     "nombre": "Bikini",
     "imagen": "https://phantom-telva.unidadeditorial.es/831bf012db57184abdcef832192959a8/resize/640/assets/multimedia/imagenes/2021/07/02/16252103483732.jpg"
   },
@@ -72,8 +76,8 @@
     "imagen": "https://dam.elcorteingles.es/producto/www-5063698063028-07.jpg"
   },
   {
-    "nombre": "Traje de chaqueta",
-    "imagen": ""
+    "nombre": "Traje",
+    "imagen": "https://www.bragard.es/14489-large_default/chaqueta-traje-leo.jpg"
   },
   {
     "nombre": "Bufanda",
@@ -81,74 +85,170 @@
   },
   {
     "nombre": "Guantes",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4nVY_Cn-NP8TudsKy0Cem4kUc2tiqeWFyg&s"
   },
   {
     "nombre": "Gorro",
     "imagen": "https://s1.abcstatics.com/media/summum/2021/01/22/lockhatters-kUHF--1248x698@abc.jpg"
   },
   {
-    "nombre": "Pijama",
-    "imagen": ""
+    "nombre": "Blazer",
+    "imagen": "https://www.vila.com/dw/image/v2/BDTC_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw99e92eb9/pim-static/VL/14120662/14120662_MarsRed_003.jpg?sw=900&sh=1200&strip=false"
   },
   {
-    "nombre": "Chándal",
-    "imagen": ""
+    "nombre": "Gabardina",
+    "imagen": "https://e01-phantom-elmundo.uecdn.es/7bbc42da1d5a5da2984094e302e36441/resize/1200/f/webp/assets/multimedia/imagenes/2021/03/03/16147912275856.jpg"
+  },
+  {
+    "nombre": "Camiseta de tirantes",
+    "imagen": "https://deportesmoya.es/234170-large_plus_default/camiseta-sin-mangas-joma-trail-helium-azul-turquesa-hombre.jpg"
+  },
+  {
+    "nombre": "Traje",
+    "imagen": "https://www.bragard.es/14489-large_default/chaqueta-traje-leo.jpg"
+  },
+  {
+    "nombre": "Bragas",
+    "imagen": "https://ropainterioronline.com/blog/wp-content/uploads/2023/04/Tipos-de-bragas.jpeg"
+  },
+  {
+    "nombre": "Calzoncillos",
+    "imagen": "https://minimalismbrand.com/cdn/shop/files/pack-tres-calzoncillos-boxer-algodon-organico-1_2048x.jpg?v=1732704123"
+  },
+  {
+    "nombre": "Sujetador",
+    "imagen": "https://pix.bonprix.es/imgc/0/0/1/2/0/1/7/8/1/5/_640/12017815/sujetador-de-camiseta-con-tirantes-acolchados-negro.jpg"
+  },
+  {
+    "nombre": "Peto",
+    "imagen": "https://www.hola.com/horizon/square/30b1c4f6173a-petos-tendencia-t.jpg"
+  },
+  {
+    "nombre": "Anorak",
+    "imagen": "https://www.kiabi.es/images/anorak-ligero-con-capucha-rosa-bqe61_7_hd1.jpg"
+  },
+  {
+    "nombre": "Pijama",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqWc6XObgn1JQyR8yse8RzGCZhHCEU4Ol_A&s"
+  },
+  {
+    "nombre": "Picardías",
+    "imagen": "https://cdn11.bigcommerce.com/s-dqc1opj0ki/images/stencil/1280x1280/products/2884/13115/CFILPD0049220_NRB010_1__83198.1675777613.jpg?c=1"
+  },
+  {
+    "nombre": "Short",
+    "imagen": "https://www.lavanguardia.com/files/image_449_220/uploads/2020/08/22/5faa5b9aaa15a.jpeg"
+  },
+  {
+    "nombre": "Leggins",
+    "imagen": "https://m.media-amazon.com/images/I/81Jq2hmADvL._AC_UY1000_.jpg"
+  },
+  {
+    "nombre": "Kimono",
+    "imagen": "https://mo-mo.gr/wp-content/uploads/2024/12/8-7.jpg"
   },
   {
     "nombre": "Polo",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQx0-WusYMsUeFnWneU5uvz6z_QQB2juqJBg&s"
+  },
+  {
+    "nombre": "Medias",
+    "imagen": "https://inimar.com/media/catalog/product/cache/35217421477cdf5eff25082a49527f2f/p/a/pantis-push-up-30d-pompea-90771417-nero-01.jpg"
+  },
+  {
+    "nombre": "Zapato",
+    "imagen": "https://chaposhoes.com/74404-large_default/zapatos-cuero-fluchos-f2163.jpg"
+  },
+  {
+    "nombre": "Cuñas",
+    "imagen": "https://soleramoda.com/cdn/shop/files/c50f43eae072f767042c2728e11c8cab.jpg?v=1713436201&width=800"
+  },
+  {
+    "nombre": "Manoletinas",
+    "imagen": "https://bouttye.com/11481-thickbox_default/manoletinas-planas-mujer-piel-lacito-7000-marino-de-casual.jpg"
+  },
+  {
+    "nombre": "Sandalias",
+    "imagen": "https://ds8b7s9pxr3f1.cloudfront.net/img/p/0/4/1/16311140-22111571-thickbox.jpg"
+  },
+  {
+    "nombre": "Chancletas",
+    "imagen": "https://www.soyvisual.org/sites/default/files/styles/twitter_card/public/images/photos/rop_0048-p.jpg?itok=NGUx1pxj"
   },
   {
     "nombre": "Chaleco",
     "imagen": "https://www.valento.es/images_valento/articles/CHVABAR/CHVABAR.jpg"
   },
   {
-    "nombre": "Bermudas",
-    "imagen": ""
+    "nombre": "Bragas",
+    "imagen": "https://ropainterioronline.com/blog/wp-content/uploads/2023/04/Tipos-de-bragas.jpeg"
   },
   {
-    "nombre": "Chubasquero",
-    "imagen": ""
+    "nombre": "Calzoncillos",
+    "imagen": "https://minimalismbrand.com/cdn/shop/files/pack-tres-calzoncillos-boxer-algodon-organico-1_2048x.jpg?v=1732704123"
   },
   {
-    "nombre": "Pajarita",
-    "imagen": ""
+    "nombre": "Sujetador",
+    "imagen": "https://pix.bonprix.es/imgc/0/0/1/2/0/1/7/8/1/5/_640/12017815/sujetador-de-camiseta-con-tirantes-acolchados-negro.jpg"
   },
   {
-    "nombre": "Esmoquin",
-    "imagen": ""
+    "nombre": "Peto",
+    "imagen": "https://www.hola.com/horizon/square/30b1c4f6173a-petos-tendencia-t.jpg"
   },
   {
-    "nombre": "Vestido de novia",
-    "imagen": ""
+    "nombre": "Anorak",
+    "imagen": "https://www.kiabi.es/images/anorak-ligero-con-capucha-rosa-bqe61_7_hd1.jpg"
   },
   {
-    "nombre": "Mono",
-    "imagen": ""
+    "nombre": "Pijama",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqWc6XObgn1JQyR8yse8RzGCZhHCEU4Ol_A&s"
   },
   {
-    "nombre": "Tirantes",
-    "imagen": ""
+    "nombre": "Picardías",
+    "imagen": "https://cdn11.bigcommerce.com/s-dqc1opj0ki/images/stencil/1280x1280/products/2884/13115/CFILPD0049220_NRB010_1__83198.1675777613.jpg?c=1"
   },
   {
-    "nombre": "Camisón",
-    "imagen": ""
+    "nombre": "Short",
+    "imagen": "https://www.lavanguardia.com/files/image_449_220/uploads/2020/08/22/5faa5b9aaa15a.jpeg"
   },
   {
-    "nombre": "Pareo",
-    "imagen": ""
+    "nombre": "Leggins",
+    "imagen": "https://m.media-amazon.com/images/I/81Jq2hmADvL._AC_UY1000_.jpg"
   },
   {
-    "nombre": "Pañuelo",
-    "imagen": ""
+    "nombre": "Kimono",
+    "imagen": "https://mo-mo.gr/wp-content/uploads/2024/12/8-7.jpg"
   },
   {
-    "nombre": "Babi",
-    "imagen": ""
+    "nombre": "Polo",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQx0-WusYMsUeFnWneU5uvz6z_QQB2juqJBg&s"
   },
   {
-    "nombre": "Poncho",
-    "imagen": ""
+    "nombre": "Medias",
+    "imagen": "https://inimar.com/media/catalog/product/cache/35217421477cdf5eff25082a49527f2f/p/a/pantis-push-up-30d-pompea-90771417-nero-01.jpg"
+  },
+  {
+    "nombre": "Zapato",
+    "imagen": "https://chaposhoes.com/74404-large_default/zapatos-cuero-fluchos-f2163.jpg"
+  },
+  {
+    "nombre": "Cuñas",
+    "imagen": "https://soleramoda.com/cdn/shop/files/c50f43eae072f767042c2728e11c8cab.jpg?v=1713436201&width=800"
+  },
+  {
+    "nombre": "Manoletinas",
+    "imagen": "https://bouttye.com/11481-thickbox_default/manoletinas-planas-mujer-piel-lacito-7000-marino-de-casual.jpg"
+  },
+  {
+    "nombre": "Sandalias",
+    "imagen": "https://ds8b7s9pxr3f1.cloudfront.net/img/p/0/4/1/16311140-22111571-thickbox.jpg"
+  },
+  {
+    "nombre": "Chancletas",
+    "imagen": "https://www.soyvisual.org/sites/default/files/styles/twitter_card/public/images/photos/rop_0048-p.jpg?itok=NGUx1pxj"
+  },
+  {
+    "nombre": "Chaleco",
+    "imagen": "https://www.valento.es/images_valento/articles/CHVABAR/CHVABAR.jpg"
   }
 ]
