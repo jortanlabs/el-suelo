@@ -162,6 +162,10 @@ const slugsInfantiles: string[] = [
       <div class="relative w-full max-w-sm aspect-square floor-card overflow-hidden flex items-center justify-center bg-[#050c1e]">
         <img id="reto-imagen" alt="" class="hidden w-full h-full object-contain" />
         <div id="reto-imagen-ph" class="text-4xl text-[#163575]">📷</div>
+        <div id="reto-overlay-respuesta" class="hidden absolute inset-0 flex flex-col items-center justify-center px-4 text-center" style="background:rgba(255,29,206,0.92)">
+          <p class="font-titulo text-xs text-[#07070f] uppercase tracking-widest font-bold">⏭ Paso · Era</p>
+          <p id="reto-overlay-nombre" class="font-titulo text-2xl font-bold text-[#07070f] mt-2"></p>
+        </div>
       </div>
       <p id="reto-texto-voz" class="font-titulo text-sm text-[#a8c5ff] text-center min-h-[1.5rem]"></p>
       <button id="reto-pasar" class="floor-btn font-titulo font-bold text-lg px-8 py-3" style="color:#a8c5ff;border-color:#a8c5ff">⏭ Paso (–3s)</button>
@@ -1851,14 +1855,28 @@ const slugsInfantiles: string[] = [
   }
 
   function retoPaso() {
+    if (retoBloqueado) return;
+    retoBloqueado = true;
     // Penalización: restar PENALIZACION_PASE_S segundos del tiempo restante
     retoMsRestantes = Math.max(0, retoMsRestantes - PENALIZACION_PASE_S * 1000);
-    // Reiniciar el tick con el nuevo restante
     pararRetoTick();
-    arrancarRetoTickConRestante(retoMsRestantes);
     sonidoPase();
-    retoIndice++;
-    mostrarImagenReto();
+    if (ajustes.vibracion) try { navigator.vibrate?.([30, 30, 30]); } catch {}
+    // Mostrar la respuesta del item que se pasa durante 900 ms (timer pausado:
+    // ya cuesta -3s, no penalizamos doblemente el tiempo de aprender).
+    const nombre = retoItems[retoIndice].nombre.replace(/\s*\([^)]+\)\s*$/, "");
+    $("reto-overlay-nombre").textContent = nombre;
+    $("reto-overlay-respuesta").classList.remove("hidden");
+    ($("reto-pasar") as HTMLButtonElement).disabled = true;
+    setTimeout(() => {
+      $("reto-overlay-respuesta").classList.add("hidden");
+      ($("reto-pasar") as HTMLButtonElement).disabled = false;
+      retoBloqueado = false;
+      retoIndice++;
+      if (retoMsRestantes <= 0) { finalizarReto(); return; }
+      mostrarImagenReto();
+      arrancarRetoTickConRestante(retoMsRestantes);
+    }, 900);
   }
 
   function arrancarRetoTickConRestante(ms: number) {
