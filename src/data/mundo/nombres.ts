@@ -208,6 +208,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       // Oceanía
       "Australia", "Nueva Zelanda",
     ],
+    paraNinos: true,
   },
   {
     slug: "geo-monumentos",
@@ -263,6 +264,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Nigeria", "Egipto", "Marruecos", "Arabia Saudí", "Colombia",
       "Chile", "Perú", "Venezuela", "Cuba", "Nueva Zelanda", "Islandia",
     ],
+    paraNinos: true,
   },
   {
     slug: "geo-capitales",
@@ -285,6 +287,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "El Cairo (Egipto)", "Riad (Arabia Saudí)", "Oslo (Noruega)",
       "Estocolmo (Suecia)", "Helsinki (Finlandia)", "Dublín (Irlanda)",
     ],
+    paraNinos: true,
   },
 
   {
@@ -1204,6 +1207,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Microsoft","Volkswagen","IKEA","LEGO","Disney",
       "Lacoste","Puma","Reebok","Red Bull","Shell",
     ],
+    paraNinos: true,
   },
   {
     slug: "marcas-supermercados",
@@ -1268,6 +1272,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Madelman","Geyper Man","Famobil","My Little Pony","Tamagotchi",
       "Beyblade","Trivial Pursuit","Risk","Monopoly","Parchís",
     ],
+    paraNinos: true,
   },
   // ─── Sección: Productos ──────────────────────────────────────
   {
@@ -1458,6 +1463,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Wombat", "Ornitorrinco", "Suricata", "Hiena Manchada", "Nutria Marina",
       "Foca Leopardo", "León Marino",
     ],
+    paraNinos: true,
   },
   {
     slug: "animales-maritimos",
@@ -1476,6 +1482,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Langosta del Caribe", "Cangrejo Real de Alaska", "Almeja Gigante",
       "Morsa", "Pingüino Africano", "Manatí del Caribe",
     ],
+    paraNinos: true,
   },
   {
     slug: "animales-aves",
@@ -1494,6 +1501,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Pájaro Carpintero", "Golondrina Común", "Cacatúa Blanca",
       "Kookaburra", "Ibis Sagrado", "Espátula Rosada", "Flamenco Enano",
     ],
+    paraNinos: true,
   },
   {
     slug: "animales-insectos",
@@ -1512,6 +1520,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Chinche Acuática", "Tábano", "Mosca de las Frutas",
       "Tarántula Roja", "Escorpión Emperador",
     ],
+    paraNinos: true,
   },
 
   // ── PLANTAS ──────────────────────────────────────────────────────
@@ -1542,6 +1551,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Bambú Gigante", "Magnolia", "Arce Japonés", "Tejo Común",
       "Acacia Amarilla", "Jacarandá", "Ceiba Pentandra", "Liquidámbar",
     ],
+    paraNinos: true,
   },
   {
     slug: "plantas-flores",
@@ -1559,6 +1569,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Flor de Loto", "Nomeolvides", "Flor de Cerezo (Sakura)",
       "Flor de Pascua", "Protea",
     ],
+    paraNinos: true,
   },
   {
     slug: "plantas-frutos",
@@ -1576,6 +1587,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Maracuyá", "Lichi", "Fruta del Dragón (Pitaya)", "Caqui",
       "Carambola", "Tamarindo", "Guayaba",
     ],
+    paraNinos: true,
   },
 
   // ── CIENCIA ──────────────────────────────────────────────────────
@@ -1827,6 +1839,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Párpado", "Mejilla", "Nariz", "Oreja", "Dedo",
       "Talón", "Esternón",
     ],
+    paraNinos: true,
   },
   {
     slug: "personas-pelo",
@@ -1843,6 +1856,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Bob", "Pixie", "Undercut", "Melena", "Calvo",
       "Rapado", "Mechas", "Degradado", "Permanente", "Moicano",
     ],
+    paraNinos: true,
   },
   {
     slug: "personas-emociones",
@@ -1859,6 +1873,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Ansiedad", "Calma", "Confianza", "Frustración", "Nostalgia",
       "Orgullo", "Culpa", "Curiosidad", "Esperanza", "Envidia",
     ],
+    paraNinos: true,
   },
   {
     slug: "personas-familia",
@@ -1876,6 +1891,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Sobrina", "Cuñado", "Cuñada", "Suegro", "Suegra",
       "Yerno", "Nuera", "Padrastro", "Madrastra",
     ],
+    paraNinos: true,
   },
   // ─── Sección: Vida ─────────────────────────────────────────
   {

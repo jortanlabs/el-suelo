@@ -84,6 +84,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     .filter((s) => !s.esMetaCategoria && !!s.nombres)
     .map((s) => [s.slug, bloqueEmojiMap[s.bloque] ?? "🌍"])
 );
+
+// Slugs marcados como aptos para el modo infantil (chip "🧒 Infantil")
+const slugsInfantiles: string[] = [
+  ...subcategorias.filter((s) => s.paraNinos && !!s.nombres && !s.esMetaCategoria).map((s) => s.slug),
+  ...subcategoriasMundo.filter((s) => s.paraNinos && !!s.nombres && !s.esMetaCategoria).map((s) => s.slug),
+];
 ---
 
 <Base titulo="El Suelo" descripcion="Adivina más rápido que el rival. Gana al reloj.">
@@ -96,6 +102,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   <div id="datos-mundo-nombres" data-json={JSON.stringify(mundoSlugsNombres)} class="hidden"></div>
   <div id="datos-mundo-grupo" data-json={JSON.stringify(mundoSlugsGrupo)} class="hidden"></div>
   <div id="datos-mundo-emoji" data-json={JSON.stringify(mundoSlugsEmoji)} class="hidden"></div>
+  <div id="datos-infantiles" data-json={JSON.stringify(slugsInfantiles)} class="hidden"></div>
 
   <main id="floor-root" class="h-dvh flex flex-col overflow-hidden">
     <nav class="px-4 pb-3 flex items-center border-b-2 border-[#2a5090]" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
@@ -169,6 +176,18 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       </div>
     </section>
 
+    <!-- VARIANTE DEL TABLERO (Adultos / Infantil) -->
+    <section id="pantalla-tablero-variante" class="flex-1 flex flex-col items-center justify-center px-6 py-6 hidden gap-8">
+      <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight">¿Qué tablero?</h2>
+      <div class="w-full max-w-xs flex flex-col gap-4">
+        <button id="tablero-adultos" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-2xl py-6 uppercase">🎯 Adultos</button>
+        <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">9 casillas de cualquier tema publicado.</p>
+        <button id="tablero-infantil" class="floor-btn w-full font-titulo font-bold text-2xl py-6 uppercase text-[#a8c5ff]" style="border-color:#a8c5ff">🧒 Infantil</button>
+        <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">Solo temas aptos para niños (Disney, animales, banderas…).</p>
+      </div>
+      <p id="error-tablero-variante" class="hidden text-sm text-[#ff1dce] text-center font-bold"></p>
+    </section>
+
     <!-- ELEGIR CATEGORÍA (solo para modo rápida) -->
     <section id="pantalla-categoria" class="flex-1 flex flex-col items-center justify-center px-6 py-6 hidden gap-6">
       <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight">Elige tema</h2>
@@ -180,6 +199,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         <button data-filtro="compras" class="floor-btn px-3 py-5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🛒<br>Compras</button>
         <button data-filtro="personas" class="floor-btn px-3 py-5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🧑<br>Personas</button>
         <button data-filtro="aleatorio" class="floor-btn floor-btn-gold col-span-2 px-3 py-5 text-xl font-titulo font-bold">🎲 Aleatorio</button>
+        <button data-filtro="infantil" class="floor-btn col-span-2 px-3 py-4 text-lg font-titulo font-bold text-[#a8c5ff]" style="border-color:#a8c5ff">🧒 Infantil</button>
       </div>
       <p id="error-categoria" class="hidden text-sm text-[#ff1dce] text-center font-bold"></p>
     </section>
@@ -630,6 +650,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 
   const pBienvenida = $("pantalla-bienvenida");
   const pModo = $("pantalla-modo");
+  const pTableroVariante = $("pantalla-tablero-variante");
   const pSetup = $("pantalla-setup");
   const pCategoria = $("pantalla-categoria");
   const pLoader = $("pantalla-loader");
@@ -638,7 +659,7 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   const pFinal = $("pantalla-final");
 
   function mostrar(p: HTMLElement) {
-    [pBienvenida, pModo, pSetup, pCategoria, pLoader, pTablero, pJuego, pFinal].forEach((s) => s.classList.add("hidden"));
+    [pBienvenida, pModo, pTableroVariante, pSetup, pCategoria, pLoader, pTablero, pJuego, pFinal].forEach((s) => s.classList.add("hidden"));
     p.classList.remove("hidden");
     // El botón "← Volver" solo es útil cuando estás dentro del flujo
     const esSuperficial = p === pBienvenida;
@@ -666,11 +687,26 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
   });
   $("modo-tablero-elegir").addEventListener("click", () => {
     modo = "tablero"; modoElegido = true;
+    mostrar($("pantalla-tablero-variante"));
+  });
+  $("tablero-adultos").addEventListener("click", () => {
+    tableroInfantil = false;
+    mostrar(pSetup);
+  });
+  $("tablero-infantil").addEventListener("click", () => {
+    tableroInfantil = true;
     mostrar(pSetup);
   });
 
+  // Lista de slugs marcados como infantiles (compartida con tablero y rápida)
+  const slugsInfantiles: string[] = JSON.parse(
+    document.getElementById("datos-infantiles")!.dataset.json!,
+  );
+  const setInfantiles = new Set(slugsInfantiles);
+  let tableroInfantil = false;
+
   // ── Filtro de categoría (paso 4 para Rápida) ──────────────
-  let categoriaFiltro: "cine" | "mundo" | "deportes" | "arte" | "compras" | "personas" | "aleatorio" = "aleatorio";
+  let categoriaFiltro: "cine" | "mundo" | "deportes" | "arte" | "compras" | "personas" | "aleatorio" | "infantil" = "aleatorio";
 
   function arrancarConCategoria(filtro: typeof categoriaFiltro) {
     categoriaFiltro = filtro;
@@ -763,9 +799,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     const errEl = $("error-setup");
     errEl.classList.add("hidden");
     const pub = await cargarPublicadas();
-    const pool = construirPool(pub);
+    let pool = construirPool(pub);
+    if (tableroInfantil) pool = pool.filter((s) => setInfantiles.has(s));
     if (pool.length === 0) {
-      errEl.textContent = "No hay categorías publicadas aún.";
+      errEl.textContent = tableroInfantil
+        ? "No hay temas infantiles publicados aún."
+        : "No hay categorías publicadas aún.";
       errEl.classList.remove("hidden"); return;
     }
     if (pool.length < 9) {
@@ -786,10 +825,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
       ? pool.filter((s) => !esMundoSlug(s))
       : categoriaFiltro === "aleatorio"
       ? pool
+      : categoriaFiltro === "infantil"
+      ? pool.filter((s) => setInfantiles.has(s))
       : pool.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
 
     if (poolFiltrado.length === 0) {
-      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas" };
+      const _nF: Record<string, string> = { mundo: "El Mundo", deportes: "Deportes", arte: "Arte", compras: "Compras", personas: "Personas", infantil: "Infantil" };
       errEl.textContent = _nF[categoriaFiltro]
         ? "No hay categorías de " + _nF[categoriaFiltro] + " publicadas aún."
         : "No hay categorías publicadas aún.";
@@ -1376,7 +1417,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     // Navegación hacia atrás respetando el orden del flujo
     if (!pBienvenida.classList.contains("hidden")) return;
     if (!pModo.classList.contains("hidden")) { mostrar(pBienvenida); return; }
-    if (!pSetup.classList.contains("hidden")) { mostrar(pModo); return; }
+    const pTabVar = $("pantalla-tablero-variante");
+    if (!pTabVar.classList.contains("hidden")) { mostrar(pModo); return; }
+    if (!pSetup.classList.contains("hidden")) {
+      mostrar(modo === "tablero" ? pTabVar : pModo);
+      return;
+    }
     if (!pCategoria.classList.contains("hidden")) { mostrar(pSetup); return; }
     // Desde loader/tablero/juego/final → volver a la pantalla anterior al duelo:
     // - Rápida: a la pantalla de elegir tema (categoría)

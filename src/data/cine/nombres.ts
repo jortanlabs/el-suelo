@@ -14,6 +14,7 @@ export interface SubcategoriaNombres {
   derivadoDe?: string; // slug base del que se deriva en tiempo real
   modoDerivado?: "pelicula"; // extrae el contenido entre paréntesis como respuesta
   dataPath?: string; // carpeta dentro de public/data/ ("cine" por defecto, "mundo" para El Mundo)
+  paraNinos?: boolean; // true = apta para el modo infantil (chip "🧒 Infantil")
 }
 
 export interface BloqueInfo {
@@ -167,6 +168,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       "Mérida (Brave)",
       "Mushu (Mulan)",
     ],
+    paraNinos: true,
   },
   {
     slug: "disney-personajes-pelicula",
@@ -227,6 +229,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       "Gaston (La Bella y la Bestia)",
       "Cruella de Vil",
     ],
+    paraNinos: true,
   },
   {
     slug: "disney-villanos-pelicula",
@@ -331,6 +334,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       // Turning Red
       "Meilin (Turning Red)",
     ],
+    paraNinos: true,
   },
   {
     slug: "pixar-pelicula",
@@ -426,6 +430,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       // Penguins standalone
       "El Pingüino Marlowe",
     ],
+    paraNinos: true,
   },
   {
     slug: "dreamworks-pelicula",
@@ -510,6 +515,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       "Robot Guerrero (El Castillo en el Cielo)",
       "Espíritu del Árbol (Mi Vecino Totoro)",
     ],
+    paraNinos: true,
   },
   {
     slug: "ghibli-pelicula",
@@ -617,6 +623,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       "Mimikyu",
       "Lycanroc",
     ],
+    paraNinos: true,
   },
   {
     slug: "nickelodeon",
@@ -670,6 +677,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       "CatDog",
       "Lincoln Loud",
     ],
+    paraNinos: true,
   },
   {
     slug: "cartoon-network",
@@ -731,6 +739,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       "Eustace Bagge",
       "Muriel Bagge",
     ],
+    paraNinos: true,
   },
   {
     slug: "anime",
@@ -871,6 +880,7 @@ export const subcategorias: SubcategoriaNombres[] = [
       // Maya la abeja
       "Maya the Bee",
     ],
+    paraNinos: true,
   },
 
   // ─────────────────────────────────────────────

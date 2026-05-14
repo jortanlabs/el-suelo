@@ -60,6 +60,12 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
 // Mapa combinado slug → nombre (para el JS)
 const todasSlugsNombres: Record<string, string> = { ...cineSlugsNombres, ...mundoSlugsNombres };
 
+// Slugs marcados como aptos para el modo infantil
+const slugsInfantiles: string[] = [
+  ...subcategorias.filter((s) => s.paraNinos && !!s.nombres && !s.esMetaCategoria).map((s) => s.slug),
+  ...subcategoriasMundo.filter((s) => s.paraNinos && !!s.nombres && !s.esMetaCategoria).map((s) => s.slug),
+];
+
 // La key de Pusher es pública por diseño (acaba en el JS del cliente). El
 // secret real es PUSHER_SECRET, server-side en /api/pusher-auth.
 const pusherKey = import.meta.env.PUBLIC_PUSHER_KEY || "d8b48a4d7d6cb146cf1e";
@@ -70,6 +76,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   <div id="datos-cine-nombres" data-json={JSON.stringify(todasSlugsNombres)} class="hidden"></div>
   <div id="datos-cine-derivados" data-json={JSON.stringify(cineSlugsDerivados)} class="hidden"></div>
   <div id="datos-cine-mezcla" data-json={JSON.stringify(cineSlugsMetaMezcla)} class="hidden"></div>
+  <div id="datos-infantiles" data-json={JSON.stringify(slugsInfantiles)} class="hidden"></div>
   <div id="datos-mundo-slugs" data-json={JSON.stringify(Object.keys(mundoSlugsNombres))} class="hidden"></div>
   <div id="datos-mundo-grupo" data-json={JSON.stringify(mundoSlugsGrupo)} class="hidden"></div>
   <div id="datos-mundo-emoji" data-json={JSON.stringify(mundoSlugsEmoji)} class="hidden"></div>
@@ -167,10 +174,15 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
               <button id="cat-compras" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🛒<br>Compras</button>
               <button id="cat-personas" class="floor-btn px-2 py-2.5 text-sm font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🧑<br>Personas</button>
               <button id="cat-aleatorio" class="floor-btn floor-cat-selected col-span-3 px-2 py-2.5 text-base font-titulo leading-tight">🎲 Aleatorio</button>
+              <button id="cat-infantil" class="floor-btn col-span-3 px-2 py-2.5 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🧒 Infantil</button>
             </div>
           </div>
-          <div id="nota-tablero" class="hidden floor-card-small px-4 py-3 border-[#ffcc0033]">
-            <p class="text-base text-[#ffcc00] font-titulo text-center">Cada casilla tendrá su propia categoría aleatoria</p>
+          <div id="seccion-tablero" class="hidden">
+            <label class="font-titulo font-bold text-[#a8c5ff] text-sm block mb-2 uppercase tracking-widest">¿Qué tablero?</label>
+            <div class="grid grid-cols-2 gap-2">
+              <button id="tab-adultos" class="floor-btn floor-cat-selected px-2 py-3 text-base font-titulo leading-tight">🎯 Adultos</button>
+              <button id="tab-infantil" class="floor-btn px-2 py-3 text-base font-titulo text-[#a8c5ff] leading-tight" style="border-color:#a8c5ff">🧒 Infantil</button>
+            </div>
           </div>
           <div class="flex gap-2">
             <button id="boton-empezar" class="floor-btn floor-btn-a flex-1 font-titulo font-bold text-xl px-6 py-4">¡A jugar! →</button>
@@ -610,13 +622,21 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   let tableroAtacante: "A" | "B" = "A";
 
   // ── Categoría ─────────────────────────────────────────────
-  let categoriaFiltro: "cine" | "mundo" | "deportes" | "arte" | "compras" | "personas" | "aleatorio" = "aleatorio";
+  type FiltroCat = "cine" | "mundo" | "deportes" | "arte" | "compras" | "personas" | "aleatorio" | "infantil";
+  let categoriaFiltro: FiltroCat = "aleatorio";
 
-  function seleccionarFiltro(filtro: "cine" | "mundo" | "deportes" | "arte" | "compras" | "personas" | "aleatorio") {
+  const slugsInfantiles: string[] = JSON.parse(
+    document.getElementById("datos-infantiles")!.dataset.json!,
+  );
+  const setInfantiles = new Set(slugsInfantiles);
+  let tableroInfantil = false;
+
+  function seleccionarFiltro(filtro: FiltroCat) {
     categoriaFiltro = filtro;
-    const btns = {
+    const btns: Record<FiltroCat, HTMLElement> = {
       cine: $("cat-cine"), mundo: $("cat-mundo"), deportes: $("cat-deportes"),
-      arte: $("cat-arte"), compras: $("cat-compras"), personas: $("cat-personas"), aleatorio: $("cat-aleatorio"),
+      arte: $("cat-arte"), compras: $("cat-compras"), personas: $("cat-personas"),
+      aleatorio: $("cat-aleatorio"), infantil: $("cat-infantil"),
     };
     for (const [k, btn] of Object.entries(btns)) {
       btn.classList.toggle("floor-cat-selected", k === filtro);
@@ -630,6 +650,15 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   $("cat-compras").addEventListener("click", () => seleccionarFiltro("compras"));
   $("cat-personas").addEventListener("click", () => seleccionarFiltro("personas"));
   $("cat-aleatorio").addEventListener("click", () => seleccionarFiltro("aleatorio"));
+  $("cat-infantil").addEventListener("click", () => seleccionarFiltro("infantil"));
+
+  function seleccionarTablero(infantil: boolean) {
+    tableroInfantil = infantil;
+    $("tab-adultos").classList.toggle("floor-cat-selected", !infantil);
+    $("tab-infantil").classList.toggle("floor-cat-selected", infantil);
+  }
+  $("tab-adultos").addEventListener("click", () => seleccionarTablero(false));
+  $("tab-infantil").addEventListener("click", () => seleccionarTablero(true));
 
   // ── Pusher helpers ─────────────────────────────────────────
   interface SyncEstado {
@@ -933,16 +962,16 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   $("modo-rapida").addEventListener("click", () => {
     modo = "rapida"; modoElegido = true;
     $("seccion-categoria").classList.remove("hidden");
-    $("nota-tablero").classList.add("hidden");
+    $("seccion-tablero").classList.add("hidden");
     $("modo-rapida").classList.add("floor-btn-a");
     $("modo-tablero").classList.remove("floor-btn-a");
   });
 
   $("modo-tablero").addEventListener("click", () => {
     modo = "tablero"; modoElegido = true;
-    // En tablero las categorías son aleatorias — no se elige filtro
+    // En tablero no se elige categoría, pero sí adulto/infantil
     $("seccion-categoria").classList.add("hidden");
-    $("nota-tablero").classList.remove("hidden");
+    $("seccion-tablero").classList.remove("hidden");
     $("modo-tablero").classList.add("floor-btn-a");
     $("modo-rapida").classList.remove("floor-btn-a");
   });
@@ -971,9 +1000,13 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       ? pool.filter((s) => !_esMundoS(s))
       : categoriaFiltro === "aleatorio"
       ? pool
+      : categoriaFiltro === "infantil"
+      ? pool.filter((s) => setInfantiles.has(s))
       : pool.filter((s) => mundoSlugsGrupo[s] === categoriaFiltro);
     if (poolFiltrado.length === 0) {
-      errEl.textContent = "No hay categorías publicadas para este filtro.";
+      errEl.textContent = categoriaFiltro === "infantil"
+        ? "No hay temas infantiles publicados aún."
+        : "No hay categorías publicadas para este filtro.";
       errEl.classList.remove("hidden"); return;
     }
     const _slug = poolFiltrado[Math.floor(Math.random() * poolFiltrado.length)];
@@ -1309,11 +1342,14 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   // ── Tablero (host) ─────────────────────────────────────────
   async function initTablero() {
     const pub = await cargarPublicadas();
-    const poolT = construirPool(pub);
+    let poolT = construirPool(pub);
+    if (tableroInfantil) poolT = poolT.filter((s) => setInfantiles.has(s));
     const _esM = (s: string) => mundoSlugsAll.includes(s);
     if (poolT.length === 0) {
       const errEl = $("error-setup");
-      errEl.textContent = "No hay categorías publicadas aún.";
+      errEl.textContent = tableroInfantil
+        ? "No hay temas infantiles publicados aún."
+        : "No hay categorías publicadas aún.";
       errEl.classList.remove("hidden");
       mostrar(pSetup);
       sync({ fase: "setup-espera", nombreA, nombreB, modo });
