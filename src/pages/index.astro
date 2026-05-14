@@ -1498,10 +1498,11 @@ const slugsInfantiles: string[] = [
   $("boton-pasar").addEventListener("click", registrarPase);
 
   // Compartir resultado al final
+  const DOMINIO_PUBLICO = "https://elsuelo.es";
   $("boton-compartir-resultado").addEventListener("click", async () => {
     const ganador = $("texto-ganador").textContent || "";
     const cat = modo === "rapida" ? categoriaActual : "Tablero 3x3";
-    const texto = `🎮 El Suelo · ${cat}\n${ganador}\nJuega en ${location.origin}`;
+    const texto = `🎮 El Suelo · ${cat}\n${ganador}\nJuega en ${DOMINIO_PUBLICO}`;
     trackEv("compartir", { tipo: "resultado", modo: modo });
     try {
       if (navigator.share) {
@@ -1671,7 +1672,7 @@ const slugsInfantiles: string[] = [
   });
 
   document.getElementById("ajustes-compartir-juego")!.addEventListener("click", async () => {
-    const texto = `🎮 El Suelo · Di qué ves antes de que se acabe tu tiempo.\nUn juego de adivinanza por voz para 1 o 2 móviles.\n${location.origin}`;
+    const texto = `🎮 El Suelo · Di qué ves antes de que se acabe tu tiempo.\nUn juego de adivinanza por voz para 1 o 2 móviles.\nhttps://elsuelo.es`;
     trackEv("compartir", { tipo: "juego" });
     try {
       if (navigator.share) await navigator.share({ title: "El Suelo", text: texto });
@@ -2027,8 +2028,7 @@ const slugsInfantiles: string[] = [
   $("reto-compartir").addEventListener("click", async () => {
     const r = leerResultadoHoy();
     if (!r) return;
-    const dominio = location.host;
-    const texto = textoCompartir(r, dominio);
+    const texto = textoCompartir(r, "https://elsuelo.es");
     trackEv("compartir", { tipo: "reto", categoria: r.slug, aciertos: r.aciertos });
     try {
       if (navigator.share) await navigator.share({ title: "El Suelo · Reto diario", text: texto });

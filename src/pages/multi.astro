@@ -949,7 +949,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
   // ── Setup (host) ───────────────────────────────────────────
   $("boton-compartir").addEventListener("click", async () => {
-    const url = `${location.origin}/multi?codigo=${codigo}`;
+    const url = `https://elsuelo.es/multi?codigo=${codigo}`;
     const texto = `¡Únete a mi sala en El Suelo!\nCódigo: ${codigo}`;
     trackEv("compartir", { tipo: "sala" });
     try {
