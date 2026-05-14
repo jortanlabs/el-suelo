@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# /preview es el panel admin, no debe aparecer en buscadores
+Disallow: /preview
+Disallow: /preview/
+
+# Endpoints API
+Disallow: /api/
+
+Sitemap: https://elsuelo.es/sitemap.xml
