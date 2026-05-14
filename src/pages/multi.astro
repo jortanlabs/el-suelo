@@ -1324,7 +1324,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
   function mostrarImagen() {
     if (items.length === 0) return;
-    if (indice >= items.length) { items = [...items].sort(() => Math.random() - 0.5); indice = 0; }
+    if (indice >= items.length) { if (rol === "host") terminar(); return; }
     const item = items[indice];
     const img = $("imagen-item") as HTMLImageElement;
     const ph = $("imagen-placeholder");

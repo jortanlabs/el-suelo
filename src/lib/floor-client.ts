@@ -330,11 +330,11 @@ export async function generarFloor(
 const TTL_CINE_MS = 60 * 60 * 1000; // 1 hora — los JSON se editan vía /preview, no podemos cachear demasiado
 
 function claveCine(slug: string): string {
-  return `juegario:cine:v3:${slug}`;
+  return `juegario:cine:v4:${slug}`;
 }
 
 function claveMundo(slug: string): string {
-  return `juegario:mundo:v2:${slug}`;
+  return `juegario:mundo:v3:${slug}`;
 }
 
 /**
@@ -349,7 +349,9 @@ export async function cargarCatalogoCine(slug: string): Promise<ItemFloor[]> {
   const res = await fetch(`/data/cine/${slug}.json`);
   if (!res.ok) throw new Error(`Categoría "${slug}" no encontrada`);
   const todos = (await res.json()) as ItemFloor[];
-  const items = todos.filter((i) => !!i.imagen);
+  // Filtra los que tienen imagen Y deduplica por URL (dos items distintos no
+  // pueden compartir la misma foto durante un duelo).
+  const items = deduplicar(todos.filter((i) => !!i.imagen));
   if (!items.length) throw new Error(`La categoría "${slug}" está vacía`);
 
   try {
@@ -370,7 +372,9 @@ export async function cargarCatalogoMundo(slug: string): Promise<ItemFloor[]> {
   const res = await fetch(`/data/mundo/${slug}.json`);
   if (!res.ok) throw new Error(`Categoría "${slug}" no encontrada`);
   const todos = (await res.json()) as ItemFloor[];
-  const items = todos.filter((i) => !!i.imagen);
+  // Filtra los que tienen imagen Y deduplica por URL (dos items distintos no
+  // pueden compartir la misma foto durante un duelo).
+  const items = deduplicar(todos.filter((i) => !!i.imagen));
   if (!items.length) throw new Error(`La categoría "${slug}" está vacía`);
 
   try {
