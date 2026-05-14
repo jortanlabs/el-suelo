@@ -134,7 +134,7 @@ const slugsInfantiles: string[] = [
           📱 2 Móviles
         </a>
 
-        <button id="banner-reto" class="floor-btn w-full font-titulo text-base py-3 text-left px-4 hidden" style="color:#ffcc00;border-color:#ffcc00">
+        <button id="banner-reto" class="hidden font-titulo text-xs px-3 py-1.5 mt-1" style="color:#ff75b3;background:transparent;border:none;text-decoration:underline;text-underline-offset:3px">
           <span id="banner-reto-texto">🎯 Reto de hoy</span>
         </button>
       </div>
@@ -1489,6 +1489,14 @@ const slugsInfantiles: string[] = [
       return;
     }
     if (!pCategoria.classList.contains("hidden")) { mostrar(pSetup); return; }
+    // Reto diario: no hay paso intermedio, atrás vuelve a la home y refresca banner
+    if (!pRetoIntro.classList.contains("hidden") || !pRetoFinal.classList.contains("hidden")) {
+      mostrar(pBienvenida); actualizarBannerReto(); return;
+    }
+    if (!pRetoJuego.classList.contains("hidden")) {
+      pararRetoTick(); pararRetoReco();
+      mostrar(pBienvenida); actualizarBannerReto(); return;
+    }
     // Desde loader/tablero/juego/final → volver a la pantalla anterior al duelo:
     // - Rápida: a la pantalla de elegir tema (categoría)
     // - Tablero: a elegir modo (no hay paso de categoría)
