@@ -133,7 +133,56 @@ const slugsInfantiles: string[] = [
         <a id="link-multi" href="/multi" data-astro-prefetch="viewport" class="floor-btn w-full font-titulo font-bold text-xl py-4 tracking-widest uppercase text-center" style="color:#a8c5ff;border-color:#a8c5ff;">
           📱 2 Móviles
         </a>
+
+        <button id="banner-reto" class="floor-btn w-full font-titulo text-base py-3 text-left px-4 hidden" style="color:#ffcc00;border-color:#ffcc00">
+          <span id="banner-reto-texto">🎯 Reto de hoy</span>
+        </button>
       </div>
+    </section>
+
+    <!-- RETO DIARIO — INTRO -->
+    <section id="pantalla-reto-intro" class="flex-1 flex flex-col items-center justify-center px-6 py-6 hidden gap-6">
+      <p class="font-titulo text-sm text-[#7b9ef5] uppercase tracking-widest">Reto del día · <span id="reto-fecha"></span></p>
+      <div id="reto-intro-emoji" class="text-8xl"></div>
+      <h2 id="reto-intro-cat" class="font-titulo text-4xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight"></h2>
+      <div class="floor-card-small px-6 py-4 max-w-xs">
+        <p class="font-titulo text-base text-[#e8e8ff] text-center">⏱ 30 segundos · 🎯 hasta 20 aciertos</p>
+        <p class="font-titulo text-xs text-[#7b9ef5] text-center mt-1">Pasar resta 3 segundos.</p>
+      </div>
+      <button id="reto-empezar" class="floor-btn floor-btn-gold font-titulo font-bold text-2xl px-12 py-5 uppercase tracking-wider">¡Empezar! →</button>
+    </section>
+
+    <!-- RETO DIARIO — JUEGO -->
+    <section id="pantalla-reto-juego" class="flex-1 hidden flex-col items-center justify-center gap-4 px-4 py-4 relative">
+      <div class="absolute top-3 left-4 right-4 flex items-center justify-between">
+        <span id="reto-juego-cat" class="font-titulo text-xs text-[#7b9ef5] uppercase tracking-wider"></span>
+        <span id="reto-juego-aciertos" class="font-titulo text-base font-bold text-[#ffcc00]">0 / 20</span>
+      </div>
+      <div id="reto-juego-tiempo" class="font-titulo text-6xl font-bold neon-gold tabular-nums">30.0</div>
+      <div class="relative w-full max-w-sm aspect-square floor-card overflow-hidden flex items-center justify-center bg-[#050c1e]">
+        <img id="reto-imagen" alt="" class="hidden w-full h-full object-contain" />
+        <div id="reto-imagen-ph" class="text-4xl text-[#163575]">📷</div>
+      </div>
+      <p id="reto-texto-voz" class="font-titulo text-sm text-[#a8c5ff] text-center min-h-[1.5rem]"></p>
+      <button id="reto-pasar" class="floor-btn font-titulo font-bold text-lg px-8 py-3" style="color:#a8c5ff;border-color:#a8c5ff">⏭ Paso (–3s)</button>
+    </section>
+
+    <!-- RETO DIARIO — FINAL -->
+    <section id="pantalla-reto-final" class="flex-1 hidden flex-col items-center justify-center gap-5 px-6 py-6 overflow-y-auto">
+      <p class="font-titulo text-sm text-[#7b9ef5] uppercase tracking-widest">Reto del día · <span id="reto-final-fecha"></span></p>
+      <div id="reto-final-emoji" class="text-6xl"></div>
+      <p id="reto-final-cat" class="font-titulo text-2xl font-bold text-[#e8e8ff] text-center"></p>
+      <div class="floor-card px-10 py-6">
+        <p class="font-titulo text-sm text-[#7b9ef5] uppercase tracking-widest text-center">Aciertos</p>
+        <p id="reto-final-score" class="font-titulo text-7xl font-bold neon-gold text-center tabular-nums">0</p>
+        <p id="reto-final-de" class="font-titulo text-xs text-[#7b9ef5] text-center">de 20</p>
+      </div>
+      <button id="reto-compartir" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">📤 Compartir resultado</button>
+      <div id="reto-historial" class="w-full max-w-xs hidden">
+        <p class="font-titulo text-xs text-[#7b9ef5] uppercase tracking-widest mb-2 text-center">Tus últimos retos</p>
+        <div id="reto-historial-lista" class="space-y-1"></div>
+      </div>
+      <p class="font-titulo text-sm text-[#a8c5ff] text-center">Vuelve mañana para el nuevo reto.</p>
     </section>
 
     <!-- SETUP -->
@@ -582,6 +631,19 @@ const slugsInfantiles: string[] = [
     cargarMezclaCine,
     cargarPublicadas,
   } from "../lib/floor-client.ts";
+  import {
+    TIEMPO_RETO_S,
+    MAX_ITEMS_RETO,
+    PENALIZACION_PASE_S,
+    diaHoy,
+    categoriaRetoHoy,
+    subsetReto,
+    leerResultadoHoy,
+    guardarResultado,
+    leerHistorial,
+    textoCompartir,
+    type ResultadoReto,
+  } from "../lib/reto-diario.ts";
   import { categoriasFloor as todasCatsOtras } from "../data/categoriasFloor.ts";
 
   // ── Datos del servidor ───────────────────────────────────────
@@ -657,9 +719,12 @@ const slugsInfantiles: string[] = [
   const pTablero = $("pantalla-tablero");
   const pJuego = $("pantalla-juego");
   const pFinal = $("pantalla-final");
+  const pRetoIntro = $("pantalla-reto-intro");
+  const pRetoJuego = $("pantalla-reto-juego");
+  const pRetoFinal = $("pantalla-reto-final");
 
   function mostrar(p: HTMLElement) {
-    [pBienvenida, pModo, pTableroVariante, pSetup, pCategoria, pLoader, pTablero, pJuego, pFinal].forEach((s) => s.classList.add("hidden"));
+    [pBienvenida, pModo, pTableroVariante, pSetup, pCategoria, pLoader, pTablero, pJuego, pFinal, pRetoIntro, pRetoJuego, pRetoFinal].forEach((s) => s.classList.add("hidden"));
     p.classList.remove("hidden");
     // El botón "← Volver" solo es útil cuando estás dentro del flujo
     const esSuperficial = p === pBienvenida;
@@ -1611,4 +1676,232 @@ const slugsInfantiles: string[] = [
     // Reanudar el inicio del turno que quedó pausado
     iniciarTurno();
   });
+
+  // ─── Reto diario ───────────────────────────────────────────────
+  // Estado del reto que se va a jugar/se ha jugado hoy
+  let retoSlug = "";
+  let retoNombre = "";
+  let retoEmoji = "";
+  let retoItems: ItemFloor[] = [];
+  let retoIndice = 0;
+  let retoAciertos = 0;
+  let retoMsRestantes = 0;
+  let retoTickId: ReturnType<typeof setInterval> | null = null;
+  let retoReco: ReconocedorVoz | null = null;
+  let retoBloqueado = false;
+
+  function pararRetoReco() { if (retoReco) { retoReco.parar(); retoReco = null; } }
+  function pararRetoTick() { if (retoTickId) { clearInterval(retoTickId); retoTickId = null; } }
+
+  // Banner en pantalla bienvenida: ya jugado → mostrar score; pendiente → mostrar categoría del día
+  async function actualizarBannerReto() {
+    const banner = $("banner-reto");
+    const txt = $("banner-reto-texto");
+    const yaJugado = leerResultadoHoy();
+    if (yaJugado) {
+      txt.textContent = `✅ Hoy: ${yaJugado.aciertos}/${yaJugado.tope} · ${yaJugado.catEmoji} ${yaJugado.catNombre}`;
+      banner.classList.remove("hidden");
+      return;
+    }
+    // Categoría del día — del pool publicado (mismo que tablero/rápida)
+    try {
+      const pool = await cargarPublicadas();
+      const slug = categoriaRetoHoy(pool);
+      if (!slug) { banner.classList.add("hidden"); return; }
+      const nombre = (mundoSlugsNombres[slug] ?? cineSlugsNombres[slug] ?? slug);
+      const emoji = (mundoSlugsEmoji[slug] ?? "🎬");
+      txt.textContent = `🎯 Reto de hoy: ${emoji} ${nombre} →`;
+      banner.classList.remove("hidden");
+      banner.dataset.slug = slug;
+      banner.dataset.nombre = nombre;
+      banner.dataset.emoji = emoji;
+    } catch { banner.classList.add("hidden"); }
+  }
+
+  $("banner-reto").addEventListener("click", async () => {
+    const yaJugado = leerResultadoHoy();
+    if (yaJugado) { mostrarRetoFinal(yaJugado); return; }
+    const banner = $("banner-reto");
+    const slug = banner.dataset.slug;
+    const nombre = banner.dataset.nombre;
+    const emoji = banner.dataset.emoji;
+    if (!slug || !nombre || !emoji) return;
+    retoSlug = slug; retoNombre = nombre; retoEmoji = emoji;
+    $("reto-intro-emoji").textContent = emoji;
+    $("reto-intro-cat").textContent = nombre;
+    $("reto-fecha").textContent = formatearFecha(diaHoy());
+    mostrar(pRetoIntro);
+  });
+
+  function formatearFecha(iso: string): string {
+    const [, m, d] = iso.split("-");
+    const mes = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"][Number(m) - 1];
+    return `${Number(d)} de ${mes}`;
+  }
+
+  $("reto-empezar").addEventListener("click", async () => {
+    // Cargar items de la categoría del reto y deducir el subset
+    mostrar(pLoader);
+    $("loader-progreso").textContent = "Preparando el reto...";
+    try {
+      const esMundo = mundoSlugsNombres[retoSlug] !== undefined && cineSlugsNombres[retoSlug] === undefined;
+      const raw = esMundo
+        ? await cargarCatalogoMundo(retoSlug)
+        : cineSlugsMetaMezcla[retoSlug]
+        ? await cargarMezclaCine(cineSlugsMetaMezcla[retoSlug])
+        : cineSlugsDerivados[retoSlug]
+        ? await cargarCatalogoCinePeli(retoSlug, cineSlugsDerivados[retoSlug].baseSlug)
+        : await cargarCatalogoCine(retoSlug);
+      retoItems = subsetReto(raw, retoSlug);
+      retoIndice = 0;
+      retoAciertos = 0;
+      retoMsRestantes = TIEMPO_RETO_S * 1000;
+      $("reto-juego-cat").textContent = `${retoEmoji} ${retoNombre}`;
+      $("reto-juego-aciertos").textContent = `0 / ${retoItems.length}`;
+      $("reto-juego-tiempo").textContent = TIEMPO_RETO_S.toFixed(1);
+      mostrar(pRetoJuego);
+      arrancarRetoTick();
+      mostrarImagenReto();
+      arrancarRetoVoz();
+    } catch (e) {
+      const errEl = $("error-categoria");
+      errEl.textContent = "No se pudo cargar la categoría del reto.";
+      errEl.classList.remove("hidden");
+      mostrar(pBienvenida);
+    }
+  });
+
+  function arrancarRetoTick() {
+    pararRetoTick();
+    const inicio = Date.now();
+    const restanteInicial = retoMsRestantes;
+    retoTickId = setInterval(() => {
+      const transcurrido = Date.now() - inicio;
+      retoMsRestantes = Math.max(0, restanteInicial - transcurrido);
+      $("reto-juego-tiempo").textContent = (retoMsRestantes / 1000).toFixed(1);
+      if (retoMsRestantes <= 0) finalizarReto();
+    }, 100);
+  }
+
+  function mostrarImagenReto() {
+    if (retoIndice >= retoItems.length) { finalizarReto(); return; }
+    const item = retoItems[retoIndice];
+    const img = $("reto-imagen") as HTMLImageElement;
+    const ph = $("reto-imagen-ph");
+    img.onload = () => { img.classList.remove("hidden"); ph.classList.add("hidden"); };
+    img.onerror = () => { img.classList.add("hidden"); ph.classList.remove("hidden"); };
+    img.classList.add("hidden");
+    ph.classList.remove("hidden");
+    img.src = item.imagen;
+  }
+
+  function arrancarRetoVoz() {
+    pararRetoReco();
+    if (!navegadorSoportaVoz()) return;
+    retoReco = crearReconocedor({
+      onTranscripcion: (texto) => {
+        if (retoBloqueado || retoMsRestantes <= 0) return;
+        const item = retoItems[retoIndice];
+        if (!item) return;
+        $("reto-texto-voz").textContent = `"${texto}"`;
+        if (aciertoFlexible(texto, item.nombre, retoNombre, retoSlug)) {
+          retoAcierto();
+          return;
+        }
+        const palabras = texto.toLowerCase().trim().replace(/[.,!¡?¿;:]/g, "").split(/\s+/).filter(Boolean);
+        const ultima = palabras[palabras.length - 1] || "";
+        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "siguiente") {
+          retoPaso();
+        }
+      },
+    });
+    retoReco?.iniciar();
+  }
+
+  function retoAcierto() {
+    retoAciertos++;
+    $("reto-juego-aciertos").textContent = `${retoAciertos} / ${retoItems.length}`;
+    sonidoAcierto();
+    if (ajustes.vibracion) try { navigator.vibrate?.(30); } catch {}
+    retoIndice++;
+    mostrarImagenReto();
+  }
+
+  function retoPaso() {
+    // Penalización: restar PENALIZACION_PASE_S segundos del tiempo restante
+    retoMsRestantes = Math.max(0, retoMsRestantes - PENALIZACION_PASE_S * 1000);
+    // Reiniciar el tick con el nuevo restante
+    pararRetoTick();
+    arrancarRetoTickConRestante(retoMsRestantes);
+    sonidoPase();
+    retoIndice++;
+    mostrarImagenReto();
+  }
+
+  function arrancarRetoTickConRestante(ms: number) {
+    const inicio = Date.now();
+    retoTickId = setInterval(() => {
+      const transcurrido = Date.now() - inicio;
+      retoMsRestantes = Math.max(0, ms - transcurrido);
+      $("reto-juego-tiempo").textContent = (retoMsRestantes / 1000).toFixed(1);
+      if (retoMsRestantes <= 0) finalizarReto();
+    }, 100);
+  }
+
+  $("reto-pasar").addEventListener("click", () => {
+    if (retoMsRestantes <= 0) return;
+    retoPaso();
+  });
+
+  function finalizarReto() {
+    pararRetoTick();
+    pararRetoReco();
+    const resultado: ResultadoReto = {
+      fecha: diaHoy(),
+      slug: retoSlug,
+      catNombre: retoNombre,
+      catEmoji: retoEmoji,
+      aciertos: retoAciertos,
+      tope: retoItems.length,
+    };
+    guardarResultado(resultado);
+    sonidoFin();
+    mostrarRetoFinal(resultado);
+  }
+
+  function mostrarRetoFinal(r: ResultadoReto) {
+    $("reto-final-fecha").textContent = formatearFecha(r.fecha);
+    $("reto-final-emoji").textContent = r.catEmoji;
+    $("reto-final-cat").textContent = r.catNombre;
+    $("reto-final-score").textContent = String(r.aciertos);
+    $("reto-final-de").textContent = `de ${r.tope}`;
+    // Histórico
+    const hist = leerHistorial().filter((h) => h.fecha !== r.fecha).slice(0, 5);
+    if (hist.length > 0) {
+      $("reto-historial").classList.remove("hidden");
+      const lista = $("reto-historial-lista");
+      lista.innerHTML = hist.map((h) => {
+        const [, m, d] = h.fecha.split("-");
+        const mes = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"][Number(m) - 1];
+        return `<div class="flex items-center justify-between text-xs font-titulo px-3 py-1.5" style="background:#0a1628;border-radius:4px"><span class="text-[#a8c5ff]">${Number(d)} ${mes} · ${h.catEmoji} ${h.catNombre}</span><span class="text-[#ffcc00] font-bold">${h.aciertos}/${h.tope}</span></div>`;
+      }).join("");
+    } else {
+      $("reto-historial").classList.add("hidden");
+    }
+    mostrar(pRetoFinal);
+  }
+
+  $("reto-compartir").addEventListener("click", async () => {
+    const r = leerResultadoHoy();
+    if (!r) return;
+    const dominio = location.host;
+    const texto = textoCompartir(r, dominio);
+    try {
+      if (navigator.share) await navigator.share({ title: "El Suelo · Reto del día", text: texto });
+      else { await navigator.clipboard.writeText(texto); $("reto-compartir").textContent = "✓ Copiado"; }
+    } catch {}
+  });
+
+  // Inicializar banner al cargar la página
+  actualizarBannerReto();
 </script>
