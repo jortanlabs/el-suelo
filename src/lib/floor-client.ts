@@ -1,7 +1,6 @@
 /**
  * Cliente del navegador para "The Floor".
  * - Categorías predefinidas: SPARQL directo al navegador → Wikidata (evita bloqueos de IP de Vercel).
- * - Categoría libre: POST al endpoint /api/generar-floor (necesita Claude AI en servidor).
  * Cachea en localStorage 24h.
  */
 import { resolverNombres, palabraClaveDe } from "./wikidata.ts";
@@ -14,10 +13,8 @@ export interface ItemFloor {
 
 const TTL_MS = 24 * 60 * 60 * 1000;
 
-function clave(slug: string | "libre", libre?: string): string {
-  return slug === "libre"
-    ? `juegario:floor:v3:libre:${(libre ?? "").toLowerCase()}`
-    : `juegario:floor:v2:${slug}`;
+function clave(slug: string): string {
+  return `juegario:floor:v2:${slug}`;
 }
 
 function leerCache(k: string): ItemFloor[] | null {
@@ -163,167 +160,6 @@ export async function generarFloorPredefinida(
   return items;
 }
 
-type WpPagesResp = {
-  query?: { pages?: Record<string, { title?: string; missing?: string; thumbnail?: { source?: string } }> };
-};
-
-type WpRestSummary = {
-  type?: string;
-  description?: string;
-  thumbnail?: { source?: string };
-};
-
-/**
- * Resuelve imágenes para categorías libres.
- * El prompt de Claude genera nombres que coinciden con títulos de Wikipedia en inglés.
- *
- * Estrategia:
- * 1. REST summary directo EN (más rápido y fiable si el nombre = título exacto)
- * 2. REST summary directo ES
- * 3. generator=search EN (fallback para títulos aproximados)
- * 4. generator=search ES
- *
- * El nombre de display elimina el sufijo de desambiguación:
- * "Elsa (Frozen)" → muestra "Elsa", busca "Elsa (Frozen)".
- */
-async function resolverConWikipedia(
-  nombres: string[],
-  paralelos = 8,
-  categoriaHint?: string,
-): Promise<ItemFloor[]> {
-  const normStr = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").trim();
-  // Palabras significativas de la categoría (≥4 letras) para filtrar resultados ambiguos
-  const catWords = categoriaHint
-    ? normStr(categoriaHint).split(/\s+/).filter((w) => w.length >= 4)
-    : [];
-
-  const result: ItemFloor[] = [];
-  for (let i = 0; i < nombres.length; i += paralelos) {
-    const lote = nombres.slice(i, i + paralelos);
-    const resueltos = await Promise.all(
-      lote.map(async (nombre): Promise<ItemFloor | null> => {
-        const nombreDisplay = nombre.replace(/\s*\([^)]+\)\s*$/, "").trim() || nombre;
-        const slug = nombre.replace(/ /g, "_");
-
-        // Fase 1: REST summary directo
-        for (const lang of ["en", "es"]) {
-          try {
-            const url = `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(slug)}`;
-            const res = await fetch(url, { headers: { accept: "application/json" } });
-            if (!res.ok) continue;
-            const data = (await res.json()) as WpRestSummary;
-            if (data.type === "disambiguation") continue;
-            if (data.thumbnail?.source) {
-              // Si hay pista de categoría, verifica que el artículo no sea una entidad
-              // de dominio completamente diferente (ej: pájaro cuando se busca término de golf)
-              if (catWords.length > 0) {
-                const desc = normStr(data.description ?? "");
-                const coincide = catWords.some((w) => desc.includes(w));
-                // Solo descartamos si hay descripción Y ninguna palabra de la categoría aparece
-                if (data.description && !coincide) continue;
-              }
-              return { nombre: nombreDisplay, imagen: data.thumbnail.source, palabraClave: palabraClaveDe(nombreDisplay) };
-            }
-          } catch {}
-        }
-
-        // Fase 2: generator=search — incluye la categoría en la query si está disponible
-        const normNombre = normStr(nombre);
-        const queryBase = categoriaHint ? `${nombre} ${categoriaHint}` : nombre;
-        for (const lang of ["en", "es"]) {
-          try {
-            const url =
-              `https://${lang}.wikipedia.org/w/api.php` +
-              `?action=query&generator=search&gsrsearch=${encodeURIComponent(queryBase)}` +
-              `&gsrlimit=5&prop=pageimages&pithumbsize=400&redirects=1&format=json&origin=*`;
-            const res = await fetch(url);
-            if (!res.ok) continue;
-            const data = (await res.json()) as WpPagesResp;
-            const pages = Object.values(data.query?.pages ?? {})
-              .filter((p) => !("missing" in p) && p.thumbnail?.source);
-            if (pages.length === 0) continue;
-            const ranked = pages.sort((a, b) => {
-              const ta = normStr(a.title ?? ""); const tb = normStr(b.title ?? "");
-              const sa = ta === normNombre ? 0 : ta.startsWith(normNombre) ? 1 : ta.includes(normNombre) ? 2 : 3;
-              const sb = tb === normNombre ? 0 : tb.startsWith(normNombre) ? 1 : tb.includes(normNombre) ? 2 : 3;
-              return sa - sb;
-            });
-            return { nombre: nombreDisplay, imagen: ranked[0].thumbnail!.source!, palabraClave: palabraClaveDe(nombreDisplay) };
-          } catch {}
-        }
-
-        return null;
-      }),
-    );
-    for (const item of resueltos) if (item) result.push(item);
-  }
-  return result;
-}
-
-export async function generarFloor(
-  opts: { libre?: string; forzar?: boolean; onProgreso?: (msg: string) => void },
-): Promise<ItemFloor[]> {
-  if (!opts.libre) throw new Error("Falta libre");
-  const k = clave("libre", opts.libre);
-  if (!opts.forzar) {
-    const cached = leerCache(k);
-    if (cached && cached.length > 0 && !cached[0].imagen.includes("Special:FilePath")) return cached;
-  }
-  opts.onProgreso?.("✍️ Generando lista con IA...");
-  const res = await fetch("/api/generar-floor", {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({ libre: opts.libre }),
-  });
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    throw new Error((err as { error?: string }).error ?? `Error ${res.status}`);
-  }
-  const data = (await res.json()) as { nombres?: string[] };
-  if (!Array.isArray(data.nombres) || data.nombres.length === 0) {
-    throw new Error("Sin items");
-  }
-  // Categorías de logos/marcas: Wikidata P154 devuelve el logo oficial (SVG libre en Commons)
-  // en lugar de la foto del edificio o producto que devolvería Wikipedia
-  const esLogo = /logo|logotipo|marca|brand|empresa|icono|corporat/i.test(opts.libre ?? "");
-  if (esLogo) {
-    opts.onProgreso?.(`🎨 Resolviendo logos en Wikidata (${data.nombres.length} marcas)...`);
-    const logoItems = await resolverNombres(
-      data.nombres, 5,
-      undefined, undefined,
-      ["company", "corporation", "brand", "empresa", "marca", "organization"],
-      true, // P154 primero
-    );
-    if (logoItems.length >= 8) {
-      guardarCache(k, logoItems);
-      return logoItems;
-    }
-    // fallback a Wikipedia si Wikidata no tiene suficientes logos
-  }
-
-  opts.onProgreso?.(`🔍 Buscando imágenes (${data.nombres.length} items)...`);
-  const wpItems = await resolverConWikipedia(data.nombres, 8, opts.libre);
-
-  // Fallback Wikidata P18 para los que Wikipedia no resolvió
-  const encontrados = new Set(wpItems.map((i) => i.nombre));
-  const sinImagen = data.nombres.filter((n) => {
-    const display = n.replace(/\s*\([^)]+\)\s*$/, "").trim() || n;
-    return !encontrados.has(display);
-  });
-  let items = wpItems;
-  if (sinImagen.length > 0) {
-    opts.onProgreso?.(`🔍 Completando ${sinImagen.length} items desde Wikidata...`);
-    const wdExtra = await resolverNombres(sinImagen, 5);
-    items = [...wpItems, ...wdExtra];
-  }
-
-  items = deduplicar(items);
-  if (items.length < 8) {
-    throw new Error(`Solo se encontraron ${items.length} imágenes para esta categoría. Prueba con una categoría más específica o famosa.`);
-  }
-  guardarCache(k, items);
-  return items;
-}
 
 // ── Catálogos pre-resueltos (Cine, Mundo…) ───────────────────────────────────
 
