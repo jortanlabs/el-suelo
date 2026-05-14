@@ -14,11 +14,11 @@ if (!existsSync(SVG)) {
 }
 
 const svg = readFileSync(SVG, "utf8");
-// Imagen cuadrada 400x400: WhatsApp con imágenes pequeñas (<600px) muestra
-// el preview compacto tipo thumbnail a la izquierda del texto, no el banner
-// grande encima.
+// Imagen cuadrada 1200x1200: WhatsApp ignora el tamaño declarado en og:image
+// y siempre amplía al máximo de su tarjeta, así que rendimos a buena
+// resolución para que se vea nítida.
 const resvg = new Resvg(svg, {
-  fitTo: { mode: "width", value: 400 },
+  fitTo: { mode: "width", value: 1200 },
   background: "#050c1e",
   font: { loadSystemFonts: true },
 });
