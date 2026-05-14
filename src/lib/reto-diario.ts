@@ -86,9 +86,37 @@ export function leerHistorial(): ResultadoReto[] {
   } catch { return []; }
 }
 
+// Calcula la racha actual de días consecutivos completando el reto.
+// Si hoy ya se jugó, cuenta desde hoy hacia atrás. Si no, desde ayer
+// (la racha se mantiene "viva" durante el día siguiente hasta medianoche).
+// Rompe si falta cualquier día intermedio.
+export function rachaActual(): number {
+  if (typeof localStorage === "undefined") return 0;
+  const hist = leerHistorial();
+  if (hist.length === 0) return 0;
+  const set = new Set(hist.map((h) => h.fecha));
+  const hoy = diaHoy();
+  let cursor = set.has(hoy) ? hoy : diaPrevio(hoy);
+  let racha = 0;
+  while (set.has(cursor)) {
+    racha++;
+    cursor = diaPrevio(cursor);
+  }
+  return racha;
+}
+
+function diaPrevio(iso: string): string {
+  const [y, m, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  dt.setUTCDate(dt.getUTCDate() - 1);
+  return dt.toISOString().slice(0, 10);
+}
+
 // Texto formateado para compartir por WhatsApp / Twitter / etc.
 export function textoCompartir(r: ResultadoReto, dominio: string): string {
   const [, m, d] = r.fecha.split("-");
   const mes = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"][Number(m) - 1];
-  return `🎯 El Suelo · ${Number(d)} ${mes}\n${r.catEmoji} ${r.catNombre}\n✅ ${r.aciertos}/${r.tope} aciertos en ${TIEMPO_RETO_S}s\n${dominio}`;
+  const racha = rachaActual();
+  const lineaRacha = racha >= 2 ? `\n🔥 ${racha} días seguidos` : "";
+  return `🎯 El Suelo · ${Number(d)} ${mes}\n${r.catEmoji} ${r.catNombre}\n✅ ${r.aciertos}/${r.tope} aciertos en ${TIEMPO_RETO_S}s${lineaRacha}\n${dominio}`;
 }

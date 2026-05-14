@@ -113,7 +113,7 @@ const slugsInfantiles: string[] = [
     </nav>
 
     <!-- BIENVENIDA -->
-    <section id="pantalla-bienvenida" class="flex-1 flex flex-col items-center justify-center px-6 py-6 overflow-y-auto gap-8">
+    <section id="pantalla-bienvenida" class="flex-1 flex flex-col items-center justify-center px-6 py-6 overflow-y-auto gap-8 relative">
       <div class="text-center">
         <div class="inline-block relative px-12 py-4 mb-4">
           <span class="floor-corner floor-corner-tl"></span>
@@ -135,11 +135,12 @@ const slugsInfantiles: string[] = [
         </a>
 
         <button id="banner-reto" class="hidden font-titulo font-bold text-sm px-4 py-2.5 mt-1 rounded transition-colors" style="color:#ff1dce;background:rgba(255,29,206,0.08);border:1px solid #ff1dce66">
-          <span id="banner-reto-texto">🎯 Reto de hoy</span>
+          <span id="banner-reto-texto">🎯 Reto diario</span>
         </button>
+        <p id="banner-racha" class="hidden font-titulo text-xs text-[#ffcc00] mt-1"></p>
       </div>
 
-      <p class="font-titulo text-xs text-[#2a5090] mt-auto pt-6">
+      <p class="font-titulo text-xs text-[#2a5090] absolute bottom-3 left-0 right-0 text-center">
         Hecho por <a href="https://jortanlabs.com" target="_blank" rel="noopener" class="hover:text-[#a8c5ff]">Jortan Labs S.L.</a>
         · <a href="/legal" class="hover:text-[#a8c5ff]">Aviso legal</a>
       </p>
@@ -147,7 +148,7 @@ const slugsInfantiles: string[] = [
 
     <!-- RETO DIARIO — INTRO -->
     <section id="pantalla-reto-intro" class="flex-1 flex flex-col items-center justify-center px-6 py-6 hidden gap-6">
-      <p class="font-titulo text-sm text-[#7b9ef5] uppercase tracking-widest">Reto del día · <span id="reto-fecha"></span></p>
+      <p class="font-titulo text-sm text-[#7b9ef5] uppercase tracking-widest">Reto diario · <span id="reto-fecha"></span></p>
       <div id="reto-intro-emoji" class="text-8xl"></div>
       <h2 id="reto-intro-cat" class="font-titulo text-4xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight"></h2>
       <div class="floor-card-small px-6 py-4 max-w-xs">
@@ -178,7 +179,7 @@ const slugsInfantiles: string[] = [
 
     <!-- RETO DIARIO — FINAL -->
     <section id="pantalla-reto-final" class="flex-1 hidden flex-col items-center justify-center gap-5 px-6 py-6 overflow-y-auto">
-      <p class="font-titulo text-sm text-[#7b9ef5] uppercase tracking-widest">Reto del día · <span id="reto-final-fecha"></span></p>
+      <p class="font-titulo text-sm text-[#7b9ef5] uppercase tracking-widest">Reto diario · <span id="reto-final-fecha"></span></p>
       <div id="reto-final-emoji" class="text-6xl"></div>
       <p id="reto-final-cat" class="font-titulo text-2xl font-bold text-[#e8e8ff] text-center"></p>
       <div class="floor-card px-10 py-6">
@@ -186,7 +187,9 @@ const slugsInfantiles: string[] = [
         <p id="reto-final-score" class="font-titulo text-7xl font-bold neon-gold text-center tabular-nums">0</p>
         <p id="reto-final-de" class="font-titulo text-xs text-[#7b9ef5] text-center">de 20</p>
       </div>
+      <p id="reto-final-racha" class="hidden font-titulo text-base font-bold text-[#ffcc00]"></p>
       <button id="reto-compartir" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">📤 Compartir resultado</button>
+      <button id="reto-volver-home" class="floor-btn font-titulo font-bold text-base px-8 py-2.5" style="color:#a8c5ff;border-color:#a8c5ff">🏠 Volver al inicio</button>
       <div id="reto-historial" class="w-full max-w-xs hidden">
         <p class="font-titulo text-xs text-[#7b9ef5] uppercase tracking-widest mb-2 text-center">Tus últimos retos</p>
         <div id="reto-historial-lista" class="space-y-1"></div>
@@ -385,7 +388,23 @@ const slugsInfantiles: string[] = [
         <input type="checkbox" id="ajuste-vibracion" class="w-5 h-5 accent-[#ffcc00]" checked>
       </label>
       <button id="ajustes-tutorial" class="mt-4 w-full floor-btn floor-card-small text-[#a8c5ff] font-titulo font-bold text-sm py-2">Volver a ver el tutorial</button>
+      <button id="ajustes-compartir-juego" class="mt-2 w-full floor-btn floor-card-small font-titulo font-bold text-sm py-2" style="color:#ff75b3;border-color:#ff1dce66">📤 Compartir el juego</button>
       <button id="ajustes-instalar" class="mt-2 w-full floor-btn floor-card-small text-[#a8c5ff] font-titulo font-bold text-sm py-2 hidden">📲 Añadir a pantalla de inicio</button>
+    </div>
+  </div>
+
+  <!-- TUTORIAL DEL RETO DIARIO — primera vez -->
+  <div id="tutorial-reto" class="hidden fixed inset-0 z-50 flex items-center justify-center px-6" style="background:rgba(5,12,30,0.96)">
+    <div class="floor-card max-w-sm w-full p-6 space-y-4">
+      <h2 class="font-titulo font-bold text-2xl text-[#ffcc00] uppercase tracking-wider text-center">🎯 Reto diario</h2>
+      <div class="space-y-3 text-sm font-titulo text-[#e8e8ff]">
+        <p>🌍 <strong>Misma categoría</strong> y mismos items para todos los jugadores del día.</p>
+        <p>⏱ <strong>30 segundos</strong> para acertar lo máximo (hasta 20 items).</p>
+        <p>🎤 Di lo que ves en voz alta. Si no sabes, di <strong>"paso"</strong> — restará 3 segundos.</p>
+        <p>📤 Cuando acabes, comparte tu resultado y reta a tus amigos.</p>
+        <p>🔥 Juega cada día para mantener tu racha.</p>
+      </div>
+      <button id="tutorial-reto-ok" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-lg py-3">¡Vamos!</button>
     </div>
   </div>
 
@@ -650,6 +669,7 @@ const slugsInfantiles: string[] = [
     leerResultadoHoy,
     guardarResultado,
     leerHistorial,
+    rachaActual,
     textoCompartir,
     type ResultadoReto,
   } from "../lib/reto-diario.ts";
@@ -1287,6 +1307,9 @@ const slugsInfantiles: string[] = [
     tono(660, 0.15, "sawtooth", 0.12);
     setTimeout(() => tono(330, 0.25, "sawtooth", 0.12), 160);
   }
+  function sonidoTic() {
+    tono(2000, 0.04, "square", 0.08);
+  }
 
   function vibrar(pattern: number | number[]) {
     try {
@@ -1641,9 +1664,24 @@ const slugsInfantiles: string[] = [
     try {
       localStorage.removeItem("el-suelo:tutorial-visto-v3");
       localStorage.removeItem("el-suelo:tutorial-duelo-v2");
+      localStorage.removeItem("el-suelo:tutorial-reto-v1");
     } catch {}
     document.getElementById("modal-ajustes")!.classList.add("hidden");
     document.getElementById("tutorial-overlay")!.classList.remove("hidden");
+  });
+
+  document.getElementById("ajustes-compartir-juego")!.addEventListener("click", async () => {
+    const texto = `🎮 El Suelo · Di qué ves antes de que se acabe tu tiempo.\nUn juego de adivinanza por voz para 1 o 2 móviles.\n${location.origin}`;
+    trackEv("compartir", { tipo: "juego" });
+    try {
+      if (navigator.share) await navigator.share({ title: "El Suelo", text: texto });
+      else if (navigator.clipboard) {
+        await navigator.clipboard.writeText(texto);
+        const btn = document.getElementById("ajustes-compartir-juego")!;
+        btn.textContent = "✓ Copiado";
+        setTimeout(() => { btn.textContent = "📤 Compartir el juego"; }, 1800);
+      }
+    } catch {}
   });
 
   // ── Añadir a pantalla de inicio (PWA) ──
@@ -1728,6 +1766,15 @@ const slugsInfantiles: string[] = [
   async function actualizarBannerReto() {
     const banner = $("banner-reto");
     const txt = $("banner-reto-texto");
+    // Racha
+    const rachaEl = $("banner-racha");
+    const racha = rachaActual();
+    if (racha >= 2) {
+      rachaEl.textContent = `🔥 ${racha} días seguidos`;
+      rachaEl.classList.remove("hidden");
+    } else {
+      rachaEl.classList.add("hidden");
+    }
     const yaJugado = leerResultadoHoy();
     if (yaJugado) {
       txt.textContent = `✅ Hoy: ${yaJugado.aciertos}/${yaJugado.tope} · ${yaJugado.catEmoji} ${yaJugado.catNombre}`;
@@ -1741,7 +1788,7 @@ const slugsInfantiles: string[] = [
       if (!slug) { banner.classList.add("hidden"); return; }
       const nombre = (mundoSlugsNombres[slug] ?? cineSlugsNombres[slug] ?? slug);
       const emoji = (mundoSlugsEmoji[slug] ?? "🎬");
-      txt.textContent = `🎯 Reto de hoy: ${emoji} ${nombre} →`;
+      txt.textContent = `🎯 Reto diario: ${emoji} ${nombre} →`;
       banner.classList.remove("hidden");
       banner.dataset.slug = slug;
       banner.dataset.nombre = nombre;
@@ -1749,9 +1796,8 @@ const slugsInfantiles: string[] = [
     } catch { banner.classList.add("hidden"); }
   }
 
-  $("banner-reto").addEventListener("click", async () => {
-    const yaJugado = leerResultadoHoy();
-    if (yaJugado) { mostrarRetoFinal(yaJugado); return; }
+  const TUTORIAL_RETO_KEY = "el-suelo:tutorial-reto-v1";
+  function abrirRetoIntro() {
     const banner = $("banner-reto");
     const slug = banner.dataset.slug;
     const nombre = banner.dataset.nombre;
@@ -1762,6 +1808,21 @@ const slugsInfantiles: string[] = [
     $("reto-intro-cat").textContent = nombre;
     $("reto-fecha").textContent = formatearFecha(diaHoy());
     mostrar(pRetoIntro);
+  }
+
+  $("banner-reto").addEventListener("click", () => {
+    const yaJugado = leerResultadoHoy();
+    if (yaJugado) { mostrarRetoFinal(yaJugado); return; }
+    if (!localStorage.getItem(TUTORIAL_RETO_KEY)) {
+      document.getElementById("tutorial-reto")!.classList.remove("hidden");
+      return;
+    }
+    abrirRetoIntro();
+  });
+  document.getElementById("tutorial-reto-ok")!.addEventListener("click", () => {
+    try { localStorage.setItem(TUTORIAL_RETO_KEY, "1"); } catch {}
+    document.getElementById("tutorial-reto")!.classList.add("hidden");
+    abrirRetoIntro();
   });
 
   function formatearFecha(iso: string): string {
@@ -1803,14 +1864,25 @@ const slugsInfantiles: string[] = [
     }
   });
 
+  let retoUltimoTicSeg = -1;
+  function maybeTic() {
+    const segActual = Math.ceil(retoMsRestantes / 1000);
+    if (segActual <= 5 && segActual > 0 && segActual !== retoUltimoTicSeg) {
+      retoUltimoTicSeg = segActual;
+      sonidoTic();
+    }
+  }
+
   function arrancarRetoTick() {
     pararRetoTick();
+    retoUltimoTicSeg = -1;
     const inicio = Date.now();
     const restanteInicial = retoMsRestantes;
     retoTickId = setInterval(() => {
       const transcurrido = Date.now() - inicio;
       retoMsRestantes = Math.max(0, restanteInicial - transcurrido);
       $("reto-juego-tiempo").textContent = (retoMsRestantes / 1000).toFixed(1);
+      maybeTic();
       if (retoMsRestantes <= 0) finalizarReto();
     }, 100);
   }
@@ -1890,6 +1962,7 @@ const slugsInfantiles: string[] = [
       const transcurrido = Date.now() - inicio;
       retoMsRestantes = Math.max(0, ms - transcurrido);
       $("reto-juego-tiempo").textContent = (retoMsRestantes / 1000).toFixed(1);
+      maybeTic();
       if (retoMsRestantes <= 0) finalizarReto();
     }, 100);
   }
@@ -1922,6 +1995,15 @@ const slugsInfantiles: string[] = [
     $("reto-final-cat").textContent = r.catNombre;
     $("reto-final-score").textContent = String(r.aciertos);
     $("reto-final-de").textContent = `de ${r.tope}`;
+    // Racha
+    const racha = rachaActual();
+    const rachaEl = $("reto-final-racha");
+    if (racha >= 2) {
+      rachaEl.textContent = `🔥 ${racha} días seguidos`;
+      rachaEl.classList.remove("hidden");
+    } else {
+      rachaEl.classList.add("hidden");
+    }
     // Histórico
     const hist = leerHistorial().filter((h) => h.fecha !== r.fecha).slice(0, 5);
     if (hist.length > 0) {
@@ -1938,6 +2020,10 @@ const slugsInfantiles: string[] = [
     mostrar(pRetoFinal);
   }
 
+  $("reto-volver-home").addEventListener("click", () => {
+    mostrar(pBienvenida); actualizarBannerReto();
+  });
+
   $("reto-compartir").addEventListener("click", async () => {
     const r = leerResultadoHoy();
     if (!r) return;
@@ -1945,7 +2031,7 @@ const slugsInfantiles: string[] = [
     const texto = textoCompartir(r, dominio);
     trackEv("compartir", { tipo: "reto", categoria: r.slug, aciertos: r.aciertos });
     try {
-      if (navigator.share) await navigator.share({ title: "El Suelo · Reto del día", text: texto });
+      if (navigator.share) await navigator.share({ title: "El Suelo · Reto diario", text: texto });
       else { await navigator.clipboard.writeText(texto); $("reto-compartir").textContent = "✓ Copiado"; }
     } catch {}
   });
