@@ -51,12 +51,12 @@ const pageUrl = `${siteUrl}${Astro.url.pathname}`;
     <meta property="og:url" content={pageUrl} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:height" content="1200" />
     <meta property="og:image:alt" content="El Suelo — juego de adivinanza por voz" />
     <meta property="og:locale" content="es_ES" />
 
-    {/* Twitter / X */}
-    <meta name="twitter:card" content="summary_large_image" />
+    {/* Twitter / X — summary (no large) para coherencia con el OG cuadrado */}
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={titulo} />
     <meta name="twitter:description" content={descripcion} />
     <meta name="twitter:image" content={ogImage} />
