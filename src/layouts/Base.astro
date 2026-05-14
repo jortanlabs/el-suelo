@@ -14,7 +14,7 @@ const {
 // URL canónica para Open Graph. En producción cogemos el host real;
 // en build sin SITE configurado, usamos un default y el navegador
 // resolverá relativo si es necesario.
-const siteUrl = Astro.site?.toString().replace(/\/$/, "") ?? "https://el-suelo.app";
+const siteUrl = Astro.site?.toString().replace(/\/$/, "") ?? "https://elsuelo.es";
 const ogImage = `${siteUrl}/og.png`;
 const pageUrl = `${siteUrl}${Astro.url.pathname}`;
 ---
