@@ -406,6 +406,12 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
   const PUSHER_KEY = (window as any).__PK__ ?? "";
   const PUSHER_CLUSTER = (window as any).__PC__ ?? "eu";
+
+  function trackEv(nombre: string, props?: Record<string, string | number | boolean>) {
+    try {
+      (window as unknown as { va?: (a: string, b: Record<string, unknown>) => void }).va?.("event", { name: nombre, ...(props ?? {}) });
+    } catch {}
+  }
   const cineSlugsNombres: Record<string, string> = JSON.parse(
     (document.getElementById("datos-cine-nombres") as HTMLElement).dataset.json!,
   );
@@ -742,6 +748,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     rol = "host"; rolPropio = "A";
     nombreA = nombre; nombreB = "";
     codigo = generarCodigo();
+    trackEv("sala-creada", {});
     initPusher(() => {
       $("sala-codigo").textContent = codigo;
       $("sala-nombre-a").textContent = nombreA;
@@ -776,6 +783,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     rol = "guest"; rolPropio = "B";
     nombreB = nombre;
     codigo = cod;
+    trackEv("sala-unida", {});
     initPusher(() => {
       $("sala-codigo").textContent = codigo;
       $("sala-nombre-b").textContent = nombreB;
@@ -943,6 +951,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
   $("boton-compartir").addEventListener("click", async () => {
     const url = `${location.origin}/multi?codigo=${codigo}`;
     const texto = `¡Únete a mi sala en El Suelo!\nCódigo: ${codigo}`;
+    trackEv("compartir", { tipo: "sala" });
     try {
       if (navigator.share) {
         await navigator.share({ title: "El Suelo — 2 Móviles", text: texto, url });
@@ -986,6 +995,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
       errEl.textContent = "Elige un modo primero."; errEl.classList.remove("hidden"); return;
     }
     if (modo === "tablero") {
+      trackEv("partida-iniciada", { modo: "multi-tablero", variante: tableroInfantil ? "infantil" : "adultos" });
       sync({ fase: "cargando", nombreA, nombreB, modo });
       mostrar(pLoader);
       pararVoz();
@@ -1011,6 +1021,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     }
     const _slug = poolFiltrado[Math.floor(Math.random() * poolFiltrado.length)];
     const _esMundo = mundoSlugsAll.includes(_slug);
+    trackEv("partida-iniciada", { modo: "multi-rapida", filtro: categoriaFiltro, categoria: _slug });
     sync({ fase: "cargando", nombreA, nombreB, modo });
     mostrar(pLoader);
     $("loader-cat-name").textContent = cineSlugsNombres[_slug] ?? _slug;

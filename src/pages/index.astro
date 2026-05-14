@@ -646,6 +646,15 @@ const slugsInfantiles: string[] = [
   } from "../lib/reto-diario.ts";
   import { categoriasFloor as todasCatsOtras } from "../data/categoriasFloor.ts";
 
+  // ── Analytics helper ────────────────────────────────────────
+  // Envía un custom event a Vercel Analytics. El script (_vercel/insights/
+  // script.js) se carga desde Base.astro y expone window.va.
+  function trackEv(nombre: string, props?: Record<string, string | number | boolean>) {
+    try {
+      (window as unknown as { va?: (a: string, b: Record<string, unknown>) => void }).va?.("event", { name: nombre, ...(props ?? {}) });
+    } catch {}
+  }
+
   // ── Datos del servidor ───────────────────────────────────────
   interface SubcatMeta {
     slug: string;
@@ -876,6 +885,7 @@ const slugsInfantiles: string[] = [
       if (!confirm(`Solo hay ${pool.length} categorías publicadas. Algunas se repetirán en el tablero. ¿Continuar?`)) return;
     }
     pararVoz();
+    trackEv("partida-iniciada", { modo: "tablero", variante: tableroInfantil ? "infantil" : "adultos", pool_size: pool.length });
     initTablero(nombreAGuardado, nombreBGuardado, pool);
     mostrar(pTablero);
   }
@@ -911,6 +921,7 @@ const slugsInfantiles: string[] = [
     categoriaSlugsParaMezcla = cineSlugsMetaMezcla[_slug] ?? null;
     categoriaNombre = mundoSlugsNombres[_slug] ?? cineSlugsNombres[_slug] ?? _slug;
 
+    trackEv("partida-iniciada", { modo: "rapida", filtro: categoriaFiltro, categoria: _slug });
     pararVoz();
     mostrar(pLoader);
     $("loader-progreso").textContent = "Cargando…";
@@ -1151,6 +1162,7 @@ const slugsInfantiles: string[] = [
   function mostrarFinalTablero() {
     const countA = casillas.filter((c) => c.dueño === "A").length;
     const countB = casillas.filter((c) => c.dueño === "B").length;
+    trackEv("tablero-completado", { variante: tableroInfantil ? "infantil" : "adultos", marcador: `${countA}-${countB}` });
     const marcador = countA > countB ? `${countA}-${countB}` : `${countB}-${countA}`;
     const ganador = countA > countB
       ? `🥇 Gana ${jug.A.nombre} (${marcador})`
@@ -1424,6 +1436,7 @@ const slugsInfantiles: string[] = [
     pararTimer();
     pararVoz();
     clearPending();
+    trackEv("duelo-terminado", { modo: modo, slug: categoriaSlug });
     // Limpiar overlays para no dejarlos visibles al cambiar de pantalla
     $("overlay-acierto").classList.add("hidden");
     $("overlay-pase").classList.add("hidden");
@@ -1457,6 +1470,7 @@ const slugsInfantiles: string[] = [
     const ganador = $("texto-ganador").textContent || "";
     const cat = modo === "rapida" ? categoriaActual : "Tablero 3x3";
     const texto = `🎮 El Suelo · ${cat}\n${ganador}\nJuega en ${location.origin}`;
+    trackEv("compartir", { tipo: "resultado", modo: modo });
     try {
       if (navigator.share) {
         await navigator.share({ title: "El Suelo", text: texto });
@@ -1748,6 +1762,7 @@ const slugsInfantiles: string[] = [
   }
 
   $("reto-empezar").addEventListener("click", async () => {
+    trackEv("reto-iniciado", { categoria: retoSlug });
     // Cargar items de la categoría del reto y deducir el subset
     mostrar(pLoader);
     $("loader-progreso").textContent = "Preparando el reto...";
@@ -1872,6 +1887,7 @@ const slugsInfantiles: string[] = [
       aciertos: retoAciertos,
       tope: retoItems.length,
     };
+    trackEv("reto-completado", { categoria: retoSlug, aciertos: retoAciertos, tope: retoItems.length });
     guardarResultado(resultado);
     sonidoFin();
     mostrarRetoFinal(resultado);
@@ -1904,6 +1920,7 @@ const slugsInfantiles: string[] = [
     if (!r) return;
     const dominio = location.host;
     const texto = textoCompartir(r, dominio);
+    trackEv("compartir", { tipo: "reto", categoria: r.slug, aciertos: r.aciertos });
     try {
       if (navigator.share) await navigator.share({ title: "El Suelo · Reto del día", text: texto });
       else { await navigator.clipboard.writeText(texto); $("reto-compartir").textContent = "✓ Copiado"; }
