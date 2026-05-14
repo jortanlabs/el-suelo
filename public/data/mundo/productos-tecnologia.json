@@ -1,202 +1,194 @@
 [
   {
     "nombre": "Móvil",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU3m9muawWXSa4p_Y7E1mOFoXfLo_4ckMT5g&s"
   },
   {
     "nombre": "Tablet",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUxunfBmNyKmItVkO1Nbdb-LJKtpfLWjajA&s"
   },
   {
     "nombre": "Portátil",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6A4GGoNjmQEiH9jdx9Q3RtBgQBnkOVodVhg&s"
   },
   {
     "nombre": "Ordenador",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTko6HoUmSA2g2tDXGf9cVo12omjSTjoK7Q&s"
   },
   {
     "nombre": "Televisión",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR98drgxjL2mScTRRUshi5pGInYfMPj5zyfzg&s"
   },
   {
     "nombre": "Smartwatch",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0DQ38seHHUfZXoGB8fxsOGDeKRboRZ4bsGA&s"
   },
   {
     "nombre": "Pulsera de actividad",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnXnkMHkJ3PZeBcZJRwb6pMe2sf3MfSqZUbw&s"
   },
   {
     "nombre": "Auriculares",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQy69259VAoSH6Bn6uzsibwgo6Z8qwgRxwg&s"
   },
   {
     "nombre": "Altavoz",
-    "imagen": ""
+    "imagen": "https://thumbs.ielectro.es/product/med/26459.webp"
   },
   {
     "nombre": "Cámara de fotos",
-    "imagen": ""
+    "imagen": "https://img.pccomponentes.com/pcblog/407/elige-una-camara-reflex-para-iniciarte-en-la-fotografia-2.jpg"
   },
   {
     "nombre": "Videocámara",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZemwK7RBPNzAUnXfGevL7tB5kcdVOASMZiA&s"
   },
   {
     "nombre": "E-book",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSO-Hqojce-LO2HTt-UHmzX8EOeSQYmFfTTw&s"
   },
   {
     "nombre": "Consola",
-    "imagen": ""
+    "imagen": "https://i.blogs.es/f16b7c/xbox-ps5-nintendo-switch/1366_2000.jpeg"
   },
   {
     "nombre": "Mando",
-    "imagen": ""
+    "imagen": "https://www.tmelectron.com/media/TMURC506_01_MANDO_6_EN_1-scaled.jpg"
   },
   {
     "nombre": "Teclado",
-    "imagen": ""
+    "imagen": "https://www.carlin.es/resources/img/products/172011g.jpg"
   },
   {
     "nombre": "Ratón",
-    "imagen": ""
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/A_computer_mouse%2C_black_and_white%2C_retouched%2C_keyboard_visible_in_background.jpg/250px-A_computer_mouse%2C_black_and_white%2C_retouched%2C_keyboard_visible_in_background.jpg"
   },
   {
     "nombre": "Pantalla",
-    "imagen": ""
+    "imagen": "https://image.made-in-china.com/202f0j00oeYlwOQKfkqU/Desktop-PC-LCD-LED-Monitor-Computer-15-17-21-5-23-8-Inch-Display-Wholesale-Custom-Made.webp"
   },
   {
     "nombre": "Impresora",
-    "imagen": ""
+    "imagen": "https://copyfaxcor.com/wp-content/uploads/2021/10/Para-qu%C3%A9-sirve-una-impresora-multifuncional.jpg"
   },
   {
     "nombre": "Router",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7APadOXFeoZYkxZKzGiUdazPBt0jStuEcsQ&s"
   },
   {
     "nombre": "Cargador",
-    "imagen": ""
+    "imagen": "https://storage.googleapis.com/catalog-pictures-carrefour-es/catalog/pictures/hd_510x_/3662427560375_1.jpg"
   },
   {
     "nombre": "Disco duro",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWhdLyXGQbyHua_9wqAYW1zEpNxSPlE_jUQ&s"
   },
   {
     "nombre": "USB",
-    "imagen": ""
+    "imagen": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_36/369660/15215433_800.jpg"
   },
   {
-    "nombre": "Robot aspirador",
-    "imagen": ""
+    "nombre": "Robot aspirador, Roomba",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsfRsMtFEsigNNPPLYbnEk7YFHUVleTI2zMg&s"
   },
   {
     "nombre": "Drone",
-    "imagen": ""
+    "imagen": "https://www.jouav.com/wp-content/uploads/2025/10/fpv-drone-operator.jpg"
   },
   {
     "nombre": "Gafas de realidad virtual",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZeI8bi-zBTp4Sm1OvnmPITB_d4497q38uGQ&s"
   },
   {
     "nombre": "Casco VR",
-    "imagen": ""
+    "imagen": "https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2016/01/28/5fa2bc67b410a.jpeg"
   },
   {
     "nombre": "Cámara web",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQJQ1Zy3GfhnTjAwl0C5HiavpEXMe1EW1GIQ&s"
   },
   {
     "nombre": "Micrófono",
-    "imagen": ""
+    "imagen": "https://m.media-amazon.com/images/I/61pKyfSIGyL.jpg"
   },
   {
-    "nombre": "Smart Speaker",
-    "imagen": ""
+    "nombre": "Altavoz inteligente, Alexa",
+    "imagen": "https://sm.pcmag.com/pcmag_uk/guide/t/the-best-s/the-best-smart-speakers-for-2026_f9u2.jpg"
   },
   {
     "nombre": "Asistente virtual",
-    "imagen": ""
+    "imagen": "https://www.beedigital.es/wp-content/uploads/2025/04/asistente-virtual-ventajas-desventajas-1.jpg"
   },
   {
     "nombre": "Termostato inteligente",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPQ8BkTvf-LAAPiWI8gAqvyjpJZvnGqhnXCA&s"
   },
   {
     "nombre": "Cerradura inteligente",
-    "imagen": ""
+    "imagen": "https://tedee.store/wp-content/uploads/2023/06/cerradura-inteligente-tedee-go.png"
   },
   {
     "nombre": "Bombilla inteligente",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlWdFYiSqk-TmNvxhOdLGOsr4U1J9hCl5sg&s"
   },
   {
     "nombre": "Robot de cocina",
-    "imagen": ""
-  },
-  {
-    "nombre": "Thermomix",
-    "imagen": ""
+    "imagen": "https://www.lecuine.com/blog/wp-content/uploads/2018/03/mejores-robots-de-cocina-625x408.jpg"
   },
   {
     "nombre": "Olla programable",
-    "imagen": ""
+    "imagen": "https://m.media-amazon.com/images/I/6133UjLHi1L.jpg"
   },
   {
     "nombre": "Air fryer",
-    "imagen": ""
-  },
-  {
-    "nombre": "Aspiradora robot",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeT4XHiw515ceCyMUDP10sVo51j_V8OaHgkw&s"
   },
   {
     "nombre": "Cafetera de cápsulas",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQhbOCM4thN2pna_8rU9SxQtzeEBDSrZMJ7A&s"
   },
   {
     "nombre": "Báscula inteligente",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUtPTXNBnD3unX0LgLPqg65bqrHNmmOgJuA&s"
   },
   {
     "nombre": "Tensiómetro digital",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJjD592pAYeSfd_JopVKmr-Q1nJUHvOMSsQ&s"
   },
   {
     "nombre": "Glucómetro",
-    "imagen": ""
+    "imagen": "https://www.aposan.es/documents/d/aposan/el-glucometro-se-utiliza-para-medir-los-niveles-de-glucosa-y-llevar-un-control-de-la-diabetes"
   },
   {
     "nombre": "Sensor de movimiento",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf3yQ-yL8pxKP6H1HvXmJN89MN7_mv6f7jpg&s"
   },
   {
     "nombre": "Cámara IP",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBHleXrB_FXnggA1B70-Wmo0G4sKNYvN-GvA&s"
   },
   {
     "nombre": "Alarma",
-    "imagen": ""
+    "imagen": "https://www.servialarma.es/wp-content/uploads/2023/06/alarma-para-la-casa-seguridad.jpg"
   },
   {
-    "nombre": "Power bank",
-    "imagen": ""
+    "nombre": "Power bank, batería portátil",
+    "imagen": "https://img.pccomponentes.com/articles/1077/10774011/2785-cool-bateria-power-bank-10000-mah-3a-20w-pd-silver-comprar.jpg"
   },
   {
     "nombre": "Cable USB-C",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lmLqYCJGdUrMvVLrfIoHv5IYqoTkBvpdVg&s"
   },
   {
     "nombre": "Cable HDMI",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUjzu__wwpx_iw-fbDNWr-pWelFfVP0OwPLw&s"
   },
   {
     "nombre": "Adaptador",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLfVRizDl1eOlsZMakZ0Hu3CDSq8ASKFHDYQ&s"
   },
   {
-    "nombre": "Hub USB",
-    "imagen": ""
+    "nombre": "Hub USB, adaptador USB",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1H6_e-S1Zqmo4z1oKSpr04Y547pO0I_uKZw&s"
   }
 ]
