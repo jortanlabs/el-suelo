@@ -307,6 +307,18 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
         <input type="checkbox" id="ajuste-vibracion" class="w-5 h-5 accent-[#ffcc00]" checked>
       </label>
       <button id="ajustes-tutorial" class="mt-4 w-full floor-btn floor-card-small text-[#a8c5ff] font-titulo font-bold text-sm py-2">Volver a ver el tutorial</button>
+      <button id="ajustes-instalar" class="mt-2 w-full floor-btn floor-card-small text-[#a8c5ff] font-titulo font-bold text-sm py-2 hidden">📲 Añadir a pantalla de inicio</button>
+    </div>
+  </div>
+
+  <!-- MODAL: instrucciones para añadir a pantalla de inicio (iOS / fallback) -->
+  <div id="modal-instalar" class="hidden fixed inset-0 z-50 flex items-center justify-center px-6" style="background:rgba(5,12,30,0.95)">
+    <div class="floor-card max-w-xs w-full p-6">
+      <div class="flex items-center mb-4">
+        <h2 class="font-titulo font-bold text-lg text-[#ffcc00] uppercase tracking-wide flex-1">📲 Añadir a pantalla</h2>
+        <button id="instalar-cerrar" class="font-titulo text-sm text-[#a8c5ff] hover:text-[#e8e8ff]">✕</button>
+      </div>
+      <div id="instalar-texto" class="font-titulo text-sm text-[#e8e8ff] leading-relaxed space-y-3"></div>
     </div>
   </div>
 
@@ -1490,6 +1502,58 @@ const mundoSlugsEmoji: Record<string, string> = Object.fromEntries(
     } catch {}
     document.getElementById("modal-ajustes")!.classList.add("hidden");
     document.getElementById("tutorial-overlay")!.classList.remove("hidden");
+  });
+
+  // ── Añadir a pantalla de inicio (PWA) ──
+  // Android/Chrome: capturamos beforeinstallprompt para invocarlo desde el botón.
+  // iOS Safari: no expone API; mostramos modal con instrucciones manuales.
+  let pwaPrompt: (Event & { prompt: () => Promise<void>; userChoice: Promise<{ outcome: string }> }) | null = null;
+  const btnInstalar = document.getElementById("ajustes-instalar")!;
+  const standalone =
+    window.matchMedia("(display-mode: standalone)").matches ||
+    (window.navigator as Navigator & { standalone?: boolean }).standalone === true;
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) &&
+    !(window as Window & { MSStream?: unknown }).MSStream;
+  // Solo mostramos el botón si NO está ya instalada
+  if (!standalone) btnInstalar.classList.remove("hidden");
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    pwaPrompt = e as typeof pwaPrompt;
+  });
+  window.addEventListener("appinstalled", () => {
+    btnInstalar.classList.add("hidden");
+    pwaPrompt = null;
+  });
+  btnInstalar.addEventListener("click", async () => {
+    const modal = document.getElementById("modal-instalar")!;
+    const texto = document.getElementById("instalar-texto")!;
+    if (pwaPrompt) {
+      try {
+        await pwaPrompt.prompt();
+        const r = await pwaPrompt.userChoice;
+        if (r.outcome === "accepted") btnInstalar.classList.add("hidden");
+        pwaPrompt = null;
+      } catch {}
+      return;
+    }
+    document.getElementById("modal-ajustes")!.classList.add("hidden");
+    if (isIOS) {
+      texto.innerHTML = `
+        <p>En tu iPhone (Safari):</p>
+        <p>1. Pulsa el icono <span style="color:#ffcc00">📤</span> en la barra inferior.</p>
+        <p>2. Desliza y elige <strong>"Añadir a pantalla de inicio"</strong>.</p>
+        <p>3. Confirma con <strong>Añadir</strong>.</p>
+        <p class="text-[#7b9ef5] text-xs pt-2">Si no ves el botón compartir, asegúrate de estar en Safari (no Chrome ni desde otra app).</p>`;
+    } else {
+      texto.innerHTML = `
+        <p>Abre el menú de tu navegador (los tres puntos arriba a la derecha) y elige
+        <strong>"Añadir a pantalla de inicio"</strong> o <strong>"Instalar aplicación"</strong>.</p>
+        <p class="text-[#7b9ef5] text-xs pt-2">Si no ves la opción, prueba con Chrome o Edge.</p>`;
+    }
+    modal.classList.remove("hidden");
+  });
+  document.getElementById("instalar-cerrar")!.addEventListener("click", () => {
+    document.getElementById("modal-instalar")!.classList.add("hidden");
   });
 
   // ── Tutorial del duelo (primera vez que se entra a la pantalla de juego) ──
