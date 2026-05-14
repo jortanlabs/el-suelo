@@ -81,7 +81,7 @@
   },
   {
     "nombre": "Guantes",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4nVY_Cn-NP8TudsKy0Cem4kUc2tiqeWFyg&s"
+    "imagen": ""
   },
   {
     "nombre": "Gorro",
@@ -89,7 +89,7 @@
   },
   {
     "nombre": "Pijama",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqWc6XObgn1JQyR8yse8RzGCZhHCEU4Ol_A&s"
+    "imagen": ""
   },
   {
     "nombre": "Chándal",
@@ -97,7 +97,7 @@
   },
   {
     "nombre": "Polo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQx0-WusYMsUeFnWneU5uvz6z_QQB2juqJBg&s"
+    "imagen": ""
   },
   {
     "nombre": "Chaleco",
@@ -125,6 +125,30 @@
   },
   {
     "nombre": "Mono",
+    "imagen": ""
+  },
+  {
+    "nombre": "Tirantes",
+    "imagen": ""
+  },
+  {
+    "nombre": "Camisón",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pareo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Pañuelo",
+    "imagen": ""
+  },
+  {
+    "nombre": "Babi",
+    "imagen": ""
+  },
+  {
+    "nombre": "Poncho",
     "imagen": ""
   }
 ]

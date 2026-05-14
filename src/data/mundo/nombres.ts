@@ -1292,6 +1292,7 @@ export const subcategoriasMundo: SubcategoriaNombres[] = [
       "Bufanda","Guantes","Gorro",
       "Pijama","Chándal","Polo","Chaleco","Bermudas",
       "Chubasquero","Pajarita","Esmoquin","Vestido de novia","Mono",
+      "Tirantes","Camisón","Pareo","Pañuelo","Babi","Poncho",
     ],
   },
   {
