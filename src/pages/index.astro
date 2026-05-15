@@ -658,6 +658,9 @@ const slugsInfantiles: string[] = [
     cargarCatalogoMundo,
     cargarMezclaCine,
     cargarPublicadas,
+    barajar,
+    poolSinRecientes,
+    marcarRecientes,
   } from "../lib/floor-client.ts";
   import {
     TIEMPO_RETO_S,
@@ -942,7 +945,12 @@ const slugsInfantiles: string[] = [
       return;
     }
 
-    const _slug = poolFiltrado[Math.floor(Math.random() * poolFiltrado.length)];
+    // Excluimos las últimas 15 subcategorías elegidas (con fallback al pool
+    // completo si el filtro deja muy pocas) para que no se repitan al jugar
+    // partidas rápidas seguidas.
+    const poolMuestreo = poolSinRecientes(poolFiltrado, 5);
+    const _slug = poolMuestreo[Math.floor(Math.random() * poolMuestreo.length)];
+    marcarRecientes([_slug]);
     const _esMundo = mundoSlugsNombres[_slug] !== undefined && cineSlugsNombres[_slug] === undefined;
     categoriaTipo = "cine";
     categoriaSlug = _slug;
@@ -971,7 +979,7 @@ const slugsInfantiles: string[] = [
       categoriaActual = categoriaNombre;
       $("juego-cat-label").textContent = _esMundo ? `🌍 El Mundo · ${categoriaNombre}` : `🎬 ${categoriaNombre}`;
 
-      items = [...raw].sort(() => Math.random() - 0.5);
+      items = barajar(raw);
       jug = {
         A: { nombre: nombreAGuardado, decimas: 450 },
         B: { nombre: nombreBGuardado, decimas: 450 },
@@ -996,11 +1004,17 @@ const slugsInfantiles: string[] = [
 
   // ── Tablero ──────────────────────────────────────────────────
   function initTablero(nombreA: string, nombreB: string, poolCine: string[]) {
-    // Selección sin repetición: barajar y tomar 9; si hay menos de 9 slugs, rellenar cíclicamente con la mínima repetición
-    const barajados = [...poolCine].sort(() => Math.random() - 0.5);
+    // Selección sin repetición: barajar y tomar 9; si hay menos de 9 slugs,
+    // rellenar cíclicamente. Excluimos las ~15 subcategorías más recientes para
+    // que un tablero no repita las del tablero anterior.
+    const poolMuestreo = poolSinRecientes(poolCine, 9);
+    const barajados = barajar(poolMuestreo);
     const slugsN: string[] = [];
     for (let i = 0; i < 9; i++) slugsN.push(barajados[i % barajados.length]);
-    slugsN.sort(() => Math.random() - 0.5);
+    marcarRecientes(slugsN);
+    // Re-barajamos para distribuir las 9 en el grid sin patrón
+    const slugsTablero = barajar(slugsN);
+    slugsN.splice(0, slugsN.length, ...slugsTablero);
     casillas = slugsN.map((slug) => {
       const esMundo = mundoSlugsNombres[slug] !== undefined && cineSlugsNombres[slug] === undefined;
       let emoji: string;
@@ -1127,7 +1141,7 @@ const slugsInfantiles: string[] = [
             ? await cargarCatalogoCinePeli(slug, derivado.baseSlug)
             : await cargarCatalogoCine(slug);
         }
-        casilla.items = [...raw].sort(() => Math.random() - 0.5);
+        casilla.items = barajar(raw);
         casilla.itemsOffset = 0;
       } catch {
         mostrar(pTablero);

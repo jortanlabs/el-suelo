@@ -40,6 +40,63 @@ function guardarCache(k: string, data: ItemFloor[]): void {
   } catch {}
 }
 
+/**
+ * Fisher-Yates correcto. El patrón `arr.sort(() => Math.random() - 0.5)` que se
+ * usaba antes NO produce una baraja uniforme (el comparador no es estable) y
+ * genera sesgo perceptible — algunas posiciones repiten más que otras.
+ */
+export function barajar<T>(arr: readonly T[]): T[] {
+  const copia = [...arr];
+  for (let i = copia.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copia[i], copia[j]] = [copia[j], copia[i]];
+  }
+  return copia;
+}
+
+/**
+ * Memoria de últimas subcategorías elegidas, persistida en localStorage. Sirve
+ * para que el modo Aleatorio y el tablero no repitan las últimas N elecciones
+ * y la sensación de "siempre sale la misma" desaparezca. Aproxima muestreo sin
+ * reposición a lo largo de varias partidas.
+ */
+const RECIENTES_KEY = "el-suelo:recientes:v1";
+const RECIENTES_MAX = 15;
+
+export function leerRecientes(): string[] {
+  if (typeof localStorage === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(RECIENTES_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return Array.isArray(arr) ? arr.filter((s) => typeof s === "string") : [];
+  } catch { return []; }
+}
+
+export function marcarRecientes(slugs: string[]): void {
+  if (typeof localStorage === "undefined") return;
+  try {
+    const actuales = leerRecientes();
+    const seen = new Set<string>();
+    const fusion = [...slugs, ...actuales].filter((s) => {
+      if (seen.has(s)) return false;
+      seen.add(s);
+      return true;
+    });
+    localStorage.setItem(RECIENTES_KEY, JSON.stringify(fusion.slice(0, RECIENTES_MAX)));
+  } catch {}
+}
+
+/**
+ * Devuelve el pool restando los recientes, salvo si eso deja menos del mínimo
+ * pedido (entonces devuelve el pool entero — preferimos uniforme con repe a
+ * forzar un pool degenerado).
+ */
+export function poolSinRecientes(pool: string[], minimo: number): string[] {
+  const recientes = new Set(leerRecientes());
+  const filtrado = pool.filter((s) => !recientes.has(s));
+  return filtrado.length >= minimo ? filtrado : pool;
+}
+
 function deduplicar(items: ItemFloor[]): ItemFloor[] {
   const seen = new Set<string>();
   return items.filter((item) => {
@@ -262,7 +319,7 @@ export async function cargarMezclaCine(slugs: string[]): Promise<ItemFloor[]> {
   if (cached && cached.length > 0) return cached;
 
   const todos = await Promise.all(slugs.map((s) => cargarCatalogoCine(s).catch(() => [] as ItemFloor[])));
-  const items = deduplicar(todos.flat().sort(() => Math.random() - 0.5));
+  const items = deduplicar(barajar(todos.flat()));
 
   try {
     localStorage.setItem(k, JSON.stringify({ data: items, expira: Date.now() + TTL_CINE_MS }));

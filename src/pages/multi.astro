@@ -402,6 +402,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
     cargarCatalogoMundo, cargarMezclaCine, cargarPublicadas,
     type ItemFloor, crearReconocedor, navegadorSoportaVoz,
     type ReconocedorVoz, aciertoFlexible,
+    barajar, poolSinRecientes, marcarRecientes,
   } from "../lib/floor-client.ts";
 
   const PUSHER_KEY = (window as any).__PK__ ?? "";
@@ -1019,7 +1020,11 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         : "No hay categorías publicadas para este filtro.";
       errEl.classList.remove("hidden"); return;
     }
-    const _slug = poolFiltrado[Math.floor(Math.random() * poolFiltrado.length)];
+    // Excluimos las últimas elegidas (con fallback al pool si el filtro deja
+    // muy pocas) para evitar repetición entre partidas seguidas.
+    const _poolMuestreo = poolSinRecientes(poolFiltrado, 5);
+    const _slug = _poolMuestreo[Math.floor(Math.random() * _poolMuestreo.length)];
+    marcarRecientes([_slug]);
     const _esMundo = mundoSlugsAll.includes(_slug);
     trackEv("partida-iniciada", { modo: "multi-rapida", filtro: categoriaFiltro, categoria: _slug });
     sync({ fase: "cargando", nombreA, nombreB, modo });
@@ -1038,7 +1043,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           : await cargarCatalogoCine(_slug);
       }
       categoriaActual = cineSlugsNombres[_slug] ?? _slug;
-      items = [...raw].sort(() => Math.random() - 0.5).slice(0, 20);
+      items = barajar(raw).slice(0, 20);
       turno = "A"; decimasA = 450; decimasB = 450;
       indice = 0; terminado = false; bloqueado = false;
       $("nombre-a-display").textContent = nombreA;
@@ -1408,10 +1413,13 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
         return;
       }
     }
-    const barajados = [...poolT].sort(() => Math.random() - 0.5);
+    const poolMuestreo = poolSinRecientes(poolT, 9);
+    const barajados = barajar(poolMuestreo);
     const slugsN: string[] = [];
     for (let i = 0; i < 9; i++) slugsN.push(barajados[i % barajados.length]);
-    slugsN.sort(() => Math.random() - 0.5);
+    marcarRecientes(slugsN);
+    const _redistr = barajar(slugsN);
+    slugsN.splice(0, slugsN.length, ..._redistr);
     casillasHost = slugsN.map((slug) => {
       const emoji = _esM(slug) ? (mundoSlugsEmoji[slug] ?? "🌍") : "🎬";
       const nombre = cineSlugsNombres[slug] ?? slug;
@@ -1505,7 +1513,7 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
             ? await cargarCatalogoCinePeli(c.catSlug, derivado.baseSlug)
             : await cargarCatalogoCine(c.catSlug);
         }
-        c.items = [...raw].sort(() => Math.random() - 0.5);
+        c.items = barajar(raw);
         c.itemsOffset = 0;
       } catch { mostrar(pTablero); return; }
     }
