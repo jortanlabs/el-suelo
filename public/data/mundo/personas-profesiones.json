@@ -100,6 +100,14 @@
     "imagen": "https://img.magnific.com/foto-gratis/agricultor-que-usa-pala-cavar-suelo-sus-campos-arroz_1150-17239.jpg?semt=ais_hybrid&w=740&q=80"
   },
   {
+    "nombre": "Profesor",
+    "imagen": "https://s7d1.scene7.com/is/image/wbcollab/teacher_in_ghana-283?qlt=90&fmt=webp&resMode=sharp2"
+  },
+  {
+    "nombre": "Chef, cocinero",
+    "imagen": "https://ksbrecruitment.co.uk/wp-content/uploads/2025/04/agency-chefs.jpg"
+  },
+  {
     "nombre": "Músico",
     "imagen": "https://images.squarespace-cdn.com/content/v1/56c240a0d51cd440f4c3f6ca/1462284288956-O1EJ53E02RYAOSFSZJKY/solo-violinist-619154_1280.jpg"
   },
@@ -162,14 +170,6 @@
   {
     "nombre": "Bibliotecario",
     "imagen": "https://previews.123rf.com/images/lipik/lipik1601/lipik160100056/50650454-Hay-muchos-libros-tomadas-por-el-hombre-bibliotecario-para-darles-a-los-estudiantes-Hombre-que-muest-Foto-de-archivo.jpg"
-  },
-  {
-    "nombre": "Maestro",
-    "imagen": ""
-  },
-  {
-    "nombre": "Chef",
-    "imagen": ""
   },
   {
     "nombre": "Notario",
@@ -302,5 +302,69 @@
   {
     "nombre": "Apicultor",
     "imagen": ""
+  },
+  {
+    "nombre": "Músico",
+    "imagen": "https://images.squarespace-cdn.com/content/v1/56c240a0d51cd440f4c3f6ca/1462284288956-O1EJ53E02RYAOSFSZJKY/solo-violinist-619154_1280.jpg"
+  },
+  {
+    "nombre": "Mecánico",
+    "imagen": "https://sefhor.com/wp-content/uploads/mecanico-vehiculos.jpg"
+  },
+  {
+    "nombre": "Actor",
+    "imagen": "https://www.shutterstock.com/image-photo/actor-performing-while-second-assistant-600nw-2293014729.jpg"
+  },
+  {
+    "nombre": "Informático",
+    "imagen": "https://www.emagister.com/blog/wp-content/uploads/2015/05/GettyImages-1279133399.jpg"
+  },
+  {
+    "nombre": "Fisioterapeuta",
+    "imagen": "https://www.centrescruznavarro.com/wp-content/uploads/2022/04/cua%CC%81ndo-ir-al-fisioterapeuta-1024x455.png.webp"
+  },
+  {
+    "nombre": "Astronauta",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Neil_Armstrong_pose.jpg"
+  },
+  {
+    "nombre": "Modelo",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/paloma-suarez-feb-24-0039-jpg-65cf3fe38f02b.jpg?resize=980:*"
+  },
+  {
+    "nombre": "Azafato de vuelo",
+    "imagen": "https://esaturformacion.com/wp-content/uploads/2021/08/handsome-steward-training-safety-prior-procedures-7WW8ZSC-Personalizado-1024x683.jpg"
+  },
+  {
+    "nombre": "Soldado",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxL3pKIWIc7XQbEod0yftS6Vxr0vq7TxaXw&s"
+  },
+  {
+    "nombre": "Político",
+    "imagen": "https://escuelaelbs.com/wp-content/uploads/se-puede-ser-politico-sin-estudios.jpg"
+  },
+  {
+    "nombre": "Científico",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgTb9ZFiZYcwTLCo69YGH8ByaUA8Sg-1NQhQ&s"
+  },
+  {
+    "nombre": "Cirujano",
+    "imagen": "https://cdn.euroinnova.edu.es/img/subidasEditor/el%20texto%20del%20p%C3%A1rrafo%20(2)%20(1)-1661953828.webp"
+  },
+  {
+    "nombre": "Florista",
+    "imagen": "https://www.campustraining.es/wp-content/uploads/2022/08/BLOGCAMPUS-funciones-florista-0822.jpg"
+  },
+  {
+    "nombre": "Panadero",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ945u9ZikkUkicvrWC-9aWCPqEhtb-ashS9w&s"
+  },
+  {
+    "nombre": "Dependiente",
+    "imagen": "https://static.oficinaempleo.com/blog/wp-content/uploads/2023/10/Empleo-en-Kiabi-Adobe-Stock.jpg"
+  },
+  {
+    "nombre": "Bibliotecario",
+    "imagen": "https://previews.123rf.com/images/lipik/lipik1601/lipik160100056/50650454-Hay-muchos-libros-tomadas-por-el-hombre-bibliotecario-para-darles-a-los-estudiantes-Hombre-que-muest-Foto-de-archivo.jpg"
   }
 ]
