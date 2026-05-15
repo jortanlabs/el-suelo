@@ -80,6 +80,10 @@
     "imagen": "https://www.emagister.com/blog/wp-content/uploads/2019/04/black-and-white-elderly-grayscale-1266005.jpg"
   },
   {
+    "nombre": "Magisterio",
+    "imagen": "https://cdn.euroinnova.edu.es/img/subidasEditor/oratoria01-1647478382.webp"
+  },
+  {
     "nombre": "Odontología",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAm8QmiwZE4-8bIWNE-XQ7j6cGsbPOMpdmlQ&s"
   },
@@ -89,162 +93,146 @@
   },
   {
     "nombre": "Ingeniería Industrial",
-    "imagen": ""
-  },
-  {
-    "nombre": "Educación",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFDxJmA6yzJctgJTOCH283AN3kRu7yDuPYcA&s"
   },
   {
     "nombre": "Antropología",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjdFvJ4tG-yp4xCzADkiwNtcI150341w1sHg&s"
   },
   {
     "nombre": "Arqueología",
-    "imagen": ""
+    "imagen": "https://www.aprendemas.com/mx/blog/images/2018/09/arqueologo.jpeg"
   },
   {
     "nombre": "Geografía",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhFqSZN0JWOAd5x9Cenl3vRjKrmOzuAMvkQ&s"
   },
   {
     "nombre": "Geología",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4IJQt53_jGmEUxcKjU5PA9bQP5VK9k274lg&s"
   },
   {
     "nombre": "Biotecnología",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsBgi5R-ZX-YAc_Z0K-ObYm0joabZj-61y5A&s"
   },
   {
     "nombre": "ADE",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsqNfYN_fd7dVwD2o9oJHlSbDeYiteTS0Z9g&s"
   },
   {
     "nombre": "Marketing",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLDbnwXTqW8GAoR3Py8gInLs6F6ZfoQCjhw&s"
   },
   {
     "nombre": "Publicidad",
-    "imagen": ""
+    "imagen": "https://www.nosequeestudiar.net/site/assets/files/1571866/estudiar-publicidad-lo-que-debes-saber.jpg"
   },
   {
     "nombre": "Relaciones Públicas",
-    "imagen": ""
+    "imagen": "https://st.mextudia.com/wp-content/uploads/2019/08/relationship-building.jpg"
   },
   {
     "nombre": "Comunicación Audiovisual",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWrySLOSBw7ZK2jh3mR_j7Fsp-O0xPkJU7A&s"
   },
   {
     "nombre": "Cine",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMJQ8cVIP0Clruj_X6RMdfLmLnylyC7FVdg&s"
   },
   {
     "nombre": "Diseño Gráfico",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyRiWQniRYOSvICTwkOV7k3dAZ7GmPs9tZhA&s"
   },
   {
     "nombre": "Diseño de Interiores",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdvjloSmkBojhrM3O7TDksqIm6XMb-r2AqIw&s"
   },
   {
     "nombre": "Música",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgLs_l0kJAHmOdYrm-H5xyWVbuJcumnJ6uw&s"
   },
   {
     "nombre": "Danza",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Ry4Pl1lN082XJSeqYulgBhPbKtlAJPdRng&s"
   },
   {
     "nombre": "Logopedia",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwp6j3dmkuXV2uWMCfq5xcB7zTnEe3CAxbnQ&s"
   },
   {
     "nombre": "Fisioterapia",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DTRzJpvjbDYy1NNd9RP1bGmINRAhoWgAeg&s"
   },
   {
     "nombre": "Nutrición y Dietética",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rtvCG6mAk2IvM-xzwgPecrbCA5uagxZeXg&s"
   },
   {
     "nombre": "Podología",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvCD34atpm36i2D9y0FMgHDJnrZHBvR3hhA&s"
   },
   {
     "nombre": "Óptica",
-    "imagen": ""
+    "imagen": "https://www.uspceu.com/Portals/0/img/oferta-academica/farmacia/600x300_lateral_b_salidas_optica-1.jpg?w=600&h=0&mode=crop"
   },
   {
     "nombre": "Trabajo Social",
-    "imagen": ""
-  },
-  {
-    "nombre": "Pedagogía",
-    "imagen": ""
+    "imagen": "https://www.poli.edu.co/sites/default/files/inline-images/La_importancia_del_Trabajo_Social_en_la_sociedad.jpg"
   },
   {
     "nombre": "Educación Infantil",
-    "imagen": ""
-  },
-  {
-    "nombre": "Educación Primaria",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-xzH6yJlBNVBmxdtY55XwwOVCEKNTuw6mqQ&s"
   },
   {
     "nombre": "Filología Hispánica",
-    "imagen": ""
-  },
-  {
-    "nombre": "Filología Inglesa",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UD91BJdKBfTeEkBMz6lnsmNvRmW2kydYjg&s"
   },
   {
     "nombre": "Traducción e Interpretación",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT7_GffcEOmkBKnXTUMSuFRvj9srBjRQN8aw&s"
   },
   {
     "nombre": "Ingeniería Informática",
-    "imagen": ""
+    "imagen": "https://www.ui1.es/sites/default/files/blog/images/ingenieria-informatica.jpg"
   },
   {
     "nombre": "Ingeniería Mecánica",
-    "imagen": ""
+    "imagen": "https://www.ucavila.es/wp-content/uploads/2021/03/Ingenieria-Mecanica.jpg"
   },
   {
     "nombre": "Ingeniería Civil",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3F9GPzoyz1GVurMH0-1YGohx9g4qSwQptA&s"
   },
   {
     "nombre": "Ingeniería Aeronáutica",
-    "imagen": ""
+    "imagen": "https://blogs.unitec.mx/hubfs/Imported_Blog_Media/carreras-para-estudiar-que-te-ayudaran-a-trabajar-en-la-industria-aeronautica-3-compressor-2.jpg"
   },
   {
     "nombre": "Ingeniería Naval",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ixV706GxpRaEqwdEk5Y6OJbJKEB04ac3GQ&s"
   },
   {
     "nombre": "Ingeniería Eléctrica",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjxwNVygJXt0hJExUlI8Ktwzd3AWA43AQEMQ&s"
   },
   {
     "nombre": "Ingeniería de Telecomunicaciones",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf_pb9skYr9cjVoKSjw6kAhjwk4-oMRdFX4g&s"
   },
   {
     "nombre": "Ingeniería Química",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSccGHC9Y5R8mbuHvu276YkFt70_2GPRWCcGw&s"
   },
   {
     "nombre": "Ingeniería Biomédica",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0uRGxngPhDOLnsPVfukKb9czHn0LIUP9iw&s"
   },
   {
     "nombre": "Estadística",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCk9FbsLpwttvr-M2GBOnw4PNiCVtIKJS3rQ&s"
   },
   {
     "nombre": "Criminología",
-    "imagen": ""
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT2VIU3zzq1EpAjcuvDFNeLAwbkpHA9rIhVA&s"
   }
 ]
