@@ -1333,18 +1333,49 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
 
   function stopRenderLoop() { if (renderInt) { clearInterval(renderInt); renderInt = null; } }
 
+  // Si la foto no carga, el host salta el ítem y sincroniza para que el
+  // guest avance con él. El guest, si solo le falla a él, muestra placeholder
+  // y espera al host (no toca indice para no desincronizar).
+  let fallosImagenSeguidos = 0;
+  const MAX_FALLOS_IMAGEN = 8;
+
   function mostrarImagen() {
     if (items.length === 0) return;
     if (indice >= items.length) { if (rol === "host") terminar(); return; }
+    if (rol === "host" && fallosImagenSeguidos >= MAX_FALLOS_IMAGEN) {
+      fallosImagenSeguidos = 0;
+      $("texto-voz").textContent = "📵 Sin imágenes — revisa tu conexión";
+      terminar();
+      return;
+    }
     const item = items[indice];
     const img = $("imagen-item") as HTMLImageElement;
     const ph = $("imagen-placeholder");
-    img.onload = () => { img.classList.remove("hidden"); ph.classList.add("hidden"); };
-    img.onerror = () => { img.classList.add("hidden"); ph.classList.remove("hidden"); (ph as HTMLElement).textContent = "📷"; };
+    img.onload = () => {
+      fallosImagenSeguidos = 0;
+      img.classList.remove("hidden"); ph.classList.add("hidden");
+    };
+    img.onerror = () => {
+      img.classList.add("hidden");
+      ph.classList.remove("hidden");
+      (ph as HTMLElement).textContent = "📷";
+      if (rol === "host") {
+        fallosImagenSeguidos++;
+        indice++;
+        sync({ fase: "juego", nombreA, nombreB, modo, turno, decimasA, decimasB, timestampTurno, indice, items, categoriaActual });
+        mostrarImagen();
+      }
+    };
     img.classList.add("hidden");
     ph.classList.remove("hidden");
     (ph as HTMLElement).textContent = "📷";
     img.src = item.imagen; img.alt = item.nombre;
+    // Precarga de la siguiente imagen — bajada de cuelgues por red.
+    const siguiente = items[indice + 1];
+    if (siguiente && siguiente.imagen) {
+      const pre = new Image();
+      pre.src = siguiente.imagen;
+    }
     $("overlay-acierto").classList.add("hidden");
     $("overlay-pase").classList.add("hidden");
     $("texto-voz").textContent = "🎤 Escuchando...";

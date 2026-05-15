@@ -1254,19 +1254,46 @@ const slugsInfantiles: string[] = [
     $("zona-b").className = `${ZONA_BASE} ${!esA ? "floor-zona-active-b" : "floor-zona-inactive"}`;
   }
 
+  // Si una imagen no carga (hot-link caducado, 404, anti-leech), saltar al
+  // siguiente ítem sin penalizar al jugador. Tope defensivo por si la red
+  // está caída y fallan todas.
+  let fallosImagenSeguidos = 0;
+  const MAX_FALLOS_IMAGEN = 8;
+
   function mostrarImagen() {
     if (items.length === 0) { terminar(); return; }
     if (indice >= items.length) { terminar(); return; }
+    if (fallosImagenSeguidos >= MAX_FALLOS_IMAGEN) {
+      fallosImagenSeguidos = 0;
+      $("texto-voz").textContent = "📵 Sin imágenes — revisa tu conexión";
+      terminar();
+      return;
+    }
     const item = items[indice];
     const img = $("imagen-item") as HTMLImageElement;
     const ph = $("imagen-placeholder");
-    img.onload = () => { img.classList.remove("hidden"); ph.classList.add("hidden"); };
-    img.onerror = () => { img.classList.add("hidden"); ph.classList.remove("hidden"); (ph as HTMLElement).textContent = "📷"; };
+    img.onload = () => {
+      fallosImagenSeguidos = 0;
+      img.classList.remove("hidden"); ph.classList.add("hidden");
+    };
+    img.onerror = () => {
+      // Foto rota: saltar sin que cuente, ni como acierto ni como pase.
+      fallosImagenSeguidos++;
+      indice++;
+      mostrarImagen();
+    };
     img.classList.add("hidden");
     ph.classList.remove("hidden");
     (ph as HTMLElement).textContent = "📷";
     img.src = item.imagen;
     img.alt = item.nombre;
+    // Precarga de la siguiente para que el navegador la tenga en cache
+    // antes de que le toque mostrarse. Bajada de cuelgues por red.
+    const siguiente = items[indice + 1];
+    if (siguiente && siguiente.imagen) {
+      const pre = new Image();
+      pre.src = siguiente.imagen;
+    }
     $("overlay-acierto").classList.add("hidden");
     $("overlay-pase").classList.add("hidden");
     $("texto-voz").textContent = "🎤 Escuchando...";
@@ -1888,16 +1915,37 @@ const slugsInfantiles: string[] = [
     }, 100);
   }
 
+  let fallosImagenRetoSeguidos = 0;
+
   function mostrarImagenReto() {
     if (retoIndice >= retoItems.length) { finalizarReto(); return; }
+    if (fallosImagenRetoSeguidos >= MAX_FALLOS_IMAGEN) {
+      fallosImagenRetoSeguidos = 0;
+      finalizarReto();
+      return;
+    }
     const item = retoItems[retoIndice];
     const img = $("reto-imagen") as HTMLImageElement;
     const ph = $("reto-imagen-ph");
-    img.onload = () => { img.classList.remove("hidden"); ph.classList.add("hidden"); };
-    img.onerror = () => { img.classList.add("hidden"); ph.classList.remove("hidden"); };
+    img.onload = () => {
+      fallosImagenRetoSeguidos = 0;
+      img.classList.remove("hidden"); ph.classList.add("hidden");
+    };
+    img.onerror = () => {
+      // Foto rota: saltar sin contar acierto ni pase (no penaliza tiempo).
+      fallosImagenRetoSeguidos++;
+      retoIndice++;
+      mostrarImagenReto();
+    };
     img.classList.add("hidden");
     ph.classList.remove("hidden");
     img.src = item.imagen;
+    // Precarga de la siguiente
+    const siguiente = retoItems[retoIndice + 1];
+    if (siguiente && siguiente.imagen) {
+      const pre = new Image();
+      pre.src = siguiente.imagen;
+    }
   }
 
   function arrancarRetoVoz() {
