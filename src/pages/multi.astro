@@ -1269,10 +1269,14 @@ const pusherCluster = import.meta.env.PUBLIC_PUSHER_CLUSTER || "eu";
           else accion("acierto");
           return;
         }
-        // Prioridad 2: comando de voz "paso/pasar" como última palabra de la frase
-        const palabras = texto.toLowerCase().trim().replace(/[.,!¡?¿;:]/g, "").split(/\s+/).filter(Boolean);
+        // Prioridad 2: comando de voz "paso/pasar" como última palabra de la frase.
+        // Normalizamos tildes para no perder "pasó".
+        const palabras = texto.toLowerCase()
+          .normalize("NFD").replace(/[̀-ͯ]/g, "")
+          .trim().replace(/[.,!¡?¿;:]/g, "")
+          .split(/\s+/).filter(Boolean);
         const ultima = palabras[palabras.length - 1] || "";
-        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "pasando" || ultima === "siguiente") {
+        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "pasando" || ultima === "pasao" || ultima === "pase" || ultima === "siguiente") {
           if (rol === "host") registrarPase();
           else accion("pase");
         }

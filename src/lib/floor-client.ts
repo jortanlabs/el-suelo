@@ -351,11 +351,13 @@ function levenshtein(a: string, b: string, max = 1): number {
 // - wars → uars, kit → cit
 // - hamburger → amburguer (h muda)
 // - phone → fone
+// - quad → cuad, quidditch → cuidditch (qu castellanizado)
 // - sully → suly, anna → ana, ross → ros (consonantes dobles colapsadas)
 // - dory → dori, harry → hari (y final pronunciada como i en castellano)
 function fonetizar(p: string): string {
   return p
     .replace(/^s([bcdfghjklmnpqrstvwxyz])/, "es$1")
+    .replace(/qu/g, "cu")
     .replace(/w/g, "u")
     .replace(/k/g, "c")
     .replace(/^h/, "")
@@ -401,12 +403,42 @@ export function aciertoFlexible(
   // "Ajo blanco" (transcripción) vs "ajoblanco" (nombre) — y a la inversa.
   // Quitamos paréntesis del nombre antes de unir, para no incluir la peli/contexto.
   const nLimpio = nombre.replace(/\s*\([^)]+\)\s*$/, "").trim();
-  const nSinEsp = normalizar(nLimpio).replace(/\s+/g, "");
-  const tSinEsp = normalizar(transcripcion).replace(/\s+/g, "");
+  const nNorm = normalizar(nLimpio);
+  const tNorm = normalizar(transcripcion);
+  const nSinEsp = nNorm.replace(/\s+/g, "");
+  const tSinEsp = tNorm.replace(/\s+/g, "");
   if (nSinEsp.length >= 4 && tSinEsp.includes(nSinEsp)) return true;
   if (tSinEsp.length >= 4 && nSinEsp.includes(tSinEsp)) return true;
 
-  const t = ` ${normalizar(transcripcion)} `;
+  // Nombres cortos (Ed, Edd, BB, etc.): el resto de la lógica los descarta por
+  // su filtro length>2. Pedimos match de palabra completa contra la transcripción.
+  if (nNorm.length >= 2 && nNorm.length <= 3 && !STOP.has(nNorm)) {
+    const t0 = ` ${tNorm} `;
+    if (t0.includes(` ${nNorm} `)) return true;
+    // Fonetizada para captar p.ej. "Edd" → "ed"
+    const nFon = fonetizar(nNorm);
+    if (nFon.length >= 2 && nFon !== nNorm && t0.includes(` ${nFon} `)) return true;
+    return false;
+  }
+
+  // Fallback de palabra única: comparar versiones concatenadas con Levenshtein
+  // generoso. Cubre transcripciones donde el reconocedor parte mal o se come
+  // una letra (Aragog → "aragó", Hagrid → "hágrid", etc.).
+  if (nSinEsp.length >= 5 && tSinEsp.length >= 3) {
+    const maxLev = nSinEsp.length <= 6 ? 1 : nSinEsp.length <= 9 ? 2 : 3;
+    if (levenshtein(nSinEsp, tSinEsp, maxLev) <= maxLev) return true;
+    const nFon = fonetizar(nSinEsp);
+    if (nFon !== nSinEsp && levenshtein(nFon, tSinEsp, maxLev) <= maxLev) return true;
+  }
+
+  // Palabras de 4 chars: solo aceptamos Lev=1 si la fonetización cambia la
+  // palabra (evita falsos positivos tipo "pato"↔"gato"). Cubre Quad→"cuat".
+  if (nSinEsp.length === 4 && tSinEsp.length >= 3) {
+    const nFon = fonetizar(nSinEsp);
+    if (nFon !== nSinEsp && levenshtein(nFon, tSinEsp, 1) <= 1) return true;
+  }
+
+  const t = ` ${tNorm} `;
   const palabras = normalizar(nombre)
     .split(/\s+/)
     .filter((p) => p.length > 2 && !STOP.has(p));
@@ -425,7 +457,7 @@ export function aciertoFlexible(
     // Fonética: comparar la forma fonetizada del nombre con la transcripción
     // (cubre "star wars" pronunciado "estar uars", "manchester" como "mánchester", etc.)
     const pFon = fonetizar(p);
-    if (pFon !== p && pFon.length >= 3) {
+    if (pFon !== p && pFon.length >= 2) {
       if (t.includes(` ${pFon} `)) return true;
       if (lim > 0 && tWords.some((w) => levenshtein(pFon, w, lim) <= lim)) return true;
     }

@@ -1408,10 +1408,15 @@ const slugsInfantiles: string[] = [
           return;
         }
         // Prioridad 2: comando de voz "paso/pasar" como última palabra de la frase
-        // (p.ej. "no lo sé paso", "guepardo paso", "eh... paso")
-        const palabras = texto.toLowerCase().trim().replace(/[.,!¡?¿;:]/g, "").split(/\s+/).filter(Boolean);
+        // (p.ej. "no lo sé paso", "guepardo paso", "eh... paso"). Normalizamos
+        // tildes para no perder "pasó" (que el reconocedor a veces transcribe
+        // con tilde en vez de "paso").
+        const palabras = texto.toLowerCase()
+          .normalize("NFD").replace(/[̀-ͯ]/g, "")
+          .trim().replace(/[.,!¡?¿;:]/g, "")
+          .split(/\s+/).filter(Boolean);
         const ultima = palabras[palabras.length - 1] || "";
-        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "pasando" || ultima === "siguiente") {
+        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "pasando" || ultima === "pasao" || ultima === "pase" || ultima === "siguiente") {
           registrarPase();
         }
       },
@@ -1961,9 +1966,12 @@ const slugsInfantiles: string[] = [
           retoAcierto();
           return;
         }
-        const palabras = texto.toLowerCase().trim().replace(/[.,!¡?¿;:]/g, "").split(/\s+/).filter(Boolean);
+        const palabras = texto.toLowerCase()
+          .normalize("NFD").replace(/[̀-ͯ]/g, "")
+          .trim().replace(/[.,!¡?¿;:]/g, "")
+          .split(/\s+/).filter(Boolean);
         const ultima = palabras[palabras.length - 1] || "";
-        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "siguiente") {
+        if (ultima === "paso" || ultima === "pasar" || ultima === "pasa" || ultima === "pasando" || ultima === "pasao" || ultima === "pase" || ultima === "siguiente") {
           retoPaso();
         }
       },
