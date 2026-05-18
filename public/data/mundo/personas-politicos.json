@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Pedro Sánchez",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAx-KCBopSG6KQJqOZt2Jw2aETZcOo9yFitA&s"
+    "imagen": ""
   },
   {
     "nombre": "Mariano Rajoy",
@@ -9,23 +9,23 @@
   },
   {
     "nombre": "José Luis Rodríguez Zapatero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSCqPeAUB-6CMrQN4DCfQ9QUNceqRafDCoaA&s"
+    "imagen": ""
   },
   {
     "nombre": "Felipe González",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgfXEEHwwin-WMhZJNb791YwI0Iz1jzdx49Q&s"
+    "imagen": ""
   },
   {
     "nombre": "José María Aznar",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9t8JV83zVm7v7m6xDJGYy4xyIITLCG3Md8Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Adolfo Suárez",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROllBeylQQ7AQ9atBOZEhP8NvPD-Y9IdgOqw&s"
+    "imagen": ""
   },
   {
     "nombre": "Manuela Carmena",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdOFWJIkLqFIoC6RTCG4s7QcOtai5Nlgw-Sg&s"
+    "imagen": ""
   },
   {
     "nombre": "Yolanda Díaz",
@@ -41,11 +41,11 @@
   },
   {
     "nombre": "Santiago Abascal",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03kJ2ItGHZNRBmZB8NyAiTOss9oDp-UgfxQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Inés Arrimadas",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7i6qVUgawJCxg58yBCkMhbARCcAgoe1_VZA&s"
+    "imagen": ""
   },
   {
     "nombre": "Albert Rivera",
@@ -73,7 +73,7 @@
   },
   {
     "nombre": "Emmanuel Macron",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS45Hxu2wdcDfnnGKBHCtlws5t9PuPixtHmVg&s"
+    "imagen": ""
   },
   {
     "nombre": "Angela Merkel",
@@ -85,7 +85,7 @@
   },
   {
     "nombre": "Volodímir Zelenski",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZd0GFvbsqIFw9l_GD0wTgKoKqH_9b7pEbvg&s"
+    "imagen": ""
   },
   {
     "nombre": "Xi Jinping",
@@ -101,11 +101,11 @@
   },
   {
     "nombre": "Olaf Scholz",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0obdbKPotoZo-K9ccG-hNo9uF95Dc0ne17g&s"
+    "imagen": ""
   },
   {
     "nombre": "Rishi Sunak",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcEPPGdTFXLpKY8qWm7Vs5zF5LbN6Aesuvg&s"
+    "imagen": ""
   },
   {
     "nombre": "Keir Starmer",
@@ -117,11 +117,11 @@
   },
   {
     "nombre": "David Cameron",
-    "imagen": "https://cdn.britannica.com/92/99692-050-463DC699/David-Cameron.jpg"
+    "imagen": ""
   },
   {
     "nombre": "Tony Blair",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrOFtmpZkHEy3tdA6F2wlRRMP0GM5m4n7-vg&s"
+    "imagen": ""
   },
   {
     "nombre": "Margaret Thatcher",
@@ -129,7 +129,7 @@
   },
   {
     "nombre": "Nelson Mandela",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfaO7SwnmYkujg2I2083_GFZBTXEX8S6ncQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Lula da Silva",
@@ -137,11 +137,11 @@
   },
   {
     "nombre": "Jair Bolsonaro",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6LL8zMGcSvoTDab_4Eqt9YLqNzXvlM6muQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Javier Milei",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3wUM8ds5cQhSz9mr23FeNbzyHuCzeQ1hSHA&s"
+    "imagen": ""
   },
   {
     "nombre": "Kamala Harris",
@@ -153,11 +153,11 @@
   },
   {
     "nombre": "Bill Clinton",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYdcI86mcV8jNF29LgGPJ4GHKcBIWhShsZ-w&s"
+    "imagen": ""
   },
   {
     "nombre": "George W. Bush",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrNXxnUjy0ZUAk6GCDbTGqoEgZbgVwEyIlyA&s"
+    "imagen": ""
   },
   {
     "nombre": "Ronald Reagan",
@@ -173,15 +173,15 @@
   },
   {
     "nombre": "François Hollande",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaiMA7zvTHJmMwm29-kZcJxXQt_OAZcP2baA&s"
+    "imagen": ""
   },
   {
     "nombre": "Nicolas Sarkozy",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvkRYCDOsNbOIfdY2GfiCYEc2R8dAm4KAyQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Silvio Berlusconi",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvYmf2fMa3zush2blpuPt83RQD7-bNrvP-A&s"
+    "imagen": ""
   },
   {
     "nombre": "Felipe VI",
@@ -197,6 +197,6 @@
   },
   {
     "nombre": "Reina Sofía",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08tFBoTF97Qq_CeRNbCgYcH7wALO8lHAFzQ&s"
+    "imagen": ""
   }
 ]

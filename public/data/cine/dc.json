@@ -5,7 +5,7 @@
   },
   {
     "nombre": "Batman",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm4UvkBEJ3Cen3hxnvxLfhf5ifT4Uu0LPTBQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Wonder Woman",
@@ -21,11 +21,11 @@
   },
   {
     "nombre": "Linterna Verde",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6AHy1DrEYPzvbXEzd8GIMoXA5qUBV9jX5Cw&s"
+    "imagen": ""
   },
   {
     "nombre": "Cyborg (DC)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8-F7VN2yBKVm4MugUiZfZEiY6WqwxdBLAPw&s"
+    "imagen": ""
   },
   {
     "nombre": "Shazam",
@@ -37,7 +37,7 @@
   },
   {
     "nombre": "Joker",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrRznvv2XYd0YUn4yAQWK7u5p5WZUBIwgSaw&s"
+    "imagen": ""
   },
   {
     "nombre": "Lex Luthor",
@@ -49,7 +49,7 @@
   },
   {
     "nombre": "Harley Quinn",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTftsJnpjuHIFefW_E9Zb-VMsjevLlBf5XQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Pingüino (DC)",
@@ -61,7 +61,7 @@
   },
   {
     "nombre": "Dos Caras",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXcM-YRjk-TlaW4oiMkAx0o9_4frnEoEteBw&s"
+    "imagen": ""
   },
   {
     "nombre": "Bane (DC)",
@@ -69,11 +69,11 @@
   },
   {
     "nombre": "Espantapájaros (DC)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHINjX1_D6TMnz5RsWkfYvDBct0xym5tg9g&s"
+    "imagen": ""
   },
   {
     "nombre": "Hiedra Venenosa",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zd3xBvQT9dEAawnHKM-zG7m07u0Uf5ZGAw&s"
+    "imagen": ""
   },
   {
     "nombre": "Deathstroke",
@@ -105,7 +105,7 @@
   },
   {
     "nombre": "Lois Lane",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAI1xgfUaqZoxrlN2pJQALxF50ym_3NuuuVA&s"
+    "imagen": ""
   },
   {
     "nombre": "Alfred Pennyworth",
@@ -113,11 +113,11 @@
   },
   {
     "nombre": "Comisario Gordon",
-    "imagen": "https://album.mediaset.es/eimg/2017/09/23/9XaweVkE0YRYwUoxYdSya.jpg?w=1200"
+    "imagen": ""
   },
   {
     "nombre": "Jimmy Olsen",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyY2zPORP_s3ELB5Gx25oTmNb_JYbvBIXaQw&s"
+    "imagen": ""
   },
   {
     "nombre": "Nightwing",
@@ -149,11 +149,11 @@
   },
   {
     "nombre": "Zatanna",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkordHYFycrD76ixJQ67EC8V9wJlrjgFzWTQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Starfire",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlDjh1rVwElt1te0tVQEI009Sjkhxg0oB-w&s"
+    "imagen": ""
   },
   {
     "nombre": "Raven (DC)",
@@ -161,11 +161,11 @@
   },
   {
     "nombre": "Beast Boy",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStm1RXwX9dXdGXZYyHu7tOIV5wT0cvo7pjGA&s"
+    "imagen": ""
   },
   {
     "nombre": "Robin (Dick Grayson)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2t8aDjrfEKL785ASdaavEkCc5W30XFxHlCA&s"
+    "imagen": ""
   },
   {
     "nombre": "Mercy Graves",
@@ -193,7 +193,7 @@
   },
   {
     "nombre": "Polka-Dot Man",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlAWpFN55DOW6OmQdcGmA9WtcZElloboW2A&s"
+    "imagen": ""
   },
   {
     "nombre": "Ratcatcher",
@@ -225,7 +225,7 @@
   },
   {
     "nombre": "Gorilla Grodd",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw0v9KpMnLRC-7GZRm-lI-3I25MV-BqYp7Kg&s"
+    "imagen": ""
   },
   {
     "nombre": "Weather Wizard",

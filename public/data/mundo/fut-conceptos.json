@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Portería",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQKeWqxl85q_hjsHYx3OVyvx8tJOPfaXDfg&s"
+    "imagen": ""
   },
   {
     "nombre": "Balón de fútbol",
@@ -9,15 +9,15 @@
   },
   {
     "nombre": "Árbitro",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5ivTDwTJhot1JdPS5b-nIWou4D0z94sW1A&s"
+    "imagen": ""
   },
   {
     "nombre": "Tarjeta roja",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR89R5CchKxfq2ZF-DoGFYegZkRU-AxlWvQrA&s"
+    "imagen": ""
   },
   {
     "nombre": "Tarjeta amarilla",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNO5ECKB5EUS3HHZAm_uG6dRK8G7hSvPUymQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Penalti",
@@ -33,7 +33,7 @@
   },
   {
     "nombre": "Falta",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEryCbELsa34B-PQuPp_V7_KcO3Oc_9_cMQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Tiro libre",
@@ -45,7 +45,7 @@
   },
   {
     "nombre": "Saque de banda",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyUxlLTrL-pdTHMEOFbrEeSpXuqluLssoag&s"
+    "imagen": ""
   },
   {
     "nombre": "VAR",
@@ -53,7 +53,7 @@
   },
   {
     "nombre": "Hat-trick",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_MaETRtTLa3RcBHyfTaR8fQitepb_Z9x1A&s"
+    "imagen": ""
   },
   {
     "nombre": "Autogol",
@@ -121,7 +121,7 @@
   },
   {
     "nombre": "Regate",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdHhkvJ3sQkMIKXzQZchkVQKW8udY6MDzkZA&s"
+    "imagen": ""
   },
   {
     "nombre": "Asistencia",
@@ -141,7 +141,7 @@
   },
   {
     "nombre": "Liga",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUYZUuw3OYKIpz4KuHEkm97wTeA7OSmME7Ng&s"
+    "imagen": ""
   },
   {
     "nombre": "Copa del Rey",
@@ -205,15 +205,15 @@
   },
   {
     "nombre": "Mercado de fichajes",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkpMcJTJX2O-fZvHWllTsWoisyzMFRURtH7Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Cláusula",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ0HuaB44L8hussImStALAo0gYB46WSz299g&s"
+    "imagen": ""
   },
   {
     "nombre": "Traspaso",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_ux9KYdb9H-MkvRsF6b2LphwJjoIEfgtqw&s"
+    "imagen": ""
   },
   {
     "nombre": "Cesión",
@@ -221,7 +221,7 @@
   },
   {
     "nombre": "Sustitución",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFSmmLXrlKb9yS5gr1hyasDrYDRH5r6tZRXg&s"
+    "imagen": ""
   },
   {
     "nombre": "Larguero",
@@ -229,11 +229,11 @@
   },
   {
     "nombre": "Palo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQ3rrNFckaY4X2-NfQdMPHksfUgsvvQeiiQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Red",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvJkjo0OrhjpOFpZ64jt_49aP9Iw93TTlNow&s"
+    "imagen": ""
   },
   {
     "nombre": "Saque inicial",
@@ -241,6 +241,6 @@
   },
   {
     "nombre": "Tiempo añadido",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0Dcr5XajHahlYPLYMAF2Xp7i_YA-kTmIBA&s"
+    "imagen": ""
   }
 ]

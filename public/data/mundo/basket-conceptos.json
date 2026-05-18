@@ -53,11 +53,11 @@
   },
   {
     "nombre": "Pick and roll",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYhPOOLTxouDWTcwyXWcbgKZnXuGDvoVzcQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Fast break",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN02kvN78nCG08UJvPSuJiI95gGZV-wuEtKA&s"
+    "imagen": ""
   },
   {
     "nombre": "Tiempo muerto",
@@ -85,7 +85,7 @@
   },
   {
     "nombre": "Falta antideportiva",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUqzs4rK8E6YtOXEsue_lWN1aEJxM8ldtrA&s"
+    "imagen": ""
   },
   {
     "nombre": "Bandeja",
@@ -97,7 +97,7 @@
   },
   {
     "nombre": "Escolta",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-uLuBSmOKJBoNaVTpVosLk7C02SIAwlc0A&s"
+    "imagen": ""
   },
   {
     "nombre": "Ala-pívot",
@@ -105,11 +105,11 @@
   },
   {
     "nombre": "Bloqueo directo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9yevcDArfX5b2Qg_zt1NeS-vHx9nsv6UUMg&s"
+    "imagen": ""
   },
   {
     "nombre": "Isolación",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGZs9eaQqiE7p6jWsJjxxYG5oEojRhE4I4g&s"
+    "imagen": ""
   },
   {
     "nombre": "Doble equipo",
@@ -129,7 +129,7 @@
   },
   {
     "nombre": "Posesión",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt3OH7Nns_X_hRU4JNIayc80HmeYAOX9l1iQ&s"
+    "imagen": ""
   },
   {
     "nombre": "24 segundos",
@@ -141,7 +141,7 @@
   },
   {
     "nombre": "Dobles",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_gINinlKKniQ3khY5LrDFg2UreFOWyz6Dlw&s"
+    "imagen": ""
   },
   {
     "nombre": "Campo atrás",
@@ -149,7 +149,7 @@
   },
   {
     "nombre": "3 segundos",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3TRyQBeHWfKwhItHVnCQpKh2BAxH94chF0w&s"
+    "imagen": ""
   },
   {
     "nombre": "5 segundos",
@@ -173,11 +173,11 @@
   },
   {
     "nombre": "FIBA",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhv2FcQqd4AlDI4tsh7m7EgaMvI0GmPRF8lg&s"
+    "imagen": ""
   },
   {
     "nombre": "Olimpiadas",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzFY1kZoLs0103qImJM8xw4YAnX_NOfOphVQ&s"
+    "imagen": ""
   },
   {
     "nombre": "MVP",
@@ -193,7 +193,7 @@
   },
   {
     "nombre": "Draft",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP2HPrVz__cDA_6WPRY9InB6xgHJ-bBMJrhA&s"
+    "imagen": ""
   },
   {
     "nombre": "All-Star",
@@ -205,6 +205,6 @@
   },
   {
     "nombre": "Cesta",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnF4QfkCz8jgVVN0iMJQh7vhOoBWGa12pOfw&s"
+    "imagen": ""
   }
 ]

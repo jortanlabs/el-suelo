@@ -57,7 +57,7 @@
   },
   {
     "nombre": "Samsung",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjCGzpvokdRiGL0FFBlZR8Cdhd_-b352BX7w&s"
+    "imagen": ""
   },
   {
     "nombre": "Microsoft",
@@ -65,7 +65,7 @@
   },
   {
     "nombre": "Volkswagen",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScF-kimNf4i7HIsoA-asXLr-W8cKjcUi9RVw&s"
+    "imagen": ""
   },
   {
     "nombre": "IKEA",
@@ -81,7 +81,7 @@
   },
   {
     "nombre": "Lacoste",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFSbnENB_ap1fWINSKsTvA9dWQojg41JMXyA&s"
+    "imagen": ""
   },
   {
     "nombre": "Puma",
@@ -109,11 +109,11 @@
   },
   {
     "nombre": "Toyota",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9Ofn2XiA0g0ffoFi0H5hF91tCy6aJJDj8w&s"
+    "imagen": ""
   },
   {
     "nombre": "Twitter",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XgxyCkDKtu8hCsohSB22-GEyar6FuqRYoQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Meta",
@@ -125,7 +125,7 @@
   },
   {
     "nombre": "Chupa Chups",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmCK7xhs33Avu97SX_Bkk4xF7ShglZta620Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Michelin",
@@ -145,11 +145,11 @@
   },
   {
     "nombre": "Audi",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSSyKFxAt7NXVeWuzA2D8k1Vak5YWXh5FGOw&s"
+    "imagen": ""
   },
   {
     "nombre": "Danone",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nyplv6NWAvfjvu9LK3garuzfZAbLdvuqoQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Kellogg's",
@@ -201,15 +201,15 @@
   },
   {
     "nombre": "Telepizza",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzPYcV2CMNaZyeELJbFwxVDoe-y7KtFzh4iA&s"
+    "imagen": ""
   },
   {
     "nombre": "Santander",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2mM4mOcVKmmV6TKAYvvo6_fikW64JYBoOg&s"
+    "imagen": ""
   },
   {
     "nombre": "CaixaBank",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM9eKUWit-_xtUy3usTfI4hxSjZRCv-kg70w&s"
+    "imagen": ""
   },
   {
     "nombre": "Bankinter",
@@ -221,15 +221,15 @@
   },
   {
     "nombre": "Movistar",
-    "imagen": "https://logosenvector.com/logo/img/movistar-37448.png"
+    "imagen": ""
   },
   {
     "nombre": "Vodafone",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMnHUXPOqJ98qBzWln1pEKihP4lUCHaMtow&s"
+    "imagen": ""
   },
   {
     "nombre": "Decathlon",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnopGA7llqi-q65-9uHHhLLo0Uu0FehGUeIQ&s"
+    "imagen": ""
   },
   {
     "nombre": "MediaMarkt",
@@ -249,7 +249,7 @@
   },
   {
     "nombre": "Louis Vuitton",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJ7hLjDuj1YZPF7-bZEDIip0pZir0AW4Vow&s"
+    "imagen": ""
   },
   {
     "nombre": "Rolex",
@@ -261,7 +261,7 @@
   },
   {
     "nombre": "Iberdrola",
-    "imagen": "https://www.iberdrola.com/documents/20125/4419331/Recurso_marca_esta%CC%81tico_Marca.png"
+    "imagen": ""
   },
   {
     "nombre": "76. Domino's Pizza",
@@ -277,11 +277,11 @@
   },
   {
     "nombre": "Toyota",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9Ofn2XiA0g0ffoFi0H5hF91tCy6aJJDj8w&s"
+    "imagen": ""
   },
   {
     "nombre": "Twitter",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XgxyCkDKtu8hCsohSB22-GEyar6FuqRYoQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Meta",
@@ -293,7 +293,7 @@
   },
   {
     "nombre": "Chupa Chups",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmCK7xhs33Avu97SX_Bkk4xF7ShglZta620Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Michelin",
@@ -313,11 +313,11 @@
   },
   {
     "nombre": "Audi",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSSyKFxAt7NXVeWuzA2D8k1Vak5YWXh5FGOw&s"
+    "imagen": ""
   },
   {
     "nombre": "Danone",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nyplv6NWAvfjvu9LK3garuzfZAbLdvuqoQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Kellogg's",
@@ -369,15 +369,15 @@
   },
   {
     "nombre": "Telepizza",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzPYcV2CMNaZyeELJbFwxVDoe-y7KtFzh4iA&s"
+    "imagen": ""
   },
   {
     "nombre": "Santander",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2mM4mOcVKmmV6TKAYvvo6_fikW64JYBoOg&s"
+    "imagen": ""
   },
   {
     "nombre": "CaixaBank",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM9eKUWit-_xtUy3usTfI4hxSjZRCv-kg70w&s"
+    "imagen": ""
   },
   {
     "nombre": "Bankinter",
@@ -389,15 +389,15 @@
   },
   {
     "nombre": "Movistar",
-    "imagen": "https://logosenvector.com/logo/img/movistar-37448.png"
+    "imagen": ""
   },
   {
     "nombre": "Vodafone",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMnHUXPOqJ98qBzWln1pEKihP4lUCHaMtow&s"
+    "imagen": ""
   },
   {
     "nombre": "Decathlon",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnopGA7llqi-q65-9uHHhLLo0Uu0FehGUeIQ&s"
+    "imagen": ""
   },
   {
     "nombre": "MediaMarkt",
@@ -417,7 +417,7 @@
   },
   {
     "nombre": "Louis Vuitton",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJ7hLjDuj1YZPF7-bZEDIip0pZir0AW4Vow&s"
+    "imagen": ""
   },
   {
     "nombre": "Rolex",
@@ -429,6 +429,6 @@
   },
   {
     "nombre": "Iberdrola",
-    "imagen": "https://www.iberdrola.com/documents/20125/4419331/Recurso_marca_esta%CC%81tico_Marca.png"
+    "imagen": ""
   }
 ]

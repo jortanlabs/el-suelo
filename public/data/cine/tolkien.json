@@ -5,7 +5,7 @@
   },
   {
     "nombre": "Sam Gamyi",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yEa-c8LazBXfiiBBiUIM0AfwyH-jTzeknw&s"
+    "imagen": ""
   },
   {
     "nombre": "Gandalf",
@@ -13,11 +13,11 @@
   },
   {
     "nombre": "Aragorn",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFpkzGvIJwmdh2oRHRiC3l4QEvsPDX6Yt4sQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Legolas",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSHkEtK_6H2w4_8gO-T3hftvNYbAgM6zi8Mg&s"
+    "imagen": ""
   },
   {
     "nombre": "Gimli",
@@ -37,15 +37,15 @@
   },
   {
     "nombre": "Gollum",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZOezcwKp7475aSHLffdBtbRZ2jXRhDNpB2w&s"
+    "imagen": ""
   },
   {
     "nombre": "Sauron",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3CvqEgCNfySbG6iR2aIFzgmIMzsxSfViWyA&s"
+    "imagen": ""
   },
   {
     "nombre": "Saruman",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Sttzuh4ydcKEGJtRFm3GBm_CDUz4YKwx3g&s"
+    "imagen": ""
   },
   {
     "nombre": "Arwen",
@@ -53,11 +53,11 @@
   },
   {
     "nombre": "Elrond",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGO8lQzwoaC5PO016X1VV2pDcQtDEL-JSaGw&s"
+    "imagen": ""
   },
   {
     "nombre": "Galadriel",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLco5CUUZEmsrzvs7t91sGb__kY6RTHSUwnw&s"
+    "imagen": ""
   },
   {
     "nombre": "Éowyn",
@@ -65,7 +65,7 @@
   },
   {
     "nombre": "Éomer",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWCT4Jap90vbY7GLaC_NpcWOiTCn_SGaTWoQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Théoden",
@@ -81,7 +81,7 @@
   },
   {
     "nombre": "Balrog (El Señor de los Anillos)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYO2f7_PaxyyzGuHyjODjYVrrc3mEquufxQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Ella-Laraña",
@@ -133,11 +133,11 @@
   },
   {
     "nombre": "Azog (El Hobbit)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsenT_GieVkSbbFVYi58v4d58RDJusIKKBYw&s"
+    "imagen": ""
   },
   {
     "nombre": "Smaug (El Hobbit)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlLggT5Da2Iw_XHiZg6UgYzsUGot5UBgQO_w&s"
+    "imagen": ""
   },
   {
     "nombre": "Radagast (El Hobbit)",
@@ -193,15 +193,15 @@
   },
   {
     "nombre": "Aguila Gigante (El Señor de los Anillos)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQE15e_VYsiGAn9Ue08plBHkWo7tIzxLm08w&s"
+    "imagen": ""
   },
   {
     "nombre": "Ungoliant",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBUf30TtaDjU1FJ2z6LAXmQzDIdZokH5-4Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Nazgûl",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJscDA-Sz6yU3xACyp2xjEhuGvlR0hxxOO2w&s"
+    "imagen": ""
   },
   {
     "nombre": "Uruk-hai",
@@ -213,6 +213,6 @@
   },
   {
     "nombre": "Palantír",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgAKd0wKD4iQvcM_ODKcwMkh855Gjmo3mjEg&s"
+    "imagen": ""
   }
 ]

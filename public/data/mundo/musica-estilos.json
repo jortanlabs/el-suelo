@@ -45,15 +45,15 @@
   },
   {
     "nombre": "Country",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX31b8rg-53Jn8NCKyhoVo_Sf81sZKtS1C2g&s"
+    "imagen": ""
   },
   {
     "nombre": "Folk",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST2N9CUtONM7KjNlgZSPzKyvL-EC--zbMz9g&s"
+    "imagen": ""
   },
   {
     "nombre": "Música clásica",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWeU5_E8c0gQiev4RGG8HRY-kbG2wfzubag&s"
+    "imagen": ""
   },
   {
     "nombre": "Ópera",
@@ -61,7 +61,7 @@
   },
   {
     "nombre": "Bossa Nova",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL63b56wbNlQOd7yRyc0Q_QBCxaI5YvK_czA&s"
+    "imagen": ""
   },
   {
     "nombre": "Samba",

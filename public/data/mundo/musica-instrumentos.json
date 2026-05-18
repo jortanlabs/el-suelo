@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Piano",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapzRfOj8MHt9cjHzsDtBYY21lNJ3GALcIRg&s"
+    "imagen": ""
   },
   {
     "nombre": "Guitarra eléctrica",
@@ -21,7 +21,7 @@
   },
   {
     "nombre": "Violín",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nbm-_kQTC-viD2HUCJtvWn09WzdMvr7J4w&s"
+    "imagen": ""
   },
   {
     "nombre": "Violonchelo",
@@ -65,7 +65,7 @@
   },
   {
     "nombre": "Tuba",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gvO9YySfSxFqWXddL82V-uqKga9uDhTijg&s"
+    "imagen": ""
   },
   {
     "nombre": "Tambor",
@@ -81,7 +81,7 @@
   },
   {
     "nombre": "Ukelele",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDDjMsb3iVth9KorRn9TVGmLOVHERoVG3t5A&s"
+    "imagen": ""
   },
   {
     "nombre": "Mandolina",
@@ -109,7 +109,7 @@
   },
   {
     "nombre": "Timbal",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP25pWD9p47IBZmncXiVQYkaNWQLxGpFQvsw&s"
+    "imagen": ""
   },
   {
     "nombre": "Bombo",
@@ -149,7 +149,7 @@
   },
   {
     "nombre": "Timbal",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP25pWD9p47IBZmncXiVQYkaNWQLxGpFQvsw&s"
+    "imagen": ""
   },
   {
     "nombre": "Bombo",
@@ -165,7 +165,7 @@
   },
   {
     "nombre": "Triángulo",
-    "imagen": "https://www.alupe.es/wp-content/uploads/triangle-instrument.jpg"
+    "imagen": ""
   },
   {
     "nombre": "Cajón",

@@ -1,19 +1,19 @@
 [
   {
     "nombre": "Torre Eiffel",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIlwLgWdqHPAD9QgTtxi8qvtvPmn1P4OUI-Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Coliseo Romano",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7-PQ_p9z4dE8PWckyPPk9movaYRUNb70Vg&s"
+    "imagen": ""
   },
   {
     "nombre": "Sagrada Familia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHJNHzT7CIux5CKMtqm0mUgUv261MI8qPiKg&s"
+    "imagen": ""
   },
   {
     "nombre": "Big Ben",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGdnIQDBct1mcDZPpl6I9eLfvuCwzlirMsIg&s"
+    "imagen": ""
   },
   {
     "nombre": "Machu Picchu",
@@ -33,11 +33,11 @@
   },
   {
     "nombre": "Taj Mahal",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQztD8e1R-30C3zKrbYQSHawJdeupi8yIrWiA&s"
+    "imagen": ""
   },
   {
     "nombre": "Estatua de la Libertad",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCf6j3bIpIIE8ImJyfSvPTDmN6WRt_xRURw&s"
+    "imagen": ""
   },
   {
     "nombre": "Acrópolis de Atenas",
@@ -45,7 +45,7 @@
   },
   {
     "nombre": "Alhambra de Granada",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREf-m7wUqHipyAkD0MZF5VkVCEDhI8mwaNSQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Palacio de Versalles",
@@ -77,7 +77,7 @@
   },
   {
     "nombre": "Torre de Pisa",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcN9IQUsSEjHvKKHXgNEogwouaz2OfSsMsw&s"
+    "imagen": ""
   },
   {
     "nombre": "Torres Petronas",
@@ -97,7 +97,7 @@
   },
   {
     "nombre": "Catedral de Santiago de Compostela",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZy4JX1fqbjbIrQAB5Ms9pTLAz4qTkFpApYg&s"
+    "imagen": ""
   },
   {
     "nombre": "Gran Cañón del Colorado",
@@ -129,7 +129,7 @@
   },
   {
     "nombre": "Mezquita de Córdoba",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1bRk0eq--NQ4fBwua56x44v_V7UFqX6ZvFA&s"
+    "imagen": ""
   },
   {
     "nombre": "Sacré Coeur",
@@ -141,11 +141,11 @@
   },
   {
     "nombre": "Catedral de Colonia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdARiuiMQlRN6Stani09o5lwPGjg8oTjv5Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Mont Saint-Michel",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVwmEmiq8UHNfVw3wPUiRuJuczHZUU5_uIBw&s"
+    "imagen": ""
   },
   {
     "nombre": "Atomium",
@@ -153,15 +153,15 @@
   },
   {
     "nombre": "Manneken Pis",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBeJVhxO9o3EMnnKmeZCXEx1Y4Me-2EOckw&s"
+    "imagen": ""
   },
   {
     "nombre": "Puerta de Brandeburgo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPPx_RefZ6rFndquNgPe8mSUnnkGEWCzCXg&s"
+    "imagen": ""
   },
   {
     "nombre": "Catedral de San Basilio",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVrOROtb1Q_2U3q8tLM5z5ShVD4b1dmjy7Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Kremlin",
@@ -169,11 +169,11 @@
   },
   {
     "nombre": "Ciudad Prohibida",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xQTxhC3SjEXVli6q94HCe9gZaMR4jPiXZg&s"
+    "imagen": ""
   },
   {
     "nombre": "Burj Khalifa",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYQF_CXacYHIHxWyBUEpfPcfoRL81zDRWmQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Mezquita Azul",
@@ -185,11 +185,11 @@
   },
   {
     "nombre": "Empire State Building",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKc-fuLIfy4VMszXgcRpSVLA6sz00ZPYabcA&s"
+    "imagen": ""
   },
   {
     "nombre": "Chrysler Building",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQac5WgneQRj-mZsJrKb5ODT3YYJX8e7zCXvw&s"
+    "imagen": ""
   },
   {
     "nombre": "Golden Gate",
@@ -197,7 +197,7 @@
   },
   {
     "nombre": "Cataratas del Niágara",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5xserMMZuXHTwgnBMFebCJGrL-OS1JLJXg&s"
+    "imagen": ""
   },
   {
     "nombre": "Mount Rushmore",
@@ -209,11 +209,11 @@
   },
   {
     "nombre": "Brooklyn Bridge",
-    "imagen": "https://cdn.britannica.com/80/115080-050-46BE2B70/Brooklyn-Bridge-East-River-New-York-City.jpg"
+    "imagen": ""
   },
   {
     "nombre": "Tower Bridge",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_eNXgWe2kt8fvenkhDSjzbiyu6qbhOc5QQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Castillo de Edimburgo",
@@ -229,7 +229,7 @@
   },
   {
     "nombre": "Westminster",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJf7MKBn9f6DMvKa7beZ4-EFOkxCtH8sLMZw&s"
+    "imagen": ""
   },
   {
     "nombre": "Casa Blanca",
@@ -237,6 +237,6 @@
   },
   {
     "nombre": "Capitolio de Washington",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoryYHgttdzWL2V3OZGloAPTKbMW55h06JHw&s"
+    "imagen": ""
   }
 ]

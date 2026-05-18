@@ -9,7 +9,7 @@
   },
   {
     "nombre": "Ariel (La Sirenita)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIczdaMf_F2ebCPUjEE3lugZyFd5O60swIdg&s"
+    "imagen": ""
   },
   {
     "nombre": "Bella (La Bella y la Bestia)",
@@ -25,7 +25,7 @@
   },
   {
     "nombre": "Mulan",
-    "imagen": "https://img.elo7.com.br/product/685x685/16EA727/painel-mulan-g-frete-gratis-painel-desenho.jpg"
+    "imagen": ""
   },
   {
     "nombre": "Tiana (Tiana y el Sapo)",
@@ -61,11 +61,11 @@
   },
   {
     "nombre": "Minnie Mouse",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxC6UWrVgcvM6VgaM3p5oO-PqMO2nXkRqu-w&s"
+    "imagen": ""
   },
   {
     "nombre": "Pato Donald",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7JwOwtF3IdDR9hjDFTy4-TqnukPlEIb5og&s"
+    "imagen": ""
   },
   {
     "nombre": "Goofy",
@@ -89,11 +89,11 @@
   },
   {
     "nombre": "Dumbo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbuFCXtrAL2uDKjbWpzQfFSDwOJd0B_zsHw&s"
+    "imagen": ""
   },
   {
     "nombre": "Pinocho",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lX8bqpHvkxE0kWRSi1H-oalVpY81NZE6cw&s"
+    "imagen": ""
   },
   {
     "nombre": "Pepito Grillo",
@@ -101,7 +101,7 @@
   },
   {
     "nombre": "Peter Pan",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyXzAKbsbz16CAja9awjWXVZpeZ9tFbAwpQQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Campanilla",
@@ -137,7 +137,7 @@
   },
   {
     "nombre": "Simba (El Rey León)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHT1IvM5hxFQj-_LLRdYt0AELDnFVfk9QRw&s"
+    "imagen": ""
   },
   {
     "nombre": "Mufasa (El Rey León)",
@@ -153,7 +153,7 @@
   },
   {
     "nombre": "Pumba (El Rey León)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUIjm9beiqndGrZJ91I6cdxP8eOlce3TgXxA&s"
+    "imagen": ""
   },
   {
     "nombre": "Rafiki (El Rey León)",
@@ -213,7 +213,7 @@
   },
   {
     "nombre": "Tarzán",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtYOPCAb023r1yVz-olzx7BmxIn5rTmIYDw&s"
+    "imagen": ""
   },
   {
     "nombre": "Jane (Tarzán)",
@@ -229,7 +229,7 @@
   },
   {
     "nombre": "Olaf (Frozen)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbaDnf56ZLkaEKXheYQ9vK6fpFtAkYDT5kHg&s"
+    "imagen": ""
   },
   {
     "nombre": "Kristoff (Frozen)",
@@ -237,15 +237,15 @@
   },
   {
     "nombre": "Sven (Frozen)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlQvKCYmH5N3iln-MVjs0Q7yDYY-VuhgGlXw&s"
+    "imagen": ""
   },
   {
     "nombre": "Judy Hopps (Zootrópolis)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-HDLdtrP4VvuUY3dQuwC2zKhu0rrNe2_TQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Nick Wilde (Zootrópolis)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3n7Ms0tp91busG_jtyxHRHpgUcJ_pcm8qQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Hiro (Big Hero 6)",
@@ -253,7 +253,7 @@
   },
   {
     "nombre": "Baymax (Big Hero 6)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzp8fX0mbAe3wVHdEL8KD0dK0ITc9VGGQuDQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Ralph (Ralph el Demoledor)",
@@ -269,7 +269,7 @@
   },
   {
     "nombre": "Luisa (Encanto)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjdSqIBZrG24yp4NjQLyYERh-hUys2r2ZqfQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Isabela (Encanto)",
@@ -293,7 +293,7 @@
   },
   {
     "nombre": "Lady (La Dama y el Vagabundo)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3VrJEtwf2oRJ-z6aL-qU1FmN4nD5tqi7HXQ&s"
+    "imagen": ""
   },
   {
     "nombre": "El tío Gilito",
@@ -301,7 +301,7 @@
   },
   {
     "nombre": "Huey, Dewey y Louie",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1iqx2lLK7L93yCDfh3bSLBMnoO3W0gtswQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Mérida (Brave)",
@@ -325,11 +325,11 @@
   },
   {
     "nombre": "Ashley Spinelli (La Banda del Patio)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQebZYl3iFNTUn8FmshVeKFqf3Q6bo6cNZWsQ&s"
+    "imagen": ""
   },
   {
     "nombre": "T.J.\" Detweiler (La Banda del Patio)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSefm80S_ZYHUDaMUehrcFFSkAQQXaQFW7WCA&s"
+    "imagen": ""
   },
   {
     "nombre": "Gus Griswald (La Banda del Patio)",

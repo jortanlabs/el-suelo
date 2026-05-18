@@ -25,7 +25,7 @@
   },
   {
     "nombre": "Francisco de Goya",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlvvuxZX1IxAdd95_r19UcjICEhtJ4g8j-w&s"
+    "imagen": ""
   },
   {
     "nombre": "Diego Velázquez",
@@ -41,7 +41,7 @@
   },
   {
     "nombre": "Claude Monet",
-    "imagen": "https://cdn.britannica.com/57/250457-050-342611AD/Claude-Monet-French-Impressionist-painter.jpg"
+    "imagen": ""
   },
   {
     "nombre": "Édouard Manet",
@@ -73,7 +73,7 @@
   },
   {
     "nombre": "Joaquín Sorolla",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0eQEYGw5OxVjspfD48RyPNU9l1MVgVb8IqA&s"
+    "imagen": ""
   },
   {
     "nombre": "Henri Matisse",
@@ -93,7 +93,7 @@
   },
   {
     "nombre": "Fernando Botero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2vxmejDK-EJ4eFRRKQErR24TN1qfFhdZaQw&s"
+    "imagen": ""
   },
   {
     "nombre": "Alexander Calder",
@@ -101,7 +101,7 @@
   },
   {
     "nombre": "Peter Paul Rubens",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaVtKDTWcssxY7JBVUnjX4YejOvkrP7lI6Ew&s"
+    "imagen": ""
   },
   {
     "nombre": "Bartolomé Esteban Murillo",
@@ -129,7 +129,7 @@
   },
   {
     "nombre": "Paul Gauguin",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSnzVPU4kGIwnsprUplfBkJBORR26l4gpt5A&s"
+    "imagen": ""
   },
   {
     "nombre": "Edvard Munch",
@@ -145,7 +145,7 @@
   },
   {
     "nombre": "Roy Lichtenstein",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSILa-QzwTZ_FhA1DmD1kLUIX-JwMeDOcytw&s"
+    "imagen": ""
   },
   {
     "nombre": "Mark Rothko",
@@ -157,7 +157,7 @@
   },
   {
     "nombre": "Diego Rivera",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK41Xf6Qw_s-1p9gVzd9mfpoF5oNvmuWhU3g&s"
+    "imagen": ""
   },
   {
     "nombre": "Banksy",
@@ -169,7 +169,7 @@
   },
   {
     "nombre": "Auguste Rodin",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6m1-xlIPRA-wzQPQXtDWy3GaGsnelmpNGiA&s"
+    "imagen": ""
   },
   {
     "nombre": "Constantin Brâncuși",
@@ -181,15 +181,15 @@
   },
   {
     "nombre": "Henry Moore",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJhlqWlSv02Kyj9F4yOW3pp6-Z490rF9vo_A&s"
+    "imagen": ""
   },
   {
     "nombre": "Louise Bourgeois",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6jy-9y0I8Io5lNjuR0dq2vVRrcwUpup79sQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Eduardo Chillida",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzEZ4oKBVyl_Om6rbSBtZu1bu818-7KG60Tg&s"
+    "imagen": ""
   },
   {
     "nombre": "Jaume Plensa",
@@ -209,6 +209,6 @@
   },
   {
     "nombre": "Jean-Michel Basquiat",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYylxDQuTmqlInJ1n0-n1WyBl5Mrif6mZEw&s"
+    "imagen": ""
   }
 ]

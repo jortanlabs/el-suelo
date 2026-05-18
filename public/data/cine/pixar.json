@@ -9,15 +9,15 @@
   },
   {
     "nombre": "Jessie (Toy Story)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCMNS5i7YPmsTXjCiD7NKTqNg8YF_wGy7pXA&s"
+    "imagen": ""
   },
   {
     "nombre": "Rex (Toy Story)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROk_I4KM1zPtLvP4A5MtICVjtkiI4Up0JccA&s"
+    "imagen": ""
   },
   {
     "nombre": "Hamm (Toy Story)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSofNkddPnT83V2hwNRkSKdNruOfQx3OKfdYw&s"
+    "imagen": ""
   },
   {
     "nombre": "Mr. Potato Head (Toy Story)",
@@ -29,7 +29,7 @@
   },
   {
     "nombre": "Slinky (Toy Story)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtg0W67-byrtpmPVe142sccYS_Hc6uKDmL5w&s"
+    "imagen": ""
   },
   {
     "nombre": "Andy (Toy Story)",
@@ -45,7 +45,7 @@
   },
   {
     "nombre": "Mike Wazowski (Monstruos S.A.)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZ4G5BtD8F4O2VeptO7sNsXseLe9cVaSuZQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Boo (Monstruos S.A.)",
@@ -73,11 +73,11 @@
   },
   {
     "nombre": "Mr. Increíble (Los Increíbles)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxk3BFoFbMvf85HrXa___NTOAnX-HW9gwkQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Elastigirl (Los Increíbles)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQFUVuD8RINlVnEjtuELhVKwTrmxQTlJ0uzQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Violeta (Los Increíbles)",
@@ -157,7 +157,7 @@
   },
   {
     "nombre": "Dug (Up)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXS4Rs440ZH03VNFM0rWp7ZbckcHzEqadzQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Kevin (Up)",
@@ -173,7 +173,7 @@
   },
   {
     "nombre": "Alegría (Inside Out)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghWfAn_g58pVuRv4bH8lDN0dTYEOhDt5LcA&s"
+    "imagen": ""
   },
   {
     "nombre": "Tristeza (Inside Out)",
@@ -225,7 +225,7 @@
   },
   {
     "nombre": "Alberto (Luca)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVM9smIcxxys7amr4urvlJoyFPdb2XXKb-wA&s"
+    "imagen": ""
   },
   {
     "nombre": "Giulia (Luca)",
@@ -233,15 +233,15 @@
   },
   {
     "nombre": "Ian Lightfoot (Onward)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Hw_qc4AK2_kihDg3CRn2ENJUd4bkyzBIwQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Barley Lightfoot (Onward)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8cqB2WvDO77fLOFlHUJkrAMEKx6qlehBxg&s"
+    "imagen": ""
   },
   {
     "nombre": "Flik (Bichos)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfcjEVuWJUcRghtNoEZkCkx0bL7-W9BHfcw&s"
+    "imagen": ""
   },
   {
     "nombre": "Atta (Bichos)",
@@ -253,7 +253,7 @@
   },
   {
     "nombre": "Aburrimiento (Inside Out 2)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHedLvBvEArgFRqlueKgwleR1NOD5LYnP9XA&s"
+    "imagen": ""
   },
   {
     "nombre": "Ember (Elemental)",

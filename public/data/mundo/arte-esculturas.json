@@ -1,7 +1,7 @@
 [
   {
     "nombre": "La Venus de Milo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Je18yJgpjBIbDQoJqYN5r4rKETKRaXtHzQ&s"
+    "imagen": ""
   },
   {
     "nombre": "El pensador (Rodin)",
@@ -33,7 +33,7 @@
   },
   {
     "nombre": "Laocoonte",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3baWpcDnpaxWSFp1Yu3MrFO9JQd5yMyF6XA&s"
+    "imagen": ""
   },
   {
     "nombre": "La Estatua de la Libertad (Bartholdi)",
@@ -41,7 +41,7 @@
   },
   {
     "nombre": "Busto de Nefertiti",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJiQgusLaUCeo4W9Isq0_somQFxiXVLn7IKA&s"
+    "imagen": ""
   },
   {
     "nombre": "La Sirenita (Eriksen)",
@@ -49,15 +49,15 @@
   },
   {
     "nombre": "El Ángel Caído (Bellver)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4c2AE3ghvtQKxtEiIsSEzuSpJF5yU_TjaKQ&s"
+    "imagen": ""
   },
   {
     "nombre": "El Cristo Redentor (Landowski)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvZQv0GlUpFyX0Ewv8QLKimCU61PBM0qzKA&s"
+    "imagen": ""
   },
   {
     "nombre": "El toro de Wall Street (Di Modica)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLM8n_y95YVxiacNn3nTQjepFN-VYpgqoL5w&s"
+    "imagen": ""
   },
   {
     "nombre": "Los burgueses de Calais (Rodin)",
@@ -65,7 +65,7 @@
   },
   {
     "nombre": "Moais de la Isla de Pascua",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwNLi0E28Paz6kYWvuQi-ddIPpCsRo-wTEg&s"
+    "imagen": ""
   },
   {
     "nombre": "La Esfinge de Giza",
@@ -81,7 +81,7 @@
   },
   {
     "nombre": "Apolo y Dafne (Bernini)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC90wHetvIwSHgbsHoz0KmzVp10WsuaXM0Yg&s"
+    "imagen": ""
   },
   {
     "nombre": "Maman (Bourgeois)",
@@ -97,6 +97,6 @@
   },
   {
     "nombre": "Moisés (Miguel Ángel)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BIG6HYfW0_SkD8ToX4_l9b-vg9GTZG3U2A&s"
+    "imagen": ""
   }
 ]

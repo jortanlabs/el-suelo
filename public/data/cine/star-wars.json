@@ -25,15 +25,15 @@
   },
   {
     "nombre": "C-3PO",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQry_QoayQTeTNpJR9Dlaa5tId6npFU9KtOmw&s"
+    "imagen": ""
   },
   {
     "nombre": "R2-D2",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCa7i0DrQN8Rrlmg6_2fp2mUTi20v-QYRjg&s"
+    "imagen": ""
   },
   {
     "nombre": "Chewbacca",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbZ_cYxWxwdxTrIQD31H8WArxxAUn0ucqB2A&s"
+    "imagen": ""
   },
   {
     "nombre": "Lando Calrissian",
@@ -77,7 +77,7 @@
   },
   {
     "nombre": "Conde Dooku",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8e_N53-5NnuiKEF43OYdb8ttq4tkGYDQow&s"
+    "imagen": ""
   },
   {
     "nombre": "General Grievous",
@@ -97,11 +97,11 @@
   },
   {
     "nombre": "Kylo Ren",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJUJ81i4rNWiYjK0fObmkZza7nJ1FHGTvoaQ&s"
+    "imagen": ""
   },
   {
     "nombre": "BB-8",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz3sq_8bB9-RTmSu6s3nFaLdCqBbH47EgZgg&s"
+    "imagen": ""
   },
   {
     "nombre": "Captain Phasma",
@@ -109,7 +109,7 @@
   },
   {
     "nombre": "Snoke (Star Wars)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5XjbSEnlWplkP5q5IuCO20suZ0me40EcddA&s"
+    "imagen": ""
   },
   {
     "nombre": "Mando (The Mandalorian)",
@@ -133,7 +133,7 @@
   },
   {
     "nombre": "Capitán Rex",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYMapVnKZdN0JO5GvBljRjeG9T4fx083uDQ&s"
+    "imagen": ""
   },
   {
     "nombre": "General Hux",
@@ -141,15 +141,15 @@
   },
   {
     "nombre": "Nute Gunray",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_odQYBO_QYIEf8HClARMwau7B44FYjpfc5A&s"
+    "imagen": ""
   },
   {
     "nombre": "Tarkin (Star Wars)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mkTWRlyfT6p8waBTlxNcbnOHPb113Ei4UQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Wedge Antilles",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9MDSDaa4FXpvNZeTzolVg7bL_0yjMjlw43w&s"
+    "imagen": ""
   },
   {
     "nombre": "Admiral Ackbar",
@@ -165,7 +165,7 @@
   },
   {
     "nombre": "Wicket (Star Wars)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrQOugHoiKdw7dANe5ZYs2bdSlkEIz272c0g&s"
+    "imagen": ""
   },
   {
     "nombre": "Sebulba (Star Wars)",
@@ -177,7 +177,7 @@
   },
   {
     "nombre": "Shmi Skywalker",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtKof1WJmiTcfLW40TpH5yAXX9EnBp13RsA&s"
+    "imagen": ""
   },
   {
     "nombre": "Rose Tico",
@@ -189,11 +189,11 @@
   },
   {
     "nombre": "Kuiil (The Mandalorian)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzr1ThV9pmCgarnp0WP7kdSVMqCBIiPjr_VQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Stormtrooper",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCXAnRCmHLgADfwgKFTJcQxZ9I11HwkxG6kg&s"
+    "imagen": ""
   },
   {
     "nombre": "Jawa (Star Wars)",
@@ -217,7 +217,7 @@
   },
   {
     "nombre": "X-Wing",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1AAL7lVwWzQLqkN34zM0tL0oF8Sh4bbRQA&s"
+    "imagen": ""
   },
   {
     "nombre": "TIE Fighter",
@@ -225,7 +225,7 @@
   },
   {
     "nombre": "Estrella de la Muerte",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTItVyBZkXMMXyYS3eiVBrB4ubd1kmW-jiI2g&s"
+    "imagen": ""
   },
   {
     "nombre": "Sable de Luz",
@@ -237,11 +237,11 @@
   },
   {
     "nombre": "Tatooine (Star Wars)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhvwYJ6YbgW9a-V4sPuEqly9_jW08_uWSeA&s"
+    "imagen": ""
   },
   {
     "nombre": "Naboo (Star Wars)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNfX14tSUMnwnVbvMWzA3432g2MZMygUtkg&s"
+    "imagen": ""
   },
   {
     "nombre": "Coruscant",
@@ -257,6 +257,6 @@
   },
   {
     "nombre": "Endor (Star Wars)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzOHa2nNNv-TknPqH5rqg--xfGJIhitiUpmQ&s"
+    "imagen": ""
   }
 ]

@@ -9,7 +9,7 @@
   },
   {
     "nombre": "Tyrion Lannister",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyutfMFYP2iN9ByvgGjtXIMNh7o5duXO0_6w&s"
+    "imagen": ""
   },
   {
     "nombre": "Cersei Lannister",
@@ -57,7 +57,7 @@
   },
   {
     "nombre": "Tywin Lannister",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p-o_flggroQYG3sFxZji5WWpnDibhb-kqA&s"
+    "imagen": ""
   },
   {
     "nombre": "Stannis Baratheon",
@@ -73,7 +73,7 @@
   },
   {
     "nombre": "Brienne de Tarth",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSnBNZmMjEL0p6OcNimdA9wtiaCkTGQDasg&s"
+    "imagen": ""
   },
   {
     "nombre": "Tormund Matagigantes",
@@ -81,7 +81,7 @@
   },
   {
     "nombre": "Samwell Tarly",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8oaa_t_VVg1Mc289_RS5c-zgAqxIADc6s-A&s"
+    "imagen": ""
   },
   {
     "nombre": "Gilly (Juego de Tronos)",
@@ -117,11 +117,11 @@
   },
   {
     "nombre": "Jorah Mormont",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOZiK0-d8OVxDhagiiXiwcLLSm-6zu83weg&s"
+    "imagen": ""
   },
   {
     "nombre": "Daario Naharis",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ41ygLO56WpC1Bdhfie_XrJrOmAQunzX2L9Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Khal Drogo",
@@ -145,7 +145,7 @@
   },
   {
     "nombre": "Yara Greyjoy",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1stEZwdD9-ssOTGmm7_Si3DEOdI6MZalKFQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Euron Greyjoy",
@@ -153,7 +153,7 @@
   },
   {
     "nombre": "Bronn (Juego de Tronos)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrTp_BR38hxGF2zXtKVfU_D3HxoKBfVJlbw&s"
+    "imagen": ""
   },
   {
     "nombre": "Podrick Payne",
@@ -177,7 +177,7 @@
   },
   {
     "nombre": "Mance Rayder",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3jnwq2f_M2F0vPGs0eKv87EuG_30bZjZTwA&s"
+    "imagen": ""
   },
   {
     "nombre": "El Rey de la Noche",
@@ -229,11 +229,11 @@
   },
   {
     "nombre": "Jaqen H'ghar",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD4bw2AHfn944NHIkQ4n8yvMOg4elWWVkQ6A&s"
+    "imagen": ""
   },
   {
     "nombre": "Syrio Forel",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJLV71IlQiotSNNa_SA8Gu9Ft-nJYZgRpwQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Trono de Hierro",
@@ -253,7 +253,7 @@
   },
   {
     "nombre": "El Muro (Juego de Tronos)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNt-RmMWffWx1pj5OURVgVn5szEfynJoEHyw&s"
+    "imagen": ""
   },
   {
     "nombre": "La Guardia de la Noche",

@@ -13,7 +13,7 @@
   },
   {
     "nombre": "Italia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh6sIKRngtU9jE_-cXtlk3y-ODlgX1QVUwRA&s"
+    "imagen": ""
   },
   {
     "nombre": "Portugal",
@@ -21,7 +21,7 @@
   },
   {
     "nombre": "Reino Unido",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTERnbE2vj5IueStB7LDbcN0TSrOcJSF6o9Jg&s"
+    "imagen": ""
   },
   {
     "nombre": "Países Bajos",
@@ -29,7 +29,7 @@
   },
   {
     "nombre": "Bélgica",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBz6dHZGoIYMSWlYge1JfxOADrJ49IBc2MVw&s"
+    "imagen": ""
   },
   {
     "nombre": "Austria",
@@ -77,11 +77,11 @@
   },
   {
     "nombre": "República Checa",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Wq8Oqma4Q_DmUV-Vr5LyaSk-E5IbN6XAZw&s"
+    "imagen": ""
   },
   {
     "nombre": "Hungría",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfahHKEQn7862SUbn2kZYwdwIP8JkxgfpcZA&s"
+    "imagen": ""
   },
   {
     "nombre": "Rumanía",
@@ -93,7 +93,7 @@
   },
   {
     "nombre": "Grecia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2ETBj2hmnSjdk4VYOKKADo5n0EgrRfGQYA&s"
+    "imagen": ""
   },
   {
     "nombre": "Croacia",
@@ -205,7 +205,7 @@
   },
   {
     "nombre": "India",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMejtorJ_cIsfgU8jSZGaV0IiMk-UbENwGQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Corea del Sur",
@@ -269,7 +269,7 @@
   },
   {
     "nombre": "Sudáfrica",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTykK5MZrmBnY6jRfnglFgBBkvWXQzDtz290Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Kenia",
@@ -317,11 +317,11 @@
   },
   {
     "nombre": "Brasil",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk2B9QNaALh95B3FW3kc6_yb2a2MXWiPlaiQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Argentina",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYwYmOJqqIURvU6LBMYCV6AtmRCpikPP2kDA&s"
+    "imagen": ""
   },
   {
     "nombre": "México",
@@ -393,7 +393,7 @@
   },
   {
     "nombre": "Australia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZJmjKF2IEtTh5_UZVEKMqzwKi3mekvb-QvQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Nueva Zelanda",

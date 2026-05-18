@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Louis Vuitton",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJ7hLjDuj1YZPF7-bZEDIip0pZir0AW4Vow&s"
+    "imagen": ""
   },
   {
     "nombre": "Gucci",
@@ -13,7 +13,7 @@
   },
   {
     "nombre": "Hermès",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUfInfsKlaQuD6KQWsRpATjRw3nWt0xG7NNw&s"
+    "imagen": ""
   },
   {
     "nombre": "Prada",
@@ -33,7 +33,7 @@
   },
   {
     "nombre": "Rolex",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0VC0HN84GJg2k4QfmiNiHKZcDMUYOGiuig&s"
+    "imagen": ""
   },
   {
     "nombre": "Tiffany & Co.",
@@ -41,7 +41,7 @@
   },
   {
     "nombre": "Bvlgari",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAqaTcQUa0xELh2TXwH5gv2ACnqF7vtj5R_Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Burberry",
@@ -57,11 +57,11 @@
   },
   {
     "nombre": "Yves Saint Laurent",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFKa-JneoTI7Oxx1yLYkNWn2a_9SKBImbaA&s"
+    "imagen": ""
   },
   {
     "nombre": "Dolce & Gabbana",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58ZS1hoTP2As2M0xN_aHvGjpv1CWCWfktPQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Valentino",
@@ -73,7 +73,7 @@
   },
   {
     "nombre": "Givenchy",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnmDaOIREKqxJt2fWbFL4TqdpSZ-t6EO0v7A&s"
+    "imagen": ""
   },
   {
     "nombre": "Carolina Herrera",
@@ -81,15 +81,15 @@
   },
   {
     "nombre": "Tom Ford",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6RUJ5zgNohe4mhItExIfG6EBopZPAhqRZQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Ralph Lauren",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9spkCid8NhfhtV_Y-0xMs5N1V5xB_NQHe9w&s"
+    "imagen": ""
   },
   {
     "nombre": "Calvin Klein",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSEro8cREFxuSrU2sSnTkCTkCWmhW1oO_2hw&s"
+    "imagen": ""
   },
   {
     "nombre": "Hugo Boss",
@@ -105,7 +105,7 @@
   },
   {
     "nombre": "Bottega Veneta",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjK-WRiED1NUXBPRjTjH91cHe54pX0UHXQoQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Loro Piana",
@@ -117,11 +117,11 @@
   },
   {
     "nombre": "Off-White",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHfVzwDjE8yWyznufjr6sByKW3WtNTDKj9BQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Stone Island",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSduUEkjEHD4GDXlUTRQkFFlF4hl_RTijf1UA&s"
+    "imagen": ""
   },
   {
     "nombre": "Moncler",
@@ -129,7 +129,7 @@
   },
   {
     "nombre": "Canada Goose",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgbM5zeZR6YvY5lBtedlDhB-zkqbsMKX-KQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Ermenegildo Zegna",
@@ -145,7 +145,7 @@
   },
   {
     "nombre": "Vacheron Constantin",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUN_g7IrwI7AKwHz_XncXS4Vt6p7GhXOy2Rg&s"
+    "imagen": ""
   },
   {
     "nombre": "Omega",
@@ -157,7 +157,7 @@
   },
   {
     "nombre": "Breitling",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyQzDYkNZEH9fCnaxAR3xxIEjTLepDKV6cBw&s"
+    "imagen": ""
   },
   {
     "nombre": "IWC",
@@ -165,7 +165,7 @@
   },
   {
     "nombre": "Hublot",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIGXJlGOCVO3B6Djum93dp7ql3WrZUDzLcOw&s"
+    "imagen": ""
   },
   {
     "nombre": "Jaeger-LeCoutre",
@@ -173,7 +173,7 @@
   },
   {
     "nombre": "Panerai",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2KTzOsbjaMS_nNlz-KVifLrjs7Bb_7clqw&s"
+    "imagen": ""
   },
   {
     "nombre": "Longines",
@@ -185,11 +185,11 @@
   },
   {
     "nombre": "Richard Mille",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1YtlgC_EOv9WGZ9WV3cfY_efY_jBP-TeLrA&s"
+    "imagen": ""
   },
   {
     "nombre": "Lange & Söhne",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk9KkSJFrSps5z6AmBgHXjWdSIY8rYAY1vIg&s"
+    "imagen": ""
   },
   {
     "nombre": "Piaget",
@@ -197,6 +197,6 @@
   },
   {
     "nombre": "Chopard",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1aa4uvY7ovCYJqo8tKaRVq5hz5ggqfqb9g&s"
+    "imagen": ""
   }
 ]

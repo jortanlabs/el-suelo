@@ -49,7 +49,7 @@
   },
   {
     "nombre": "George Weasley",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzNroHUrYmBgUh8xlb49PNN9DrVnCBlYUh_A&s"
+    "imagen": ""
   },
   {
     "nombre": "Draco Malfoy",
@@ -93,7 +93,7 @@
   },
   {
     "nombre": "Cedric Diggory",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUTsnKBG0mMr3f2e4RLVmDV4xBLUTNEMyPA&s"
+    "imagen": ""
   },
   {
     "nombre": "Viktor Krum",
@@ -109,7 +109,7 @@
   },
   {
     "nombre": "Dobby",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXebXsuH7_jijMcRASPZAvcs35jkuvACqOQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Kreacher",
@@ -161,7 +161,7 @@
   },
   {
     "nombre": "Tom Riddle",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMRHh8kv0PxdqKkmvpLmVPvqRK4sG4Ke-xbQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Dudley Dursley",
@@ -189,7 +189,7 @@
   },
   {
     "nombre": "Myrtle la Llorona",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5XKF9XfhJlhrsku8_d6t0XFusMhyX3Qrng&s"
+    "imagen": ""
   },
   {
     "nombre": "Peeves (Harry Potter)",
@@ -197,7 +197,7 @@
   },
   {
     "nombre": "Nick Casi Decapitado",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvp6p6hs4mtyvQW-e2vycgTq2MQCBb_5f2qg&s"
+    "imagen": ""
   },
   {
     "nombre": "Lavender Brown",
@@ -269,7 +269,7 @@
   },
   {
     "nombre": "Patronus",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwhkW0PO63RJzre6IKg5SB4fmTMVO2kQ-9Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Varita de Saúco",
@@ -277,11 +277,11 @@
   },
   {
     "nombre": "Mandrágora",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2r2sCuM0A__nEEAAjBCxes4I0g9GiXxE8w&s"
+    "imagen": ""
   },
   {
     "nombre": "Piedra Filosofal",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfa-XtQIvlS7WAMJt3Mu2GOtAmBGaZi0Df1A&s"
+    "imagen": ""
   },
   {
     "nombre": "Pensadero",
@@ -309,10 +309,10 @@
   },
   {
     "nombre": "Sauce Boxeador",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0u-gMZLFxx1DFmk-m1GkIlWzyvJ6wfOSwQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Rita Skeeter",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpXY9_7HwdXi2pqxpGJGQSCY60KRTB9880w&s"
+    "imagen": ""
   }
 ]

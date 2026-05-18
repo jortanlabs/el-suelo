@@ -5,7 +5,7 @@
   },
   {
     "nombre": "Carrefour",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSecm6fEeZlDR8-cObxxNDkzFpPzjjeNfvmOQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Lidl",
@@ -17,7 +17,7 @@
   },
   {
     "nombre": "Día",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2z1Gra_Bqvs_5bu1JLjB5ZE0ncjbGlskc5A&s"
+    "imagen": ""
   },
   {
     "nombre": "El Corte Inglés",
@@ -65,11 +65,11 @@
   },
   {
     "nombre": "Froiz",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReGiO6R8hB7Ev7CfAwkH-1gZ5_q1dGEHRLFQ&s"
+    "imagen": ""
   },
   {
     "nombre": "BM Supermercados",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY52JCJI9CadMxK5pz9zPxZgedOsnMlFnLZw&s"
+    "imagen": ""
   },
   {
     "nombre": "El Árbol",
@@ -77,11 +77,11 @@
   },
   {
     "nombre": "La Sirena",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi2seqcEtnL_OyqkMf6-CJajg2Ju6zEQfMhQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Coviran",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiG3ZUMaqUcUmgPV8Nr4AjNbxQav6nAIdKAg&s"
+    "imagen": ""
   },
   {
     "nombre": "Gadis",
@@ -101,19 +101,19 @@
   },
   {
     "nombre": "Costco",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTytkPEt_ujIdzpu0agXEzEeROaE3QzgJ2YRg&s"
+    "imagen": ""
   },
   {
     "nombre": "Hipercor",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-MCb2AusIHwIM0dFHnh6fOmobLtww0vyBHg&s"
+    "imagen": ""
   },
   {
     "nombre": "Sánchez Romero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVAeU5AhDH9oUtZHWZpdiAWxp2Y19MbAe4A&s"
+    "imagen": ""
   },
   {
     "nombre": "Veritas",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3AbDZuRE-S0n2_V6LiSTwCkkEBgEavmd7A&s"
+    "imagen": ""
   },
   {
     "nombre": "Casa Ametller",
@@ -125,7 +125,7 @@
   },
   {
     "nombre": "Suma",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAy4HcPNWDp2Xb0UbJui8WyJ_1-GAelWbjgA&s"
+    "imagen": ""
   },
   {
     "nombre": "Alimerka",
@@ -141,7 +141,7 @@
   },
   {
     "nombre": "Walmart",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQox6EnAzq-I0vXyKB3O0EBw07uWc7n4t1LtQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Tesco",
@@ -149,7 +149,7 @@
   },
   {
     "nombre": "Sainsbury's",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPApmOrDT3zN8QmAOAF6ppE0qZNq9cdRKDw&s"
+    "imagen": ""
   },
   {
     "nombre": "Asda",
@@ -169,11 +169,11 @@
   },
   {
     "nombre": "Migros",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaDF4fg8YpdhC2_7seRy36ww0uD9K36fUc_g&s"
+    "imagen": ""
   },
   {
     "nombre": "Coop",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThAsqur6QF5_cicY8P76PLV5j4XY3uaW31GA&s"
+    "imagen": ""
   },
   {
     "nombre": "Auchan",
@@ -185,7 +185,7 @@
   },
   {
     "nombre": "Monoprix",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBr2dD8EWymeOTBoWKENtkuffJtspBtmiUMA&s"
+    "imagen": ""
   },
   {
     "nombre": "Marks & Spencer",
@@ -201,19 +201,19 @@
   },
   {
     "nombre": "Kaufland",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheE6Z1-eDwKq2dI9zVM371fOUiIwB1TXpkQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Penny Market",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEeQnV7qgkUKj_AE9S5zes7YsrCWh7X8Z0Vw&s"
+    "imagen": ""
   },
   {
     "nombre": "Albert Heijn",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYp61W5heDSxAWQ9dzr8SwLDqgbQLohfR7Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Jumbo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs98J0DJfmgUdVhIukbhdkOCQgcXFvlCpOeQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Pingo Doce",
@@ -221,7 +221,7 @@
   },
   {
     "nombre": "Continente",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvi_7oPx5WkdrskTE4FkmUcaMhCnrTOQPyzg&s"
+    "imagen": ""
   },
   {
     "nombre": "Intermarché",
@@ -229,15 +229,15 @@
   },
   {
     "nombre": "Aldi Süd",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuZKMB-qtfDv7bzvUcef6NgImteiBTfu0S4Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Familia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYIx89IvCJxTGDdjQQhsZ60GHZnlwteE8zsw&s"
+    "imagen": ""
   },
   {
     "nombre": "La Plaza",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpONlKVnTASoZPNwd5LWzBkKA6iJJqqKWnRQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Pepco",
@@ -249,7 +249,7 @@
   },
   {
     "nombre": "La Plaza",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpONlKVnTASoZPNwd5LWzBkKA6iJJqqKWnRQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Pepco",

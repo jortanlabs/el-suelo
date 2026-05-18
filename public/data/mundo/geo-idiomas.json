@@ -1,11 +1,11 @@
 [
   {
     "nombre": "Español",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWauxiA_4ZbVuJRYZShI7p7kwLzHWFHehjAA&s"
+    "imagen": ""
   },
   {
     "nombre": "Inglés",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26NwrYeBDk3vAnO7Yhm1hRfwO1v0NMUzpnw&s"
+    "imagen": ""
   },
   {
     "nombre": "Francés",
@@ -29,7 +29,7 @@
   },
   {
     "nombre": "Japonés",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WWbbZZx6X1bKwSfZJ8cOR2nMoESXLRo1xQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Árabe",
@@ -61,7 +61,7 @@
   },
   {
     "nombre": "Turco",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Xn55BL0sJmPi2yIC0p2mc7Qdx274fcXuWg&s"
+    "imagen": ""
   },
   {
     "nombre": "Griego",
@@ -85,7 +85,7 @@
   },
   {
     "nombre": "Hebreo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdAlDQPlJ1zNKSpH5GqIQfD8ACn9UM7VMqeA&s"
+    "imagen": ""
   },
   {
     "nombre": "Persa (Farsi)",
@@ -101,7 +101,7 @@
   },
   {
     "nombre": "Bengalí",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlw0qluR80scsvH6BjTLC3NQPYlJ8p6flzOA&s"
+    "imagen": ""
   },
   {
     "nombre": "Swahili",
@@ -125,7 +125,7 @@
   },
   {
     "nombre": "Euskera",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtTcOS9jeC7gs88dgXhFC3NNVRV7rcUjMANw&s"
+    "imagen": ""
   },
   {
     "nombre": "Gallego",
@@ -137,7 +137,7 @@
   },
   {
     "nombre": "Danés",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHM-iFPzsYvrIxbOL661r5Rzlx-3UODOkkEQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Noruego",
@@ -149,7 +149,7 @@
   },
   {
     "nombre": "Croata",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLA98IIuLA6Q3EzJFG3YEfjF4cBNMZ333pAQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Búlgaro",
@@ -189,7 +189,7 @@
   },
   {
     "nombre": "Galés",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuo13w-UDkEQJ74nC20My8xZPtw6oDNeY9Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Irlandés",
@@ -197,11 +197,11 @@
   },
   {
     "nombre": "Maltés",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdymV-sU9fMS3Nr-TNUwAUsv4Zz2ioSvctlQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Afrikáans",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdoodYyxvI3BHyWynECTfw9dGL11Zgbu8Idw&s"
+    "imagen": ""
   },
   {
     "nombre": "Hausa",

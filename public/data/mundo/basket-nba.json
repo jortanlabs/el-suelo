@@ -1,19 +1,19 @@
 [
   {
     "nombre": "Chicago Bulls",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCa69d3MAjwVA1tTv-hZUWvechq835PCFpww&s"
+    "imagen": ""
   },
   {
     "nombre": "Los Angeles Lakers",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMU6N_CQ86I6uPnQbZA7jKLGJGMHFRTWkeDw&s"
+    "imagen": ""
   },
   {
     "nombre": "Boston Celtics",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzoqGO1TJXlYcDBXsmBtdlMrL0P5V6qREtg&s"
+    "imagen": ""
   },
   {
     "nombre": "Golden State Warriors",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFp0VJn7EfLC5dvQJW8WresTSh1vb3nDBT-Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Miami Heat",
@@ -29,7 +29,7 @@
   },
   {
     "nombre": "Dallas Mavericks",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfA83OG-L097bSS5cpB6_Ld5zYAH_1jgiSw&s"
+    "imagen": ""
   },
   {
     "nombre": "Phoenix Suns",
@@ -37,7 +37,7 @@
   },
   {
     "nombre": "Brooklyn Nets",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDfCDEbfR19LDicW-Gy7maGdkx3w1UeyL3g&s"
+    "imagen": ""
   },
   {
     "nombre": "Milwaukee Bucks",
@@ -45,11 +45,11 @@
   },
   {
     "nombre": "Philadelphia 76ers",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7FDygjUlTv6SQuTR98espF4yxiMUDtNK7eQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Oklahoma City Thunder",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReS_pTEaRU-DhPZ3rWltzKmrmcBceCXwFgxw&s"
+    "imagen": ""
   },
   {
     "nombre": "Denver Nuggets",
@@ -57,7 +57,7 @@
   },
   {
     "nombre": "Houston Rockets",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSATSzA57bGa0XW5KjXp_CJxqI8fCarviD3rQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Orlando Magic",
@@ -73,11 +73,11 @@
   },
   {
     "nombre": "Toronto Raptors",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuu_g4DBYvUcdaOrL7ZnwbjkTOSxLfalMYw&s"
+    "imagen": ""
   },
   {
     "nombre": "Utah Jazz",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzzZDamiEka-g_uIuwq0StXNe-bER9PdyVQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Cleveland Cavaliers",
@@ -85,7 +85,7 @@
   },
   {
     "nombre": "Detroit Pistons",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4epsXKQ8qfV9q8aYbbudn9YStQykFrtK9PA&s"
+    "imagen": ""
   },
   {
     "nombre": "Indiana Pacers",
@@ -109,14 +109,14 @@
   },
   {
     "nombre": "Sacramento Kings",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNy78t9IN2DJma8vVdtrKN8FGeIM6b0X1dLA&s"
+    "imagen": ""
   },
   {
     "nombre": "Memphis Grizzlies",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPg_C1EGwK3l7N89IKcO2Nx93QhDe0qYCPA&s"
+    "imagen": ""
   },
   {
     "nombre": "New Orleans Pelicans",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUkiVGA_qtJTJwgQhL6ycdXeCzjkedUPyktw&s"
+    "imagen": ""
   }
 ]

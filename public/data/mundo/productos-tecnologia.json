@@ -1,35 +1,35 @@
 [
   {
     "nombre": "Móvil",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU3m9muawWXSa4p_Y7E1mOFoXfLo_4ckMT5g&s"
+    "imagen": ""
   },
   {
     "nombre": "Tablet",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUxunfBmNyKmItVkO1Nbdb-LJKtpfLWjajA&s"
+    "imagen": ""
   },
   {
     "nombre": "Portátil",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6A4GGoNjmQEiH9jdx9Q3RtBgQBnkOVodVhg&s"
+    "imagen": ""
   },
   {
     "nombre": "Ordenador",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTko6HoUmSA2g2tDXGf9cVo12omjSTjoK7Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Televisión",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR98drgxjL2mScTRRUshi5pGInYfMPj5zyfzg&s"
+    "imagen": ""
   },
   {
     "nombre": "Smartwatch",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0DQ38seHHUfZXoGB8fxsOGDeKRboRZ4bsGA&s"
+    "imagen": ""
   },
   {
     "nombre": "Pulsera de actividad",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnXnkMHkJ3PZeBcZJRwb6pMe2sf3MfSqZUbw&s"
+    "imagen": ""
   },
   {
     "nombre": "Auriculares",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQy69259VAoSH6Bn6uzsibwgo6Z8qwgRxwg&s"
+    "imagen": ""
   },
   {
     "nombre": "Altavoz",
@@ -41,11 +41,11 @@
   },
   {
     "nombre": "Videocámara",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZemwK7RBPNzAUnXfGevL7tB5kcdVOASMZiA&s"
+    "imagen": ""
   },
   {
     "nombre": "E-book",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSO-Hqojce-LO2HTt-UHmzX8EOeSQYmFfTTw&s"
+    "imagen": ""
   },
   {
     "nombre": "Consola",
@@ -57,7 +57,7 @@
   },
   {
     "nombre": "Teclado",
-    "imagen": "https://www.carlin.es/resources/img/products/172011g.jpg"
+    "imagen": ""
   },
   {
     "nombre": "Ratón",
@@ -73,7 +73,7 @@
   },
   {
     "nombre": "Router",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7APadOXFeoZYkxZKzGiUdazPBt0jStuEcsQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Cargador",
@@ -81,7 +81,7 @@
   },
   {
     "nombre": "Disco duro",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWhdLyXGQbyHua_9wqAYW1zEpNxSPlE_jUQ&s"
+    "imagen": ""
   },
   {
     "nombre": "USB",
@@ -89,7 +89,7 @@
   },
   {
     "nombre": "Robot aspirador, Roomba",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsfRsMtFEsigNNPPLYbnEk7YFHUVleTI2zMg&s"
+    "imagen": ""
   },
   {
     "nombre": "Drone",
@@ -97,7 +97,7 @@
   },
   {
     "nombre": "Gafas de realidad virtual",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZeI8bi-zBTp4Sm1OvnmPITB_d4497q38uGQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Casco VR",
@@ -105,7 +105,7 @@
   },
   {
     "nombre": "Cámara web",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQJQ1Zy3GfhnTjAwl0C5HiavpEXMe1EW1GIQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Micrófono",
@@ -121,7 +121,7 @@
   },
   {
     "nombre": "Termostato inteligente",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPQ8BkTvf-LAAPiWI8gAqvyjpJZvnGqhnXCA&s"
+    "imagen": ""
   },
   {
     "nombre": "Cerradura inteligente",
@@ -129,7 +129,7 @@
   },
   {
     "nombre": "Bombilla inteligente",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlWdFYiSqk-TmNvxhOdLGOsr4U1J9hCl5sg&s"
+    "imagen": ""
   },
   {
     "nombre": "Robot de cocina",
@@ -141,19 +141,19 @@
   },
   {
     "nombre": "Air fryer",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeT4XHiw515ceCyMUDP10sVo51j_V8OaHgkw&s"
+    "imagen": ""
   },
   {
     "nombre": "Cafetera de cápsulas",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQhbOCM4thN2pna_8rU9SxQtzeEBDSrZMJ7A&s"
+    "imagen": ""
   },
   {
     "nombre": "Báscula inteligente",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUtPTXNBnD3unX0LgLPqg65bqrHNmmOgJuA&s"
+    "imagen": ""
   },
   {
     "nombre": "Tensiómetro digital",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJjD592pAYeSfd_JopVKmr-Q1nJUHvOMSsQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Glucómetro",
@@ -161,11 +161,11 @@
   },
   {
     "nombre": "Sensor de movimiento",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf3yQ-yL8pxKP6H1HvXmJN89MN7_mv6f7jpg&s"
+    "imagen": ""
   },
   {
     "nombre": "Cámara IP",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBHleXrB_FXnggA1B70-Wmo0G4sKNYvN-GvA&s"
+    "imagen": ""
   },
   {
     "nombre": "Alarma",
@@ -177,18 +177,18 @@
   },
   {
     "nombre": "Cable USB-C",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lmLqYCJGdUrMvVLrfIoHv5IYqoTkBvpdVg&s"
+    "imagen": ""
   },
   {
     "nombre": "Cable HDMI",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUjzu__wwpx_iw-fbDNWr-pWelFfVP0OwPLw&s"
+    "imagen": ""
   },
   {
     "nombre": "Adaptador",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLfVRizDl1eOlsZMakZ0Hu3CDSq8ASKFHDYQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Hub USB, adaptador USB",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1H6_e-S1Zqmo4z1oKSpr04Y547pO0I_uKZw&s"
+    "imagen": ""
   }
 ]

@@ -37,7 +37,7 @@
   },
   {
     "nombre": "Policía",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4PKqcGDqZrnbKK3dGG93uwQJ0LUQrHdGuRw&s"
+    "imagen": ""
   },
   {
     "nombre": "Fontanero",
@@ -57,7 +57,7 @@
   },
   {
     "nombre": "Dentista",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCKS3K6q5zP1k5_qbfFk13i0sLL-sMF0T7-A&s"
+    "imagen": ""
   },
   {
     "nombre": "Farmacéutico",
@@ -65,7 +65,7 @@
   },
   {
     "nombre": "Psicólogo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-dXwWM7TtALqD05v6GjhPPN3owxRcnZvLSw&s"
+    "imagen": ""
   },
   {
     "nombre": "Veterinario",
@@ -141,7 +141,7 @@
   },
   {
     "nombre": "Soldado",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxL3pKIWIc7XQbEod0yftS6Vxr0vq7TxaXw&s"
+    "imagen": ""
   },
   {
     "nombre": "Político",
@@ -149,7 +149,7 @@
   },
   {
     "nombre": "Científico",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgTb9ZFiZYcwTLCo69YGH8ByaUA8Sg-1NQhQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Cirujano",
@@ -161,7 +161,7 @@
   },
   {
     "nombre": "Panadero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ945u9ZikkUkicvrWC-9aWCPqEhtb-ashS9w&s"
+    "imagen": ""
   },
   {
     "nombre": "Dependiente",
@@ -177,11 +177,11 @@
   },
   {
     "nombre": "Ganadero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNb6Xx8DHzMk-ugOQcnj5xTrzjbz8K80-7w&s"
+    "imagen": ""
   },
   {
     "nombre": "Conductor",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXU5wx2Dc_G-zNP4ska9CEX10HZUA-3UDSqA&s"
+    "imagen": ""
   },
   {
     "nombre": "Cocinero",
@@ -189,27 +189,27 @@
   },
   {
     "nombre": "Cerrajero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQE-NlOv15PqAKbRNTBoBxfHs64eS4J7KrQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Soldador",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQ0_4kr7Xbeg3XjxVunf6RXGqm38W3OFKzg&s"
+    "imagen": ""
   },
   {
     "nombre": "Anestesista",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUGN2gfjU4-5EnhdSV70CPFCPgfhzCKewEMQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Carnicero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWjjk3arRr-sYRykLOyNhpngkoH2yvJCGvIg&s"
+    "imagen": ""
   },
   {
     "nombre": "Pescadero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0C8Mgn69Bw5cifUXMzftlfegB56dYcf5jdg&s"
+    "imagen": ""
   },
   {
     "nombre": "Camarero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSol2tQdJh68drhx8KvyInyqmW1Dbs-4G5xuQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Frutero",
@@ -221,7 +221,7 @@
   },
   {
     "nombre": "Jardinero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNlpl1BvIGwNVd__psn_nnzwjvNqPFZdZDKA&s"
+    "imagen": ""
   },
   {
     "nombre": "Sastre",
@@ -237,7 +237,7 @@
   },
   {
     "nombre": "Influencer",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsvGd7QajK5qitY0TbAGZtKOBkeLkzbpy2zg&s"
+    "imagen": ""
   },
   {
     "nombre": "Cantante",
@@ -245,7 +245,7 @@
   },
   {
     "nombre": "Mago",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy4Tu1g96ESjuueGbT-YzOTXiTYyd0rlbMOw&s"
+    "imagen": ""
   },
   {
     "nombre": "Payaso",
@@ -257,7 +257,7 @@
   },
   {
     "nombre": "Programador",
-    "imagen": "https://mexico.unir.net/wp-content/uploads/sites/6/2019/09/dia-programador-ingenieria-unir-mexico.jpg"
+    "imagen": ""
   },
   {
     "nombre": "Diseñador",
@@ -273,7 +273,7 @@
   },
   {
     "nombre": "Camarera",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7J2sbaCRG7ArtI0sL7rHDQ5ESfCOyKevoug&s"
+    "imagen": ""
   },
   {
     "nombre": "Estanquero",
@@ -281,7 +281,7 @@
   },
   {
     "nombre": "Marinero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUl3SkEXWMbu2KWwKwWclll6hh2uEhbf49YQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Buzo",
@@ -297,11 +297,11 @@
   },
   {
     "nombre": "Pescador",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7ITZIQf1B2h2MMI2ufoAEDYlzk-senB0wA&s"
+    "imagen": ""
   },
   {
     "nombre": "Apicultor",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwgHAmKpSr6HSw79bzDhd6RL2OkhOrocgC9g&s"
+    "imagen": ""
   },
   {
     "nombre": "Músico",
@@ -337,7 +337,7 @@
   },
   {
     "nombre": "Soldado",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxL3pKIWIc7XQbEod0yftS6Vxr0vq7TxaXw&s"
+    "imagen": ""
   },
   {
     "nombre": "Político",
@@ -345,7 +345,7 @@
   },
   {
     "nombre": "Científico",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgTb9ZFiZYcwTLCo69YGH8ByaUA8Sg-1NQhQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Cirujano",
@@ -357,7 +357,7 @@
   },
   {
     "nombre": "Panadero",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ945u9ZikkUkicvrWC-9aWCPqEhtb-ashS9w&s"
+    "imagen": ""
   },
   {
     "nombre": "Dependiente",

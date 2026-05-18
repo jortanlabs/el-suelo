@@ -17,11 +17,11 @@
   },
   {
     "nombre": "Lord Farquaad (Shrek)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRA3O70INdMKLct-GAeVw2_Vb2sa0UIOLg2Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Hada Madrina (Shrek 2)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR04_EcPw9YA0C5hSF5s8qvCHVI2qT_VYGjNg&s"
+    "imagen": ""
   },
   {
     "nombre": "Príncipe Encantador (Shrek 2)",
@@ -37,7 +37,7 @@
   },
   {
     "nombre": "Dragona (Shrek)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYug8zPWwpb9RH5KskYemsB-yXDqt_moKIA&s"
+    "imagen": ""
   },
   {
     "nombre": "Pinocho (Shrek)",
@@ -57,11 +57,11 @@
   },
   {
     "nombre": "Oogway (Kung Fu Panda)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLX9_sHEhZmpB6fxeoY8A9mCNcxkp5zXdSLA&s"
+    "imagen": ""
   },
   {
     "nombre": "Tai Lung (Kung Fu Panda)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ftuFrFwbtyO36jE-6mxn6cdir84ML0--gA&s"
+    "imagen": ""
   },
   {
     "nombre": "Víbora (Kung Fu Panda)",
@@ -77,7 +77,7 @@
   },
   {
     "nombre": "Hermanastra fea (Shrek)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOcFjh0msHhCDQ2w0Pxrj76Xv5ACVmaL_Lg&s"
+    "imagen": ""
   },
   {
     "nombre": "Alex (Madagascar)",
@@ -117,7 +117,7 @@
   },
   {
     "nombre": "Rico (Madagascar)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc010OD-Y_6tVY4PneXxPrFhGatmmg8cnpTw&s"
+    "imagen": ""
   },
   {
     "nombre": "Private (Madagascar)",
@@ -125,7 +125,7 @@
   },
   {
     "nombre": "Hipo (Cómo entrenar a tu dragón)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0KgzT6gIqr5tOvraO1_eZX03LZ5NxfSsUA&s"
+    "imagen": ""
   },
   {
     "nombre": "Desdentado (Cómo entrenar a tu dragón)",
@@ -153,7 +153,7 @@
   },
   {
     "nombre": "MetroMan (Megamente)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2gC4Gs-Iyb1dzlxhVOIaYihWPZPrWDONPiA&s"
+    "imagen": ""
   },
   {
     "nombre": "Roxanne (Megamente)",
@@ -161,15 +161,15 @@
   },
   {
     "nombre": "Minion (Megamente)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcT900j88HpbR7unJPC44_sY5RkiuYXgBHVg&s"
+    "imagen": ""
   },
   {
     "nombre": "Moisés (El Príncipe de Egipto)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNjwVTunMXzNNyCnXgpFJaEyJ8vgMpbcXlAw&s"
+    "imagen": ""
   },
   {
     "nombre": "Ramsés (El Príncipe de Egipto)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxoeQvWPEdZo_Alu1sMcrlkraE97nn6vlFg&s"
+    "imagen": ""
   },
   {
     "nombre": "Spirit (Spirit: El Corcel Indomable)",
@@ -193,7 +193,7 @@
   },
   {
     "nombre": "Yi (Abominable)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPJTb4kOPX8GpRG0VKGRN414x2D3gu8mAhA&s"
+    "imagen": ""
   },
   {
     "nombre": "Humpty Dumpty (El Gato con Botas)",
@@ -213,6 +213,6 @@
   },
   {
     "nombre": "Z (Antz)",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5juYGAm8ig9M1aioQVUZwkLzUvSdzynRPYw&s"
+    "imagen": ""
   }
 ]

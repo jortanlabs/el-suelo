@@ -9,7 +9,7 @@
   },
   {
     "nombre": "Wembley Stadium",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WZwv5y4Qx1NwGK0TGEc9t4QPeJDTfUl6Ww&s"
+    "imagen": ""
   },
   {
     "nombre": "Allianz Arena",
@@ -89,7 +89,7 @@
   },
   {
     "nombre": "Emirates Stadium",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf0K8vCxFMXQr2szt1cqC4G7OuU5sujaXZcw&s"
+    "imagen": ""
   },
   {
     "nombre": "Sadar",
@@ -97,15 +97,15 @@
   },
   {
     "nombre": "Reale Arena",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22EvxEWdflog-wn6h64TvqFyQg_WPjj9KmQ&s"
+    "imagen": ""
   },
   {
     "nombre": "La Cerámica",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7o2f-DDAnlaZqje9UnjjXAYmT8o2UjPPtQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Balaídos",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzrImjP0IicsFT4zMCw0jNJ7gTbrDtcfM_pA&s"
+    "imagen": ""
   },
   {
     "nombre": "Coliseum Alfonso Pérez",
@@ -117,11 +117,11 @@
   },
   {
     "nombre": "Cornellà-El Prat",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwegdUXkSrc9_nLUnvoYqgSNS83-vFdtdVkw&s"
+    "imagen": ""
   },
   {
     "nombre": "Nuevo Mirandilla",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKweApjhAgKjN1m_XM0Dn8QAj-_laTqe0QSg&s"
+    "imagen": ""
   },
   {
     "nombre": "Tottenham Hotspur Stadium",
@@ -129,15 +129,15 @@
   },
   {
     "nombre": "London Stadium",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi9AR1Gayfm1N5uDOYlZvqaGOWNPaefBqwBA&s"
+    "imagen": ""
   },
   {
     "nombre": "St. James Park",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk1_D7E0Ux7kWfEHyyxT9hyAZ-Tp0U7g6rQw&s"
+    "imagen": ""
   },
   {
     "nombre": "Red Bull Arena",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzl0GQ3fyFy9nz-jI7yu3TnPQ43wsWMqLJ3Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Olympiastadion",
@@ -149,7 +149,7 @@
   },
   {
     "nombre": "Stadio Olimpico",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCXhegvUWMBbpmbOmEMNJT6JLb0A8e6U1qQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Diego Armando Maradona",
@@ -161,11 +161,11 @@
   },
   {
     "nombre": "Parc des Princes",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo5FAIocsoBrjiiceRNM5hDfU_jjgyiXiaOQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Vélodrome",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtAtkWj2b1JAp5uHikOQu8ytuCfUPipRA2fw&s"
+    "imagen": ""
   },
   {
     "nombre": "Groupama Stadium",
@@ -177,11 +177,11 @@
   },
   {
     "nombre": "José Alvalade",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdAHF5C-czi-_-j9sHFYXMD-zW_MjNznHpA&s"
+    "imagen": ""
   },
   {
     "nombre": "Philips Stadion",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn3-Tp8yXz-P1_147xjtVUYgJv-j3rCWlSXA&s"
+    "imagen": ""
   },
   {
     "nombre": "De Kuip",
@@ -197,7 +197,7 @@
   },
   {
     "nombre": "Mineirão",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZOe4wcVjmjV0MWB1wLeSq4AaiVYWSCbgGQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Morumbí",
@@ -205,6 +205,6 @@
   },
   {
     "nombre": "Centenario",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfo8TMoTHtyyB6gbHbvYEZkiR8ImD0lzGCWw&s"
+    "imagen": ""
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Madrid",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTLl0qV_iVbiVIRE0fn0imhrYGuewQThih4A&s"
+    "imagen": ""
   },
   {
     "nombre": "Barcelona",
@@ -13,23 +13,23 @@
   },
   {
     "nombre": "Sevilla",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIAq_o7sX5sECNiEDJsUm5PcUcsh5eEnLLiw&s"
+    "imagen": ""
   },
   {
     "nombre": "Zaragoza",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTmOU3JQOxQfXmhpiUDNOrcP4UJ_SDrPNs5A&s"
+    "imagen": ""
   },
   {
     "nombre": "Málaga",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTa5N2UR0R2VYZTh61W_2b__XWA5JntV42g&s"
+    "imagen": ""
   },
   {
     "nombre": "Murcia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizpn6S6br1WynuhTbIE1phhJaOJuUYEem2g&s"
+    "imagen": ""
   },
   {
     "nombre": "Palma de Mallorca",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqo0Szq9vq7gVCU9AQD1jv4ZjDAjH_1Xjwtw&s"
+    "imagen": ""
   },
   {
     "nombre": "Las Palmas de Gran Canaria",
@@ -37,7 +37,7 @@
   },
   {
     "nombre": "Bilbao",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPaE1I007dszP7Wh54k1JqTSSfOEokW8TBxw&s"
+    "imagen": ""
   },
   {
     "nombre": "Alicante",
@@ -45,19 +45,19 @@
   },
   {
     "nombre": "Córdoba",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCjKcM1X--o-40OuWELyKA640tEyLKWhNfmg&s"
+    "imagen": ""
   },
   {
     "nombre": "Valladolid",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQBw0gkzS8e8MS7FZIJch8xth93DKd4gt_w&s"
+    "imagen": ""
   },
   {
     "nombre": "Vigo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNK-PAkMEIfDsEDuVfZPS6Rr94ohCFzLuyjg&s"
+    "imagen": ""
   },
   {
     "nombre": "Gijón",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRvGlSOwxzON9Ub_THdJlDBSSN7WCqNqnlQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Granada",
@@ -93,7 +93,7 @@
   },
   {
     "nombre": "Jerez de la Frontera",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqCquJeV0gSzLLHiONZ0DMXGgRBA9sXUfiQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Sabadell",
@@ -101,7 +101,7 @@
   },
   {
     "nombre": "Pamplona",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcyVxn6vYNyYsWuJHUBrI0g284BDUJnf4RA&s"
+    "imagen": ""
   },
   {
     "nombre": "Almería",
@@ -129,7 +129,7 @@
   },
   {
     "nombre": "Logroño",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtpc3dhu4cf-UY26feryfmU5pWA4AQoo4-w&s"
+    "imagen": ""
   },
   {
     "nombre": "Toledo",
@@ -169,11 +169,11 @@
   },
   {
     "nombre": "Pontevedra",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3oROBahNjL-Y2hxbPmqMKygJIVRDNNnUorg&s"
+    "imagen": ""
   },
   {
     "nombre": "Lugo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalamtAkCzisUivSqG4soZzuMHe5KKdf2g_g&s"
+    "imagen": ""
   },
   {
     "nombre": "Ourense",

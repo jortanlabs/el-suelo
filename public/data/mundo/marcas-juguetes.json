@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Barbie",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14jH3IzDj3zkkWWj-iSYkcA9jP2EKVLyhOg&s"
+    "imagen": ""
   },
   {
     "nombre": "Action Man",
@@ -25,7 +25,7 @@
   },
   {
     "nombre": "LEGO",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcGs3Rdxp0VownO6vA9u0s1v5XcKJlZYABfw&s"
+    "imagen": ""
   },
   {
     "nombre": "Playmobil",
@@ -85,7 +85,7 @@
   },
   {
     "nombre": "Trivial Pursuit",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDr6cm0qSLXJuJ37oTTNFKEjkOyPgOcR9jw&s"
+    "imagen": ""
   },
   {
     "nombre": "Risk",
@@ -97,7 +97,7 @@
   },
   {
     "nombre": "Parchís",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxrrxHLxQ6IUcgVn-Wmd0i2SFy9ZTEMbGKA&s"
+    "imagen": ""
   },
   {
     "nombre": "Operación",
@@ -117,7 +117,7 @@
   },
   {
     "nombre": "Pictionary",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbjzlpoo08wGL1IJdJBQhSRfooJ7g5Wo9vA&s"
+    "imagen": ""
   },
   {
     "nombre": "Catán",
@@ -125,7 +125,7 @@
   },
   {
     "nombre": "Carcassonne",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbmdAAhHadiKRxMF4Y1dQARXWRkBMt0TyrRw&s"
+    "imagen": ""
   },
   {
     "nombre": "Ajedrez",
@@ -149,7 +149,7 @@
   },
   {
     "nombre": "Fisher-Price",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTh4qHVRd8WaXi984G6Ya1PlZCosScJ2JSUA&s"
+    "imagen": ""
   },
   {
     "nombre": "Mattel",
@@ -165,7 +165,7 @@
   },
   {
     "nombre": "Mega Bloks",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz011wlmPZVEUgdbgZ0mrV0Qi4m6hHe93R7A&s"
+    "imagen": ""
   },
   {
     "nombre": "K'Nex",
@@ -177,11 +177,11 @@
   },
   {
     "nombre": "Cubo de Rubik",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTPqhOZQmmsr0iY77wHPnyMzBQno-K4R1lg&s"
+    "imagen": ""
   },
   {
     "nombre": "Yoyo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUczm_jLLo53tXdQcNWKtuAjX_bOYKOKKDGg&s"
+    "imagen": ""
   },
   {
     "nombre": "Diábolo",
@@ -189,11 +189,11 @@
   },
   {
     "nombre": "Spinner",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXaUpZFGo27c0996m4YmVUaaBeyi7e8QwrA&s"
+    "imagen": ""
   },
   {
     "nombre": "Peonza",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPCn1Vv3_dyZw_EkoiE_3uw-pUW5t168H4Eg&s"
+    "imagen": ""
   },
   {
     "nombre": "Comba",
@@ -217,7 +217,7 @@
   },
   {
     "nombre": "Game Boy",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc6SR5mzkbEeD_miPsxpbpu1A2GObhPCF0ng&s"
+    "imagen": ""
   },
   {
     "nombre": "Hula hoop",
@@ -229,7 +229,7 @@
   },
   {
     "nombre": "Playstation",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCiiJI0I-FNlsc8JbiLHrYXTxvboToaoDG-g&s"
+    "imagen": ""
   },
   {
     "nombre": "Twister",
@@ -237,7 +237,7 @@
   },
   {
     "nombre": "Ondamanía / Muelle loco",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlHx_ublFZQROhc5y_IWg4Uyo5hqsD8XLfQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Canicas",

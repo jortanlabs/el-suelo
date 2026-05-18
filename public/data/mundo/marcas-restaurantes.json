@@ -13,7 +13,7 @@
   },
   {
     "nombre": "Subway",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lriHrEEC0BaqyMKydsf_74pioR01O5tvEw&s"
+    "imagen": ""
   },
   {
     "nombre": "Pizza Hut",
@@ -21,15 +21,15 @@
   },
   {
     "nombre": "Domino's Pizza",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2H536w2TJldRjSrfxa4cvPMvG4fJu27iZng&s"
+    "imagen": ""
   },
   {
     "nombre": "Telepizza",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGsaEYedZwGHObd_G5CmjKSJo-sDiZ4XCaqQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Foster's Hollywood",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvlgpja0en2fNHc53vE5MuNb7Wa0LrjIu4Pg&s"
+    "imagen": ""
   },
   {
     "nombre": "Five Guys",
@@ -37,7 +37,7 @@
   },
   {
     "nombre": "Taco Bell",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiaBIHIAD7bZ8y8qGw8EpUCE6osJP55XxEVw&s"
+    "imagen": ""
   },
   {
     "nombre": "Dunkin' Donuts",
@@ -45,7 +45,7 @@
   },
   {
     "nombre": "Popeyes",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmsrbKfMR4M8BBS-t5ClCEOqGNXvd5n-sNAw&s"
+    "imagen": ""
   },
   {
     "nombre": "Starbucks",
@@ -57,7 +57,7 @@
   },
   {
     "nombre": "Carl's Jr.",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCUn7MjId7gdf1o50nqWixPuttYqq65-Cevw&s"
+    "imagen": ""
   },
   {
     "nombre": "Pans & Company",
@@ -65,15 +65,15 @@
   },
   {
     "nombre": "Rodilla",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc8cbVpF6ns3OrKX06hRXnfQaTqoZZ6wJR_A&s"
+    "imagen": ""
   },
   {
     "nombre": "La Tagliatella",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-G1F9_wEiwazFk3pLng2ex1jpSMeJY0q2BQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Goiko",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbnX4-U5E-bMuuO5FC8K5almtw7viaUTbUQ&s"
+    "imagen": ""
   },
   {
     "nombre": "VIPS",
@@ -89,11 +89,11 @@
   },
   {
     "nombre": "Tony Roma's",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBtyvKY6ICD3tlP85CuN_urmrpwvYNVn9CQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Sagardi",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3VHJj8dvLYVQJIulf-N2MzsvjaulXLaJpEQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Ginos",
@@ -105,7 +105,7 @@
   },
   {
     "nombre": "Pollos Asados Pepe",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4LKYzch4yiSDO_6UdvnE82B9Va00chHV6xQ&s"
+    "imagen": ""
   },
   {
     "nombre": "La Mafia se sienta a la mesa",
@@ -133,23 +133,23 @@
   },
   {
     "nombre": "Cinnabon",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP30eB6bYTcNJxw2LV5u73QBz_ZgX6Ahb1Sg&s"
+    "imagen": ""
   },
   {
     "nombre": "Pinkberry",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRfd1Q6IHOCtP4p9nyABo592zjkcJ4vO0vQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Llaollao",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ryVIspzjsVPtQ4R1tLjtQwlyPCcxIVLhXA&s"
+    "imagen": ""
   },
   {
     "nombre": "Wendy's",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7mkVu5S4L1g4F-uSQqh1pqDYwTHNIj3P8A&s"
+    "imagen": ""
   },
   {
     "nombre": "In-N-Out Burger",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPEbTt1QwkUGGPCBq2eENekXbxlBDSkgrSg&s"
+    "imagen": ""
   },
   {
     "nombre": "Shake Shack",
@@ -157,7 +157,7 @@
   },
   {
     "nombre": "Panera Bread",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtXDYqNTmrJEaMy-PA-eC5BZW1RRarPU5Dwg&s"
+    "imagen": ""
   },
   {
     "nombre": "Olive Garden",
@@ -165,11 +165,11 @@
   },
   {
     "nombre": "Outback Steakhouse",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQodNJitU6oaLR_W5AyWwbl6MGZeOTIyexu4Q&s"
+    "imagen": ""
   },
   {
     "nombre": "IHOP",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYtkUUYmYzbmoc0C0gRTDxtc5XGDAaaGMZQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Denny's",
@@ -181,11 +181,11 @@
   },
   {
     "nombre": "Red Lobster",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwVsge7DT5zBiPYMvFiYUqFoa52LRGPGzmiA&s"
+    "imagen": ""
   },
   {
     "nombre": "Chipotle",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbe5pDsc8lIS_lIC0XPoA2Kos-sNNiYnIxlQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Wagamama",
@@ -193,7 +193,7 @@
   },
   {
     "nombre": "Pret a Manger",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8glmVz46oo1fMpZyNJ7lDWFTIyUCU7IPRQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Hard Rock Cafe",
@@ -201,7 +201,7 @@
   },
   {
     "nombre": "Costa Coffee",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9uDqX4g7xF7o_cHFpKfTdgOcneK0sDJcpOg&s"
+    "imagen": ""
   },
   {
     "nombre": "Caffè Nero",
@@ -213,7 +213,7 @@
   },
   {
     "nombre": "La Mordida",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSJMb7hI18eOVVA7ERWdNTyDD5EIldXlH_SQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Cafetería Juan Valdez",
@@ -221,6 +221,6 @@
   },
   {
     "nombre": "La Mordida",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSJMb7hI18eOVVA7ERWdNTyDD5EIldXlH_SQ&s"
+    "imagen": ""
   }
 ]

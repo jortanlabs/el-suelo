@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Madrid",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlKE6eS9GcNUQPkNpM7hlKrx53wM6lMsqOQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Barcelona",
@@ -9,7 +9,7 @@
   },
   {
     "nombre": "París",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZhZPdQUxm1-V3UzJRkh8sVqwM3Wr9eCrvQg&s"
+    "imagen": ""
   },
   {
     "nombre": "Londres",
@@ -25,11 +25,11 @@
   },
   {
     "nombre": "Ámsterdam",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1eFzLukS13Q618r1_wOk5ge6z8R1NLx-yCg&s"
+    "imagen": ""
   },
   {
     "nombre": "Viena",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPCKTgRskbU-GkHsatuRPeTuVFKYRLsWmxQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Praga",
@@ -37,7 +37,7 @@
   },
   {
     "nombre": "Budapest",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgWxb--pRiIKhAU19B6xiBufd9-zxgofwMDw&s"
+    "imagen": ""
   },
   {
     "nombre": "Lisboa",
@@ -57,15 +57,15 @@
   },
   {
     "nombre": "Oslo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9oIzZNCi9q5XqUbgo97yKymhPM41ak-cvsw&s"
+    "imagen": ""
   },
   {
     "nombre": "Helsinki",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0jFC_TVvER5AmlqZZJLbm-NZ6NDmF1gJNg&s"
+    "imagen": ""
   },
   {
     "nombre": "Varsovia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f4wYWjL4zXFAl5Ri1nABykQrtke0tZEzLg&s"
+    "imagen": ""
   },
   {
     "nombre": "Atenas",
@@ -93,7 +93,7 @@
   },
   {
     "nombre": "Mumbai",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSWcQg1Pnyrwe6SypXqIdQcEERTC280G0hA&s"
+    "imagen": ""
   },
   {
     "nombre": "Dubái",
@@ -105,7 +105,7 @@
   },
   {
     "nombre": "Bangkok",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV-ObMOCxpCRea38aVoZccza4isMEXapsjwA&s"
+    "imagen": ""
   },
   {
     "nombre": "Seúl",
@@ -113,7 +113,7 @@
   },
   {
     "nombre": "El Cairo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjLkfZ-XUWWsXaqQyOEfeN0xGkMc8WY9dtyA&s"
+    "imagen": ""
   },
   {
     "nombre": "Johannesburgo",
@@ -145,7 +145,7 @@
   },
   {
     "nombre": "Buenos Aires",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7SG2ginFxOocQ3PORzig99-YOzE-De4y8iQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Ciudad de México",
@@ -221,7 +221,7 @@
   },
   {
     "nombre": "Vilnius",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz6yOj1zlTzeFfHWHziuQvZ6FegF4brJN0vA&s"
+    "imagen": ""
   },
   {
     "nombre": "San Francisco",
@@ -229,11 +229,11 @@
   },
   {
     "nombre": "Boston",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6pGjIlWbAaBANFVpkmW4c_qKBirZAt8PrsA&s"
+    "imagen": ""
   },
   {
     "nombre": "Washington",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNi9jqbfiZPox6HE6F_ho1DAysdpTPSkPcaA&s"
+    "imagen": ""
   },
   {
     "nombre": "Las Vegas",
@@ -257,7 +257,7 @@
   },
   {
     "nombre": "Quito",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgOYBGTXwvr32fGfSMa7zNbTpem8OMLcHrg&s"
+    "imagen": ""
   },
   {
     "nombre": "Montevideo",
@@ -265,7 +265,7 @@
   },
   {
     "nombre": "Kioto",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkP7SeayIDMhgxIF6p5uSoyiifCVw-yFjfsA&s"
+    "imagen": ""
   },
   {
     "nombre": "Osaka",
@@ -273,7 +273,7 @@
   },
   {
     "nombre": "Hiroshima",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSbzbg-6c6PjrS-8D_6siHBOR_lYB1WuHBg&s"
+    "imagen": ""
   },
   {
     "nombre": "Hong Kong",
@@ -281,7 +281,7 @@
   },
   {
     "nombre": "Nueva Delhi",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBFJCVYk8vVf1tVUX15U_yjMcM13FIGex5Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Doha",
@@ -289,7 +289,7 @@
   },
   {
     "nombre": "Casablanca",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomtVOVmWFDfpOdf6shy6GiHeuKWQHf-zi-A&s"
+    "imagen": ""
   },
   {
     "nombre": "Marrakech",
@@ -305,7 +305,7 @@
   },
   {
     "nombre": "Melbourne",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCHUBsTYXlm7kQ5i2OSHYijUO7Wh33ggplqA&s"
+    "imagen": ""
   },
   {
     "nombre": "Auckland",
@@ -329,7 +329,7 @@
   },
   {
     "nombre": "Múnich",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT3D1uCvoOB68eWix_go2ANcFEFX1f7vzyPg&s"
+    "imagen": ""
   },
   {
     "nombre": "Sevilla",
@@ -337,7 +337,7 @@
   },
   {
     "nombre": "Valencia",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5XRYj2cf8sroLK3sn8ucfc8KUcvQkr0r18w&s"
+    "imagen": ""
   },
   {
     "nombre": "Bilbao",

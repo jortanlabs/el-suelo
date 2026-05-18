@@ -9,15 +9,15 @@
   },
   {
     "nombre": "Blastoise",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPU1CKEx77K0gJvn2KiAJKS5ILzokKyfL6g&s"
+    "imagen": ""
   },
   {
     "nombre": "Venusaur",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtlHbdmhpdwYbKeVo5D3KjflpcRZy7NrKow&s"
+    "imagen": ""
   },
   {
     "nombre": "Mewtwo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQO_lVEg6Vq3bir8Hrl1lbi-mfzIw1DUez7A&s"
+    "imagen": ""
   },
   {
     "nombre": "Mew",
@@ -93,7 +93,7 @@
   },
   {
     "nombre": "Growlithe",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwvcYHTImiJLfXVDBChb9XL0h0Cd34QFLEkA&s"
+    "imagen": ""
   },
   {
     "nombre": "Poliwag",
@@ -137,7 +137,7 @@
   },
   {
     "nombre": "Hitmonlee",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRXyuDMMlwNpcKwYiTENfCZv9GAkv7xywNw&s"
+    "imagen": ""
   },
   {
     "nombre": "Hitmonchan",
@@ -145,7 +145,7 @@
   },
   {
     "nombre": "Chansey",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3vy_m59gHQkJnRBpvmMPBFJ5Zmcf4MAMvQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Goldeen",
@@ -153,11 +153,11 @@
   },
   {
     "nombre": "Starmie",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYIcGOVHMiIL_K_VKmKELlOzE536sUqGrroA&s"
+    "imagen": ""
   },
   {
     "nombre": "Lickitung",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUMagYXl2tEs5qbQ6-eUiUXhSAU055LU5fIw&s"
+    "imagen": ""
   },
   {
     "nombre": "Krabby",
@@ -177,7 +177,7 @@
   },
   {
     "nombre": "Exeggutor",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnmQbTGtxqYkuqZzUdUJ0kOUFnGeUjO1dD3Q&s"
+    "imagen": ""
   },
   {
     "nombre": "Articuno",
@@ -217,7 +217,7 @@
   },
   {
     "nombre": "Espeon",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgs_871f4AiIH7C5aQXqlQbJnt_WeQFHMukg&s"
+    "imagen": ""
   },
   {
     "nombre": "Umbreon",
@@ -253,7 +253,7 @@
   },
   {
     "nombre": "Heracross",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Jw6ivv4qWVFQ056Bm62VTqsYTZnQcQLqxQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Tyranitar",
@@ -273,7 +273,7 @@
   },
   {
     "nombre": "Mudkip",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuBz_j57ovb_hDyswaP0CP8M0pU5-MudE4A&s"
+    "imagen": ""
   },
   {
     "nombre": "Gardevoir",
@@ -301,7 +301,7 @@
   },
   {
     "nombre": "Glaceon",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3pfjFdbUDeInz_nkutW6PLZ5jnv6vAD7Dg&s"
+    "imagen": ""
   },
   {
     "nombre": "Leafeon",
@@ -309,7 +309,7 @@
   },
   {
     "nombre": "Dialga",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZky-4GIcHo-bWgb70gER1GqWtZonx0iqRuA&s"
+    "imagen": ""
   },
   {
     "nombre": "Palkia",
@@ -317,7 +317,7 @@
   },
   {
     "nombre": "Giratina",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf4ao-VEkdBt900T0z5_dIB26pz8qOwuqwwg&s"
+    "imagen": ""
   },
   {
     "nombre": "Greninja",
@@ -329,7 +329,7 @@
   },
   {
     "nombre": "Zygarde",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfiPVO1v8du7AxqeH-vkE_re-KHJBOv9Y9gQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Mimikyu",
@@ -345,6 +345,6 @@
   },
   {
     "nombre": "Jigglypuff",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdd8wOEk2BqOPvSZAzFefZmkLyWyUgrwgbQ&s"
+    "imagen": ""
   }
 ]

@@ -5,7 +5,7 @@
   },
   {
     "nombre": "Manchester City",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBnd7juEXMICCzCcGL98j-1hsQH5vqxYJpg&s"
+    "imagen": ""
   },
   {
     "nombre": "Liverpool FC",
@@ -29,11 +29,11 @@
   },
   {
     "nombre": "Borussia Dortmund",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgdcl-ac95d1RHRLOsrEOqCZ6NmT_8z_NNKA&s"
+    "imagen": ""
   },
   {
     "nombre": "Bayer Leverkusen",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapAi8wRru-YikrWZS_5lhVJJzaYruk-qSVg&s"
+    "imagen": ""
   },
   {
     "nombre": "Juventus",
@@ -65,7 +65,7 @@
   },
   {
     "nombre": "Olympique de Lyon",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKFInivY1YlyefN7X25oWNn2mV-ySG1HevhA&s"
+    "imagen": ""
   },
   {
     "nombre": "Ajax",
@@ -77,7 +77,7 @@
   },
   {
     "nombre": "Porto",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbTVF-dCverUL6y4rHpIcc1yEK5RjDVquHHQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Benfica",
@@ -85,7 +85,7 @@
   },
   {
     "nombre": "Sporting CP",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqxsMRiUmJripHGo8x7d6M00RPIxXpG2pbLg&s"
+    "imagen": ""
   },
   {
     "nombre": "Celtic FC",
@@ -93,7 +93,7 @@
   },
   {
     "nombre": "Rangers FC",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTM4VknmARJA9p3yJexNF3o3-hv2HX_Q-4Xg&s"
+    "imagen": ""
   },
   {
     "nombre": "Galatasaray",
@@ -101,7 +101,7 @@
   },
   {
     "nombre": "Fenerbahçe",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbCZI3U-8eC_HJnVNohtT3Ln0ZF9lVtbbp-A&s"
+    "imagen": ""
   },
   {
     "nombre": "Anderlecht",
@@ -137,7 +137,7 @@
   },
   {
     "nombre": "VfL Wolfsburg",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuUb7bbYqBiEQN7l6xn9iJkN1xDJTlKhFr0g&s"
+    "imagen": ""
   },
   {
     "nombre": "Schalke 04",
@@ -157,7 +157,7 @@
   },
   {
     "nombre": "VfB Stuttgart",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc67sgvl8DwyaHA5yQd8dgn9jpjLNoRNVztg&s"
+    "imagen": ""
   },
   {
     "nombre": "Union Berlin",
@@ -169,7 +169,7 @@
   },
   {
     "nombre": "Fiorentina",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN1B1bvBEVQbPaTRG5rpFEb5_QSA9Rybx3jA&s"
+    "imagen": ""
   },
   {
     "nombre": "Atalanta",
@@ -185,7 +185,7 @@
   },
   {
     "nombre": "AS Monaco",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG3jiIwGB_t06eEJdZrRC57216GUEtpirdHw&s"
+    "imagen": ""
   },
   {
     "nombre": "LOSC Lille",
@@ -213,7 +213,7 @@
   },
   {
     "nombre": "Beşiktaş",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI1Lx1w8kOqKf1GCpfo3BP-kVrTdz4H3xfjA&s"
+    "imagen": ""
   },
   {
     "nombre": "Olympiacos",
@@ -233,7 +233,7 @@
   },
   {
     "nombre": "Salzburgo",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoie1Ti8vHV0Hwh42azF1hMp8vIG2N26fqCg&s"
+    "imagen": ""
   },
   {
     "nombre": "Sparta Praga",
@@ -245,7 +245,7 @@
   },
   {
     "nombre": "Estrella Roja",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQk-1xtX1KhZ2knpPMtAID1JathbPngZEWUQ&s"
+    "imagen": ""
   },
   {
     "nombre": "Dinamo Zagreb",
@@ -257,6 +257,6 @@
   },
   {
     "nombre": "Dinamo de Kiev",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNO7ZjKrAEWlgwUporBRS2s26An0KUmhK95g&s"
+    "imagen": ""
   }
 ]
