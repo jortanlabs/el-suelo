@@ -131,7 +131,7 @@ const slugsInfantiles: string[] = [
         </button>
 
         <a id="link-multi" href="/multi" data-astro-prefetch="viewport" class="floor-btn w-full font-titulo font-bold text-xl py-4 tracking-widest uppercase text-center" style="color:#a8c5ff;border-color:#a8c5ff;">
-          📱 2 Móviles
+          🌐 Crear sala
         </a>
 
         <button id="banner-reto" class="hidden font-titulo font-bold text-sm px-4 py-2.5 mt-1 rounded transition-colors" style="color:#ff1dce;background:rgba(255,29,206,0.08);border:1px solid #ff1dce66">
@@ -209,16 +209,32 @@ const slugsInfantiles: string[] = [
         </div>
       </div>
 
-      <div class="w-full max-w-sm flex flex-col items-center gap-6">
+      <div class="w-full max-w-sm flex flex-col items-center gap-5">
         <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight">¿Quién juega?</h2>
-        <div class="w-full space-y-4">
-          <div>
-            <label class="font-titulo font-bold text-[#ff1dce] text-sm block mb-1 uppercase tracking-widest">Jugador 1</label>
-            <input id="nombre-a" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input floor-input-a py-3 text-lg" />
+        <div class="w-full">
+          <label class="font-titulo font-bold text-[#a8c5ff] text-sm block mb-2 uppercase tracking-widest text-center">¿Cuántos jugadores?</label>
+          <div id="selector-jugadores" class="flex gap-2">
+            <button data-nj="2" class="floor-btn flex-1 py-3 text-xl font-titulo font-bold floor-cat-selected">2</button>
+            <button data-nj="3" class="floor-btn flex-1 py-3 text-xl font-titulo font-bold text-[#a8c5ff]" style="border-color:#a8c5ff">3</button>
+            <button data-nj="4" class="floor-btn flex-1 py-3 text-xl font-titulo font-bold text-[#a8c5ff]" style="border-color:#a8c5ff">4</button>
           </div>
-          <div>
-            <label class="font-titulo font-bold text-[#ffe100] text-sm block mb-1 uppercase tracking-widest">Jugador 2</label>
-            <input id="nombre-b" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input floor-input-b py-3 text-lg" />
+        </div>
+        <div id="inputs-nombres" class="w-full space-y-3">
+          <div data-jugador="0">
+            <label class="font-titulo font-bold text-sm block mb-1 uppercase tracking-widest" style="color:#ff1dce">Jugador 1</label>
+            <input data-nombre="0" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input py-3 text-lg" />
+          </div>
+          <div data-jugador="1">
+            <label class="font-titulo font-bold text-sm block mb-1 uppercase tracking-widest" style="color:#ffe100">Jugador 2</label>
+            <input data-nombre="1" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input py-3 text-lg" />
+          </div>
+          <div data-jugador="2" class="hidden">
+            <label class="font-titulo font-bold text-sm block mb-1 uppercase tracking-widest" style="color:#00ff88">Jugador 3</label>
+            <input data-nombre="2" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input py-3 text-lg" />
+          </div>
+          <div data-jugador="3" class="hidden">
+            <label class="font-titulo font-bold text-sm block mb-1 uppercase tracking-widest" style="color:#00b3ff">Jugador 4</label>
+            <input data-nombre="3" type="text" placeholder="Tu nombre" maxlength="20" class="floor-input py-3 text-lg" />
           </div>
         </div>
         <button id="boton-nombres-siguiente" class="floor-btn floor-btn-a w-full font-titulo font-bold text-xl px-4 py-4">Continuar →</button>
@@ -231,7 +247,7 @@ const slugsInfantiles: string[] = [
       <h2 class="font-titulo text-3xl font-bold text-[#ffcc00] uppercase tracking-wider text-center leading-tight">¿Cómo jugáis?</h2>
       <div class="w-full max-w-xs flex flex-col gap-4">
         <button id="modo-rapida-elegir" class="floor-btn floor-btn-a w-full font-titulo font-bold text-2xl py-6 uppercase">⚡ Partida rápida</button>
-        <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">Un tema. Dura hasta que se acaba el tiempo de uno.</p>
+        <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">Un tema. Pierde quien se queda sin tiempo.</p>
         <button id="modo-tablero-elegir" class="floor-btn floor-btn-gold w-full font-titulo font-bold text-2xl py-6 uppercase">🏁 Tablero</button>
         <p class="text-sm text-[#a8c5ff] font-titulo text-center -mt-2">9 casillas con temas sorpresa. Gana quien más conquiste.</p>
       </div>
@@ -277,15 +293,7 @@ const slugsInfantiles: string[] = [
 
     <!-- TABLERO -->
     <section id="pantalla-tablero" class="flex-1 flex flex-col overflow-hidden hidden relative" style="touch-action:none;overscroll-behavior:none">
-      <div class="px-4 py-3 flex items-center justify-center gap-3 border-b-2 border-[#163575] shrink-0">
-        <span class="inline-block w-4 h-4 rounded-sm bg-[#ff1dce]" style="box-shadow:0 0 10px #ff1dce"></span>
-        <span id="tablero-nombre-a" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
-        <span id="tablero-count-a" class="font-titulo font-bold text-xl tabular-nums neon-a"></span>
-        <span class="font-titulo text-[#7b9ef5] text-sm px-2 font-bold">VS</span>
-        <span id="tablero-count-b" class="font-titulo font-bold text-xl tabular-nums neon-b"></span>
-        <span id="tablero-nombre-b" class="font-titulo font-bold text-[#e8e8ff] text-sm"></span>
-        <span class="inline-block w-4 h-4 rounded-sm bg-[#ffe100]" style="box-shadow:0 0 10px #ffe100"></span>
-      </div>
+      <div id="tablero-jugadores" class="px-2 py-2 flex items-center justify-center gap-1.5 flex-wrap border-b-2 border-[#163575] shrink-0"></div>
 
       <div class="flex-1 flex flex-col items-center justify-center px-4 py-4 min-h-0">
         <div id="tablero-grid" class="grid grid-cols-3 gap-3 w-full max-w-sm"></div>
@@ -307,12 +315,8 @@ const slugsInfantiles: string[] = [
 
     <!-- JUEGO -->
     <section id="pantalla-juego" class="flex-1 flex flex-col hidden select-none min-h-0 overflow-hidden" style="touch-action:none;overscroll-behavior:none">
-      <div class="flex-1 flex items-stretch min-h-0 px-2 pt-2 pb-1 gap-2">
-        <div id="zona-a" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
-          <span id="timer-a" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
-          <span id="nombre-a-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
-        </div>
-
+      <div class="flex-1 flex flex-col min-h-0 px-2 pt-2 pb-1 gap-1">
+        <div id="jugadores-bar" class="flex gap-2 w-full max-w-sm mx-auto shrink-0"></div>
         <div class="flex-1 flex flex-col items-center min-w-0 min-h-0 relative">
           <p id="juego-cat-label" class="text-xl text-[#ffcc00] font-titulo text-center max-w-xs px-2 pt-1 font-bold uppercase tracking-wider leading-tight shrink-0"></p>
           <div class="flex-1 w-full flex flex-col items-center justify-center gap-2">
@@ -334,11 +338,6 @@ const slugsInfantiles: string[] = [
             <button id="boton-pasar" class="floor-btn floor-btn-gold font-titulo font-bold py-3 text-base w-full max-w-xs">Pasar (−3 s)</button>
           </div>
         </div>
-
-        <div id="zona-b" class="shrink-0 w-16 flex flex-col items-center justify-center rounded transition-all">
-          <span id="timer-b" class="font-titulo font-bold tabular-nums text-4xl leading-none text-center floor-timer"></span>
-          <span id="nombre-b-display" class="font-titulo text-sm font-bold mt-1 text-center truncate w-full px-1"></span>
-        </div>
       </div>
     </section>
 
@@ -349,18 +348,7 @@ const slugsInfantiles: string[] = [
         <div class="text-7xl mb-4 flotar inline-block">🏆</div>
         <h1 class="font-titulo text-3xl font-bold text-[#e8e8ff] mb-2 uppercase tracking-widest">¡Partida terminada!</h1>
         <p id="texto-ganador" class="font-titulo text-2xl mb-6 neon-gold"></p>
-        <div class="grid grid-cols-2 gap-3 mb-8">
-          <div class="floor-card-small p-4" style="border-color:#ff1dce44">
-            <p id="final-nombre-a" class="font-titulo font-bold text-[#ff1dce] text-sm mb-1 uppercase tracking-wide"></p>
-            <p id="final-tiempo-a" class="font-titulo font-bold text-4xl text-[#e8e8ff] floor-timer" style="color:#ff1dce">0s</p>
-            <p id="final-label-a" class="text-xs text-[#7b9ef5] font-titulo">tiempo restante</p>
-          </div>
-          <div class="floor-card-small p-4" style="border-color:#ffe10044">
-            <p id="final-nombre-b" class="font-titulo font-bold text-[#ffe100] text-sm mb-1 uppercase tracking-wide"></p>
-            <p id="final-tiempo-b" class="font-titulo font-bold text-4xl text-[#e8e8ff] floor-timer" style="color:#ffe100">0s</p>
-            <p id="final-label-b" class="text-xs text-[#7b9ef5] font-titulo">tiempo restante</p>
-          </div>
-        </div>
+        <div id="final-grid" class="grid grid-cols-2 gap-3 mb-8"></div>
         <div class="flex flex-col gap-3">
           <button id="boton-revancha" class="floor-btn floor-btn-gold font-titulo font-bold text-lg px-8 py-3">Revancha →</button>
           <button id="boton-compartir-resultado" class="floor-btn font-titulo font-bold text-base px-8 py-2.5" style="color:#a8c5ff;border-color:#a8c5ff" aria-label="Compartir resultado">📤 Compartir resultado</button>
@@ -524,8 +512,6 @@ const slugsInfantiles: string[] = [
     color: var(--text);
     font-family: 'Barlow Condensed', sans-serif;
   }
-  .neon-a { color: var(--a); text-shadow: 0 0 20px var(--a); }
-  .neon-b { color: var(--b); text-shadow: 0 0 20px var(--b); }
   .neon-gold { color: var(--gold); text-shadow: 0 0 15px var(--gold); }
   .glow-a { box-shadow: 0 0 18px var(--a), 0 0 40px color-mix(in srgb, var(--a) 30%, transparent); }
   .glow-b { box-shadow: 0 0 18px var(--b), 0 0 40px color-mix(in srgb, var(--b) 30%, transparent); }
@@ -534,15 +520,25 @@ const slugsInfantiles: string[] = [
     border: 2px solid #2a5285;
     box-shadow: inset 0 0 10px rgba(20, 55, 130, 0.4);
   }
-  :global(.floor-square-a) {
+  :global(.floor-square-p0) {
     background: #ff1dce;
     border: 2px solid #ff80e8;
     box-shadow: 0 0 24px #ff1dce, inset 0 0 8px rgba(255,255,255,0.2);
   }
-  :global(.floor-square-b) {
+  :global(.floor-square-p1) {
     background: #ffe100;
     border: 2px solid #fff380;
     box-shadow: 0 0 24px #ffe100, inset 0 0 8px rgba(255,255,255,0.2);
+  }
+  :global(.floor-square-p2) {
+    background: #00ff88;
+    border: 2px solid #80ffc4;
+    box-shadow: 0 0 24px #00ff88, inset 0 0 8px rgba(255,255,255,0.2);
+  }
+  :global(.floor-square-p3) {
+    background: #00b3ff;
+    border: 2px solid #80d9ff;
+    box-shadow: 0 0 24px #00b3ff, inset 0 0 8px rgba(255,255,255,0.2);
   }
   :global(.floor-square-attackable) {
     border: 2px solid var(--gold) !important;
@@ -586,8 +582,6 @@ const slugsInfantiles: string[] = [
   }
   .floor-input::placeholder { color: var(--dim); }
   .floor-input:focus { border-color: var(--gold); }
-  .floor-input-a:focus { border-color: var(--a); }
-  .floor-input-b:focus { border-color: var(--b); }
   .floor-card { background: var(--card); border: 2px solid var(--border); border-radius: 6px; }
   .floor-card-small { background: var(--card); border: 1px solid var(--border); border-radius: 4px; }
   .floor-image-box {
@@ -609,19 +603,6 @@ const slugsInfantiles: string[] = [
     background: color-mix(in srgb, var(--gold) 90%, transparent);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
   }
-  .floor-zona-active-a {
-    background: color-mix(in srgb, var(--a) 12%, transparent);
-    border: 2px solid var(--a);
-    box-shadow: 0 0 20px color-mix(in srgb, var(--a) 40%, transparent);
-    color: var(--a);
-  }
-  .floor-zona-active-b {
-    background: color-mix(in srgb, var(--b) 10%, transparent);
-    border: 2px solid var(--b);
-    box-shadow: 0 0 20px color-mix(in srgb, var(--b) 40%, transparent);
-    color: var(--b);
-  }
-  .floor-zona-inactive { color: #2a2a44; border: 2px solid transparent; }
   .floor-timer { text-shadow: 0 0 20px currentColor; }
   .floor-timer-urgent { color: #ff3b3b !important; text-shadow: 0 0 24px #ff3b3b; }
   .floor-btn-urgent { color: #ff3b3b !important; border-color: #ff3b3b !important; box-shadow: 0 0 14px color-mix(in srgb, #ff3b3b 55%, transparent); }
@@ -837,17 +818,38 @@ const slugsInfantiles: string[] = [
   interface Jugador {
     nombre: string;
     decimas: number;
+    eliminado: boolean;
   }
+
+  // Color de cada jugador por índice (rosa, amarillo, verde, azul)
+  const COLORES = ["#ff1dce", "#ffe100", "#00ff88", "#00b3ff"];
+  const DECIMAS_INICIO = 300; // 30 s por jugador
 
   let items: ItemFloor[] = [];
   let indice = 0;
-  let turno: "A" | "B" = "A";
+  let turno = 0;
   let categoriaActual = "";
-  let jug: { A: Jugador; B: Jugador };
+  let jugadores: Jugador[] = [];
+  // En rápida: índices en el orden en que fueron quedando eliminados
+  let ordenEliminacion: number[] = [];
   let tick: ReturnType<typeof setInterval> | null = null;
   let reco: ReconocedorVoz | null = null;
   let bloqueado = false;
   let terminado = false;
+
+  function vivos(): number[] {
+    return jugadores.map((j, i) => (j.eliminado ? -1 : i)).filter((i) => i >= 0);
+  }
+  function siguienteVivo(desde: number): number {
+    for (let k = 1; k <= jugadores.length; k++) {
+      const i = (desde + k) % jugadores.length;
+      if (!jugadores[i].eliminado) return i;
+    }
+    return desde;
+  }
+  function escapeHTML(s: string): string {
+    return s.replace(/[<>&"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" }[c]!));
+  }
 
   // ── Estado de tablero ────────────────────────────────────────
   interface Casilla {
@@ -857,7 +859,7 @@ const slugsInfantiles: string[] = [
     catTipo: "otras" | "cine";
     catNombres: string[] | null;
     catHardcoded: ItemFloor[] | null;
-    dueño: "A" | "B" | null;
+    dueño: number | null;
     items: ItemFloor[];
     itemsOffset: number;
     empateCuenta: number;
@@ -865,30 +867,57 @@ const slugsInfantiles: string[] = [
 
   let casillas: Casilla[] = [];
   let casillaDuelo = -1;
-  let tableroAtacante: "A" | "B" = "A";
+  let tableroAtacante = 0;
 
-  // ── Recordar nombres entre sesiones ────────────────────────
-  const NOMBRES_KEY = "el-suelo:nombres";
+  // ── Cuántos juegan + recordar nombres entre sesiones ────────
+  let numJugadores = 2;
+
+  function seleccionarNumJugadores(n: number) {
+    numJugadores = n;
+    document.querySelectorAll<HTMLElement>("#selector-jugadores [data-nj]").forEach((b) => {
+      b.classList.toggle("floor-cat-selected", Number(b.dataset.nj) === n);
+    });
+    document.querySelectorAll<HTMLElement>("#inputs-nombres [data-jugador]").forEach((d) => {
+      d.classList.toggle("hidden", Number(d.dataset.jugador) >= n);
+    });
+  }
+  for (const btn of document.querySelectorAll<HTMLElement>("#selector-jugadores [data-nj]")) {
+    btn.addEventListener("click", () => seleccionarNumJugadores(Number(btn.dataset.nj)));
+  }
+
+  const NOMBRES_KEY = "el-suelo:nombres-v2";
+  const inputsNombre = Array.from(document.querySelectorAll<HTMLInputElement>("#inputs-nombres [data-nombre]"));
   try {
     const saved = JSON.parse(localStorage.getItem(NOMBRES_KEY) ?? "null");
-    if (saved && typeof saved === "object") {
-      if (saved.a) ($("nombre-a") as HTMLInputElement).value = saved.a;
-      if (saved.b) ($("nombre-b") as HTMLInputElement).value = saved.b;
+    if (saved && Array.isArray(saved.nombres)) {
+      saved.nombres.forEach((n: string, i: number) => { if (inputsNombre[i] && n) inputsNombre[i].value = n; });
+      if (saved.n >= 2 && saved.n <= 4) seleccionarNumJugadores(saved.n);
+    } else {
+      // Migración del formato antiguo { a, b }
+      const viejo = JSON.parse(localStorage.getItem("el-suelo:nombres") ?? "null");
+      if (viejo && typeof viejo === "object") {
+        if (viejo.a) inputsNombre[0].value = viejo.a;
+        if (viejo.b) inputsNombre[1].value = viejo.b;
+      }
     }
   } catch {}
 
   // ── Empezar ─────────────────────────────────────────────────
   // Nombres guardados al pulsar "Continuar →"
-  let nombreAGuardado = "Jugador A";
-  let nombreBGuardado = "Jugador B";
+  let nombresGuardados: string[] = ["Jugador 1", "Jugador 2"];
 
   function leerYValidarNombres(): boolean {
     const errEl = $("error-setup");
     errEl.classList.add("hidden");
-    nombreAGuardado = (($("nombre-a") as HTMLInputElement).value.trim()) || "Jugador A";
-    nombreBGuardado = (($("nombre-b") as HTMLInputElement).value.trim()) || "Jugador B";
-    try { localStorage.setItem(NOMBRES_KEY, JSON.stringify({ a: nombreAGuardado, b: nombreBGuardado })); } catch {}
+    nombresGuardados = inputsNombre
+      .slice(0, numJugadores)
+      .map((inp, i) => inp.value.trim() || `Jugador ${i + 1}`);
+    try { localStorage.setItem(NOMBRES_KEY, JSON.stringify({ n: numJugadores, nombres: inputsNombre.map((i) => i.value.trim()) })); } catch {}
     return true;
+  }
+
+  function crearJugadores(): Jugador[] {
+    return nombresGuardados.map((nombre) => ({ nombre, decimas: DECIMAS_INICIO, eliminado: false }));
   }
 
   // Paso 3: tras escribir los nombres, se avanza según el modo
@@ -917,8 +946,8 @@ const slugsInfantiles: string[] = [
       if (!confirm(`Solo hay ${pool.length} categorías publicadas. Algunas se repetirán en el tablero. ¿Continuar?`)) return;
     }
     pararVoz();
-    trackEv("partida-iniciada", { modo: "tablero", variante: tableroInfantil ? "infantil" : "adultos", pool_size: pool.length });
-    initTablero(nombreAGuardado, nombreBGuardado, pool);
+    trackEv("partida-iniciada", { modo: "tablero", variante: tableroInfantil ? "infantil" : "adultos", pool_size: pool.length, jugadores: numJugadores });
+    initTablero(pool);
     mostrar(pTablero);
   }
 
@@ -980,17 +1009,12 @@ const slugsInfantiles: string[] = [
       $("juego-cat-label").textContent = _esMundo ? `🌍 El Mundo · ${categoriaNombre}` : `🎬 ${categoriaNombre}`;
 
       items = barajar(raw);
-      jug = {
-        A: { nombre: nombreAGuardado, decimas: 450 },
-        B: { nombre: nombreBGuardado, decimas: 450 },
-      };
+      jugadores = crearJugadores();
+      ordenEliminacion = [];
       indice = 0;
-      turno = "A";
+      turno = 0;
       terminado = false;
-      $("nombre-a-display").textContent = nombreAGuardado;
-      $("nombre-b-display").textContent = nombreBGuardado;
-      $("final-nombre-a").textContent = nombreAGuardado;
-      $("final-nombre-b").textContent = nombreBGuardado;
+      renderJugadoresBar();
       mostrar(pJuego);
       iniciarTurno();
     } catch (e) {
@@ -1003,7 +1027,7 @@ const slugsInfantiles: string[] = [
   }
 
   // ── Tablero ──────────────────────────────────────────────────
-  function initTablero(nombreA: string, nombreB: string, poolCine: string[]) {
+  function initTablero(poolCine: string[]) {
     // Selección sin repetición: barajar y tomar 9; si hay menos de 9 slugs,
     // rellenar cíclicamente. Excluimos las ~15 subcategorías más recientes para
     // que un tablero no repita las del tablero anterior.
@@ -1034,7 +1058,7 @@ const slugsInfantiles: string[] = [
         catTipo: "cine" as const,
         catNombres: null,
         catHardcoded: null,
-        dueño: null as "A" | "B" | null,
+        dueño: null as number | null,
         items: [] as ItemFloor[],
         itemsOffset: 0,
         empateCuenta: 0,
@@ -1042,41 +1066,44 @@ const slugsInfantiles: string[] = [
     });
 
     casillaDuelo = -1;
-    tableroAtacante = "A";
-    jug = {
-      A: { nombre: nombreA, decimas: 450 },
-      B: { nombre: nombreB, decimas: 450 },
-    };
-
-    $("tablero-nombre-a").textContent = nombreA;
-    $("tablero-nombre-b").textContent = nombreB;
-    $("final-nombre-a").textContent = nombreA;
-    $("final-nombre-b").textContent = nombreB;
-    $("nombre-a-display").textContent = nombreA;
-    $("nombre-b-display").textContent = nombreB;
+    tableroAtacante = 0;
+    jugadores = crearJugadores();
 
     renderTablero();
   }
 
-  function getAttackableIndices(_player: "A" | "B"): Set<number> {
+  function getAttackableIndices(): Set<number> {
     return new Set(casillas.map((c, i) => c.dueño === null ? i : -1).filter((i) => i >= 0));
   }
 
-  function renderTablero() {
-    const countA = casillas.filter((c) => c.dueño === "A").length;
-    const countB = casillas.filter((c) => c.dueño === "B").length;
-    $("tablero-count-a").textContent = String(countA);
-    $("tablero-count-b").textContent = String(countB);
+  // Cabecera del tablero: chip por jugador con su color y casillas conquistadas
+  function renderTableroJugadores() {
+    const cont = $("tablero-jugadores");
+    cont.innerHTML = jugadores.map((j, i) => {
+      const color = COLORES[i];
+      const count = casillas.filter((c) => c.dueño === i).length;
+      const activo = i === tableroAtacante;
+      const estilo = activo
+        ? `border:1px solid ${color};background:color-mix(in srgb, ${color} 10%, transparent)`
+        : "border:1px solid transparent";
+      return `<div class="flex items-center gap-1.5 px-2 py-1 rounded" style="${estilo}">
+        <span class="inline-block w-3 h-3 rounded-sm shrink-0" style="background:${color};box-shadow:0 0 8px ${color}"></span>
+        <span class="font-titulo font-bold text-[#e8e8ff] text-xs truncate max-w-[72px]">${escapeHTML(j.nombre)}</span>
+        <span class="font-titulo font-bold text-lg tabular-nums" style="color:${color};text-shadow:0 0 12px ${color}">${count}</span>
+      </div>`;
+    }).join("");
+  }
 
-    const attackable = getAttackableIndices(tableroAtacante);
+  function renderTablero() {
+    renderTableroJugadores();
+
+    const attackable = getAttackableIndices();
     const gridEl = $("tablero-grid");
     gridEl.innerHTML = "";
 
     casillas.forEach((casilla, idx) => {
       const btn = document.createElement("button");
-      let bgClass = "floor-square-neutral";
-      if (casilla.dueño === "A") bgClass = "floor-square-a";
-      else if (casilla.dueño === "B") bgClass = "floor-square-b";
+      const bgClass = casilla.dueño === null ? "floor-square-neutral" : `floor-square-p${casilla.dueño}`;
 
       const esAtacable = attackable.has(idx);
       const esDestacado = idx === casillaDuelo;
@@ -1094,13 +1121,14 @@ const slugsInfantiles: string[] = [
       gridEl.appendChild(btn);
     });
 
-    const nombreAtacante = jug ? (tableroAtacante === "A" ? jug.A.nombre : jug.B.nombre) : tableroAtacante;
+    const conquistadas = casillas.filter((c) => c.dueño !== null).length;
     // Si no hay casillas atacables pero quedan casillas libres (no debería pasar en 3x3
     // porque getAttackableIndices ya devuelve todas las libres), salimos sin recursión.
-    if (attackable.size === 0 && countA + countB < 9) {
+    if (attackable.size === 0 && conquistadas < 9) {
       $("tablero-instruccion").textContent = `Esperando…`;
       return;
     }
+    const nombreAtacante = jugadores[tableroAtacante]?.nombre ?? "";
     $("tablero-instruccion").textContent = `${nombreAtacante}, elige una casilla`;
   }
 
@@ -1161,63 +1189,62 @@ const slugsInfantiles: string[] = [
     bloqueado = false;
     clearPending();
     pararTimer();
-    jug.A.decimas = 450;
-    jug.B.decimas = 450;
-    $("nombre-a-display").textContent = jug.A.nombre;
-    $("nombre-b-display").textContent = jug.B.nombre;
+    jugadores.forEach((j) => { j.decimas = DECIMAS_INICIO; j.eliminado = false; });
+    renderJugadoresBar();
 
     mostrar(pJuego);
     iniciarTurno();
   }
 
   function terminarDueloTablero() {
-    const sA = jug.A.decimas;
-    const sB = jug.B.decimas;
-    let ganadorDuelo: "A" | "B" | null = null;
-    if (sA > sB) ganadorDuelo = "A";
-    else if (sB > sA) ganadorDuelo = "B";
+    // La casilla es para quien conserve más tiempo. Si hay empate en cabeza,
+    // se repite el duelo; al tercer empate se sortea entre los empatados.
+    const maxDec = Math.max(...jugadores.map((j) => j.decimas));
+    const lideres = jugadores.map((_, i) => i).filter((i) => jugadores[i].decimas === maxDec);
+    let ganadorDuelo: number | null = lideres.length === 1 ? lideres[0] : null;
 
-    if (!ganadorDuelo && casillaDuelo >= 0) {
+    if (ganadorDuelo === null && casillaDuelo >= 0) {
       casillas[casillaDuelo].empateCuenta++;
       if (casillas[casillaDuelo].empateCuenta >= 3) {
-        ganadorDuelo = Math.random() < 0.5 ? "A" : "B";
+        ganadorDuelo = lideres[Math.floor(Math.random() * lideres.length)];
         casillas[casillaDuelo].empateCuenta = 0;
       }
     }
 
-    if (ganadorDuelo && casillaDuelo >= 0) {
+    if (ganadorDuelo !== null && casillaDuelo >= 0) {
       casillas[casillaDuelo].empateCuenta = 0;
       casillas[casillaDuelo].dueño = ganadorDuelo;
     }
-    tableroAtacante = tableroAtacante === "A" ? "B" : "A";
+    tableroAtacante = (tableroAtacante + 1) % jugadores.length;
 
-    const countA = casillas.filter((c) => c.dueño === "A").length;
-    const countB = casillas.filter((c) => c.dueño === "B").length;
-    if (countA + countB === 9) { mostrarFinalTablero(); return; }
+    const conquistadas = casillas.filter((c) => c.dueño !== null).length;
+    if (conquistadas === 9) { mostrarFinalTablero(); return; }
 
-    jug.A.decimas = 450;
-    jug.B.decimas = 450;
+    jugadores.forEach((j) => { j.decimas = DECIMAS_INICIO; j.eliminado = false; });
     renderTablero();
     mostrar(pTablero);
     document.getElementById("boton-reportar-tablero").classList.remove("hidden");
   }
 
   function mostrarFinalTablero() {
-    const countA = casillas.filter((c) => c.dueño === "A").length;
-    const countB = casillas.filter((c) => c.dueño === "B").length;
-    trackEv("tablero-completado", { variante: tableroInfantil ? "infantil" : "adultos", marcador: `${countA}-${countB}` });
-    const marcador = countA > countB ? `${countA}-${countB}` : `${countB}-${countA}`;
-    const ganador = countA > countB
-      ? `🥇 Gana ${jug.A.nombre} (${marcador})`
-      : countB > countA
-      ? `🥇 Gana ${jug.B.nombre} (${marcador})`
-      : `¡Empate! ${countA}-${countB} 🤝`;
+    const counts = jugadores.map((_, i) => casillas.filter((c) => c.dueño === i).length);
+    const maxC = Math.max(...counts);
+    const lideres = counts.map((c, i) => i).filter((i) => counts[i] === maxC);
+    const marcador = [...counts].sort((a, b) => b - a).join("-");
+    trackEv("tablero-completado", { variante: tableroInfantil ? "infantil" : "adultos", marcador, jugadores: jugadores.length });
+    const ganador = lideres.length === 1
+      ? `🥇 Gana ${jugadores[lideres[0]].nombre} (${marcador})`
+      : `¡Empate a ${maxC}! 🤝`;
     $("texto-ganador").textContent = ganador;
-    $("final-tiempo-a").textContent = String(countA);
-    $("final-tiempo-b").textContent = String(countB);
-    $("final-label-a").textContent = "casillas";
-    $("final-label-b").textContent = "casillas";
-    contarPartida("tablero", `${jug.A.nombre} ${countA}-${countB} ${jug.B.nombre}`);
+    // Tarjetas finales ordenadas por casillas conquistadas
+    const orden = jugadores.map((_, i) => i).sort((a, b) => counts[b] - counts[a]);
+    renderFinalCards(orden.map((i) => ({
+      nombre: jugadores[i].nombre,
+      color: COLORES[i],
+      valor: String(counts[i]),
+      label: "casillas",
+    })));
+    contarPartida("tablero", orden.map((i) => `${jugadores[i].nombre} ${counts[i]}`).join(" · "));
     mostrar(pFinal);
     lanzarConfeti();
   }
@@ -1247,25 +1274,47 @@ const slugsInfantiles: string[] = [
   }
 
   // ── Render ───────────────────────────────────────────────────
+  // Barra superior con un chip por jugador: tiempo + nombre, resaltado el del turno.
+  // Se reconstruye al cambiar el turno; el tick solo actualiza los números.
+  function renderJugadoresBar() {
+    const bar = $("jugadores-bar");
+    bar.innerHTML = jugadores.map((j, i) => {
+      const color = COLORES[i];
+      const seg = Math.max(0, Math.ceil(j.decimas / 10));
+      const activo = i === turno && !j.eliminado;
+      let estilo = "border:2px solid transparent;opacity:0.7";
+      if (j.eliminado) estilo = "border:2px solid transparent;opacity:0.35";
+      else if (activo) estilo = `border:2px solid ${color};background:color-mix(in srgb, ${color} 12%, transparent);box-shadow:0 0 16px color-mix(in srgb, ${color} 40%, transparent)`;
+      return `<div class="flex-1 min-w-0 flex flex-col items-center justify-center rounded px-1 py-1.5 transition-all" style="${estilo}">
+        <span data-timer="${i}" class="font-titulo font-bold tabular-nums leading-none text-center floor-timer ${activo ? "text-3xl" : "text-xl"}" style="color:${color}">${j.eliminado ? "✖" : seg}</span>
+        <span class="font-titulo text-xs font-bold mt-0.5 truncate w-full text-center" style="color:${color}">${escapeHTML(j.nombre)}</span>
+      </div>`;
+    }).join("");
+  }
+
   function renderTimers() {
-    const sa = Math.max(0, Math.ceil(jug.A.decimas / 10));
-    const sb = Math.max(0, Math.ceil(jug.B.decimas / 10));
-    $("timer-a").textContent = String(sa);
-    $("timer-b").textContent = String(sb);
-    $("timer-a").classList.toggle("animate-pulse", turno === "A" && sa <= 10);
-    $("timer-b").classList.toggle("animate-pulse", turno === "B" && sb <= 10);
-    $("timer-a").classList.toggle("floor-timer-urgent", turno === "A" && sa <= 10);
-    $("timer-b").classList.toggle("floor-timer-urgent", turno === "B" && sb <= 10);
+    jugadores.forEach((j, i) => {
+      const el = document.querySelector(`#jugadores-bar [data-timer="${i}"]`);
+      if (!el) return;
+      const seg = Math.max(0, Math.ceil(j.decimas / 10));
+      if (!j.eliminado) el.textContent = String(seg);
+      const urgente = i === turno && !j.eliminado && seg <= 10;
+      el.classList.toggle("animate-pulse", urgente);
+      el.classList.toggle("floor-timer-urgent", urgente);
+    });
     // Botón pasar en rojo cuando poco tiempo (avisa de "menos riesgo cuanto antes")
-    const sActual = turno === "A" ? sa : sb;
+    const sActual = Math.max(0, Math.ceil((jugadores[turno]?.decimas ?? 0) / 10));
     $("boton-pasar").classList.toggle("floor-btn-urgent", sActual <= 10);
   }
 
-  const ZONA_BASE = "shrink-0 w-16 flex flex-col items-center justify-center rounded-2xl transition-all";
-  function renderTurno() {
-    const esA = turno === "A";
-    $("zona-a").className = `${ZONA_BASE} ${esA ? "floor-zona-active-a" : "floor-zona-inactive"}`;
-    $("zona-b").className = `${ZONA_BASE} ${!esA ? "floor-zona-active-b" : "floor-zona-inactive"}`;
+  // Tarjetas de la pantalla final (una por jugador, en orden de clasificación)
+  function renderFinalCards(cards: { nombre: string; color: string; valor: string; label: string }[]) {
+    $("final-grid").innerHTML = cards.map((c) => `
+      <div class="floor-card-small p-4" style="border-color:${c.color}44">
+        <p class="font-titulo font-bold text-sm mb-1 uppercase tracking-wide" style="color:${c.color}">${escapeHTML(c.nombre)}</p>
+        <p class="font-titulo font-bold text-4xl floor-timer" style="color:${c.color}">${c.valor}</p>
+        <p class="text-xs text-[#7b9ef5] font-titulo">${c.label}</p>
+      </div>`).join("");
   }
 
   // Si una imagen no carga (hot-link caducado, 404, anti-leech), saltar al
@@ -1375,15 +1424,15 @@ const slugsInfantiles: string[] = [
     clearPending();
     if (items.length === 0) { terminar(); return; }
     if (indice >= items.length) { terminar(); return; }
-    renderTurno();
+    renderJugadoresBar();
     renderTimers();
     mostrarImagen();
     pararTimer();
     // Timer basado en Date.now() para evitar drift cuando el móvil bloquea
     // pantalla o el navegador ralentiza setInterval en background.
-    const decimasInicio = jug[turno].decimas;
+    const decimasInicio = jugadores[turno].decimas;
     const startMs = Date.now();
-    const j = jug[turno];
+    const j = jugadores[turno];
     tick = setInterval(() => {
       const transcurridoDecimas = Math.floor((Date.now() - startMs) / 100);
       const restantes = Math.max(0, decimasInicio - transcurridoDecimas);
@@ -1395,13 +1444,30 @@ const slugsInfantiles: string[] = [
         bloqueado = true;
         pararTimer();
         pararVoz();
-        $("texto-voz").textContent = `⏱️ ¡Se acabó el tiempo de ${j.nombre}!`;
-        clearPending();
-        pendingAction = setTimeout(terminar, 1200);
+        procesarAgotado();
       }
     }, 100);
     iniciarReconocedor();
     iniciarVoz();
+  }
+
+  // El jugador del turno se ha quedado sin tiempo (por reloj o por pase).
+  // En rápida queda eliminado y sigue la partida si quedan 2+; en tablero
+  // (o si solo queda uno) el duelo termina.
+  function procesarAgotado() {
+    const j = jugadores[turno];
+    $("texto-voz").textContent = `⏱️ ¡Se acabó el tiempo de ${j.nombre}!`;
+    clearPending();
+    if (modo !== "tablero") {
+      j.eliminado = true;
+      ordenEliminacion.push(turno);
+      if (vivos().length > 1) {
+        renderJugadoresBar();
+        pendingAction = setTimeout(cambiarTurno, 1200);
+        return;
+      }
+    }
+    pendingAction = setTimeout(terminar, 1200);
   }
 
   function pararTimer() { if (tick) { clearInterval(tick); tick = null; } }
@@ -1482,7 +1548,7 @@ const slugsInfantiles: string[] = [
     ($("boton-pasar") as HTMLButtonElement).disabled = true;
     pararTimer();
     const nombre = items[indice].nombre;
-    const j = jug[turno];
+    const j = jugadores[turno];
     j.decimas = Math.max(0, j.decimas - 30);
     indice++;
     renderTimers();
@@ -1492,8 +1558,8 @@ const slugsInfantiles: string[] = [
     pendingAction = setTimeout(() => {
       $("overlay-pase").classList.add("hidden");
       if (j.decimas <= 0) {
-        $("texto-voz").textContent = `⏱️ ¡Se acabó el tiempo de ${j.nombre}!`;
-        pendingAction = setTimeout(terminar, 800);
+        pararVoz();
+        procesarAgotado();
       } else {
         iniciarTurno();
       }
@@ -1502,7 +1568,7 @@ const slugsInfantiles: string[] = [
 
   function cambiarTurno() {
     if (terminado) return;
-    turno = turno === "A" ? "B" : "A";
+    turno = siguienteVivo(turno);
     iniciarTurno();
   }
 
@@ -1528,15 +1594,25 @@ const slugsInfantiles: string[] = [
       return;
     }
 
-    const sA = Math.max(0, Math.ceil(jug.A.decimas / 10));
-    const sB = Math.max(0, Math.ceil(jug.B.decimas / 10));
-    $("final-tiempo-a").textContent = `${sA}s`;
-    $("final-tiempo-b").textContent = `${sB}s`;
-    $("final-label-a").textContent = "tiempo restante";
-    $("final-label-b").textContent = "tiempo restante";
-    const ganador = sA > sB ? `🥇 Gana ${jug.A.nombre}` : sB > sA ? `🥇 Gana ${jug.B.nombre}` : "¡Empate! 🤝";
-    $("texto-ganador").textContent = ganador;
-    contarPartida("rapida", `${categoriaActual}: ${jug.A.nombre} ${sA}s vs ${jug.B.nombre} ${sB}s`);
+    // Clasificación: primero los vivos por tiempo restante; después los
+    // eliminados en orden inverso (el último en caer queda mejor).
+    const ranking = [
+      ...vivos().sort((a, b) => jugadores[b].decimas - jugadores[a].decimas),
+      ...[...ordenEliminacion].reverse(),
+    ];
+    const seg = (i: number) => Math.max(0, Math.ceil(jugadores[i].decimas / 10));
+    const empate = ranking.length > 1
+      && !jugadores[ranking[0]].eliminado && !jugadores[ranking[1]].eliminado
+      && jugadores[ranking[0]].decimas === jugadores[ranking[1]].decimas;
+    $("texto-ganador").textContent = empate ? "¡Empate! 🤝" : `🥇 Gana ${jugadores[ranking[0]].nombre}`;
+    const POSICIONES = ["🥇", "🥈", "🥉", "4º"];
+    renderFinalCards(ranking.map((idx, pos) => ({
+      nombre: `${POSICIONES[pos] ?? ""} ${jugadores[idx].nombre}`,
+      color: COLORES[idx],
+      valor: `${seg(idx)}s`,
+      label: "tiempo restante",
+    })));
+    contarPartida("rapida", `${categoriaActual}: ${ranking.map((i) => `${jugadores[i].nombre} ${seg(i)}s`).join(" vs ")}`);
     mostrar(pFinal);
     lanzarConfeti();
   }
@@ -1718,7 +1794,7 @@ const slugsInfantiles: string[] = [
   });
 
   document.getElementById("ajustes-compartir-juego")!.addEventListener("click", async () => {
-    const texto = `🎮 El Suelo · Di qué ves antes de que se acabe tu tiempo.\nUn juego de adivinanza por voz para 1 o 2 móviles.\nhttps://elsuelo.es`;
+    const texto = `🎮 El Suelo · Di qué ves antes de que se acabe tu tiempo.\nUn juego de adivinanza por voz de 2 a 4 jugadores, en un móvil o en varios.\nhttps://elsuelo.es`;
     trackEv("compartir", { tipo: "juego" });
     try {
       if (navigator.share) await navigator.share({ title: "El Suelo", text: texto });
